@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-navy: #0f2439;
+  --color-brand-deepNavy: #0a1928;
+  --color-brand-orange: #f05a22;
+  --color-brand-lightOrange: #fff4ee;
+  --color-brand-sand: #f7f5f0;
+  --color-brand-cardBg: #ffffff;
+  --color-brand-subText: #667085;
+  --color-brand-border: #eae6df;
+
+  --font-sans: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+
+  --shadow-card: 0 8px 24px -4px rgba(15, 36, 57, 0.06);
+  --shadow-highlight: 0 12px 32px -4px rgba(240, 90, 34, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  word-break: keep-all;
+  background-color: #f7f5f0;
+}
+
+/* Hide scrollbars on mobile horizontal sliders */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
