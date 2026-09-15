@@ -1,4 +1,8 @@
 import { ServiceItem, TeamMember, PortfolioItem, ReviewItem, PricingPlan, FAQItem } from './types';
+import contractReviewImg from './assets/images/contract_review_sample_1789468628301.jpg';
+import meetingNotesImg from './assets/images/meeting_notes_minutes_1789468642460.jpg';
+import tipsBusinessPlanImg from './assets/images/tips_business_plan_1789468656077.jpg';
+import financialBriefingReportImg from './assets/images/financial_briefing_report_1789468696567.jpg';
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
@@ -10,8 +14,8 @@ export const SERVICES_DATA: ServiceItem[] = [
     tags: ['계약서 검토', '회의록 정리', 'PPT 기획', 'IR/보고서'],
     icon: 'FileText',
     colorClass: 'brand-navy',
-    previewImage: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=800&q=80',
-    previewImageAlt: '계약서 검토 및 기업 문서 포트폴리오 산출물',
+    previewImage: contractReviewImg,
+    previewImageAlt: '계약서 리스크 검토 및 회의록 비즈니스 문서 실무 산출물',
     portfolioExample: {
       id: 'doc-1',
       client: '제조/물류 중견기업 D사',
@@ -20,8 +24,8 @@ export const SERVICES_DATA: ServiceItem[] = [
       result: '법무 검토 소요 시간 85% 단축, 면책 조항 4건 수정 권고 반영',
       summary: '국제 공급 계약서 20종의 준거법, 위약벌 조항, 비밀유지 의무를 AI로 교차 분석 후 전문 매니저가 리스크 등급(상/중/하)별 코멘트를 첨부해 최종 납품했습니다.',
       deliverable: '주석 첨부된 계약서 PDF 및 수정안 Word 문서, 위험도 대시보드',
-      image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1000&q=80',
-      imageAlt: '영문 계약서 독소조항 분석 사례'
+      image: contractReviewImg,
+      imageAlt: '영문 계약서 독소조항 분석 및 검토 문서 산출물'
     },
     portfolioCases: [
       {
@@ -33,8 +37,8 @@ export const SERVICES_DATA: ServiceItem[] = [
         summary: '국제 공급 계약서 20종의 준거법, 위약벌 조항, 비밀유지 의무를 AI로 교차 분석 후 전문 매니저가 리스크 등급(상/중/하)별 코멘트를 첨부해 최종 납품했습니다.',
         tags: ['영문계약', '법무스크리닝', '위험도진단'],
         deliverable: '주석 첨부된 계약서 PDF 및 수정안 Word 문서, 위험도 대시보드',
-        image: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '영문 계약서 독소조항 분석 사례'
+        image: contractReviewImg,
+        imageAlt: '영문 계약서 독소조항 분석 및 주석 검토서'
       },
       {
         id: 'doc-2',
@@ -45,8 +49,8 @@ export const SERVICES_DATA: ServiceItem[] = [
         summary: '복잡한 연구개발 기술 용어를 심사위원 눈높이에 맞춘 논리적 구조로 재편집하고 시장성·수익성 재무 지표를 일목요연하게 도식화했습니다.',
         tags: ['TIPS선정', '사업계획서', '정부과제'],
         deliverable: 'TIPS 표준 사업계획서 최종 HWP/PDF, 심사용 요약본 5p',
-        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: 'TIPS 사업계획서 및 IR 자료 산출물'
+        image: tipsBusinessPlanImg,
+        imageAlt: 'TIPS 사업계획서 및 IR 바인더 산출물'
       },
       {
         id: 'doc-3',
@@ -57,8 +61,8 @@ export const SERVICES_DATA: ServiceItem[] = [
         summary: '격주 2시간씩 진행되는 임원 전략 회의 녹음본에서 결정 사항, 담당자별 R&R, 데드라인을 자동 태깅하여 노션 데이터베이스로 자동 전송되도록 구축했습니다.',
         tags: ['Notion연동', '회의록요약', '액션아이템'],
         deliverable: '노션 회의록 템플릿 DB, 임원 브리핑용 1장 불렛 요약',
-        image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '회의록 음성 텍스트 변환 및 노션 정리 사례'
+        image: meetingNotesImg,
+        imageAlt: '실제 주간 회의록 및 액션아이템 요약 보고서'
       },
       {
         id: 'doc-4',
@@ -69,8 +73,8 @@ export const SERVICES_DATA: ServiceItem[] = [
         summary: '외신 주요 지표(미 국채, 환율, 원자재)를 크롤링하여 임원진 보고용 정형 차트와 핵심 이슈 5가지를 매주 월요일 아침 완벽 검수 납품합니다.',
         tags: ['금융브리핑', '정기보고서', '임원보고'],
         deliverable: '매주 월요일 정시 발행 경영진 보고용 완성형 PDF 4페이지',
-        image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '경영진 브리핑 리포트 템플릿'
+        image: financialBriefingReportImg,
+        imageAlt: '경영진 브리핑 금융 보고서 문서 산출물'
       }
     ],
     detailedTasks: [
