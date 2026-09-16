@@ -12,9 +12,11 @@ import {
   MessageCircle,
   Sparkles,
   ChevronRight,
-  Layers
+  Layers,
+  ZoomIn
 } from 'lucide-react';
 import { ServiceItem, ServicePortfolioCase } from '../types';
+import { ImageZoomModal } from './ImageZoomModal';
 
 interface ServicePortfolioModalProps {
   service: ServiceItem | null;
@@ -36,6 +38,14 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
       : [];
 
   const [selectedCaseId, setSelectedCaseId] = useState<string>(cases[0]?.id || '');
+  const [zoomImage, setZoomImage] = useState<{
+    url: string;
+    alt: string;
+    title: string;
+    subtitle: string;
+    gallery?: { url: string; title: string; pageLabel: string }[];
+    initialIndex?: number;
+  } | null>(null);
   const activeCase = cases.find((c) => c.id === selectedCaseId) || cases[0];
 
   return (
@@ -103,14 +113,37 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
           {activeCase && (
             <div className="space-y-4">
               {/* Hero Showcase with Image */}
-              <div className="relative rounded-2xl overflow-hidden border border-[#eae6df] shadow-xs bg-gray-950 aspect-16/9 sm:aspect-21/9 group">
+              <div
+                onClick={() => {
+                  const imgUrl = activeCase.image || service.previewImage;
+                  if (imgUrl) {
+                    setZoomImage({
+                      url: imgUrl,
+                      alt: activeCase.imageAlt || activeCase.title,
+                      title: activeCase.title,
+                      subtitle: `${activeCase.client} • ${activeCase.deliverable || '실제 납품 산출물'}`,
+                      gallery: activeCase.galleryImages,
+                      initialIndex: 0
+                    });
+                  }
+                }}
+                className="relative rounded-2xl overflow-hidden border border-[#eae6df] shadow-xs bg-gray-950 aspect-16/9 sm:aspect-21/9 group cursor-zoom-in"
+                title="클릭하여 고해상도 원본 확대 검토하기"
+              >
                 <img
                   src={activeCase.image || service.previewImage || 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1000&q=80'}
                   alt={activeCase.imageAlt || activeCase.title}
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover group-hover:scale-102 transition-transform duration-500 opacity-90"
+                  className={`w-full h-full ${activeCase.title.includes('카드뉴스') ? 'object-contain' : 'object-cover'} group-hover:scale-102 transition-transform duration-500 opacity-95`}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5 text-white">
+
+                {/* Floating Zoom Badge */}
+                <div className="absolute top-3 right-3 bg-black/65 hover:bg-black/85 backdrop-blur-xs text-white px-2.5 py-1 rounded-full text-[11px] font-bold flex items-center gap-1.5 border border-white/20 shadow-md group-hover:scale-105 transition">
+                  <ZoomIn className="w-3.5 h-3.5 text-[#f05a22]" />
+                  <span>클릭하여 원본 검토</span>
+                </div>
+
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5 text-white pointer-events-none">
                   <div className="flex flex-wrap items-center gap-2 mb-1.5">
                     <span className="text-[10px] font-black bg-[#f05a22] text-white px-2 py-0.5 rounded uppercase">
                       CASE #{cases.findIndex((c) => c.id === activeCase.id) + 1}
@@ -129,6 +162,69 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
                   </h4>
                 </div>
               </div>
+
+              {/* Multi-Page Detail Gallery Grid (If multiple pages exist) */}
+              {activeCase.galleryImages && activeCase.galleryImages.length > 0 && (
+                <div className="p-3.5 bg-[#f8fafc] rounded-2xl border border-slate-200 space-y-2.5">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <span className="w-2 h-2 rounded-full bg-[#f05a22]"></span>
+                      <h5 className="font-bold text-slate-900 text-xs flex items-center gap-1.5">
+                        <Sparkles className="w-3.5 h-3.5 text-[#f05a22]" />
+                        <span>
+                          {activeCase.title.includes('카드뉴스') ? '실제 배포용 카드뉴스 슬라이드' : '세부 산출물 원본'} ({activeCase.galleryImages.length}개 페이지 수록)
+                        </span>
+                      </h5>
+                    </div>
+                    <span className="text-[11px] text-slate-500 hidden sm:inline font-medium">
+                      클릭 시 해당 페이지 고해상도 확대
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    {activeCase.galleryImages.map((page, pIdx) => (
+                      <button
+                        key={pIdx}
+                        type="button"
+                        onClick={() => {
+                          setZoomImage({
+                            url: page.url,
+                            alt: page.title,
+                            title: page.title,
+                            subtitle: `${activeCase.client} • ${activeCase.title}`,
+                            gallery: activeCase.galleryImages,
+                            initialIndex: pIdx
+                          });
+                        }}
+                        className="group relative rounded-xl overflow-hidden border border-slate-200 hover:border-[#f05a22] transition bg-white text-left p-2 cursor-zoom-in hover:shadow-md flex flex-col"
+                        title={`${page.pageLabel}: 클릭하여 고해상도 확대`}
+                      >
+                        <div className={`${activeCase.title.includes('카드뉴스') ? 'aspect-square' : 'aspect-16/10'} rounded-lg overflow-hidden bg-slate-100 mb-2 border border-slate-100 relative`}>
+                          <img
+                            src={page.url}
+                            alt={page.title}
+                            referrerPolicy="no-referrer"
+                            className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
+                          />
+                          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition flex items-center justify-center">
+                            <span className="opacity-0 group-hover:opacity-100 transition bg-black/80 text-white text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+                              <ZoomIn className="w-3 h-3 text-[#f05a22]" /> 확대보기
+                            </span>
+                          </div>
+                        </div>
+                        <div className="px-1 pb-0.5">
+                          <span className="text-[10px] font-black text-[#f05a22] block">
+                            {page.pageLabel}
+                          </span>
+                          <span className="text-xs font-bold text-slate-800 line-clamp-1 block mt-0.5">
+                            {page.title}
+                          </span>
+                        </div>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Highlight Metric Callout */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
@@ -261,6 +357,20 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
           </div>
         </div>
       </div>
+
+      {/* High-Resolution Image Zoom Modal for In-Depth Review */}
+      {zoomImage && (
+        <ImageZoomModal
+          isOpen={!!zoomImage}
+          onClose={() => setZoomImage(null)}
+          imageUrl={zoomImage.url}
+          imageAlt={zoomImage.alt}
+          title={zoomImage.title}
+          subtitle={zoomImage.subtitle}
+          gallery={zoomImage.gallery}
+          initialIndex={zoomImage.initialIndex}
+        />
+      )}
     </div>
   );
 };

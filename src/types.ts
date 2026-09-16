@@ -9,6 +9,11 @@ export interface ServicePortfolioCase {
   deliverable: string;
   image: string;
   imageAlt: string;
+  galleryImages?: {
+    url: string;
+    title: string;
+    pageLabel: string;
+  }[];
 }
 
 export interface ServiceItem {

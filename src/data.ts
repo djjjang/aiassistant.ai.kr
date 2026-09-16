@@ -1,8 +1,16 @@
 import { ServiceItem, TeamMember, PortfolioItem, ReviewItem, PricingPlan, FAQItem } from './types';
 import contractReviewImg from './assets/images/contract_review_sample_1789468628301.jpg';
+import aiContractReviewImg from './assets/images/ai_contract_review_report_1789530423310.jpg';
 import meetingNotesImg from './assets/images/meeting_notes_minutes_1789468642460.jpg';
+import weeklyWorkReportImg from './assets/images/weekly_work_report_1789548769236.jpg';
+import startupBusinessPlanImg from './assets/images/startup_business_plan_1789548410702.jpg';
+import planDetailPageImg from './assets/images/plan_detail_page_1789548433211.jpg';
 import tipsBusinessPlanImg from './assets/images/tips_business_plan_1789468656077.jpg';
-import financialBriefingReportImg from './assets/images/financial_briefing_report_1789468696567.jpg';
+import cardNewsCoverImg from './assets/images/card_news_cover_1789549999237.jpg';
+import cardNewsBodyImg from './assets/images/card_news_body_1789550011323.jpg';
+import cardNewsEndingImg from './assets/images/card_news_ending_1789550026842.jpg';
+import pressReleaseSampleImg from './assets/images/press_release_sample_1789550701635.jpg';
+import newsletterNoticeUpdateImg from './assets/images/newsletter_notice_update_1789551161711.jpg';
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
@@ -10,564 +18,574 @@ export const SERVICES_DATA: ServiceItem[] = [
     number: '01',
     categoryCode: 'DOCUMENTS',
     name: '문서 업무',
-    description: '계약서 실시간 리스크 검토, 회의록 요약, 사업계획서 보완, 주간/월간 실적 보고서 자동화 작성',
-    tags: ['계약서 검토', '회의록 정리', 'PPT 기획', 'IR/보고서'],
+    description: '계약서 검토, 회의록 정리, 사업계획서 작성 및 수정, 주간 실적 보고서 작성',
+    tags: ['계약서 검토', '회의록 정리', '사업계획서', '보고서 작성'],
     icon: 'FileText',
     colorClass: 'brand-navy',
-    previewImage: contractReviewImg,
-    previewImageAlt: '계약서 리스크 검토 및 회의록 비즈니스 문서 실무 산출물',
+    previewImage: aiContractReviewImg,
+    previewImageAlt: 'AI 계약서 검토 및 비즈니스 문서 실무 산출물',
     portfolioExample: {
       id: 'doc-1',
-      client: '제조/물류 중견기업 D사',
-      title: '영문 거래 계약서 20종 독소조항 일괄 분석 & 한국어 요약본',
-      duration: '48시간 납품',
-      result: '법무 검토 소요 시간 85% 단축, 면책 조항 4건 수정 권고 반영',
-      summary: '국제 공급 계약서 20종의 준거법, 위약벌 조항, 비밀유지 의무를 AI로 교차 분석 후 전문 매니저가 리스크 등급(상/중/하)별 코멘트를 첨부해 최종 납품했습니다.',
-      deliverable: '주석 첨부된 계약서 PDF 및 수정안 Word 문서, 위험도 대시보드',
-      image: contractReviewImg,
-      imageAlt: '영문 계약서 독소조항 분석 및 검토 문서 산출물'
+      client: '플랫폼 개발사 O사',
+      title: '용역계약서 조항 검토 및 독소조항 분석',
+      duration: '의뢰 후 24시간 이내',
+      result: '위험 조항 5건 발견 및 실무 수정 권고 의견 정리',
+      summary: '용역 계약서의 주요 조항을 검토하여 자동 연장 통보기한, 대금 지급 기한, 손해배상 한도 등 실무적으로 분쟁 소지가 있는 조항을 짚어내고 수정 문구를 제안했습니다.',
+      deliverable: '조항별 검토 의견서 및 계약서 수정안',
+      image: aiContractReviewImg,
+      imageAlt: '계약서 검토 의견서 산출물'
     },
     portfolioCases: [
       {
         id: 'doc-1',
-        client: '제조/물류 중견기업 D사',
-        title: '영문 거래 계약서 20종 독소조항 일괄 분석 & 한국어 요약본',
-        duration: '48시간 납품',
-        result: '법무 검토 소요 시간 85% 단축, 면책 조항 4건 수정 권고 반영',
-        summary: '국제 공급 계약서 20종의 준거법, 위약벌 조항, 비밀유지 의무를 AI로 교차 분석 후 전문 매니저가 리스크 등급(상/중/하)별 코멘트를 첨부해 최종 납품했습니다.',
-        tags: ['영문계약', '법무스크리닝', '위험도진단'],
-        deliverable: '주석 첨부된 계약서 PDF 및 수정안 Word 문서, 위험도 대시보드',
-        image: contractReviewImg,
-        imageAlt: '영문 계약서 독소조항 분석 및 주석 검토서'
+        client: '플랫폼 개발사 O사',
+        title: '용역계약서 조항 검토 및 독소조항 분석',
+        duration: '의뢰 후 24시간 이내',
+        result: '위험 조항 5건 발견 및 실무 수정 권고 의견 정리',
+        summary: '용역 계약서의 주요 조항을 검토하여 자동 연장 통보기한, 대금 지급 기한, 손해배상 한도 등 실무적으로 분쟁 소지가 있는 조항을 짚어내고 수정 문구를 제안했습니다.',
+        tags: ['계약서검토', '독소조항분석', '용역계약서', '의견서작성'],
+        deliverable: '조항별 검토 의견서 및 계약서 수정안',
+        image: aiContractReviewImg,
+        imageAlt: '계약서 검토 의견서 산출물'
       },
       {
         id: 'doc-2',
-        client: '시리즈A 바이오 테크 기업 G사',
-        title: '정부 TIPS 과제 선정용 60페이지 사업계획서 재구성 및 증빙 첨부',
-        duration: '72시간 납품',
-        result: 'TIPS 추천 심사 통과 & R&D 5억원 연구개발비 최종 유치 성공',
-        summary: '복잡한 연구개발 기술 용어를 심사위원 눈높이에 맞춘 논리적 구조로 재편집하고 시장성·수익성 재무 지표를 일목요연하게 도식화했습니다.',
-        tags: ['TIPS선정', '사업계획서', '정부과제'],
-        deliverable: 'TIPS 표준 사업계획서 최종 HWP/PDF, 심사용 요약본 5p',
-        image: tipsBusinessPlanImg,
-        imageAlt: 'TIPS 사업계획서 및 IR 바인더 산출물'
+        client: '친환경 스타트업 (주)오일루프',
+        title: '사업계획서 작성 및 수정',
+        duration: '의뢰 후 48시간 이내',
+        result: 'TIPS 지원사업 사업계획서 7개 챕터 기획 및 도식화 완성',
+        summary: '복잡한 폐식용유 수거 플랫폼 프로세스를 간결하게 다듬고, 문제인식(회수율 40%), AI 매칭 솔루션, 3개년 성장전략 로드맵을 시각화하여 심사위원 맞춤형 사업계획서로 작성했습니다.',
+        tags: ['사업계획서', 'TIPS지원사업', '도식화기획', '초안작성'],
+        deliverable: '사업계획서 완성본 및 고해상도 인포그래픽 도식 4종',
+        image: startupBusinessPlanImg,
+        imageAlt: 'TIPS 지원사업 사업계획서 기획 및 작성 산출물',
+        galleryImages: [
+          { url: startupBusinessPlanImg, title: 'TIPS 사업계획서 총괄 기획 및 종합 산출물 (오일루프)', pageLabel: '종합 오버뷰' },
+          { url: planDetailPageImg, title: '핵심 기술 실현가능성 및 상세 시장 분석 페이지', pageLabel: '1p 핵심기술 및 시장' },
+          { url: tipsBusinessPlanImg, title: '성장전략 및 연도별 재무 로드맵 브리핑 보고서', pageLabel: '2p 성장전략 및 재무' }
+        ]
       },
       {
         id: 'doc-3',
-        client: '온디맨드 커머스 스타트업 F사',
-        title: '음성 녹음 파일 15건 기반 핵심 액션 아이템 추출 Notion 회의록 연동',
-        duration: '24시간 납품',
-        result: '주간 전략 회의 정리 시간 주당 6시간 절감, 업무 누락 0건',
-        summary: '격주 2시간씩 진행되는 임원 전략 회의 녹음본에서 결정 사항, 담당자별 R&R, 데드라인을 자동 태깅하여 노션 데이터베이스로 자동 전송되도록 구축했습니다.',
-        tags: ['Notion연동', '회의록요약', '액션아이템'],
-        deliverable: '노션 회의록 템플릿 DB, 임원 브리핑용 1장 불렛 요약',
+        client: '스타트업 F사',
+        title: '회의록 정리 및 핵심 할 일 추출',
+        duration: '의뢰 후 24시간 이내',
+        result: '회의 내용 요약 및 담당자별 할 일(R&R) 정리',
+        summary: '주간 회의 녹음본에서 결정된 사항과 담당자별 할 일(R&R)을 일목요연하게 노션 페이지로 정리했습니다.',
+        tags: ['회의록정리', '할일추출', '노션정리'],
+        deliverable: '정리된 회의록 문서 및 노션 템플릿',
         image: meetingNotesImg,
-        imageAlt: '실제 주간 회의록 및 액션아이템 요약 보고서'
+        imageAlt: '회의록 정리 및 할 일 추출 산출물'
       },
       {
         id: 'doc-4',
-        client: '자산운용·투자 자문 P사',
-        title: '주간 글로벌 금융 시장 동향 경영진 브리핑 레포트 자동 템플릿',
-        duration: '정기 발행 (매주 월 08:00)',
-        result: '매주 반복되던 작성 시간 8시간 → 30분으로 93% 축소',
-        summary: '외신 주요 지표(미 국채, 환율, 원자재)를 크롤링하여 임원진 보고용 정형 차트와 핵심 이슈 5가지를 매주 월요일 아침 완벽 검수 납품합니다.',
-        tags: ['금융브리핑', '정기보고서', '임원보고'],
-        deliverable: '매주 월요일 정시 발행 경영진 보고용 완성형 PDF 4페이지',
-        image: financialBriefingReportImg,
-        imageAlt: '경영진 브리핑 금융 보고서 문서 산출물'
+        client: '중소기업 P사',
+        title: '주간 업무 보고서 및 실적 요약',
+        duration: '주 1회 정기 작성',
+        result: '반복 보고서 작성 간소화 및 주요 지표 정리',
+        summary: '매주 취합해야 하는 사업 실적과 외부 주요 지표를 경영진이 한눈에 파악할 수 있는 주간 보고서로 정리했습니다.',
+        tags: ['주간보고서', '실적요약', '정기보고'],
+        deliverable: '주간 업무 보고서 템플릿 및 완성본',
+        image: weeklyWorkReportImg,
+        imageAlt: '한글 주간 업무 보고서 및 실적 요약 산출물'
       }
     ],
     detailedTasks: [
-      '표준 근로·용역·투자 계약서 내 독소 조항 및 법적 위험 사전 스크리닝',
-      '녹음 파일 또는 슬랙 대화록 기반 핵심 액션 아이템 자동 추출 회의록',
-      '정부지원사업(예비/초기창업패키지, TIPS) 사업계획서 양식 맞춤 초안 구성',
-      '사내 스프레드시트 연동 정기 주간/월간 경영 실적 브리핑 레포트'
+      '근로·용역·거래 계약서 조항 검토 및 수정 의견 정리',
+      '회의 녹음본 또는 메모 바탕 회의록 작성 및 할 일 정리',
+      '사업계획서 및 회사소개서 초안 작성 및 내용 보완',
+      '주간·월간 업무 실적 보고서 및 요약본 작성'
     ],
     turnaroundTime: '24~48시간 이내',
-    deliverableSample: '주석 첨부된 계약서 PDF 및 수정안 Word 문서, Notion 회의록 페이지'
+    deliverableSample: '검토 의견서, 수정된 사업계획서 문서, 회의록 정리본'
   },
   {
     id: 'content',
     number: '02',
     categoryCode: 'CONTENT CREATION',
     name: '콘텐츠 업무',
-    description: '블로그 전문 아티클, SNS 카드뉴스 카피라이팅, 보도자료 초안, 브랜드 뉴스레터 정기 발행',
-    tags: ['SEO 블로그', 'SNS 카피', '보도자료', '뉴스레터'],
+    description: '블로그 글 작성, SNS 카드뉴스 문구, 보도자료 초안, 고객 안내 뉴스레터',
+    tags: ['블로그 글', '카드뉴스', '보도자료', '뉴스레터'],
     icon: 'Edit3',
     colorClass: 'blue-600',
-    previewImage: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&q=80',
-    previewImageAlt: 'SEO 테크 아티클 및 브랜드 콘텐츠 포트폴리오',
+    previewImage: cardNewsCoverImg,
+    previewImageAlt: 'SNS 실무 카드뉴스 3장 및 홍보 콘텐츠 산출물',
     portfolioExample: {
       id: 'cnt-1',
-      client: 'B2B 클라우드 솔루션 스타트업 A사',
-      title: '월 12회 전문 테크 블로그 아티클 & 인스타그램 카드뉴스 시리즈',
-      duration: '주간 정기 발행 (의뢰 후 24시간 내)',
-      result: '자연 검색 유입 트래픽 320% 증가, 리드 문의 월 45건 확보',
-      summary: '개발자 및 엔터프라이즈 구매 결정권자를 타겟팅하여 전문 기술 용어 검증 및 가독성 높은 헤드라인 카피를 기획·발행했습니다.',
-      deliverable: 'SEO 메타 태그 포함 마크다운/워드 원고, 카드뉴스 텍스트 기획안',
-      image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1000&q=80',
-      imageAlt: 'SEO 테크 블로그 및 콘텐츠 발행 사례'
+      client: 'IT 솔루션 A사',
+      title: 'SNS 홍보 카드뉴스 3장 제작 및 블로그 원고',
+      duration: '정기 발행 (의뢰 후 24시간 내)',
+      result: '인스타그램 도달률 280% 상승 및 핵심 서비스 3장 요약',
+      summary: '바쁜 스타트업 대표와 실무자를 타겟으로, 복잡한 업무 프로세스를 3장의 한글 카드뉴스(1p 표지, 2p 본문, 3p 엔딩)로 기획·디자인하여 SNS 배포용으로 납품했습니다.',
+      deliverable: '배포용 고해상도 카드뉴스 3종 (표지/본문/엔딩) 및 카피 기획안',
+      image: cardNewsCoverImg,
+      imageAlt: '한글 기반 SNS 카드뉴스 3장 실무 산출물'
     },
     portfolioCases: [
       {
         id: 'cnt-1',
-        client: 'B2B 클라우드 솔루션 스타트업 A사',
-        title: '월 12회 전문 테크 블로그 아티클 & 인스타그램 카드뉴스 시리즈',
-        duration: '주간 정기 발행 (의뢰 후 24시간 내)',
-        result: '자연 검색 유입 트래픽 320% 증가, 리드 문의 월 45건 확보',
-        summary: '개발자 및 엔터프라이즈 구매 결정권자를 타겟팅하여 전문 기술 용어 검증 및 가독성 높은 헤드라인 카피를 기획·발행했습니다.',
-        tags: ['SEO테크블로그', '인바운드리드', '검색최적화'],
-        deliverable: 'SEO 메타 태그 포함 마크다운/워드 원고, 카드뉴스 텍스트 기획안',
-        image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: 'SEO 테크 블로그 및 콘텐츠 발행 사례'
+        client: 'IT 솔루션 A사',
+        title: 'SNS 홍보 카드뉴스 3장 제작 및 블로그 원고',
+        duration: '정기 발행 (의뢰 후 24시간 내)',
+        result: '인스타그램 도달률 280% 상승 및 핵심 서비스 3장 요약',
+        summary: '바쁜 스타트업 대표와 실무자를 타겟으로, 복잡한 업무 프로세스를 3장의 한글 카드뉴스(1p 표지, 2p 본문, 3p 엔딩)로 기획·디자인하여 SNS 배포용으로 납품했습니다.',
+        tags: ['카드뉴스제작', 'SNS콘텐츠', '인스타그램', '카드뉴스기획'],
+        deliverable: '배포용 고해상도 카드뉴스 3종 (표지/본문/엔딩) 및 카피 기획안',
+        image: cardNewsCoverImg,
+        imageAlt: '한글 기반 SNS 카드뉴스 3장 실무 산출물',
+        galleryImages: [
+          { url: cardNewsCoverImg, title: '1p 표지: 바쁜 스타트업 대표를 위한 업무 자동화 3원칙', pageLabel: '1p 표지' },
+          { url: cardNewsBodyImg, title: '2p 본문: 01. 반복되는 문서 업무 분리 및 전담 매니저 솔루션', pageLabel: '2p 본문' },
+          { url: cardNewsEndingImg, title: '3p 엔딩: 핵심 사업 집중 및 무료 업무 진단 신청 (CTA)', pageLabel: '3p 엔딩' }
+        ]
       },
       {
         id: 'cnt-2',
-        client: '스마트 물류 로봇 스타트업 R사',
-        title: '시리즈B 80억 투자 유치 언론 배포 보도자료 작성 & 15개 매체 게재',
-        duration: '12시간 납품',
-        result: '주요 경제지 12곳 및 테크 전문지 3곳 당일 게재, 브랜드 인지도 급상승',
-        summary: '복잡한 로보틱스 기술 지표를 일반 대중과 투자자가 이해하기 쉬운 핵심 수치 3가지로 압축해 표준 신문 기사 형식의 보도자료를 신속 작성했습니다.',
-        tags: ['보도자료', 'PR기사', '언론홍보'],
-        deliverable: '표준 프레스 릴리즈 원고 및 헤드라인 3개안, 기자 배포용 팩트시트',
-        image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '투자 유치 프레스 릴리즈 보도자료'
+        client: '기술 기업 R사',
+        title: '신제품 출시 및 소식 보도자료 작성',
+        duration: '의뢰 후 24시간 이내',
+        result: '언론사 배포용 표준 보도자료 양식 완성',
+        summary: '신제품 출시와 기업 소식을 주요 언론사 송고 규격에 맞춰 제목과 본문으로 읽기 쉽게 작성했습니다.',
+        tags: ['보도자료', '홍보문구', '언론배포'],
+        deliverable: '표준 보도자료 원고 및 핵심 요약 팩트시트',
+        image: pressReleaseSampleImg,
+        imageAlt: '한글 표준 언론 배포용 보도자료 및 팩트시트 산출물'
       },
       {
         id: 'cnt-3',
-        client: '프리미엄 리빙 브랜드 L사',
-        title: '구독자 3만 대상 주간 트렌드 큐레이션 이메일 뉴스레터 기획·원고',
-        duration: '주 1회 정기 납품',
-        result: '이메일 오픈율(OR) 41.8% 기록 (업계 평균 18% 대비 2.3배)',
-        summary: '계절별 인테리어 트렌드와 지속가능한 가구 소재를 스토리텔링 형태로 엮어내어 구독자의 구매 전환 클릭률을 획기적으로 개선했습니다.',
-        tags: ['뉴스레터', '이메일마케팅', '고객인게이지먼트'],
-        deliverable: 'HTML 이메일 호환 마크업 원고 및 고화질 에셋 배치 가이드',
-        image: 'https://images.unsplash.com/photo-1586769852044-692d6e3703f0?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '주간 이메일 뉴스레터 원고 기획 사례'
+        client: 'SaaS / 리빙 브랜드 L사',
+        title: '고객 안내 뉴스레터 및 공지사항 자동 업데이트',
+        duration: '정기 발행 및 상시 업데이트',
+        result: '고객 오픈율 34% 달성 및 주요 공지사항 자동화',
+        summary: '신규 기능 출시, 정기 점검, 프로모션 등 고객에게 전달할 공지사항과 뉴스레터 문안을 작성하고 반응형 이메일 및 웹 공지 템플릿으로 제작했습니다.',
+        tags: ['뉴스레터', '공지사항업데이트', '고객안내', '이메일템플릿'],
+        deliverable: '반응형 이메일 뉴스레터 원고 및 공지사항 업데이트 카드 템플릿',
+        image: newsletterNoticeUpdateImg,
+        imageAlt: '고객 안내 뉴스레터 및 공지사항 자동 업데이트 실무 산출물'
       }
     ],
     detailedTasks: [
-      '구글 및 네이버 상위 랭킹 타겟팅 2,000자+ 전문 SEO 기술/산업 블로그',
-      '인스타그램/링크드인 카드뉴스 슬라이드별 맞춤 헤드라인 및 본문 카피',
-      '신규 런칭, 투자 유치, 업무 협약 등 표준 언론 배포용 프레스 릴리즈',
-      '고객 충성도 제고를 위한 주간 큐레이션 이메일 뉴스레터 템플릿'
+      '회사 블로그 및 포털 검색용 정보성 글 작성',
+      '인스타그램 등 SNS 카드뉴스용 핵심 문구 기획',
+      '신제품 출시, 제휴 등 표준 언론 보도자료 초안 작성',
+      '고객 안내 및 정기 소식 전달용 뉴스레터 작성'
     ],
     turnaroundTime: '24~36시간 이내',
-    deliverableSample: 'SEO 메타 태그 포함 마크다운/워드 원고, 카드뉴스 텍스트 기획안'
+    deliverableSample: '블로그 원고, 카드뉴스 문구 기획안, 보도자료 문서'
   },
   {
     id: 'research',
     number: '03',
     categoryCode: 'RESEARCH & ANALYSIS',
     name: '리서치 및 자료 조사',
-    description: '해외 시장 신규 동향, 경쟁사 가격/서비스 벤치마킹 분석, 규제/인증 법률 기초 조사 보고서',
-    tags: ['경쟁사 조사', '산업 리포트', '글로벌 번역', '규제 동향'],
+    description: '경쟁사 가격/기능 비교, 업계 시장 동향 조사, 해외 자료 국문 요약',
+    tags: ['경쟁사 비교', '시장 조사', '자료 요약', '규제 확인'],
     icon: 'Search',
     colorClass: 'emerald-600',
     previewImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-    previewImageAlt: '시장 조사 및 글로벌 벤치마킹 데이터 리포트 포트폴리오',
+    previewImageAlt: '시장 조사 및 경쟁사 비교 리포트 산출물',
     portfolioExample: {
       id: 'res-1',
-      client: '국내 e-커머스 플랫폼 B사',
-      title: '글로벌 15개사 구독 모델 요금제 및 배송 정책 심층 벤치마킹 리포트',
-      duration: '36시간 납품',
-      result: '시장 조사 소요 시간 2주에서 36시간으로 단축, 경영진 보고서 채택',
-      summary: '미국/일본의 탑티어 커머스 15개사 가격 정책과 멤버십 혜택 매트릭스를 작성하고 핵심 차별화 전략 제언 슬라이드를 도출했습니다.',
-      deliverable: '요약 브리프 10p PDF 및 스프레드시트 벤치마킹 Raw Data',
+      client: '쇼핑몰 플랫폼 B사',
+      title: '경쟁사 서비스 및 요금제 비교 조사',
+      duration: '의뢰 후 24~36시간',
+      result: '주요 경쟁사 가격과 혜택 한눈에 비교 정리',
+      summary: '동종 업계 주요 경쟁사들의 요금제와 제공 기능을 항목별로 조사하여 비교표와 핵심 요약으로 정리했습니다.',
+      deliverable: '경쟁사 비교표 및 핵심 요약 보고서',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80',
-      imageAlt: '글로벌 커머스 벤치마킹 리포트'
+      imageAlt: '경쟁사 비교 조사 리포트'
     },
     portfolioCases: [
       {
         id: 'res-1',
-        client: '국내 e-커머스 플랫폼 B사',
-        title: '글로벌 15개사 구독 모델 요금제 및 배송 정책 심층 벤치마킹 리포트',
-        duration: '36시간 납품',
-        result: '시장 조사 소요 시간 2주에서 36시간으로 단축, 경영진 보고서 채택',
-        summary: '미국/일본의 탑티어 커머스 15개사 가격 정책과 멤버십 혜택 매트릭스를 작성하고 핵심 차별화 전략 제언 슬라이드를 도출했습니다.',
-        tags: ['글로벌벤치마킹', '가격전략', '경쟁사비교'],
-        deliverable: '요약 브리프 10p PDF 및 스프레드시트 벤치마킹 Raw Data',
+        client: '쇼핑몰 플랫폼 B사',
+        title: '경쟁사 서비스 및 요금제 비교 조사',
+        duration: '의뢰 후 24~36시간',
+        result: '주요 경쟁사 가격과 혜택 한눈에 비교 정리',
+        summary: '동종 업계 주요 경쟁사들의 요금제와 제공 기능을 항목별로 조사하여 비교표와 핵심 요약으로 정리했습니다.',
+        tags: ['경쟁사비교', '가격비교', '서비스분석'],
+        deliverable: '경쟁사 비교표 및 핵심 요약 보고서',
         image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '글로벌 커머스 벤치마킹 리포트'
+        imageAlt: '경쟁사 비교 조사 리포트'
       },
       {
         id: 'res-2',
-        client: '핀테크 결제 솔루션 T사',
-        title: '동남아 4개국(베트남·인니·태국·말레이) 전자금융 라이선스 규제 리포트',
-        duration: '48시간 납품',
-        result: '현지 로펌 자문 비용 약 2,500만원 절감 및 진출 타당성 검토 완료',
-        summary: '각국 중앙은행 규정, 외환 관리법, 합작 법인 의무 지분율을 공신력 있는 영문 원문 문서 기반으로 교차 검증하여 체크리스트화했습니다.',
-        tags: ['해외규제', '동남아진출', '핀테크법률'],
-        deliverable: '동남아 4개국 금융 규제 비교 매트릭스 및 실무 지침 보고서',
+        client: '핀테크 기업 T사',
+        title: '신규 사업 관련 기본 규제 및 인허가 조사',
+        duration: '의뢰 후 48시간 이내',
+        result: '사업 시작 전 필수 확인 규제 체크리스트 정리',
+        summary: '새로운 서비스를 준비할 때 필요한 기본 법령, 인허가 조건, 필수 준수 사항을 관련 규정 중심으로 정리했습니다.',
+        tags: ['규제조사', '인허가확인', '법령정리'],
+        deliverable: '규제 항목 비교표 및 확인 가이드',
         image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '해외 금융 라이선스 규제 분석'
+        imageAlt: '신규 사업 인허가 규제 조사 리포트'
       },
       {
         id: 'res-3',
-        client: '전기차 충전 인프라 S사',
-        title: '글로벌 특허 및 고속 충전 표준 기술 백서 국문 요약 브리프 (5건)',
-        duration: '24시간 납품',
-        result: 'R&D 연구원 특허 선행 기술 분석 기간 80% 단축',
-        summary: '미국·유럽 100페이지 분량의 영문 전기차 충전 프로토콜 규격 문서를 핵심 회로 구조 및 호환성 관점으로 압축 번역 요약했습니다.',
-        tags: ['기술백서', '특허선행조사', '기술번역'],
-        deliverable: '핵심 다이어그램 포함 국문 기술 브리핑 슬라이드 15p',
+        client: '기술 스타트업 S사',
+        title: '해외 기술 자료 및 시장 동향 국문 요약',
+        duration: '의뢰 후 24시간 이내',
+        result: '방대한 영문 자료의 핵심 내용 한국어 발췌 요약',
+        summary: '외국의 전문 자료와 시장 트렌드 보고서에서 업무에 필요한 핵심 내용만 찾아 한국어로 알기 쉽게 요약했습니다.',
+        tags: ['해외자료', '국문요약', '트렌드조사'],
+        deliverable: '국문 요약 보고서 및 원문 발췌록',
         image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '전기차 기술 백서 및 특허 분석'
+        imageAlt: '해외 기술 자료 국문 요약본'
       }
     ],
     detailedTasks: [
-      '국내외 상위 10~20개 경쟁사 핵심 기능, 가격 정책, 고객 반응 매트릭스 비교',
-      'Gartner, Statista 등 글로벌 신뢰 기관 자료 종합 산업 동향 분석 보고서',
-      '해외 논문, 기술 백서, 영문 특허의 핵심 요약 및 한국어 번역 리포트',
-      '신규 사업 진출을 위한 라이선스, 개인정보보호법 등 기초 규제 체크리스트'
+      '동종 업계 주요 경쟁사 기능, 가격, 서비스 항목별 비교',
+      '신규 사업 관련 기초 시장 현황 및 업계 자료 조사',
+      '해외 자료 및 영문 문서 핵심 내용 국문 요약',
+      '사업 추진 시 확인해야 할 기본 인허가 및 규제 체크리스트'
     ],
     turnaroundTime: '48시간 이내',
-    deliverableSample: '요약 브리프 10p PDF 및 스프레드시트 벤치마킹 Raw Data'
+    deliverableSample: '비교 분석표, 국문 요약 보고서, 조사 결과 정리 시트'
   },
   {
     id: 'data',
     number: '04',
     categoryCode: 'DATA & AUTOMATION',
     name: '데이터 가공 & 분석',
-    description: '웹 크롤링 및 잠재고객 리스트업, 엑셀/노션 데이터 전처리 정제, 대시보드 시각화',
-    tags: ['DB 수집정제', '스프레드시트 자동화', '시각화 차트', '웹 크롤링'],
+    description: '영업용 리스트 수집, 엑셀 데이터 정리 및 통합, 일일 매출 현황 시트 취합',
+    tags: ['데이터 수집', '엑셀 정리', '매출 취합', '시각화 차트'],
     icon: 'BarChart3',
     colorClass: 'purple-600',
     previewImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
-    previewImageAlt: '데이터 분석 대시보드 및 스프레드시트 자동화 포트폴리오',
+    previewImageAlt: '데이터 정리 및 엑셀 취합 실무 산출물',
     portfolioExample: {
       id: 'dat-1',
-      client: 'B2B 산업재 유통 전문기업 M사',
-      title: '전국 5,000개 도매 유통처 웹 크롤링 정제 및 타겟 영업 리스트 구축',
-      duration: '48시간 납품',
-      result: '영업팀 타겟 아웃바운드 성공률 +42% 향상, 수작업 120시간 절감',
-      summary: '웹상의 공개 정보로부터 상호, 대표 전화, 취급 품목 데이터를 크롤링한 뒤 결측치 및 중복을 제거하여 즉시 콜드콜이 가능한 정제 DB를 납품했습니다.',
-      deliverable: '정제된 Excel/CSV 데이터셋, 구글 시트 템플릿, 시각화 대시보드 링크',
+      client: '유통 기업 M사',
+      title: '잠재 고객 및 거래처 리스트 수집·정제',
+      duration: '의뢰 후 24~48시간',
+      result: '중복 없는 깔끔한 영업용 연락처 DB 정리',
+      summary: '공개된 웹상의 업체 정보(상호, 연락처, 품목)를 모아 중복과 빈칸을 정리하고 바로 쓸 수 있는 엑셀 리스트로 납품했습니다.',
+      deliverable: '정제된 엑셀/스프레드시트 데이터 목록',
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80',
-      imageAlt: '유통 데이터 크롤링 및 정제 사례'
+      imageAlt: '거래처 리스트 수집 및 엑셀 정제'
     },
     portfolioCases: [
       {
         id: 'dat-1',
-        client: 'B2B 산업재 유통 전문기업 M사',
-        title: '전국 5,000개 도매 유통처 웹 크롤링 정제 및 타겟 영업 리스트 구축',
-        duration: '48시간 납품',
-        result: '영업팀 타겟 아웃바운드 성공률 +42% 향상, 수작업 120시간 절감',
-        summary: '웹상의 공개 정보로부터 상호, 대표 전화, 취급 품목 데이터를 크롤링한 뒤 결측치 및 중복을 제거하여 즉시 콜드콜이 가능한 정제 DB를 납품했습니다.',
-        tags: ['웹크롤링', '영업DB', '결측치정제'],
-        deliverable: '정제된 Excel/CSV 데이터셋, 구글 시트 템플릿',
+        client: '유통 기업 M사',
+        title: '잠재 고객 및 거래처 리스트 수집·정제',
+        duration: '의뢰 후 24~48시간',
+        result: '중복 없는 깔끔한 영업용 연락처 DB 정리',
+        summary: '공개된 웹상의 업체 정보(상호, 연락처, 품목)를 모아 중복과 빈칸을 정리하고 바로 쓸 수 있는 엑셀 리스트로 납품했습니다.',
+        tags: ['리스트수집', '엑셀정리', '연락처DB'],
+        deliverable: '정제된 엑셀/스프레드시트 데이터 목록',
         image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '유통 데이터 크롤링 및 정제 사례'
+        imageAlt: '거래처 리스트 수집 및 엑셀 정제'
       },
       {
         id: 'dat-2',
-        client: '소비재 D2C 브랜드 패션 N사',
-        title: '네이버 스마트스토어/쿠팡/자사몰 일일 매출 자동 집계 Looker 대시보드',
-        duration: '36시간 납품',
-        result: '매일 1시간 수동 엑셀 다운로드 업무 완전 0분화, 채널별 수익률 실시간 파악',
-        summary: '복수 판매 채널의 서로 다른 주문 엑셀 양식을 단일 규격 데이터로 표준화하고, 반품률과 광고비 대비 순마진을 보여주는 인터랙티브 차트를 구축했습니다.',
-        tags: ['Looker대시보드', '매출자동집계', '이커머스정산'],
-        deliverable: '실시간 연동 Looker Studio 대시보드 및 자동 백업 구글 시트',
+        client: '패션 브랜드 N사',
+        title: '쇼핑몰 판매 데이터 및 매출 엑셀 취합',
+        duration: '의뢰 후 24~36시간',
+        result: '채널별 주문 엑셀 자동 취합 및 일일 매출 파악',
+        summary: '스마트스토어, 오픈마켓 등 서로 다른 양식의 판매 엑셀을 하나로 묶고 일별/월별 매출을 보기 쉽게 정리했습니다.',
+        tags: ['매출취합', '쇼핑몰정산', '엑셀통합'],
+        deliverable: '통합 매출 관리 구글 시트 템플릿',
         image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: 'Looker Studio 매출 집계 대시보드'
+        imageAlt: '쇼핑몰 매출 집계 엑셀 시트'
       },
       {
         id: 'dat-3',
-        client: '병원 경영 컨설팅 메디컬그룹 W사',
-        title: '지역별 환자 유입 채널 10만 건 데이터 비식별화 전처리 및 상관관계 분석',
-        duration: '48시간 납품',
-        result: '고단가 비급여 진료 전환에 기여하는 핵심 마케팅 채널 명확화',
-        summary: '개인정보 보호법에 따른 완벽한 비식별화 마스킹 후 연령대별 방문 요일, 재방문 주기, 예약 경로 상관분석 통계 리포트를 시각화했습니다.',
-        tags: ['빅데이터분석', '비식별화', '의료통계'],
-        deliverable: '통계 분석 결과서 PDF 20p 및 전처리 완료 익명화 데이터셋',
+        client: '서비스 기업 W사',
+        title: '고객 문의 및 유입 경로 데이터 정리',
+        duration: '의뢰 후 48시간 이내',
+        result: '고객 유입 경로와 주요 문의 유형 차트 정리',
+        summary: '누적된 고객 문의 내역과 방문 경로를 분류하여 어떤 경로와 문의가 많은지 한눈에 보는 차트로 정리했습니다.',
+        tags: ['문의내역정리', '유입경로', '차트시각화'],
+        deliverable: '데이터 정리 시트 및 통계 요약표',
         image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '의료 빅데이터 분석 및 통계 리포트'
+        imageAlt: '고객 문의 데이터 정리 현황'
       }
     ],
     detailedTasks: [
-      '합법적 공개 웹사이트 기반 타겟 B2B 리드(담당자, 이메일, 웹사이트) 수집',
-      '중복/결측치/형식 불일치 대용량 엑셀 데이터 파이썬 기반 정제 및 통일',
-      '구글 스프레드시트 AppScript 연동 실시간 자동 계산 및 알림 시스템',
-      'Looker Studio / Tableau 기반 경영진 실시간 KPI 인터랙티브 대시보드'
+      '공개 정보 기반 영업용 잠재 고객 및 거래처 리스트 수집',
+      '서로 다른 양식의 대량 엑셀 데이터 통합, 중복 제거 및 서식 정리',
+      '스마트스토어, 오픈마켓 등 판매 데이터 일일/월별 자동 취합',
+      '핵심 업무 지표를 한눈에 보는 구글 시트 대시보드 제작'
     ],
     turnaroundTime: '24~48시간 이내',
-    deliverableSample: '정제된 Excel/CSV 데이터셋, 구글 시트 템플릿, 시각화 대시보드 링크'
+    deliverableSample: '정제된 엑셀/CSV 데이터셋, 구글 시트 템플릿'
   },
   {
     id: 'marketing',
     number: '05',
     categoryCode: 'MARKETING EXECUTION',
     name: '마케팅 실행 보조',
-    description: '퍼포먼스 광고 문구 대량 생성, 인플루언서 리스트 추출 및 섭외 메일링, 리뷰 데이터 모니터링',
-    tags: ['광고 카피 A/B', '바이럴 모니터링', '인플루언서 섭외', 'VOC 분석'],
+    description: '광고 문구 카피라이팅, 인플루언서 리스트업 및 섭외 메일, 고객 리뷰 요약',
+    tags: ['광고 문구', '인플루언서', '제안 메일', '리뷰 분석'],
     icon: 'Megaphone',
     colorClass: 'amber-600',
     previewImage: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=800&q=80',
-    previewImageAlt: '마케팅 캠페인 광고 카피 및 성과 모니터링 포트폴리오',
+    previewImageAlt: '광고 문구 및 마케팅 보조 실무 산출물',
     portfolioExample: {
       id: 'mkt-1',
-      client: '뷰티 헬스케어 코스메틱 C브랜드',
-      title: '메타·구글 DA 광고용 후킹 카피 40종 A/B 테스트 세트 & 인플루언서 80인 DB',
-      duration: '24시간 납품',
-      result: '광고 클릭률(CTR) 1.8% → 3.6% 두 배 상승, ROAS 380% 달성',
-      summary: '타겟 연령대별 감성 트리거를 반영한 짧은 후킹 문구와 섭외 이메일 템플릿을 신속히 세팅하여 신제품 런칭 캠페인을 성공시켰습니다.',
-      deliverable: 'A/B 테스트 광고 카피 스프레드시트, 인플루언서 DB 목록',
+      client: '뷰티 브랜드 C사',
+      title: '온라인 광고 문구 작성 및 A/B 테스트 세트',
+      duration: '의뢰 후 24시간 이내',
+      result: '클릭을 유도하는 맞춤 광고 문구 다수 제작',
+      summary: 'SNS 및 검색 광고에 사용할 다양한 소구점의 광고 카피를 작성하고 테스트용으로 정리했습니다.',
+      deliverable: '광고 문구 세트 스프레드시트',
       image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1000&q=80',
-      imageAlt: '퍼포먼스 광고 카피라이팅 사례'
+      imageAlt: '온라인 광고 문구 작성 산출물'
     },
     portfolioCases: [
       {
         id: 'mkt-1',
-        client: '뷰티 헬스케어 코스메틱 C브랜드',
-        title: '메타·구글 DA 광고용 후킹 카피 40종 A/B 테스트 세트 & 인플루언서 80인 DB',
-        duration: '24시간 납품',
-        result: '광고 클릭률(CTR) 1.8% → 3.6% 두 배 상승, ROAS 380% 달성',
-        summary: '타겟 연령대별 감성 트리거를 반영한 짧은 후킹 문구와 섭외 이메일 템플릿을 신속히 세팅하여 신제품 런칭 캠페인을 성공시켰습니다.',
-        tags: ['광고카피', 'A/B테스트', 'ROAS개선'],
-        deliverable: 'A/B 테스트 광고 카피 스프레드시트, 인플루언서 DB 목록',
+        client: '뷰티 브랜드 C사',
+        title: '온라인 광고 문구 작성 및 A/B 테스트 세트',
+        duration: '의뢰 후 24시간 이내',
+        result: '클릭을 유도하는 맞춤 광고 문구 다수 제작',
+        summary: 'SNS 및 검색 광고에 사용할 다양한 소구점의 광고 카피를 작성하고 테스트용으로 정리했습니다.',
+        tags: ['광고문구', '소구점개발', '카피라이팅'],
+        deliverable: '광고 문구 세트 스프레드시트',
         image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '퍼포먼스 광고 카피라이팅 사례'
+        imageAlt: '온라인 광고 문구 작성 산출물'
       },
       {
         id: 'mkt-2',
-        client: 'F&B 밀키트 정기구독 푸드 스타트업 J사',
-        title: '인스타그램·유튜브 숏폼 크리에이터 150인 타겟 섭외 제안서 및 콜드메일',
-        duration: '36시간 납품',
-        result: '인플루언서 회신 수락률 34% 기록 (업계 통상 10% 미만 대비 3.4배)',
-        summary: '크리에이터 채널의 최근 콘텐츠 톤앤매너를 분석해 개인화된 맞춤 협찬 제안 문구를 작성하여 협업 성사율을 극대화했습니다.',
-        tags: ['인플루언서섭외', '콜드메일', '숏폼마케팅'],
-        deliverable: '크리에이터 프로필 DB 및 1:1 맞춤 제안 메일 발송용 텍스트',
+        client: '식품 스타트업 J사',
+        title: '인플루언서 리스트업 및 협찬 제안 메일 작성',
+        duration: '의뢰 후 24~36시간',
+        result: '브랜드에 맞는 계정 발굴 및 섭외 문구 작성',
+        summary: '브랜드 분위기에 맞는 SNS 계정들을 찾아 정리하고, 협찬 제안용 안내 문구와 메일 템플릿을 작성했습니다.',
+        tags: ['인플루언서리스트', '협찬제안', '제안문구'],
+        deliverable: '크리에이터 목록 DB 및 맞춤 제안 메일 문안',
         image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '인플루언서 마케팅 섭외 사례'
+        imageAlt: '인플루언서 리스트 및 제안 메일'
       },
       {
         id: 'mkt-3',
-        client: '생활 가전 렌탈 브랜드 E사',
-        title: '네이버 쇼핑 및 쿠팡 실구매자 12,000건 리뷰 감성 키워드 VOC 분석',
-        duration: '24시간 납품',
-        result: '고객 불만 주요 원인(설치 안내 부족) 발견 후 반품률 28% 감소',
-        summary: '방대한 비정형 리뷰 텍스트를 자연어 처리로 긍/부정 키워드와 감성 스코어를 분류하여 마케팅 소구점 및 제품 개선 포인트를 도출했습니다.',
-        tags: ['리뷰분석', 'VOC도출', '이커머스'],
-        deliverable: 'VOC 감성 분석 인포그래픽 보고서 15p 및 키워드 워드클라우드',
+        client: '가전 브랜드 E사',
+        title: '구매자 리뷰 분석 및 고객 의견 요약',
+        duration: '의뢰 후 24시간 이내',
+        result: '고객 칭찬 포인트와 주요 불만 사항을 알기 쉽게 정리',
+        summary: '쇼핑몰 후기 데이터를 분석하여 고객들이 자주 칭찬하는 점과 개선을 요구하는 불만 사항을 요약 정리했습니다.',
+        tags: ['리뷰분석', '고객의견', '개선점도출'],
+        deliverable: '고객 리뷰 요약 보고서 및 개선점 체크리스트',
         image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '고객 리뷰 감성 분석 보고서'
+        imageAlt: '고객 리뷰 분석 요약 보고서'
       }
     ],
     detailedTasks: [
-      '메타(페이스북/인스타)·구글 검색 광고용 후킹 헤드라인 30종 A/B 테스트 세트',
-      '브랜드 타겟 카테고리에 최적화된 마이크로 인플루언서 계정 100인 리스트업',
-      'e커머스 몰 및 포털 상품 리뷰 감성 분석(긍정/부정 키워드 빈도 추출)',
-      '파트너십 및 제휴 제안서 맞춤형 콜드 메일 템플릿 작성'
+      'SNS 피드 및 검색 광고용 카피라이팅 작성',
+      '제품에 맞는 마이크로 인플루언서 계정 리스트업',
+      '체험단 및 인플루언서 섭외용 제안 메일 문구 작성',
+      '쇼핑몰 상품 리뷰 모니터링 및 주요 고객 반응 요약'
     ],
     turnaroundTime: '24~48시간 이내',
-    deliverableSample: 'A/B 테스트 광고 카피 스프레드시트, 인플루언서 DB 목록'
+    deliverableSample: '광고 카피 스프레드시트, 인플루언서 목록 파일'
   },
   {
     id: 'cs',
     number: '06',
     categoryCode: 'CS & OPERATIONS',
     name: '기업 운영 및 CS 지원',
-    description: '자주 묻는 질문 FAQ 챗봇 세팅, 고객 불만 유형 자동 분류, 표준 안내 메일 템플릿 맞춤 발송',
-    tags: ['FAQ 설계', '고객응대 가이드', 'CS 매뉴얼', '템플릿 구축'],
+    description: '자주 묻는 질문(FAQ) 정리, 상황별 고객 응대 템플릿, 챗봇 답변 시나리오',
+    tags: ['FAQ 작성', '응대 템플릿', '고객 안내', '챗봇 시나리오'],
     icon: 'Headphones',
     colorClass: 'cyan-600',
     previewImage: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80',
-    previewImageAlt: '고객 응대 시나리오 및 챗봇 자동화 포트폴리오',
+    previewImageAlt: '고객 응대 시나리오 및 챗봇 답변 실무 산출물',
     portfolioExample: {
       id: 'cs-1',
-      client: '프롭테크 공유오피스 플랫폼 O사',
-      title: '상담톡 50개 시나리오 트리 구축 & 입주사 VOC 불만 유형 표준 해결 매뉴얼',
-      duration: '48시간 납품',
-      result: '단순 반복 문의 처리율 68% 챗봇 자동화, 상담원 업무 피로도 대폭 개선',
-      summary: '자주 접수되는 입주 계약, 주차, 시설 예약 관련 문의를 체계적인 챗봇 트리로 구성하고 난이도 높은 분쟁 대응용 문구를 정형화했습니다.',
-      deliverable: 'CS 마스터 매뉴얼 문서, 챗봇 시나리오 기획서',
+      client: '공유오피스 O사',
+      title: '고객 응대 FAQ 및 챗봇 답변 시나리오 작성',
+      duration: '의뢰 후 48시간 이내',
+      result: '자주 묻는 질문 챗봇 세팅으로 단순 문의 응대 시간 절감',
+      summary: '고객들이 자주 묻는 질문과 답변을 체계적으로 정리하여 카카오톡/채널톡 챗봇에 바로 등록할 수 있는 시나리오를 만들었습니다.',
+      deliverable: 'FAQ 매뉴얼 문서 및 챗봇 시나리오 기획서',
       image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80',
-      imageAlt: '챗봇 시나리오 트리 구축 사례'
+      imageAlt: '챗봇 응대 시나리오 작성 산출물'
     },
     portfolioCases: [
       {
         id: 'cs-1',
-        client: '프롭테크 공유오피스 플랫폼 O사',
-        title: '상담톡 50개 시나리오 트리 구축 & 입주사 VOC 불만 유형 표준 해결 매뉴얼',
-        duration: '48시간 납품',
-        result: '단순 반복 문의 처리율 68% 챗봇 자동화, 상담원 업무 피로도 대폭 개선',
-        summary: '자주 접수되는 입주 계약, 주차, 시설 예약 관련 문의를 체계적인 챗봇 트리로 구성하고 난이도 높은 분쟁 대응용 문구를 정형화했습니다.',
-        tags: ['챗봇시나리오', 'CS자동화', 'VOC해결'],
-        deliverable: 'CS 마스터 매뉴얼 문서, 챗봇 시나리오 기획서',
+        client: '공유오피스 O사',
+        title: '고객 응대 FAQ 및 챗봇 답변 시나리오 작성',
+        duration: '의뢰 후 48시간 이내',
+        result: '자주 묻는 질문 챗봇 세팅으로 단순 문의 응대 시간 절감',
+        summary: '고객들이 자주 묻는 질문과 답변을 체계적으로 정리하여 카카오톡/채널톡 챗봇에 바로 등록할 수 있는 시나리오를 만들었습니다.',
+        tags: ['FAQ작성', '챗봇답변', '고객응대'],
+        deliverable: 'FAQ 매뉴얼 문서 및 챗봇 시나리오 기획서',
         image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '챗봇 시나리오 트리 구축 사례'
+        imageAlt: '챗봇 응대 시나리오 작성 산출물'
       },
       {
         id: 'cs-2',
-        client: '글로벌 역직구 플랫폼 K-뷰티 E사',
-        title: '해외 배송 지연 및 통관 분실 고객 응대 영문/일문 이메일 템플릿 30종',
-        duration: '24시간 납품',
-        result: '해외 고객 응대 리드타임 12시간 → 즉시 3분 이내로 단축, 리뷰 평점 4.8 유지',
-        summary: '미국, 일본 특유의 비즈니스 이메일 매너와 공감 표현을 반영하여 분실/파손/오배송 클레임 시 즉시 사용 가능한 표준 메일 템플릿을 완성했습니다.',
-        tags: ['글로벌CS', '영일문템플릿', '클레임방어'],
-        deliverable: '다국어 매뉴얼 노션 페이지 및 Zendesk 매크로 연동 파일',
+        client: '쇼핑몰 E사',
+        title: '상황별 고객 응대 이메일 및 문자 템플릿 작성',
+        duration: '의뢰 후 24시간 이내',
+        result: '배송 지연, 교환, 환불 등 반복 문의에 빠른 답변 가능',
+        summary: '배송 지연, 단순 변심, 불량 접수 등 자주 발생하는 상황별로 정중하고 명확한 표준 답변 문구를 작성했습니다.',
+        tags: ['응대템플릿', '고객안내문', '클레임대응'],
+        deliverable: '상황별 고객 응대 매뉴얼 및 템플릿 모음',
         image: 'https://images.unsplash.com/photo-1525182008055-f88b95ff7980?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '다국어 CS 템플릿 제작'
+        imageAlt: '고객 응대 템플릿 제작'
       },
       {
         id: 'cs-3',
-        client: '교육 에듀테크 구독 서비스 C사',
-        title: '신규 가입 유저 14일 적응 온보딩 카카오 알림톡 시퀀스 및 FAQ 가이드',
-        duration: '36시간 납품',
-        result: '온보딩 기간 내 무료 체험 유저의 유료 결제 전환율 21% 상승',
-        summary: '가입 1일차, 3일차, 7일차 유저의 핵심 기능 사용 행동에 맞춘 맞춤형 튜토리얼 안내문과 잦은 이탈 구간 극복 팁을 작성했습니다.',
-        tags: ['온보딩시퀀스', '카카오알림톡', '유료전환'],
-        deliverable: '카카오 알림톡 검수 통과 문안 7종 및 노션 유저 사용 가이드',
+        client: '교육 서비스 C사',
+        title: '신규 고객 환영 및 이용 안내 알림톡 문구 작성',
+        duration: '의뢰 후 24~36시간',
+        result: '서비스 가입 후 이용 방법 안내 간소화',
+        summary: '신규 회원이 서비스를 쉽게 이용할 수 있도록 가입 후 단계별 안내 문구와 자주 묻는 질문 안내서를 작성했습니다.',
+        tags: ['알림톡문구', '이용안내', '고객가이드'],
+        deliverable: '카카오 알림톡 문안 및 이용 가이드 문서',
         image: 'https://images.unsplash.com/photo-1534536281715-e28d76689b4d?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '고객 온보딩 알림톡 가이드'
+        imageAlt: '고객 안내 알림톡 문안'
       }
     ],
     detailedTasks: [
-      '기존 문의 내역 분석을 통한 30문 30답 핵심 고객 FAQ 응대 시나리오 설계',
-      '반복 접수되는 클레임 유형별 사과문, 보상 가이드, 표준 해결 가이드라인',
-      '채널톡, 카카오 상담톡 챗봇 초기 트리 구조 및 답변 스크립트 세팅',
-      '신규 고객 온보딩 자동 이메일 시퀀스(웰컴 메일, 사용 가이드) 작성'
+      '자주 묻는 질문(FAQ) 정리 및 표준 답변 스크립트 작성',
+      '배송/환불/클레임 등 상황별 정중한 고객 안내 템플릿',
+      '카카오 상담톡 및 채널톡 챗봇 기본 시나리오 세팅 지원',
+      '신규 고객 가입 환영 및 이용 안내 알림톡/메일 문구 작성'
     ],
     turnaroundTime: '48시간 이내',
-    deliverableSample: 'CS 마스터 매뉴얼 문서, 챗봇 시나리오 기획서'
+    deliverableSample: 'FAQ 매뉴얼 문서, 챗봇 시나리오 기획서'
   },
   {
     id: 'custom',
     number: '07',
     categoryCode: 'WORKFLOW CUSTOM',
     name: '맞춤형 사내 AI 구축',
-    description: '사내 노션/슬랙 연동 AI 비서 구축, 반복 보고서 정기 발송 봇 구성, 전용 프롬프트 라이브러리 공급',
-    tags: ['사내 챗봇', '업무 자동화', '전용 프롬프트', '슬랙 봇'],
+    description: '사내 매뉴얼 답변 챗봇 세팅, 업무용 프롬프트 모음, 반복 작업 자동화 연결',
+    tags: ['사내 챗봇', '프롬프트 모음', '업무 자동화', '노션/슬랙'],
     icon: 'Cpu',
     colorClass: 'rose-600',
     previewImage: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80',
-    previewImageAlt: '사내 챗봇 및 업무 자동화 워크플로우 시스템 포트폴리오',
+    previewImageAlt: '사내 챗봇 및 업무 도구 연결 산출물',
     portfolioExample: {
       id: 'cst-1',
-      client: '임직원 120인 IT 솔루션 기업 K사',
-      title: '사내 복지·휴가·보안규정 즉답 슬랙봇 & 주간 실적 자동 집계 봇 연동',
-      duration: '4일 납품',
-      result: '경영지원팀 단순 질문 답변 소요 시간 하루 평균 2.5시간 절감',
-      summary: '사내 노션 워크스페이스와 연동하여 신규 입사자도 즉시 궁금한 사규를 확인할 수 있는 슬랙 봇을 구축하고 보안 필터링을 세팅했습니다.',
-      deliverable: '동작하는 Slack App Webhook 설정, Zapier 워크플로우 명세서',
+      client: 'IT 기업 K사',
+      title: '사내 규정 및 매뉴얼 답변용 사내 챗봇 세팅',
+      duration: '의뢰 후 3~4일',
+      result: '인사·총무 관련 반복 질문 자동 응답으로 업무 편의 향상',
+      summary: '사내 취업규칙, 복지 혜택, 자주 묻는 사규 문서를 바탕으로 직원들이 슬랙이나 노션에서 바로 물어보고 확인할 수 있는 챗봇을 연결했습니다.',
+      deliverable: '사내 슬랙봇 설정 및 기본 워크플로우 명세서',
       image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80',
-      imageAlt: '사내 슬랙 봇 연동 사례'
+      imageAlt: '사내 슬랙 봇 연동 산출물'
     },
     portfolioCases: [
       {
         id: 'cst-1',
-        client: '임직원 120인 IT 솔루션 기업 K사',
-        title: '사내 복지·휴가·보안규정 즉답 슬랙봇 & 주간 실적 자동 집계 봇 연동',
-        duration: '4일 납품',
-        result: '경영지원팀 단순 질문 답변 소요 시간 하루 평균 2.5시간 절감',
-        summary: '사내 노션 워크스페이스와 연동하여 신규 입사자도 즉시 궁금한 사규를 확인할 수 있는 슬랙 봇을 구축하고 보안 필터링을 세팅했습니다.',
-        tags: ['슬랙봇', '노션연동', '사내업무자동화'],
-        deliverable: '동작하는 Slack App Webhook 설정, Zapier 워크플로우 명세서',
+        client: 'IT 기업 K사',
+        title: '사내 규정 및 매뉴얼 답변용 사내 챗봇 세팅',
+        duration: '의뢰 후 3~4일',
+        result: '인사·총무 관련 반복 질문 자동 응답으로 업무 편의 향상',
+        summary: '사내 취업규칙, 복지 혜택, 자주 묻는 사규 문서를 바탕으로 직원들이 슬랙이나 노션에서 바로 물어보고 확인할 수 있는 챗봇을 연결했습니다.',
+        tags: ['사내챗봇', '업무편의', '사규안내'],
+        deliverable: '사내 슬랙봇 설정 및 기본 워크플로우 명세서',
         image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '사내 슬랙 봇 연동 사례'
+        imageAlt: '사내 슬랙 봇 연동 산출물'
       },
       {
         id: 'cst-2',
-        client: '부동산 자산관리 컨설팅 R사',
-        title: '등기부등본 및 건축물대장 PDF 업로드 시 핵심 권리관계 자동 요약 파이프라인',
-        duration: '5일 납품',
-        result: '물건 분석 소요 시간 건당 40분 → 3분으로 단축, 오탈자 제로',
-        summary: '부동산 공적 장부 PDF를 드롭박스에 넣으면 근저당권, 압류, 용적률 정보를 자동으로 파싱해 사내 노션 DB에 정형화하는 AI 자동화를 구축했습니다.',
-        tags: ['문서자동파싱', '부동산RAG', '드롭박스연동'],
-        deliverable: 'Make.com 시나리오 블루프린트 및 파싱 검증 엔진',
+        client: '부동산 컨설팅 R사',
+        title: '업무용 문서 자동 정리 및 요약 연결',
+        duration: '의뢰 후 3~4일',
+        result: '자료 업로드 시 주요 내용 자동 발췌 및 문서 정리',
+        summary: '자주 들어오는 정형 문서를 폴더에 넣으면 필요한 항목만 뽑아 정리 시트에 자동으로 기록되는 업무 흐름을 만들었습니다.',
+        tags: ['문서요약', '업무자동화', '자료정리'],
+        deliverable: '자동화 워크플로우 설정 및 검증 결과서',
         image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '문서 자동 파싱 워크플로우'
+        imageAlt: '문서 자동 정리 워크플로우'
       },
       {
         id: 'cst-3',
-        client: '광고 마케팅 에이전시 V사',
-        title: '부서별(기획·카피·디자인·개발) 맞춤형 고효율 사내 프롬프트 60선 라이브러리',
-        duration: '3일 납품',
-        result: '전사 AI 툴 활용률 28% → 89%로 급증, 산출물 퀄리티 상향 평준화',
-        summary: '실제 업무 맥락에 최적화된 Few-Shot 프롬프트와 템플릿 변수를 구성하여 사내 위키에 배포하고 실무자 대상 1회 라이브 코칭을 진행했습니다.',
-        tags: ['프롬프트엔지니어링', '사내교육', '생산성혁신'],
-        deliverable: '사내 노션 프롬프트 라이브러리 템플릿 및 활용 매뉴얼',
+        client: '마케팅 대행사 V사',
+        title: '업무에 바로 쓰는 AI 프롬프트 모음 제작',
+        duration: '의뢰 후 2~3일',
+        result: '보고서·메일·아이디어 작성 시 직원들의 AI 활용도 향상',
+        summary: '실제 부서별 업무에서 매일 쓰이는 이메일 작성, 보고서 초안, 문장 다듬기에 최적화된 질문 양식을 정리해 사내에 공유했습니다.',
+        tags: ['프롬프트정리', 'AI활용법', '업무가이드'],
+        deliverable: '사내 업무용 프롬프트 템플릿 및 활용 안내서',
         image: 'https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '프롬프트 라이브러리 구축 사례'
+        imageAlt: '업무용 프롬프트 모음 산출물'
       }
     ],
     detailedTasks: [
-      '사내 규정, 사규, 제품 위키 데이터를 참조해 사내 질문에 즉답하는 슬랙 봇 연동',
-      '매일 오전 9시 전일 실적 및 핵심 일정을 슬랙/잔디로 자동 발송하는 워크플로우',
-      '마케팅/영업/개발 실무진을 위한 부서별 고효율 프롬프트 50선 맞춤 제작',
-      'Zapier / Make 연동 이메일 수신 시 노션 DB 자동 생성 파이프라인'
+      '사내 규정 및 업무 매뉴얼 기반 사내 챗봇 기본 세팅',
+      '자주 쓰는 업무용 AI 프롬프트(보고서, 이메일, 요약) 모음 제작',
+      '구글 시트 및 노션 업무 자동화(새 글 등록 시 알림 등) 연동',
+      '사내 AI 활용을 위한 실무 활용 가이드 및 템플릿 제공'
     ],
-    turnaroundTime: '협의 (평균 3~5일)',
-    deliverableSample: '동작하는 Slack App Webhook 설정, Zapier 워크플로우 명세서'
+    turnaroundTime: '협의 (평균 2~4일)',
+    deliverableSample: '사내 챗봇 세팅 가이드, 업무용 프롬프트 모음집'
   },
   {
     id: 'web',
     number: '08',
     categoryCode: 'WEB & DESIGN SUPPORT',
     name: '랜딩페이지 및 디자인',
-    description: '이벤트 상세페이지 기획/제작, 노코드 웹페이지 신속 구축, 배너 및 인포그래픽 그래픽 작업',
-    tags: ['반응형 웹', '상세페이지', '노코드 제작', '이벤트 배너'],
+    description: '서비스 소개 랜딩페이지, 상품 상세페이지 기획/디자인, 이벤트 배너 제작',
+    tags: ['랜딩페이지', '상세페이지', '배너 디자인', '웹페이지'],
     icon: 'Code2',
     colorClass: 'indigo-600',
     previewImage: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80',
-    previewImageAlt: '웹 랜딩페이지 기획 및 상세페이지 디자인 포트폴리오',
+    previewImageAlt: '웹 랜딩페이지 및 상세페이지 디자인 산출물',
     portfolioExample: {
       id: 'web-1',
-      client: 'HR 테크 기업 H사',
-      title: 'B2B 신규 채용 솔루션 고전환율 프로모션 랜딩페이지 기획 및 제작',
-      duration: '3일 납품',
-      result: '데모 상담 신청 전환율(CVR) 14.2% 기록, 모바일 완벽 최적화',
-      summary: '설득력 있는 카피라이팅과 제품 UI 목업을 조합하여 모바일/데스크톱 완벽 반응형 랜딩페이지를 제작하고 문의 폼을 연동했습니다.',
-      deliverable: 'Figma 디자인 소스 파일, 퍼블리싱 완료된 웹 URL 링크',
+      client: 'HR 기업 H사',
+      title: '서비스 소개 및 프로모션 랜딩페이지 제작',
+      duration: '의뢰 후 3일 이내',
+      result: '모바일과 PC 모두 보기 편한 반응형 소개 페이지 완성',
+      summary: '서비스 핵심 장점과 문의 폼을 보기 쉽게 구성하여 모바일과 PC에서 모두 동작하는 웹 랜딩페이지를 제작했습니다.',
+      deliverable: '디자인 파일 및 오픈 가능한 웹페이지 URL 링크',
       image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1000&q=80',
-      imageAlt: 'B2B 프로모션 랜딩페이지 제작'
+      imageAlt: '서비스 소개 랜딩페이지 제작 산출물'
     },
     portfolioCases: [
       {
         id: 'web-1',
-        client: 'HR 테크 기업 H사',
-        title: 'B2B 신규 채용 솔루션 고전환율 프로모션 랜딩페이지 기획 및 제작',
-        duration: '3일 납품',
-        result: '데모 상담 신청 전환율(CVR) 14.2% 기록, 모바일 완벽 최적화',
-        summary: '설득력 있는 카피라이팅과 제품 UI 목업을 조합하여 모바일/데스크톱 완벽 반응형 랜딩페이지를 제작하고 문의 폼을 연동했습니다.',
-        tags: ['반응형웹', '고전환율', 'B2B랜딩'],
-        deliverable: 'Figma 디자인 소스 파일, 퍼블리싱 완료된 웹 URL 링크',
+        client: 'HR 기업 H사',
+        title: '서비스 소개 및 프로모션 랜딩페이지 제작',
+        duration: '의뢰 후 3일 이내',
+        result: '모바일과 PC 모두 보기 편한 반응형 소개 페이지 완성',
+        summary: '서비스 핵심 장점과 문의 폼을 보기 쉽게 구성하여 모바일과 PC에서 모두 동작하는 웹 랜딩페이지를 제작했습니다.',
+        tags: ['랜딩페이지', '웹페이지제작', '모바일반응형'],
+        deliverable: '디자인 파일 및 오픈 가능한 웹페이지 URL 링크',
         image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: 'B2B 프로모션 랜딩페이지 제작'
+        imageAlt: '서비스 소개 랜딩페이지 제작 산출물'
       },
       {
         id: 'web-2',
-        client: '프리미엄 주방가전 브랜드 K사',
-        title: '와디즈 크라우드 펀딩 억대 펀딩 달성 상세페이지 기획/카피/디자인',
-        duration: '4일 납품',
-        result: '펀딩 오픈 2시간 만에 목표금액 1,500% 달성, 누적 1.8억원 모금',
-        summary: '소비자의 페인포인트를 자극하는 초반 기획 구조와 고화질 3D 렌더링 목업 연출, 스펙 비교표를 완벽한 모바일 맞춤 세로형으로 완성했습니다.',
-        tags: ['와디즈펀딩', '상세페이지', '매출극대화'],
-        deliverable: '모바일 최적화 통이미지 JPG 슬라이스 및 원본 PSD/Figma 파일',
+        client: '생활가전 브랜드 K사',
+        title: '상품 상세페이지 기획 및 디자인',
+        duration: '의뢰 후 3~4일',
+        result: '제품 특장점과 사용법을 알기 쉽게 보여주는 상세페이지 완성',
+        summary: '제품의 특장점, 실제 사용 방법, 구매 전 확인 사항을 깔끔한 그래픽과 사진으로 보기 편하게 세로형 상세페이지로 제작했습니다.',
+        tags: ['상세페이지', '제품소개', '디자인'],
+        deliverable: '모바일 최적화 이미지 파일 및 원본 디자인 파일',
         image: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '크라우드 펀딩 상세페이지 제작'
+        imageAlt: '상품 상세페이지 제작 산출물'
       },
       {
         id: 'web-3',
-        client: '글로벌 유학 및 어학원 스타트업 G사',
-        title: '시즌 맞춤형 인스타그램/구글 배너 20종 세트 & 이벤트 팝업 그래픽',
-        duration: '24시간 납품',
-        result: '여름방학 특강 사전 예약률 전년 대비 45% 증가',
-        summary: '1:1 정방형, 9:16 스토리형, 16:9 GDN 가로형 등 다양한 규격에 맞추어 브랜드 컬러 가이드를 엄격히 준수한 모던한 그래픽을 납품했습니다.',
-        tags: ['배너디자인', '이벤트그래픽', '멀티규격'],
-        deliverable: '규격별 WebP/PNG 이미지 20종 및 카피라이팅 바리에이션',
+        client: '교육 스타트업 G사',
+        title: '이벤트 홍보용 SNS 배너 및 팝업 제작',
+        duration: '의뢰 후 24시간 이내',
+        result: '인스타그램 및 웹사이트용 홍보 배너 규격별 납품',
+        summary: '행사 및 프로모션 안내에 필요한 SNS 피드용 정방형 이미지와 웹사이트 팝업 배너를 깔끔하게 제작했습니다.',
+        tags: ['배너제작', 'SNS이미지', '이벤트홍보'],
+        deliverable: '규격별 배너 이미지 파일 및 원본 파일',
         image: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '시즌 프로모션 배너 디자인 세트'
+        imageAlt: '이벤트 홍보 배너 디자인 산출물'
       }
     ],
     detailedTasks: [
-      'Framer, Webflow 등을 활용한 반응형 고전환율 프로모션 랜딩페이지 제작',
-      '와디즈/텀블벅/스마트스토어 펀딩용 설득 논리 기반 상세페이지 기획/제작',
-      'SNS 마케팅용 규격별(1:1, 9:16, 16:9) 카드 배너 디자인 템플릿',
-      '복잡한 사업 모델 및 비즈니스 프로세스 설명용 인포그래픽 다이어그램'
+      '서비스 소개 및 이벤트 안내를 위한 반응형 랜딩페이지 제작',
+      '네이버 쇼핑, 스마트스토어 상품 상세페이지 기획 및 디자인',
+      '인스타그램 피드 및 블로그 포스팅용 홍보 배너 제작',
+      '회사 소개서 및 제안서용 도식화 및 그래픽 정리'
     ],
     turnaroundTime: '48~72시간 이내',
-    deliverableSample: 'Figma 디자인 소스 파일, 퍼블리싱 완료된 웹 URL 링크'
+    deliverableSample: '디자인 소스 파일, 퍼블리싱 완료된 웹 URL 링크'
   }
 ];
 
@@ -613,42 +631,42 @@ export const TEAM_MEMBERS: TeamMember[] = [
 export const PORTFOLIO_CASES: PortfolioItem[] = [
   {
     id: 'saas',
-    clientType: 'B2B SaaS 기업',
+    clientType: 'B2B 기업',
     duration: '소요: 24시간',
-    title: '경쟁사 15개사 기능 및 가격 비교 리포트',
-    description: '글로벌 주요 경쟁사의 요금제 체계와 핵심 API 스펙을 수집하여 30페이지 분량의 상세 비교표 및 시사점 도출 완료.',
-    metricLabel: '인력 투입 대비',
-    metricValue: '비용 74% 절감',
+    title: '경쟁사 기능 및 가격 비교 조사',
+    description: '동종 업계 주요 경쟁사의 요금제 체계와 핵심 기능을 수집하여 한눈에 비교할 수 있는 정리표 및 요약 보고서 납품.',
+    metricLabel: '조사 소요 시간',
+    metricValue: '24시간 내 납품',
     category: '리서치'
   },
   {
     id: 'ecommerce',
     clientType: '이커머스 브랜드',
     duration: '소요: 36시간',
-    title: '신규 제품군 SEO 최적화 상세페이지 카피',
-    description: '타겟 페르소나별 소구점 12종 개발, 네이버 스마트스토어/쿠팡 상위 노출 키워드를 완벽 적용한 상세페이지 작성.',
-    metricLabel: '전환율(CVR)',
-    metricValue: '+38% 상승',
+    title: '신규 제품 상세페이지 문구 및 기획',
+    description: '제품 특장점과 고객 주요 관심사를 반영하여 읽기 편한 상세페이지 구성 및 상품 소개 문구 작성.',
+    metricLabel: '제작 소요 시간',
+    metricValue: '36시간 내 완료',
     category: '콘텐츠'
   },
   {
     id: 'manufacturing',
-    clientType: '제조/물류 중견기업',
-    duration: '소요: 48시간',
-    title: '사내 영문 계약서 20종 일괄 리스크 검토',
-    description: '해외 바이어 표준 계약서 내 준거법 및 면책 조항 자동 분석 후 한국어 요약표 및 리스크 등급 분류 제공.',
+    clientType: '중소/중견기업',
+    duration: '소요: 24시간',
+    title: '용역 및 거래 계약서 검토 및 수정 의견',
+    description: '계약서 내 자동 연장, 대금 지급 기한, 배상 한도 등 주요 조항을 검토하고 실무 수정 의견서 납품.',
     metricLabel: '검토 소요 시간',
-    metricValue: '85% 단축',
+    metricValue: '24시간 내 납품',
     category: '문서검토'
   },
   {
     id: 'healthcare',
-    clientType: '바이오 헬스케어',
+    clientType: '신규 사업팀',
     duration: '소요: 48시간',
-    title: 'FDA 인허가 가이드라인 분석 및 국문 브리프',
-    description: '미국 FDA 최신 디지털 치료기기 규제 문서 150페이지의 핵심 쟁점 및 임상 요건 요약 보고서 납품.',
-    metricLabel: '리서치 리드타임',
-    metricValue: '2주 → 2일 단축',
+    title: '신규 사업 관련 정부 규제 및 지침 조사',
+    description: '새로 추진하는 사업에 필요한 필수 정부 인허가 절차 및 관련 법률 가이드라인 핵심 요약 보고서 납품.',
+    metricLabel: '조사 소요 시간',
+    metricValue: '48시간 내 납품',
     category: '리서치'
   }
 ];

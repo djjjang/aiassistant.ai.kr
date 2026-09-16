@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1130" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+      text {
+        font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="1130" fill="#FFFFFF"/>
+
+  <!-- Top Badge (2 / 7) -->
+  <rect x="70" y="70" width="56" height="26" rx="13" fill="#FEE2E2"/>
+  <text x="98" y="87" text-anchor="middle" fill="#DC2626" font-size="12" font-weight="700">2 / 7</text>
+
+  <!-- Top Right Section Label -->
+  <text x="730" y="87" text-anchor="end" fill="#6B7280" font-size="14" font-weight="600">문제인식 · Problem</text>
+
+  <!-- Main Heading -->
+  <text x="70" y="165" fill="#111827" font-size="30" font-weight="800" letter-spacing="-0.5">폐식용유 회수율,</text>
+  <text x="70" y="210" fill="#111827" font-size="30" font-weight="800" letter-spacing="-0.5">아직 40%에 머물러 있습니다</text>
+
+  <!-- Horizontal Progress Bar (Ratio 40% : 60%) -->
+  <g transform="translate(70, 270)">
+    <!-- Full track (미회수 60%) -->
+    <rect width="660" height="26" rx="13" fill="#E5E7EB"/>
+    <!-- Active portion (체계적 회수 40% = 264px) -->
+    <rect width="264" height="26" rx="13" fill="#2E7D32"/>
+  </g>
+
+  <!-- Legend below Progress Bar -->
+  <circle cx="75" cy="326" r="4.5" fill="#2E7D32"/>
+  <text x="86" y="330" fill="#2E7D32" font-size="13" font-weight="600">체계적 회수 40%</text>
+
+  <circle cx="650" cy="326" r="4.5" fill="#9CA3AF"/>
+  <text x="662" y="330" fill="#6B7280" font-size="13" font-weight="500">미회수 60%</text>
+
+  <!-- Stat Cards Grid -->
+  <!-- Card 1 (Left) -->
+  <rect x="70" y="375" width="320" height="100" rx="12" fill="#F1F5F9"/>
+  <text x="95" y="425" fill="#0F172A" font-size="28" font-weight="800">52만 톤</text>
+  <text x="95" y="452" fill="#64748B" font-size="13" font-weight="500">연간 폐식용유 총 배출량</text>
+
+  <!-- Card 2 (Right) -->
+  <rect x="410" y="375" width="320" height="100" rx="12" fill="#FFE4E6"/>
+  <text x="435" y="425" fill="#991B1B" font-size="28" font-weight="800">31만 톤</text>
+  <text x="435" y="452" fill="#991B1B" font-size="13" font-weight="500">체계적으로 미회수되는 양</text>
+
+  <!-- Narrative Description Paragraph -->
+  <text x="70" y="535" fill="#4B5563" font-size="15" font-weight="400">
+    <tspan x="70" dy="0">소상공인은 수거처를 찾기 어렵고, 수거업체는 비효율적인 동선으로 운영비 부담이 큽니다. 배출</tspan>
+    <tspan x="70" dy="26">부터 수거까지 정보가 단절되어 있어 회수율이 구조적으로 낮은 수준에 머물러 있습니다.</tspan>
+  </text>
+
+  <!-- Bottom Right Attribution -->
+  <text x="730" y="1030" text-anchor="end" fill="#9CA3AF" font-size="12" font-weight="500">AI 사업계획서 작성 · 트렌드24 업무대행</text>
+</svg>

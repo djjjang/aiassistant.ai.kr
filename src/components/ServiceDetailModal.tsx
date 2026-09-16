@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { X, Clock, CheckCircle, FileText, ArrowRight, ShieldCheck, MessageCircle, Briefcase, Sparkles, Building2, TrendingUp, Layers, ExternalLink } from 'lucide-react';
+import { X, Clock, CheckCircle, FileText, ArrowRight, ShieldCheck, MessageCircle, Briefcase, Sparkles, Building2, TrendingUp, Layers, ExternalLink, ZoomIn } from 'lucide-react';
 import { ServiceItem } from '../types';
+import { ImageZoomModal } from './ImageZoomModal';
 
 interface ServiceDetailModalProps {
   service: ServiceItem | null;
@@ -16,6 +17,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
   onOpenPortfolioGallery
 }) => {
   const [activeTab, setActiveTab] = useState<'specs' | 'portfolio'>('specs');
+  const [zoomImage, setZoomImage] = useState<{ url: string; alt: string; title: string; subtitle: string } | null>(null);
 
   if (!service) return null;
 
@@ -81,14 +83,29 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
             <>
               {/* Service Preview Image */}
               {service.previewImage && (
-                <div className="relative rounded-xl overflow-hidden border border-[#eae6df] shadow-xs aspect-16/9 bg-gray-100 group">
+                <div
+                  onClick={() => {
+                    setZoomImage({
+                      url: service.previewImage!,
+                      alt: service.previewImageAlt || `${service.name} 작업 예시`,
+                      title: `${service.name} 전문 산출물 예시`,
+                      subtitle: `${service.categoryCode} • ${service.number} 표준 납품 규격`
+                    });
+                  }}
+                  className="relative rounded-xl overflow-hidden border border-[#eae6df] shadow-xs aspect-16/9 bg-gray-100 group cursor-zoom-in"
+                  title="클릭하여 고해상도 확대 검토하기"
+                >
                   <img
                     src={service.previewImage}
                     alt={service.previewImageAlt || `${service.name} 작업 예시`}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3">
+                  <div className="absolute top-2.5 right-2.5 bg-black/60 hover:bg-black/80 backdrop-blur-xs text-white px-2 py-0.5 rounded-md text-[10px] font-bold flex items-center gap-1 border border-white/20 shadow-xs">
+                    <ZoomIn className="w-3 h-3 text-[#f05a22]" />
+                    <span>확대 검토</span>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3 pointer-events-none">
                     <span className="text-[11px] font-bold text-white flex items-center gap-1.5">
                       <Sparkles className="w-3.5 h-3.5 text-[#f05a22]" />
                       {service.name} 전문 산출물 예시
@@ -178,14 +195,29 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
 
               {/* Case Study Image Banner */}
               {service.previewImage && (
-                <div className="relative rounded-xl overflow-hidden border border-[#eae6df] shadow-xs aspect-16/9 bg-gray-100">
+                <div
+                  onClick={() => {
+                    setZoomImage({
+                      url: service.previewImage!,
+                      alt: service.portfolioExample?.title || `${service.name} 포트폴리오`,
+                      title: service.portfolioExample?.title || `${service.name} 대표 포트폴리오`,
+                      subtitle: `${service.portfolioExample?.client || '검증 고객사'} • ${service.portfolioExample?.result || '성과 지표'}`
+                    });
+                  }}
+                  className="relative rounded-xl overflow-hidden border border-[#eae6df] shadow-xs aspect-16/9 bg-gray-100 group cursor-zoom-in"
+                  title="클릭하여 고해상도 확대 검토하기"
+                >
                   <img
                     src={service.previewImage}
                     alt={service.portfolioExample?.title || `${service.name} 포트폴리오`}
                     referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-103 transition duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0f2439]/85 via-[#0f2439]/30 to-transparent flex flex-col justify-end p-3.5 text-white">
+                  <div className="absolute top-2.5 right-2.5 bg-black/60 hover:bg-black/80 backdrop-blur-xs text-white px-2 py-0.5 rounded-md text-[10px] font-bold flex items-center gap-1 border border-white/20 shadow-xs">
+                    <ZoomIn className="w-3 h-3 text-[#f05a22]" />
+                    <span>확대 검토</span>
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0f2439]/85 via-[#0f2439]/30 to-transparent flex flex-col justify-end p-3.5 text-white pointer-events-none">
                     <span className="text-[10px] uppercase tracking-wider font-extrabold text-[#f05a22] mb-0.5">
                       VERIFIED PORTFOLIO CASE
                     </span>
@@ -287,6 +319,18 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
           </div>
         </div>
       </div>
+
+      {/* High-Resolution Zoom Modal */}
+      {zoomImage && (
+        <ImageZoomModal
+          isOpen={!!zoomImage}
+          onClose={() => setZoomImage(null)}
+          imageUrl={zoomImage.url}
+          imageAlt={zoomImage.alt}
+          title={zoomImage.title}
+          subtitle={zoomImage.subtitle}
+        />
+      )}
     </div>
   );
 };

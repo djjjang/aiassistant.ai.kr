@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+      text {
+        font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+      }
+    </style>
+    <!-- Drop shadow for document sheets -->
+    <filter id="card-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Modern Dark/Navy Slate Background -->
+  <rect width="1200" height="630" fill="#0F2439"/>
+  <circle cx="1100" cy="100" r="300" fill="#1E3A5F" opacity="0.4"/>
+  <circle cx="100" cy="550" r="250" fill="#132B45" opacity="0.6"/>
+
+  <!-- Top Title Header -->
+  <g transform="translate(60, 50)">
+    <rect x="0" y="0" width="130" height="24" rx="6" fill="#F05A22"/>
+    <text x="65" y="16" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="800" letter-spacing="1">실제 납품 사례</text>
+    <text x="145" y="18" fill="#FFFFFF" font-size="18" font-weight="800">2026 TIPS 지원사업 사업계획서 기획 및 작성 산출물</text>
+    <text x="145" y="38" fill="#94A3B8" font-size="12">신청기업: (주)오일루프 | 과제명: AI 기반 폐식용유 수거 매칭 플랫폼</text>
+  </g>
+
+  <!-- 4 Pages Spread Side by Side -->
+  <!-- Page 1: 표지 / 사업개요 -->
+  <g transform="translate(60, 110)" filter="url(#card-shadow)">
+    <rect width="255" height="360" rx="8" fill="#FFFFFF"/>
+    <!-- Badge -->
+    <rect x="18" y="18" width="40" height="16" rx="8" fill="#E8F5E9"/>
+    <text x="38" y="30" text-anchor="middle" fill="#2E7D32" font-size="9" font-weight="700">1 / 7</text>
+    <text x="237" y="30" text-anchor="end" fill="#6B7280" font-size="9" font-weight="600">사업개요</text>
+
+    <!-- Subtitle -->
+    <text x="127" y="85" text-anchor="middle" fill="#6B7280" font-size="8" font-weight="600">2026 TIPS 사업계획서</text>
+
+    <!-- Circle Icon -->
+    <circle cx="127" cy="120" r="22" fill="#D7F3E3"/>
+    <g transform="translate(116, 109)" fill="none" stroke="#1B8748" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 10a6 6 0 0 1 10 -3.5l1.5 1.5"/>
+      <path d="M15 5v3.5h-3.5"/>
+      <path d="M26 20a6 6 0 0 1 -10 3.5l-1.5 -1.5"/>
+      <path d="M15 25v-3.5h3.5"/>
+    </g>
+
+    <!-- Brand -->
+    <text x="127" y="160" text-anchor="middle" fill="#111827" font-size="14" font-weight="800">오일루프</text>
+    <text x="127" y="173" text-anchor="middle" fill="#1B8748" font-size="8" font-weight="800" letter-spacing="1.5">OILLOOP</text>
+
+    <!-- Title -->
+    <text x="127" y="210" text-anchor="middle" fill="#111827" font-size="15" font-weight="800">AI 기반 폐식용유</text>
+    <text x="127" y="230" text-anchor="middle" fill="#111827" font-size="15" font-weight="800">수거 매칭 플랫폼</text>
+
+    <text x="127" y="256" text-anchor="middle" fill="#6B7280" font-size="8">배출처와 수거업체를 연결하는</text>
+    <text x="127" y="268" text-anchor="middle" fill="#6B7280" font-size="8">스마트 폐자원 유통망</text>
+
+    <line x1="18" y1="310" x2="237" y2="310" stroke="#E5E7EB" stroke-width="1"/>
+    <text x="18" y="330" fill="#111827" font-size="8" font-weight="700">신청기업 <tspan font-weight="400" fill="#4B5563">(주)오일루프</tspan></text>
+    <text x="18" y="342" fill="#111827" font-size="8" font-weight="700">제출일 <tspan font-weight="400" fill="#4B5563">2026. 09.</tspan></text>
+  </g>
+
+  <!-- Page 2: 문제인식 -->
+  <g transform="translate(335, 110)" filter="url(#card-shadow)">
+    <rect width="255" height="360" rx="8" fill="#FFFFFF"/>
+    <!-- Badge -->
+    <rect x="18" y="18" width="40" height="16" rx="8" fill="#FEE2E2"/>
+    <text x="38" y="30" text-anchor="middle" fill="#DC2626" font-size="9" font-weight="700">2 / 7</text>
+    <text x="237" y="30" text-anchor="end" fill="#6B7280" font-size="9" font-weight="600">문제인식</text>
+
+    <!-- Heading -->
+    <text x="18" y="70" fill="#111827" font-size="13" font-weight="800">폐식용유 회수율,</text>
+    <text x="18" y="88" fill="#111827" font-size="13" font-weight="800">아직 40%에 머물러 있습니다</text>
+
+    <!-- Progress Bar -->
+    <rect x="18" y="115" width="219" height="12" rx="6" fill="#E5E7EB"/>
+    <rect x="18" y="115" width="88" height="12" rx="6" fill="#2E7D32"/>
+    <circle cx="24" cy="138" r="3" fill="#2E7D32"/>
+    <text x="32" y="141" fill="#2E7D32" font-size="8" font-weight="700">체계적 회수 40%</text>
+    <circle cx="210" cy="138" r="3" fill="#9CA3AF"/>
+    <text x="204" y="141" text-anchor="end" fill="#6B7280" font-size="8">미회수 60%</text>
+
+    <!-- Stat Cards -->
+    <rect x="18" y="160" width="104" height="56" rx="6" fill="#F1F5F9"/>
+    <text x="30" y="188" fill="#0F172A" font-size="14" font-weight="800">52만 톤</text>
+    <text x="30" y="204" fill="#64748B" font-size="8">연간 총 배출량</text>
+
+    <rect x="133" y="160" width="104" height="56" rx="6" fill="#FFE4E6"/>
+    <text x="145" y="188" fill="#991B1B" font-size="14" font-weight="800">31만 톤</text>
+    <text x="145" y="204" fill="#991B1B" font-size="8">체계적 미회수량</text>
+
+    <text x="18" y="245" fill="#4B5563" font-size="8">소상공인은 수거처를 찾기 어렵고,</text>
+    <text x="18" y="258" fill="#4B5563" font-size="8">수거업체는 비효율적인 동선으로</text>
+    <text x="18" y="271" fill="#4B5563" font-size="8">운영비 부담이 커 회수율이 낮습니다.</text>
+
+    <text x="237" y="342" text-anchor="end" fill="#9CA3AF" font-size="7">트렌드24 업무대행</text>
+  </g>
+
+  <!-- Page 3: 실현가능성 -->
+  <g transform="translate(610, 110)" filter="url(#card-shadow)">
+    <rect width="255" height="360" rx="8" fill="#FFFFFF"/>
+    <!-- Badge -->
+    <rect x="18" y="18" width="40" height="16" rx="8" fill="#FEF3C7"/>
+    <text x="38" y="30" text-anchor="middle" fill="#B45309" font-size="9" font-weight="700">3 / 7</text>
+    <text x="237" y="30" text-anchor="end" fill="#6B7280" font-size="9" font-weight="600">실현가능성</text>
+
+    <!-- Heading -->
+    <text x="18" y="70" fill="#111827" font-size="13" font-weight="800">실시간 매칭으로</text>
+    <text x="18" y="88" fill="#111827" font-size="13" font-weight="800">수거 효율을 높입니다</text>
+
+    <!-- Flow -->
+    <circle cx="50" cy="130" r="18" fill="#D7F3E3"/>
+    <circle cx="50" cy="130" r="4" fill="#1B8748"/>
+    <text x="50" y="160" text-anchor="middle" fill="#111827" font-size="8" font-weight="700">배출처 등록</text>
+
+    <line x1="75" y1="130" x2="105" y2="130" stroke="#9CA3AF" stroke-width="1.5"/>
+
+    <circle cx="127" cy="130" r="18" fill="#2563EB"/>
+    <polygon points="127,122 130,128 136,130 130,132 127,138 124,132 118,130 124,128" fill="#FFFFFF"/>
+    <text x="127" y="160" text-anchor="middle" fill="#111827" font-size="8" font-weight="700">AI 매칭</text>
+
+    <line x1="150" y1="130" x2="180" y2="130" stroke="#9CA3AF" stroke-width="1.5"/>
+
+    <circle cx="205" cy="130" r="18" fill="#D7F3E3"/>
+    <polyline points="200,130 203,133 209,127" fill="none" stroke="#1B8748" stroke-width="1.8"/>
+    <text x="205" y="160" text-anchor="middle" fill="#111827" font-size="8" font-weight="700">수거 · 정산</text>
+
+    <!-- Checklist -->
+    <g transform="translate(18, 195)">
+      <circle cx="6" cy="6" r="6" fill="#D7F3E3"/>
+      <polyline points="4,6 5.5,7.5 8,4.5" fill="none" stroke="#1B8748" stroke-width="1.2"/>
+      <text x="18" y="9" fill="#1F2937" font-size="8" font-weight="600">실시간 위치 기반 매칭</text>
+
+      <circle cx="6" cy="28" r="6" fill="#D7F3E3"/>
+      <polyline points="4,28 5.5,29.5 8,26.5" fill="none" stroke="#1B8748" stroke-width="1.2"/>
+      <text x="18" y="31" fill="#1F2937" font-size="8" font-weight="600">자동 정산 및 정산 리포트</text>
+
+      <circle cx="6" cy="50" r="6" fill="#D7F3E3"/>
+      <polyline points="4,50 5.5,51.5 8,48.5" fill="none" stroke="#1B8748" stroke-width="1.2"/>
+      <text x="18" y="53" fill="#1F2937" font-size="8" font-weight="600">수거 이력 데이터 관리</text>
+    </g>
+
+    <text x="237" y="342" text-anchor="end" fill="#9CA3AF" font-size="7">트렌드24 업무대행</text>
+  </g>
+
+  <!-- Page 4: 성장전략 -->
+  <g transform="translate(885, 110)" filter="url(#card-shadow)">
+    <rect width="255" height="360" rx="8" fill="#FFFFFF"/>
+    <!-- Badge -->
+    <rect x="18" y="18" width="40" height="16" rx="8" fill="#E0E7FF"/>
+    <text x="38" y="30" text-anchor="middle" fill="#4338CA" font-size="9" font-weight="700">4 / 7</text>
+    <text x="237" y="30" text-anchor="end" fill="#6B7280" font-size="9" font-weight="600">성장전략</text>
+
+    <!-- Heading -->
+    <text x="18" y="70" fill="#111827" font-size="13" font-weight="800">수도권 파일럿에서</text>
+    <text x="18" y="88" fill="#111827" font-size="13" font-weight="800">전국 유통망으로</text>
+
+    <!-- Timeline -->
+    <g transform="translate(18, 115)">
+      <line x1="5" y1="5" x2="5" y2="85" stroke="#D1D5DB" stroke-width="1.5"/>
+
+      <circle cx="5" cy="5" r="4" fill="#2E7D32"/>
+      <text x="16" y="8" fill="#111827" font-size="9" font-weight="700">2026 · 수도권 파일럿</text>
+      <text x="16" y="20" fill="#6B7280" font-size="7">초기 서비스 검증 및 수거망</text>
+
+      <circle cx="5" cy="45" r="4" fill="#2E7D32"/>
+      <text x="16" y="48" fill="#111827" font-size="9" font-weight="700">2027 · 전국 확장</text>
+      <text x="16" y="60" fill="#6B7280" font-size="7">프랜차이즈 · 급식업체 제휴</text>
+
+      <circle cx="5" cy="85" r="4" fill="#2E7D32"/>
+      <text x="16" y="88" fill="#111827" font-size="9" font-weight="700">2028 · 원료 공급망</text>
+      <text x="16" y="100" fill="#6B7280" font-size="7">바이오디젤 B2B 채널 확보</text>
+    </g>
+
+    <!-- 3 Stat Boxes -->
+    <g transform="translate(18, 245)">
+      <rect x="0" y="0" width="68" height="42" rx="4" fill="#F1F5F9"/>
+      <text x="34" y="20" text-anchor="middle" fill="#0F172A" font-size="11" font-weight="800">500곳</text>
+      <text x="34" y="33" text-anchor="middle" fill="#64748B" font-size="6.5">목표 수거처</text>
+
+      <rect x="75" y="0" width="68" height="42" rx="4" fill="#F1F5F9"/>
+      <text x="109" y="20" text-anchor="middle" fill="#0F172A" font-size="11" font-weight="800">1,200t</text>
+      <text x="109" y="33" text-anchor="middle" fill="#64748B" font-size="6.5">목표 수거량</text>
+
+      <rect x="151" y="0" width="68" height="42" rx="4" fill="#F1F5F9"/>
+      <text x="185" y="20" text-anchor="middle" fill="#0F172A" font-size="11" font-weight="800">70%</text>
+      <text x="185" y="33" text-anchor="middle" fill="#64748B" font-size="6.5">R&amp;D 지원금</text>
+    </g>
+
+    <text x="237" y="342" text-anchor="end" fill="#9CA3AF" font-size="7">트렌드24 업무대행</text>
+  </g>
+
+  <!-- Bottom CTA / Legend -->
+  <g transform="translate(60, 520)">
+    <rect width="1080" height="60" rx="12" fill="#14324F" stroke="#1E446B" stroke-width="1"/>
+    <text x="24" y="35" fill="#FFFFFF" font-size="14" font-weight="700">💡 각 페이지별 원본을 클릭하여 1p 표지, 2p 문제인식, 3p 해결방안, 4p 성장전략을 고해상도로 검토하실 수 있습니다.</text>
+    <text x="1056" y="35" text-anchor="end" fill="#F05A22" font-size="12" font-weight="700">총 7개 페이지 중 핵심 4개 페이지 발췌</text>
+  </g>
+</svg>
