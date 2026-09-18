@@ -65,26 +65,28 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
   return (
     <section
       id="services-section"
-      className="py-12 px-5 bg-white border-y border-[#eae6df]"
+      className="py-14 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white border-y border-[#eae6df]"
       data-purpose="services-section"
     >
-      <div className="max-w-md md:max-w-4xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header Title */}
-        <div className="mb-6">
-          <span className="text-xs font-bold text-[#f05a22] tracking-wider uppercase mb-1 block">
-            AI BUSINESS WORK POOL
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-black text-[#0f2439] leading-snug">
-            기업의 모든 반복 업무,<br />
-            8개 업무영역으로 완벽 대행합니다
-          </h2>
-          <p className="text-xs sm:text-sm text-gray-500 mt-2 leading-relaxed max-w-xl">
+        <div className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
+          <div>
+            <span className="text-xs font-bold text-[#f05a22] tracking-wider uppercase mb-1 block">
+              AI BUSINESS WORK POOL
+            </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0f2439] leading-snug">
+              기업의 모든 반복 업무,<br />
+              8개 업무영역으로 완벽 대행합니다
+            </h2>
+          </div>
+          <p className="text-xs sm:text-sm text-gray-500 leading-relaxed max-w-lg">
             원하시는 업무를 클릭하시면 <strong>실제 납품 사례(포트폴리오)와 산출물 예시</strong>, 상세 작업 스펙을 바로 확인하실 수 있습니다.
           </p>
         </div>
 
         {/* Filter Pills */}
-        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-3 mb-4">
+        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-3 mb-6">
           <button
             onClick={() => setSelectedFilter('all')}
             className={`text-xs px-3 py-1.5 rounded-full font-bold transition-colors whitespace-nowrap cursor-pointer ${
@@ -138,7 +140,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         </div>
 
         {/* Service Cards List / Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5" id="service-list">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5" id="service-list">
           {filteredServices.map((service, index) => {
             const isHighlight = service.id === 'document' && selectedFilter === 'all';
 
@@ -147,7 +149,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 <div
                   key={service.id}
                   onClick={() => onSelectService(service)}
-                  className="rounded-2xl bg-[#0f2439] text-white p-5 shadow-lg border border-[#0f2439] relative overflow-hidden cursor-pointer group hover:scale-[1.01] transition-transform md:col-span-2"
+                  className="rounded-2xl bg-[#0f2439] text-white p-6 shadow-lg border border-[#0f2439] relative overflow-hidden cursor-pointer group hover:scale-[1.01] transition-transform md:col-span-2 lg:col-span-2 xl:col-span-2 flex flex-col justify-between"
                 >
                   <div className="flex justify-between items-start mb-3">
                     <div className="w-9 h-9 rounded-xl bg-[#f05a22] text-white flex items-center justify-center font-bold shadow-xs">
@@ -287,13 +289,13 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         </div>
 
         {/* Quick CTA Button Under Service Grid */}
-        <div className="mt-8 pt-4 text-center max-w-md mx-auto">
+        <div className="mt-10 pt-4 text-center max-w-lg mx-auto">
           <a
             id="services-kakao-cta"
             href="http://pf.kakao.com/_xnSxeiT/chat"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center w-full py-3.5 px-4 rounded-xl bg-[#f05a22] text-white font-bold text-sm shadow-md hover:bg-[#d94e1c] active:scale-[0.98] transition cursor-pointer gap-2 select-none"
+            className="inline-flex items-center justify-center w-full py-3.5 px-6 rounded-xl bg-[#f05a22] text-white font-bold text-sm shadow-md hover:bg-[#d94e1c] active:scale-[0.98] transition cursor-pointer gap-2 select-none"
           >
             <MessageCircle className="w-4 h-4 fill-white" />
             <span>우리 기업에 필요한 업무 카카오톡 상담받기</span>

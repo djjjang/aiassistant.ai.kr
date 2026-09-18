@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header';
 import { HeroSection } from './components/HeroSection';
 import { ServicesSection } from './components/ServicesSection';
@@ -18,13 +18,38 @@ import { Footer } from './components/Footer';
 import { FloatingCTA } from './components/FloatingCTA';
 import { ServiceDetailModal } from './components/ServiceDetailModal';
 import { ServicePortfolioModal } from './components/ServicePortfolioModal';
-import { ServiceItem } from './types';
+import { PaymentModal } from './components/PaymentModal';
+import { MyDashboardModal } from './components/MyDashboardModal';
+import { ServiceItem, PaymentItemSelection, PaymentReceipt } from './types';
 
 export default function App() {
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
   const [selectedPortfolioService, setSelectedPortfolioService] = useState<ServiceItem | null>(null);
   const [selectedPlanId, setSelectedPlanId] = useState<string>('business_pro');
   const [prefilledTaskType, setPrefilledTaskType] = useState<string>('document');
+
+  // Payment & Dashboard state
+  const [isPaymentOpen, setIsPaymentOpen] = useState<boolean>(false);
+  const [isDashboardOpen, setIsDashboardOpen] = useState<boolean>(false);
+  const [dashboardInitialTab, setDashboardInitialTab] = useState<'tasks' | 'payments'>('tasks');
+  const [paymentSelection, setPaymentSelection] = useState<PaymentItemSelection | null>(null);
+  const [userCredits, setUserCredits] = useState<number>(0);
+
+  const handleOpenDashboard = (tab: 'tasks' | 'payments' = 'tasks') => {
+    setDashboardInitialTab(tab);
+    setIsDashboardOpen(true);
+  };
+
+  useEffect(() => {
+    try {
+      const stored = localStorage.getItem('user_credits');
+      if (stored) {
+        setUserCredits(parseInt(stored, 10));
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  }, []);
 
   const handleSelectService = (service: ServiceItem) => {
     setSelectedService(service);
@@ -59,10 +84,35 @@ export default function App() {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const handleOpenPayment = (selection?: PaymentItemSelection) => {
+    setPaymentSelection(selection || {
+      type: 'plan',
+      id: selectedPlanId,
+      name: '비즈니스 프로',
+      price: 590000,
+      billingCycle: 'monthly'
+    });
+    setIsPaymentOpen(true);
+  };
+
+  const handlePaymentSuccess = (receipt: PaymentReceipt) => {
+    if (receipt.creditsAdded) {
+      setUserCredits((prev) => prev + (receipt.creditsAdded || 0));
+    }
+    if (receipt.activatedPlanId) {
+      setSelectedPlanId(receipt.activatedPlanId);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-[#1a202c] relative flex flex-col font-sans overflow-x-clip">
       {/* Sticky / Fixed Header */}
-      <Header onOpenConsultation={handleOpenConsultation} />
+      <Header
+        onOpenConsultation={handleOpenConsultation}
+        onOpenPayment={() => handleOpenPayment()}
+        onOpenDashboard={handleOpenDashboard}
+        userCredits={userCredits}
+      />
 
       {/* Main Content Sections with top offset for fixed header */}
       <main className="flex-1 pt-14 sm:pt-16">
@@ -88,8 +138,11 @@ export default function App() {
         {/* 6. Client Reviews (Verified Quotes & Photos) */}
         <ClientReviewsSection />
 
-        {/* 7. Transparent Pricing Plans */}
-        <PricingPlans onSelectPlan={handleSelectPlan} />
+        {/* 7. Transparent Pricing Plans & Credit Purchases */}
+        <PricingPlans
+          onSelectPlan={handleSelectPlan}
+          onOpenPayment={handleOpenPayment}
+        />
 
         {/* 8. FAQ Section */}
         <FAQSection />
@@ -98,11 +151,13 @@ export default function App() {
         <LeadCaptureForm
           selectedPlanId={selectedPlanId}
           prefilledTaskType={prefilledTaskType}
+          onOpenPayment={() => handleOpenPayment()}
+          userCredits={userCredits}
         />
       </main>
 
       {/* Footer */}
-      <Footer />
+      <Footer onOpenDashboard={handleOpenDashboard} />
 
       {/* Floating Action Button */}
       <FloatingCTA />
@@ -120,6 +175,32 @@ export default function App() {
         service={selectedPortfolioService}
         onClose={() => setSelectedPortfolioService(null)}
         onApplyService={handleApplyServiceFromModal}
+      />
+
+      {/* Payment & Credit Recharge Modal */}
+      <PaymentModal
+        isOpen={isPaymentOpen}
+        onClose={() => setIsPaymentOpen(false)}
+        initialSelection={paymentSelection}
+        onPaymentSuccess={handlePaymentSuccess}
+        onOpenDashboard={() => handleOpenDashboard('payments')}
+      />
+
+      {/* MyPage / Payment History Dashboard Modal */}
+      <MyDashboardModal
+        isOpen={isDashboardOpen}
+        onClose={() => setIsDashboardOpen(false)}
+        userCredits={userCredits}
+        selectedPlanId={selectedPlanId}
+        initialTab={dashboardInitialTab}
+        onOpenPayment={(selection) => {
+          setIsDashboardOpen(false);
+          handleOpenPayment(selection);
+        }}
+        onOpenConsultation={() => {
+          setIsDashboardOpen(false);
+          handleOpenConsultation();
+        }}
       />
     </div>
   );

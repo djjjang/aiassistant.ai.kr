@@ -40,43 +40,43 @@ export const HowItWorks: React.FC = () => {
   return (
     <section
       id="process-timeline"
-      className="py-12 px-5 bg-white border-t border-[#eae6df]"
+      className="py-14 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-[#eae6df]"
       data-purpose="process-timeline"
     >
-      <div className="max-w-md md:max-w-4xl mx-auto">
-        <div className="text-center mb-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-10">
           <span className="text-xs font-bold text-[#f05a22] uppercase tracking-wider block mb-1">
             HOW IT WORKS
           </span>
-          <h2 className="text-2xl sm:text-3xl font-black text-[#0f2439]">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0f2439]">
             요청부터 전달까지,<br />
             평균 48시간
           </h2>
-          <p className="text-xs sm:text-sm text-gray-500 mt-1">
-            간소화된 4단계 프로세스로 실무 병목을 없앱니다
+          <p className="text-sm text-gray-500 mt-2">
+            간소화된 4단계 프로세스로 사내 실무 병목을 즉각 해소합니다
           </p>
         </div>
 
-        {/* Step Items Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+        {/* Step Items Grid (4 Columns on PC) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {steps.map((step, idx) => (
             <div
               key={idx}
-              className="flex items-start gap-3.5 p-4 rounded-2xl bg-[#fbf9f5] border border-[#eae6df] hover:border-[#0f2439]/30 transition-colors"
+              className="flex flex-col justify-between p-5 rounded-2xl bg-[#fbf9f5] border border-[#eae6df] hover:border-[#0f2439]/40 hover:shadow-md transition-all relative group"
             >
-              <div
-                className={`w-9 h-9 rounded-xl ${step.numBg} text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-2xs`}
-              >
-                {step.num}
-              </div>
-              <div className="flex-1">
-                <div className="flex items-center justify-between mb-1">
-                  <h4 className="text-sm font-bold text-[#0f2439]">{step.title}</h4>
-                  <span className="text-[10px] text-gray-400 bg-white px-2 py-0.5 rounded border border-gray-200">
+              <div>
+                <div className="flex items-center justify-between mb-4">
+                  <div
+                    className={`w-10 h-10 rounded-xl ${step.numBg} text-white flex items-center justify-center font-bold text-sm shrink-0 shadow-2xs group-hover:scale-105 transition-transform`}
+                  >
+                    {step.num}
+                  </div>
+                  <span className="text-[11px] font-bold text-gray-500 bg-white px-2.5 py-0.5 rounded-full border border-gray-200">
                     {step.tag}
                   </span>
                 </div>
-                <p className="text-xs text-gray-600 leading-relaxed">{step.description}</p>
+                <h4 className="text-base font-bold text-[#0f2439] mb-2">{step.title}</h4>
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">{step.description}</p>
               </div>
             </div>
           ))}

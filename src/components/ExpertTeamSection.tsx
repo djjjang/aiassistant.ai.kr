@@ -9,34 +9,34 @@ export const ExpertTeamSection: React.FC = () => {
   return (
     <section
       id="expert-team"
-      className="py-12 px-5 max-w-md md:max-w-4xl mx-auto"
+      className="py-14 lg:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
       data-purpose="expert-team"
     >
-      <div className="mb-6 text-left">
+      <div className="mb-8 text-left">
         <span className="text-xs font-bold text-[#f05a22] tracking-wider uppercase mb-1 block">
           HUMAN IN THE LOOP
         </span>
-        <h2 className="text-2xl sm:text-3xl font-black text-[#0f2439] leading-snug">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0f2439] leading-snug">
           AI와 함께 일하는<br />
           검증된 전문가 팀
         </h2>
-        <p className="text-xs sm:text-sm text-gray-600 mt-2 leading-relaxed max-w-2xl">
+        <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed max-w-3xl">
           AI가 초안을 완성하고, 분야별 현업 5년 차 이상의 전문 인력이{' '}
           <strong className="text-[#0f2439]">정밀 검수(Human Review)</strong>를 거쳐
-          무결점의 결과물을 납품합니다.
+          무결점의 고품질 결과물만을 납품합니다.
         </p>
       </div>
 
       {/* Team Member Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
         {TEAM_MEMBERS.map((member) => (
           <div
             key={member.id}
             onClick={() => setSelectedMember(member)}
-            className="bg-white rounded-2xl overflow-hidden border border-[#eae6df] shadow-xs flex flex-col hover:shadow-md hover:border-[#0f2439]/30 transition-all cursor-pointer group"
+            className="bg-white rounded-2xl overflow-hidden border border-[#eae6df] shadow-2xs flex flex-col hover:shadow-xl hover:border-[#0f2439]/40 transition-all cursor-pointer group"
           >
             {/* Image Container with Gradient Overlay */}
-            <div className="h-64 relative bg-stone-200 overflow-hidden">
+            <div className="h-64 sm:h-72 lg:h-80 relative bg-stone-200 overflow-hidden">
               <img
                 src={member.image}
                 alt={member.name}

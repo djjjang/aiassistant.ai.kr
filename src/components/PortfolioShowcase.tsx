@@ -19,38 +19,38 @@ export const PortfolioShowcase: React.FC = () => {
   return (
     <section
       id="portfolio-showcase"
-      className="py-12 bg-[#0a1928] text-white"
+      className="py-14 lg:py-20 bg-[#0a1928] text-white"
       data-purpose="portfolio-showcase"
     >
-      <div className="px-5 max-w-md md:max-w-4xl mx-auto">
-        <div className="flex items-end justify-between mb-6">
+      <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="flex items-end justify-between mb-8">
           <div>
             <span className="text-[10px] font-bold text-[#f05a22] tracking-widest uppercase block mb-1">
               PORTFOLIO CASE STUDY
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black tracking-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight">
               결과로 증명합니다.
             </h2>
-            <p className="text-xs text-gray-400 mt-1">
-              실제 AI비서 팀이 진행한 기업별 실무 납품 사례입니다.
+            <p className="text-sm text-gray-400 mt-2">
+              실제 AI비서 팀이 진행한 기업별 실무 납품 및 자동화 성공 사례입니다.
             </p>
           </div>
 
           {/* Slider navigation arrows */}
-          <div className="flex items-center gap-1.5 shrink-0">
+          <div className="flex items-center gap-2 shrink-0">
             <button
               onClick={() => handleScroll('left')}
-              className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition cursor-pointer"
+              className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition cursor-pointer"
               aria-label="이전 사례"
             >
-              <ChevronLeft className="w-4 h-4" />
+              <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={() => handleScroll('right')}
-              className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition cursor-pointer"
+              className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition cursor-pointer"
               aria-label="다음 사례"
             >
-              <ChevronRight className="w-4 h-4" />
+              <ChevronRight className="w-5 h-5" />
             </button>
           </div>
         </div>
@@ -58,12 +58,12 @@ export const PortfolioShowcase: React.FC = () => {
         {/* Showcase Card Slider (Horizontal Scroll with snap) */}
         <div
           ref={scrollRef}
-          className="flex gap-4 overflow-x-auto no-scrollbar pb-3 snap-x scroll-smooth"
+          className="flex gap-5 overflow-x-auto no-scrollbar pb-4 snap-x scroll-smooth"
         >
           {PORTFOLIO_CASES.map((item) => (
             <div
               key={item.id}
-              className="w-[280px] sm:w-[320px] shrink-0 bg-white/5 border border-white/10 rounded-2xl p-5 snap-center flex flex-col justify-between hover:border-white/25 transition-all"
+              className="w-[300px] sm:w-[340px] lg:w-[390px] shrink-0 bg-white/5 border border-white/10 rounded-2xl p-6 snap-center flex flex-col justify-between hover:border-white/25 hover:bg-white/8 transition-all"
             >
               <div>
                 <div className="flex items-center justify-between text-[11px] text-gray-400 mb-3">

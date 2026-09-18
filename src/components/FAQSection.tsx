@@ -12,17 +12,17 @@ export const FAQSection: React.FC = () => {
   return (
     <section
       id="faq-section"
-      className="py-12 px-5 max-w-md md:max-w-4xl mx-auto"
+      className="py-14 lg:py-20 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto"
       data-purpose="faq-section"
     >
-      <div className="text-center mb-6">
+      <div className="text-center mb-10">
         <span className="text-xs font-bold text-[#f05a22] uppercase tracking-wider block mb-1">
           FREQUENTLY ASKED QUESTIONS
         </span>
-        <h2 className="text-2xl sm:text-3xl font-black text-[#0f2439]">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0f2439]">
           궁금한 점을 미리 확인하세요
         </h2>
-        <p className="text-xs text-gray-500 mt-1">
+        <p className="text-sm text-gray-500 mt-2">
           보안, 계약 방식, 커뮤니케이션 툴 연동에 대한 주요 답변입니다.
         </p>
       </div>

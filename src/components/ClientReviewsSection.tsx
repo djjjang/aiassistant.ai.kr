@@ -6,30 +6,30 @@ export const ClientReviewsSection: React.FC = () => {
   return (
     <section
       id="customer-reviews"
-      className="py-12 px-5 max-w-md md:max-w-4xl mx-auto"
+      className="py-14 lg:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto"
       data-purpose="customer-reviews"
     >
-      <div className="text-center mb-6">
+      <div className="text-center mb-10">
         <span className="text-xs font-bold text-[#f05a22] uppercase tracking-wider block mb-1">
           CLIENT REVIEWS
         </span>
-        <h2 className="text-2xl sm:text-3xl font-black text-[#0f2439]">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0f2439]">
           실무자들이 이야기하는<br />
           AI비서의 진가
         </h2>
-        <div className="flex items-center justify-center gap-2 mt-1.5 text-xs text-gray-500">
-          <span className="font-semibold text-gray-700">실무자 평점 4.9</span>
+        <div className="flex items-center justify-center gap-2 mt-2 text-sm text-gray-500">
+          <span className="font-bold text-gray-800">실무자 만족도 4.9 / 5.0</span>
           <span>•</span>
-          <span className="text-[#f05a22] font-semibold">재구독률 92%</span>
+          <span className="text-[#f05a22] font-bold">재구독률 92%</span>
         </div>
       </div>
 
       {/* Review Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
         {REVIEWS_DATA.map((review) => (
           <div
             key={review.id}
-            className="bg-white p-5 rounded-2xl border border-[#eae6df] shadow-xs hover:border-[#0f2439]/30 transition-all flex flex-col justify-between"
+            className="bg-white p-6 lg:p-8 rounded-2xl border border-[#eae6df] shadow-2xs hover:border-[#0f2439]/30 hover:shadow-lg transition-all flex flex-col justify-between"
           >
             <div>
               {/* Star rating */}

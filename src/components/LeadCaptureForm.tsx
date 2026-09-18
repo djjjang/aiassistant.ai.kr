@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import { Send, Lock, CheckCircle2, Sparkles, Check, Clock, Phone, Mail, MessageSquare } from 'lucide-react';
-import { LeadFormData } from '../types';
+import { Send, Lock, CheckCircle2, Sparkles, Check, Clock, Phone, Mail, MessageSquare, CreditCard, Coins } from 'lucide-react';
+import { LeadFormData, ClientTaskItem } from '../types';
 
 interface LeadCaptureFormProps {
   selectedPlanId?: string;
   prefilledTaskType?: string;
+  onOpenPayment?: () => void;
+  userCredits?: number;
 }
 
 export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
   selectedPlanId,
-  prefilledTaskType
+  prefilledTaskType,
+  onOpenPayment,
+  userCredits = 0
 }) => {
   const [formData, setFormData] = useState<LeadFormData>({
     company: '',
@@ -69,6 +73,47 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
       setSubmittedHistory(updatedHistory);
       try {
         localStorage.setItem('ai_assistant_inquiries', JSON.stringify(updatedHistory));
+
+        // Also sync to real-time client task pool for Admin Dashboard
+        const newTaskItem: ClientTaskItem = {
+          id: `TASK-${new Date().toISOString().slice(0, 10).replace(/-/g, '')}-${Math.floor(10 + Math.random() * 90)}`,
+          createdAt: new Date().toLocaleString('ko-KR', {
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit'
+          }),
+          company: formData.company,
+          requesterName: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          taskType: formData.taskType,
+          taskTypeName:
+            formData.taskType === 'document'
+              ? '문서·기획 검토'
+              : formData.taskType === 'content'
+              ? '콘텐츠·마케팅'
+              : formData.taskType === 'research'
+              ? '리서치·데이터'
+              : '맞춤 실무 의뢰',
+          title: formData.memo
+            ? (formData.memo.length > 35 ? formData.memo.slice(0, 35) + '...' : formData.memo)
+            : `${formData.company} 실무 의뢰 건`,
+          memo: formData.memo || `${formData.taskType} 분야 관련 실무 지원 의뢰`,
+          status: 'received',
+          priority: 'normal',
+          assignedManager: '김민서 수석 매니저 (IR·기획)',
+          progressPercent: 20,
+          estimatedCompletion: '48시간 이내 납품 예정',
+          reviewNotes: '신규 접수 완료. 전담 매니저 배정 및 사전 요구사항 분석 준비 중입니다.',
+          contactMethod: formData.contactMethod || 'phone',
+          selectedPlan: formData.selectedPlan
+        };
+
+        const existingPoolStr = localStorage.getItem('client_tasks_pool');
+        const pool = existingPoolStr ? JSON.parse(existingPoolStr) : [];
+        localStorage.setItem('client_tasks_pool', JSON.stringify([newTaskItem, ...pool]));
       } catch {
         // ignore
       }
@@ -102,24 +147,48 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
       <div className="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-[#f05a22]/15 blur-3xl pointer-events-none"></div>
       <div className="absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-blue-500/10 blur-3xl pointer-events-none"></div>
 
-      <div className="max-w-md md:max-w-xl mx-auto relative z-10">
+      <div className="max-w-2xl mx-auto relative z-10">
         <div className="text-center mb-8">
           <span className="text-xs font-bold text-[#f05a22] tracking-widest uppercase block mb-1">
             GET STARTED
           </span>
-          <h2 className="text-2xl sm:text-3xl font-black mb-2">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black mb-2">
             AI를 배우지 말고,<br />
             업무를 바로 맡기세요.
           </h2>
-          <p className="text-xs text-gray-300 leading-relaxed max-w-xs sm:max-w-sm mx-auto">
+          <p className="text-sm text-gray-300 leading-relaxed max-w-md mx-auto">
             담당하고 계신 업무 유형을 간단히 남겨주시면 실무 가능 여부와 예상 절감 시간 견적서를
-            보내드립니다.
+            빠르게 회신해 드립니다.
           </p>
         </div>
 
+        {/* Credit & Instant Payment Banner */}
+        {onOpenPayment && (
+          <div className="mb-4 bg-white/10 backdrop-blur-xs border border-white/20 rounded-xl p-3.5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+            <div className="flex items-center gap-2 text-white">
+              <Coins className="w-4 h-4 text-[#f05a22] shrink-0" />
+              <span>
+                {userCredits > 0 ? (
+                  <>현재 보유 크레딧: <strong className="text-[#f05a22] font-black">{userCredits} C</strong> (즉시 차감 가능)</>
+                ) : (
+                  <>구독 플랜 또는 크레딧 충전 후 즉시 실무를 시작하시겠어요?</>
+                )}
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={onOpenPayment}
+              className="w-full sm:w-auto px-4 py-2 rounded-lg bg-[#f05a22] hover:bg-[#d94e1c] text-white font-bold text-xs flex items-center justify-center gap-1.5 transition shadow-sm cursor-pointer shrink-0"
+            >
+              <CreditCard className="w-4 h-4" />
+              <span>{userCredits > 0 ? '크레딧 추가 충전' : '카드 / 간편결제 바로가기'}</span>
+            </button>
+          </div>
+        )}
+
         {/* Dynamic Estimated Impact Pill */}
-        <div className="mb-4 bg-white/10 backdrop-blur-xs border border-white/15 rounded-xl px-3.5 py-2 flex items-center justify-between text-xs">
-          <div className="flex items-center gap-1.5 text-amber-300 font-semibold">
+        <div className="mb-5 bg-white/10 backdrop-blur-xs border border-white/15 rounded-xl px-4 py-2.5 flex items-center justify-between text-xs sm:text-sm">
+          <div className="flex items-center gap-2 text-amber-300 font-semibold">
             <Sparkles className="w-4 h-4 text-[#f05a22]" />
             <span>예상 도입 효과:</span>
           </div>
@@ -129,7 +198,7 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
         {/* Conversion Form Container */}
         <form
           onSubmit={handleSubmit}
-          className="bg-white text-gray-800 rounded-2xl p-5 sm:p-6 shadow-2xl border border-white/20 space-y-3.5"
+          className="bg-white text-gray-800 rounded-2xl p-6 sm:p-8 shadow-2xl border border-white/20 space-y-4"
         >
           <div>
             <label className="block text-xs font-bold text-gray-700 mb-1">

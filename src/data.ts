@@ -1,4 +1,4 @@
-import { ServiceItem, TeamMember, PortfolioItem, ReviewItem, PricingPlan, FAQItem } from './types';
+import { ServiceItem, TeamMember, PortfolioItem, ReviewItem, PricingPlan, FAQItem, CreditPackage } from './types';
 import contractReviewImg from './assets/images/contract_review_sample_1789468628301.jpg';
 import aiContractReviewImg from './assets/images/ai_contract_review_report_1789530423310.jpg';
 import meetingNotesImg from './assets/images/meeting_notes_minutes_1789468642460.jpg';
@@ -11,6 +11,8 @@ import cardNewsBodyImg from './assets/images/card_news_body_1789550011323.jpg';
 import cardNewsEndingImg from './assets/images/card_news_ending_1789550026842.jpg';
 import pressReleaseSampleImg from './assets/images/press_release_sample_1789550701635.jpg';
 import newsletterNoticeUpdateImg from './assets/images/newsletter_notice_update_1789551161711.jpg';
+import regulationChecklistReportImg from './assets/images/regulation_checklist_report_1789625777409.jpg';
+import globalTechReportSummaryImg from './assets/images/global_tech_report_summary_1789625937449.jpg';
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
@@ -210,27 +212,27 @@ export const SERVICES_DATA: ServiceItem[] = [
       },
       {
         id: 'res-2',
-        client: '핀테크 기업 T사',
-        title: '신규 사업 관련 기본 규제 및 인허가 조사',
+        client: '핀테크 & 신규사업 T사',
+        title: '신규 사업 기본 규제 및 필수 인허가 체크리스트',
         duration: '의뢰 후 48시간 이내',
-        result: '사업 시작 전 필수 확인 규제 체크리스트 정리',
-        summary: '새로운 서비스를 준비할 때 필요한 기본 법령, 인허가 조건, 필수 준수 사항을 관련 규정 중심으로 정리했습니다.',
-        tags: ['규제조사', '인허가확인', '법령정리'],
-        deliverable: '규제 항목 비교표 및 확인 가이드',
-        image: 'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '신규 사업 인허가 규제 조사 리포트'
+        result: '사업 시작 전 필수 확인 규제 및 인허가 점검표 완비',
+        summary: '신규 서비스를 런칭할 때 사전에 반드시 확인해야 하는 필수 법령, 소관 부처 인허가 조건, 개인정보보호 및 결제 규정 준수 사항을 체크리스트로 체계화하여 정리했습니다.',
+        tags: ['규제체크리스트', '인허가확인', '신규사업점검', '법령정리'],
+        deliverable: '신규 사업 인허가 규제 점검표 및 실무 조치 가이드라인',
+        image: regulationChecklistReportImg,
+        imageAlt: '신규 사업 기본 규제 및 필수 인허가 체크리스트 실무 산출물'
       },
       {
         id: 'res-3',
-        client: '기술 스타트업 S사',
-        title: '해외 기술 자료 및 시장 동향 국문 요약',
+        client: '글로벌 테크 스타트업 S사',
+        title: '해외 기술 자료 및 시장 동향 국문 번역 요약',
         duration: '의뢰 후 24시간 이내',
-        result: '방대한 영문 자료의 핵심 내용 한국어 발췌 요약',
-        summary: '외국의 전문 자료와 시장 트렌드 보고서에서 업무에 필요한 핵심 내용만 찾아 한국어로 알기 쉽게 요약했습니다.',
-        tags: ['해외자료', '국문요약', '트렌드조사'],
-        deliverable: '국문 요약 보고서 및 원문 발췌록',
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '해외 기술 자료 국문 요약본'
+        result: '방대한 영문 글로벌 기술 동향의 핵심 국문 발췌 요약 완성',
+        summary: '해외 주요 테크 컨퍼런스 자료, 글로벌 시장 조사 리포트의 방대한 영문 원문에서 비즈니스에 필요한 핵심 인사이트만 추출하여 국문 브리프로 번역·요약했습니다.',
+        tags: ['해외기술자료', '시장동향조사', '국문번역요약', '글로벌트렌드'],
+        deliverable: '해외 기술 자료 국문 요약 보고서 및 영문 원문 핵심 발췌록',
+        image: globalTechReportSummaryImg,
+        imageAlt: '해외 기술 자료 및 시장 동향 국문 번역 요약 산출물'
       }
     ],
     detailedTasks: [
@@ -768,3 +770,58 @@ export const FAQ_DATA: FAQItem[] = [
     answer: '물론입니다. 장기 의무 약정 없이 1개월 단위로 구독할 수 있으며 언제든지 해지나 플랜 변경이 가능합니다. 첫 달 이용 후 92%의 고객사가 지속 구독을 이어가고 있습니다.'
   }
 ];
+
+export const CREDIT_PACKAGES: CreditPackage[] = [
+  {
+    id: 'credit_10',
+    name: '체험팩 10 크레딧',
+    credits: 10,
+    bonusCredits: 0,
+    price: 99000,
+    originalPrice: 120000,
+    discountRate: '17% OFF',
+    description: '단기 문서 검토 및 긴급한 실무 태스크 해결에 적합한 스타터 패키지',
+    features: [
+      '표준 실무 10건 차감 가능',
+      '계약서 검토, 보도자료, 리서치 요약 등',
+      '전담 매니저 24시간 내 납품',
+      '유효기간: 결제일로부터 1년'
+    ]
+  },
+  {
+    id: 'credit_30',
+    name: '실무팩 30 크레딧',
+    credits: 30,
+    bonusCredits: 3,
+    price: 249000,
+    originalPrice: 360000,
+    discountRate: '30% OFF',
+    isPopular: true,
+    description: '스타트업 및 소규모 비즈니스에서 가장 선호하는 가성비 최고의 실무 크레딧',
+    features: [
+      '총 33 크레딧 제공 (+3 보너스 크레딧 증정)',
+      '사업계획서 세부 섹션, 심층 리서치 포함',
+      '우선 순위 빠른 피드백 채널 배정',
+      '수정 요청 100% 무상 반영',
+      '유효기간: 결제일로부터 1년'
+    ]
+  },
+  {
+    id: 'credit_60',
+    name: '비즈니스팩 60 크레딧',
+    credits: 60,
+    bonusCredits: 10,
+    price: 459000,
+    originalPrice: 720000,
+    discountRate: '36% OFF',
+    description: '정기적인 보고서 작성 및 마케팅 콘텐츠 대량 의뢰에 특화된 패키지',
+    features: [
+      '총 70 크레딧 제공 (+10 보너스 크레딧 증정)',
+      '전담 전담자 지정 및 사내 슬랙/카톡 채널 개설',
+      '크롤링, 데이터 분석 등 고난이도 업무 지원',
+      '세금계산서 100% 즉시 발행',
+      '유효기간: 결제일로부터 1년'
+    ]
+  }
+];
+

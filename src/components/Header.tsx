@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight, Phone, MessageSquare, MessageCircle, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Menu, X, ArrowRight, MessageCircle, Sparkles, CheckCircle2, User } from 'lucide-react';
 
 interface HeaderProps {
   onOpenConsultation?: () => void;
+  onOpenPayment?: () => void;
+  onOpenDashboard?: (tab?: 'tasks' | 'payments') => void;
+  userCredits?: number;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
+export const Header: React.FC<HeaderProps> = ({ onOpenConsultation, onOpenPayment, onOpenDashboard, userCredits = 0 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -42,12 +45,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
             : 'bg-[#f7f5f0]/90 backdrop-blur-sm border-b border-[#eae6df]/80'
         }`}
       >
-        <div className="px-5 py-3.5 flex items-center justify-between max-w-md md:max-w-4xl mx-auto">
+        <div className="px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between max-w-7xl mx-auto">
           {/* Logo */}
           <a
             id="header-logo"
             href="#"
-            className="flex items-center gap-2 group cursor-pointer"
+            className="flex items-center gap-2.5 group cursor-pointer shrink-0"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -60,69 +63,93 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
               <span className="text-xl font-black tracking-tight text-[#0f2439] leading-none">
                 AI비서
               </span>
-              <span className="text-[9px] font-semibold text-[#f05a22] tracking-wider uppercase">
+              <span className="text-[9px] font-bold text-[#f05a22] tracking-wider uppercase">
                 Work Done by AI + Human
               </span>
             </div>
           </a>
 
-          {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-6 text-xs font-semibold text-gray-700">
+          {/* Desktop Nav Links (Clean, Spacious & Focused 5 Core Categories) */}
+          <nav className="hidden lg:flex items-center gap-7 xl:gap-8 text-[14.5px] font-medium text-slate-700">
             <button
               onClick={() => scrollToSection('services-section')}
-              className="hover:text-[#f05a22] transition-colors"
+              className="hover:text-[#f05a22] transition-colors cursor-pointer py-1"
             >
-              업무영역
-            </button>
-            <button
-              onClick={() => scrollToSection('expert-team')}
-              className="hover:text-[#f05a22] transition-colors"
-            >
-              전문가 팀
+              서비스 소개
             </button>
             <button
               onClick={() => scrollToSection('process-timeline')}
-              className="hover:text-[#f05a22] transition-colors"
+              className="hover:text-[#f05a22] transition-colors cursor-pointer py-1"
             >
               진행 방식
             </button>
             <button
               onClick={() => scrollToSection('portfolio-showcase')}
-              className="hover:text-[#f05a22] transition-colors"
+              className="hover:text-[#f05a22] transition-colors cursor-pointer py-1"
             >
-              성공 사례
+              납품 사례
             </button>
             <button
               onClick={() => scrollToSection('pricing-plans')}
-              className="hover:text-[#f05a22] transition-colors"
+              className="hover:text-[#f05a22] transition-colors cursor-pointer py-1"
             >
-              이용 요금
+              요금 안내
             </button>
             <button
               onClick={() => scrollToSection('faq-section')}
-              className="hover:text-[#f05a22] transition-colors"
+              className="hover:text-[#f05a22] transition-colors cursor-pointer py-1"
             >
               FAQ
             </button>
           </nav>
 
-          {/* Right Header Actions */}
-          <div className="flex items-center gap-3">
+          {/* Right Header Actions (Clean, High-Conversion, No Visual Clutter) */}
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            {onOpenDashboard && (
+              <button
+                type="button"
+                onClick={() => onOpenDashboard('payments')}
+                className="text-xs sm:text-sm font-semibold px-3 sm:px-3.5 py-1.5 rounded-full border border-slate-300 hover:border-slate-400 bg-white/90 hover:bg-white text-slate-800 transition-all flex items-center gap-1.5 shadow-2xs cursor-pointer active:scale-95"
+                title="마이페이지 (결제내역 & 크레딧 관리)"
+              >
+                <User className="w-3.5 h-3.5 text-[#f05a22]" />
+                <span>마이페이지</span>
+                {userCredits > 0 && (
+                  <span className="bg-[#f05a22] text-white text-[10px] px-1.5 py-0.2 rounded-full font-black">
+                    {userCredits}C
+                  </span>
+                )}
+              </button>
+            )}
+
             <a
               id="header-cta-btn"
               href="http://pf.kakao.com/_xnSxeiT/chat"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-bold px-3 py-1.5 rounded-full bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] shadow-xs active:scale-95 transition-all flex items-center gap-1.5 border border-[#E6CF00]"
+              className="text-xs sm:text-sm font-bold px-3 sm:px-3.5 py-1.5 rounded-full bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] shadow-xs active:scale-95 transition-all flex items-center gap-1.5 border border-[#E6CF00]"
             >
               <MessageCircle className="w-3.5 h-3.5 fill-[#191919]" />
-              <span>카톡 상담</span>
+              <span className="hidden sm:inline">카톡 상담</span>
             </a>
+
+            {onOpenConsultation && (
+              <button
+                type="button"
+                onClick={onOpenConsultation}
+                className="hidden sm:inline-flex text-xs sm:text-sm font-bold px-3.5 sm:px-4 py-1.5 rounded-full bg-[#f05a22] hover:bg-[#d94e1c] text-white shadow-xs active:scale-95 transition-all items-center gap-1.5 cursor-pointer"
+              >
+                <span>무료 상담 신청</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            )}
+
+            {/* Mobile Hamburger Menu Toggle (Hidden on PC lg:) */}
             <button
               id="header-menu-toggle"
               aria-label="메뉴 열기"
               onClick={() => setMobileMenuOpen(true)}
-              className="p-1.5 text-[#0f2439] rounded-lg hover:bg-black/5 active:scale-95 transition cursor-pointer"
+              className="lg:hidden p-1.5 text-[#0f2439] rounded-lg hover:bg-black/5 active:scale-95 transition cursor-pointer"
               type="button"
             >
               <Menu className="w-6 h-6" />
@@ -225,6 +252,37 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
 
             {/* Drawer Footer */}
             <div className="p-4 border-t border-[#eae6df] bg-[#f7f5f0] space-y-2">
+              {onOpenDashboard && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    onOpenDashboard('payments');
+                  }}
+                  className="w-full py-2.5 px-4 rounded-xl bg-white border border-slate-300 text-slate-800 text-xs font-bold shadow-2xs hover:bg-slate-50 transition flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <User className="w-4 h-4 text-[#f05a22]" />
+                  <span>마이페이지 (결제내역 & 크레딧)</span>
+                  {userCredits > 0 && (
+                    <span className="bg-[#f05a22] text-white text-[10px] px-1.5 py-0.2 rounded-full font-black">
+                      {userCredits}C 보유
+                    </span>
+                  )}
+                </button>
+              )}
+              {onOpenConsultation && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    onOpenConsultation();
+                  }}
+                  className="w-full py-2.5 px-4 rounded-xl bg-[#f05a22] hover:bg-[#d94e1c] text-white text-xs font-bold shadow-md transition flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <span>무료 견적 & 상담 신청하기</span>
+                  <ArrowRight className="w-4 h-4" />
+                </button>
+              )}
               <a
                 href="http://pf.kakao.com/_xnSxeiT/chat"
                 target="_blank"

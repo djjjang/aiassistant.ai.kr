@@ -97,3 +97,75 @@ export interface LeadFormData {
   memo?: string;
   contactMethod?: 'phone' | 'email' | 'kakao' | 'slack';
 }
+
+export interface CreditPackage {
+  id: string;
+  name: string;
+  credits: number;
+  bonusCredits: number;
+  price: number;
+  originalPrice?: number;
+  description: string;
+  discountRate?: string;
+  isPopular?: boolean;
+  features: string[];
+}
+
+export type PaymentMethodType = 'card' | 'transfer' | 'kakaopay' | 'naverpay' | 'tosspay';
+
+export interface PaymentItemSelection {
+  type: 'plan' | 'credit';
+  id: string;
+  name: string;
+  price: number;
+  billingCycle?: 'monthly' | 'annual';
+  credits?: number;
+}
+
+export interface PaymentReceipt {
+  orderId: string;
+  paidAt: string;
+  itemTitle: string;
+  amount: number;
+  paymentMethod: PaymentMethodType;
+  buyerName: string;
+  buyerEmail: string;
+  buyerPhone: string;
+  buyerCompany?: string;
+  depositorName?: string;
+  bankAccountInfo?: {
+    bankName: string;
+    accountNumber: string;
+    accountHolder: string;
+  };
+  taxInvoiceRequested: boolean;
+  taxBusinessNumber?: string;
+  creditsAdded?: number;
+  activatedPlanId?: string;
+}
+
+export type TaskStatusType = 'received' | 'reviewing' | 'completed'; // 접수 | 검토중 | 완료
+
+export interface ClientTaskItem {
+  id: string;
+  createdAt: string;
+  company: string;
+  requesterName: string;
+  phone: string;
+  email?: string;
+  taskType: string;
+  taskTypeName: string;
+  title: string;
+  memo: string;
+  status: TaskStatusType;
+  priority: 'normal' | 'urgent' | 'high';
+  assignedManager: string;
+  progressPercent: number;
+  estimatedCompletion: string;
+  reviewNotes?: string;
+  deliverableName?: string;
+  deliverableUrl?: string;
+  contactMethod?: 'phone' | 'email' | 'kakao' | 'slack';
+  selectedPlan?: string;
+}
+

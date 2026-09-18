@@ -1,6 +1,11 @@
 import React from 'react';
+import { Lock } from 'lucide-react';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onOpenDashboard?: (tab?: 'tasks' | 'payments') => void;
+}
+
+export const Footer: React.FC<FooterProps> = ({ onOpenDashboard }) => {
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -9,10 +14,10 @@ export const Footer: React.FC = () => {
   return (
     <footer
       id="site-footer"
-      className="bg-[#edeae3] text-gray-600 py-10 px-5 border-t border-[#eae6df] text-xs"
+      className="bg-[#edeae3] text-gray-600 py-12 lg:py-16 px-4 sm:px-6 lg:px-8 border-t border-[#eae6df] text-xs"
       data-purpose="site-footer"
     >
-      <div className="max-w-md md:max-w-4xl mx-auto space-y-6">
+      <div className="max-w-7xl mx-auto space-y-8">
         {/* Brand & Info */}
         <div className="space-y-2">
           <div className="flex items-center gap-2">
@@ -68,29 +73,34 @@ export const Footer: React.FC = () => {
           </div>
 
           <div>
-            <span className="text-[#0f2439] font-bold block mb-2">고객지원</span>
+            <span className="text-[#0f2439] font-bold block mb-2">고객지원 &amp; 안내</span>
             <ul className="space-y-1.5">
+              {onOpenDashboard && (
+                <li>
+                  <button
+                    onClick={() => onOpenDashboard('payments')}
+                    className="hover:text-[#f05a22] text-[#0f2439] font-semibold transition text-left cursor-pointer flex items-center gap-1"
+                  >
+                    <span>마이페이지 (결제 &amp; 크레딧)</span>
+                  </button>
+                </li>
+              )}
               <li>
                 <button
                   onClick={() => scrollToSection('faq-section')}
                   className="hover:text-[#f05a22] transition text-left cursor-pointer"
                 >
-                  자주 묻는 질문(FAQ)
+                  자주 묻는 질문 (FAQ)
                 </button>
               </li>
               <li>
                 <a href="#lead-form" className="hover:text-[#f05a22] transition">
-                  제휴 및 파트너십
+                  보안 및 비밀유지(NDA) 보장
                 </a>
               </li>
               <li>
-                <a href="#lead-form" className="hover:text-[#f05a22] transition">
-                  보안 &amp; 개인정보처리
-                </a>
-              </li>
-              <li>
-                <a href="tel:15880000" className="hover:text-[#f05a22] font-semibold text-gray-800">
-                  상담문의 1588-0000
+                <a href="tel:07081443848" className="hover:text-[#f05a22] font-semibold text-gray-800">
+                  전화 상담: 070-8144-3848
                 </a>
               </li>
             </ul>
@@ -116,11 +126,31 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* Legal Disclaimer */}
-        <div className="pt-4 border-t border-gray-300/60 text-[11px] text-gray-500 space-y-1 leading-relaxed">
-          <p>(주)에이아이비서 | 대표이사: 홍길동 | 사업자등록번호: 123-86-00000</p>
-          <p>서울특별시 강남구 테헤란로 152 강남파이낸스센터 18층</p>
-          <p className="pt-1 text-gray-400">© 2025 AI비서 Inc. All rights reserved.</p>
+        {/* Legal Disclaimer & Admin Console Access */}
+        <div className="pt-5 border-t border-gray-300/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-gray-500">
+          <div className="space-y-1 leading-relaxed">
+            <p>
+              <strong>주식회사 더마핑크</strong> | 대표자: 안진홍 | 상담문의: 070-8144-3848 | 입금계좌: 신한은행 140-015-969664 (예금주: 주식회사 더마핑크)
+            </p>
+            <p>
+              사업장 소재지: 경기도 용인시 기흥구 동백중앙로16번길 16-4, 1914호(중동, 에이스 동백 타워)
+            </p>
+            <p className="pt-0.5 text-gray-400">© 2025 주식회사 더마핑크 (Dermapink Co., Ltd.) All rights reserved.</p>
+          </div>
+
+          {onOpenDashboard && (
+            <div className="shrink-0">
+              <button
+                type="button"
+                onClick={() => onOpenDashboard('tasks')}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white hover:bg-slate-50 border border-slate-300 hover:border-slate-400 text-slate-700 hover:text-slate-900 text-xs font-bold shadow-2xs transition cursor-pointer"
+                title="관리자 인증 후 의뢰 업무 실시간 진행 현황 확인"
+              >
+                <Lock className="w-3.5 h-3.5 text-amber-600" />
+                <span>업무 진행 현황 (관리자 🔒)</span>
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </footer>
