@@ -65,7 +65,8 @@ export default function App() {
     if (serviceName.includes('문서')) setPrefilledTaskType('document');
     else if (serviceName.includes('콘텐츠')) setPrefilledTaskType('content');
     else if (serviceName.includes('리서치')) setPrefilledTaskType('research');
-    else if (serviceName.includes('데이터')) setPrefilledTaskType('data');
+    else if (serviceName.includes('마케팅')) setPrefilledTaskType('marketing');
+    else if (serviceName.includes('운영') || serviceName.includes('CS')) setPrefilledTaskType('cs');
     else if (serviceName.includes('맞춤형')) setPrefilledTaskType('custom');
     else setPrefilledTaskType('other');
 

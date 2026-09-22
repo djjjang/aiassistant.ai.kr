@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" style="background:#f8fafc; font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <!-- TOP HEADER -->
+  <rect x="0" y="0" width="1200" height="64" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+  
+  <!-- Logo / T24 badge -->
+  <rect x="32" y="16" width="32" height="32" rx="8" fill="#2563eb" />
+  <text x="48" y="37" fill="#ffffff" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="-0.5">T24</text>
+  
+  <!-- Header Title -->
+  <text x="76" y="32" fill="#111827" font-size="15" font-weight="700">AI 알림톡 문구 작성</text>
+  <text x="76" y="46" fill="#6b7280" font-size="11" font-weight="500">Notification Message Studio · 트렌드24 업무대행</text>
+
+  <!-- Status & Date -->
+  <g transform="translate(980, 20)">
+    <rect x="0" y="0" width="124" height="24" rx="12" fill="#dcfce7" />
+    <path d="M12 12l2.5 2.5 5-5" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="16" fill="#15803d" font-size="11" font-weight="700">작성 완료 · 2종</text>
+    <text x="136" y="16" fill="#6b7280" font-size="12" font-weight="500">2026.09.22</text>
+  </g>
+
+  <!-- MAIN BODY: 2 ALIMTALK CARDS -->
+  <!-- CARD 1: ① 신규가입 환영 알림톡 (Left) -->
+  <g transform="translate(48, 88)">
+    <text x="0" y="18" fill="#9a3412" font-size="13" font-weight="800">① 신규가입 환영 알림톡</text>
+
+    <!-- Card Window -->
+    <g transform="translate(0, 32)" filter="url(#card-shadow)">
+      <rect width="524" height="600" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+
+      <!-- Profile Header Bar -->
+      <g transform="translate(24, 16)">
+        <circle cx="16" cy="16" r="16" fill="#c2410c" />
+        <text x="16" y="21" fill="#ffffff" font-size="14" font-weight="800" text-anchor="middle">루</text>
+
+        <text x="44" y="21" fill="#111827" font-size="14" font-weight="700">루미마켓</text>
+        <rect x="108" y="8" width="46" height="20" rx="4" fill="#f1f5f9" />
+        <text x="131" y="22" fill="#64748b" font-size="11" font-weight="600" text-anchor="middle">알림톡</text>
+
+        <text x="476" y="21" fill="#94a3b8" font-size="12" font-weight="500" text-anchor="end">방금 전</text>
+      </g>
+      <line x1="0" y1="64" x2="524" y2="64" stroke="#f1f5f9" stroke-width="1" />
+
+      <!-- Message Content -->
+      <g transform="translate(24, 88)">
+        <text x="0" y="22" fill="#111827" font-size="16" font-weight="800">루미마켓 가입을 환영합니다! 🎉</text>
+
+        <text x="0" y="60" fill="#475569" font-size="13" font-weight="400">#{고객명}님, 루미마켓의 첫 가족이 되어주셔서 감사합니다. 지금 가입을 완료하</text>
+        <text x="0" y="82" fill="#475569" font-size="13" font-weight="400">시면 아래 혜택을 바로 받으실 수 있어요.</text>
+
+        <!-- Benefits Box -->
+        <g transform="translate(0, 112)">
+          <rect width="476" height="144" rx="12" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1" />
+          
+          <!-- Benefit 1 -->
+          <circle cx="24" cy="38" r="3.5" fill="#ea580c" />
+          <text x="36" y="42" fill="#334155" font-size="13" font-weight="600">첫 구매 10% 할인 쿠폰</text>
+
+          <!-- Benefit 2 -->
+          <circle cx="24" cy="74" r="3.5" fill="#ea580c" />
+          <text x="36" y="78" fill="#334155" font-size="13" font-weight="600">무료배송 쿠폰 1장</text>
+
+          <!-- Benefit 3 -->
+          <circle cx="24" cy="110" r="3.5" fill="#ea580c" />
+          <text x="36" y="114" fill="#334155" font-size="13" font-weight="600">적립금 2,000원 즉시 지급</text>
+        </g>
+      </g>
+
+      <!-- Bottom Button: 쇼핑 시작하기 -->
+      <line x1="0" y1="540" x2="524" y2="540" stroke="#f1f5f9" stroke-width="1" />
+      <text x="262" y="574" fill="#9a3412" font-size="14" font-weight="700" text-anchor="middle">쇼핑 시작하기  ›</text>
+    </g>
+  </g>
+
+  <!-- CARD 2: ② 이용안내 알림톡 (Right) -->
+  <g transform="translate(628, 88)">
+    <text x="0" y="18" fill="#9a3412" font-size="13" font-weight="800">② 이용안내 알림톡</text>
+
+    <!-- Card Window -->
+    <g transform="translate(0, 32)" filter="url(#card-shadow)">
+      <rect width="524" height="600" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+
+      <!-- Profile Header Bar -->
+      <g transform="translate(24, 16)">
+        <circle cx="16" cy="16" r="16" fill="#c2410c" />
+        <text x="16" y="21" fill="#ffffff" font-size="14" font-weight="800" text-anchor="middle">루</text>
+
+        <text x="44" y="21" fill="#111827" font-size="14" font-weight="700">루미마켓</text>
+        <rect x="108" y="8" width="46" height="20" rx="4" fill="#f1f5f9" />
+        <text x="131" y="22" fill="#64748b" font-size="11" font-weight="600" text-anchor="middle">알림톡</text>
+
+        <text x="476" y="21" fill="#94a3b8" font-size="12" font-weight="500" text-anchor="end">방금 전</text>
+      </g>
+      <line x1="0" y1="64" x2="524" y2="64" stroke="#f1f5f9" stroke-width="1" />
+
+      <!-- Message Content -->
+      <g transform="translate(24, 88)">
+        <text x="0" y="22" fill="#111827" font-size="16" font-weight="800">루미마켓 이용 방법 안내드려요</text>
+
+        <text x="0" y="60" fill="#475569" font-size="13" font-weight="400">#{고객명}님, 루미마켓을 더 편하게 이용하는 방법을 알려드릴게요.</text>
+
+        <!-- Numbered Guide Items -->
+        <g transform="translate(0, 88)">
+          <!-- Item 1 -->
+          <g transform="translate(0, 16)">
+            <circle cx="10" cy="8" r="9" fill="#ffedd5" />
+            <text x="10" y="11.5" fill="#c2410c" font-size="10.5" font-weight="700" text-anchor="middle">1</text>
+            <text x="28" y="12" fill="#334155" font-size="13" font-weight="500">마이페이지에서 주문·배송 조회</text>
+          </g>
+
+          <!-- Item 2 -->
+          <g transform="translate(0, 52)">
+            <circle cx="10" cy="8" r="9" fill="#ffedd5" />
+            <text x="10" y="11.5" fill="#c2410c" font-size="10.5" font-weight="700" text-anchor="middle">2</text>
+            <text x="28" y="12" fill="#334155" font-size="13" font-weight="500">찜한 상품 할인 알림 받기</text>
+          </g>
+
+          <!-- Item 3 -->
+          <g transform="translate(0, 88)">
+            <circle cx="10" cy="8" r="9" fill="#ffedd5" />
+            <text x="10" y="11.5" fill="#c2410c" font-size="10.5" font-weight="700" text-anchor="middle">3</text>
+            <text x="28" y="12" fill="#334155" font-size="13" font-weight="500">리뷰 작성 시 적립금 지급</text>
+          </g>
+
+          <!-- Item 4 -->
+          <g transform="translate(0, 124)">
+            <circle cx="10" cy="8" r="9" fill="#ffedd5" />
+            <text x="10" y="11.5" fill="#c2410c" font-size="10.5" font-weight="700" text-anchor="middle">4</text>
+            <text x="28" y="12" fill="#334155" font-size="13" font-weight="500">채널 추가 시 매주 할인 소식 받기</text>
+          </g>
+        </g>
+
+        <!-- Closing Note -->
+        <text x="0" y="278" fill="#64748b" font-size="12.5" font-weight="400">궁금한 점은 채널 상담으로 편하게 문의해주세요 :)</text>
+      </g>
+
+      <!-- Bottom Dual Buttons: 채널 추가하기 | 자주 묻는 질문 -->
+      <line x1="0" y1="540" x2="524" y2="540" stroke="#f1f5f9" stroke-width="1" />
+      <line x1="262" y1="540" x2="262" y2="600" stroke="#f1f5f9" stroke-width="1" />
+      <text x="131" y="574" fill="#9a3412" font-size="14" font-weight="700" text-anchor="middle">채널 추가하기</text>
+      <text x="393" y="574" fill="#9a3412" font-size="14" font-weight="700" text-anchor="middle">자주 묻는 질문</text>
+    </g>
+  </g>
+</svg>

@@ -58,7 +58,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDashboard }) => {
                   onClick={() => scrollToSection('services-section')}
                   className="hover:text-[#f05a22] transition text-left cursor-pointer"
                 >
-                  데이터 분석
+                  시장 리서치
                 </button>
               </li>
               <li>
@@ -111,8 +111,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDashboard }) => {
             <ul className="space-y-1.5 text-gray-500">
               <li>IR &amp; 비즈니스 기획</li>
               <li>SEO &amp; 브랜드 스토리</li>
-              <li>데이터 엔지니어링</li>
-              <li>사내 AI 워크플로우</li>
+              <li>AI 워크플로우 엔지니어링</li>
+              <li>고객 응대 &amp; 사내 CS</li>
             </ul>
           </div>
 

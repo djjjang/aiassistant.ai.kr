@@ -57,7 +57,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
     if (selectedFilter === 'all') return true;
     if (selectedFilter === 'doc') return s.id === 'document';
     if (selectedFilter === 'content') return s.id === 'content' || s.id === 'marketing';
-    if (selectedFilter === 'data') return s.id === 'research' || s.id === 'data';
+    if (selectedFilter === 'research') return s.id === 'research';
     if (selectedFilter === 'tech') return s.id === 'cs' || s.id === 'custom' || s.id === 'web';
     return true;
   });
@@ -77,7 +77,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0f2439] leading-snug">
               기업의 모든 반복 업무,<br />
-              8개 업무영역으로 완벽 대행합니다
+              7개 업무영역으로 완벽 대행합니다
             </h2>
           </div>
           <p className="text-xs sm:text-sm text-gray-500 leading-relaxed max-w-lg">
@@ -95,7 +95,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
-            전체 8개 업무
+            전체 7개 업무
           </button>
           <button
             onClick={() => setSelectedFilter('doc')}
@@ -118,14 +118,14 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
             콘텐츠·마케팅
           </button>
           <button
-            onClick={() => setSelectedFilter('data')}
+            onClick={() => setSelectedFilter('research')}
             className={`text-xs px-3 py-1.5 rounded-full font-bold transition-colors whitespace-nowrap cursor-pointer ${
-              selectedFilter === 'data'
+              selectedFilter === 'research'
                 ? 'bg-[#0f2439] text-white'
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
-            리서치·데이터
+            시장·기업 리서치
           </button>
           <button
             onClick={() => setSelectedFilter('tech')}
@@ -135,7 +135,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
-            자동화·웹
+            운영·사내AI·웹
           </button>
         </div>
 

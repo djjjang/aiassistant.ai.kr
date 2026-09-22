@@ -13,7 +13,8 @@ import {
   Sparkles,
   ChevronRight,
   Layers,
-  ZoomIn
+  ZoomIn,
+  FileText
 } from 'lucide-react';
 import { ServiceItem, ServicePortfolioCase } from '../types';
 import { ImageZoomModal } from './ImageZoomModal';
@@ -45,6 +46,16 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
     subtitle: string;
     gallery?: { url: string; title: string; pageLabel: string }[];
     initialIndex?: number;
+    initialMode?: 'image' | 'text';
+    originalText?: string;
+    originalDocumentMeta?: {
+      recipient?: string;
+      sender?: string;
+      subject?: string;
+      docDate?: string;
+      docTypeBadge?: string;
+      attachments?: string[];
+    };
   } | null>(null);
   const activeCase = cases.find((c) => c.id === selectedCaseId) || cases[0];
 
@@ -100,8 +111,8 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
                 <span className={`w-4 h-4 rounded-full text-[10px] flex items-center justify-center ${isSelected ? 'bg-[#f05a22] text-white' : 'bg-gray-100 text-gray-600'}`}>
                   {idx + 1}
                 </span>
-                <span className="max-w-[140px] sm:max-w-[190px] truncate text-left">
-                  {c.client.split(' ')[0]} • {c.title.split(' ')[0]} {c.title.split(' ')[1] || ''}
+                <span className="max-w-[150px] sm:max-w-[220px] truncate text-left">
+                  {c.tabLabel || `${c.client.split(' ')[0]} • ${c.title.split(' ')[0]} ${c.title.split(' ')[1] || ''}`}
                 </span>
               </button>
             );
@@ -123,7 +134,10 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
                       title: activeCase.title,
                       subtitle: `${activeCase.client} • ${activeCase.deliverable || '실제 납품 산출물'}`,
                       gallery: activeCase.galleryImages,
-                      initialIndex: 0
+                      initialIndex: 0,
+                      initialMode: 'image',
+                      originalText: activeCase.originalText,
+                      originalDocumentMeta: activeCase.originalDocumentMeta
                     });
                   }
                 }}
@@ -134,13 +148,40 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
                   src={activeCase.image || service.previewImage || 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1000&q=80'}
                   alt={activeCase.imageAlt || activeCase.title}
                   referrerPolicy="no-referrer"
-                  className={`w-full h-full ${activeCase.title.includes('카드뉴스') ? 'object-contain' : 'object-cover'} group-hover:scale-102 transition-transform duration-500 opacity-95`}
+                  className={`w-full h-full ${activeCase.title.includes('카드뉴스') || activeCase.title.includes('메일') || activeCase.image?.includes('.svg') ? 'object-contain bg-slate-900/95 p-1' : 'object-cover'} group-hover:scale-102 transition-transform duration-500 opacity-95`}
                 />
 
-                {/* Floating Zoom Badge */}
-                <div className="absolute top-3 right-3 bg-black/65 hover:bg-black/85 backdrop-blur-xs text-white px-2.5 py-1 rounded-full text-[11px] font-bold flex items-center gap-1.5 border border-white/20 shadow-md group-hover:scale-105 transition">
-                  <ZoomIn className="w-3.5 h-3.5 text-[#f05a22]" />
-                  <span>클릭하여 원본 검토</span>
+                {/* Floating Zoom & Original Text Badges */}
+                <div className="absolute top-3 right-3 flex items-center gap-1.5 z-10">
+                  {activeCase.originalText && (
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        const imgUrl = activeCase.image || service.previewImage;
+                        setZoomImage({
+                          url: imgUrl || '',
+                          alt: activeCase.imageAlt || activeCase.title,
+                          title: activeCase.title,
+                          subtitle: `${activeCase.client} • ${activeCase.deliverable || '실제 납품 산출물'}`,
+                          gallery: activeCase.galleryImages,
+                          initialIndex: 0,
+                          initialMode: 'text',
+                          originalText: activeCase.originalText,
+                          originalDocumentMeta: activeCase.originalDocumentMeta
+                        });
+                      }}
+                      className="bg-[#f05a22] hover:bg-[#d94e1c] text-white px-2.5 py-1 rounded-full text-[11px] font-bold flex items-center gap-1.5 shadow-lg cursor-pointer transition hover:scale-105"
+                      title="원문 텍스트 전문 바로 읽기"
+                    >
+                      <FileText className="w-3.5 h-3.5 text-white" />
+                      <span>원문 전문 열람</span>
+                    </button>
+                  )}
+                  <div className="bg-black/65 hover:bg-black/85 backdrop-blur-xs text-white px-2.5 py-1 rounded-full text-[11px] font-bold flex items-center gap-1.5 border border-white/20 shadow-md group-hover:scale-105 transition">
+                    <ZoomIn className="w-3.5 h-3.5 text-[#f05a22]" />
+                    <span>클릭하여 원본 검토</span>
+                  </div>
                 </div>
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-4 sm:p-5 text-white pointer-events-none">
@@ -160,6 +201,62 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
                   <h4 className="text-base sm:text-xl font-black text-white leading-snug">
                     {activeCase.title}
                   </h4>
+                </div>
+              </div>
+
+              {/* 산출물 검토 및 원문 열람 듀얼 액션 바 */}
+              <div className="flex flex-wrap items-center justify-between gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200">
+                <div className="flex items-center gap-2 min-w-0">
+                  <div className="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></div>
+                  <div className="text-[11px] text-slate-600 truncate">
+                    <strong className="text-slate-800 font-bold">산출물 검토:</strong> 이미지 그래픽 디자인과 실제 작성 원문 텍스트를 함께 제공합니다.
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 shrink-0">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const imgUrl = activeCase.image || service.previewImage;
+                      setZoomImage({
+                        url: imgUrl || '',
+                        alt: activeCase.imageAlt || activeCase.title,
+                        title: activeCase.title,
+                        subtitle: `${activeCase.client} • ${activeCase.deliverable || '실제 납품 산출물'}`,
+                        gallery: activeCase.galleryImages,
+                        initialIndex: 0,
+                        initialMode: 'image',
+                        originalText: activeCase.originalText,
+                        originalDocumentMeta: activeCase.originalDocumentMeta
+                      });
+                    }}
+                    className="px-3 py-1.5 rounded-lg bg-white border border-slate-300 hover:border-[#f05a22] text-slate-700 hover:text-[#f05a22] text-xs font-bold transition flex items-center gap-1.5 shadow-xs cursor-pointer"
+                  >
+                    <ZoomIn className="w-3.5 h-3.5 text-[#f05a22]" />
+                    <span>고해상도 이미지 보기</span>
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => {
+                      const imgUrl = activeCase.image || service.previewImage;
+                      setZoomImage({
+                        url: imgUrl || '',
+                        alt: activeCase.imageAlt || activeCase.title,
+                        title: activeCase.title,
+                        subtitle: `${activeCase.client} • ${activeCase.deliverable || '실제 납품 산출물'}`,
+                        gallery: activeCase.galleryImages,
+                        initialIndex: 0,
+                        initialMode: 'text',
+                        originalText: activeCase.originalText,
+                        originalDocumentMeta: activeCase.originalDocumentMeta
+                      });
+                    }}
+                    className="px-3.5 py-1.5 rounded-lg bg-[#f05a22] hover:bg-[#d94e1c] text-white text-xs font-black transition flex items-center gap-1.5 shadow-xs cursor-pointer"
+                  >
+                    <FileText className="w-3.5 h-3.5 text-white" />
+                    <span>원문 텍스트 전문 보기</span>
+                  </button>
                 </div>
               </div>
 
@@ -193,7 +290,10 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
                             title: page.title,
                             subtitle: `${activeCase.client} • ${activeCase.title}`,
                             gallery: activeCase.galleryImages,
-                            initialIndex: pIdx
+                            initialIndex: pIdx,
+                            initialMode: 'image',
+                            originalText: activeCase.originalText,
+                            originalDocumentMeta: activeCase.originalDocumentMeta
                           });
                         }}
                         className="group relative rounded-xl overflow-hidden border border-slate-200 hover:border-[#f05a22] transition bg-white text-left p-2 cursor-zoom-in hover:shadow-md flex flex-col"
@@ -369,6 +469,9 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
           subtitle={zoomImage.subtitle}
           gallery={zoomImage.gallery}
           initialIndex={zoomImage.initialIndex}
+          initialMode={zoomImage.initialMode || 'image'}
+          originalText={zoomImage.originalText}
+          originalDocumentMeta={zoomImage.originalDocumentMeta}
         />
       )}
     </div>

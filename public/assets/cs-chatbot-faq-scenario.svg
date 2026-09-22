@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" style="background:#f8fafc; font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.04" />
+    </filter>
+    <filter id="btn-shadow" x="-10%" y="-10%" width="120%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0f6259" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- TOP HEADER -->
+  <rect x="0" y="0" width="1200" height="64" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+  
+  <!-- Logo / T24 badge -->
+  <rect x="32" y="16" width="32" height="32" rx="8" fill="#2563eb" />
+  <text x="48" y="37" fill="#ffffff" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="-0.5">T24</text>
+  
+  <!-- Header Title -->
+  <text x="76" y="32" fill="#111827" font-size="15" font-weight="700">AI 고객응대 챗봇</text>
+  <text x="76" y="46" fill="#6b7280" font-size="11" font-weight="500">Customer Care Bot Studio · 트렌드24 업무대행</text>
+
+  <!-- Status & Date -->
+  <g transform="translate(1030, 20)">
+    <rect x="0" y="0" width="70" height="24" rx="12" fill="#dcfce7" />
+    <path d="M12 12l2.5 2.5 5-5" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="16" fill="#15803d" font-size="11" font-weight="700">운영중</text>
+    <text x="82" y="16" fill="#6b7280" font-size="12" font-weight="500">2026.09.22</text>
+  </g>
+
+  <!-- MAIN BODY -->
+  <!-- LEFT COLUMN: FAQ 관리 (width: 260) -->
+  <g transform="translate(32, 88)">
+    <!-- Header -->
+    <text x="0" y="20" fill="#111827" font-size="16" font-weight="800">FAQ 관리</text>
+    <rect x="204" y="4" width="56" height="22" rx="11" fill="#e0f2fe" />
+    <text x="232" y="19" fill="#0284c7" font-size="11" font-weight="700" text-anchor="middle">8건 등록</text>
+
+    <!-- FAQ Items (8) -->
+    <!-- 1 -->
+    <g transform="translate(0, 36)" filter="url(#card-shadow)">
+      <rect width="260" height="42" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+      <path d="M14 21l3 3 6-6" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="26" fill="#374151" font-size="12" font-weight="600">예약은 어떻게 하나요?</text>
+    </g>
+
+    <!-- 2 -->
+    <g transform="translate(0, 86)" filter="url(#card-shadow)">
+      <rect width="260" height="42" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+      <path d="M14 21l3 3 6-6" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="26" fill="#374151" font-size="12" font-weight="600">예약 변경·취소는 언제까지 가능한가요?</text>
+    </g>
+
+    <!-- 3 -->
+    <g transform="translate(0, 136)" filter="url(#card-shadow)">
+      <rect width="260" height="42" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+      <path d="M14 21l3 3 6-6" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="26" fill="#374151" font-size="12" font-weight="600">시술 시간은 얼마나 걸리나요?</text>
+    </g>
+
+    <!-- 4 -->
+    <g transform="translate(0, 186)" filter="url(#card-shadow)">
+      <rect width="260" height="42" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+      <path d="M14 21l3 3 6-6" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="26" fill="#374151" font-size="12" font-weight="600">남성도 이용 가능한가요?</text>
+    </g>
+
+    <!-- 5 -->
+    <g transform="translate(0, 236)" filter="url(#card-shadow)">
+      <rect width="260" height="42" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+      <path d="M14 21l3 3 6-6" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="26" fill="#374151" font-size="12" font-weight="600">두피 상태에 따라 시술이 달라지나요?</text>
+    </g>
+
+    <!-- 6 -->
+    <g transform="translate(0, 286)" filter="url(#card-shadow)">
+      <rect width="260" height="42" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+      <path d="M14 21l3 3 6-6" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="26" fill="#374151" font-size="12" font-weight="600">정기권 환불이 가능한가요?</text>
+    </g>
+
+    <!-- 7 -->
+    <g transform="translate(0, 336)" filter="url(#card-shadow)">
+      <rect width="260" height="42" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+      <path d="M14 21l3 3 6-6" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="26" fill="#374151" font-size="12" font-weight="600">주차는 가능한가요?</text>
+    </g>
+
+    <!-- 8 -->
+    <g transform="translate(0, 386)" filter="url(#card-shadow)">
+      <rect width="260" height="42" rx="8" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+      <path d="M14 21l3 3 6-6" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="32" y="26" fill="#374151" font-size="12" font-weight="600">임산부도 받을 수 있나요?</text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: 챗봇 시나리오 미리보기 (width: 856) -->
+  <g transform="translate(312, 88)">
+    <!-- Header with 3 Tab Buttons -->
+    <text x="0" y="20" fill="#111827" font-size="16" font-weight="800">챗봇 시나리오 미리보기</text>
+    
+    <g transform="translate(606, 0)">
+      <!-- Tab 1 (Active) -->
+      <rect x="0" y="0" width="76" height="30" rx="15" fill="#0f6259" />
+      <text x="38" y="19" fill="#ffffff" font-size="11.5" font-weight="700" text-anchor="middle">① 예약 문의</text>
+
+      <!-- Tab 2 -->
+      <rect x="82" y="0" width="76" height="30" rx="15" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" />
+      <text x="120" y="19" fill="#6b7280" font-size="11.5" font-weight="600" text-anchor="middle">② 가격 문의</text>
+
+      <!-- Tab 3 -->
+      <rect x="164" y="0" width="86" height="30" rx="15" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1" />
+      <text x="207" y="19" fill="#6b7280" font-size="11.5" font-weight="600" text-anchor="middle">③ 상담원 연결</text>
+    </g>
+
+    <!-- Chat Box Window -->
+    <g transform="translate(0, 36)" filter="url(#card-shadow)">
+      <rect width="856" height="624" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+
+      <!-- Bot Identity Header Bar -->
+      <g transform="translate(20, 16)">
+        <circle cx="16" cy="16" r="15" fill="#0f6259" />
+        <path d="M16 10v12M10 16h12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+        <text x="40" y="14" fill="#111827" font-size="14" font-weight="800">세렌헤드스파 상담봇</text>
+        <circle cx="43" cy="26" r="3.5" fill="#22c55e" />
+        <text x="52" y="29" fill="#9ca3af" font-size="11" font-weight="500">온라인</text>
+      </g>
+      <line x1="0" y1="62" x2="856" y2="62" stroke="#f3f4f6" stroke-width="1" />
+
+      <!-- CHAT CONVERSATION -->
+      <!-- Message 1 (User, Left) -->
+      <g transform="translate(24, 84)">
+        <rect width="216" height="42" rx="16" fill="#f1f3f5" />
+        <text x="16" y="26" fill="#1f2937" font-size="13" font-weight="500">이번 주 토요일 오후에 예약 가능한가요?</text>
+        <text x="2" y="55" fill="#9ca3af" font-size="10.5">14:02 · 고객</text>
+      </g>
+
+      <!-- Message 2 (Bot, Right) -->
+      <g transform="translate(266, 156)">
+        <rect width="566" height="58" rx="16" fill="#0f6259" />
+        <text x="20" y="27" fill="#ffffff" font-size="13.5" font-weight="500">안녕하세요! 세렌헤드스파입니다 🌿 토요일 오후 예약 가능 시간을 확인해드릴게요.</text>
+        <text x="20" y="47" fill="#ffffff" font-size="13.5" font-weight="500">베이직 / 프리미엄 중 어떤 시술로 도와드릴까요?</text>
+        <text x="564" y="73" fill="#9ca3af" font-size="10.5" text-anchor="end">14:02 · 상담봇</text>
+      </g>
+
+      <!-- Message 3 (User, Left) -->
+      <g transform="translate(24, 246)">
+        <rect width="90" height="40" rx="16" fill="#f1f3f5" />
+        <text x="16" y="25" fill="#1f2937" font-size="13" font-weight="500">프리미엄이요</text>
+        <text x="2" y="53" fill="#9ca3af" font-size="10.5">14:03 · 고객</text>
+      </g>
+
+      <!-- Message 4 (Bot, Right) -->
+      <g transform="translate(356, 316)">
+        <rect width="476" height="42" rx="16" fill="#0f6259" />
+        <text x="20" y="26" fill="#ffffff" font-size="13.5" font-weight="500">프리미엄 코스는 80분이며 14:00 · 16:30 두 타임이 비어있어요. 어느 시간이 편하실까요?</text>
+        <text x="474" y="58" fill="#9ca3af" font-size="10.5" text-anchor="end">14:03 · 상담봇</text>
+      </g>
+
+      <!-- Message 5 (User, Left) -->
+      <g transform="translate(24, 386)">
+        <rect width="86" height="40" rx="16" fill="#f1f3f5" />
+        <text x="16" y="25" fill="#1f2937" font-size="13" font-weight="500">16시 반이요</text>
+        <text x="2" y="53" fill="#9ca3af" font-size="10.5">14:04 · 고객</text>
+      </g>
+
+      <!-- Message 6 (Bot, Right) -->
+      <g transform="translate(266, 456)">
+        <rect width="566" height="58" rx="16" fill="#0f6259" />
+        <text x="20" y="27" fill="#ffffff" font-size="13.5" font-weight="500">토요일 16:30 프리미엄 코스로 예약 도와드렸습니다 ✅ 확인 문자 보내드렸어요.</text>
+        <text x="20" y="47" fill="#ffffff" font-size="13.5" font-weight="500">두피 고민 있으시면 미리 알려주셔도 좋아요!</text>
+        <text x="564" y="73" fill="#9ca3af" font-size="10.5" text-anchor="end">14:04 · 상담봇</text>
+      </g>
+
+      <!-- Bottom Chat Input Bar -->
+      <g transform="translate(0, 560)">
+        <line x1="0" y1="0" x2="856" y2="0" stroke="#e5e7eb" stroke-width="1" />
+        <rect y="1" width="856" height="63" rx="0" fill="#ffffff" />
+        
+        <!-- Input pill container -->
+        <rect x="20" y="10" width="760" height="44" rx="10" fill="#f1f3f5" stroke="#e5e7eb" stroke-width="1" />
+        <text x="36" y="37" fill="#9ca3af" font-size="13" font-weight="400">메시지를 입력하세요</text>
+
+        <!-- Send Button -->
+        <circle cx="814" cy="32" r="18" fill="#0f6259" filter="url(#btn-shadow)" />
+        <path d="M808 26l14 6-14 6 3-6-3-6zm3 6h7" fill="#ffffff" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+    </g>
+  </g>
+</svg>

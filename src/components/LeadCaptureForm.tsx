@@ -272,9 +272,10 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
               className="w-full px-3.5 py-2.5 text-xs rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f05a22] focus:border-[#f05a22] transition outline-none bg-white font-medium"
             >
               <option value="document">문서 검토 / 회의록 / 기획서 작성</option>
-              <option value="content">마케팅 콘텐츠 / 블로그 / 보도자료</option>
-              <option value="research">시장 조사 / 해외 데이터 리서치</option>
-              <option value="data">데이터 수집 크롤링 / 엑셀 자동화</option>
+              <option value="content">콘텐츠 제작 / 상세페이지 / 보도자료</option>
+              <option value="research">시장 조사 / 기업 및 규제 리서치</option>
+              <option value="marketing">마케팅 실행 보조 / 카피라이팅</option>
+              <option value="cs">기업 운영 및 CS 지원 / 응대 템플릿</option>
               <option value="custom">사내 맞춤 AI 시스템 구축 상담</option>
               <option value="other">기타 실무 대행 (상담 시 협의)</option>
             </select>
@@ -391,9 +392,10 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
                 <span className="text-gray-500">신청 업무:</span>
                 <span className="font-bold text-[#0f2439]">
                   {formData.taskType === 'document' && '문서 검토 / 회의록 / 기획서'}
-                  {formData.taskType === 'content' && '마케팅 콘텐츠 / 블로그 / 보도자료'}
-                  {formData.taskType === 'research' && '시장 조사 / 해외 데이터 리서치'}
-                  {formData.taskType === 'data' && '데이터 수집 / 엑셀 자동화'}
+                  {formData.taskType === 'content' && '콘텐츠 제작 / 상세페이지 / 보도자료'}
+                  {formData.taskType === 'research' && '시장 조사 / 기업 및 규제 리서치'}
+                  {formData.taskType === 'marketing' && '마케팅 실행 보조 / 카피라이팅'}
+                  {formData.taskType === 'cs' && '기업 운영 및 CS 지원'}
                   {formData.taskType === 'custom' && '사내 맞춤 AI 시스템 구축'}
                   {formData.taskType === 'other' && '기타 실무 대행'}
                 </span>

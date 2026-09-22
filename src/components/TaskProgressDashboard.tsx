@@ -77,12 +77,12 @@ export const INITIAL_TASKS: ClientTaskItem[] = [
     phone: '010-4491-8823',
     email: 'tskang@fintechsol.io',
     taskType: 'research',
-    taskTypeName: '리서치·데이터',
+    taskTypeName: '시장·기업 리서치',
     title: '동남아 3개국(싱가포르, 베트남, 인니) 전자지급결제 라이선스 규제 리서치',
     memo: '현지 금융당국 최신 규정 가이드라인 원문 검토 및 국내 핀테크 진출 필수 요건 비교표 요약을 요청합니다.',
     status: 'reviewing',
     priority: 'normal',
-    assignedManager: '최영준 수석 연구원 (데이터·테크)',
+    assignedManager: '최영준 수석 연구원 (글로벌·리서치)',
     progressPercent: 75,
     estimatedCompletion: '2025. 09. 19 18:00',
     reviewNotes: '싱가포르 MAS 규정 및 베트남 중앙은행 가이드라인 국문 요약 보고서 작성 중. 최종 검수 단계.',
@@ -117,17 +117,17 @@ export const INITIAL_TASKS: ClientTaskItem[] = [
     requesterName: '윤서아 마케팅 총괄',
     phone: '010-6102-9938',
     email: 'seoah@ecofashion.co.kr',
-    taskType: 'data',
-    taskTypeName: '리서치·데이터',
-    title: '국내 상위 5대 패션 플랫폼 카테고리별 베스트셀러 가격 추이 데이터 추출',
-    memo: '매주 업데이트되는 가격 및 리뷰 키워드 추출 자동화 스프레드시트 템플릿 완성 요청.',
+    taskType: 'research',
+    taskTypeName: '시장·기업 리서치',
+    title: '국내 상위 5대 패션 플랫폼 카테고리별 베스트셀러 및 프로모션 동향 조사',
+    memo: '주요 패션 플랫폼별 입점 브랜드 및 시즌 프로모션 트렌드 비교 분석 보고서 납품 요청.',
     status: 'completed',
     priority: 'normal',
-    assignedManager: '최영준 수석 연구원 (데이터·테크)',
+    assignedManager: '최영준 수석 연구원 (글로벌·리서치)',
     progressPercent: 100,
     estimatedCompletion: '납품 완료 (소요: 34시간)',
-    reviewNotes: '웹 데이터 추출 시트 및 구글 스프레드시트 자동 동기화 링크 납품 완료.',
-    deliverableName: '에코패션_경쟁사_가격추이_자동수집시트_v1.xlsx',
+    reviewNotes: '플랫폼별 트렌드 분석 보고서 및 비교 정리 시트 납품 완료.',
+    deliverableName: '에코패션_패션플랫폼_프로모션_동향보고서_최종.pdf',
     contactMethod: 'email',
     selectedPlan: 'starter'
   }
@@ -278,8 +278,8 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
           : newTaskForm.taskType === 'content'
           ? '콘텐츠·마케팅'
           : newTaskForm.taskType === 'research'
-          ? '리서치·데이터'
-          : '자동화·웹',
+          ? '시장·기업 리서치'
+          : '운영·사내AI·웹',
       title: newTaskForm.title,
       memo: newTaskForm.memo,
       status: 'received',
@@ -965,8 +965,8 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
                   >
                     <option value="document">문서·기획 검토</option>
                     <option value="content">콘텐츠·마케팅</option>
-                    <option value="research">리서치·데이터</option>
-                    <option value="tech">자동화·웹</option>
+                    <option value="research">시장·기업 리서치</option>
+                    <option value="tech">운영·사내AI·웹</option>
                   </select>
                 </div>
               </div>

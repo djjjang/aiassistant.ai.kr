@@ -97,7 +97,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSelectService }) => 
 
           {/* Sub Headline */}
           <p className="text-base sm:text-lg leading-relaxed text-gray-600 mb-6 font-normal max-w-2xl">
-            복잡하고 번거로운 문서 검토부터 콘텐츠 제작, 웹 데이터 리서치, 마케팅 자동화까지.
+            복잡하고 번거로운 문서 검토부터 콘텐츠 제작, 시장 리서치, 마케팅 자동화까지.
             AI 엔진과 검증된 <strong className="text-[#0f2439] font-bold">각 분야 5년 차 이상 실무 전문가 팀</strong>이 책임지고 납품합니다.
           </p>
 

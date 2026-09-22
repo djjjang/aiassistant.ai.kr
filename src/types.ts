@@ -5,10 +5,21 @@ export interface ServicePortfolioCase {
   duration: string;
   result: string;
   summary: string;
+  tabLabel?: string;
   tags?: string[];
   deliverable: string;
   image: string;
   imageAlt: string;
+  originalText?: string;
+  originalDocumentMeta?: {
+    recipient?: string;
+    sender?: string;
+    subject?: string;
+    docDate?: string;
+    docTypeBadge?: string;
+    securityLevel?: string;
+    attachments?: string[];
+  };
   galleryImages?: {
     url: string;
     title: string;

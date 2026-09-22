@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" style="background:#f8fafc; font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <!-- TOP HEADER -->
+  <rect x="0" y="0" width="1200" height="64" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+  
+  <!-- Logo / T24 badge -->
+  <rect x="32" y="16" width="32" height="32" rx="8" fill="#2563eb" />
+  <text x="48" y="37" fill="#ffffff" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="-0.5">T24</text>
+  
+  <!-- Header Title -->
+  <text x="76" y="32" fill="#111827" font-size="15" font-weight="700">AI 고객응대 템플릿 라이브러리</text>
+  <text x="76" y="46" fill="#6b7280" font-size="11" font-weight="500">Response Template Studio · 트렌드24 업무대행</text>
+
+  <!-- Status & Date -->
+  <g transform="translate(1010, 20)">
+    <rect x="0" y="0" width="94" height="24" rx="12" fill="#dcfce7" />
+    <path d="M12 12l2.5 2.5 5-5" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="16" fill="#15803d" font-size="11" font-weight="700">8종 등록완료</text>
+    <text x="106" y="16" fill="#6b7280" font-size="12" font-weight="500">2026.09.22</text>
+  </g>
+
+  <!-- MAIN BODY -->
+  <!-- COLUMN 1: 상황별 템플릿 (Left Navigation) -->
+  <g transform="translate(32, 88)">
+    <text x="0" y="18" fill="#4b5563" font-size="12" font-weight="700">상황별 템플릿</text>
+
+    <!-- 1. 주문 · 결제 확정 안내 (Active) -->
+    <g transform="translate(0, 32)">
+      <rect width="260" height="68" rx="12" fill="#ffedd5" stroke="#fed7aa" stroke-width="1" />
+      <rect x="12" y="14" width="40" height="40" rx="10" fill="#ea580c" />
+      <!-- Package / Box Icon -->
+      <path d="M22 28l10-5 10 5-10 5-10-5zm0 2v10l10 5V35l-10-5zm20 0l-10 5v10l10-5V30z" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round" />
+      <text x="64" y="34" fill="#111827" font-size="13" font-weight="700">주문 · 결제 확정 안내</text>
+      <text x="64" y="52" fill="#ea580c" font-size="11" font-weight="600">이메일 · 문자 2종</text>
+    </g>
+
+    <!-- 2. 배송 변경 · 취소 · 지연 안내 -->
+    <g transform="translate(0, 112)">
+      <rect width="260" height="64" rx="12" fill="#ffffff" stroke="#f1f5f9" stroke-width="1" />
+      <rect x="12" y="12" width="40" height="40" rx="10" fill="#f3f4f6" />
+      <!-- Clock Icon -->
+      <circle cx="32" cy="32" r="9" fill="none" stroke="#6b7280" stroke-width="1.8" />
+      <path d="M32 27v5l3.5 2" fill="none" stroke="#6b7280" stroke-width="1.8" stroke-linecap="round" />
+      <text x="64" y="32" fill="#374151" font-size="12.5" font-weight="600">배송 변경 · 취소 · 지연 안내</text>
+      <text x="64" y="48" fill="#9ca3af" font-size="11" font-weight="500">이메일 · 문자 2종</text>
+    </g>
+
+    <!-- 3. 불만 · 컴플레인 응대 -->
+    <g transform="translate(0, 188)">
+      <rect width="260" height="64" rx="12" fill="#ffffff" stroke="#f1f5f9" stroke-width="1" />
+      <rect x="12" y="12" width="40" height="40" rx="10" fill="#f3f4f6" />
+      <!-- Alert Triangle Icon -->
+      <path d="M32 24l9 15H23l9-15z" fill="none" stroke="#6b7280" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M32 29v4M32 36h.01" stroke="#6b7280" stroke-width="1.8" stroke-linecap="round" />
+      <text x="64" y="32" fill="#374151" font-size="12.5" font-weight="600">불만 · 컴플레인 응대</text>
+      <text x="64" y="48" fill="#9ca3af" font-size="11" font-weight="500">이메일 · 문자 2종</text>
+    </g>
+
+    <!-- 4. 리뷰 요청 · 프로모션 안내 -->
+    <g transform="translate(0, 264)">
+      <rect width="260" height="64" rx="12" fill="#ffffff" stroke="#f1f5f9" stroke-width="1" />
+      <rect x="12" y="12" width="40" height="40" rx="10" fill="#f3f4f6" />
+      <!-- Star Icon -->
+      <polygon points="32,23 35,29 41,30 37,34 38,40 32,37 26,40 27,34 23,30 29,29" fill="none" stroke="#6b7280" stroke-width="1.8" stroke-linejoin="round" />
+      <text x="64" y="32" fill="#374151" font-size="12.5" font-weight="600">리뷰 요청 · 프로모션 안내</text>
+      <text x="64" y="48" fill="#9ca3af" font-size="11" font-weight="500">이메일 · 문자 2종</text>
+    </g>
+  </g>
+
+  <!-- COLUMN 2: CENTER (이메일 템플릿) -->
+  <g transform="translate(316, 88)">
+    <!-- Header -->
+    <text x="0" y="20" fill="#111827" font-size="16" font-weight="800">주문 · 결제 확정 안내</text>
+    <rect x="148" y="4" width="76" height="22" rx="11" fill="#ffedd5" />
+    <text x="186" y="19" fill="#ea580c" font-size="11" font-weight="700" text-anchor="middle">이메일 · 문자</text>
+
+    <!-- Card Window -->
+    <g transform="translate(0, 32)" filter="url(#card-shadow)">
+      <rect width="490" height="624" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+
+      <!-- Subheader: 이메일 템플릿 -->
+      <g transform="translate(20, 16)">
+        <rect x="0" y="2" width="16" height="12" rx="2" fill="none" stroke="#6b7280" stroke-width="1.5" />
+        <path d="M0 4l8 5 8-5" fill="none" stroke="#6b7280" stroke-width="1.5" />
+        <text x="24" y="13" fill="#374151" font-size="13" font-weight="700">이메일 템플릿</text>
+      </g>
+      <line x1="0" y1="46" x2="490" y2="46" stroke="#f1f5f9" stroke-width="1" />
+
+      <!-- Meta Info -->
+      <g transform="translate(24, 70)">
+        <text x="0" y="0" fill="#6b7280" font-size="12" font-weight="600">받는사람</text>
+        <text x="68" y="0" fill="#1f2937" font-size="12.5" font-weight="500">김혜진 고객님</text>
+
+        <text x="0" y="28" fill="#6b7280" font-size="12" font-weight="600">제목</text>
+        <text x="68" y="28" fill="#111827" font-size="13" font-weight="700">[루미마켓] 주문이 확정되었습니다 (LM20260922-0142)</text>
+      </g>
+      <line x1="20" y1="124" x2="470" y2="124" stroke="#f1f5f9" stroke-width="1" />
+
+      <!-- Email Body -->
+      <g transform="translate(24, 154)">
+        <text x="0" y="0" fill="#374151" font-size="13" font-weight="400">안녕하세요, 혜진님. 루미마켓을 이용해주셔서 감사합니다. 주문하신 상품이 정상적으로 확정되</text>
+        <text x="0" y="22" fill="#374151" font-size="13" font-weight="400">었습니다.</text>
+
+        <!-- Order Detail Card Box -->
+        <g transform="translate(0, 48)">
+          <rect width="442" height="152" rx="10" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1" />
+          
+          <g transform="translate(20, 28)">
+            <text x="0" y="0" fill="#6b7280" font-size="12" font-weight="600">주문번호</text>
+            <text x="80" y="0" fill="#374151" font-size="12" font-weight="500">LM20260922-0142</text>
+
+            <text x="0" y="30" fill="#6b7280" font-size="12" font-weight="600">상품명</text>
+            <text x="80" y="30" fill="#374151" font-size="12" font-weight="500">오가닉 코튼 니트 외 1건</text>
+
+            <text x="0" y="60" fill="#6b7280" font-size="12" font-weight="600">결제금액</text>
+            <text x="80" y="60" fill="#111827" font-size="12" font-weight="700">68,000원</text>
+
+            <text x="0" y="90" fill="#6b7280" font-size="12" font-weight="600">배송 예정일</text>
+            <text x="80" y="90" fill="#374151" font-size="12" font-weight="500">9월 24일 (목)</text>
+          </g>
+        </g>
+
+        <!-- Footer Note -->
+        <text x="0" y="240" fill="#4b5563" font-size="12.5" font-weight="400">배송이 시작되면 별도로 안내드리겠습니다. 감사합니다.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- COLUMN 3: RIGHT (문자(SMS) 템플릿) -->
+  <g transform="translate(830, 88)">
+    <g transform="translate(0, 32)" filter="url(#card-shadow)">
+      <rect width="338" height="624" rx="12" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+
+      <!-- Subheader: 문자(SMS) 템플릿 -->
+      <g transform="translate(20, 16)">
+        <path d="M2 3h13a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6l-4 3V5a2 2 0 0 1 2-2z" fill="none" stroke="#6b7280" stroke-width="1.5" />
+        <text x="24" y="13" fill="#374151" font-size="13" font-weight="700">문자(SMS) 템플릿</text>
+      </g>
+      <line x1="0" y1="46" x2="338" y2="46" stroke="#f1f5f9" stroke-width="1" />
+
+      <!-- Sender Info -->
+      <g transform="translate(20, 68)">
+        <circle cx="14" cy="14" r="14" fill="#c2410c" />
+        <text x="14" y="19" fill="#ffffff" font-size="12.5" font-weight="800" text-anchor="middle">루</text>
+        <text x="38" y="19" fill="#111827" font-size="13" font-weight="700">루미마켓</text>
+      </g>
+
+      <!-- SMS Bubble Box -->
+      <g transform="translate(20, 114)">
+        <rect width="298" height="116" rx="12" fill="#f1f3f5" />
+        <g transform="translate(18, 28)">
+          <text x="0" y="0" fill="#111827" font-size="12.5" font-weight="600">[루미마켓] 혜진님 주문이 확정됐어요!</text>
+          <text x="0" y="24" fill="#374151" font-size="12">(LM20260922-0142) 9/24 배송 예정입니다.</text>
+          <text x="0" y="48" fill="#4b5563" font-size="12">문의 1544-0000</text>
+        </g>
+
+        <!-- Footer Tag -->
+        <text x="0" y="142" fill="#9ca3af" font-size="11" font-weight="500">발송 예정 · 주문 확정 시점 자동 발송</text>
+      </g>
+    </g>
+  </g>
+</svg>
