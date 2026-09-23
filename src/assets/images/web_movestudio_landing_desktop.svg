@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1720" width="1200" height="1720" style="background:#fcfbf9; font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="subtle-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#181514" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <!-- NAVIGATION HEADER -->
+  <rect x="0" y="0" width="1200" height="72" fill="#ffffff" stroke="#f0eee9" stroke-width="1" />
+  <text x="48" y="44" fill="#111827" font-size="18" font-weight="900" letter-spacing="1.2">MOVE STUDIO</text>
+
+  <!-- Nav Items -->
+  <g transform="translate(480, 44)" fill="#374151" font-size="13.5" font-weight="600">
+    <text x="0" y="0">스튜디오 소개</text>
+    <text x="100" y="0">클래스</text>
+    <text x="175" y="0">가격</text>
+    <text x="240" y="0">오시는 길</text>
+  </g>
+
+  <!-- Header CTA Button -->
+  <g transform="translate(1020, 16)">
+    <rect width="132" height="40" rx="20" fill="#c25737" />
+    <text x="66" y="25" fill="#ffffff" font-size="12.5" font-weight="700" text-anchor="middle">체험 예약하기</text>
+  </g>
+
+  <!-- HERO SECTION -->
+  <g transform="translate(48, 120)">
+    <!-- Left Hero Text Column -->
+    <g transform="translate(0, 40)">
+      <!-- Badge -->
+      <rect x="0" y="0" width="116" height="28" rx="14" fill="#faebe5" />
+      <text x="58" y="19" fill="#c25737" font-size="11.5" font-weight="700" text-anchor="middle">강남점 신규 OPEN</text>
+
+      <!-- Main Heading -->
+      <text x="0" y="76" fill="#111827" font-size="36" font-weight="900" letter-spacing="-0.5">몸이 편해지는 필라테스,</text>
+      <text x="0" y="126" fill="#111827" font-size="36" font-weight="900" letter-spacing="-0.5">무브스튜디오에서 시작하세요</text>
+
+      <!-- Subheading -->
+      <text x="0" y="174" fill="#6b7280" font-size="15" font-weight="500">최대 6인 소그룹, 강사가 자세 하나하나 봐주는</text>
+      <text x="0" y="198" fill="#6b7280" font-size="15" font-weight="500">맞춤형 필라테스 · 그룹핏 스튜디오</text>
+
+      <!-- Hero Action Buttons -->
+      <g transform="translate(0, 240)">
+        <rect width="168" height="48" rx="24" fill="#c25737" />
+        <text x="84" y="30" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">체험수업 예약하기</text>
+
+        <rect x="184" width="144" height="48" rx="24" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+        <text x="256" y="30" fill="#374151" font-size="14" font-weight="600" text-anchor="middle">클래스 둘러보기</text>
+      </g>
+    </g>
+
+    <!-- Right Hero Graphic -->
+    <g transform="translate(680, 0)">
+      <!-- Big Peach Circle -->
+      <circle cx="210" cy="180" r="160" fill="#fed7aa" opacity="0.6" />
+      <!-- Coral Circle -->
+      <circle cx="280" cy="130" r="110" fill="#fca5a5" opacity="0.75" />
+      <!-- Olive/Sage Green Circle -->
+      <circle cx="80" cy="240" r="80" fill="#78a57e" opacity="0.85" />
+
+      <!-- Stylized Pilates Figure -->
+      <g transform="translate(190, 80)" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <!-- Head -->
+        <circle cx="20" cy="15" r="12" fill="#ffffff" stroke="none" />
+        <!-- Spine -->
+        <line x1="20" y1="30" x2="20" y2="75" />
+        <!-- Arms stretched gracefully -->
+        <line x1="20" y1="46" x2="-16" y2="30" />
+        <line x1="20" y1="46" x2="56" y2="30" />
+        <!-- Legs in dynamic stretch -->
+        <line x1="20" y1="75" x2="-10" y2="120" />
+        <line x1="20" y1="75" x2="50" y2="120" />
+      </g>
+    </g>
+  </g>
+
+  <!-- STATS BAR (3 Cards) -->
+  <g transform="translate(48, 520)">
+    <!-- Card 1 -->
+    <g transform="translate(0, 0)" filter="url(#subtle-shadow)">
+      <rect width="344" height="106" rx="14" fill="#ffffff" stroke="#f0eee9" stroke-width="1" />
+      <text x="172" y="52" fill="#b84e31" font-size="28" font-weight="900" text-anchor="middle">1,200+</text>
+      <text x="172" y="78" fill="#6b7280" font-size="12.5" font-weight="500" text-anchor="middle">누적 수강생</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(380, 0)" filter="url(#subtle-shadow)">
+      <rect width="344" height="106" rx="14" fill="#ffffff" stroke="#f0eee9" stroke-width="1" />
+      <text x="172" y="52" fill="#b84e31" font-size="28" font-weight="900" text-anchor="middle">4.9 / 5</text>
+      <text x="172" y="78" fill="#6b7280" font-size="12.5" font-weight="500" text-anchor="middle">평균 수업 만족도</text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(760, 0)" filter="url(#subtle-shadow)">
+      <rect width="344" height="106" rx="14" fill="#ffffff" stroke="#f0eee9" stroke-width="1" />
+      <text x="172" y="52" fill="#b84e31" font-size="28" font-weight="900" text-anchor="middle">500h+</text>
+      <text x="172" y="78" fill="#6b7280" font-size="12.5" font-weight="500" text-anchor="middle">전 강사 자격 인증시간</text>
+    </g>
+  </g>
+
+  <!-- FEATURES SECTION: 왜 무브스튜디오인가요 -->
+  <g transform="translate(48, 690)">
+    <text x="552" y="0" fill="#111827" font-size="24" font-weight="900" text-anchor="middle">왜 무브스튜디오인가요</text>
+
+    <g transform="translate(0, 44)">
+      <!-- Feature Card 1 -->
+      <g transform="translate(0, 0)" filter="url(#subtle-shadow)">
+        <rect width="344" height="210" rx="16" fill="#ffffff" stroke="#f0eee9" stroke-width="1" />
+        <rect x="24" y="24" width="44" height="44" rx="10" fill="#ffedd5" />
+        <!-- People icon -->
+        <g transform="translate(36, 36)" stroke="#c25737" stroke-width="2" fill="none" stroke-linecap="round">
+          <circle cx="6" cy="5" r="3" />
+          <path d="M1 16v-2a4 4 0 0 1 8 0v2" />
+          <circle cx="15" cy="6" r="2.5" />
+          <path d="M12 16v-1.5a3 3 0 0 1 5 0v1.5" />
+        </g>
+        <text x="24" y="104" fill="#111827" font-size="16" font-weight="800">최대 6인 소그룹 케어</text>
+        <text x="24" y="134" fill="#64748b" font-size="12.5" font-weight="400">인원이 적어서 강사님이 자세 하나하나 직접 봐드려요. 혼자 하</text>
+        <text x="24" y="154" fill="#64748b" font-size="12.5" font-weight="400">는 것보다 더 정확하게 배울 수 있습니다.</text>
+      </g>
+
+      <!-- Feature Card 2 -->
+      <g transform="translate(380, 0)" filter="url(#subtle-shadow)">
+        <rect width="344" height="210" rx="16" fill="#ffffff" stroke="#f0eee9" stroke-width="1" />
+        <rect x="24" y="24" width="44" height="44" rx="10" fill="#ffedd5" />
+        <!-- Book / curriculum icon -->
+        <g transform="translate(38, 36)" stroke="#c25737" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="0" y="0" width="16" height="20" rx="3" />
+          <line x1="4" y1="6" x2="12" y2="6" />
+          <line x1="4" y1="10" x2="12" y2="10" />
+        </g>
+        <text x="24" y="104" fill="#111827" font-size="16" font-weight="800">초보자 맞춤 커리큘럼</text>
+        <text x="24" y="134" fill="#64748b" font-size="12.5" font-weight="400">필라테스가 처음이어도 괜찮아요. 레벨별 클래스로 기초부터 차</text>
+        <text x="24" y="154" fill="#64748b" font-size="12.5" font-weight="400">근차근 따라올 수 있게 구성했습니다.</text>
+      </g>
+
+      <!-- Feature Card 3 -->
+      <g transform="translate(760, 0)" filter="url(#subtle-shadow)">
+        <rect width="344" height="210" rx="16" fill="#ffffff" stroke="#f0eee9" stroke-width="1" />
+        <rect x="24" y="24" width="44" height="44" rx="10" fill="#ffedd5" />
+        <!-- App / phone icon -->
+        <g transform="translate(40, 36)" stroke="#c25737" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="0" y="0" width="14" height="20" rx="3" />
+          <circle cx="7" cy="16" r="0.8" fill="#c25737" />
+        </g>
+        <text x="24" y="104" fill="#111827" font-size="16" font-weight="800">앱으로 간편 예약</text>
+        <text x="24" y="134" fill="#64748b" font-size="12.5" font-weight="400">수업 예약, 변경, 취소까지 앱에서 몇 초면 끝나요. 잔여 좌석도</text>
+        <text x="24" y="154" fill="#64748b" font-size="12.5" font-weight="400">실시간으로 확인할 수 있습니다.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- PROMOTION BANNER -->
+  <g transform="translate(48, 1000)">
+    <rect width="1104" height="136" rx="20" fill="#c25737" />
+    <g transform="translate(48, 42)">
+      <text x="0" y="0" fill="#fed7aa" font-size="13" font-weight="600">신규 오픈 기념 혜택 · 10월 31일까지</text>
+      <text x="0" y="38" fill="#ffffff" font-size="24" font-weight="900">체험 수업 1회 무료 + 3개월 등록 시 15% 할인</text>
+    </g>
+
+    <!-- Banner Button -->
+    <g transform="translate(930, 48)">
+      <rect width="128" height="44" rx="22" fill="#ffffff" />
+      <text x="64" y="27" fill="#c25737" font-size="14" font-weight="800" text-anchor="middle">혜택 받기</text>
+    </g>
+  </g>
+
+  <!-- REVIEWS: 먼저 경험한 회원들의 이야기 -->
+  <g transform="translate(48, 1200)">
+    <text x="552" y="0" fill="#111827" font-size="24" font-weight="900" text-anchor="middle">먼저 경험한 회원들의 이야기</text>
+
+    <g transform="translate(0, 44)">
+      <!-- Review 1 -->
+      <g transform="translate(0, 0)" filter="url(#subtle-shadow)">
+        <rect width="536" height="154" rx="16" fill="#ffffff" stroke="#f0eee9" stroke-width="1" />
+        <!-- 5 Stars -->
+        <g transform="translate(32, 28)" fill="#c25737" font-size="15">
+          <text x="0" y="0">★★★★★</text>
+        </g>
+        <text x="32" y="74" fill="#1f2937" font-size="13.5" font-weight="500">"인원이 적으니까 자세 교정을 매번 받을 수 있어서 좋아요. 허리 통증이 확실히 줄었습니다."</text>
+        <text x="32" y="118" fill="#64748b" font-size="12" font-weight="500">수강생 J님 · 3개월 수강</text>
+      </g>
+
+      <!-- Review 2 -->
+      <g transform="translate(568, 0)" filter="url(#subtle-shadow)">
+        <rect width="536" height="154" rx="16" fill="#ffffff" stroke="#f0eee9" stroke-width="1" />
+        <g transform="translate(32, 28)" fill="#c25737" font-size="15">
+          <text x="0" y="0">★★★★★</text>
+        </g>
+        <text x="32" y="74" fill="#1f2937" font-size="13.5" font-weight="500">"운동 처음인데도 전혀 부담 없었어요. 앱 예약도 편하고 시간 맞추기 좋아서 꾸준히 다니게 돼요."</text>
+        <text x="32" y="118" fill="#64748b" font-size="12" font-weight="500">수강생 M님 · 6개월 수강</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- FOOTER -->
+  <g transform="translate(0, 1480)">
+    <rect width="1200" height="240" fill="#181514" />
+    <g transform="translate(48, 50)">
+      <text x="0" y="0" fill="#ffffff" font-size="17" font-weight="900" letter-spacing="1.2">MOVE STUDIO</text>
+      <text x="0" y="34" fill="#9ca3af" font-size="12.5" font-weight="400">강남점 · 평일 07:00~22:00 · 주말 09:00~18:00</text>
+      <text x="0" y="58" fill="#9ca3af" font-size="12.5" font-weight="400">문의 02-0000-0000</text>
+    </g>
+
+    <!-- Footer CTA -->
+    <g transform="translate(980, 56)">
+      <rect width="152" height="44" rx="22" fill="#c25737" />
+      <text x="76" y="27" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">체험 예약하기</text>
+    </g>
+  </g>
+</svg>

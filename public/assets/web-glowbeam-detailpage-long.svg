@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 1620" width="540" height="1620" style="background:#ffffff; font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="long-hero-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="50%" stop-color="#f0f9ff" />
+      <stop offset="100%" stop-color="#fce7f3" />
+    </linearGradient>
+    <linearGradient id="device-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+  </defs>
+
+  <!-- MOBILE STATUS BAR & NAV -->
+  <rect width="540" height="54" fill="#ffffff" stroke="#f1f5f9" stroke-width="1" />
+  <text x="24" y="34" fill="#0f172a" font-size="16" font-weight="900" letter-spacing="1">GLOWBEAM</text>
+  <g transform="translate(488, 20)" stroke="#1e293b" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M0 0h18M0 7h18M0 14h18" />
+  </g>
+
+  <!-- HERO VISUAL -->
+  <g transform="translate(0, 54)">
+    <rect width="540" height="420" fill="url(#long-hero-grad)" />
+
+    <!-- Badges -->
+    <g transform="translate(24, 24)">
+      <rect width="80" height="28" rx="14" fill="#ffedd5" />
+      <text x="40" y="19" fill="#ea580c" font-size="12" font-weight="800" text-anchor="middle">BEST 1위</text>
+    </g>
+
+    <!-- Device Graphic -->
+    <g transform="translate(270, 210)">
+      <circle cx="0" cy="0" r="130" fill="#fed7aa" opacity="0.4" />
+      <circle cx="40" cy="-30" r="80" fill="#f43f5e" opacity="0.2" />
+
+      <!-- Device Body -->
+      <g transform="translate(-25, -120)">
+        <rect x="0" y="50" width="50" height="160" rx="25" fill="url(#device-grad)" stroke="#cbd5e1" stroke-width="2" />
+        <circle cx="25" cy="50" r="36" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+        <circle cx="25" cy="50" r="26" fill="#fff1f2" stroke="#f43f5e" stroke-width="3" stroke-dasharray="5,2" />
+        <circle cx="25" cy="115" r="5" fill="#2563eb" />
+        <line x1="15" y1="145" x2="35" y2="145" stroke="#94a3b8" stroke-width="2.5" stroke-linecap="round" />
+      </g>
+    </g>
+  </g>
+
+  <!-- PRODUCT HEADER -->
+  <g transform="translate(24, 500)">
+    <text x="0" y="0" fill="#2563eb" font-size="13" font-weight="700">GLOWBEAM · 글로우빔</text>
+    <text x="0" y="32" fill="#0f172a" font-size="22" font-weight="900">글로우빔 미니 LED 스킨케어 디바이스</text>
+
+    <!-- Rating -->
+    <g transform="translate(0, 52)">
+      <text x="0" y="0" fill="#eab308" font-size="13" font-weight="700">★★★★★ 4.8</text>
+      <text x="96" y="0" fill="#64748b" font-size="12">리뷰 1,204건 | 무료배송</text>
+    </g>
+
+    <!-- Price -->
+    <g transform="translate(0, 94)">
+      <text x="0" y="0" fill="#ef4444" font-size="28" font-weight="900">32%</text>
+      <text x="70" y="0" fill="#0f172a" font-size="28" font-weight="900">129,000원</text>
+      <text x="240" y="-2" fill="#94a3b8" font-size="15" text-decoration="line-through">189,000원</text>
+    </g>
+  </g>
+
+  <!-- SECTION 1: HOOKING -->
+  <g transform="translate(24, 630)">
+    <rect width="492" height="110" rx="14" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+    <text x="24" y="38" fill="#0f172a" font-size="16" font-weight="800">"하루 5분, 피부과 케어를 집에서 그대로"</text>
+    <text x="24" y="64" fill="#64748b" font-size="13" font-weight="400">바쁜 일상 속, 갈바닉 미세전류와 3파장 컬러 테라피로</text>
+    <text x="24" y="86" fill="#64748b" font-size="13" font-weight="400">속건조부터 모공 탄력까지 간편하게 홈케어하세요.</text>
+  </g>
+
+  <!-- SECTION 2: 4 CORE FEATURES -->
+  <g transform="translate(24, 764)">
+    <text x="0" y="16" fill="#0f172a" font-size="18" font-weight="800">글로우빔 핵심 기능 4가지</text>
+
+    <!-- Grid 2x2 -->
+    <g transform="translate(0, 32)">
+      <!-- Item 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="238" height="96" rx="12" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1" />
+        <text x="18" y="34" fill="#0369a1" font-size="14" font-weight="800">✓ 피부 저자극 인증</text>
+        <text x="18" y="58" fill="#475569" font-size="12">인체적용 저자극 테스트 완료</text>
+        <text x="18" y="76" fill="#475569" font-size="12">민감성 피부도 안심 사용</text>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(254, 0)">
+        <rect width="238" height="96" rx="12" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1" />
+        <text x="18" y="34" fill="#0369a1" font-size="14" font-weight="800">⚡ 마그네틱 무선충전</text>
+        <text x="18" y="58" fill="#475569" font-size="12">전용 거치대 기본 제공</text>
+        <text x="18" y="76" fill="#475569" font-size="12">1회 완충 시 최대 20일 사용</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 108)">
+        <rect width="238" height="96" rx="12" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1" />
+        <text x="18" y="34" fill="#0369a1" font-size="14" font-weight="800">🎛 3단계 강도 조절</text>
+        <text x="18" y="58" fill="#475569" font-size="12">원터치 간편 강도 제어</text>
+        <text x="18" y="76" fill="#475569" font-size="12">피부 컨디션별 맞춤 케어</text>
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(254, 108)">
+        <rect width="238" height="96" rx="12" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1" />
+        <text x="18" y="34" fill="#0369a1" font-size="14" font-weight="800">🛡 1년 무상 안심 A/S</text>
+        <text x="18" y="58" fill="#475569" font-size="12">본사 직영 1:1 교환 보증</text>
+        <text x="18" y="76" fill="#475569" font-size="12">KC 안전 인증 획득</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- SECTION 3: BEFORE & AFTER -->
+  <g transform="translate(24, 1030)">
+    <rect width="492" height="190" rx="16" fill="#fdf2f8" stroke="#fbcfe8" stroke-width="1" />
+    <text x="24" y="36" fill="#be185d" font-size="13" font-weight="800">CLINICAL TRIAL RESULT</text>
+    <text x="24" y="66" fill="#0f172a" font-size="17" font-weight="900">2주 사용 후 놀라운 피부 변화</text>
+
+    <!-- Comparison boxes -->
+    <g transform="translate(24, 86)">
+      <g transform="translate(0, 0)">
+        <rect width="214" height="80" rx="8" fill="#ffffff" stroke="#f1f5f9" />
+        <text x="14" y="28" fill="#94a3b8" font-size="12" font-weight="700">Before (사용 전)</text>
+        <text x="14" y="52" fill="#64748b" font-size="12">건조함 · 칙칙한 피부톤</text>
+      </g>
+      <g transform="translate(230, 0)">
+        <rect width="214" height="80" rx="8" fill="#ffffff" stroke="#f472b6" stroke-width="1.5" />
+        <text x="14" y="28" fill="#db2777" font-size="12" font-weight="800">After (2주 사용 후)</text>
+        <text x="14" y="52" fill="#1e293b" font-size="12" font-weight="700">피부 수분도 +48.2% 개선</text>
+        <text x="14" y="68" fill="#1e293b" font-size="12" font-weight="700">광채 지수 +36.5% 향상</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- SECTION 4: PRODUCT SPEC TABLE -->
+  <g transform="translate(24, 1244)">
+    <text x="0" y="16" fill="#0f172a" font-size="16" font-weight="800">제품 상세 제원</text>
+    <g transform="translate(0, 28)">
+      <rect width="492" height="140" rx="10" fill="#f8fafc" stroke="#e2e8f0" />
+      <g transform="translate(18, 28)" font-size="12">
+        <text x="0" y="0" fill="#64748b">제품명 / 모델명</text>
+        <text x="140" y="0" fill="#0f172a" font-weight="600">글로우빔 미니 LED 스킨케어 / GB-100</text>
+
+        <text x="0" y="28" fill="#64748b">무게 및 규격</text>
+        <text x="140" y="28" fill="#0f172a" font-weight="600">85g / 42 × 42 × 165 mm</text>
+
+        <text x="0" y="56" fill="#64748b">배터리 사양</text>
+        <text x="140" y="56" fill="#0f172a" font-weight="600">800mAh 리튬이온 (C타입 & 무선 거치)</text>
+
+        <text x="0" y="84" fill="#64748b">안전인증</text>
+        <text x="140" y="84" fill="#0f172a" font-weight="600">KC 방송통신기자재 적합성평가 인증</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- STICKY BOTTOM BUY BAR -->
+  <g transform="translate(0, 1530)">
+    <rect width="540" height="90" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+    <g transform="translate(24, 18)">
+      <rect width="492" height="52" rx="12" fill="#2563eb" />
+      <text x="246" y="32" fill="#ffffff" font-size="16" font-weight="800" text-anchor="middle">지금 32% 할인가로 구매하기 (무료배송)</text>
+    </g>
+  </g>
+</svg>

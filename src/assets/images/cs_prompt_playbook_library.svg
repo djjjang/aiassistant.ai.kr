@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" width="1200" height="780" style="background:#f8fafc; font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.04" />
+    </filter>
+  </defs>
+
+  <!-- TOP HEADER -->
+  <rect x="0" y="0" width="1200" height="64" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+  
+  <!-- Logo / T24 badge -->
+  <rect x="32" y="16" width="32" height="32" rx="8" fill="#2563eb" />
+  <text x="48" y="37" fill="#ffffff" font-size="13" font-weight="800" text-anchor="middle" letter-spacing="-0.5">T24</text>
+  
+  <!-- Header Title -->
+  <text x="76" y="32" fill="#111827" font-size="15" font-weight="700">AI 프롬프트 라이브러리</text>
+  <text x="76" y="46" fill="#6b7280" font-size="11" font-weight="500">Prompt Playbook · 트렌드24 업무대행</text>
+
+  <!-- Status & Date -->
+  <g transform="translate(978, 20)">
+    <rect x="0" y="0" width="134" height="24" rx="12" fill="#dcfce7" />
+    <path d="M12 12l2.5 2.5 5-5" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="24" y="16" fill="#15803d" font-size="11" font-weight="700">12개 프롬프트 등록</text>
+    <text x="148" y="16" fill="#6b7280" font-size="12" font-weight="500">2026.09.23</text>
+  </g>
+
+  <!-- MAIN BODY -->
+  <!-- LEFT COLUMN: 카테고리 (width: 220) -->
+  <g transform="translate(32, 88)">
+    <text x="0" y="18" fill="#6b7280" font-size="12" font-weight="700">카테고리</text>
+
+    <!-- Category 1 (Selected): 보고서 작성 -->
+    <g transform="translate(0, 32)">
+      <rect width="220" height="68" rx="12" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5" />
+      <rect x="12" y="14" width="40" height="40" rx="8" fill="#2563eb" />
+      <!-- Document Icon -->
+      <path d="M26 24h7l4 4v12a2 2 0 0 1-2 2H26a2 2 0 0 1-2-2V26a2 2 0 0 1 2-2z" fill="none" stroke="#ffffff" stroke-width="1.8" />
+      <path d="M33 24v4h4" fill="none" stroke="#ffffff" stroke-width="1.8" />
+      <line x1="28" y1="33" x2="36" y2="33" stroke="#ffffff" stroke-width="1.5" />
+      <line x1="28" y1="37" x2="34" y2="37" stroke="#ffffff" stroke-width="1.5" />
+
+      <text x="62" y="34" fill="#111827" font-size="13" font-weight="700">보고서 작성</text>
+      <text x="62" y="52" fill="#2563eb" font-size="11" font-weight="600">프롬프트 4개</text>
+    </g>
+
+    <!-- Category 2: 메일 작성 -->
+    <g transform="translate(0, 112)">
+      <rect width="220" height="60" rx="12" fill="#ffffff" stroke="#f1f5f9" stroke-width="1" />
+      <rect x="12" y="10" width="40" height="40" rx="8" fill="#f3f4f6" />
+      <!-- Mail / Chat Icon -->
+      <path d="M24 23h16a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-9l-5 4v-4h-2a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2z" fill="none" stroke="#6b7280" stroke-width="1.5" />
+      <text x="62" y="31" fill="#374151" font-size="12.5" font-weight="600">메일 작성</text>
+      <text x="62" y="47" fill="#9ca3af" font-size="11" font-weight="500">프롬프트 4개</text>
+    </g>
+
+    <!-- Category 3: 아이디어 작성 -->
+    <g transform="translate(0, 184)">
+      <rect width="220" height="60" rx="12" fill="#ffffff" stroke="#f1f5f9" stroke-width="1" />
+      <rect x="12" y="10" width="40" height="40" rx="8" fill="#f3f4f6" />
+      <!-- Lightbulb Icon -->
+      <path d="M32 20a6 6 0 0 0-6 6c0 2.5 1.5 4 2 5v2h8v-2c.5-1 2-2.5 2-5a6 6 0 0 0-6-6z" fill="none" stroke="#6b7280" stroke-width="1.5" />
+      <line x1="30" y1="36" x2="34" y2="36" stroke="#6b7280" stroke-width="1.5" />
+      <text x="62" y="31" fill="#374151" font-size="12.5" font-weight="600">아이디어 작성</text>
+      <text x="62" y="47" fill="#9ca3af" font-size="11" font-weight="500">프롬프트 4개</text>
+    </g>
+
+    <!-- Tip Box -->
+    <g transform="translate(0, 260)">
+      <rect width="220" height="64" rx="10" fill="#f0f9ff" stroke="#e0f2fe" stroke-width="1" />
+      <text x="12" y="26" fill="#0369a1" font-size="11" font-weight="500">💡 부분만 상황에 맞게 바꿔서 바로 사용하세</text>
+      <text x="12" y="44" fill="#0369a1" font-size="11" font-weight="500">요.</text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: PROMPT CARDS (width: 896) -->
+  <g transform="translate(276, 88)">
+    <!-- Header -->
+    <text x="0" y="18" fill="#111827" font-size="15" font-weight="800">보고서 작성</text>
+    <rect x="94" y="4" width="86" height="20" rx="10" fill="#dbeafe" />
+    <text x="137" y="18" fill="#2563eb" font-size="11" font-weight="700" text-anchor="middle">4개 중 3개 표시</text>
+
+    <!-- 3 Prompt Cards -->
+    <g transform="translate(0, 32)">
+      <!-- CARD 1: 주간 업무 보고서 초안 -->
+      <g transform="translate(0, 0)" filter="url(#card-shadow)">
+        <rect width="284" height="600" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+        <text x="18" y="34" fill="#111827" font-size="13.5" font-weight="700">주간 업무 보고서 초안</text>
+
+        <!-- Prompt Content Box -->
+        <g transform="translate(16, 52)">
+          <rect width="252" height="472" rx="12" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1" />
+          <g transform="translate(16, 26)">
+            <text x="0" y="0" fill="#374151" font-size="12" font-weight="400">이번 주 업무 내용을 바탕으로 상사에게 보고</text>
+            <text x="0" y="20" fill="#374151" font-size="12" font-weight="400">할 주간 업무보고서를 작성해줘. [진행업무 /</text>
+            <text x="0" y="40" fill="#374151" font-size="12" font-weight="400">주요성과 / 다음주계획] 순서로, 간결한 비즈</text>
+            <text x="0" y="60" fill="#374151" font-size="12" font-weight="400">니스 톤으로 작성해줘.</text>
+
+            <text x="0" y="110" fill="#374151" font-size="12" font-weight="600">업무 내용:</text>
+          </g>
+        </g>
+
+        <!-- Copy Button -->
+        <g transform="translate(16, 540)">
+          <rect width="252" height="40" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
+          <g transform="translate(98, 25)">
+            <!-- Copy icon -->
+            <rect x="0" y="-10" width="10" height="10" rx="2" fill="none" stroke="#2563eb" stroke-width="1.3" />
+            <path d="M3 -7v-4a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-4" fill="none" stroke="#2563eb" stroke-width="1.3" />
+            <text x="18" y="0" fill="#2563eb" font-size="12.5" font-weight="700">복사하기</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- CARD 2: 데이터 기반 보고서 요약 -->
+      <g transform="translate(304, 0)" filter="url(#card-shadow)">
+        <rect width="284" height="600" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+        <text x="18" y="34" fill="#111827" font-size="13.5" font-weight="700">데이터 기반 보고서 요약</text>
+
+        <!-- Prompt Content Box -->
+        <g transform="translate(16, 52)">
+          <rect width="252" height="472" rx="12" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1" />
+          <g transform="translate(16, 26)">
+            <text x="0" y="0" fill="#374151" font-size="12" font-weight="400">아래 데이터를 분석해서 핵심 인사이트 3가지</text>
+            <text x="0" y="20" fill="#374151" font-size="12" font-weight="400">와 시사점을 담은 보고서 요약문을 작성해줘.</text>
+            <text x="0" y="40" fill="#374151" font-size="12" font-weight="400">숫자는 근거로 인용하고, 경영진이 바로 파악</text>
+            <text x="0" y="60" fill="#374151" font-size="12" font-weight="400">할 수 있게 간결하게 써줘.</text>
+
+            <text x="0" y="110" fill="#374151" font-size="12" font-weight="600">데이터:</text>
+          </g>
+        </g>
+
+        <!-- Copy Button -->
+        <g transform="translate(16, 540)">
+          <rect width="252" height="40" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
+          <g transform="translate(98, 25)">
+            <rect x="0" y="-10" width="10" height="10" rx="2" fill="none" stroke="#2563eb" stroke-width="1.3" />
+            <path d="M3 -7v-4a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-4" fill="none" stroke="#2563eb" stroke-width="1.3" />
+            <text x="18" y="0" fill="#2563eb" font-size="12.5" font-weight="700">복사하기</text>
+          </g>
+        </g>
+      </g>
+
+      <!-- CARD 3: 프로젝트 진행 상황 보고 -->
+      <g transform="translate(608, 0)" filter="url(#card-shadow)">
+        <rect width="284" height="600" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+        <text x="18" y="34" fill="#111827" font-size="13.5" font-weight="700">프로젝트 진행 상황 보고</text>
+
+        <!-- Prompt Content Box -->
+        <g transform="translate(16, 52)">
+          <rect width="252" height="472" rx="12" fill="#f8fafc" stroke="#f1f5f9" stroke-width="1" />
+          <g transform="translate(16, 26)">
+            <text x="0" y="0" fill="#374151" font-size="12" font-weight="400">아래 프로젝트 진행 상황을 팀장에게 보고하는</text>
+            <text x="0" y="20" fill="#374151" font-size="12" font-weight="400">형식으로 정리해줘. [현재 진행률 / 이슈 및</text>
+            <text x="0" y="40" fill="#374151" font-size="12" font-weight="400">리스크 / 필요한 지원사항] 순서로, 문제 상황</text>
+            <text x="0" y="60" fill="#374151" font-size="12" font-weight="400">은 숨기지 말고 명확하게 짚어줘.</text>
+
+            <text x="0" y="110" fill="#374151" font-size="12" font-weight="600">프로젝트 정보:</text>
+          </g>
+        </g>
+
+        <!-- Copy Button -->
+        <g transform="translate(16, 540)">
+          <rect width="252" height="40" rx="8" fill="#ffffff" stroke="#bfdbfe" stroke-width="1" />
+          <g transform="translate(98, 25)">
+            <rect x="0" y="-10" width="10" height="10" rx="2" fill="none" stroke="#2563eb" stroke-width="1.3" />
+            <path d="M3 -7v-4a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-4" fill="none" stroke="#2563eb" stroke-width="1.3" />
+            <text x="18" y="0" fill="#2563eb" font-size="12.5" font-weight="700">복사하기</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
