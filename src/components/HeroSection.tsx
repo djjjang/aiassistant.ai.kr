@@ -256,15 +256,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSelectService }) => 
 
       {/* Client Trust Logotypes */}
       <div className="mt-12 pt-8 border-t border-[#eae6df]/80 text-center">
-        <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-4">
-          이미 유수 스타트업 및 중견기업 320개 사가 AI비서와 함께합니다
+        <p className="text-xs font-bold uppercase tracking-wider text-gray-400 mb-5">
+          이미 우수 스타트업 및 중견기업 320개 사가 AI비서와 함께합니다
         </p>
-        <div className="flex flex-wrap items-center justify-center sm:justify-around gap-6 opacity-70 grayscale hover:grayscale-0 transition duration-300">
-          <span className="font-black tracking-tighter text-base sm:text-lg text-gray-700">GREENGATE</span>
-          <span className="font-black tracking-tight text-base sm:text-lg text-gray-700">MOVENT</span>
-          <span className="font-extrabold tracking-wide text-base sm:text-lg text-gray-700">NEXUS LAB</span>
-          <span className="font-bold tracking-tight text-base sm:text-lg text-gray-700">QUADCORE</span>
-          <span className="font-extrabold tracking-tight text-base sm:text-lg text-gray-700">DERMAPINK</span>
+        <div className="flex flex-wrap items-center justify-center sm:justify-between gap-6 sm:gap-8 px-4 max-w-5xl mx-auto opacity-75 hover:opacity-100 transition duration-300">
+          <span className="font-black tracking-tighter text-lg sm:text-xl text-gray-800">TREND24</span>
+          <span className="font-extrabold tracking-tight text-lg sm:text-xl text-gray-800">더마핑크</span>
+          <span className="font-black tracking-tight text-lg sm:text-xl text-gray-800">다온클럽</span>
+          <span className="font-black tracking-widest text-base sm:text-lg text-gray-800">MOVE STUDIO</span>
+          <span className="font-extrabold tracking-tight text-lg sm:text-xl text-gray-800">글로우빔</span>
+          <span className="font-black tracking-tight text-lg sm:text-xl text-gray-800">루미마켓</span>
         </div>
       </div>
     </section>
