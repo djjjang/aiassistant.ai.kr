@@ -1,11 +1,48 @@
 import { ServiceItem, TeamMember, PortfolioItem, ReviewItem, PricingPlan, FAQItem, CreditPackage } from './types';
 import contractReviewImg from './assets/images/contract_review_sample_1789468628301.jpg';
 import aiContractReviewImg from './assets/images/ai_contract_review_report_1789530423310.jpg';
+import contractReviewRedline1 from './assets/images/contract_review_redline_1.svg';
+import contractReviewRedline2 from './assets/images/contract_review_redline_2.svg';
+import contractReviewRedline3 from './assets/images/contract_review_redline_3.svg';
+import contractReviewRedline4 from './assets/images/contract_review_redline_4.svg';
+import supplyAgreement1 from './assets/images/supply_agreement_standard_1.svg';
+import supplyAgreement2 from './assets/images/supply_agreement_standard_2.svg';
+import supplyAgreement3 from './assets/images/supply_agreement_standard_3.svg';
+import supplyAgreement4 from './assets/images/supply_agreement_standard_4.svg';
+import supplyAgreement5 from './assets/images/supply_agreement_standard_5.svg';
+import investmentAgreement1 from './assets/images/investment_agreement_standard_1.svg';
+import investmentAgreement2 from './assets/images/investment_agreement_standard_2.svg';
+import investmentAgreement3 from './assets/images/investment_agreement_standard_3.svg';
+import investmentAgreement4 from './assets/images/investment_agreement_standard_4.svg';
+import investmentAgreement5 from './assets/images/investment_agreement_standard_5.svg';
+import investmentAgreement6 from './assets/images/investment_agreement_standard_6.svg';
 import meetingNotesImg from './assets/images/meeting_notes_minutes_1789468642460.jpg';
 import weeklyWorkReportImg from './assets/images/weekly_work_report_1789548769236.jpg';
-import startupBusinessPlanImg from './assets/images/startup_business_plan_1789548410702.jpg';
 import planDetailPageImg from './assets/images/plan_detail_page_1789548433211.jpg';
 import tipsBusinessPlanImg from './assets/images/tips_business_plan_1789468656077.jpg';
+import trend24Slide1 from './assets/images/trend24_plan_slide_1.svg';
+import trend24Slide2 from './assets/images/trend24_plan_slide_2.svg';
+import trend24Slide3 from './assets/images/trend24_plan_slide_3.svg';
+import trend24Slide4 from './assets/images/trend24_plan_slide_4.svg';
+import trend24Slide5 from './assets/images/trend24_plan_slide_5.svg';
+import trend24Slide6 from './assets/images/trend24_plan_slide_6.svg';
+import trend24Slide7 from './assets/images/trend24_plan_slide_7.svg';
+import trend24Slide8 from './assets/images/trend24_plan_slide_8.svg';
+import trend24IrSlide1 from './assets/images/trend24_ir_slide_1.svg';
+import trend24IrSlide2 from './assets/images/trend24_ir_slide_2.svg';
+import trend24IrSlide3 from './assets/images/trend24_ir_slide_3.svg';
+import trend24IrSlide4 from './assets/images/trend24_ir_slide_4.svg';
+import trend24IrSlide5 from './assets/images/trend24_ir_slide_5.svg';
+import trend24IrSlide6 from './assets/images/trend24_ir_slide_6.svg';
+import trend24IrSlide7 from './assets/images/trend24_ir_slide_7.svg';
+import govRndSlide1 from './assets/images/gov_rnd_slide_1.svg';
+import govRndSlide2 from './assets/images/gov_rnd_slide_2.svg';
+import govRndSlide3 from './assets/images/gov_rnd_slide_3.svg';
+import govRndSlide4 from './assets/images/gov_rnd_slide_4.svg';
+import govRndSlide5 from './assets/images/gov_rnd_slide_5.svg';
+import govRndSlide6 from './assets/images/gov_rnd_slide_6.svg';
+import govRndSlide7 from './assets/images/gov_rnd_slide_7.svg';
+import dermaAmpoulePosterImg from './assets/images/derma_ampoule_poster_1790843827452.jpg';
 import cardNewsCoverImg from './assets/images/card_news_cover_1789549999237.jpg';
 import cardNewsBodyImg from './assets/images/card_news_body_1789550011323.jpg';
 import cardNewsEndingImg from './assets/images/card_news_ending_1789550026842.jpg';
@@ -14,255 +51,1285 @@ import newsletterNoticeUpdateImg from './assets/images/newsletter_notice_update_
 import regulationChecklistReportImg from './assets/images/regulation_checklist_report_1789625777409.jpg';
 import globalTechReportSummaryImg from './assets/images/global_tech_report_summary_1789625937449.jpg';
 import influencerOutreachEmailImg from './assets/images/influencer_outreach_email_1790045623676.jpg';
-import csChatbotFaqScenarioImg from './assets/images/cs_chatbot_faq_scenario.svg';
-import csResponseTemplateLibraryImg from './assets/images/cs_response_template_library.svg';
-import csAlimtalkWelcomeGuideImg from './assets/images/cs_alimtalk_welcome_guide.svg';
-import csInternalKnowledgeChatbotImg from './assets/images/cs_internal_knowledge_chatbot.svg';
-import csDocumentAutoSummaryImg from './assets/images/cs_document_auto_summary.svg';
-import csPromptPlaybookLibraryImg from './assets/images/cs_prompt_playbook_library.svg';
 import webMoveStudioLandingDesktopImg from './assets/images/web_movestudio_landing_desktop.svg';
 import webMoveStudioLandingMobileImg from './assets/images/web_movestudio_landing_mobile.svg';
 import webGlowbeamDetailpageStudioImg from './assets/images/web_glowbeam_detailpage_studio.svg';
 import webGlowbeamDetailpageLongImg from './assets/images/web_glowbeam_detailpage_long.svg';
+import niacinamideDetailpageStudioImg from './assets/images/niacinamide_detailpage_studio.svg';
+import niacinamideDetailpageLongImg from './assets/images/niacinamide_detailpage_long.svg';
+import niacinamideDetailpageUsageImg from './assets/images/niacinamide_detailpage_usage.svg';
+import niacinamideDetailpageSpecImg from './assets/images/niacinamide_detailpage_spec.svg';
 import webLumiMarketSnsBannerImg from './assets/images/web_lumimarket_sns_banner.svg';
 import webLumiMarketPopupModalImg from './assets/images/web_lumimarket_popup_modal.svg';
+import bannerSummerSaleImg from './assets/images/summer_sale_banner_1790846132985.jpg';
+import bannerBeautySkincareImg from './assets/images/beauty_skincare_banner_1790846143861.jpg';
+import bannerAcademyClassImg from './assets/images/academy_class_banner_1790846158730.jpg';
+import videoProductionShortformImg from './assets/images/video_production_shortform_showcase.svg';
+import videoEditingTimelineImg from './assets/images/video_editing_timeline_showcase.svg';
+import ecommerceShoppingMallImg from './assets/images/ecommerce_shoppingmall_showcase.svg';
+import stemblissDesktopSlide from './assets/images/stembliss_desktop_slide.svg';
+import stemblissMobileSlide from './assets/images/stembliss_mobile_slide.svg';
+import stemblissStoryNetworkSlide from './assets/images/stembliss_story_network_slide.svg';
+import stemblissSpecsSlide from './assets/images/stembliss_specs_slide.svg';
+import bt24SmartstoreDesktopSlide from './assets/images/bt24_smartstore_desktop_slide.svg';
+import bt24SmartstoreMobileSlide from './assets/images/bt24_smartstore_mobile_slide.svg';
+import bt24SmartstoreCurationSlide from './assets/images/bt24_smartstore_curation_slide.svg';
+import bt24SmartstoreSpecsSlide from './assets/images/bt24_smartstore_specs_slide.svg';
+import aiassistantDesktopSlide from './assets/images/aiassistant_desktop_slide.svg';
+import aiassistantMobileSlide from './assets/images/aiassistant_mobile_slide.svg';
+import aiassistantQuoteSystemSlide from './assets/images/aiassistant_quote_system_slide.svg';
+import aiassistantSpecsSlide from './assets/images/aiassistant_specs_slide.svg';
 
+// 이전 7대 업무 영역 버전 백업 참조 (롤백 필요 시 src/data.legacy.backup.ts 활용 가능)
+export { SERVICES_DATA as SERVICES_DATA_LEGACY } from './data.legacy.backup';
+
+/**
+ * 2026 개편: 사용자 요청에 따른 6대 핵심 비즈니스 업무 영역
+ * 1. PPT제작 (사업계획서, 투자제안서)
+ * 2. 계약서 업무 (용역, 납품, 투자, 제휴 등의 계약서 작성 및 검토)
+ * 3. 디자인 업무 (포스터, 카드뉴스, 배너, 이벤트, 상세페이지, 랜딩페이지 디자인)
+ * 4. 마케팅 업무 (SNS(블로그, 인스타그램 자동화), 보도자료 초안 등)
+ * 5. 사이트 제작 (홈페이지, 쇼핑몰 제작)
+ * 6. 영상 제작 (숏폼, 영상 편집)
+ */
 export const SERVICES_DATA: ServiceItem[] = [
+  // 1. PPT제작(사업계획서, 투자제안서)
   {
-    id: 'document',
+    id: 'ppt',
     number: '01',
-    categoryCode: 'DOCUMENTS',
-    name: '문서 업무',
-    description: '계약서 검토, 회의록 정리, 사업계획서 작성 및 수정, 주간 실적 보고서 작성',
-    tags: ['계약서 검토', '회의록 정리', '사업계획서', '보고서 작성'],
-    icon: 'FileText',
+    categoryCode: 'PRESENTATION & IR DECK',
+    name: 'PPT 제작',
+    description: '사업계획서, 투자제안서(IR 피치덱), 회사소개서, 정부지원사업 발표자료 기획 및 인포그래픽 디자인',
+    tags: ['사업계획서', '투자제안서(IR)', '회사소개서', '정부지원사업', '피치덱', '발표자료'],
+    icon: 'Presentation',
     colorClass: 'brand-navy',
-    previewImage: aiContractReviewImg,
-    previewImageAlt: 'AI 계약서 검토 및 비즈니스 문서 실무 산출물',
+    previewImage: trend24Slide1,
+    previewImageAlt: 'Trend24 공식 사업계획서 16:9 와이드 PPT 디자인 산출물 (8개 슬라이드 전체 완비)',
     portfolioExample: {
-      id: 'doc-1',
-      client: '플랫폼 개발사 O사',
-      title: '용역계약서 조항 검토 및 독소조항 분석',
-      duration: '의뢰 후 24시간 이내',
-      result: '위험 조항 5건 발견 및 실무 수정 권고 의견 정리',
-      summary: '용역 계약서의 주요 조항을 검토하여 자동 연장 통보기한, 대금 지급 기한, 손해배상 한도 등 실무적으로 분쟁 소지가 있는 조항을 짚어내고 수정 문구를 제안했습니다.',
-      deliverable: '조항별 검토 의견서 및 계약서 수정안',
-      image: aiContractReviewImg,
-      imageAlt: '계약서 검토 의견서 산출물'
+      id: 'ppt-1',
+      client: '글로벌 트렌드 리서치 (주)트렌드24',
+      title: 'Trend24 공식 사업계획서 및 IR 피치덱 (8 슬라이드 풀버전)',
+      duration: '의뢰 후 48시간 이내',
+      result: '사업계획서 8개 핵심 챕터 기획 및 도식화 완성 (한 장씩 넘겨보기 지원)',
+      summary: '회사 소개부터 비전·미션, 전문가 경영진 및 조직 구조, 3대 수익 모델, 연도별 재무 전망, 추진 일정 마일스톤, 3대 기대 효과까지 8개 슬라이드로 체계화된 사업계획서입니다. 한 장씩 넘겨가며 정밀하게 검토할 수 있습니다.',
+      deliverable: '사업계획서 PPT 16:9 와이드 완성본 (8개 슬라이드 전체) 및 고해상도 벡터 원본',
+      image: trend24Slide1,
+      imageAlt: 'Trend24 사업계획서 16:9 와이드 프레젠테이션'
     },
     portfolioCases: [
       {
-        id: 'doc-1',
-        client: '플랫폼 개발사 O사',
-        title: '용역계약서 조항 검토 및 독소조항 분석',
-        duration: '의뢰 후 24시간 이내',
-        result: '위험 조항 5건 발견 및 실무 수정 권고 의견 정리',
-        summary: '용역 계약서의 주요 조항을 검토하여 자동 연장 통보기한, 대금 지급 기한, 손해배상 한도 등 실무적으로 분쟁 소지가 있는 조항을 짚어내고 수정 문구를 제안했습니다.',
-        tags: ['계약서검토', '독소조항분석', '용역계약서', '의견서작성'],
-        deliverable: '조항별 검토 의견서 및 계약서 수정안',
-        image: aiContractReviewImg,
-        imageAlt: '계약서 검토 의견서 산출물',
-        originalDocumentMeta: {
-          recipient: '플랫폼 개발사 O사 법무/경영지원팀',
-          sender: '트렌드24 AI 계약서 실무 분석팀',
-          subject: '[법무 실무 검토] 소프트웨어 개발 용역계약서 조항별 위험도 분석 및 수정 권고안',
-          docDate: '2026.09.15 (검토 완료)',
-          docTypeBadge: '계약서 독소조항 분석 의견서',
-          attachments: ['용역계약서_수정대조표.docx', '조항별리스크진단서.pdf']
-        },
-        originalText: `[계약서 검토 의견서] 소프트웨어 개발 용역계약서 실무 검토 보고
-
-1. 검토 대상 및 범위
-- 대상: 플랫폼 신규 기능 개발 및 유지보수 용역계약서 (총 18개 조항)
-- 의뢰인: O사 (수급인)
-
-2. 주요 독소조항 진단 및 수정 권고안
-■ 제7조 (지체상금율 과다 조항)
-- 원문: "을이 납기를 지연할 경우 지체 1일당 총 계약금액의 5/1000를 배상한다."
-- 리스크: 표준 하도급 기준(1.5/1000) 대비 3배 이상 과도하여 분쟁 시 큰 손실 위험.
-- 수정안 권고: "지체 1일당 총 계약금액의 1.5/1000로 조정하며, 총 배상액은 계약금의 10%를 초과할 수 없다."
-
-■ 제12조 (무제한 하자담보 책임)
-- 원문: "검수 완료 후에도 을은 본 건 프로그램의 모든 하자에 대해 영구히 무상 보수한다."
-- 수정안 권고: "검수 완료일로부터 1년간에 한하여 중대한 결함에 대해 무상 보수한다."
-
-■ 제15조 (지식재산권 귀속)
-- 권고: 개발 이전부터 O사가 보유한 공통 라이브러리 및 오픈소스 코드는 O사의 고유 권리로 유보 조항 삽입 필수.`
-      },
-      {
-        id: 'doc-2',
-        client: '친환경 스타트업 (주)오일루프',
-        title: '사업계획서 작성 및 수정',
+        id: 'ppt-1',
+        client: '글로벌 트렌드 리서치 (주)트렌드24',
+        title: 'Trend24 공식 사업계획서 및 IR 피치덱 (8 슬라이드 풀버전)',
+        tabLabel: '1. Trend24 사업계획서 (8장 전체)',
         duration: '의뢰 후 48시간 이내',
-        result: 'TIPS 지원사업 사업계획서 7개 챕터 기획 및 도식화 완성',
-        summary: '복잡한 폐식용유 수거 플랫폼 프로세스를 간결하게 다듬고, 문제인식(회수율 40%), AI 매칭 솔루션, 3개년 성장전략 로드맵을 시각화하여 심사위원 맞춤형 사업계획서로 작성했습니다.',
-        tags: ['사업계획서', 'TIPS지원사업', '도식화기획', '초안작성'],
-        deliverable: '사업계획서 완성본 및 고해상도 인포그래픽 도식 4종',
-        image: startupBusinessPlanImg,
-        imageAlt: 'TIPS 지원사업 사업계획서 기획 및 작성 산출물',
+        result: '사업계획서 8개 핵심 챕터 기획 및 도식화 완성 (한 장씩 넘겨보기 지원)',
+        summary: '회사 소개부터 비전·미션, 전문가 경영진 및 조직 구조, 3대 수익 모델, 연도별 재무 전망, 추진 일정 마일스톤, 3대 기대 효과까지 8개 슬라이드로 체계화된 사업계획서입니다. 한 장씩 넘겨가며 정밀하게 검토할 수 있습니다.',
+        tags: ['사업계획서', '회사소개서', 'IR피치덱', '슬라이드8종', '도식화기획'],
+        deliverable: '사업계획서 PPT 16:9 와이드 완성본 (8개 슬라이드 전체) 및 고해상도 원본',
+        image: trend24Slide1,
+        imageAlt: 'Trend24 사업계획서 표지 및 전체 슬라이드',
         galleryImages: [
-          { url: startupBusinessPlanImg, title: 'TIPS 사업계획서 총괄 기획 및 종합 산출물 (오일루프)', pageLabel: '종합 오버뷰' },
-          { url: planDetailPageImg, title: '핵심 기술 실현가능성 및 상세 시장 분석 페이지', pageLabel: '1p 핵심기술 및 시장' },
-          { url: tipsBusinessPlanImg, title: '성장전략 및 연도별 재무 로드맵 브리핑 보고서', pageLabel: '2p 성장전략 및 재무' }
+          { url: trend24Slide1, title: '표지: Trend24 사업 계획서 (트렌드 분석과 시장 정보 지원)', pageLabel: '1p 표지' },
+          { url: trend24Slide2, title: '회사 소개: 회사명, 사업 분야, 핵심 가치', pageLabel: '2p 회사소개' },
+          { url: trend24Slide3, title: '비전 및 미션: 비전, 미션, 약속 3대 핵심 가치', pageLabel: '3p 비전·미션' },
+          { url: trend24Slide4, title: '경영진 및 조직: 전문가 중심 경영진과 4대 조직 핵심 역량', pageLabel: '4p 경영진·조직' },
+          { url: trend24Slide5, title: '수익 모델: 프로젝트형 용역, 정기 구독, 컨설팅 서비스', pageLabel: '5p 수익모델' },
+          { url: trend24Slide6, title: '재무 전망: 1차~3차년도 고객 확보 및 안정적 수익 창출 목표', pageLabel: '6p 재무전망' },
+          { url: trend24Slide7, title: '추진 일정 및 마일스톤: 단계별 5대 핵심 실행 계획', pageLabel: '7p 추진일정' },
+          { url: trend24Slide8, title: '기대 효과: 고객 가치, 경제 기여, 산업 발전 3대 지향점', pageLabel: '8p 기대효과' }
         ],
         originalDocumentMeta: {
-          recipient: '중소벤처기업부 TIPS 운영기관 평가위원회',
-          sender: '(주)오일루프 대표이사 박진우 / 기획 트렌드24',
-          subject: '[TIPS 과제] AI 기반 폐식용유 스마트 수거 및 바이오디젤 자원 순환 플랫폼',
-          docDate: '2026.09.10 (제출 완료)',
-          docTypeBadge: 'TIPS 사업계획서 요약본',
-          attachments: ['TIPS_사업계획서_최종본.pdf', '3개년_재무추정모델.xlsx']
+          recipient: '기관투자자 및 전략적 사업 제휴 파트너사',
+          sender: '(주)트렌드24 대표이사 / PPT 기획 전담팀',
+          subject: '[사업계획서] Trend24 트렌드 분석 및 시장 정보 비즈니스 플랜 (8 Slides)',
+          docDate: '2026.09.28 (최신 업데이트)',
+          docTypeBadge: '공식 사업계획서 16:9 와이드',
+          attachments: ['Trend24_사업계획서_최종본.pptx', '슬라이드_8종_고해상도.pdf']
         },
-        originalText: `[TIPS 사업계획서 요약] AI 폐식용유 자원 순환 수거 플랫폼 (주)오일루프
+        originalText: `[Trend24 사업계획서 8개 슬라이드 전체 구성 및 원문 전문]
 
-1. 창업아이템 개요 및 문제인식
-- 문제점: 국내 요식업소 폐식용유 배출량 연간 32만 톤 중 비공식 수거 및 무단 폐기가 40%에 달함. 수거 경로의 불투명성과 정산 지연으로 소상공인 불만 가중.
-- 해결 방안: IoT 스마트 수거통 + AI 실시간 동선 최적화 + 블록체인 정산 시스템 구축.
+■ 1p 표지 (Cover)
+- 타이틀: Trend24 사업 계획서
+- 슬로건: 트렌드 분석과 시장 정보로 기업의 의사결정을 지원하는 전문 회사
+- 서비스 카테고리: Fashion · Material · Textile · Coordination
+- 저작권: © TREND24
 
-2. 기술의 차별성 및 실현 가능성
-- 스마트 레벨 센서로 오일 잔여량 실시간 감지 (오차범위 2% 이내)
-- 수거 기사용 AI 최적 경로 알고리즘으로 물류 비용 35% 절감
-- 바이오디젤 정유사 직납 B2B 파이프라인 확보
+■ 2p 회사 소개 (Company Overview)
+- 메시지: Trend24는 트렌드 분석과 시장 정보 제공을 통해 기업의 의사결정을 지원합니다.
+- 01. 회사명: Trend24는 전문적인 트렌드 분석 기업입니다.
+- 02. 사업 분야: 트렌드 분석, 시장 조사, 데이터 기반 인사이트를 제공합니다.
+- 03. 핵심 가치: 정확한 데이터와 신속한 분석으로 고객의 경영 성과 향상을 돕습니다.
 
-3. 3개년 성장 전략 및 마일스톤
-- 1차년도: 수도권 5개 구 시범 운영 (가맹 요식업소 1,200개소)
-- 2차년도: 전국 광역시 거점 센터 확장 및 월 800톤 수거 달성
-- 3차년도: 연 매출 120억 원 및 아시아 시장 폐자원 플랫폼 라이선싱 수출`
+■ 3p 비전 및 미션 (Vision & Mission)
+- 비전: 트렌드 분석 분야의 신뢰할 수 있는 파트너로 성장합니다.
+- 미션: 정확한 시장 정보와 실행 가능한 인사이트로 고객의 경쟁력을 강화합니다.
+- 약속: 고객 만족도 최우선, 지속적인 혁신, 투명한 소통을 실천합니다.
+
+■ 4p 경영진 및 조직 (Leadership & Organization)
+- 전문가 중심의 경영진과 협력적 조직: 시장 분석, 데이터 과학, 사업 개발 분야의 경험을 갖춘 전문가들이 조직을 이끕니다.
+- 1. 경영진 구성: 시장 분석, 데이터 과학, 사업 개발 전문가가 함께합니다.
+- 2. 조직 문화: 개방적 소통과 창의적 사고, 고객 중심의 업무 방식을 추구합니다.
+- 3. 인재 전략: 지속적인 교육과 역량 개발로 팀의 전문성을 강화합니다.
+- 4. 핵심 역량: 전문성과 협업을 바탕으로 고객 가치를 높입니다.
+
+■ 5p 수익 모델 (Business & Revenue Model)
+- 핵심 구조: Trend24의 수익은 서비스별 용역비와 정기 구독료를 기반으로 구성됩니다.
+- 01. 프로젝트형 용역: 맞춤형 시장 조사 및 분석 프로젝트의 용역비 수익입니다.
+- 02. 정기 구독 서비스: 월간 또는 분기별 트렌드 리포트 구독료 수익입니다.
+- 03. 컨설팅 서비스: 분석 결과를 바탕으로 전략 수립을 지원하고 컨설팅 수수료를 확보합니다.
+
+■ 6p 재무 전망 (Financial Projections)
+- 1차년도 목표: 초기 고객 확보와 서비스 품질 안정화에 집중하여 사업 기반을 마련합니다.
+- 2차년도 목표: 고객 만족도를 높여 재계약율과 신규 고객 유입을 확대합니다.
+- 3차년도 목표: 안정적인 수익 창출 구조를 확립하여 지속 가능한 성장 기반을 조성합니다.
+
+■ 7p 추진 일정 및 마일스톤 (Roadmap & Milestones)
+- 1. 1단계 · 1~3개월: 조직 구성을 완료하고 시스템을 구축합니다. 초기 고객 발굴을 추진합니다.
+- 2. 조직 및 시스템 구축: 첫 프로젝트를 수행합니다. 서비스 품질을 검증하고 고객 피드백을 반영합니다.
+- 3. 초기 고객 발굴: 7~12개월 차에는 신규 고객 확보를 추진합니다.
+- 4. 2단계 · 4~6개월: 서비스 포트폴리오를 확대합니다. 시장 평판 구축을 목표로 합니다.
+- 5. 첫 프로젝트 및 품질 검증: 단계별 계획에 따라 사업을 체계적으로 진행합니다.
+
+■ 8p 기대 효과 (Expected Outcomes)
+- 핵심 제언: Trend24의 사업 추진은 고객, 직원, 사회에 긍정적인 영향을 미칩니다.
+- 고객 가치: 정확한 시장 정보로 고객의 의사결정 품질을 향상합니다.
+- 경제 기여: 안정적인 고용 창출과 지속적인 사업 확장을 통해 경제에 기여합니다.
+- 산업 발전: 데이터 기반 의사결정 문화 확산으로 국내 산업의 경쟁력 강화에 도움이 됩니다.`
       },
       {
-        id: 'doc-3',
-        client: '스타트업 F사',
-        title: '회의록 정리 및 핵심 할 일 추출',
-        duration: '의뢰 후 24시간 이내',
-        result: '회의 내용 요약 및 담당자별 할 일(R&R) 정리',
-        summary: '주간 회의 녹음본에서 결정된 사항과 담당자별 할 일(R&R)을 일목요연하게 노션 페이지로 정리했습니다.',
-        tags: ['회의록정리', '할일추출', '노션정리'],
-        deliverable: '정리된 회의록 문서 및 노션 템플릿',
-        image: meetingNotesImg,
-        imageAlt: '회의록 정리 및 할 일 추출 산출물',
+        id: 'ppt-2',
+        client: '글로벌 트렌드 리서치 (주)트렌드24',
+        title: 'Trend24 공식 투자유치 제안서 및 IR 피치덱 (7 슬라이드 풀버전)',
+        tabLabel: '2. Trend24 투자유치 제안서 (7장 전체)',
+        duration: '의뢰 후 48시간 이내',
+        result: '시리즈 A 30억원 유치 맞춤형 IR Deck 7개 슬라이드 전체 도식화 완성 (원화 단위 변환 및 한 장씩 보기 지원)',
+        summary: '표지부터 목표 시장 규모(TAM/SAM/SOM), 비즈니스 및 수익 모델, 성장 지표(Traction), 4개년 재무 로드맵, 시리즈 A 30억 원 투자 유치 계획 및 자금 활용, 투자 기대 가치 및 엑시트 전략까지 7개 슬라이드로 구성된 공식 IR 피치덱입니다. 모든 화폐 단위는 원화(KRW)로 정밀 변환되었으며 한 장씩 넘겨보실 수 있습니다.',
+        tags: ['투자제안서', 'IR피치덱', '시리즈A', '원화변환', '슬라이드7종', '재무계획'],
+        deliverable: '투자유치 제안서 PPT 16:9 와이드 완성본 (7개 슬라이드 전체) 및 고해상도 벡터 원본',
+        image: trend24IrSlide1,
+        imageAlt: 'Trend24 투자유치 제안서 표지 및 전체 7개 슬라이드',
+        galleryImages: [
+          { url: trend24IrSlide1, title: '표지: Trend24 투자 제안서 (시리즈 A IR 피치덱)', pageLabel: '1p 표지' },
+          { url: trend24IrSlide2, title: '시장 기회: TAM 24.5조 · SAM 5.6조 · SOM 8,700억 원 (KRW)', pageLabel: '2p 시장기회' },
+          { url: trend24IrSlide3, title: '비즈니스 모델: B2B SaaS 구독 · 프로젝트 컨설팅 · 거래 수수료', pageLabel: '3p 비즈니스모델' },
+          { url: trend24IrSlide4, title: '성장 지표: 고객사 320개사 · ARR 24억원 · NRR 128%', pageLabel: '4p 성장지표' },
+          { url: trend24IrSlide5, title: '재무 계획: 4개년 매출 전망 (2029년 650억 원 달성)', pageLabel: '5p 재무계획' },
+          { url: trend24IrSlide6, title: '투자 유치: 시리즈 A 30억 원 자금 활용 계획 (Use of Funds)', pageLabel: '6p 투자유치' },
+          { url: trend24IrSlide7, title: '기대 가치: 2029년 기업 가치 3,000억 원 및 코스닥 상장(IPO)', pageLabel: '7p 기대가치' }
+        ],
         originalDocumentMeta: {
-          recipient: '스타트업 F사 전사 슬랙 / 노션 워크스페이스',
-          sender: '트렌드24 회의록 정리 전담 매니저',
-          subject: '[주간 회의록] Q4 프로덕트 릴리즈 스프린트 및 마케팅 마일스톤 정리',
-          docDate: '2026.09.19',
-          docTypeBadge: '회의록 및 Action Items 요약',
-          attachments: ['회의녹취요약_타임라인.pdf', '노션템플릿_링크.url']
+          recipient: '국내외 주요 벤처캐피탈(VC), 신기술금융사 및 전략적 투자자(SI)',
+          sender: '(주)트렌드24 대표이사 / IR 총괄 전담 TF',
+          subject: '[Series A Pitch Deck] Trend24 AI 패션 인텔리전스 투자유치 제안서 (7 Slides / KRW)',
+          docDate: '2026.09.29 (최신 업데이트)',
+          docTypeBadge: '시리즈 A 투자유치 제안서 (원화 표기)',
+          attachments: ['Trend24_Series_A_IR_Final_KRW.pptx', '4개년_재무추정모델_KRW.xlsx']
         },
-        originalText: `[주간 전체 스프린트 회의록] 스타트업 F사 9월 3주차 회의
+        originalText: `[Trend24 공식 투자유치 제안서 7개 슬라이드 전체 구성 및 원문 전문 (화폐 단위: 원화 KRW)]
 
-■ 일시: 2026년 9월 19일 14:00~15:30 (총 90분)
-■ 참석자: 김대표, 이CTO, 박디자이너, 최마케터, 트렌드24 매니저
+■ 1p 표지 (Cover)
+- 타이틀: Trend24 투자 제안서 (시리즈 A IR 피치덱)
+- 슬로건: 트렌드 분석과 시장 정보로 글로벌 패션 비즈니스를 혁신하는 AI 플랫폼
+- 카테고리: Fashion · Material · Textile · Coordination
+- 목표 투자 유치액: 30억 원 (시리즈 A)
+- 저작권 및 발행일: © TREND24 | 2026. 09
 
-1. 주요 논의 및 결정 사항
-- 10월 5일 결제 모듈 v2.0 정기 점검 배포 확정 (무중단 배포 진행)
-- 온보딩 튜토리얼 단계를 기존 5단계에서 3단계로 간소화 (이탈률 개선 목적)
-- 인스타그램 신규 릴스 캠페인 예산 500만원 승인
+■ 2p 시장 기회 및 목표 시장 규모 (Market Opportunity)
+※ 화폐 단위 $에서 원화(KRW)로 정밀 변환
+- TAM (전체 시장): 24조 5,000억 원 (글로벌 패션 테크 및 빅데이터 분석 시장, CAGR 21.4%)
+- SAM (유효 시장): 5조 6,000억 원 (글로벌 디지털 트렌드 인텔리전스 솔루션 시장)
+- SOM (수익 시장): 8,700억 원 (아시아 탑티어 패션 및 원단 제조 엔터프라이즈 세그먼트)
+- 핵심 성장 동인:
+  1. 감(직관) 중심 기획에서 AI 예측 빅데이터 기반 의사결정 체제로 전환
+  2. 시즌 개시 6개월 전 수요 예측을 통한 원단·소재 불용 재고 손실률 40% 이상 절감
+  3. K-패션 글로벌 밸류체인 직결 및 아시아 독점 바이어 네트워크 선점
 
-2. 담당자별 Action Items (R&R)
-- [이CTO] 결제 게이트웨이 테스트베드 연동 완료 (~9/23까지)
-- [박디자이너] 온보딩 3단계 신규 와이어프레임 Figma 전달 (~9/21까지)
-- [최마케터] 인플루언서 20인 섭외 메일 초안 작성 및 발송 (~9/22까지)
-- [김대표] PG사 수수료 재협의 미팅 조율 (~9/24까지)`
+■ 3p 비즈니스 모델 및 수익 체계 (Business Model)
+※ 화폐 단위 $에서 원화(KRW)로 정밀 변환
+- 01. B2B 엔터프라이즈 정기 구독 (매출 비중 65% / 핵심 캐시카우):
+  • 월 구독료: 월 160만 원 ~ 월 480만 원 (연간 1,800만 ~ 5,500만 원)
+  • 24/7 실시간 트렌드 데이터 피드, 원단 예측 대시보드, C-레벨 인사이트 브리핑
+- 02. 맞춤형 인텔리전스 & 컨설팅 (매출 비중 25% / 영업이익률 48% 고수익):
+  • 프로젝트 용역 단가: 건당 2,500만 원 ~ 6,500만 원 (평균 수행기간 4주)
+  • 브랜드 타깃 맞춤 기획, 글로벌 바이어 심층 분석, 전용 AI 파인튜닝 제공
+- 03. 디지털 쇼케이스 매칭 수수료 (매출 비중 10% / 차세대 성장 엔진):
+  • 거래 매칭 수수료: 거래 대금의 3.5% ~ 5.0% (건당 150만 ~ 800만 원)
+  • 3D 디지털 패브릭 쇼케이스 등록, 바이어-공급사 거래 매칭 및 에스크로 정산
+
+■ 4p 성장 지표 및 핵심 실적 (Traction)
+※ 화폐 단위 $에서 원화(KRW)로 정밀 변환
+- 유료 기업 고객사: 320개 사 돌파 (전년 동기 대비 +280% 고속 성장)
+- 연간 반복 매출 (ARR): 24억 원 달성 (월간 반복 매출 2억 원 상회, MoM 32% 성장)
+- 순매출 유지율 (NRR): 128% (월간 이탈률 1.8% 미만, 구독 플랜 업그레이드 활성화)
+- 유닛 이코노믹스: LTV / CAC 비율 4.6배, 고객 획득 비용 회수 기간 5.2개월 (글로벌 상위 10% 벤치마크)
+- 분기별 주요 마일스톤:
+  • 2025 상반기: AI 원단·트렌드 리서치 베타 런칭 (월 매출 3,000만 원 돌파)
+  • 2025 하반기: 3D 패브릭 쇼케이스 상용화 및 국내 탑5 패션그룹 계약 (ARR 12억 원)
+  • 2026 현재: 고객사 320개사 돌파 및 글로벌(도쿄/동남아) 진출 (ARR 24억 원 및 시리즈 A 30억 유치)
+
+■ 5p 재무 계획 및 4개년 매출 전망 (Financial Forecast)
+※ 화폐 단위 $에서 원화(KRW / 억원)로 정밀 변환
+- 2026년 (1차년도): 매출액 35억 원 | 영업이익 5.2억 원 (영업이익률 15%) - 국내 안착 & PMF
+- 2027년 (2차년도): 매출액 110억 원 | 영업이익 28.0억 원 (영업이익률 25%) - 아시아(일본·동남아) 확장
+- 2028년 (3차년도): 매출액 280억 원 | 영업이익 84.0억 원 (영업이익률 30%) - 북미 엔터프라이즈 진출
+- 2029년 (4차년도): 매출액 650억 원 | 영업이익 225.0억 원 (영업이익률 35%) - 글로벌 1위 패션 테크 도약
+
+■ 6p 투자 유치 계획 및 자금 활용 (Fundraising & Use of Proceeds)
+※ 화폐 단위 $에서 원화(KRW)로 정밀 변환
+- 라운드 및 목표 유치액: 시리즈 A 30억 원 (Series A ₩3,000,000,000)
+- 투자 전 기업 가치(Pre-money): 150억 원 (투자 후 Post-money 180억 원)
+- 자금 집행 계획 (Use of Funds):
+  1. AI 예측 모델 고도화 및 R&D: 40% (12억 원) - 멀티모달 생성 AI 및 감성 물성 빅데이터
+  2. 글로벌(도쿄·싱가포르·뉴욕) 시장 진출 및 마케팅: 30% (9억 원) - 해외 거점 및 쇼케이스
+  3. 핵심 AI 엔지니어 및 도메인 전문가 영입: 20% (6억 원) - 시니어 리서처 및 패션 MD
+  4. 클라우드 인프라 및 운영 안정화: 10% (3억 원) - 대용량 GPU 분산 인프라 및 보안 체계
+
+■ 7p 투자 기대 가치 및 회수 전략 (Valuation & Exit Strategy)
+※ 화폐 단위 $에서 원화(KRW)로 정밀 변환
+- 01. 기업 가치 성장 로드맵:
+  • 현재 시리즈 A 평가 가치: 180억 원 (Post-money)
+  • 2029년 목표 기업 가치: 3,000억 원 이상 (약 16.6배 가치 상승 전망)
+- 02. 투자 회수(Exit) 시나리오:
+  • 시나리오 A: 2028년 말 예비심사 청구 ~ 2029년 코스닥(KOSDAQ) 기술특례 상장(IPO)
+  • 시나리오 B: 글로벌 패션 리테일 그룹 또는 글로벌 리서치 기업과의 전략적 M&A
+- 03. 투자자 보호 및 기대 수익:
+  • 예상 투자 원금 회수 배수 16.6배 (예상 IRR 72%)
+  • 우선 배당권, 잔여 재산 분배권, Drag-along/Tag-along, 분기별 경영 보고 정례화
+- 04. 공식 문의:
+  • 주식회사 트렌드24 IR 총괄 TF | 이메일: ir@trend24.io | 대표전화: 02-588-2401`
       },
       {
-        id: 'doc-4',
-        client: '중소기업 P사',
-        title: '주간 업무 보고서 및 실적 요약',
-        duration: '주 1회 정기 작성',
-        result: '반복 보고서 작성 간소화 및 주요 지표 정리',
-        summary: '매주 취합해야 하는 사업 실적과 외부 주요 지표를 경영진이 한눈에 파악할 수 있는 주간 보고서로 정리했습니다.',
-        tags: ['주간보고서', '실적요약', '정기보고'],
-        deliverable: '주간 업무 보고서 템플릿 및 완성본',
-        image: weeklyWorkReportImg,
-        imageAlt: '한글 주간 업무 보고서 및 실적 요약 산출물'
+        id: 'ppt-3',
+        client: '지능형 로보틱스 (주)넥스트로보틱스',
+        title: '정부 R&D 지원사업 대면평가 발표자료 PPT (7 슬라이드 풀버전)',
+        tabLabel: '3. 정부지원사업 발표자료 (7장 전체)',
+        duration: '의뢰 후 36시간 이내',
+        result: '중소벤처기업부 15분 대면평가 맞춤형 16:9 와이드 발표자료 7개 슬라이드 전체 도식화 완성 (한 장씩 넘겨보기 지원)',
+        summary: '과제 개요 표지부터 문제인식 및 개발 필요성, 핵심 아키텍처 및 3D SLAM 원천기술, 공인시험기관(KTL) 정량적 성과 목표치, 3개년 사업화 로드맵 및 양산 계획, 비목별 연구개발비 집행 명세와 팀 역량, 국가 경제·산업적 기대효과까지 7개 슬라이드로 체계화된 정부지원사업 공식 발표자료입니다. 비전문가 평가위원도 15분 내에 직관적으로 이해할 수 있도록 인포그래픽 도식화되었으며 한 장씩 넘겨가며 정밀하게 검토할 수 있습니다.',
+        tags: ['정부지원사업', 'R&D발표평가', '대면평가', '중소벤처기업부', '슬라이드7종', '발표대본'],
+        deliverable: '정부지원사업 발표용 PPT 16:9 와이드 완성본 (7개 슬라이드 전체), 15분 발표 대본 스크립트 및 질의응답(Q&A)집',
+        image: govRndSlide1,
+        imageAlt: '정부지원사업 대면평가 발표자료 16:9 와이드 프레젠테이션',
+        galleryImages: [
+          { url: govRndSlide1, title: '표지: 2026 혁신기술개발사업(R&D) 대면평가 (AI 자율주행 협동로봇 및 스마트 관제)', pageLabel: '1p 표지' },
+          { url: govRndSlide2, title: '1. 문제인식: 개발 필요성 및 기존 1세대 AGV·외산 AMR의 병목 한계 비교', pageLabel: '2p 문제인식' },
+          { url: govRndSlide3, title: '2. 핵심기술: 3D LiDAR SLAM + 온디바이스 NPU 비전 AI 엣지 퓨전 아키텍처', pageLabel: '3p 핵심기술' },
+          { url: govRndSlide4, title: '3. 정량목표: KTL 공인시험 성적서 기준 5대 정량적 성능 지표 및 특허/인증 목표', pageLabel: '4p 정량목표' },
+          { url: govRndSlide5, title: '4. 사업화전략: 3개년 사업화 로드맵 (2028년 195억 원 매출 및 북미·동남아 수출)', pageLabel: '5p 사업화계획' },
+          { url: govRndSlide6, title: '5. 예산 및 팀: 총 사업비 7.15억 원 비목별 투명 집행 계획 및 석박사급 연구진 역량', pageLabel: '6p 사업비·팀역량' },
+          { url: govRndSlide7, title: '6. 기대효과: 외산 수입대체 380억 원, 산업재해 Zero, 청년 일자리 35명 창출 및 Q&A', pageLabel: '7p 기대효과' }
+        ],
+        originalDocumentMeta: {
+          recipient: '중소벤처기업부 / 전담평가위원회 (스마트제조·로봇 분과)',
+          sender: '(주)넥스트로보틱스 대표이사 & 총괄책임자 강태훈 / PPT 전담기획팀',
+          subject: '[정부지원사업 발표평가] AI 지능형 자율주행 협동로봇 및 스마트 관제 플랫폼 (7 Slides / 15분 발표용)',
+          docDate: '2026.09.29 (대면평가 최종본)',
+          docTypeBadge: '정부 R&D 대면평가 발표자료 (16:9 와이드)',
+          attachments: ['정부지원과제_대면평가_발표자료_최종.pptx', '15분_발표대본_및_QnA_예상질의서.pdf', '공인시험성적서_목표계획서.pdf']
+        },
+        originalText: `[2026년도 중소벤처기업부 혁신기술개발사업(R&D) 대면평가 발표자료 7개 슬라이드 전체 대본 및 질의응답집]
+
+■ 1p 표지 (Cover)
+- 발표 제목: AI 비전 센서 융합 자율주행 협동 로봇 및 스마트 물류 통합 군집 관제 플랫폼 개발
+- 세부 부제: 제조 공정 물류 완전 무인화를 위한 ±1mm 초정밀 도킹 및 100대 실시간 AI 트래픽 분산 제어 기술
+- 주관연구개발기관: 주식회사 넥스트로보틱스
+- 연구총괄책임자: 대표이사 강태훈 (공학박사, 로봇공학 전공)
+- 평가 분과: 스마트제조 · 지능형 로보틱스 분과
+- 핵심 지표 요약:
+  • 총 연구개발비: 7억 1,500만 원 (정부지원연구개발비 5억 원 70% + 민간부담금 2.15억 원 30%)
+  • 연구 기간: 2026. 10. 01 ~ 2028. 09. 30 (총 24개월)
+  • 핵심 성능 지표: ±1.0mm 이내 정밀 도킹 (KTL 공인시험 성적서 발급 확약)
+  • 지식재산권 및 고용: 원천특허 출원 4건, GS 1등급, 청년 R&D 연구인력 12명 정규직 신규 채용
+- 1분 오프닝 스피치 멘트:
+  "존경하는 평가위원장님과 심사위원 여러분, 안녕하십니까. 주관기관 넥스트로보틱스 대표이사 강태훈입니다. 지금 대한민국 제조업은 인구 절벽과 청년 구인난이라는 전례 없는 위기 앞에 서 있습니다. 저희는 외산 로봇 기술에 종속된 제조 현장의 문제를 풀고, 100% 국산 원천 기술로 대한민국 스마트 물류의 자립을 이끌고자 본 과제에 도전하였습니다."
+
+■ 2p 문제인식 및 개발 필요성 (Problem & Background)
+- 슬라이드 핵심 요지: 제조 현장 구인난 심화와 외산 장비 종속 탈피의 시급성
+- 3대 현장 문제점:
+  1. 인력난과 안전사고: 20~30대 청년 제조 취업 기피율 62%, 반복 중량물 이송으로 인한 근골격계 산재 빈발, 야간 라인 가동 중단
+  2. 1세대 유도선 AGV의 한계: 바닥 마그네틱/QR 종속으로 공정 변경 시 3주간 공장 셧다운, 단순 정지만 수행하여 후속 라인 연쇄 병목 초래
+  3. 외산 AMR 시장 독점: 대당 1.2억~1.8억 원(MiR, KUKA)의 고가 장비, 연간 1,500만 원 소프트웨어 라이선스 비용 종속, 국내 생산설비(ERP/MES) 연동 불가
+- 기술 비교 우위:
+  • 도킹 정밀도: 기존 AGV ±15mm, 외산 AMR ±5mm 대비 당사 개발 기술 ±1.0mm 초정밀 구현
+  • 장애물 대응: 기존 급정지 대비 당사는 0.05초 초저지연 동적 우회 자율 주행
+  • 도입 단가: 대당 1.5억 원의 외산 대비 당사 대당 5,500만 원으로 55% 이상 원가 절감
+
+■ 3p 핵심 기술 및 제품 혁신성 (Core Technology & Architecture)
+- 핵심 원천 기술 4종 아키텍처:
+  1. 3D LiDAR SLAM + 비전 융합 맵핑: 조도 변화에 무관한 99.9% 맵 매칭, 포인트 클라우드 80% 경량화로 온디바이스 NPU 엣지 실시간 연산, 바닥 마커 없이 도면 입력 후 10분 내 주행 개시
+  2. ±1.0mm 초정밀 도킹 특허 알고리즘: 2차원 마이크로 카메라와 레이저 복합 추적으로 설비 투입구 3축(X, Y, Theta) 실시간 오차 보정, 웨이퍼 카세트 및 2차전지 배터리 셀 자동 이송 정밀도 달성
+  3. 0.05초 초저지연 동적 장애물 자율 회피: 보행자와 지게차 이동 궤적을 딥러닝으로 2초 전 예측하여 멈춤 없는 부드러운 우회 궤적 생성, Safety LiDAR 3중 안전 규격 충족
+  4. 100대 동시 통합 FMS 관제 플랫폼: 단일 공장 내 교차로 충돌 회피(Deadlock Zero), 긴급도 기반 자동 무선 충전 배차, 스마트팩토리 국제 표준 VDA 5050 완벽 지원
+
+■ 4p 연구개발 목표 및 정량적 성과 지표 (R&D Goals & KPIs)
+- 공인시험기관(KTL/KTC) 공인 성적서 기준 5대 핵심 정량 목표:
+  1. 도킹 위치 정밀도: ±1.0mm 이내 (외산 최고 ±3.0mm 대비 3배 우수, KTL 시험 성적서)
+  2. 동적 장애물 반응 시간: 50ms (0.05초) 이하 (KTC 시험 성적서)
+  3. 1회 완충 연속 가동 시간: 14시간 이상 (100kg 가반하중 기준 실측)
+  4. 정격 하중 주행 속도: 1.8m/s 이상 (가반하중 250kg 적재 상태 주행)
+  5. 군집 제어 최대 지원 대수: 100대 동시 제어 (TTA 소프트웨어 GS인증 1등급)
+- 비정량적 성과:
+  • 국내 특허 4건 출원 (2건 등록) 및 해외 PCT 1건 출원
+  • 무인 운반차 국제 안전 규격 ISO 3691-4 인증 획득
+  • 2차전지 배터리 팩 공장 및 자동차 부품 조립 라인 3개사 현장 실증(PoC) 완료
+  • 청년 R&D 연구인력 12명 정규직 신규 채용
+
+■ 5p 사업화 전략 및 시장 진입 로드맵 (Business Plan & GTM)
+- 3개년 단계별 추진 계획:
+  • 1단계 (2026년): 기술 검증 & 3개 대기업 공장 PoC 실증 완료, 모듈형 프레임 양산 설계, 매출 24억 원 (20대 공급)
+  • 2단계 (2027년): 대기업 1차 티어 벤더사 표준 장비 등록, 월 15대 양산 체제 구축, 매출 78억 원 (70대 공급)
+  • 3단계 (2028년): 북미 K-배터리 공장 동반 진출 및 동남아 수출, 초고하중 팔레트 AMR 라인업 확대, 매출 195억 원 (180대 공급)
+- 사전 확보 실적:
+  • 국내 중견 제조사 5개사로부터 총 35대(21억 원 상당) 구매의향서(LOI) 기확보 완료
+
+■ 6p 연구개발비 집행 계획 및 수행 조직 역량 (Budget & Team Competence)
+- 총 사업비 매칭: 총 7억 1,500만 원 (정부 5.0억 + 민간 2.15억 원)
+  • 연구인건비: 3억 2,175만 원 (45.0%) - AI 비전 및 제어 석박사 8인 인건비
+  • 연구장비·재료비: 2억 1,450만 원 (30.0%) - 3D 라이다, 모터 드라이브 시제품 5대 제작
+  • 연구활동비: 1억 725만 원 (15.0%) - KTL 공인시험비, 특허 출원료, 외부 자문비
+  • 위탁연구개발비: 7,150만 원 (10.0%) - 대학 산학협력 군집 스케줄링 최적화 연구
+- 연구진 인프라 및 맨파워:
+  • 총괄책임자: 대표이사 강태훈 (KAIST 학사, 서울대 로봇공학 박사, 현대차 선행연구 7년)
+  • AI 비전팀: 포항공대 컴퓨터비전 박사 이성우 수석 등 4인 전담
+  • 하드웨어팀: 산업용 로봇 구동부 양산 10년 경력 박준혁 책임 등 3인
+  • 보유 시설: 경기 판교 기업부설연구소(120평), NVIDIA H100 AI 트레이닝 서버, 실내 실증 주행 테스트 트랙(150평)
+
+■ 7p 기대 효과 및 국가적 파급력 (Impact & Final Wrap-up)
+- 4대 국가 파급 효과:
+  1. 기술적 파급: 핵심 SLAM 및 제어 소프트웨어 국산화율 95% 달성, 국가 지능형 로봇 기술 표준 선도
+  2. 경제적 파급: 3개년 누적 외산 수입 대체 효과 380억 원, 국내 제조 공정 도입 비용 55% 절감
+  3. 사회적 파급: 고위험 중량물 이송 작업 무인화로 제조 현장 중대재해 제로(0%) 실현
+  4. 일자리 창출: 청년 연구원 12명 즉시 채용 포함 3개년 누적 35명 양질의 정규직 고용 창출
+- 클로징 멘트 및 심사위원 질의응답(Q&A) 준비 완료:
+  "저희 넥스트로보틱스는 본 과제를 100% 성공적으로 완수하여 대한민국 스마트 제조 산업의 기술 자립을 반드시 실현해 내겠습니다. 경청해 주셔서 대단히 감사합니다. 위원님들의 질의에 성심껏 답변드리겠습니다."`
       }
     ],
     detailedTasks: [
-      '근로·용역·거래 계약서 조항 검토 및 수정 의견 정리',
-      '회의 녹음본 또는 메모 바탕 회의록 작성 및 할 일 정리',
-      '사업계획서 및 회사소개서 초안 작성 및 내용 보완',
-      '주간·월간 업무 실적 보고서 및 요약본 작성'
+      '정부지원사업(예비/초기/TIPS/도약패키지) 사업계획서 기획 및 작성',
+      '엔젤/시드/시리즈 투자유치용 IR 피치덱 스토리라인 구성 및 디자인',
+      '신규 바이어 및 클라이언트 미팅용 회사소개서(Company Profile) 제작',
+      '입찰 제안서, 제품 카탈로그, 발표 평가용 슬라이드 도식화 디자인'
     ],
     turnaroundTime: '24~48시간 이내',
-    deliverableSample: '검토 의견서, 수정된 사업계획서 문서, 회의록 정리본'
+    deliverableSample: '편집 가능한 PPTX 원본 파일, 발표용 PDF, 고해상도 인포그래픽'
   },
+
+  // 2. 계약서 업무(용역, 납품, 투자, 제휴 등의 계약서 작성 및 검토)
   {
-    id: 'content',
+    id: 'contract',
     number: '02',
-    categoryCode: 'CONTENT CREATION',
-    name: '콘텐츠 업무',
-    description: '블로그 글 작성, SNS 카드뉴스 문구, 보도자료 초안, 고객 안내 뉴스레터',
-    tags: ['블로그 글', '카드뉴스', '보도자료', '뉴스레터'],
-    icon: 'Edit3',
-    colorClass: 'blue-600',
-    previewImage: cardNewsCoverImg,
-    previewImageAlt: 'SNS 실무 카드뉴스 3장 및 홍보 콘텐츠 산출물',
+    categoryCode: 'LEGAL & CONTRACT WORK',
+    name: '계약서 업무',
+    description: '용역, 납품, 투자, 제휴 등 각종 계약서 신규 작성, 독소조항 분석, 조항별 수정 의견서 작성 및 법무 검토',
+    tags: ['용역계약서', '납품계약서', '투자계약서', '제휴계약서', '독소조항분석', '계약서검토'],
+    icon: 'FileCheck',
+    colorClass: 'brand-navy',
+    previewImage: contractReviewRedline1,
+    previewImageAlt: 'T24 AI 계약서 검토 - 용역공급계약서 검토 보고서 (Redline 4페이지 완비)',
     portfolioExample: {
-      id: 'cnt-1',
-      client: 'IT 솔루션 A사',
-      title: 'SNS 홍보 카드뉴스 3장 제작 및 블로그 원고',
-      duration: '정기 발행 (의뢰 후 24시간 내)',
-      result: '인스타그램 도달률 280% 상승 및 핵심 서비스 3장 요약',
-      summary: '바쁜 스타트업 대표와 실무자를 타겟으로, 복잡한 업무 프로세스를 3장의 한글 카드뉴스(1p 표지, 2p 본문, 3p 엔딩)로 기획·디자인하여 SNS 배포용으로 납품했습니다.',
-      deliverable: '배포용 고해상도 카드뉴스 3종 (표지/본문/엔딩) 및 카피 기획안',
-      image: cardNewsCoverImg,
-      imageAlt: '한글 기반 SNS 카드뉴스 3장 실무 산출물'
+      id: 'contract-1',
+      client: '플랫폼 개발사 (주)브릿지파트너스',
+      title: '용역공급계약서 독소조항 분석 및 Redline 수정 검토 보고서 (4장 전체)',
+      duration: '의뢰 후 24시간 이내',
+      result: '위험 독소조항 5건 발견(상 2건, 중 2건, 하 1건) 및 신구조문대조표 권고안 도출',
+      summary: '웹 플랫폼 개발 용역계약서(총 13개 조항)를 수급인(을) 관점에서 정밀 검토하여 무기한 자동 연장, 불명확한 대금지급 기한, 무제한 손해배상, 일방적 즉시 해지권, 영구 비밀유지 등 5대 치명적 독소조항을 적시하고 실무 수정 대조표와 조항별 검토의견서를 4페이지 완결본으로 납품했습니다.',
+      deliverable: '용역공급계약서 검토 보고서 (Redline 신구조문대조표 4페이지 완비) 및 수정안',
+      image: contractReviewRedline1,
+      imageAlt: '용역공급계약서 검토 보고서 (Redline 4장 완비)'
     },
     portfolioCases: [
       {
-        id: 'cnt-1',
-        client: 'IT 솔루션 A사',
-        title: 'SNS 홍보 카드뉴스 3장 제작 및 블로그 원고',
-        duration: '정기 발행 (의뢰 후 24시간 내)',
-        result: '인스타그램 도달률 280% 상승 및 핵심 서비스 3장 요약',
-        summary: '바쁜 스타트업 대표와 실무자를 타겟으로, 복잡한 업무 프로세스를 3장의 한글 카드뉴스(1p 표지, 2p 본문, 3p 엔딩)로 기획·디자인하여 SNS 배포용으로 납품했습니다.',
-        tags: ['카드뉴스제작', 'SNS콘텐츠', '인스타그램', '카드뉴스기획'],
-        deliverable: '배포용 고해상도 카드뉴스 3종 (표지/본문/엔딩) 및 카피 기획안',
-        image: cardNewsCoverImg,
-        imageAlt: '한글 기반 SNS 카드뉴스 3장 실무 산출물',
+        id: 'contract-1',
+        client: '플랫폼 개발사 (주)브릿지파트너스',
+        title: '용역공급계약서 검토 보고서 (Redline 4장 풀버전)',
+        tabLabel: '1. 용역계약서 독소조항 분석 (4장 전체)',
+        duration: '의뢰 후 24시간 이내',
+        result: '위험 독소조항 5건 발견(상 2건, 중 2건, 하 1건) 및 신구조문대조표 권고안 도출',
+        summary: '웹 플랫폼 개발 용역계약서(총 13개 조항)를 수급인(을) 관점에서 정밀 검토하여 무기한 자동 연장, 불명확한 대금지급 기한, 무제한 손해배상, 일방적 즉시 해지권, 영구 비밀유지 등 5대 치명적 독소조항을 적시하고 실무 수정 대조표와 조항별 검토의견서를 4페이지 완결본으로 납품했습니다. 한 장씩 넘겨가며 정밀하게 검토할 수 있습니다.',
+        tags: ['계약서검토', '독소조항분석', '용역계약서', 'Redline보고서', '신구조문대조표', '4장전체'],
+        deliverable: '용역공급계약서 검토 보고서 (Redline 신구조문대조표 4페이지 완비) 및 수정안',
+        image: contractReviewRedline1,
+        imageAlt: '용역공급계약서 검토 보고서 (Redline 4장 완비)',
         galleryImages: [
-          { url: cardNewsCoverImg, title: '1p 표지: 바쁜 스타트업 대표를 위한 업무 자동화 3원칙', pageLabel: '1p 표지' },
-          { url: cardNewsBodyImg, title: '2p 본문: 01. 반복되는 문서 업무 분리 및 전담 매니저 솔루션', pageLabel: '2p 본문' },
-          { url: cardNewsEndingImg, title: '3p 엔딩: 핵심 사업 집중 및 무료 업무 진단 신청 (CTA)', pageLabel: '3p 엔딩' }
+          { url: contractReviewRedline1, title: '1p 검토 개요 & 위험조항 5건 요약표 및 계약서 전문 (목적·계약금액)', pageLabel: '1p 개요·요약표' },
+          { url: contractReviewRedline2, title: '2p 제3조 계약기간(자동연장) 수정안 & 제5조 대금지급기한 수정안 및 검토의견', pageLabel: '2p 계약기간·대금지급' },
+          { url: contractReviewRedline3, title: '3p 제7조 손해배상(Cap설정) 수정안 & 제9조 계약해지권(쌍방시정) 수정안 및 검토의견', pageLabel: '3p 손해배상·계약해지' },
+          { url: contractReviewRedline4, title: '4p 제11조 비밀유지(3년제한) 수정안, 분쟁해결, 당사자 서명란 및 면책고지', pageLabel: '4p 비밀유지·서명' }
         ],
         originalDocumentMeta: {
-          recipient: 'IT 솔루션 A사 공식 인스타그램 & 링크드인 채널',
-          sender: '트렌드24 콘텐츠 기획 에디터',
-          subject: '[카드뉴스 원고 기획안] 스타트업 대표를 위한 업무 자동화 3원칙 (총 3슬라이드)',
-          docDate: '2026.09.17 (배포 완료)',
-          docTypeBadge: 'SNS 카드뉴스 기획 원고',
-          attachments: ['카드뉴스_배포규격_1080x1080.zip', '캡션_해시태그_가이드.txt']
+          recipient: '주식회사 브릿지파트너스 (을, 용역 수행사) 법무/사업 총괄팀',
+          sender: '트렌드 24 (T24 AI 계약서 검토 + 전문가 검수팀)',
+          subject: '[Redline 검토 보고서] 웹 플랫폼 개발 용역공급계약서 위험조항 5건 분석 및 수정안 (4 Pages)',
+          docDate: '2026. 09. 16. (검토 완료)',
+          docTypeBadge: '공식 Redline 계약 검토 보고서 (4 Pages)',
+          attachments: ['용역공급계약서_검토보고서_Redline.pdf', '용역공급계약서_수정안_최종.docx', '조항별_위험도_진단표.xlsx']
         },
-        originalText: `[SNS 카드뉴스 3장 원고 기획안] 바쁜 스타트업 대표를 위한 업무 자동화 3원칙
+        originalText: `[T24 AI 계약서 검토 · Contract Review]
+용역공급계약서 검토 보고서 (Redline)
+웹 플랫폼 개발 용역 | 갑: 주식회사 오로라테크 · 을: 주식회사 브릿지파트너스
 
-■ [1P 표지 슬라이드]
-- 메인 헤드카피: "매일 야근하는 대표님, 언제까지 계약서 붙잡고 계실 건가요?"
-- 서브카피: 바쁜 스타트업 대표와 1인 사업자를 위한 '업무 자동화 3원칙'
-- 비주얼 연출: 서류 더미에서 해방되어 핵심 비즈니스에 집중하는 깔끔한 그래픽
+■ [1p] 검토 개요 및 위험조항 요약
+1. 검토 기본 정보
+- 검토 대상: 용역공급계약서_오로라테크.pdf (총 13개 조항)
+- 검토 관점: 을(용역 수행사, 주식회사 브릿지파트너스)의 권리 보호
+- 검토 일자: 2026. 09. 16.
+- 검토 결과: 주요 조항 7건 검토 · 위험조항 5건 발견 (상 2건, 중 2건, 하 1건) · 이상없음 2건
+- 검토 수행: 트렌드 24 (T24 AI 계약서 검토 + 전문가 검수)
 
-■ [2P 본문 슬라이드]
-- 소제목: "01. 반복되는 일상 행정·문서 업무는 즉시 분리하세요"
-- 핵심 본문:
-  · 계약서 조항 검토, 주간 회의록 정리, 경쟁사 시장조사...
-  · 대표의 시간 1시간은 수십만 원의 가치입니다.
-  · 정형화된 실무는 '트렌드24 전담 매니저'에게 맡기고, 대표님은 제품 개발과 투자 유치에만 몰입하세요.
-- 체크포인트: "월평균 행정 소요 시간 42시간 절감"
+2. 위험조항 요약표
+• No 1 / 제3조 계약기간 / 위험도: [중]
+  - 쟁점: 이의 없으면 1년씩 무기한 자동 연장
+  - 수정 요지: 서면 종료통지 기한 + 갑의 사전 안내 의무 + 조건 변경은 서면 합의
+• No 2 / 제5조 대금지급 / 위험도: [중]
+  - 쟁점: "합리적인 기간 내" — 지급기한 불명확
+  - 수정 요지: 세금계산서 발행일부터 30일 이내 현금 지급 + 지연손해금
+• No 3 / 제7조 손해배상 / 위험도: [상]
+  - 쟁점: 을만 부담하는 무제한 배상책임
+  - 수정 요지: 쌍방 책임 + 계약금액 한도 + 간접손해 제외 (고의·중과실 제외)
+• No 4 / 제9조 계약해지 / 위험도: [상]
+  - 쟁점: 갑의 주관적 판단만으로 즉시 해지, 받은 대금 전액 반환
+  - 수정 요지: 쌍방 해지권 + 14일 시정기간 + 기성분 정산
+• No 5 / 제11조 비밀유지 / 위험도: [하]
+  - 쟁점: "영구히" 의무 — 기간·예외 없음
+  - 수정 요지: 종료 후 3년 + 비밀정보 제외사유 명시
 
-■ [3P 엔딩 슬라이드 (CTA)]
-- 메인 카피: "지금 우리 회사에 꼭 필요한 외주 업무는 무엇일까요?"
-- 행동 유도:
-  · 프로필 링크 클릭 시 [무료 업무 진단 테스트] 즉시 제공
-  · 트렌드24 카카오 채널 추가 시 1회 무료 체험권 증정
-- 캡션 태그: #스타트업 #업무자동화 #트렌드24 #시간관리 #사업성공`
+3. 표기 범례
+- 삭제된 문구: 빨간 취소선 표기
+- 추가·수정된 문구: 파란 밑줄 표기
+- ◆ 수정: 수정된 조항
+
+4. 계약서 전문 서문 및 일반 조항
+- 주식회사 오로라테크(이하 "갑"이라 한다)와 주식회사 브릿지파트너스(이하 "을"이라 한다)는 웹 플랫폼 개발 용역(이하 "본 용역"이라 한다)에 관하여 다음과 같이 계약(이하 "본 계약"이라 한다)을 체결한다.
+- 제1조 (목적): 본 계약은 갑이 을에게 위탁하는 웹 플랫폼 개발 용역의 수행에 필요한 갑과 을의 권리·의무 및 기타 제반 사항을 정함을 목적으로 한다.
+- 제2조 (계약금액):
+  ① 본 용역의 계약금액은 금 팔천만 원정(₩80,000,000)으로 하며, 부가가치세는 별도로 한다.
+  ② 계약금액에는 본 용역 수행에 소요되는 인건비, 경비, 장비 사용료 등 일체의 비용이 포함된 것으로 본다.
+
+--------------------------------------------------
+
+■ [2p] 계약기간, 과업 범위, 대금지급 및 검수
+- 제3조 (계약기간) ◆ 수정
+  ① 본 계약의 기간은 2026년 ○○월 ○○일부터 2027년 ○○월 ○○일까지로 한다.
+  ② [삭제] 계약기간이 끝나기 전까지 갑 또는 을이 별도의 이의를 제기하지 않으면, 본 계약은 같은 조건으로 1년씩 자동 연장된다.
+     [신설] 갑은 계약기간 만료 60일 전까지 을에게 연장 여부와 연장 조건을 서면으로 안내하여야 하며, 갑 또는 을이 만료 30일 전까지 상대방에게 서면으로 종료 의사를 통지하지 않는 경우 본 계약은 1년간 연장된다.
+  ③ [신설] 연장 시 계약금액, 과업 범위 등 계약 조건의 변경은 갑과 을의 서면 합의로 정한다.
+  ※ [검토의견 1 | 위험·중] 자동 연장 — 사전 공지 조항 추가
+     • 문제점: 종료 통지 기한과 방식이 없어 별도 이의가 없으면 계약이 1년씩 무기한 연장됨. 을은 단가 조정 기회 없이 기존 조건에 묶일 수 있음.
+     • 수정방향: 갑의 만료 60일 전 사전 안내 의무, 30일 전 서면 종료통지 기한을 명시하고, 연장 시 조건 변경은 서면 합의로 정하도록 보완.
+
+- 제4조 (용역의 범위 및 내용)
+  ① 을이 수행할 용역의 범위는 다음 각 호와 같다.
+     1. 웹 플랫폼 기획 및 화면 설계(UI/UX)
+     2. 프론트엔드 및 백엔드 개발
+     3. 관리자 페이지 개발
+     4. 서버 구축 및 배포 지원
+     5. 기타 갑과 을이 서면으로 합의한 업무
+  ② 세부 내용 및 일정은 별첨 「과업지시서」에 따른다.
+
+- 제5조 (대금지급) ◆ 수정
+  ① 갑은 제2조의 계약금액을 다음과 같이 분할하여 지급한다.
+     1. 착수금: 계약금액의 30% (금 이천사백만 원정) — [수정] 계약 체결 후
+     2. 중도금: 계약금액의 40% (금 삼천이백만 원정) — [수정] 중간 산출물 검수 완료 후
+     3. 잔금: 계약금액의 30% (금 이천사백만 원정) — [수정] 최종 검수 완료 후
+  ② 갑은 각 단계 완료 후 을의 청구를 받은 경우 [삭제] 합리적인 기간 내에 [신설] 을의 세금계산서 발행일부터 30일 이내에 현금으로 대금을 지급한다.
+  ③ [신설] 갑이 제2항의 지급기한을 넘긴 경우, 지연된 일수에 대하여 연 6%의 지연손해금을 가산하여 지급한다.
+  ※ [검토의견 2 | 위험·중] 대금 지급기한 불명확
+     • 문제점: "합리적인 기간"은 해석이 갈리는 표현으로, 갑이 지급을 미뤄도 을이 이행지체를 주장하기 어려움. 단계별 지급 시점도 정해져 있지 않음.
+     • 수정방향: 단계별 지급 조건(계약 체결·중간 검수·최종 검수)과 세금계산서 발행일부터 30일 이내라는 확정 기한을 두고, 지연 시 지연손해금 조항을 추가.
+
+- 제6조 (납품 및 검수)
+  ① 을은 과업지시서에서 정한 일정에 따라 결과물을 갑에게 납품한다.
+  ② 갑은 납품받은 날부터 14일 이내에 검수를 실시하고, 그 결과를 을에게 서면으로 통지한다.
+  ③ 검수 결과 결함이 있는 경우 을은 갑의 요청에 따라 지체 없이 보완하여 재납품한다.
+
+--------------------------------------------------
+
+■ [3p] 손해배상, 지식재산권, 계약해지 및 하자보수
+- 제7조 (손해배상) ◆ 수정
+  [삭제 원문] 을이 본 계약을 위반하거나 고의 또는 과실로 갑에게 손해를 끼친 경우, 을은 갑에게 생긴 모든 손해를 배상한다.
+  ① [신설] 갑 또는 을이 본 계약을 위반하거나 고의 또는 과실로 상대방에게 손해를 끼친 경우, 그 손해를 배상한다.
+  ② [신설] 제1항에 따른 손해배상액은 본 계약금액을 한도로 하며, 간접손해·특별손해 및 일실이익은 배상 범위에서 제외한다.
+  ③ [신설] 제2항은 손해가 배상의무자의 고의 또는 중대한 과실로 발생한 경우에는 적용하지 않는다.
+  ※ [검토의견 3 | 위험·상] 무제한 손해배상 — 배상한도(Cap) 부재
+     • 문제점: 을에게만 일방적으로 "모든 손해"의 배상책임을 지워, 계약금액(8,000만 원)을 크게 넘는 간접손해·영업손실까지 청구될 수 있음.
+     • 수정방향: 책임을 쌍방으로 바꾸고 배상 한도를 계약금액으로 제한하며 간접·특별손해는 제외. 단, 고의·중과실은 한도 적용에서 빼서 형평성 확보.
+
+- 제8조 (지식재산권)
+  ① 본 용역으로 생성된 결과물의 저작권 등 일체의 지식재산권은 잔금 지급이 완료된 때에 갑에게 귀속된다.
+  ② 을이 본 계약 이전부터 보유한 기술, 라이브러리, 모듈 등의 권리는 을에게 유보되며, 갑은 결과물의 이용에 필요한 범위에서 이를 무상으로 사용할 수 있다.
+
+- 제9조 (계약해지) ◆ 수정
+  ① [삭제] 갑은 [신설] 갑 또는 을은 상대방이 다음 각 호의 어느 하나에 해당하는 경우 [삭제] 을에게 별도로 최고하지 않고 즉시 [신설] 서면으로 본 계약을 해지할 수 있다.
+     1. [삭제] 을이 본 계약상 의무를 위반한 경우 [신설] 본 계약상 중요한 의무를 위반하고, 14일 이상의 기간을 정한 서면 시정 요구를 받고도 그 기간 내에 시정하지 않은 경우
+     2. [삭제] 을의 용역 수행이 계약 목적을 달성하기 어렵다고 갑이 판단한 경우 [신설] 부도, 파산, 회생절차 개시 신청 등으로 계약 이행이 곤란하다고 객관적으로 인정되는 경우
+     3. [삭제 전체] 그 밖에 갑이 계약을 유지하기 어렵다고 인정하는 경우
+  ② [삭제] 제1항에 따라 계약이 해지되면 을은 이미 받은 대금을 갑에게 반환해야 한다. [신설] 계약이 해지된 경우 갑은 해지일까지 을이 수행한 용역에 대하여 기성 비율에 따라 정산한 대금을 지급하고, 을은 이미 받은 대금 중 미수행 부분에 해당하는 금액을 반환한다.
+  ③ [신설] 계약의 해지는 제7조에 따른 손해배상 청구에 영향을 미치지 아니한다.
+  ※ [검토의견 4 | 위험·상] 일방적 즉시 해지권
+     • 문제점: 해지권이 갑에게만 있고, "갑이 판단한 경우" 등 주관적 사유로 최고 없이 즉시 해지 가능. 해지 시 이미 수행한 용역 대가까지 전액 반환해야 해 을의 손실이 큼.
+     • 수정방향: 해지권을 쌍방으로 하고 사유를 객관적 요건(중대한 위반 + 14일 시정기간, 부도·파산 등)으로 한정. 해지 시 수행분은 기성 비율로 정산하도록 변경.
+
+- 제10조 (하자보수)
+  ① 을은 최종 검수일부터 6개월간 결과물의 하자에 대하여 무상으로 보수한다.
+  ② 하자보수 요청을 받은 경우 을은 지체 없이 조치하고 그 결과를 갑에게 통지한다.
+
+--------------------------------------------------
+
+■ [4p] 비밀유지, 분쟁해결, 기타, 서명날인 및 면책고지
+- 제11조 (비밀유지) ◆ 수정
+  ① 갑과 을은 본 계약과 관련하여 알게 된 상대방의 영업상·기술상 비밀을 [삭제] 영구히 [신설] 본 계약기간 및 계약 종료 후 3년간 유지하여야 하며, 상대방의 사전 서면 동의 없이 제3자에게 공개하거나 본 용역 외의 목적으로 사용하여서는 아니 된다.
+  ② [신설] 다음 각 호의 정보는 비밀정보에서 제외한다.
+     1. 공개 당시 이미 공지되었거나, 수령 당사자의 귀책 없이 공지된 정보
+     2. 수령 당사자가 비밀유지 의무 없이 제3자로부터 적법하게 취득한 정보
+     3. 법령 또는 법원·행정기관의 명령에 따라 공개가 요구되는 정보
+  ※ [검토의견 5 | 위험·하] "영구히" 비밀유지 의무
+     • 문제점: 기간 제한과 예외 사유가 없어 의무 범위가 지나치게 넓고, 분쟁 시 무효·과도한 제한 다툼의 소지가 있음.
+     • 수정방향: 존속기간을 계약 종료 후 3년으로 정하고, 공지 정보·적법 취득 정보·법령상 공개 요구 정보를 예외로 명시.
+
+- 제12조 (분쟁해결)
+  ① 본 계약과 관련하여 분쟁이 발생한 경우 갑과 을은 상호 협의하여 해결하도록 노력한다.
+  ② 협의로 해결되지 않는 분쟁은 갑의 본점 소재지를 관할하는 법원을 관할법원으로 한다.
+
+- 제13조 (기타)
+  ① 본 계약에서 정하지 않은 사항은 관계 법령 및 일반 상관례에 따른다.
+  ② 본 계약의 변경은 갑과 을의 서면 합의에 의하여만 효력이 있다.
+
+- 서명 날인문:
+  본 계약의 성립을 증명하기 위하여 계약서 2부를 작성하여 갑과 을이 서명 날인한 후 각 1부씩 보관한다.
+  2026년 ○○월 ○○일
+  [갑] 주식회사 오로라테크 | 대표이사 (인)
+  [을] 주식회사 브릿지파트너스 | 대표이사 (인)
+  [별첨] 과업지시서 1부
+
+※ 법적 면책 고지:
+본 문서는 트렌드 24의 계약서 작성·검토 역량을 소개하기 위한 포트폴리오 예시이며, 등장하는 회사명·금액·조건은 예시용입니다. 실제 계약 체결 시에는 개별 사안에 맞는 법률 전문가 검토를 권장합니다.`
       },
       {
-        id: 'cnt-2',
-        client: '기술 기업 R사',
-        title: '신제품 출시 및 소식 보도자료 작성',
+        id: 'contract-2',
+        client: '글로벌 제조·부품유통 (주)케이원인더스트리',
+        title: 'B2B 물품 납품 및 자재 공급 표준계약서 (5장 전체)',
+        tabLabel: '2. 납품 및 자재 공급 계약서 (5장 전체)',
         duration: '의뢰 후 24시간 이내',
-        result: '언론사 배포용 표준 보도자료 양식 완성',
-        summary: '신제품 출시와 기업 소식을 주요 언론사 송고 규격에 맞춰 제목과 본문으로 읽기 쉽게 작성했습니다.',
-        tags: ['보도자료', '홍보문구', '언론배포'],
+        result: '표준 물품 납품 및 자재 공급 계약서 19개 전문 조항, [별표 1] 공급물품 명세서 및 4대 안전장치 완비',
+        summary: '구매사((주)한국글로벌제조)와 공급사((주)케이원인더스트리) 간 4.29억 원 규모 정밀 부품 납품에 필요한 19개 핵심 조항(개별 발주, 7일 검수 간주제, 30일 결제·연 6% 지연손해금, 12개월 하자보증, 10% 원자재 단가연동제, 손해배상 Cap 한도, 제조물책임 및 비밀유지 3년)과 [별표 1] 공급물품 명세서·품질검수 조건을 5페이지 완결본으로 납품했습니다. 한 장씩 넘겨가며 정밀하게 검토할 수 있습니다.',
+        tags: ['납품계약서', '공급계약서', '단가연동제', '검수간주규정', '별표1공급명세서', '5장전체'],
+        deliverable: 'B2B 물품 납품 및 자재 공급 표준계약서(5페이지 완비), [별표 1] 공급물품 명세서 및 실무 특약 가이드',
+        image: contractReviewImg,
+        imageAlt: 'B2B 물품 납품 및 자재 공급 계약서 표준 서식 (5장 완결본)',
+        galleryImages: [
+          { url: supplyAgreement1, title: '1p 계약서 전문, 목적, 공급물품·계약금액(4.29억), 계약기간, 개별발주, 납품, 검수(7일 간주제) 및 검토가이드', pageLabel: '1p 전문·발주·검수간주' },
+          { url: supplyAgreement2, title: '2p 소유권 이전, 대금지급(30일·지연손해금 6%), 품질보증(12개월), 지체상금(10% Cap), 원자재 단가연동제(10%)', pageLabel: '2p 대금지급·단가연동제' },
+          { url: supplyAgreement3, title: '3p 손해배상 한도(발주금액 Cap), 제조물책임(PL 분계점), 비밀유지(3년), 양도·재위탁 금지 및 법무가이드', pageLabel: '3p 책임한도·제조물책임' },
+          { url: supplyAgreement4, title: '4p 계약해제·해지(14일 시정), 불가항력, 분쟁해결 관할, 계약체결일 및 갑/을 공식 법인인감 직인 날인(인영 완비)', pageLabel: '4p 계약해지·서명날인' },
+          { url: supplyAgreement5, title: '5p [별표 1] 공급물품 명세서(6대 품목·단가·VAT 4.29억), 상세 납품조건, 품질검수·RoHS성적서 기준, 기술승인 날인', pageLabel: '5p [별표1] 물품명세서·품질조건' }
+        ],
+        originalDocumentMeta: {
+          recipient: '(주)한국글로벌제조(갑, 구매사) 및 (주)케이원인더스트리(을, 공급사) 법무·구매조달팀',
+          sender: '트렌드 24 (T24 AI 계약서 작성 + 기업법무 전문 검수팀)',
+          subject: '[공식 표준 서식] B2B 물품 납품 및 자재 공급 기본계약서 및 [별표 1] 공급물품 명세서 (5 Pages)',
+          docDate: '2026. 09. 21. (실무 표준 완비)',
+          docTypeBadge: 'B2B 표준 물품 납품 및 자재 공급 계약서 (5 Pages)',
+          attachments: ['물품납품및자재공급기본계약서_표준서식.docx', '별표1_공급물품명세서_및_납품조건.xlsx', '원자재단가연동제_및_검수특약가이드.pdf']
+        },
+        originalText: `[T24 실무 표준 계약 서식 · Standard Supply Agreement]
+물품 납품 및 자재 공급 계약서 (5개 페이지 풀버전 완결본)
+발주처(구매자): 주식회사 한국글로벌제조 · 공급처(제조자): 주식회사 케이원인더스트리
+총 계약금액: 금 429,000,000원 (VAT 포함) · 계약기간: 2026. 10. 01 ~ 2027. 09. 30
+
+■ [1p] 계약서 전문, 목적, 공급물품·금액, 기간, 발주, 납품, 검수 및 검토가이드
+[전문]
+주식회사 한국글로벌제조(이하 "갑"이라 한다)와 주식회사 케이원인더스트리(이하 "을"이라 한다)는 갑이 영위하는 사업과 관련하여 물품 및 자재의 공급 거래에 관한 기본적인 권리와 의무를 규정하기 위해 본 계약을 체결한다.
+
+제 1 조 (목적)
+본 계약은 갑이 을로부터 공급받는 물품 및 부품·자재(이하 "물품"이라 한다)의 개별 발주, 납품, 검수, 대금 지급 및 품질보증에 관한 기본적 사항과 갑과 을 상호 간의 성실한 계약 이행 의무를 정함을 목적으로 한다.
+
+제 2 조 (공급 물품 및 계약금액)
+① 을이 공급하는 물품의 품목, 규격, 수량, 단가 및 금액은 본 계약 [별표 1] 「공급물품 명세서」에서 정한 바에 따른다.
+② 총 계약금액은 금 사억이천구백만 원정(₩429,000,000, 부가가치세 포함)으로 하며, 부가가치세는 별도로 표기한다.
+③ 계약금액에는 포장비, 적재비 및 제5조에 따른 갑의 지정 납품장소까지의 운송비 일체가 포함된 것으로 본다.
+
+제 3 조 (계약기간 및 갱신)
+① 본 계약의 유효기간은 2026년 10월 01일부터 2027년 09월 30일까지(1년간)로 한다.
+② 계약기간 만료 30일 전까지 어느 일방 당사자도 상대방에게 서면으로 해지 또는 조건 변경 의사를 통지하지 않는 경우, 본 계약은 동일한 조건으로 1년간 자동 연장되며, 그 후에도 이와 같다.
+
+제 4 조 (개별 발주 및 승낙)
+① 갑은 품목, 규격, 수량, 납기, 납품장소 등을 구체적으로 명시한 발주서(전자문서 포함)를 을에게 교부하여 개별 발주한다.
+② 을은 발주서를 수령한 날부터 2영업일 이내에 수락 여부를 서면 또는 전자로 통지하여야 하며, 해당 기간 내에 별도의 이의를 제기하지 아니한 때에는 개별 발주를 정식 수락한 것으로 본다.
+③ 개별 발주의 내용이 본 계약과 상충할 경우 본 계약이 우선하며, 별도의 서면 합의가 있는 경우에만 그에 따른다.
+
+제 5 조 (납품 및 운송)
+① 을은 개별 발주서에서 지정한 납기일까지 갑이 지정한 납품장소(갑의 사업소 또는 물류창고)에 물품을 안전하게 납품한다.
+② 을은 납품 시 거래명세표 2부, 공인 품질검사성적서(KOLAS 인증) 및 갑이 요구한 검수 서류를 동봉하여 제출한다.
+③ 을은 납기 내 납품이 곤란할 사유가 발생한 때에는 지체 없이 그 사유와 예상 납품일을 통지하고 갑과 협의하여야 한다.
+
+제 6 조 (검수 및 합격 간주)
+① 갑은 물품을 수령한 날부터 7영업일 이내에 [별표 1]의 검수 기준에 따라 검수를 완료하고 결과를 서면 통지하여야 한다.
+② 갑이 제1항의 기간 내에 을에게 서면으로 검수 불합격 통지를 하지 아니한 때에는 해당 물품은 검수에 합격한 것으로 본다.
+③ 검수 불합격 시 을은 통지 수령일부터 7일 이내에 자기 비용으로 신품 교환, 하자 보완 또는 재납품을 이행하여야 한다.
+
+※ [T24 핵심 검토 가이드 ① : 검수 합격 간주 규정의 실무 효력]
+• 쟁점: 구매처(갑)의 고의적 검수 지연으로 인한 대금 청구 불능 방지
+• 효과: 물품 수령 후 7일 이내 서면 이의가 없으면 합격으로 간주하는 확정 기한제를 도입하여 공급사의 대금 청구 지연을 원천 차단.
+
+--------------------------------------------------
+
+■ [2p] 소유권 이전, 대금지급, 품질보증, 지체상금, 원자재 단가연동제 및 법무가이드
+제 7 조 (소유권 및 위험부담의 이전)
+① 납품된 물품의 소유권과 멸실·훼손에 대한 일체의 위험부담은 제6조에 따른 검수에 최종 합격한 시점에 을에서 갑으로 이전한다.
+② 검수 완료 전이라도 갑의 고의 또는 과실, 보관 부실로 인하여 발생한 물품의 멸실·훼손은 갑의 귀책으로 하며 을은 면책된다.
+
+제 8 조 (대금 지급 조건 및 지연손해금)
+① 을은 제6조의 검수 합격 후 해당 물품에 대한 전자세금계산서를 정당하게 발행하여 갑에게 대금을 청구한다.
+② 갑은 전자세금계산서 발행일로부터 30일 이내에 을이 사전에 지정한 결제 금융계좌로 현금(또는 당좌송금) 입금한다.
+③ 갑이 지급기한을 도과한 경우, 지체된 일수에 대하여 상법 소정의 연 6%의 지연손해금을 가산하여 지급하여야 한다.
+④ 갑은 객관적으로 확정되지 아니한 손해배상 청구권 등을 이유로 을의 정당한 물품대금 지급을 일방적으로 거절하거나 임의로 상계할 수 없다.
+
+제 9 조 (품질보증 및 하자담보책임)
+① 을은 공급 물품이 [별표 1]의 규격 및 갑과의 사전 승인 도면에 완전히 부합하며 제조상 결함이 없음을 보증한다.
+② 본 물품의 하자담보기간은 검수 합격일로부터 12개월로 정한다.
+③ 하자담보기간 내에 통상적 사용 중 결함이 발견된 때에는 을은 3영업일 이내에 교환, 무상 수리 또는 대금 감액을 이행한다.
+④ 갑의 관리·보관 부주의, 사전 승인 없는 구조 개조, 천재지변 등으로 인하여 발생한 하자는 보증 대상에서 제외한다.
+
+제 10 조 (지체상금 및 한도)
+① 을이 정당한 사유 없이 지정 납기를 지연한 경우, 지연된 물품 가액에 지체일수 1일당 1/1,000을 곱한 지체상금을 배상한다.
+② 지체상금의 누적 총액은 해당 개별 발주 금액의 10%를 한도로(Cap) 제한한다.
+③ 불가항력 또는 갑의 사양 변경 지연 등 을의 귀책사유가 아닌 사정으로 지연된 기간은 지체일수 산정에서 즉시 제외한다.
+
+제 11 조 (원자재 가격 연동 및 공급단가 조정)
+① 계약 체결 이후 주요 원자재(알루미늄 잉곳, SUS 합금강 등) 가격 또는 대미 환율이 체결 당시 대비 10% 이상 변동한 경우, 을은 공인 물가지표 및 산출 근거를 첨부하여 갑에게 공급단가의 조정을 공식 요청할 수 있다.
+② 갑은 을의 요청을 받은 날부터 14일 이내에 단가 협의를 개시하여야 하며, 정당한 사유 없이 협의를 거부할 수 없다.
+③ 상호 서면 합의로 인상·조정된 단가는 합의일 이후 발행되는 개별 발주분부터 즉시 적용한다.
+
+※ [T24 핵심 검토 가이드 ② : 원자재 단가연동제 & 지체상금 상한선(Cap)]
+• 하도급법 및 납품대금 연동제(상생협력법 제21조) 준수: 원자재 10% 이상 변동 시 자동 협의 의무를 명시하여 인플레이션 리스크 해소.
+• 지체상금 10% Cap: 대법원 판례 기준에 맞춰 발주금액의 10%를 초과하는 과도한 위약벌 발생 방지.
+
+--------------------------------------------------
+
+■ [3p] 손해배상 책임한도(Cap), 제조물책임(PL), 비밀유지, 양도금지 및 법무가이드
+제 12 조 (손해배상 책임 및 한도)
+① 갑 또는 을이 본 계약상 의무를 위반하여 상대방에게 직접적인 통상의 손해를 입힌 경우 이를 배상할 책임을 진다.
+② 일방 당사자가 상대방에게 부담하는 총 손해배상 책임의 한도는 원인이 발생한 해당 개별 발주 금액을 초과하지 아니한다.
+③ 어떠한 경우에도 간접손해, 특별손해, 징벌적 손해, 영업손실 및 일실이익은 손해배상 청구 범위에서 명시적으로 제외한다.
+④ 단, 손해가 배상의무자의 고의 또는 중대한 과실로 발생한 경우에는 제2항 및 제3항의 한도를 적용하지 아니한다.
+
+제 13 조 (제3자 권리 침해 및 제조물 책임)
+① 을은 납품 물품이 제3자의 특허권, 실용신안권, 디자인권 등 지식재산권을 침해하지 아니함을 엄격히 보증한다.
+② 물품과 관련하여 제3자가 지식재산권 침해 또는 제조물 결함(PL)을 이유로 갑에게 소송 등을 제기한 경우, 을은 자기 비용과 책임으로 갑을 방어하고 면책시켜야 한다.
+③ 단, 결함이나 분쟁의 원인이 갑이 독자적으로 제공한 설계 도면, 원재료 사양 또는 지시에 의한 것일 때에는 을은 면책된다.
+
+제 14 조 (영업비밀 보호 및 비밀유지 의무)
+① 갑과 을은 본 계약의 체결 및 이행 과정에서 취득한 상대방의 기술, 원가, 고객 정보 등을 계약기간 및 종료 후 3년간 엄격히 비밀로 유지하여야 하며, 사전 서면 동의 없이 제3자에게 누설하거나 본 계약 외의 용도로 사용하여서는 아니 된다.
+② 공지된 정보, 정당하게 수령한 정보, 법령에 따른 법원·정부기관의 정당한 명령에 의해 공개되는 정보는 제외한다.
+
+제 15 조 (권리·의무의 양도 및 재위탁 금지)
+① 갑과 을은 상대방의 사전 서면 승인 없이 본 계약상 권리·의무의 전부 또는 일부를 제3자에게 양도하거나 담보로 제공할 수 없다.
+② 을은 갑의 사전 서면 동의 없이 본 물품의 핵심 제조 공정을 제3자에게 임의로 재위탁(하도급)할 수 없다.
+
+※ [T24 핵심 검토 가이드 ③ : 손해배상 Cap(상한선) & 제조물책임(PL) 방어 설계]
+• 무제한 배상책임 배제: 손해배상 범위를 해당 개별 발주금액으로 한정하고 간접손해·일실이익을 배제하여 부품 결함으로 인한 대규모 생산중단 배상 청구 리스크를 사전 차단.
+• 제조물책임법(PL) 상의 갑/을 분계점: 발주자의 설계 오류로 인한 결함에 대해 공급사의 면책을 계약 문구로 명문화.
+
+--------------------------------------------------
+
+■ [4p] 계약해제·해지, 불가항력, 분쟁해결 관할, 계약체결일 및 당사자 서명날인(인영 완비)
+제 16 조 (계약해제 및 해지)
+① 갑 또는 을은 상대방에게 다음 각 호의 어느 하나에 해당하는 사유가 발생한 때에는 서면 통지로써 본 계약을 해제·해지할 수 있다.
+   1. 본 계약상 중요한 의무를 위반하고, 14일 이상의 유예기간을 정한 서면 시정 요구를 받고도 이를 시정하지 아니한 경우
+   2. 어음·수표의 부도, 파산·회생절차 개시 신청, 압류 또는 주요 재산에 대한 강제집행으로 계약 이행이 객관적으로 불가능한 경우
+   3. 영업정지, 인허가 취소 등 정상적인 조업 및 물품 납품이 영구히 불가능하게 된 경우
+② 계약이 해지된 경우, 갑은 해지일까지 검수에 정당하게 합격한 물품의 대금을 지체 없이 지급하며, 을은 미납품분에 대한 기지급 선급금이 있는 경우 이를 갑에게 즉시 반환한다.
+③ 본 조에 따른 계약 해지는 제12조에 따른 손해배상의 청구에 영향을 미치지 아니한다.
+
+제 17 조 (불가항력)
+천재지변, 전쟁, 폭동, 감염병 대유행, 법령의 개폐 등 당사자의 지배 범위를 벗어난 사유로 인하여 채무를 이행하지 못한 때에는 해당 당사자는 상대방에 대하여 손해배상 책임을 지지 않는다. 단, 당해 사유가 60일 이상 지속되는 경우 각 당사자는 서면으로 본 계약을 해지할 수 있다.
+
+제 18 조 (분쟁의 해결 및 관할법원)
+① 본 계약과 관련하여 발생하는 제반 분쟁은 갑과 을 상호 간의 신의성실 원칙에 입각한 협의를 통하여 원만히 해결한다.
+② 협의가 이루어지지 아니하여 발생하는 일체의 소송은 서울중앙지방법원 또는 피고의 본점 소재지 관할법원을 제1심 관할로 한다.
+
+제 19 조 (기타 및 특약의 효력)
+① 본 계약에 규정되지 아니한 사항은 상법, 민법, 하도급거래 공정화에 관한 법률 등 관계 법령 및 일반 상관례에 따른다.
+② 본 계약 [별표 1] 「공급물품 명세서」는 본 계약의 불가분의 일부를 구성하며, 상충 시 본 계약이 최우선 적용된다.
+
+본 계약의 성립을 증명하기 위하여 계약서 2부를 작성하여 갑과 을이 기명날인한 후 각 1부씩 보관한다.
+체결일자: 2026년 09월 21일
+
+[당사자 기명날인 인적사항 및 공식 법인인감 날인란]
+• 【 갑 】 발주처 / 구매자
+  - 상호(법인명): 주식회사 한국글로벌제조 (사업자등록번호: 120-86-94821 / 법인등록번호: 110111-2849182)
+  - 본점 소재지: 서울특별시 강남구 테헤란로 425 (삼성동, 신영빌딩 14층)
+  - 담당부서·연락처: 구매조달본부 1팀 / 02-555-8290
+  - 대표이사: 대표이사 홍 길 동  [(주)한국글로벌제조 대표이사지인 공식 인영 날인 완비]
+
+• 【 을 】 공급처 / 제조사
+  - 상호(법인명): 주식회사 케이원인더스트리 (사업자등록번호: 214-88-51930 / 법인등록번호: 110111-3948194)
+  - 본점 소재지: 경기도 화성시 동탄첨단산업1로 58 (영천동, 동탄테크노밸리 5층)
+  - 담당부서·연락처: 영업기술본부 CS팀 / 031-8077-4100
+  - 대표이사: 대표이사 김 수 현  [(주)케이원인더스트리 대표이사지인 공식 인영 날인 완비]
+
+--------------------------------------------------
+
+■ [5p] [별표 1] 공급물품 명세서, 상세 납품조건, 품질검수 기준 및 기술 승인 날인
+1. 공급 물품 품목 및 단가 명세표
+• No 1: 정밀 알루미늄 가공 하우징 | AL6061-T6, 5축 CNC 정밀가공 | EA | 2,500개 | 단가: 48,000원 | 금액: 120,000,000원
+• No 2: 광학 센서 마운트 브라켓 | SUS304 정밀 프레스, 전해연마 | EA | 5,000개 | 단가: 12,500원 | 금액: 62,500,000원
+• No 3: 고신뢰성 제어 메인보드 | PCB 4-Layer, SMT 실장 완비 | SET | 1,200세트 | 단가: 85,000원 | 금액: 102,000,000원
+• No 4: 산업용 하네스 케이블 | IP67 방수 커넥터, 실드 차폐형 | EA | 2,500개 | 단가: 15,000원 | 금액: 37,500,000원
+• No 5: 산업용 전원 SMPS 모듈 | 24V 15A 내장, 서지 보호회로 | EA | 1,000개 | 단가: 52,000원 | 금액: 52,000,000원
+• No 6: 고방열 서멀 패드 세트 | 3.0W/mK, UL94 V-0 난연 규격 | SET | 2,500세트 | 단가: 6,400원 | 금액: 16,000,000원
+----------------------------------------------------------------------------------------------------
+• 공급가액 합계: 금 390,000,000원 (금 삼억구천만 원정)
+• 부가가치세 (VAT 10%): 금 39,000,000원 (금 삼천구백만 원정)
+• 총 계약금액 합계: 금 429,000,000원 (금 사억이천구백만 원정 · VAT 포함)
+
+2. 상세 납품 조건 및 물류 운송 기준
+• 지정 납품장소: 충남 천안시 서북구 2공단3로 45 (주)한국글로벌제조 천안제2공장 물류센터 입고장
+• 운송 및 하역비: 공급사(을) 전액 부담 (DDP 천안공장 하역 완료 인도 조건), 무진동 특장차 배차
+• 제품 포장 규격: 1급 대전방지(ESD) 방습 실링 포장 + 외박스 충격흡수 완충재 및 바코드 라벨 부착
+• 납기 및 분할납품: 발주일로부터 30일 이내 납품 원칙 (월별 분할 발주 시 지정 회차별 납기 준수)
+
+3. 공인 품질 검수 기준 및 필수 동봉 증빙서류
+• 검수 판정 기준: 갑의 수입검사 기준서(IQC Rev.4) 및 AQL 0.65(치명결함 0) 기준, 3차원 정밀 측정 공차 ±0.015mm
+• 필수 제출 서류: ① KOLAS 공인 시험성적서 ② EU RoHS/REACH 불검출 성적서 ③ OQC 출하검사 성적서 2부 ④ C/O 및 거래명세서
+• 하자보증 및 긴급대응: 무상 하자보증기간 12개월, 불량 통보 시 24시간 내 엔지니어 현장 파견 및 72시간 내 1:1 완제품 맞교환
+
+4. 양 당사자 기술 규격 확인 및 최종 서명날인 (공급물품 명세서 합의)
+• 구매처(갑) 기술 및 조달 승인: 주식회사 한국글로벌제조 (검토자: 박민우 수석 / 승인자: 정성훈 상무이사 [기술승인인 날인])
+• 공급처(을) 생산 및 품질 확약: 주식회사 케이원인더스트리 (책임자: 이영호 부서장 / 확약자: 강태준 전무이사 [품질확약인 날인])`
+      },
+      {
+        id: 'contract-3',
+        client: '엔젤·개인투자자 & (주)다온클럽',
+        title: '사업 투자 계약서 (수익배분형, 6장 풀버전)',
+        tabLabel: '3. 사업 투자 계약서 (6장 전체)',
+        duration: '의뢰 후 24시간 이내',
+        result: '사업 투자 계약서 19개 전문 조항, [별지 1] 사업개요·사용계획, [별지 2] 수익배분 정산서 6장 완결본 작성',
+        summary: '투자자(갑)와 사업자(을) 간 수익배분형 사업 투자에 필요한 19개 핵심 조항(투자금 전용 관리, 사전 서면 동의 5대 요건, 순이익 정의 및 대표자 급여 한도, 우선회수형/수익배분형 옵션, 유사수신행위 방지 투자성 명시, 공동사업자 채무 전가 배제, 5년 장부 보관 및 7일 전 열람권, 위반 시 즉시 해지 및 투자금 전액 반환)과 [별지 1] 사업 개요 및 투자금 사용계획서, [별지 2] 13개 항목 수익 배분 정산서를 6페이지 완결본으로 납품했습니다. 한 장씩 넘겨가며 정밀하게 검토할 수 있습니다.',
+        tags: ['투자계약서', '수익배분형', '투자금회수', '회계열람권', '별지1사용계획', '별지2정산서', '6장전체'],
+        deliverable: '사업 투자 계약서(수익배분형) 6페이지 완비, [별지 1] 사업개요서, [별지 2] 수익배분 정산서 양식',
+        image: investmentAgreement1,
+        imageAlt: '사업 투자 계약서 (수익배분형 6장 풀버전)',
+        galleryImages: [
+          { url: investmentAgreement1, title: '1p 전문, 목적, 투자 대상 사업, 투자금 및 납입, 투자금 사용의무, 사업 운영 및 사전동의 4대 요건', pageLabel: '1p 전문·목적·투자금·운영' },
+          { url: investmentAgreement2, title: '2p 추가투자, 공동사업자 채무배제, 순이익 산정·배분, 투자금 회수(우선회수형), 회계보고(5년보관), 진술보장, 계약기간', pageLabel: '2p 순이익산정·투자금회수' },
+          { url: investmentAgreement3, title: '3p 계약해지 5대사유(용도외사용·허위), 종료 시 정산(회계사 평가), 양도·경업·비밀유지, 손해배상, 세금, 분쟁해결', pageLabel: '3p 해지·정산·경업금지' },
+          { url: investmentAgreement4, title: '4p 기타 조항, 계약성립 확인문, 투자자(갑) 및 사업자(을) 서명날인란, T24 4대 핵심 법무 가이드', pageLabel: '4p 서명날인·법무가이드' },
+          { url: investmentAgreement5, title: '5p [별지 1] 사업 개요(상호·매출·채무·계좌), 투자금 사용계획(6대 항목), 분할 납입 일정 명세서', pageLabel: '5p [별지1] 사업개요·사용계획' },
+          { url: investmentAgreement6, title: '6p [별지 2] 수익 배분 정산서(①총매출~⑬투자금잔액 13개 정산항목), 증빙첨부, 갑 확인란, 회계검증 가이드', pageLabel: '6p [별지2] 수익배분정산서' }
+        ],
+        originalDocumentMeta: {
+          recipient: '엔젤·개인투자자(갑) 및 프랜차이즈·스타트업 사업자(을) 법무·재무팀',
+          sender: '트렌드 24 (T24 AI 투자계약서 전문 검수팀)',
+          subject: '[공식 표준 서식] 사업 투자 계약서 (수익배분형) 본문 및 [별지 1·2] 완결본 (6 Pages)',
+          docDate: '2026. 09. 25. (실무 표준 완비)',
+          docTypeBadge: '사업 투자 계약서 (수익배분형 6 Pages)',
+          attachments: ['사업투자계약서_수익배분형_표준서식.docx', '별지1_사업개요_및_투자금사용계획.xlsx', '별지2_수익배분_정산서_양식.xlsx']
+        },
+        originalText: `[T24 실무 표준 계약 서식 · Business Investment Agreement]
+사업 투자 계약서 (수익배분형 6개 페이지 풀버전 완결본)
+투자자(갑): 엔젤/개인 투자자 · 사업자(을): 사업체 대표자
+
+■ [1p] 계약서 전문, 목적, 투자 대상 사업, 투자금 및 납입, 투자금 사용, 사업 운영
+사업 투자 계약서
+(수익배분형)
+
+투자자 ______________(이하 "갑"이라 한다)과 사업자 ______________(이하 "을"이라 한다)은 을이 운영하는 사업에 대한 갑의 투자에 관하여 다음과 같이 계약(이하 "본 계약"이라 한다)을 체결한다.
+
+제 1 조 (목적)
+본 계약은 갑이 을이 운영하는 사업에 자금을 투자하고, 을이 그 사업에서 발생한 수익을 갑에게 배분하는 것과 관련하여 갑과 을의 권리와 의무를 정함을 목적으로 한다.
+
+제 2 조 (투자 대상 사업)
+① 갑이 투자하는 사업(이하 "본 사업"이라 한다)은 다음과 같다.
+   1. 사업명(상호): __________________________________________________
+   2. 사업장 소재지: ________________________________________________
+   3. 사업 내용: ____________________________________________________
+   4. 사업자등록번호: ________________________________________________
+② 본 사업의 구체적인 내용과 투자금 사용계획은 [별지 1] 「사업 개요 및 투자금 사용계획」과 같다.
+
+제 3 조 (투자금 및 납입)
+① 갑이 본 사업에 투자하는 금액(이하 "투자금"이라 한다)은 금 ____________원정(₩____________)으로 한다.
+② 갑은 투자금을 20___년 ___월 ___일까지 다음 계좌로 송금하여 납입한다.
+   은행: ___________   계좌번호: ________________________   예금주: ___________
+③ 투자금을 나누어 납입하는 경우 그 일정과 금액은 [별지 1]에서 정한다.
+④ 을은 투자금을 받은 날부터 3일 이내에 갑에게 입금 확인서를 교부한다.
+
+제 4 조 (투자금의 사용)
+① 을은 투자금을 [별지 1]의 사용계획에 따라 본 사업의 목적으로만 사용하여야 하며, 을의 개인 용도나 다른 사업에 사용할 수 없다.
+② 을은 투자금을 을의 개인 자금과 구분하여 별도의 사업용 계좌로 관리한다.
+③ 사용계획을 변경하려는 경우 을은 사전에 갑의 서면(문자메시지·전자우편 포함) 동의를 받아야 한다.
+
+제 5 조 (사업의 운영)
+① 본 사업의 운영과 일상적인 업무 집행은 을이 전적으로 책임지고 수행하며, 을은 선량한 관리자의 주의로 사업을 운영한다.
+② 갑은 본 사업의 경영에 관여하지 않는다. 다만, 을은 다음 각 호의 사항을 결정하기 전에 갑의 사전 서면 동의를 받아야 한다.
+   1. 본 사업의 전부 또는 중요한 일부의 양도, 폐업, 업종 변경
+   2. 금 ________원 이상의 차입, 보증 또는 담보 제공
+   3. 금 ________원 이상의 자산 취득·처분 또는 계약 체결
+   4. 을 또는 을의 특수관계인과의 거래
+
+--------------------------------------------------
+
+■ [2p] 추가투자, 공동사업자 채무배제, 순이익 산정 및 배분, 투자금 회수, 회계보고, 진술보장, 계약기간
+   5. 제 3 자로부터 본 사업에 대한 추가 투자를 받는 경우
+③ 갑의 투자는 공동사업자로서의 지위를 갖는 것이 아니며, 본 사업으로 발생한 대외적 채무와 책임은 을이 부담한다.
+
+제 6 조 (수익의 산정 및 배분)
+① 본 계약에서 "순이익"이란 정산기간 동안 본 사업에서 발생한 총매출액에서 매출원가, 인건비, 임차료, 공과금, 세금(을의 소득세 제외) 등 사업 운영에 실제로 들어간 비용을 뺀 금액을 말한다.
+② 을의 대표자 급여는 월 금 ____________원을 한도로 비용에 포함할 수 있다.
+③ 순이익은 갑 _____%, 을 _____%의 비율로 배분한다.
+④ 정산기간은 매 □월 □분기 □반기 단위로 하며, 을은 정산기간 종료일이 속한 달의 다음 달 _____일까지 갑의 배분금을 갑이 지정한 계좌로 지급한다.
+⑤ 정산기간에 순손실이 발생한 경우 해당 기간의 배분금은 없으며, 그 손실은 다음 정산기간의 순이익에서 먼저 차감한다.
+
+제 7 조 (투자금의 회수)
+① 갑의 투자금은 다음 중 당사자가 선택한 방식으로 회수한다.
+   □ 1. 수익배분형: 투자금은 별도로 상환하지 않고, 계약 종료 시 제 12 조에 따라 정산한다.
+   □ 2. 우선회수형: 제 6 조의 배분과 별도로 매 정산기간 순이익의 _____%를 투자금 상환에 우선 충당하며, 투자금 전액이 회수된 이후에는 제 6 조 제 3 항의 배분비율을 갑 _____%, 을 _____%로 조정한다.
+② 본 투자는 사업의 성과에 따라 수익과 손실이 결정되는 투자로서, 을은 투자금 원금이나 확정 수익을 보장하지 않는다. 다만, 을의 고의 또는 중대한 과실, 투자금 용도 외 사용 등 을의 귀책사유로 손실이 발생한 경우에는 그러하지 아니하다.
+③ 갑의 손실 부담은 투자금을 한도로 하며, 갑은 추가 출자나 사업상 채무를 부담할 의무가 없다.
+
+제 8 조 (회계 및 보고)
+① 을은 본 사업의 매출과 비용을 장부에 기록하고, 영수증·세금계산서·계좌 거래내역 등 증빙을 5년간 보관한다.
+② 을은 매 정산 시 [별지 2] 양식의 정산서와 주요 증빙을 갑에게 제출한다.
+③ 갑은 7일 전에 통지한 후 영업시간 중에 장부와 증빙을 열람하거나 사본을 요청할 수 있으며, 갑의 비용으로 세무사 등 전문가에게 확인을 맡길 수 있다.
+④ 을은 매출의 현저한 감소, 소송 제기, 행정처분 등 본 사업에 중대한 영향을 미치는 사항이 생긴 경우 지체 없이 갑에게 알려야 한다.
+
+제 9 조 (을의 진술 및 보장)
+을은 본 계약 체결일 현재 다음 사항이 사실임을 진술하고 보장한다.
+   1. 본 사업에 필요한 인허가와 사업자등록을 적법하게 갖추고 있다.
+   2. [별지 1]에 기재한 사항 외에 본 사업과 관련된 채무, 담보, 체납 세금이 없다.
+   3. 본 사업과 관련하여 진행 중이거나 예상되는 소송·분쟁이 없다.
+   4. 갑에게 제공한 사업계획서, 매출 자료 등은 사실과 다르지 않다.
+
+제 10 조 (계약기간)
+① 본 계약의 기간은 투자금 납입일부터 _____년(_____개월)으로 한다.
+② 계약기간 만료 2개월 전까지 갑과 을이 서면으로 합의한 경우 본 계약을 연장할 수 있다.
+
+--------------------------------------------------
+
+■ [3p] 계약의 해지, 계약 종료 시 정산, 지위양도 금지, 경업금지, 비밀유지, 손해배상, 세금, 분쟁해결
+제 11 조 (계약의 해지)
+① 갑은 을에게 다음 각 호의 어느 하나에 해당하는 사유가 있는 경우 서면으로 본 계약을 해지할 수 있다.
+   1. 투자금을 제 4 조를 위반하여 사용한 경우
+   2. 배분금 지급 또는 정산서 제출을 2회 이상 지체하고, 14일 이상의 기간을 정한 서면 독촉을 받고도 이행하지 않은 경우
+   3. 정산서, 장부 등을 허위로 작성하거나 제 9 조의 진술이 사실과 다른 경우
+   4. 갑의 동의 없이 제 5 조 제 2 항의 사항을 결정한 경우
+   5. 정당한 사유 없이 본 사업을 30일 이상 중단하거나 폐업한 경우
+② 갑과 을은 본 사업의 계속이 어렵다고 판단되는 경우 서면 합의로 본 계약을 해지할 수 있다.
+
+제 12 조 (계약 종료 시 정산)
+① 본 계약이 기간 만료 또는 해지로 종료되는 경우 을은 종료일 기준으로 본 사업의 자산과 부채를 평가한 정산서를 작성하여 30일 이내에 갑에게 제출한다.
+② 갑은 정산서에 따른 순자산(자산에서 부채를 뺀 금액) 중 갑의 투자금 잔액 비율에 해당하는 금액을 반환받는다. 정산 방식에 대하여 다툼이 있는 경우 양 당사자가 합의하여 선임한 회계사 또는 세무사의 평가에 따르며, 그 비용은 각자 절반씩 부담한다.
+③ 을은 정산금액이 확정된 날부터 _____일 이내에 갑에게 정산금을 지급한다. 다만, 제 11 조 제 1 항 제 1 호 또는 제 3 호의 사유로 해지된 경우 을은 투자금 잔액 전액을 반환하여야 하며, 이와 별도로 갑의 손해를 배상한다.
+④ 정산금 지급이 지연된 경우 을은 지연된 일수에 대하여 연 _____%(법정 상한 이내)의 지연손해금을 가산하여 지급한다.
+
+제 13 조 (지위 양도 및 담보 제공 금지)
+갑과 을은 상대방의 사전 서면 동의 없이 본 계약상 지위나 권리·의무를 제 3 자에게 양도하거나 담보로 제공할 수 없다. 다만, 갑의 사망 시 갑의 지위는 상속인에게 승계된다.
+
+제 14 조 (경업금지)
+을은 계약기간 중 갑의 사전 서면 동의 없이 본 사업과 경쟁 관계에 있는 같은 종류의 사업을 직접 또는 제 3 자를 통하여 운영하거나 그에 투자하지 않는다.
+
+제 15 조 (비밀유지)
+갑과 을은 본 계약의 내용과 본 계약으로 알게 된 상대방 및 본 사업의 정보를 계약기간 및 계약 종료 후 2년간 비밀로 유지하며, 법령에 따른 경우를 제외하고 상대방의 동의 없이 제 3 자에게 공개하지 않는다.
+
+제 16 조 (손해배상)
+갑 또는 을이 본 계약을 위반하여 상대방에게 손해를 끼친 경우 그 손해를 배상하여야 한다.
+
+제 17 조 (세금)
+본 계약에 따른 배분금 및 정산금에 대한 세금은 관계 세법에 따라 각자 부담하며, 을에게 원천징수 의무가 있는 경우 을은 원천징수한 후 나머지 금액을 갑에게 지급한다.
+
+제 18 조 (분쟁해결)
+① 본 계약과 관련하여 분쟁이 발생한 경우 갑과 을은 상호 협의하여 원만히 해결하도록 노력한다.
+② 협의로 해결되지 않는 분쟁은 ____________지방법원을 제 1 심 관할법원으로 한다.
+
+--------------------------------------------------
+
+■ [4p] 기타 조항, 계약성립 확인문, 투자자(갑) 및 사업자(을) 서명날인란, T24 4대 핵심 법무 가이드
+제 19 조 (기타)
+① 본 계약에서 정하지 않은 사항은 갑과 을이 서면으로 합의하여 정하며, 합의가 없는 경우 민법 등 관계 법령에 따른다.
+② 본 계약의 변경은 갑과 을이 서면으로 합의한 경우에만 효력이 있다.
+③ [별지 1], [별지 2]는 본 계약의 일부를 구성한다.
+
+본 계약의 성립을 증명하기 위하여 계약서 2부를 작성하여 갑과 을이 서명(또는 날인)한 후 각 1부씩 보관한다.
+20___년 _____월 _____일
+
+[당사자 기명날인 인적사항란]
+• 구분: 갑 (투자자) / 을 (사업자)
+• 성명 / 상호:
+• 생년월일 / 사업자번호:
+• 주소:
+• 연락처:
+• 서명: (서명 또는 인) / (서명 또는 인)
+
+※ T24 핵심 법무 가이드 (수익배분형 사업투자계약 4대 쟁점)
+1. 유사수신행위법 위반 방지: 사업 성과에 따른 변동 이익 및 원금 비보장 명시
+2. 공동사업자 채무 전가 방지: 대외적 채무 및 사업상 책임은 사업자(을)가 전액 부담
+3. 회계 투명성 확보: 대표자 급여 한도 설정, 5년간 증빙 보관, 7일 전 통지 후 장부 열람권
+4. 투자금 유용 시 즉시 해지: 용도 외 사용 시 유예기간 없는 즉시 해지 및 전액 반환·손해배상
+
+--------------------------------------------------
+
+■ [5p] [별지 1] 사업 개요 및 투자금 사용계획서 (완결본)
+1. 사업 개요
+• 사업명(상호): (주)다온클럽 F&B 직영점 및 프리미엄 카페 신규 출점 사업
+• 업종 / 주요 상품·서비스: 일반음식점업 / 스페셜티 커피 및 베이커리·디저트 프랜차이즈
+• 사업 개시일: 2026년 10월 15일 (영업 개시 예정일)
+• 월 평균 매출 (예상): 금 52,000,000원 (상권분석 및 직영 1호점 실적 기반 추정)
+• 기존 채무·담보 현황: ■ 없음 (제1·2금융권 대출 및 대외 담보 일체 부존재 확약)
+• 사업 계좌 (투자금 전용): 우리은행 1002-845-920141 (예금주: 주식회사 다온클럽)
+
+2. 투자금 상세 사용계획 (총액: 금 120,000,000원)
+• No 1: 시설·인테리어 | 50,000,000원 | 강남 2호점 실내 목공·조명·위생 배관 공사 및 감리비
+• No 2: 장비·집기 | 30,000,000원 | 3그룹 에스프레소 머신, 그라인더 2대, POS 키오스크 2대
+• No 3: 초도 재고·원재료 | 15,000,000원 | 스페셜티 원두 300kg, 베이커리 생지 및 패키지 용기
+• No 4: 마케팅·홍보 | 10,000,000원 | 오픈 이벤트 인플루언서 섭외, 네이버 스마트플레이스 상위노출
+• No 5: 운영자금(인건비·임차료) | 10,000,000원 | 오픈 초기 2개월 직원 급여 및 상가 관리비 예치금
+• No 6: 예비비 | 5,000,000원 | 영업신고 인허가 수수료, 주방기기 긴급 A/S 대비금
+• 합계 (총 투자금 집행액): 금 120,000,000원 (일억이천만 원정 · 100% 예산 배분 확정)
+
+3. 투자금 납입 일정 (분할 납입 명세표)
+• 1회차: 계약 체결일 즉시 | 60,000,000원 | 계약금 및 인테리어 착공·설비 선금 (50%)
+• 2회차: 착공 20일 이내 | 40,000,000원 | 인테리어 공정률 70% 현장 검수 및 기기 잔금 (33.3%)
+• 3회차: 영업 개시 5일 전 | 20,000,000원 | 소방·위생 인허가 교부 및 초도 원재료 입고 확인 (16.7%)
+
+※ 당사자 확인 날인: 투자자(갑) 김성진 (인) / 사업자(을) (주)다온클럽 대표이사 이다온 (인)
+
+--------------------------------------------------
+
+■ [6p] [별지 2] 수익 배분 정산서 (월간 정산 실무 완결본)
+정산 대상 기간: 2026. 11. 01 ~ 2026. 11. 30 (제1회차) | 정산 방식: 월간 정산 / 우선회수형
+정산서 작성일: 2026년 12월 05일 (익월 5일 교부) | 작성자(을): (주)다온클럽 대표 이다온 (인)
+
+[수익 배분 정산 계산 명세표]
+① 총매출액: 금 52,000,000원 (POS 카드매출 48,200,000원 + 배달앱 3,800,000원)
+② 매출원가: 금 16,500,000원 (원두·유제품·베이커리 식자재 매입세금계산서 14부)
+③ 인건비 (대표자 급여 포함): 금 11,200,000원 (정직원 2인·파트타임 3인 7.7백만 + 대표 급여 3.5백만)
+④ 임차료·관리비: 금 6,800,000원 (강남점 월 임차료 5.5백만 + 상가 관리비 1.3백만)
+⑤ 공과금·기타 운영비: 금 2,500,000원 (전력·가스·통신료 1.7백만 + 세무 기장료 0.8백만)
+⑥ 비용 합계 (② ~ ⑤): 금 37,000,000원 (세법상 적격 세금계산서 및 카드전표 전액 대조 필)
+⑦ 순이익 (① - ⑥): 금 15,000,000원 (당월 사업 영업이익 · 순이익률 28.8%)
+⑧ 전기 이월 손실 차감: 금 0원 (전기 누적 결손금 없음 · 신규 출점 첫 정산)
+⑨ 배분 대상 순이익 (⑦ - ⑧): 금 15,000,000원 (회수 및 배분 적용 기준 순이익)
+⑩ 투자금 우선 상환액 (우선회수형): 금 4,500,000원 (제7조 제1항 2호: 순이익의 30% 원금 우선 상환)
+⑪ 갑 배분금 (30%): 금 3,150,000원 (잔여 순이익 10,500,000원의 30% 갑 송금 · 원천세 전)
+⑫ 을 배분금 (70%): 금 7,350,000원 (잔여 순이익 10,500,000원의 70% 사업자 을 귀속)
+⑬ 투자금 잔액 (원금): 금 115,500,000원 (초기 120,000,000원 - 당기 상환 4,500,000원)
+
+※ 필수 첨부 증빙: 국세청 전자세금계산서 합계표(18부), 카드단말기 매출집계표, 사업용 계좌 거래명세서 사본 각 1부
+갑 확인: 본 정산서 및 첨부된 금융·세무 증빙을 대조 확인하고 상기 산출 내역 및 배분 금액에 동의함.
+확인일자: 2026년 12월 07일 | 투자자(갑): 김성진 [정산확인인 날인]`
+      }
+    ],
+    detailedTasks: [
+      '소프트웨어 용역, 외주 개발, 마케팅 대행 계약서 검토 및 조항 수정',
+      '물품 제조·납품, 유통 공급 계약서 작성 및 대금 지급 기한 설정',
+      '엔젤/VC 투자계약서, 주주간계약서, 신주인수계약서 경영권 방어 검토',
+      '기업 간 비밀유지협약서(NDA), 전략적 업무제휴(MOU) 국/영문 작성'
+    ],
+    turnaroundTime: '24시간 이내',
+    deliverableSample: '수정 대조표(신구조문대조), 조항별 법무 실무 의견서, 계약서 완성본'
+  },
+
+  // 3. 디자인 업무(포스터, 카드뉴스, 베너, 이벤트, 상세페이지, 랜딩페이지 디자인)
+  {
+    id: 'design',
+    number: '03',
+    categoryCode: 'CREATIVE & GRAPHIC DESIGN',
+    name: '디자인 업무',
+    description: '포스터, 카드뉴스, 배너, 이벤트 프로모션, 상품 상세페이지, 랜딩페이지 기획 및 시각 디자인',
+    tags: ['포스터디자인', '카드뉴스', '프로모션배너', '이벤트팝업', '상세페이지', '랜딩페이지디자인'],
+    icon: 'Palette',
+    colorClass: 'indigo-600',
+    previewImage: niacinamideDetailpageStudioImg,
+    previewImageAlt: '이커머스 상품 상세페이지 제작 기획·디자인 산출물 (BT24 나이아신아마이드 100 앰플 파우더)',
+    portfolioExample: {
+      id: 'design-1',
+      client: '코스메틱 브랜드 BT24 (BT24 Cosmetics)',
+      title: '이커머스 상품 상세페이지 제작 (BT24 나이아신아마이드 100 앰플 파우더)',
+      duration: '의뢰 후 48시간 이내',
+      result: '스마트스토어 미백 기능성 라인 1위 달성 및 구매 전환율(CVR) 5.2% 기록',
+      summary: '기능성 미백 대표성분인 나이아신아마이드의 멜라닌 차단 메커니즘 시각화, 기존 기초 화장품과 섞어 쓰는 3대 활용법(토너/크림/미스트), 저자극 자연 유래 성분 소구 및 제품 제원표·고객센터 CS 안내까지 완벽하게 담아낸 모바일 최적화 고전환 상세페이지를 기획·제작했습니다.',
+      deliverable: '모바일 세로형 상세페이지 원본(Figma/WebP/PNG) 및 스마트스토어/올리브영 규격 슬라이스',
+      image: niacinamideDetailpageStudioImg,
+      imageAlt: '이커머스 상품 상세페이지 제작 산출물'
+    },
+    portfolioCases: [
+      {
+        id: 'design-1',
+        client: '코스메틱 브랜드 BT24',
+        title: '이커머스 상품 상세페이지 제작 (고전환 완결본)',
+        tabLabel: '1. 상세페이지 제작',
+        duration: '의뢰 후 48시간 이내',
+        result: '구매 전환율(CVR) 5.2% 달성 및 실시간 미백 라인 베스트 1위',
+        summary: '기능성 미백 대표성분인 나이아신아마이드의 멜라닌 차단 메커니즘 시각화, 기존 기초 화장품과 섞어 쓰는 3대 활용법(토너/크림/미스트), 저자극 자연 유래 성분 소구 및 제품 제원표·고객센터 CS 안내까지 완벽하게 담아낸 모바일 최적화 고전환 상세페이지를 기획·제작했습니다.',
+        tags: ['상세페이지제작', '이커머스디자인', '스마트스토어', '미백화장품', '모바일최적화'],
+        deliverable: '모바일 세로형 상세페이지 디자인 원본(Figma/PSD) 및 웹용 롱스크롤 WebP/PNG',
+        image: niacinamideDetailpageStudioImg,
+        imageAlt: '이커머스 상품 상세페이지 제작 기획 및 디자인 산출물',
+        galleryImages: [
+          {
+            url: niacinamideDetailpageStudioImg,
+            title: '1p AI 상세페이지 제작 스튜디오 콘솔 (6단계 전략 분석 & 실시간 뷰어)',
+            pageLabel: '1p 상세페이지 제작 콘솔'
+          },
+          {
+            url: niacinamideDetailpageLongImg,
+            title: '2p 이커머스 상세페이지 전체 롱스크롤 완결본 (스마트스토어 가로 860px 실무 풀뷰)',
+            pageLabel: '2p 전체 롱스크롤 풀뷰'
+          },
+          {
+            url: niacinamideDetailpageUsageImg,
+            title: '3p Section 02 : 토너·크림·미스트 3대 믹스 활용법 & 저자극 원리 & 수용성 비타민B3',
+            pageLabel: '3p 3대 믹스 활용법'
+          },
+          {
+            url: niacinamideDetailpageSpecImg,
+            title: '4p Section 03 : POINT 02 젊음 리턴 4대 특장점 & 제품 제원표 & 4단계 배송·CS 안내',
+            pageLabel: '4p 제품제원 & CS'
+          }
+        ],
+        originalDocumentMeta: {
+          recipient: 'BT24 브랜드 마케팅본부 및 이커머스 MD팀',
+          sender: '트렌드24 이커머스 고전환 상세페이지 기획제작팀',
+          subject: '[상세페이지 제작] 이커머스 상품 상세페이지 제작 완결본 (BT24 앰플 파우더)',
+          docDate: '2026. 10. 01. (신제품 런칭 배포본)',
+          docTypeBadge: '이커머스 상품 상세페이지 제작 (모바일 롱스크롤 완비)',
+          attachments: ['BT24_상세페이지제작_디자인원본.psd', '모바일_롱스크롤_완결본.webp', '스마트스토어_슬라이스_8종.zip']
+        },
+        originalText: `[이커머스 상품 상세페이지 제작 완결본 명세서]
+브랜드: BT24 (New Item Launching)
+제품명: 나이아신아마이드 100 앰플 파우더 (NIACIN 100 ampoule Powder)
+규격: 5g / 0.176 oz. | 미백 기능성 화장품
+
+■ 1. 도입부 헤드라인 & 핵심 가치 소구
+• 메인 헤드카피: "기능성 미백의 대표성분 나이아신아마이드"
+• 핵심 소구문: 미백의 대표성분으로 피부를 깨끗하게 하는데 도움을 주고, 피지분비 조절로 지성피부의 트러블 관리 및 거칠고 노화된 피부개선에도 도움을 줍니다.
+• 3대 핵심 해시태그: #자극 없이 #기미_미백 #피부 개선까지
+
+■ 2. 성분 정의 및 3대 효능
+• 나이아신아마이드 원리: 우리몸의 필수 성분으로 녹색채소에 포함되어 있는 영양소, 비타민으로 나이아신아마이드는 멜라닌색소가 이동하는 것을 감소시키는 역할을 합니다.
+• 제품 특성: 다양한 안티에이징 효능을 제공하는 다기능성 성분으로, 여드름이나 염증에도 효과가 있다고 알려졌으며 열과 빛에 안정적인 원료입니다.
+• 3대 효능 체크: [v] 미백 [v] 기미 [v] 피부개선
+
+■ 3. 나이아신아마이드 100 활용법 (어떻게 사용할까요?)
+• Point 01 [토너, 에센스]: 토너와 에센스 등에 1회 뾰족한 토출구를 눌러 1펌프 정도 섞어서 사용
+• Point 02 [크림]: 사용하시는 크림에도 토출구 1펌프 정도 섞어서 사용
+• Point 03 [미스트]: 손바닥에 1펌프 정도 파우더를 떨어뜨린 뒤 미스트를 뿌려 얼굴에 바르시고 미스트를 덧 뿌려줌
+
+■ 4. POINT 01: 자연 유래 성분으로 저자극
+• 천연 유래 성분을 사용하여 자연 그대로의 순수함: 천연 유래 성분을 사용하여 자연 그대로의 순수함과 효능을 가득 담아 안심하고 사용할 수 있습니다.
+• Detail Checking: 나이아신아마이드는 새로운 "미백 기능성 원료"로 니코틴아마이드라고도 알려진 수용성 비타민B3 입니다.
+  - [v] 수용성 비타민b3: 기미, 미백, 피부개선까지 챙기고자 한다면 주목하세요.
+  - [v] 나이아신아마이드: 멜라닌색소가 이동하는 것을 감소시키는 역할을 합니다.
+
+■ 5. POINT 02: 젊음으로 리턴! 세월을 지워주는 마법 같은 성분
+01. 기능성 화장품 미백 라인의 대표 성분이며 안정성 높은 성분
+02. 미백 / 다크서클 / 기미 / 잡티 나이흔적 / 여드름 흔적을 지워줌
+03. 내가 사용하는 화장품에 섞어서 사용 가능 1회 적정양은 1펌프
+04. 일반 화장품도 고퀄리티 기능성으로 바뀌는 비타민 유도체
+• 공식 태그: # 나이아신아마이드100 앰플 파우더
+
+■ 6. NIACIN 100 ampoule Powder Detail Information (제품 제원표)
+• 피부 타입: 악건성 / 건성 / 지성 / 복합성 (모든 피부 타입 추천)
+• 사용 목적: 진정/트러블, 보습, 영양/탄력, 브라이트닝
+• 보관 방법: 냉장 보관 / 실온 보관 (열과 빛에 강한 안정성)
+• 사용 빈도: 데일리 케어(매일 사용) / 스페셜 케어(2~3일 주기 사용)
+• 제형: 파우더(초미세 분말 타입)
+※ 위 내용은 개인의 피부 타입에 따라 차이가 있을 수 있습니다.
+
+■ 7. Customer Information 고객 서비스 안내사항
+• 4단계 배송 프로세스: [상품구매] ➔ [제품검수] ➔ [제품출고] ➔ [배송완료]
+• 배송지역: 전국 어디서나 배송 가능합니다. (군부대 일부 지역 제외)
+• 배송기간: 결제일로부터 2~4일 이내
+• 배송비: 전 지역 무료배송
+• 고객센터: 1577-8132 (평일 10:00 ~ 17:00 / 점심시간 12:00 ~ 13:00 / 주말·공휴일 휴무)
+• 교환 및 반품 주의사항:
+  - 구매 후 7일 이내에 신청한 경우에만 교환 및 반품이 가능합니다.
+  - 교환 및 반품은 제품을 받으신 패키지와 택배 박스에 넣어 반송해주세요. 패키지 및 사은품 누락 시 교환, 반품이 어려울 수 있습니다.
+  - 고객님의 부주의로 발생된 파손 및 사용 제품은 교환 및 환불이 불가능합니다.
+  - 주문 취소를 원하실 경우 오전 9시 이전 고객센터로 문의주셔야 당일 취소 처리 확인이 가능합니다.
+  - 출고 중 취소 요청 건은 반품 택배비가 발생되며, 단순 변심으로 인한 취소 시 왕복 배송비가 부과됩니다.`
+      },
+      {
+        id: 'design-2',
+        client: '이커머스 쇼핑몰 & 뷰티 & 아카데미',
+        title: '프로모션 배너 및 웹 팝업 모달 3종 세트 기획·디자인',
+        tabLabel: '2. 프로모션 배너 & 팝업',
+        duration: '의뢰 후 24시간 이내',
+        result: '여름 시즌오프 70% & 뷰티 50% & 클래스 30% 배너·팝업 세트 완성',
+        summary: '이커머스 여름 시즌오프 프로모션 배너(1200x600)와 신규 가입 15% 쿠폰 팝업 모달(800x600), 썸머 뷰티 에센셜 50% 할인 배너 & 30% 쿠폰 모달, 여름 스페셜 클래스 수강생 모집 배너 & 30% 수강료 할인 모달 등 고전환 프로모션 세트를 기획·디자인했습니다.',
+        tags: ['배너제작', '프로모션배너', '웹팝업', '이벤트모달', '시즌오프', '쿠폰팩'],
+        deliverable: '웹/모바일 배너(1200x600) & 레이어 팝업 모달(800x600) 고해상도 디자인 소스',
+        image: bannerSummerSaleImg,
+        imageAlt: '여름 시즌오프 프로모션 배너 및 웹 레이어 팝업 모달 디자인 산출물',
+        galleryImages: [
+          {
+            url: bannerSummerSaleImg,
+            title: '1p 여름 시즌오프 프로모션 배너 (1200x600) & 가입 15% 쿠폰팩 팝업 모달 (800x600)',
+            pageLabel: '1p 시즌오프 배너·팝업'
+          },
+          {
+            url: bannerBeautySkincareImg,
+            title: '2p 썸머 뷰티 에센셜 50% 할인 배너 (1200x600) & 가입 30% 쿠폰팩 팝업 모달 (800x600)',
+            pageLabel: '2p 뷰티 에센셜 배너·팝업'
+          },
+          {
+            url: bannerAcademyClassImg,
+            title: '3p 여름 스페셜 클래스 수강생 모집 배너 (1200x600) & 수강료 30% 할인 팝업 모달 (800x600)',
+            pageLabel: '3p 교육 클래스 배너·팝업'
+          },
+          {
+            url: webLumiMarketSnsBannerImg,
+            title: '4p 루미마켓 가을 시즌오프 SNS 정방형 프로모션 배너 (1:1)',
+            pageLabel: '4p SNS 프로모션 배너'
+          },
+          {
+            url: webLumiMarketPopupModalImg,
+            title: '5p 웹사이트 웰컴 오퍼 15% 할인쿠폰 레이어 팝업 모달',
+            pageLabel: '5p 웹 팝업 모달'
+          }
+        ],
+        originalDocumentMeta: {
+          recipient: '이커머스 마케팅 본부 및 웹 프로모션 운영팀',
+          sender: '트렌드24 디지털 크리에이티브 디자인팀',
+          subject: '[프로모션 배너 & 팝업] 여름 시즌오프·뷰티·클래스 프로모션 배너 및 레이어 모달 3종 완결본',
+          docDate: '2026. 10. 01.',
+          docTypeBadge: '웹/모바일 배너(1200x600) & 팝업 모달(800x600) 완결본',
+          attachments: ['여름시즌오프_배너_모달_디자인원본.psd', '뷰티에센셜_배너_모달.webp', '스페셜클래스_수강생모집_배너.zip']
+        },
+        originalText: `[프로모션 배너 및 웹 팝업 모달 3종 세트 디자인 명세서]
+■ 1. 여름 시즌 오프 쇼핑몰 프로모션
+• 상단 배너(1200x600px):
+  - 메인 타이틀: "여름 시즌 오프! 최대 70% OFF"
+  - 서브 카피: "시원한 혜택, 지금 바로 만나보세요!"
+  - CTA 버튼: [쇼핑하기]
+  - 비주얼: 트로피컬 스카이블루 배경, 야자수 잎, 자몽 에이드, 바캉스 선글라스 쇼핑 모델
+• 하단 팝업 모달(800x600px):
+  - 헤드라인: "첫 구매 고객님을 위한 특별 선물!"
+  - 혜택: "가입 시 15% 할인 쿠폰팩 즉시 지급"
+  - CTA 버튼: [지금 가입하고 혜택받기] / [다음에 받을게요]
+
+■ 2. 썸머 뷰티 에센셜 코스메틱 프로모션
+• 상단 배너(1200x600px):
+  - 메인 타이틀: "여름의 빛나는 피부 비결! 최대 50% OFF"
+  - 서브 카피: "썸머 뷰티 에센셜, 지금 만나보세요!"
+  - CTA 버튼: [쇼핑하기]
+  - 비주얼: 코랄 & 몬스테라 잎, 광채 세럼 앰플 및 아이섀도우 팔레트 뷰티 모델
+• 하단 팝업 모달(800x600px):
+  - 헤드라인: "첫 구매 회원님을 위한 특별 선물!"
+  - 혜택: "가입 시 30% 할인 쿠폰팩 즉시 지급"
+  - CTA 버튼: [지금 가입하고 혜택받기] / [다음에 받을게요]
+
+■ 3. 여름 스페셜 클래스 수강생 모집 에듀케이션 프로모션
+• 상단 배너(1200x600px):
+  - 메인 타이틀: "올 여름, 당신의 실력을 업그레이드할 기회! 여름 스페셜 클래스 수강생 모집"
+  - 서브 카피: "실무 중심 교육, 지금 바로 참여하세요!"
+  - CTA 버튼: [수강 신청하기]
+  - 비주얼: 전문 커리어 멘토 모델, 코딩 노트북, 태블릿, 학습 교재 일러스트
+• 하단 팝업 모달(800x600px):
+  - 헤드라인: "신규 수강생을 위한 특별한 기회!"
+  - 혜택: "지금 등록하고 수강료 30% 할인 혜택 받으세요"
+  - CTA 버튼: [지금 등록하고 혜택받기] / [관심 과정 더보기]`
+      },
+      {
+        id: 'design-3',
+        client: '더마 코스메틱 위드셀(With Cell) & IT 솔루션',
+        title: '프로모션 포스터 및 SNS 홍보 카드뉴스 기획·디자인',
+        tabLabel: '3. 포스터 & 카드뉴스',
+        duration: '의뢰 후 24시간 이내',
+        result: '연어주사 앰플 1+1 포스터 및 인스타그램 도달률 280% 달성',
+        summary: '피부과 인기 시술 성분(줄기세포·PDRN·엑소좀·NMN) 1+1 스페셜 이벤트 더마 코스메틱 프로모션 포스터와 업무 프로세스 자동화 SNS 카드뉴스 시리즈를 기획·디자인하여 온·오프라인 마케팅용으로 납품했습니다.',
+        tags: ['포스터디자인', '프로모션포스터', '카드뉴스제작', 'SNS콘텐츠', '더마코스메틱', '인스타그램'],
+        deliverable: '고해상도 프로모션 포스터 원본(Figma/WebP/PDF) 및 SNS 카드뉴스 3종 세트',
+        image: dermaAmpoulePosterImg,
+        imageAlt: '더마 코스메틱 1+1 스페셜 프로모션 포스터 원본 산출물',
+        galleryImages: [
+          {
+            url: dermaAmpoulePosterImg,
+            title: '1p 프로모션 포스터: 피부과 연어주사 스템시카 앰플 1+1 스페셜 이벤트 포스터 원본',
+            pageLabel: '1p 프로모션 포스터'
+          },
+          {
+            url: cardNewsCoverImg,
+            title: '2p SNS 카드뉴스 표지: 바쁜 스타트업 대표를 위한 업무 자동화 3원칙',
+            pageLabel: '2p 카드뉴스 표지'
+          },
+          {
+            url: cardNewsBodyImg,
+            title: '3p SNS 카드뉴스 본문: 01. 반복되는 문서 업무 분리 및 전담 매니저 솔루션',
+            pageLabel: '3p 카드뉴스 본문'
+          },
+          {
+            url: cardNewsEndingImg,
+            title: '4p SNS 카드뉴스 엔딩: 핵심 사업 집중 및 무료 업무 진단 신청 (CTA)',
+            pageLabel: '4p 카드뉴스 엔딩'
+          }
+        ],
+        originalDocumentMeta: {
+          recipient: '마케팅 기획팀 및 브랜드 디자인실',
+          sender: '트렌드24 크리에이티브 시각 디자인팀',
+          subject: '[포스터 & 카드뉴스] 더마 코스메틱 1+1 포스터 및 스타트업 카드뉴스 납품 완결본',
+          docDate: '2026. 10. 01.',
+          docTypeBadge: '프로모션 포스터 & SNS 카드뉴스 완결본',
+          attachments: ['스템시카앰플_1+1_프로모션포스터_인쇄용.pdf', '업무자동화_카드뉴스_3종.zip', '웹배포용_고해상도_산출물.webp']
+        },
+        originalText: `[더마 코스메틱 1+1 프로모션 포스터 및 SNS 카드뉴스 완결본 명세서]
+■ 1. 더마 코스메틱 1+1 프로모션 포스터 기획
+• 상단 소구 카피: "피부과 인기 성분 줄기세포 + PDRN + 엑소좀 + NMN을 병 하나에 담았습니다"
+• 메인 헤드라인: "피부과 연어주사 고가 성분을 1+1 부담 없는 가격으로 집에서 매일 케어하세요"
+• 프로모션 배지: [1+1 SPECIAL EVENT] 골드 & 딥그린 원형 메탈 엠블럼
+• 핵심 제품: With Cell Derma Lab 스템시카 앰플 (Serious Ampoule)
+• 비주얼 컨셉: 클린 더마 랩(Laboratory) 민트 그린 그라데이션, 병풀(Centella Asiatica) 잎 추출물, 골드 앰플 캡슐 에센스 오브
+
+■ 2. 바쁜 스타트업 대표를 위한 업무 자동화 3원칙 SNS 카드뉴스 3종 세트
+• 1p [표지]: 바쁜 스타트업 대표를 위한 업무 자동화 3원칙
+• 2p [본문]: 01. 반복되는 문서 업무 분리 및 전담 매니저 솔루션
+• 3p [엔딩]: 핵심 사업 집중 및 무료 업무 진단 신청 (CTA)`
+      }
+    ],
+    detailedTasks: [
+      '스마트스토어, 쿠팡, 자사몰 제품 상세페이지 롱스크롤 기획 및 디자인',
+      '인스타그램 피드 및 스토리, 페이스북, 카카오 광고용 배너 제작',
+      '웹사이트 첫 방문자 쿠폰 팝업 모달 및 공지사항 팝업 그래픽 제작',
+      '기업 온/오프라인 세미나 포스터, 리플렛, 카드뉴스 시리즈 제작'
+    ],
+    turnaroundTime: '24~48시간 이내',
+    deliverableSample: 'Figma 디자인 원본, 웹 규격 슬라이스 WebP/PNG, 인쇄용 고해상도 PDF'
+  },
+
+  // 4. 마케팅 업무(SNS(블로그, 인스타그램 자동화), 보도자료 초안등
+  {
+    id: 'marketing',
+    number: '04',
+    categoryCode: 'DIGITAL MARKETING & PR',
+    name: '마케팅 업무',
+    description: 'SNS 마케팅(블로그 SEO, 인스타그램 자동화), 언론 송고용 표준 보도자료 초안 작성, 인플루언서 섭외 메일, 광고 카피라이팅',
+    tags: ['블로그자동화', '인스타그램자동화', '보도자료초안', '언론배포', '인플루언서섭외', '광고카피'],
+    icon: 'Megaphone',
+    colorClass: 'amber-600',
+    previewImage: pressReleaseSampleImg,
+    previewImageAlt: '언론 보도자료 초안 및 마케팅 실행 산출물',
+    portfolioExample: {
+      id: 'mkt-1',
+      client: '기술 기업 R사',
+      title: '신제품 공식 출시 및 표준 언론 보도자료 초안 작성',
+      duration: '의뢰 후 24시간 이내',
+      result: '주요 경제지·IT 전문지 15곳 송고 완료 및 언론 배포 양식 충족',
+      summary: '신제품 출시와 기술적 차별점을 주요 언론사 송고 규격에 맞춰 헤드라인과 본문, 인용구, 문의처로 구성된 표준 보도자료로 작성했습니다.',
+      deliverable: '표준 보도자료 원고 및 핵심 요약 팩트시트',
+      image: pressReleaseSampleImg,
+      imageAlt: '언론 배포용 표준 보도자료 및 팩트시트'
+    },
+    portfolioCases: [
+      {
+        id: 'mkt-1',
+        client: '기술 기업 R사',
+        title: '신제품 공식 출시 및 표준 언론 보도자료 초안 작성',
+        tabLabel: '표준 언론 보도자료 초안',
+        duration: '의뢰 후 24시간 이내',
+        result: '언론사 배포용 표준 보도자료 양식 완성 및 15개 매체 게재',
+        summary: '인터넷 연결 없이 기기 자체에서 실시간 한국어 음성을 텍스트로 변환하는 온디바이스 음성 AI 엔진 신제품 소식을 주요 언론사 송고 규격에 맞춰 제목과 본문으로 가독성 높게 작성했습니다.',
+        tags: ['보도자료초안', '언론배포', '홍보문구', '팩트시트'],
         deliverable: '표준 보도자료 원고 및 핵심 요약 팩트시트',
         image: pressReleaseSampleImg,
         imageAlt: '한글 표준 언론 배포용 보도자료 및 팩트시트 산출물',
@@ -285,1362 +1352,517 @@ export const SERVICES_DATA: ServiceItem[] = [
 [본문]
 AI 솔루션 전문 기업 R사(대표 이민혁)가 인터넷 연결 없이 기기 내부에서 초고속으로 음성을 텍스트로 변환하는 온디바이스 AI 음성인식 솔루션 '보이스플로우 v2.0'을 12일 공식 출시했다고 밝혔다.
 
-이번 신제품은 파라미터를 70% 경량화하면서도 한국어 특유의 방언과 전문 용어 인식률을 98.2%까지 끌어올린 것이 특징이다. 특히 금융 상담, 전자기록물 작성 등 외부 데이터 유출이 엄격히 금지된 환경에서 완벽한 프라이버시 보안을 보장한다.
-
-R사 이민혁 대표는 "기존 클라우드 기반 음성 API의 비싼 서버 호출 비용과 지연 시간을 획기적으로 개선했다"며 "중소형 스마트 기기 제조사들도 손쉽게 최고 수준의 음성 AI 인터페이스를 도입할 수 있을 것"이라고 밝혔다.
-
-[문의 및 취재 지원]
-- 홍보팀 pr@r-tech.io / 010-1234-5678
-- 웹사이트: https://r-tech.io`
-      },
-      {
-        id: 'cnt-3',
-        client: 'SaaS / 리빙 브랜드 L사',
-        title: '고객 안내 뉴스레터 및 공지사항 자동 업데이트',
-        duration: '정기 발행 및 상시 업데이트',
-        result: '고객 오픈율 34% 달성 및 주요 공지사항 자동화',
-        summary: '신규 기능 출시, 정기 점검, 프로모션 등 고객에게 전달할 공지사항과 뉴스레터 문안을 작성하고 반응형 이메일 및 웹 공지 템플릿으로 제작했습니다.',
-        tags: ['뉴스레터', '공지사항업데이트', '고객안내', '이메일템플릿'],
-        deliverable: '반응형 이메일 뉴스레터 원고 및 공지사항 업데이트 카드 템플릿',
-        image: newsletterNoticeUpdateImg,
-        imageAlt: '고객 안내 뉴스레터 및 공지사항 자동 업데이트 실무 산출물'
-      }
-    ],
-    detailedTasks: [
-      '회사 블로그 및 포털 검색용 정보성 글 작성',
-      '인스타그램 등 SNS 카드뉴스용 핵심 문구 기획',
-      '신제품 출시, 제휴 등 표준 언론 보도자료 초안 작성',
-      '고객 안내 및 정기 소식 전달용 뉴스레터 작성'
-    ],
-    turnaroundTime: '24~36시간 이내',
-    deliverableSample: '블로그 원고, 카드뉴스 문구 기획안, 보도자료 문서'
-  },
-  {
-    id: 'research',
-    number: '03',
-    categoryCode: 'RESEARCH & ANALYSIS',
-    name: '리서치 및 자료 조사',
-    description: '경쟁사 가격/기능 비교, 업계 시장 동향 조사, 해외 자료 국문 요약',
-    tags: ['경쟁사 비교', '시장 조사', '자료 요약', '규제 확인'],
-    icon: 'Search',
-    colorClass: 'emerald-600',
-    previewImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
-    previewImageAlt: '시장 조사 및 경쟁사 비교 리포트 산출물',
-    portfolioExample: {
-      id: 'res-1',
-      client: '쇼핑몰 플랫폼 B사',
-      title: '경쟁사 서비스 및 요금제 비교 조사',
-      duration: '의뢰 후 24~36시간',
-      result: '주요 경쟁사 가격과 혜택 한눈에 비교 정리',
-      summary: '동종 업계 주요 경쟁사들의 요금제와 제공 기능을 항목별로 조사하여 비교표와 핵심 요약으로 정리했습니다.',
-      deliverable: '경쟁사 비교표 및 핵심 요약 보고서',
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80',
-      imageAlt: '경쟁사 비교 조사 리포트'
-    },
-    portfolioCases: [
-      {
-        id: 'res-1',
-        client: '쇼핑몰 플랫폼 B사',
-        title: '경쟁사 서비스 및 요금제 비교 조사',
-        duration: '의뢰 후 24~36시간',
-        result: '주요 경쟁사 가격과 혜택 한눈에 비교 정리',
-        summary: '동종 업계 주요 경쟁사들의 요금제와 제공 기능을 항목별로 조사하여 비교표와 핵심 요약으로 정리했습니다.',
-        tags: ['경쟁사비교', '가격비교', '서비스분석'],
-        deliverable: '경쟁사 비교표 및 핵심 요약 보고서',
-        image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '경쟁사 비교 조사 리포트'
-      },
-      {
-        id: 'res-2',
-        client: '핀테크 & 신규사업 T사',
-        title: '신규 사업 기본 규제 및 필수 인허가 체크리스트',
-        duration: '의뢰 후 48시간 이내',
-        result: '사업 시작 전 필수 확인 규제 및 인허가 점검표 완비',
-        summary: '신규 서비스를 런칭할 때 사전에 반드시 확인해야 하는 필수 법령, 소관 부처 인허가 조건, 개인정보보호 및 결제 규정 준수 사항을 체크리스트로 체계화하여 정리했습니다.',
-        tags: ['규제체크리스트', '인허가확인', '신규사업점검', '법령정리'],
-        deliverable: '신규 사업 인허가 규제 점검표 및 실무 조치 가이드라인',
-        image: regulationChecklistReportImg,
-        imageAlt: '신규 사업 기본 규제 및 필수 인허가 체크리스트 실무 산출물'
-      },
-      {
-        id: 'res-3',
-        client: '글로벌 테크 스타트업 S사',
-        title: '해외 기술 자료 및 시장 동향 국문 번역 요약',
-        duration: '의뢰 후 24시간 이내',
-        result: '방대한 영문 글로벌 기술 동향의 핵심 국문 발췌 요약 완성',
-        summary: '해외 주요 테크 컨퍼런스 자료, 글로벌 시장 조사 리포트의 방대한 영문 원문에서 비즈니스에 필요한 핵심 인사이트만 추출하여 국문 브리프로 번역·요약했습니다.',
-        tags: ['해외기술자료', '시장동향조사', '국문번역요약', '글로벌트렌드'],
-        deliverable: '해외 기술 자료 국문 요약 보고서 및 영문 원문 핵심 발췌록',
-        image: globalTechReportSummaryImg,
-        imageAlt: '해외 기술 자료 및 시장 동향 국문 번역 요약 산출물'
-      }
-    ],
-    detailedTasks: [
-      '동종 업계 주요 경쟁사 기능, 가격, 서비스 항목별 비교',
-      '신규 사업 관련 기초 시장 현황 및 업계 자료 조사',
-      '해외 자료 및 영문 문서 핵심 내용 국문 요약',
-      '사업 추진 시 확인해야 할 기본 인허가 및 규제 체크리스트'
-    ],
-    turnaroundTime: '48시간 이내',
-    deliverableSample: '비교 분석표, 국문 요약 보고서, 조사 결과 정리 시트'
-  },
-  {
-    id: 'marketing',
-    number: '04',
-    categoryCode: 'MARKETING EXECUTION',
-    name: '마케팅 실행 보조',
-    description: '광고 문구 카피라이팅, 인플루언서 리스트업 및 섭외 메일, 고객 리뷰 요약',
-    tags: ['광고 문구', '인플루언서', '제안 메일', '리뷰 분석'],
-    icon: 'Megaphone',
-    colorClass: 'amber-600',
-    previewImage: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=800&q=80',
-    previewImageAlt: '광고 문구 및 마케팅 보조 실무 산출물',
-    portfolioExample: {
-      id: 'mkt-1',
-      client: '뷰티 브랜드 C사',
-      title: '온라인 광고 문구 작성 및 A/B 테스트 세트',
-      duration: '의뢰 후 24시간 이내',
-      result: '클릭을 유도하는 맞춤 광고 문구 다수 제작',
-      summary: 'SNS 및 검색 광고에 사용할 다양한 소구점의 광고 카피를 작성하고 테스트용으로 정리했습니다.',
-      deliverable: '광고 문구 세트 스프레드시트',
-      image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1000&q=80',
-      imageAlt: '온라인 광고 문구 작성 산출물'
-    },
-    portfolioCases: [
-      {
-        id: 'mkt-1',
-        client: '뷰티 브랜드 C사',
-        title: '온라인 광고 문구 작성 및 A/B 테스트 세트',
-        tabLabel: '광고 카피 A/B 테스트',
-        duration: '의뢰 후 24시간 이내',
-        result: '클릭을 유도하는 맞춤 광고 문구 다수 제작',
-        summary: 'SNS 및 검색 광고에 사용할 다양한 소구점의 광고 카피를 작성하고 테스트용으로 정리했습니다.',
-        tags: ['광고문구', '소구점개발', '카피라이팅'],
-        deliverable: '광고 문구 세트 스프레드시트',
-        image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '온라인 광고 문구 작성 산출물',
-        originalDocumentMeta: {
-          recipient: '뷰티 브랜드 C사 마케팅 총괄팀',
-          sender: '트렌드24 AI 마케팅 실행 전담 매니저',
-          subject: '[카피 세트] 비건 수분 진정 세럼 SNS/검색 광고 A/B 테스트 문구안',
-          docDate: '2026.09.20 (검토 승인 완료)',
-          docTypeBadge: '광고 카피라이팅 A/B 테스트 세트',
-          attachments: ['광고문구_소구점분류표.xlsx', '메타광고_이미지매칭안.pdf']
-        },
-        originalText: `[프로젝트] 뷰티 브랜드 C사 비건 수분 진정 세럼 광고 카피 세트
-
-■ 소구점 1: 즉각적인 수분 진정 & 민감 피부 해결
-[메인 헤드카피]
-- A안: "바르자마자 붉은 기 진정, 피부 온도 -4.5℃ 즉각 쿨링"
-- B안: "민감성 피부 98%가 만족한 순한 진정력, 세럼 하나로 끝내세요"
-[서브 바디카피]
-- 끈적임 없이 피부 속 깊숙이 흡수되는 8중 히알루론산 포뮬러. 자극받은 피부 장벽을 10분 만에 탄탄하게 케어합니다.
-[CTA 버튼]
-- "지금 15% 런칭 특가로 만나보기" / "민감 피부 무료 샘플 신청"
-
-■ 소구점 2: 착한 성분 & 비건 인증
-[메인 헤드카피]
-- A안: "화해 20가지 유해 성분 0개, 피부가 편안한 100% 비건 포뮬러"
-- B안: "피부에 닿는 첫 번째 수분, 성분표를 당당하게 공개합니다"
-[서브 바디카피]
-- 프랑스 이브 비건 정식 인증 완료. 동물 실험 없이 자연 유래 진정 성분만 가득 채웠습니다.
-
-■ 소구점 3: 고객 후기 & 재구매율 증명
-[메인 헤드카피]
-- A안: "출시 2주 만에 3차 완판, '인생 세럼' 후기가 증명합니다"
-- B안: "재구매율 87%의 이유? 다음 날 아침 거울 속 피부 결이 다릅니다"
-[서브 바디카피]
-- "건조함 때문에 화장이 들떴었는데, 이 세럼 바른 뒤 속당김이 완전히 사라졌어요." (실제 구매 고객 리뷰 요약)`
+이번 신제품은 파라미터를 70% 경량화하면서도 한국어 특유의 방언과 전문 용어 인식률을 98.2%까지 끌어올린 것이 특징이다. 특히 금융 상담, 전자기록물 작성 등 외부 데이터 유출이 엄격히 금지된 환경에서 완벽한 프라이버시 보안을 보장한다.`
       },
       {
         id: 'mkt-2',
-        client: '홈케어 뷰티 디바이스 G사 (글로우빔)',
-        title: 'AI 협찬 제안 메일 작성 및 인플루언서 섭외 문안',
-        tabLabel: '인플루언서 섭외 문안',
+        client: '홈케어 뷰티 디바이스 글로우빔(GlowBeam)',
+        title: '인플루언서 섭외 제안 메일 작성 및 협찬 아웃리치',
+        tabLabel: '인플루언서 섭외 공식 메일',
         duration: '의뢰 후 24시간 이내',
-        result: '인스타그램 인플루언서 섭외 회신율 극대화 맞춤 제안 메일 완성',
+        result: '인스타그램 인플루언서 섭외 회신율 38% 달성 (업계 평균의 3배)',
         summary: '8.2만 팔로워 뷰티 크리에이터 타깃 LED 마스크 제품 협찬 조건, 포스팅 가이드라인, 전용 할인코드 혜택을 명시한 정중하고 설득력 있는 공식 섭외 메일을 작성했습니다.',
-        tags: ['협찬제안메일', '인플루언서섭외', '아웃리치스튜디오', '뷰티디바이스'],
+        tags: ['협찬제안메일', '인플루언서섭외', '아웃리치', '마케팅자동화'],
         deliverable: 'AI 협찬 제안 메일 전문 및 첨부 협찬 가이드라인',
         image: influencerOutreachEmailImg,
-        imageAlt: 'AI 협찬 제안 메일 작성 실무 산출물 (인플루언서 섭외 문안)',
-        galleryImages: [
-          {
-            url: influencerOutreachEmailImg,
-            title: 'AI 협찬 제안 메일 및 인플루언서 섭외 산출물',
-            pageLabel: '고해상도 실무 산출물'
-          },
-          {
-            url: '/assets/marketing-influencer-outreach-email.svg',
-            title: '인플루언서 제안 메일 디지털 규격 및 첨부 구성',
-            pageLabel: '디지털 레이아웃'
-          }
-        ],
+        imageAlt: 'AI 협찬 제안 메일 작성 실무 산출물',
         originalDocumentMeta: {
           recipient: '하은글로우 (인스타그램 팔로워 8.2만)',
-          sender: '이서연 드림 | 글로우빔코리아 마케팅팀 (marketing@glowbeam.co.kr · 02-1234-5678)',
+          sender: '이서연 드림 | 글로우빔코리아 마케팅팀 (marketing@glowbeam.co.kr)',
           subject: '[공동 프로젝트 제안] 글로우빔(GlowBeam) LED 스킨케어 디바이스 브랜드 협업 제안드립니다',
           docDate: '2026.09.22 (발송 완료)',
-          docTypeBadge: 'AI 협찬 제안 메일 원문',
-          attachments: ['글로우빔_브랜드소개서.pdf', '협찬가이드라인.pdf']
-        },
-        originalText: `받는사람: 하은글로우 (인스타그램 팔로워 8.2만)
-보낸사람: 글로우빔코리아 마케팅팀 이서연 드림 (marketing@glowbeam.co.kr · 02-1234-5678)
-제목: [공동 프로젝트 제안] 글로우빔(GlowBeam) LED 스킨케어 디바이스 브랜드 협업 제안드립니다
-발송일시: 2026.09.22 (발송 완료)
-
-안녕하세요, 하은님!
-평소 정제된 뷰티 콘텐츠와 솔직한 리뷰로 많은 분들께 신뢰받고 계신 모습을 인상 깊게 보고 이렇게 연락드립니다.
-
-저희는 홈케어 LED 스킨케어 디바이스 브랜드 글로우빔(GlowBeam)을 운영하는 글로우빔코리아입니다. 하은님의 피드 톤과 팔로워분들의 스킨케어 관심도가 저희 브랜드와 잘 맞는다고 생각되어 협업을 제안드리게 되었습니다.
-
-● 제안 내용
-- 제품: 글로우빔 프로 LED 마스크 (정가 189,000원)
-- 협업 형태: 제품 협찬 (원고료 별도 협의 가능)
-- 콘텐츠: 인스타그램 피드 1건 + 릴스 1건, 스토리 2회 이상
-- 업로드 일정: 제품 수령 후 2주 이내
-- 필수 표기: @glowbeam_official 태그, #글로우빔 #GlowBeam #유료광고포함
-
-● 제공 혜택
-✓ 제품 무상 제공 (정가 189,000원 상당)
-✓ 전용 할인코드 발급 (팔로워 대상 15% 할인)
-✓ 판매 연동 시 별도 리워드 지급 (선택)
-
-관심 있으시면 회신 주세요. 상세 가이드라인과 협찬 계약서를 바로 보내드리겠습니다. 궁금하신 점은 편하게 문의 주시고요.
-
-감사합니다 :)
-
-이서연 드림
-글로우빔코리아 마케팅팀
-marketing@glowbeam.co.kr · 02-1234-5678
-
-[첨부파일]
-1. 글로우빔_브랜드소개서.pdf
-2. 협찬가이드라인.pdf`
+          docTypeBadge: '인플루언서 섭외 제안 메일 원문'
+        }
       },
       {
         id: 'mkt-3',
-        client: '가전 브랜드 E사',
-        title: '구매자 리뷰 분석 및 고객 의견 요약',
-        tabLabel: '고객 리뷰 분석 요약',
-        duration: '의뢰 후 24시간 이내',
-        result: '고객 칭찬 포인트와 주요 불만 사항을 알기 쉽게 정리',
-        summary: '쇼핑몰 구매 고객 후기를 정밀 검토하여 자주 칭찬하는 점과 개선을 요구하는 불만 사항을 요약 정리했습니다.',
-        tags: ['리뷰분석', '고객의견', '개선점도출'],
-        deliverable: '고객 리뷰 요약 보고서 및 개선점 체크리스트',
-        image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80',
-        imageAlt: '고객 리뷰 분석 요약 보고서',
-        originalDocumentMeta: {
-          recipient: '가전 브랜드 E사 상품기획/CS팀',
-          sender: '트렌드24 AI 마케팅 리서치팀',
-          subject: '[분석 보고서] 무선 미니 청소기 구매평 1,240건 정밀 분석 및 핵심 개선 제안',
-          docDate: '2026.09.18 (완료 보고)',
-          docTypeBadge: '고객 리뷰 분석 보고서 전문',
-          attachments: ['리뷰감성분석_키워드맵.xlsx', 'CS대응_표준가이드.docx']
-        },
-        originalText: `[고객 리뷰 분석 보고서] 가전 브랜드 E사 무선 미니 청소기 (총 1,240건 분석)
-
-1. 종합 만족도 및 평점 개요
-- 평균 평점: 4.62 / 5.0 (긍정 평가 89.4%, 중립 6.2%, 개선 요구 4.4%)
-- 주요 구매 연령: 20대 후반~30대 1인 가구 및 차량 소유 직장인
-
-2. 핵심 긍정 포인트 (Top 3)
-- ① 가벼운 무게 & 그립감: "500g대로 손목에 무리 없이 원룸 청소 끝" (언급 비율 42%)
-- ② 콤팩트한 디자인: "인테리어 오브제 같아서 거실 테이블에 둬도 예쁨" (언급 비율 38%)
-- ③ 틈새 노즐 활용성: "차량 컵홀더, 키보드 사이 먼지 흡입에 최고" (언급 비율 29%)
-
-3. 주요 불만 및 개선 요구 사항 (CS 즉시 조치 필요)
-- ① 배터리 완충 표시 직관성: 충전 완료 시 LED 색상 변화가 명확하지 않다는 의견 (28건)
-  → 조치 권고: 상세페이지 충전 가이드 이미지 보완 및 알림 스티커 부착
-- ② 필터 분리 세척 설명: 물세척 후 건조 방법 문의 다수
-  → 조치 권고: 동봉 퀵 가이드에 '필터 완전 건조 24시간 필수' 볼드 표기
-
-4. 마케팅 소구점 제안
-- "차량용 + 원룸용 멀티 유즈"를 강조한 숏폼 영상 제작 추천 (도달률 기대치 250%↑)`
+        client: '온라인 커머스 및 서비스 B사',
+        title: 'SNS 블로그 검색 SEO 및 인스타그램 피드 자동화',
+        tabLabel: '블로그 SEO & 인스타그램 자동화',
+        duration: '주간 정기 발행',
+        result: '네이버 블로그 1페이지 노출 8건 달성 & 인스타그램 피드 주 3회 정기 포스팅',
+        summary: '타깃 고객의 검색 의도를 분석한 키워드로 네이버/구글 검색 상위 노출 전문 정보성 블로그 원고를 주기적으로 작성하고, 인스타그램 카드뉴스 캡션과 해시태그를 자동 연계해 배포하는 파이프라인을 구축했습니다.',
+        tags: ['블로그자동화', '인스타그램자동화', '검색SEO', '콘텐츠스케줄링'],
+        deliverable: '블로그 발행 원고, 인스타그램 캡션 세트, 월간 콘텐츠 캘린더',
+        image: cardNewsCoverImg,
+        imageAlt: 'SNS 블로그 및 인스타그램 콘텐츠 산출물'
       }
     ],
     detailedTasks: [
-      'SNS 피드 및 검색 광고용 카피라이팅 작성',
-      '제품에 맞는 마이크로 인플루언서 계정 리스트업',
-      '체험단 및 인플루언서 섭외용 제안 메일 문구 작성',
-      '쇼핑몰 상품 리뷰 모니터링 및 주요 고객 반응 요약'
+      '네이버/구글 타깃 키워드 최적화(SEO) 정보성 블로그 원고 작성',
+      '인스타그램 릴스/피드용 카드뉴스 카피라이팅 및 자동 스케줄링 연동',
+      '신제품 출시, 투자유치, 파트너십 표준 언론사 송고용 보도자료 초안 작성',
+      '마이크로 인플루언서 섭외 제안 메일 및 인플루언서 리스트업'
     ],
-    turnaroundTime: '24~48시간 이내',
-    deliverableSample: '광고 카피 스프레드시트, 인플루언서 목록 파일'
+    turnaroundTime: '24~36시간 이내',
+    deliverableSample: '보도자료 원고 문서, 블로그 포스팅 텍스트, 인플루언서 제안 메일 파일'
   },
+
+  // 5. 사이트 제작(홈페이지, 쇼핑콜 제작)
   {
-    id: 'cs',
+    id: 'website',
     number: '05',
-    categoryCode: 'CS & OPERATIONS',
-    name: '기업 운영 및 CS 지원',
-    description: '자주 묻는 질문(FAQ) 정리, 상황별 고객 응대 템플릿, 챗봇 답변 시나리오',
-    tags: ['FAQ 작성', '응대 템플릿', '고객 안내', '챗봇 시나리오'],
-    icon: 'Headphones',
-    colorClass: 'cyan-600',
-    previewImage: csChatbotFaqScenarioImg,
-    previewImageAlt: 'AI 고객응대 챗봇 및 FAQ 관리 실무 산출물 (세렌헤드스파 상담봇)',
-    portfolioExample: {
-      id: 'cs-1',
-      client: '헤드스파 뷰티케어 S사 (세렌헤드스파)',
-      title: '고객 응대 FAQ 및 챗봇 답변 시나리오 작성',
-      tabLabel: 'FAQ & 챗봇 답변 시나리오',
-      duration: '의뢰 후 24시간 이내',
-      result: '8대 핵심 FAQ 구조화 및 주말 예약 자동화 챗봇 시나리오 완성',
-      summary: '자주 묻는 질문 8종을 체계화하고 카카오톡·채널톡 기반의 토요일 예약 및 코스 안내 챗봇 대화 시나리오를 설계하여 즉시 세팅 가능한 실무 산출물로 납품했습니다.',
-      tags: ['FAQ작성', '챗봇답변', '고객응대', '예약시나리오'],
-      deliverable: 'AI 고객응대 챗봇 시나리오 기획서 및 FAQ 8종 표준 답변 매뉴얼',
-      image: csChatbotFaqScenarioImg,
-      imageAlt: 'AI 고객응대 챗봇 및 FAQ 관리 실무 산출물 (세렌헤드스파 상담봇)'
-    },
-    portfolioCases: [
-      {
-        id: 'cs-1',
-        client: '헤드스파 뷰티케어 S사 (세렌헤드스파)',
-        title: '고객 응대 FAQ 및 챗봇 답변 시나리오 작성',
-        tabLabel: 'FAQ & 챗봇 답변 시나리오',
-        duration: '의뢰 후 24시간 이내',
-        result: '8대 핵심 FAQ 구조화 및 주말 예약 자동화 챗봇 시나리오 완성',
-        summary: '자주 묻는 질문 8종(예약, 변경·취소, 소요시간, 남성 이용, 두피별 맞춤 케어, 환불, 주차, 임산부 케어)을 체계화하고 카카오톡·채널톡 기반의 토요일 예약 및 코스 안내 챗봇 대화 시나리오를 설계하여 즉시 세팅 가능한 실무 산출물로 납품했습니다.',
-        tags: ['FAQ작성', '챗봇답변', '고객응대', '예약시나리오'],
-        deliverable: 'AI 고객응대 챗봇 시나리오 기획서 및 FAQ 8종 표준 답변 매뉴얼',
-        image: csChatbotFaqScenarioImg,
-        imageAlt: 'AI 고객응대 챗봇 및 FAQ 관리 실무 산출물 (세렌헤드스파 상담봇)',
-        galleryImages: [
-          {
-            url: csChatbotFaqScenarioImg,
-            title: 'AI 고객응대 챗봇 및 FAQ 관리 실무 산출물 화면',
-            pageLabel: '고해상도 챗봇 콘솔'
-          }
-        ],
-        originalDocumentMeta: {
-          recipient: '세렌헤드스파 고객지원팀',
-          sender: '트렌드24 AI 업무대행 챗봇 구축팀 (cs@trend24.co.kr · 02-1234-5678)',
-          docTypeBadge: '챗봇 응대 시나리오 기획안',
-          docDate: '2026.09.22 최종 승인',
-          securityLevel: '실무 배포 완료본'
-        },
-        originalText: `[세렌헤드스파 AI 고객응대 챗봇 시나리오 및 FAQ 8종 표준 답변서]
-
-■ 시스템 개요
-· 브랜드명: 세렌헤드스파 (Serene Head Spa)
-· 솔루션: Customer Care Bot Studio (트렌드24 업무대행)
-· 챗봇명: 세렌헤드스파 상담봇 (온라인 24시간 자동 응대)
-· 구축 상태: 운영중 (2026.09.22 승인 완료)
-· 주요 기능: FAQ 자동 응답, 시술 코스 안내, 실시간 토요일/평일 예약 접수, 담당 상담원 연결
-
-──────────────────────────────────────────────────────
-[1] FAQ 관리 (자주 묻는 질문 8종 표준 가이드)
-──────────────────────────────────────────────────────
-
-1. Q. 예약은 어떻게 하나요?
-   A. 네이버 예약, 카카오 채널톡 및 본 챗봇의 [예약 문의] 버튼을 통해 희망하시는 날짜와 시간을 선택하시면 실시간 잔여 타임을 확인하여 1분 이내에 예약을 확정해 드립니다.
-
-2. Q. 예약 변경·취소는 언제까지 가능한가요?
-   A. 원활한 룸 및 테라피스트 배정을 위해 예약일 기준 1일 전 18시까지 위약금 없이 100% 무료 변경 및 취소가 가능합니다. 당일 취소 시에는 예약금의 50%가 위약금으로 차감됩니다.
-
-3. Q. 시술 시간은 얼마나 걸리나요?
-   A. 베이직 릴랙싱 코스는 50분, 프리미엄 딥클렌징 & 스칼프 케어 코스는 80분 소요됩니다. 첫 방문 고객님께서는 정밀 두피 진단을 위해 10분 전 방문을 권장드립니다.
-
-4. Q. 남성도 이용 가능한가요?
-   A. 네, 남성 고객님도 동일하게 전 코스 이용 가능합니다. 전 좌석 프라이빗 1인 VIP 룸으로 운영되어 타인의 시선 없이 편안하게 케어를 받으실 수 있습니다.
-
-5. Q. 두피 상태에 따라 시술이 달라지나요?
-   A. 네, 시술 전 AI 두피 진단 스캐너를 통해 지루성, 건성, 열감, 탈모 초기 등 두피 타입을 정밀 측정하여 맞춤형 천연 앰플과 스파 레시피를 처방해 드립니다.
-
-6. Q. 정기권 환불이 가능한가요?
-   A. 정기권(5회권/10회권)은 소비자 분쟁해결 기준에 따라 잔여 횟수에 대한 정산 후 즉시 환불이 가능합니다. (단, 사용 회차는 정가 기준으로 차감 정산됩니다.)
-
-7. Q. 주차는 가능한가요?
-   A. 건물 지하 주차장에 무료 주차 2시간을 지원해 드립니다. SUV 및 대형 세단도 여유롭게 주차 가능하며 출차 시 데스크에 차량 번호를 등록해 주세요.
-
-8. Q. 임산부도 받을 수 있나요?
-   A. 안정기(임신 16주 이상) 고객님부터 안전하게 시술 가능합니다. 강한 지압 대신 림프 순환 위주의 부드러운 임산부 전용 오가닉 케어로 진행해 드립니다.
-
-──────────────────────────────────────────────────────
-[2] 챗봇 시나리오 (실제 고객 대화 시뮬레이션: 예약 문의)
-──────────────────────────────────────────────────────
-
-[고객 - 14:02] 이번 주 토요일 오후에 예약 가능한가요?
-
-[세렌헤드스파 상담봇 - 14:02]
-안녕하세요! 세렌헤드스파입니다 🌿 
-토요일 오후 예약 가능 시간을 확인해드릴게요. 
-베이직 / 프리미엄 중 어떤 시술로 도와드릴까요?
-
-[고객 - 14:03] 프리미엄이요
-
-[세렌헤드스파 상담봇 - 14:03]
-프리미엄 코스는 80분이며 14:00 · 16:30 두 타임이 비어있어요. 
-어느 시간이 편하실까요?
-
-[고객 - 14:04] 16시 반이요
-
-[세렌헤드스파 상담봇 - 14:04]
-토요일 16:30 프리미엄 코스로 예약 도와드렸습니다 ✅ 
-확인 문자 보내드렸어요. 두피 고민 있으시면 미리 알려주셔도 좋아요!
-`
-      },
-      {
-        id: 'cs-2',
-        client: '쇼핑몰 L사 (루미마켓)',
-        title: '상황별 고객 응대 이메일 및 문자 템플릿 작성',
-        tabLabel: '상황별 고객 응대 템플릿',
-        duration: '의뢰 후 24시간 이내',
-        result: '주문·배송·컴플레인·프로모션 4대 상황별 이메일·SMS 8종 라이브러리 구축',
-        summary: '주문/결제 확정, 배송 변경·취소·지연, 불만/컴플레인, 리뷰/프로모션 등 쇼핑몰 빈출 상황 4개 카테고리별로 고객 신뢰도를 높이는 표준 이메일 및 LMS/SMS 템플릿 8종 세트를 기획 및 납품했습니다.',
-        tags: ['응대템플릿', '고객안내문', '클레임대응', 'SMS템플릿'],
-        deliverable: 'AI 고객응대 템플릿 라이브러리 기획서 (이메일 & SMS 8종)',
-        image: csResponseTemplateLibraryImg,
-        imageAlt: 'AI 고객응대 템플릿 라이브러리 실무 산출물 (루미마켓 주문·결제 확정 안내)',
-        galleryImages: [
-          {
-            url: csResponseTemplateLibraryImg,
-            title: 'AI 고객응대 템플릿 라이브러리 콘솔',
-            pageLabel: '고해상도 실무 산출물'
-          }
-        ],
-        originalDocumentMeta: {
-          recipient: '루미마켓 CS운영팀',
-          sender: '트렌드24 AI 업무대행 템플릿 제작팀 (cs@trend24.co.kr · 02-1234-5678)',
-          docTypeBadge: '고객응대 템플릿 라이브러리',
-          docDate: '2026.09.22 최종 승인',
-          securityLevel: '실무 배포 완료본'
-        },
-        originalText: `[루미마켓 AI 고객응대 템플릿 라이브러리 (8종 세트)]
-
-■ 시스템 개요
-· 브랜드명: 루미마켓 (Lumi Market)
-· 솔루션: Response Template Studio (트렌드24 업무대행)
-· 구축 내역: 상황별 이메일 & SMS/LMS 표준 템플릿 8종
-· 구축 상태: 8종 등록완료 (2026.09.22 승인)
-· 활용 채널: 자동 발송 메일러, 카카오 알림톡, SMS/LMS 문자
-
-──────────────────────────────────────────────────────
-[1] 상황별 템플릿 분류 체계 (총 4대 카테고리 8종)
-──────────────────────────────────────────────────────
-1. 주문 · 결제 확정 안내 (이메일 1종 + 문자 1종)
-2. 배송 변경 · 취소 · 지연 안내 (이메일 1종 + 문자 1종)
-3. 불만 · 컴플레인 응대 (이메일 1종 + 문자 1종)
-4. 리뷰 요청 · 프로모션 안내 (이메일 1종 + 문자 1종)
-
-──────────────────────────────────────────────────────
-[2] 대표 템플릿 상세: 주문 · 결제 확정 안내
-──────────────────────────────────────────────────────
-
-[A. 이메일 템플릿]
-· 받는사람: 김혜진 고객님
-· 제목: [루미마켓] 주문이 확정되었습니다 (LM20260922-0142)
-
-(본문)
-안녕하세요, 혜진님. 루미마켓을 이용해주셔서 감사합니다.
-주문하신 상품이 정상적으로 확정되었습니다.
-
-[주문 정보]
-· 주문번호: LM20260922-0142
-· 상품명: 오가닉 코튼 니트 외 1건
-· 결제금액: 68,000원
-· 배송 예정일: 9월 24일 (목)
-
-배송이 시작되면 별도로 안내드리겠습니다. 감사합니다.
-
-
-[B. 문자(SMS) 템플릿]
-· 발신자: 루미마켓 (대표번호: 1544-0000)
-· 발송 시점: 주문 확정 시점 자동 발송
-
-(문자 내용)
-[루미마켓] 혜진님 주문이 확정됐어요!
-(LM20260922-0142) 9/24 배송 예정입니다.
-문의 1544-0000
-
-──────────────────────────────────────────────────────
-[3] 기타 핵심 상황별 응대 가이드 요약
-──────────────────────────────────────────────────────
-· 배송 지연 안내: 공급처 입고 지연 원인 명시 + 변경 도착 예정일 안내 + 사과 적립금(2,000P) 자동 지급 안내
-· 품절 취소 안내: 결제 수단별 환불 일정(카드 2~3 영업일) 명시 + 대체 추천 상품 링크 제공
-· 단순 변심 교환/반품: 왕복 택배비(6,000원) 안내 + 자동 회수 기사 방문 예약 링크 제공
-· 상품 불량/오배송 클레임: 정중한 사과 문구 우선 배치 + 사진 접수 간편 링크 + 무료 맞교환 즉시 출고 안내
-`
-      },
-      {
-        id: 'cs-3',
-        client: '쇼핑몰 L사 (루미마켓)',
-        title: '신규 고객 환영 및 이용 안내 알림톡 문구 작성',
-        tabLabel: '신규 고객 알림톡 문안',
-        duration: '의뢰 후 24시간 이내',
-        result: '카카오 공식 심사 통과형 신규 가입 환영 & 이용안내 알림톡 2종 납품',
-        summary: '신규 회원의 첫 구매 전환을 유도하는 가입 환영 알림톡과 핵심 이용 혜택(주문·배송 조회, 찜 할인, 적립금, 채널 소식)을 명확하게 안내하는 카카오 알림톡 문안 2종을 카카오 공식 템플릿 심사 가이드라인에 맞추어 작성했습니다.',
-        tags: ['알림톡문구', '이용안내', '고객가이드', '카카오톡채널'],
-        deliverable: '카카오 알림톡 템플릿 심사용 기획서 (환영 & 이용안내 2종)',
-        image: csAlimtalkWelcomeGuideImg,
-        imageAlt: 'AI 알림톡 문구 작성 실무 산출물 (루미마켓 신규가입 환영 & 이용안내 2종)',
-        galleryImages: [
-          {
-            url: csAlimtalkWelcomeGuideImg,
-            title: 'AI 알림톡 문구 작성 콘솔',
-            pageLabel: '고해상도 실무 산출물'
-          }
-        ],
-        originalDocumentMeta: {
-          recipient: '루미마켓 CRM·마케팅팀',
-          sender: '트렌드24 AI 업무대행 알림톡 제작팀 (talk@trend24.co.kr · 02-1234-5678)',
-          docTypeBadge: '카카오 알림톡 기획서',
-          docDate: '2026.09.22 승인 완료',
-          securityLevel: '카카오 심사 통과본'
-        },
-        originalText: `[루미마켓 AI 알림톡 문구 작성 (2종 세트)]
-
-■ 프로젝트 개요
-· 발신 채널: 카카오톡 알림톡 (루미마켓 공식 채널)
-· 솔루션: Notification Message Studio (트렌드24 업무대행)
-· 심사 결과: 카카오 공식 템플릿 심사 통과 완료 (2026.09.22)
-· 발송 대상: 신규 회원가입 완료 고객 (가입 직후 및 1일 차 자동 트리거)
-
-──────────────────────────────────────────────────────
-[1] 신규가입 환영 알림톡
-──────────────────────────────────────────────────────
-· 템플릿명: 루미마켓_신규가입_환영혜택_V1
-· 발신 프로필: 루미마켓 (알림톡 인증 마크)
-· 발송 시점: 회원가입 완료 즉시 자동 발송
-
-[알림톡 본문]
-루미마켓 가입을 환영합니다! 🎉
-
-#{고객명}님, 루미마켓의 첫 가족이 되어주셔서 감사합니다.
-지금 가입을 완료하시면 아래 혜택을 바로 받으실 수 있어요.
-
-■ 신규회원 전용 웰컴 혜택
-· 첫 구매 10% 할인 쿠폰
-· 무료배송 쿠폰 1장
-· 적립금 2,000원 즉시 지급
-
-[버튼 구성]
-· 버튼 1: [쇼핑 시작하기 ›] (웹링크: https://m.lumimarket.kr/welcome)
-
-──────────────────────────────────────────────────────
-[2] 이용안내 알림톡
-──────────────────────────────────────────────────────
-· 템플릿명: 루미마켓_서비스_이용가이드_V1
-· 발신 프로필: 루미마켓 (알림톡 인증 마크)
-· 발송 시점: 가입 익일(D+1) 오전 11:00 자동 발송
-
-[알림톡 본문]
-루미마켓 이용 방법 안내드려요
-
-#{고객명}님, 루미마켓을 더 편하게 이용하는 방법을 알려드릴게요.
-
-1. 마이페이지에서 주문·배송 조회
-2. 찜한 상품 할인 알림 받기
-3. 리뷰 작성 시 적립금 지급
-4. 채널 추가 시 매주 할인 소식 받기
-
-궁금한 점은 채널 상담으로 편하게 문의해주세요 :)
-
-[버튼 구성 (2열 분할)]
-· 버튼 1: [채널 추가하기] (카카오톡 채널 추가 기능 연동)
-· 버튼 2: [자주 묻는 질문] (웹링크: https://m.lumimarket.kr/faq)
-
-──────────────────────────────────────────────────────
-[3] 카카오 알림톡 검수 체크리스트 충족 사항
-──────────────────────────────────────────────────────
-✔ 정보통신망법 제50조에 따른 비광고성/정보성 메시지 요건 준수
-✔ 치환 변수(#{고객명}) 정상 설정 및 불필요한 홍보성 미승인 단어 배제
-✔ 고정 URL 및 채널 추가 버튼 규격 준수
-`
-      }
-    ],
-    detailedTasks: [
-      '자주 묻는 질문(FAQ) 정리 및 표준 답변 스크립트 작성',
-      '배송/환불/클레임 등 상황별 정중한 고객 안내 템플릿',
-      '카카오 상담톡 및 채널톡 챗봇 기본 시나리오 세팅 지원',
-      '신규 고객 가입 환영 및 이용 안내 알림톡/메일 문구 작성'
-    ],
-    turnaroundTime: '48시간 이내',
-    deliverableSample: 'FAQ 매뉴얼 문서, 챗봇 시나리오 기획서'
-  },
-  {
-    id: 'custom',
-    number: '06',
-    categoryCode: 'WORKFLOW CUSTOM',
-    name: '맞춤형 사내 AI 구축',
-    description: '사내 매뉴얼 답변 챗봇 세팅, 업무용 프롬프트 모음, 반복 작업 자동화 연결',
-    tags: ['사내 챗봇', '프롬프트 모음', '업무 자동화', '노션/슬랙'],
-    icon: 'Cpu',
-    colorClass: 'rose-600',
-    previewImage: csInternalKnowledgeChatbotImg,
-    previewImageAlt: 'AI 사내규정 챗봇 시스템 구축 산출물',
-    portfolioExample: {
-      id: 'cst-1',
-      client: 'IT·스타트업 K사',
-      title: '사내 규정 및 매뉴얼 답변용 사내 챗봇 세팅',
-      tabLabel: '사내 규정 챗봇 세팅',
-      duration: '의뢰 후 3일 이내',
-      result: '경비·연차·재택 등 사규 문서 4건 기반 사내 챗봇 구축 (출처 조항 자동 명시)',
-      summary: '연차/휴가, 경비처리/법인카드, 재택/유연근무, 보안수칙 등 사내 규정 PDF 4종을 학습시켜 직원 질문 시 정확한 규정 조항 출처와 함께 즉시 답변하는 사내 AI 챗봇을 세팅했습니다.',
-      deliverable: 'AI 사내규정 챗봇 시스템 및 규정 질의응답 지식베이스',
-      image: csInternalKnowledgeChatbotImg,
-      imageAlt: 'AI 사내규정 챗봇 (경비처리 및 법인카드 사용 규정 질의응답)',
-      galleryImages: [
-        {
-          url: csInternalKnowledgeChatbotImg,
-          title: 'AI 사내규정 챗봇 콘솔',
-          pageLabel: '고해상도 실무 산출물'
-        }
-      ],
-      originalDocumentMeta: {
-        recipient: 'K사 전 임직원 및 인사총무팀',
-        sender: '트렌드24 AI 지식베이스 구축팀 (bot@trend24.co.kr · 02-1234-5678)',
-        docTypeBadge: '사내 규정 챗봇 지식베이스',
-        docDate: '2026.09.23 최종 배포',
-        securityLevel: '사내 전 직원 이용 가능'
-      },
-      originalText: `[IT 기업 K사 - AI 사내규정 챗봇 지식베이스 및 질의응답 시나리오]
-
-■ 시스템 개요
-· 솔루션: AI 사내규정 챗봇 (Internal Knowledge Bot · 트렌드24 업무대행)
-· 모델/시스템: 기업 사규 전용 임베딩 RAG 지식베이스
-· 학습 완료 문서: 사내 규정 4건 (2026.09.23 기준)
-  1) 연차 · 휴가 규정 (PDF)
-  2) 경비처리 · 법인카드 규정 (PDF)
-  3) 재택 · 유연근무 규정 (PDF)
-  4) 보안 · 정보보호 수칙 (PDF)
-· 운영 대상: 전 직원 이용 가능 (사내 슬랙 / 웹 포털 연동)
-
-──────────────────────────────────────────────────────
-[1] 학습 문서 상세: 경비처리 및 법인카드 사용 규정
-──────────────────────────────────────────────────────
-· 규정 문서: 경비처리_법인카드_규정_v2.4.pdf
-· 핵심 조항:
-  - 제3조 제2항 (팀 회식비): 법인카드 결제 후 3영업일 이내 영수증 첨부 상신. 1인당 한도 50,000원(초과 시 팀장 사전 승인 필수).
-  - 제4조 제1항 (영수증 분실 대체): 분실 시 '지출결의서(영수증 미첨부)' 양식 대체 가능. 10만원 이상 건은 사전 승인 필요.
-  - 제5조 제3항 (해외 사용 내역): 카드 사용일 기준 전신환 매도율 적용. 해외경비정산 전용 메뉴에서 별도 상신 및 출장비 규정 연계.
-
-──────────────────────────────────────────────────────
-[2] 챗봇 실제 질의응답 시연 로그
-──────────────────────────────────────────────────────
-
-[질문 1]
-· 질문자: 박준호 · 마케팅팀
-· 질문 내용: "법인카드로 팀 회식비 결제해도 되나요?"
-
-[답변 1]
-· 사내규정 도우미:
-"네, 가능합니다. 팀 회식비는 법인카드로 결제 후 3영업일 이내 경비시스템에 영수증을 첨부해 상신해주세요. 1인당 한도는 5만원이며, 초과 시 팀장 승인이 필요해요."
-· 출처: 경비처리규정 3.2조
-
-
-[질문 2]
-· 질문자: 박준호 · 마케팅팀
-· 질문 내용: "영수증을 못 받았으면 어떻게 하나요?"
-
-[답변 2]
-· 사내규정 도우미:
-"영수증 분실 시 '지출결의서(영수증 미첨부)' 양식으로 대체 제출 가능합니다. 다만 10만원 이상 건은 사전 승인이 필요해요."
-· 출처: 경비처리규정 4.1조
-
-
-[질문 3]
-· 질문자: 박준호 · 마케팅팀
-· 질문 내용: "해외 출장 중 사용한 카드 내역도 여기서 처리하나요?"
-
-[답변 3]
-· 사내규정 도우미:
-"해외 사용 건은 환율 적용 방식이 달라 '해외경비정산' 메뉴에서 별도 처리해주셔야 해요. 출장비 규정 문서도 함께 보여드릴까요?"
-· 출처: 경비처리규정 5.3조 · 출장비 규정 연계
-
-──────────────────────────────────────────────────────
-[3] 사내 도입 효과 및 담당자 피드백
-──────────────────────────────────────────────────────
-✔ 인사/총무팀 반복 문의 82% 감소 (경비처리, 연차 잔여일, 재택 신청 방법)
-✔ 직원 답변 대기 시간: 평균 4시간 -> 즉시(1초 이내)
-✔ 규정 조항 링크 직접 제공으로 규정 오해 및 정산 반려율 65% 개선
-`
-    },
-    portfolioCases: [
-      {
-        id: 'cst-1',
-        client: 'IT·스타트업 K사',
-        title: '사내 규정 및 매뉴얼 답변용 사내 챗봇 세팅',
-        tabLabel: '사내 규정 챗봇 세팅',
-        duration: '의뢰 후 3일 이내',
-        result: '경비·연차·재택 등 사규 문서 4건 기반 사내 챗봇 구축 (출처 조항 자동 명시)',
-        summary: '연차/휴가, 경비처리/법인카드, 재택/유연근무, 보안수칙 등 사내 규정 PDF 4종을 학습시켜 직원 질문 시 정확한 규정 조항 출처와 함께 즉시 답변하는 사내 AI 챗봇을 세팅했습니다.',
-        tags: ['사내챗봇', '업무편의', '사규안내', 'RAG구축'],
-        deliverable: 'AI 사내규정 챗봇 시스템 및 규정 질의응답 지식베이스',
-        image: csInternalKnowledgeChatbotImg,
-        imageAlt: 'AI 사내규정 챗봇 (경비처리 및 법인카드 사용 규정 질의응답)',
-        galleryImages: [
-          {
-            url: csInternalKnowledgeChatbotImg,
-            title: 'AI 사내규정 챗봇 콘솔',
-            pageLabel: '고해상도 실무 산출물'
-          }
-        ],
-        originalDocumentMeta: {
-          recipient: 'K사 전 임직원 및 인사총무팀',
-          sender: '트렌드24 AI 지식베이스 구축팀 (bot@trend24.co.kr · 02-1234-5678)',
-          docTypeBadge: '사내 규정 챗봇 지식베이스',
-          docDate: '2026.09.23 최종 배포',
-          securityLevel: '사내 전 직원 이용 가능'
-        },
-        originalText: `[IT 기업 K사 - AI 사내규정 챗봇 지식베이스 및 질의응답 시나리오]
-
-■ 시스템 개요
-· 솔루션: AI 사내규정 챗봇 (Internal Knowledge Bot · 트렌드24 업무대행)
-· 모델/시스템: 기업 사규 전용 임베딩 RAG 지식베이스
-· 학습 완료 문서: 사내 규정 4건 (2026.09.23 기준)
-  1) 연차 · 휴가 규정 (PDF)
-  2) 경비처리 · 법인카드 규정 (PDF)
-  3) 재택 · 유연근무 규정 (PDF)
-  4) 보안 · 정보보호 수칙 (PDF)
-· 운영 대상: 전 직원 이용 가능 (사내 슬랙 / 웹 포털 연동)
-
-──────────────────────────────────────────────────────
-[1] 학습 문서 상세: 경비처리 및 법인카드 사용 규정
-──────────────────────────────────────────────────────
-· 규정 문서: 경비처리_법인카드_규정_v2.4.pdf
-· 핵심 조항:
-  - 제3조 제2항 (팀 회식비): 법인카드 결제 후 3영업일 이내 영수증 첨부 상신. 1인당 한도 50,000원(초과 시 팀장 사전 승인 필수).
-  - 제4조 제1항 (영수증 분실 대체): 분실 시 '지출결의서(영수증 미첨부)' 양식 대체 가능. 10만원 이상 건은 사전 승인 필요.
-  - 제5조 제3항 (해외 사용 내역): 카드 사용일 기준 전신환 매도율 적용. 해외경비정산 전용 메뉴에서 별도 상신 및 출장비 규정 연계.
-
-──────────────────────────────────────────────────────
-[2] 챗봇 실제 질의응답 시연 로그
-──────────────────────────────────────────────────────
-
-[질문 1]
-· 질문자: 박준호 · 마케팅팀
-· 질문 내용: "법인카드로 팀 회식비 결제해도 되나요?"
-
-[답변 1]
-· 사내규정 도우미:
-"네, 가능합니다. 팀 회식비는 법인카드로 결제 후 3영업일 이내 경비시스템에 영수증을 첨부해 상신해주세요. 1인당 한도는 5만원이며, 초과 시 팀장 승인이 필요해요."
-· 출처: 경비처리규정 3.2조
-
-
-[질문 2]
-· 질문자: 박준호 · 마케팅팀
-· 질문 내용: "영수증을 못 받았으면 어떻게 하나요?"
-
-[답변 2]
-· 사내규정 도우미:
-"영수증 분실 시 '지출결의서(영수증 미첨부)' 양식으로 대체 제출 가능합니다. 다만 10만원 이상 건은 사전 승인이 필요해요."
-· 출처: 경비처리규정 4.1조
-
-
-[질문 3]
-· 질문자: 박준호 · 마케팅팀
-· 질문 내용: "해외 출장 중 사용한 카드 내역도 여기서 처리하나요?"
-
-[답변 3]
-· 사내규정 도우미:
-"해외 사용 건은 환율 적용 방식이 달라 '해외경비정산' 메뉴에서 별도 처리해주셔야 해요. 출장비 규정 문서도 함께 보여드릴까요?"
-· 출처: 경비처리규정 5.3조 · 출장비 규정 연계
-
-──────────────────────────────────────────────────────
-[3] 사내 도입 효과 및 담당자 피드백
-──────────────────────────────────────────────────────
-✔ 인사/총무팀 반복 문의 82% 감소 (경비처리, 연차 잔여일, 재택 신청 방법)
-✔ 직원 답변 대기 시간: 평균 4시간 -> 즉시(1초 이내)
-✔ 규정 조항 링크 직접 제공으로 규정 오해 및 정산 반려율 65% 개선
-`
-      },
-      {
-        id: 'cst-2',
-        client: 'IT·이커머스 스타트업 G사',
-        title: '업무용 문서 자동 정리 및 요약 연결',
-        tabLabel: '업무 문서 자동 요약 연결',
-        duration: '의뢰 후 2일 이내',
-        result: '회의록·보고서 업로드 즉시 핵심 요약 + 액션 아이템 + 담당자 자동 추출',
-        summary: '회의록 녹음/문서 또는 사업 보고서를 전용 보관함에 업로드하면 AI가 핵심 요약 3줄, 담당자별 마감기한이 지정된 액션 아이템, 검색용 키워드 태그를 자동으로 추출하여 노션/슬랙에 연동되는 자동화 파이프라인을 구축했습니다.',
-        tags: ['문서요약', '업무자동화', '액션아이템', '회의록정리'],
-        deliverable: 'AI 문서 자동 정리 시스템 및 워크플로우 명세서',
-        image: csDocumentAutoSummaryImg,
-        imageAlt: 'AI 문서 자동 정리 실무 산출물 (9월 마케팅 전략 회의록 요약)',
-        galleryImages: [
-          {
-            url: csDocumentAutoSummaryImg,
-            title: 'AI 문서 자동 정리 콘솔',
-            pageLabel: '고해상도 실무 산출물'
-          }
-        ],
-        originalDocumentMeta: {
-          recipient: '마케팅총괄팀 및 전략기획실',
-          sender: '트렌드24 AI 업무자동화 엔지니어링팀 (summary@trend24.co.kr · 02-1234-5678)',
-          docTypeBadge: 'AI 문서 자동 정리 워크플로우',
-          docDate: '2026.09.23 최종 배포',
-          securityLevel: '사내 업무 자동화 완료본'
-        },
-        originalText: `[AI 문서 자동 정리 및 회의록 분석 시스템 명세서]
-
-■ 시스템 개요
-· 솔루션: AI 문서 자동 정리 (Document Auto-Summary Studio · 트렌드24 업무대행)
-· 연동 워크플로우: Google Drive/Dropbox 업로드 ➔ AI 분석 엔진 ➔ Slack/Notion 자동 기록
-· 처리 완료 문서: 4건 (2026.09.23 기준)
-  1) [회의록] 9월 마케팅 전략 회의록 (2026.09.18) - 자동 요약 완료
-  2) [보고서·기획안] Q3 콘텐츠 기획안 (2026.09.15)
-  3) [회의록] 신제품 런칭 회의록 (2026.09.10)
-  4) [보고서·기획안] 4분기 사업 계획 보고서 (2026.09.02)
-
-──────────────────────────────────────────────────────
-[1] 선택 문서 상세: 9월 마케팅 전략 회의록
-──────────────────────────────────────────────────────
-· 파일명: 9월_마케팅전략회의_recording.docx
-· 문서 분량: 3페이지 (녹음 전사 원문 기준 42분 분량)
-· 회의 참석자: 총 5명 (마케팅팀장, 퍼포먼스마케터 2명, 콘텐츠에디터, 디자이너)
-· 처리 상태: 자동 요약 완료 (처리 소요: 18초)
-
-──────────────────────────────────────────────────────
-[2] AI 자동 발췌 핵심 요약 (Key Takeaways)
-──────────────────────────────────────────────────────
-• 4분기 마케팅 예산을 15% 증액해 인플루언서 협업을 확대하기로 결정
-• 신규 채널로 유튜브 숏폼 콘텐츠를 주 2회 업로드하기로 시작
-• 기존 블로그 SEO 키워드 전략은 유지하되, 10월부터 A/B 테스트 진행
-
-──────────────────────────────────────────────────────
-[3] 자동 배정 액션 아이템 (Action Items & Assignees)
-──────────────────────────────────────────────────────
-□ 인플루언서 리스트업 및 1차 컨택
-  - 담당자: 김지수 (인플루언서 마케팅 파트)
-  - 마감일: ~9/25 (목) 18:00
-  - 비고: 뷰티/라이프스타일 마이크로 인플루언서 30인 리스트업
-
-□ 유튜브 숏폼 기획안 초안 작성
-  - 담당자: 박서준 (콘텐츠 파트)
-  - 마감일: ~9/30 (화)
-  - 비고: 주 2회 릴스/쇼츠 업로드용 템플릿 및 촬영 콘티 구성
-
-□ 예산 증액안 대표 보고
-  - 담당자: 이민아 (마케팅 총괄)
-  - 마감일: ~9/22 (월)
-  - 비고: 15% 증액분(총 1,800만 원) 집행 계획 및 기대 ROI 시뮬레이션 첨부
-
-──────────────────────────────────────────────────────
-[4] 메타데이터 및 키워드 태그
-──────────────────────────────────────────────────────
-· 추천 태그: #마케팅전략 #인플루언서 #유튜브숏폼 #예산 #4분기
-· 연동 대상: Notion 마케팅 회의록 DB, Slack #mktg-ops 자동 스레드 알림
-
-──────────────────────────────────────────────────────
-[5] 자동화 도입 성과
-──────────────────────────────────────────────────────
-✔ 회의 종료 후 수기 회의록 작성 시간: 건당 50분 -> 0분 (완전 자동화)
-✔ 누락되던 액션 아이템 이행률: 68% -> 96% 달성
-✔ 슬랙 채널 내 자동 요약본 공유로 유관 부서 싱크 시간 70% 단축
-`
-      },
-      {
-        id: 'cst-3',
-        client: '종합 마케팅 대행사 V사',
-        title: '업무에 바로 쓰는 AI 프롬프트 모음 제작',
-        tabLabel: '실무 AI 프롬프트 모음',
-        duration: '의뢰 후 2일 이내',
-        result: '보고서·메일·아이디어 3개 카테고리 12종 실무 즉시 사용형 프롬프트 구축',
-        summary: '주간 업무보고서 초안, 데이터 기반 보고서 요약, 프로젝트 진행 상황 보고 등 매일 쓰이는 보고서/이메일/기획 업무에 바로 복사해 쓸 수 있는 맞춤형 비즈니스 프롬프트 12종 라이브러리를 기획 및 배포했습니다.',
-        tags: ['프롬프트정리', 'AI활용법', '업무가이드', '보고서자동화'],
-        deliverable: 'AI 프롬프트 라이브러리 플레이북 (12종 템플릿 모음)',
-        image: csPromptPlaybookLibraryImg,
-        imageAlt: 'AI 프롬프트 라이브러리 실무 산출물 (보고서 작성 3종 프롬프트 콘솔)',
-        galleryImages: [
-          {
-            url: csPromptPlaybookLibraryImg,
-            title: 'AI 프롬프트 라이브러리 콘솔',
-            pageLabel: '고해상도 실무 산출물'
-          }
-        ],
-        originalDocumentMeta: {
-          recipient: 'V사 전 임직원 및 기획마케팅본부',
-          sender: '트렌드24 AI 프롬프트 엔지니어링팀 (prompt@trend24.co.kr · 02-1234-5678)',
-          docTypeBadge: 'AI 프롬프트 플레이북',
-          docDate: '2026.09.23 최종 배포',
-          securityLevel: '사내 전 부서 공용본'
-        },
-        originalText: `[V사 실무 맞춤형 AI 프롬프트 라이브러리 플레이북 (총 12종)]
-
-■ 시스템 개요
-· 솔루션: AI 프롬프트 라이브러리 (Prompt Playbook · 트렌드24 업무대행)
-· 등록 현황: 3개 카테고리 총 12개 프롬프트 등록 완료 (2026.09.23)
-  1) 보고서 작성 (4종)
-  2) 메일 작성 (4종)
-  3) 아이디어 작성 (4종)
-· 활용 가이드: "💡 부분만 상황에 맞게 바꿔서 바로 사용하세요."
-· 지원 도구: ChatGPT, Claude, Gemini, Notion AI, 사내 AI 챗봇 공용
-
-──────────────────────────────────────────────────────
-[1] 대표 카테고리: 보고서 작성 프롬프트 (주요 3종 전문)
-──────────────────────────────────────────────────────
-
-[프롬프트 1] 주간 업무 보고서 초안
-------------------------------------------------------
-(프롬프트 본문)
-이번 주 업무 내용을 바탕으로 상사에게 보고할 주간 업무보고서를 작성해줘.
-[진행업무 / 주요성과 / 다음주계획] 순서로, 간결한 비즈니스 톤으로 작성해줘.
-
-업무 내용:
-[이곳에 이번 주 진행한 업무 메모 및 수치를 입력하세요]
-------------------------------------------------------
-· 추천 활용처: 금요일 주간 보고, 팀 주간 회의 사전 배포 자료
-
-
-[프롬프트 2] 데이터 기반 보고서 요약
-------------------------------------------------------
-(프롬프트 본문)
-아래 데이터를 분석해서 핵심 인사이트 3가지와 시사점을 담은 보고서 요약문을 작성해줘.
-숫자는 근거로 인용하고, 경영진이 바로 파악할 수 있게 간결하게 써줘.
-
-데이터:
-[이곳에 매출, 광고 성과, 유입 통계, 설문 결과 등 원시 데이터를 입력하세요]
-------------------------------------------------------
-· 추천 활용처: 월간 실적 리뷰, 경영진 대상 1페이지 원페이저 요약
-
-
-[프롬프트 3] 프로젝트 진행 상황 보고
-------------------------------------------------------
-(프롬프트 본문)
-아래 프로젝트 진행 상황을 팀장에게 보고하는 형식으로 정리해줘.
-[현재 진행률 / 이슈 및 리스크 / 필요한 지원사항] 순서로, 문제 상황은 숨기지 말고 명확하게 짚어줘.
-
-프로젝트 정보:
-[이곳에 프로젝트 마일스톤, 진행 단계, 발생 이슈를 입력하세요]
-------------------------------------------------------
-· 추천 활용처: 마일스톤 점검, 긴급 이슈 발생 시 상위자 에스컬레이션 보고
-
-──────────────────────────────────────────────────────
-[2] 기타 카테고리 프롬프트 목록 요약
-──────────────────────────────────────────────────────
-■ 메일 작성 (4종)
-· 정중한 거절 및 대안 제시 메일 (파트너사/클라이언트용)
-· 프로젝트 킥오프 및 일정 공유 안내 메일
-· 견적서 송부 및 검토 요청 메일
-· 피드백 독촉 및 회신 기한 안내 리마인더 메일
-
-■ 아이디어 작성 (4종)
-· 신규 캠페인 타깃별 후킹 카피라이팅 10선 도출
-· 숏폼 영상(릴스/쇼츠) 1분 기획안 및 오프닝 후크 브레인스토밍
-· 프로모션 이벤트 콘셉트 및 네이밍 5종 제안
-· 고객 인터뷰 및 설문조사 핵심 질문지 설계
-
-──────────────────────────────────────────────────────
-[3] 사내 적용 성과 및 피드백
-──────────────────────────────────────────────────────
-✔ 보고서 초안 작성 시간 60% 단축 (평균 45분 -> 15분)
-✔ 부서 간 비즈니스 커뮤니케이션 톤앤매너 표준화 달성
-✔ 신규 입사자 사내 업무 문서 작성 적응 기간 2주 -> 3일로 단축
-`
-      }
-    ],
-    detailedTasks: [
-      '사내 규정 및 업무 매뉴얼 기반 사내 챗봇 기본 세팅',
-      '자주 쓰는 업무용 AI 프롬프트(보고서, 이메일, 요약) 모음 제작',
-      '구글 시트 및 노션 업무 자동화(새 글 등록 시 알림 등) 연동',
-      '사내 AI 활용을 위한 실무 활용 가이드 및 템플릿 제공'
-    ],
-    turnaroundTime: '협의 (평균 2~4일)',
-    deliverableSample: '사내 챗봇 세팅 가이드, 업무용 프롬프트 모음집'
-  },
-  {
-    id: 'web',
-    number: '07',
-    categoryCode: 'WEB & DESIGN SUPPORT',
-    name: '랜딩페이지 및 디자인',
-    description: '서비스 소개 랜딩페이지, 상품 상세페이지 기획/디자인, 이벤트 배너 제작',
-    tags: ['랜딩페이지', '상세페이지', '배너 디자인', '웹페이지'],
-    icon: 'Code2',
-    colorClass: 'indigo-600',
-    previewImage: webMoveStudioLandingDesktopImg,
-    previewImageAlt: 'MOVE STUDIO 반응형 브랜드 소개 및 프로모션 랜딩페이지',
+    categoryCode: 'WEB & E-COMMERCE',
+    name: '사이트 제작',
+    description: '기업 공식 브랜드 홈페이지, 반응형 랜딩페이지, 네이버 스마트스토어 및 카페24 쇼핑몰 제작 및 오픈',
+    tags: ['기업홈페이지', '쇼핑몰제작', '스마트스토어', '반응형웹', '웹퍼블리싱', '결제연동'],
+    icon: 'Globe',
+    colorClass: 'emerald-600',
+    previewImage: stemblissDesktopSlide,
+    previewImageAlt: 'STEMBLISS 스템블리스 프리미엄 메디컬 플랫폼 공식 반응형 웹사이트 산출물',
     portfolioExample: {
       id: 'web-1',
-      client: '피트니스·필라테스 브랜드 MOVE STUDIO',
-      title: '서비스 소개 및 프로모션 랜딩페이지 제작',
-      tabLabel: '반응형 프로모션 랜딩페이지',
-      duration: '의뢰 후 3일 이내',
-      result: 'PC 및 모바일 완벽 대응 반응형 브랜드 소개 & 오픈 프로모션 랜딩페이지 런칭',
-      summary: '강남점 신규 오픈에 맞춰 6인 소그룹 케어, 초보자 맞춤 커리큘럼, 간편 앱 예약 등 핵심 차별점을 직관적인 일러스트와 수치 통계, 수강 후기, 프로모션 혜택과 결합한 고전환 반응형 랜딩페이지를 기획 및 퍼블리싱했습니다.',
-      deliverable: 'PC/모바일 반응형 웹 퍼블리싱 소스코드 및 Figma 디자인 원본',
-      image: webMoveStudioLandingDesktopImg,
-      imageAlt: 'MOVE STUDIO 반응형 브랜드 소개 및 프로모션 랜딩페이지 산출물',
-      galleryImages: [
-        {
-          url: webMoveStudioLandingDesktopImg,
-          title: 'PC 데스크톱 반응형 웹 랜딩페이지',
-          pageLabel: 'PC 데스크톱 뷰'
-        },
-        {
-          url: webMoveStudioLandingMobileImg,
-          title: '모바일 스마트폰 반응형 웹 랜딩페이지',
-          pageLabel: '모바일 반응형 뷰'
-        }
-      ],
-      originalDocumentMeta: {
-        recipient: '무브스튜디오 강남본점 마케팅사업부',
-        sender: '트렌드24 웹 & 랜딩페이지 기획디자인팀 (web@trend24.co.kr · 02-1234-5678)',
-        docTypeBadge: '반응형 웹 랜딩페이지 기획·디자인 명세서',
-        docDate: '2026.09.23 최종 배포',
-        securityLevel: '온라인 공식 배포본'
-      },
-      originalText: `[MOVE STUDIO 반응형 브랜드 소개 및 신규 오픈 프로모션 랜딩페이지 기획서]
-
-■ 프로젝트 개요
-· 브랜드명: MOVE STUDIO (무브스튜디오)
-· 페이지 성격: 브랜드 가치 전달 및 신규 오픈 체험수업 예약 전환용 랜딩페이지
-· 지원 디바이스: PC 데스크톱, 태블릿, 모바일 스마트폰 100% 반응형 웹 (Responsive Web)
-· 주요 컬러 팔레트: 테라코타 번트 오렌지(#c25737), 웜 크림(#fcfbf9), 세이지 그린(#78a57e)
-
-──────────────────────────────────────────────────────
-[1] 헤더 및 내비게이션 (Navigation Bar)
-──────────────────────────────────────────────────────
-· 로고: MOVE STUDIO (미니멀 볼드 타이포그래피)
-· 메뉴 구성: 스튜디오 소개 | 클래스 | 가격 | 오시는 길
-· 헤더 CTA: [체험 예약하기] (신규 회원 유입 원클릭 유도)
-
-──────────────────────────────────────────────────────
-[2] 히어로 섹션 (Hero Section)
-──────────────────────────────────────────────────────
-· 뱃지: [강남점 신규 OPEN] (테라코타 틴트 뱃지)
-· 메인 헤드라인:
-  "몸이 편해지는 필라테스, 무브스튜디오에서 시작하세요"
-· 서브 카피:
-  "최대 6인 소그룹, 강사가 자세 하나하나 봐주는 맞춤형 필라테스 · 그룹핏 스튜디오"
-· CTA 버튼 듀얼 액션:
-  - [체험수업 예약하기] (주요 전환 버튼)
-  - [클래스 둘러보기] (탐색형 보조 버튼)
-· 키 비주얼 아트워크:
-  - 유기적인 필라테스 스트레칭 인체 그래픽 & 피치/코랄/세이지 그린 감성 오브제
-
-──────────────────────────────────────────────────────
-[3] 신뢰도 구축 통계 바 (Social Proof Metrics)
-──────────────────────────────────────────────────────
-1) 1,200+ : 누적 수강생
-2) 4.9 / 5 : 평균 수업 만족도 (5점 만점 기준)
-3) 500h+ : 전 강사 자격 인증 및 티칭 이수 시간
-
-──────────────────────────────────────────────────────
-[4] 핵심 차별점 3대 강점 (Key Features)
-──────────────────────────────────────────────────────
-■ 섹션 타이틀: "왜 무브스튜디오인가요"
-1) 최대 6인 소그룹 케어
-   - "인원이 적어서 강사님이 자세 하나하나 직접 봐드려요. 혼자 하는 것보다 더 정확하게 배울 수 있습니다."
-2) 초보자 맞춤 커리큘럼
-   - "필라테스가 처음이어도 괜찮아요. 레벨별 클래스로 기초부터 차근차근 따라올 수 있게 구성했습니다."
-3) 앱으로 간편 예약
-   - "수업 예약, 변경, 취소까지 앱에서 몇 초면 끝나요. 잔여 좌석도 실시간으로 확인할 수 있습니다."
-
-──────────────────────────────────────────────────────
-[5] 신규 오픈 프로모션 배너 (Promotion Banner)
-──────────────────────────────────────────────────────
-· 기간/조건: 신규 오픈 기념 혜택 · 10월 31일까지
-· 혜택 타이틀: "체험 수업 1회 무료 + 3개월 등록 시 15% 할인"
-· 액션 버튼: [혜택 받기] (전환율 극대화 강조 배너)
-
-──────────────────────────────────────────────────────
-[6] 실제 수강생 생생 후기 (Verified Reviews)
-──────────────────────────────────────────────────────
-■ 수강생 J님 (3개월 수강) ★★★★★
-  "인원이 적으니까 자세 교정을 매번 받을 수 있어서 좋아요. 허리 통증이 확실히 줄었습니다."
-■ 수강생 M님 (6개월 수강) ★★★★★
-  "운동 처음인데도 전혀 부담 없었어요. 앱 예약도 편하고 시간 맞추기 좋아서 꾸준히 다니게 돼요."
-
-──────────────────────────────────────────────────────
-[7] 푸터 및 컨택 (Footer & Location)
-──────────────────────────────────────────────────────
-· 브랜드: MOVE STUDIO
-· 운영 시간: 강남점 · 평일 07:00~22:00 · 주말 09:00~18:00
-· 대표 문의: 02-0000-0000
-· 하단 고정 CTA: [체험 예약하기]
-
-──────────────────────────────────────────────────────
-[8] 오픈 런칭 성과 및 전환 지표
-──────────────────────────────────────────────────────
-✔ 모바일 유입 비율 84.6%에서 이탈률 28% 미만 유지 (초기 대비 42% 개선)
-✔ 방문자 대비 체험수업 예약 전환율(CVR): 14.8% 달성
-✔ 오픈 2주 만에 1차 강남점 6인 소그룹 정원 90% 마감
-`
+      client: '글로벌 메디컬 플랫폼 스템블리스 (STEMBLISS)',
+      title: '반응형 프리미엄 글로벌 메디컬 플랫폼 공식 홈페이지 구축',
+      tabLabel: '반응형 공식 홈페이지',
+      liveUrl: 'https://stembliss.kr/',
+      duration: '기획·퍼블리싱 4일 이내',
+      result: 'PC·모바일 완벽 반응형 구현 & 외국인 환자 온라인 의료 상담 파이프라인 완비',
+      summary: '신뢰도 높은 의료 접근성을 위해 글로벌 환자와 국내 검증된 전문 의료기관을 연결하는 프리미엄 메디컬 플랫폼 스템블리스(STEMBLISS)의 공식 반응형 홈페이지를 기획 및 구축했습니다. 20년 임상 철학을 담은 브랜드 스토리, 맞춤형 케어 프로세스, 12개 이상 검증 협력 병원 네트워크, 1:1 상담 예약 폼을 직관적인 UI/UX로 구현했습니다.',
+      deliverable: '반응형 공식 웹사이트 풀스택 구축, 글로벌 SEO 최적화, 도메인(stembliss.kr) 연결 및 호스팅 배포 완료',
+      image: stemblissDesktopSlide,
+      imageAlt: 'STEMBLISS 스템블리스 공식 반응형 홈페이지 구축 산출물'
     },
     portfolioCases: [
       {
         id: 'web-1',
-        client: '피트니스·필라테스 브랜드 MOVE STUDIO',
-        title: '서비스 소개 및 프로모션 랜딩페이지 제작',
-        tabLabel: '반응형 프로모션 랜딩페이지',
-        duration: '의뢰 후 3일 이내',
-        result: 'PC 및 모바일 완벽 대응 반응형 브랜드 소개 & 오픈 프로모션 랜딩페이지 런칭',
-        summary: '강남점 신규 오픈에 맞춰 6인 소그룹 케어, 초보자 맞춤 커리큘럼, 간편 앱 예약 등 핵심 차별점을 직관적인 일러스트와 수치 통계, 수강 후기, 프로모션 혜택과 결합한 고전환 반응형 랜딩페이지를 기획 및 퍼블리싱했습니다.',
-        tags: ['랜딩페이지', '웹페이지제작', '모바일반응형', '프로모션', '브랜드소개'],
-        deliverable: 'PC/모바일 반응형 웹 퍼블리싱 소스코드 및 Figma 디자인 원본',
-        image: webMoveStudioLandingDesktopImg,
-        imageAlt: 'MOVE STUDIO 반응형 브랜드 소개 및 프로모션 랜딩페이지 산출물',
+        client: '글로벌 메디컬 플랫폼 스템블리스 (STEMBLISS)',
+        title: '반응형 프리미엄 글로벌 메디컬 플랫폼 공식 홈페이지 구축',
+        tabLabel: '반응형 공식 홈페이지',
+        liveUrl: 'https://stembliss.kr/',
+        duration: '기획·퍼블리싱 4일 이내',
+        result: 'PC/모바일 완벽 호환 및 글로벌 환자 온라인 의료 상담 파이프라인 가동',
+        summary: '신뢰도 높은 의료 접근성을 위해 글로벌 환자와 국내 검증된 전문 의료기관을 연결하는 프리미엄 메디컬 플랫폼 스템블리스(STEMBLISS)의 공식 반응형 홈페이지를 기획 및 구축했습니다. 20년 임상 철학을 담은 브랜드 스토리, 맞춤형 케어 프로세스, 12개 이상 검증 협력 병원 네트워크, 1:1 상담 예약 폼을 직관적인 UI/UX로 구현했습니다.',
+        tags: ['기업공식홈페이지', '반응형웹', '메디컬플랫폼', '모바일최적화', '글로벌SEO', '실시간상담접수'],
+        deliverable: '반응형 웹 풀스택 구축 소스, 글로벌 SEO 최적화, 실도메인(stembliss.kr) 연결 및 호스팅 배포 완료',
+        image: stemblissDesktopSlide,
+        imageAlt: 'STEMBLISS 스템블리스 반응형 글로벌 메디컬 플랫폼 공식 웹사이트 산출물',
         galleryImages: [
           {
-            url: webMoveStudioLandingDesktopImg,
-            title: 'PC 데스크톱 반응형 웹 랜딩페이지',
-            pageLabel: 'PC 데스크톱 뷰'
+            url: stemblissDesktopSlide,
+            title: '1p PC 데스크톱 반응형 뷰 (1440px 와이드 & 실시간 stembliss.kr 도메인 가동)',
+            pageLabel: '1p PC 데스크톱 뷰'
           },
           {
-            url: webMoveStudioLandingMobileImg,
-            title: '모바일 스마트폰 반응형 웹 랜딩페이지',
-            pageLabel: '모바일 반응형 뷰'
+            url: stemblissMobileSlide,
+            title: '2p 모바일 스마트폰 세로형 반응형 뷰 (터치 최적화 Thumb-Zone & 1초 빠른 상담 신청)',
+            pageLabel: '2p 모바일 반응형 뷰'
+          },
+          {
+            url: stemblissStoryNetworkSlide,
+            title: '3p 20년 임상 스토리 & 검증된 12대 전문의료기관 네트워크 (KMI·한양대·신촌다인·고려대의료원 등)',
+            pageLabel: '3p 스토리·네트워크'
+          },
+          {
+            url: stemblissSpecsSlide,
+            title: '4p 반응형 웹사이트 구축 납품 명세서 & 정량 성과 지표 (성과 지표 및 실시간 가동 현황)',
+            pageLabel: '4p 구축 명세서'
           }
         ],
         originalDocumentMeta: {
-          recipient: '무브스튜디오 강남본점 마케팅사업부',
-          sender: '트렌드24 웹 & 랜딩페이지 기획디자인팀 (web@trend24.co.kr · 02-1234-5678)',
-          docTypeBadge: '반응형 웹 랜딩페이지 기획·디자인 명세서',
-          docDate: '2026.09.23 최종 배포',
-          securityLevel: '온라인 공식 배포본'
+          recipient: '(주)스템블리스 글로벌 메디컬 플랫폼 사업부',
+          sender: 'AI비서 웹 & 플랫폼 개발팀',
+          subject: '[웹사이트 제작] 스템블리스 공식 반응형 글로벌 메디컬 플랫폼 웹사이트 개발 및 배포 명세서',
+          docDate: '2026.04 최종 배포 (실시간 정상 가동 중)',
+          docTypeBadge: '반응형 공식 웹사이트 구축 명세서',
+          attachments: [
+            '반응형 웹 퍼블리싱 소스코드 원본',
+            '글로벌 SEO 메타태그 설정 가이드',
+            'WPForms 1:1 상담 예약 연동 매뉴얼',
+            'SSL 256-bit 보안인증서 적용 확인서'
+          ]
         },
-        originalText: `[MOVE STUDIO 반응형 브랜드 소개 및 신규 오픈 프로모션 랜딩페이지 기획서]
+        originalText: `[STEMBLISS(스템블리스) 공식 반응형 웹사이트 구축 프로젝트 명세서]
 
-■ 프로젝트 개요
-· 브랜드명: MOVE STUDIO (무브스튜디오)
-· 페이지 성격: 브랜드 가치 전달 및 신규 오픈 체험수업 예약 전환용 랜딩페이지
-· 지원 디바이스: PC 데스크톱, 태블릿, 모바일 스마트폰 100% 반응형 웹 (Responsive Web)
-· 주요 컬러 팔레트: 테라코타 번트 오렌지(#c25737), 웜 크림(#fcfbf9), 세이지 그린(#78a57e)
+1. 프로젝트 개요
+· 사이트 명칭: 스템블리스 (STEMBLISS) - Premium Medical Platform
+· 공식 도메인: https://stembliss.kr/
+· 프로젝트 성격: 글로벌 환자와 국내 검증된 상급 전문의료기관을 1:1 연결하는 프리미엄 메디컬 플랫폼 공식 반응형 웹사이트
+· 기획 방향: "검증되지 않은 시술과 불법 중개를 철저히 배제하고, 환자의 안전과 신뢰를 지키는 의료의 본질에 집중"
 
-──────────────────────────────────────────────────────
-[1] 헤더 및 내비게이션 (Navigation Bar)
-──────────────────────────────────────────────────────
-· 로고: MOVE STUDIO (미니멀 볼드 타이포그래피)
-· 메뉴 구성: 스튜디오 소개 | 클래스 | 가격 | 오시는 길
-· 헤더 CTA: [체험 예약하기] (신규 회원 유입 원클릭 유도)
+2. 반응형 디바이스 뷰포트 지원
+· PC 데스크톱 (1440px 이상): 와이드 히어로 비주얼, 20년 임상 철학 인포그래픽, 12대 병원 네트워크 그리드
+· 태블릿 (768px ~ 1024px): 2열 그리드 유동형 레이아웃 및 햄버거 메뉴 자동 전환
+· 모바일 스마트폰 (375px ~ 430px): 한 손 조작 엄지존(Thumb-Zone) 내 원클릭 'Start Consultation' CTA 배치, 초고속 1.2초 로딩
 
-──────────────────────────────────────────────────────
-[2] 히어로 섹션 (Hero Section)
-──────────────────────────────────────────────────────
-· 뱃지: [강남점 신규 OPEN] (테라코타 틴트 뱃지)
-· 메인 헤드라인:
-  "몸이 편해지는 필라테스, 무브스튜디오에서 시작하세요"
-· 서브 카피:
-  "최대 6인 소그룹, 강사가 자세 하나하나 봐주는 맞춤형 필라테스 · 그룹핏 스튜디오"
-· CTA 버튼 듀얼 액션:
-  - [체험수업 예약하기] (주요 전환 버튼)
-  - [클래스 둘러보기] (탐색형 보조 버튼)
-· 키 비주얼 아트워크:
-  - 유기적인 필라테스 스트레칭 인체 그래픽 & 피치/코랄/세이지 그린 감성 오브제
+3. 탑재 핵심 섹션 및 기능
+· Header: 글로벌 네비게이션 (Story, Care, Journey, Leadership, Network, Contact) & 상담 CTA 버튼
+· Hero: "Trusted Medical Access to Korea" 신뢰 중심 메시지 및 대표 임상 키비주얼
+· Why We Started: 20년간 임상 현장에서 환자를 만나며 느낀 시장 왜곡을 바로잡는 브랜드 철학
+· How We Care: 3대 케어 원칙 (1. Personalized Planning / 2. Safe & Verified Process / 3. Integrated Care)
+· The Standards We Hold: 대한민국 의료법 100% 준수, 안전 최우선, 불법 수수료 배제 선언
+· Verified Partner Network: KMI 한국의학연구소, 한양대학교병원, 고려대학교의료원, 신촌 다인 치과병원, 리앤장, 큐에이성형외과, 바이오페이스 등
+· 1:1 Online Consultation: 글로벌 환자 맞춤형 문의 접수 및 개인정보 암호화 파이프라인
 
-──────────────────────────────────────────────────────
-[3] 신뢰도 구축 통계 바 (Social Proof Metrics)
-──────────────────────────────────────────────────────
-1) 1,200+ : 누적 수강생
-2) 4.9 / 5 : 평균 수업 만족도 (5점 만점 기준)
-3) 500h+ : 전 강사 자격 인증 및 티칭 이수 시간
-
-──────────────────────────────────────────────────────
-[4] 핵심 차별점 3대 강점 (Key Features)
-──────────────────────────────────────────────────────
-■ 섹션 타이틀: "왜 무브스튜디오인가요"
-1) 최대 6인 소그룹 케어
-   - "인원이 적어서 강사님이 자세 하나하나 직접 봐드려요. 혼자 하는 것보다 더 정확하게 배울 수 있습니다."
-2) 초보자 맞춤 커리큘럼
-   - "필라테스가 처음이어도 괜찮아요. 레벨별 클래스로 기초부터 차근차근 따라올 수 있게 구성했습니다."
-3) 앱으로 간편 예약
-   - "수업 예약, 변경, 취소까지 앱에서 몇 초면 끝나요. 잔여 좌석도 실시간으로 확인할 수 있습니다."
-
-──────────────────────────────────────────────────────
-[5] 신규 오픈 프로모션 배너 (Promotion Banner)
-──────────────────────────────────────────────────────
-· 기간/조건: 신규 오픈 기념 혜택 · 10월 31일까지
-· 혜택 타이틀: "체험 수업 1회 무료 + 3개월 등록 시 15% 할인"
-· 액션 버튼: [혜택 받기] (전환율 극대화 강조 배너)
-
-──────────────────────────────────────────────────────
-[6] 실제 수강생 생생 후기 (Verified Reviews)
-──────────────────────────────────────────────────────
-■ 수강생 J님 (3개월 수강) ★★★★★
-  "인원이 적으니까 자세 교정을 매번 받을 수 있어서 좋아요. 허리 통증이 확실히 줄었습니다."
-■ 수강생 M님 (6개월 수강) ★★★★★
-  "운동 처음인데도 전혀 부담 없었어요. 앱 예약도 편하고 시간 맞추기 좋아서 꾸준히 다니게 돼요."
-
-──────────────────────────────────────────────────────
-[7] 푸터 및 컨택 (Footer & Location)
-──────────────────────────────────────────────────────
-· 브랜드: MOVE STUDIO
-· 운영 시간: 강남점 · 평일 07:00~22:00 · 주말 09:00~18:00
-· 대표 문의: 02-0000-0000
-· 하단 고정 CTA: [체험 예약하기]
-
-──────────────────────────────────────────────────────
-[8] 오픈 런칭 성과 및 전환 지표
-──────────────────────────────────────────────────────
-✔ 모바일 유입 비율 84.6%에서 이탈률 28% 미만 유지 (초기 대비 42% 개선)
-✔ 방문자 대비 체험수업 예약 전환율(CVR): 14.8% 달성
-✔ 오픈 2주 만에 1차 강남점 6인 소그룹 정원 90% 마감
-`
+4. 성과 및 납품 결과
+· PC/모바일 100% 크로스 브라우징 및 반응형 호환성 달성
+· 모바일 페이지 로딩 속도 1.2초 (WebP 이미지 최적화 및 지연 로딩)
+· 실시간 운영 도메인 https://stembliss.kr/ 연결 및 SSL Let's Encrypt 256-bit 보안 배포 완료`
       },
       {
         id: 'web-2',
-        client: '뷰티·스킨케어 디바이스 브랜드 글로우빔(GlowBeam)',
-        title: '상품 상세페이지 기획 및 디자인',
-        tabLabel: '고전환 이커머스 상세페이지',
-        duration: '의뢰 후 3일 이내',
-        result: 'AI 추천 7단계 구조 기반 32% 할인가 런칭 상세페이지 완성 및 스마트스토어/자사몰 배포',
-        summary: 'LED 스킨케어 미니 디바이스의 후킹 헤드카피, 3파장 컬러 테라피 특장점, 4대 핵심 기능 아이콘, 2주 임상 비주얼, 제원표 및 안심 보증 안내까지 모바일 스크롤에 최적화된 고전환 7단계 상세페이지를 기획·제작했습니다.',
-        tags: ['상세페이지', '이커머스디자인', '스마트스토어', '제품기획', '모바일최적화'],
-        deliverable: '모바일 세로형 상세페이지 디자인 원본(Figma) 및 웹용 슬라이스 WebP/PNG',
-        image: webGlowbeamDetailpageStudioImg,
-        imageAlt: '글로우빔 LED 스킨케어 디바이스 상세페이지 기획 및 디자인 산출물',
+        client: '스마트 테크 기어 & 셀렉트샵 BT24 STORE',
+        title: '네이버 스마트스토어 온라인 쇼핑몰 구축 & NPay 간편결제 연동',
+        tabLabel: '온라인 쇼핑몰 (BT24 스토어)',
+        liveUrl: 'https://smartstore.naver.com/bt24store',
+        duration: '기획·입점·디자인 4일 이내',
+        result: 'PC·모바일 반응형 완벽 구현 & NPay 1초 결제 및 쇼핑 검색 상위노출 94.6% 달성',
+        summary: 'GAMESIR 8K 무선 게이밍 패드 및 바매니저 스마트 푸어러 등 스마트 테크 기어를 유통하는 셀렉트샵 BT24 STORE의 네이버 스마트스토어를 풀패키지로 기획 및 구축했습니다. PC/모바일 반응형 커스텀 스킨, 3초 후킹 고전환 상세페이지 4종, 네이버페이 간편결제, 네이버 톡톡 1:1 CS 연동 및 쇼핑 검색엔진 최적화(SEO)를 원스톱 완료했습니다.',
+        tags: ['네이버스마트스토어', '쇼핑몰제작', '네이버페이', '상세페이지디자인', '쇼핑SEO', '반응형커머스', '톡톡상담연동'],
+        deliverable: '스마트스토어 센터 관리자 환경 세팅, PC/모바일 반응형 디자인 스킨, 주력 상품 4종 상세페이지 원본, 네이버 쇼핑 검색 SEO 가이드',
+        image: bt24SmartstoreDesktopSlide,
+        imageAlt: 'BT24 STORE 네이버 스마트스토어 온라인 쇼핑몰 구축 산출물',
         galleryImages: [
           {
-            url: webGlowbeamDetailpageStudioImg,
-            title: 'AI 상세페이지 기획·디자인 스튜디오 콘솔',
-            pageLabel: '기획 & 실시간 프리뷰 뷰'
+            url: bt24SmartstoreDesktopSlide,
+            title: '1p PC 데스크톱 와이드 쇼핑몰 뷰 (1440px 네이버 스마트스토어 레이아웃 & 실시간 smartstore.naver.com/bt24store 도메인 가동)',
+            pageLabel: '1p PC 데스크톱 뷰'
           },
           {
-            url: webGlowbeamDetailpageLongImg,
-            title: '모바일 이커머스 상세페이지 전체 롱스크롤',
-            pageLabel: '모바일 상세페이지 풀뷰'
+            url: bt24SmartstoreMobileSlide,
+            title: '2p 모바일 스마트폰 세로형 반응형 뷰 (모바일 엄지존 NPay 1초 간편결제 & 터치 스와이프 기획전)',
+            pageLabel: '2p 모바일 반응형 뷰'
+          },
+          {
+            url: bt24SmartstoreCurationSlide,
+            title: '3p 고전환 상세페이지 7단계 설계 & 네이버페이 적립/마케팅 자동화 파이프라인 (구매 전환율 4.38% 달성)',
+            pageLabel: '3p 상세페이지·마케팅'
+          },
+          {
+            url: bt24SmartstoreSpecsSlide,
+            title: '4p 네이버 스마트스토어 온라인 쇼핑몰 구축 최종 납품 명세서 & 정량 성과 지표 (검수완료 승인필)',
+            pageLabel: '4p 구축 납품 명세서'
           }
         ],
         originalDocumentMeta: {
-          recipient: '글로우빔(GlowBeam) 이커머스 마케팅팀',
-          sender: '트렌드24 이커머스 상세페이지 기획디자인팀 (commerce@trend24.co.kr · 02-1234-5678)',
-          docTypeBadge: '이커머스 상품 상세페이지 기획 명세서',
-          docDate: '2026.09.23 최종 배포',
-          securityLevel: '온라인 판매 공식 런칭본'
+          recipient: 'BT24 STORE 이커머스 사업부 대표 및 운영팀 귀하',
+          sender: 'AI비서 이커머스 & 쇼핑몰 개발팀',
+          subject: '[쇼핑몰 구축] BT24 네이버 스마트스토어 풀패키지 제작 및 NPay·톡톡 연동 납품 명세서',
+          docDate: '2026.04 최종 검수 완료 (실시간 정상 운영 중)',
+          docTypeBadge: '네이버 스마트스토어 쇼핑몰 구축 명세서',
+          attachments: [
+            '스마트스토어 관리자 권한 인수인계서',
+            '상세페이지 PSD/Figma 디자인 원본',
+            '네이버 쇼핑 검색 SEO 키워드 태그 가이드',
+            '톡톡 마케팅 자동화 템플릿'
+          ]
         },
-        originalText: `[글로우빔(GlowBeam) LED 스킨케어 미니 디바이스 상품 상세페이지 기획·디자인 명세서]
+        originalText: `[BT24 STORE 네이버 스마트스토어 온라인 쇼핑몰 구축 프로젝트 명세서]
 
-■ 기획 개요
-· 브랜드명: 글로우빔 (GlowBeam)
-· 제품명: 글로우빔 미니 LED 스킨케어 디바이스 (GB-100)
-· 주요 타깃: 30~40대 홈케어 및 피부 탄력/진정 관심 여성 소비자
-· 판매 채널: 자사 공식 온라인몰, 네이버 스마트스토어, 카카오 쇼핑하기
-· 디자인 규격: 모바일 최적화 가로 860px 기준 고해상도 세로형 반응형 상세페이지
+1. 프로젝트 개요
+· 스토어 상호: BT24 STORE (비티이십사 스토어)
+· 공식 스토어 URL: https://smartstore.naver.com/bt24store
+· 프로젝트 성격: 스마트 테크 기어, 게이밍 기어, 홈 라이프스타일 셀렉트샵을 위한 네이버 스마트스토어 풀패키지 신규 구축 및 리뉴얼
+· 핵심 타겟 고객: 20~40대 스마트 테크 기기 애호가, PC 게이머, 홈텐딩·라이프스타일 굿즈 구매층
 
-──────────────────────────────────────────────────────
-[1] AI 추천 고전환 7단계 상세페이지 구성
-──────────────────────────────────────────────────────
-1단계: 후킹 헤드카피 + 핵심 소구 3가지 (첫 3초 이탈 방지)
-  - 뱃지: [BEST 1위]
-  - 카피: "하루 5분, 피부과 갈바닉 케어를 집에서 그대로"
-  - 서브: 3파장 컬러 테라피(레드·블루·옐로우)로 탄력부터 진정까지 원스톱 케어
-  - 가격 소구: 32% 파격 런칭 할인 (189,000원 -> 129,000원, 무료배송)
+2. 반응형 디바이스 레이아웃 설계
+· PC 데스크톱 (1440px): 
+  - 와이드 프로모션 히어로 배너 (GAMESIR 8K 천왕성 단독 특가)
+  - 카테고리 퀵 네비게이션: [전체상품] [게이밍 기어 8K] [스마트 바·홈] [모바일 테크] [핫딜·특가] [고객리뷰]
+  - 실시간 베스트셀러 4열 그리드 카드 및 실시간 구매평/NPay 적립율 뱃지
+· 모바일 스마트폰 (375px ~ 430px):
+  - 한 손 조작 엄지손가락 영역(Thumb-Zone)에 'NPay 1초 바로구매' 플로팅 바 배치
+  - 가로 터치 스와이프 롤링 배너 및 2열 최적화 상품 카드
+  - 네이버 톡톡 1:1 상담 챗봇 플로팅 버튼 연동
 
-2단계: 제품 이미지 갤러리 구성
-  - 고감도 뷰티 오브제 연출컷: 정면 각도, 인체공학적 그립컷, 전용 마그네틱 거치대 거치컷, 프리미엄 선물용 패키지
+3. 주력 상품 상세페이지 7단계 고전환 설계
+· 01. 첫 3초 후킹: 게이머의 고질적 고민(키 씹힘, 스틱 쏠림, 입력 지연) 공감 및 문제 해결 제시
+· 02. 움직이는 GIF 시연: 0.1ms 극초저지연 8000Hz 폴링레이트 & 홀 이펙트 마그네틱 센서 분해도 시각화
+· 03. 정밀 스펙 비교표: 타사 일반 1000Hz 패드 vs GAMESIR G7 Pro 정밀 비교 인포그래픽
+· 04. 소셜 프루프(Social Proof): 퀘이사존 실사용 인증 및 구매 고객 평점 4.92점 포토리뷰 99% 만족도
+· 05. 안심 신뢰 장치: 국내 KC 안전인증(R-R-BT2) 및 1년 무상 맞교환 A/S 보증서
+· 06. NPay 포인트 시뮬레이터: 기본적립 + N멤버십(최대 5%) + 포토리뷰(3,000P) 최대 체감가 53,810원 산출
+· 07. 오늘출발 배송 보증: 평일 15시 이전 주문 시 당일 출고 (우체국/CJ 빠른배송 연동)
 
-3단계: 핵심 기능 4종 직관적 아이콘 블록
-  - [✓ 저자극 인증]: 피부과 저자극 인체적용 테스트 완료, 민감성 피부 안심
-  - [⚡ 마그네틱 무선충전]: 전용 크래들 기본 동봉, 1회 완충 시 최대 20일 사용
-  - [🎛 3단계 강도 조절]: 원터치 직관적 강도 세팅, 피부 컨디션별 맞춤 제어
-  - [🛡 1년 무상 A/S]: 본사 직영 1:1 무상 교환 품질 보증
-
-4단계: Before / After 2주 사용 임상 비주얼
-  - 임상 지표: 피부 수분도 +48.2% 개선, 피부 광채 지수 +36.5% 향상
-  - 고객 체감 후기: "속당김이 눈에 띄게 완화되고 아침 화장 먹는 게 달라졌어요."
-
-5단계: 상세 제원 및 스펙 표 (Spec Sheet)
-  - 본체 규격: 42 × 42 × 165 mm / 초경량 85g
-  - 배터리: 800mAh 고효율 리튬이온
-  - 인증: KC 방송통신기자재 적합성평가 인증 완료
-
-6단계: 자주 묻는 질문 (FAQ)
-  - Q. 매일 사용해도 자극이 없나요? (A. 저자극 1단계 모드로 매일 5분 사용 권장)
-  - Q. 방수가 지원되나요? (A. 생활 방수 지원으로 젖은 타월로 간편 세척 가능)
-  - Q. 충전 방식은 어떻게 되나요? (A. 범용 USB Type-C 케이블 및 무선 거치대 지원)
-
-7단계: 구매 혜택 및 안심 보증 안내
-  - 런칭 특별 사은품: 전용 보관 벨벳 파우치 + 비타민C 앰플 1병 증정
-  - 구매 만족 보증: 14일 무료 체험 후 불만족 시 100% 환불 보장
-
-──────────────────────────────────────────────────────
-[2] 런칭 전환율 성과 지표
-──────────────────────────────────────────────────────
-✔ 상세페이지 체류 시간: 평균 42초 -> 2분 18초 (228% 증가)
-✔ 상세페이지 내 구매 전환율(CVR): 기존 유사 뷰티 디바이스 대비 3.8배 상승 (4.9% 기록)
-✔ 스마트스토어 뷰티 디바이스 카테고리 런칭 3일 만에 실시간 베스트 1위 달성
-`
+4. 정량 성과 지표
+· 쇼핑 검색 상위 노출률: 94.6% 달성 ('8K 게이밍패드' 키워드 1페이지 랭크인)
+· 런칭 2주차 구매 전환율(CVR): 4.38% (동일 카테고리 평균 1.5% 대비 2.9배 달성)
+· 스토어찜 & 소식알림 구독자: 오픈 30일 만에 12,840명 돌파
+· 네이버페이(NPay) 결제 비중: 88.5% (원클릭 결제로 주문 이탈률 62% 감소)
+· 실시간 운영 스토어: https://smartstore.naver.com/bt24store`
       },
       {
         id: 'web-3',
-        client: '라이프스타일 셀렉트샵 루미마켓(Lumi Market)',
-        title: '이벤트 홍보용 SNS 배너 및 팝업 제작',
-        tabLabel: '프로모션 배너 & 팝업 세트',
-        duration: '의뢰 후 24시간 이내',
-        result: '가을 시즌오프 50% SNS 정방형 배너 & 첫 구매 15% 쿠폰 웹 팝업 모달 제작 및 온사이트 배포',
-        summary: '가을 시즌오프 전 품목 최대 50% 할인 인스타그램 홍보 배너(1:1 정방형)와 신규 회원 가입 유도를 위한 웰컴 15% 할인쿠폰 웹 레이어 팝업 모달을 브랜드 톤앤매너에 맞춰 신속하게 기획·제작했습니다.',
-        tags: ['배너제작', 'SNS배너', '웹팝업', '시즌오프', '회원가입유도', '프로모션'],
-        deliverable: 'SNS 정방형 배너(1080x1080) & 웹사이트 레이어 팝업 모달 디자인 소스 및 WebP/PNG',
-        image: webLumiMarketSnsBannerImg,
-        imageAlt: '루미마켓 가을 시즌오프 프로모션 SNS 배너 및 웰컴 팝업 디자인 산출물',
+        client: '기업 실전 업무 대행 AI비서 (AI Assistant Corp)',
+        title: '원페이지 반응형 기업 공식 홈페이지 & 실시간 견적 산출 시스템',
+        tabLabel: '원페이지 기업 홈페이지 (AI비서)',
+        liveUrl: 'https://aiassistant.ai.kr/',
+        duration: '기획·퍼블리싱 3일 이내',
+        result: 'PC·모바일 완벽 반응형 구현 & 실시간 맞춤 견적기 탑재 및 상담 문의 340% 증가',
+        summary: '"AI를 배우지 마세요, 업무를 맡기세요"라는 핵심 슬로건을 바탕으로 기업 실전 업무 대행 올인원 솔루션을 제공하는 AI비서(AI Assistant Corp)의 공식 원페이지 반응형 웹사이트를 기획 및 구축했습니다. 스티키 글로벌 네비게이션, 6대 비즈니스 업무 영역 카드, 실시간 맞춤 견적 계산기, 4단계 프로세스, 고객사 포트폴리오 갤러리 모달, 원클릭 온라인 상담 폼을 직관적인 UI/UX로 구현했습니다.',
+        tags: ['원페이지웹사이트', '기업공식홈페이지', '실시간견적기', '반응형웹', 'SPA구축', '고전환랜딩페이지'],
+        deliverable: '반응형 원페이지 풀스택 소스코드, 실시간 견적 시뮬레이터 모듈, SSL 256-bit 보안 배포, 공식 도메인(aiassistant.ai.kr) 연결 완료',
+        image: aiassistantDesktopSlide,
+        imageAlt: 'AI비서 공식 원페이지 반응형 기업 홈페이지 구축 산출물',
         galleryImages: [
           {
-            url: webLumiMarketSnsBannerImg,
-            title: '가을 시즌오프 SNS 정방형 프로모션 배너 (1:1)',
-            pageLabel: 'SNS 프로모션 배너'
+            url: aiassistantDesktopSlide,
+            title: '1p PC 데스크톱 와이드 원페이지 뷰 (1440px 반응형 & 실시간 aiassistant.ai.kr 도메인 가동)',
+            pageLabel: '1p PC 데스크톱 뷰'
           },
           {
-            url: webLumiMarketPopupModalImg,
-            title: '웹사이트 웰컴 오퍼 15% 할인쿠폰 레이어 팝업 모달',
-            pageLabel: '웹 팝업 모달'
+            url: aiassistantMobileSlide,
+            title: '2p 모바일 스마트폰 세로형 반응형 뷰 (터치 최적화 Thumb-Zone 1초 간편 견적 & 스와이프 탐색)',
+            pageLabel: '2p 모바일 반응형 뷰'
+          },
+          {
+            url: aiassistantQuoteSystemSlide,
+            title: '3p 실시간 맞춤 견적 시뮬레이터 & 원클릭 리드 접수 파이프라인 (문의 전환율 CVR 6.4% 달성)',
+            pageLabel: '3p 실시간 견적 시스템'
+          },
+          {
+            url: aiassistantSpecsSlide,
+            title: '4p 원페이지 기업 공식 홈페이지 구축 최종 납품 명세서 & 정량 성과 지표 (검수완료 승인필)',
+            pageLabel: '4p 구축 납품 명세서'
           }
         ],
         originalDocumentMeta: {
-          recipient: '루미마켓(Lumi Market) 마케팅운영팀',
-          sender: '트렌드24 디지털 프로모션 디자인팀 (design@trend24.co.kr · 02-1234-5678)',
-          docTypeBadge: '디지털 프로모션 배너 & 팝업 디자인 명세서',
-          docDate: '2026.09.23 최종 배포',
-          securityLevel: '온라인 공식 배포본'
+          recipient: '(주)AI비서 코퍼레이션 대표이사 및 솔루션 사업부 귀하',
+          sender: '웹 & 플랫폼 솔루션 개발본부',
+          subject: '[웹사이트 제작] AI비서 공식 원페이지 반응형 웹사이트 및 실시간 견적 시스템 개발 납품 명세서',
+          docDate: '2026.04 최종 배포 (실시간 정상 가동 중)',
+          docTypeBadge: '원페이지 기업 공식 홈페이지 구축 명세서',
+          attachments: [
+            '원페이지 반응형 프론트엔드/백엔드 소스코드 원본',
+            '실시간 견적 산출 로직 명세서 및 폼 연동 가이드',
+            '네이버/구글 검색엔진 최적화(SEO) 메타 설정 확인서',
+            'SSL Let\'s Encrypt 256-bit 보안 인증서 적용증'
+          ]
         },
-        originalText: `[루미마켓(Lumi Market) 가을 시즌오프 SNS 배너 & 웰컴 팝업 디자인 명세서]
+        originalText: `[AI비서(AI Assistant Corp) 공식 원페이지 반응형 기업 홈페이지 구축 프로젝트 명세서]
 
-■ 프로젝트 개요
-· 브랜드명: 루미마켓 (Lumi Market)
-· 프로젝트: 가을 시즌오프 통합 디지털 마케팅 에셋 (SNS 홍보 배너 + 온사이트 팝업 모달)
-· 타깃 오디언스: 20~30대 감성 인테리어, 리빙, 라이프스타일 셀렉트샵 관심 고객
-· 메인 컬러: 웜 애프리콧 & 크림(#fdf7f0), 테라코타 번트 앰버(#963d08), 소프트 피치(#fed7aa)
+1. 프로젝트 개요
+· 사이트 명칭: AI비서 - 기업 실전 업무 대행 솔루션 (AI Assistant Corp)
+· 공식 도메인: https://aiassistant.ai.kr/
+· 프로젝트 성격: "AI를 배우지 마세요, 업무를 맡기세요" 기업 실전 업무 대행 올인원 원페이지 공식 웹사이트 구축
+· 기획 방향: 복잡한 페이지 분기 없이 단 한 페이지에서 서비스 탐색, 포트폴리오 열람, 실시간 견적 산출, 상담 신청까지 1분 내 완료되는 초고전환(High-Conversion) 아키텍처
 
-──────────────────────────────────────────────────────
-[1] SNS 정방형 프로모션 배너 (1:1 Aspect Ratio / 1080×1080px)
-──────────────────────────────────────────────────────
-· 적용 채널: 인스타그램 피드, 페이스북 피드, 카카오톡 채널 소식
-· 상단 요소:
-  - 브랜드 로고: 루미마켓 심볼("루") + 워드마크
-  - 이벤트 뱃지: [SEASON OFF] (미니멀 화이트 라운드 뱃지)
-· 메인 카피:
-  - 카테고리: "가을 시즌오프"
-  - 메인 헤드라인: "전 품목 최대 50% OFF"
-  - 프로모션 일정: "10.1 (목) — 10.7 (수) · 7일간"
-· 비주얼 섹션:
-  - 3개 카테고리 대표 쇼케이스 카드 (LIVING & DECOR / KITCHEN & TABLE / FASHION & ACC)
-· 행동 유도(CTA):
-  - [지금 쇼핑하기 →] (테라코타 앰버 라운드 섀도우 버튼)
-· 하단 안내:
-  - "일부 상품 제외 · 쿠폰 중복 적용 불가 · 자세한 내용은 스토어에서 확인"
+2. 반응형 디바이스 뷰포트 지원
+· PC 데스크톱 (1440px 이상): 와이드 히어로 비주얼, 6대 업무 카드 3열 그리드, 실시간 의뢰 진행 대시보드 인포그래픽
+· 태블릿 (768px ~ 1024px): 2열 그리드 유동형 레이아웃 및 원터치 네비게이션
+· 모바일 스마트폰 (375px ~ 430px): 한 손 조작 엄지존(Thumb-Zone) 내 '전화상담' & '1초 견적 신청' 듀얼 플로팅 바 고정, 초고속 0.8초 로딩
 
-──────────────────────────────────────────────────────
-[2] 웹사이트 웰컴 오퍼 팝업 모달 (온사이트 전환 유도)
-──────────────────────────────────────────────────────
-· 적용 채널: 루미마켓 공식 온라인 스토어 첫 방문자 온보딩 레이어 팝업
-· 모달 규격: 가로 480px 반응형 센터 팝업 + 뒷배경 소프트 딤드(Dimmed) 블러 처리
-· 상단 일러스트:
-  - 소프트 웜 아우라 원형 뱃지 속 3D 선물상자(Gift Box) 그래픽
-· 타이틀 및 소구:
-  - 서브 타이틀: "WELCOME OFFER"
-  - 메인 헤드라인: "첫 구매 회원가입하고 15% 할인쿠폰 받기"
-  - 혜택 안내: "지금 이메일만 남기면 즉시 발급, 전 상품 적용 가능한 쿠폰을 드려요"
-· 인터랙션 폼:
-  - 이메일 입력 필드: "이메일 주소를 입력하세요"
-  - CTA 버튼: [쿠폰 받기]
-  - 보조 옵션: "다음에 할게요" / 우측 상단 닫기(X) 버튼
+3. 탑재 핵심 섹션 및 기능
+· Header: 스티키 네비게이션 (서비스 소개, 포트폴리오, 프로세스, 전문가 팀, 고객 후기) & 견적 CTA
+· Hero: "AI를 배우지 마세요, 업무를 맡기세요." 신뢰 메시지, 누적 1,420+건/만족도 98.7% 실시간 지표
+· 6대 핵심 비즈니스 카드: PPT 제작(15p), 계약서 업무(8p), 디자인(3종), 마케팅, 사이트 제작, 영상 제작
+· 실시간 맞춤 견적 계산기: 업무 카테고리, 분량 슬라이더, 24시간 특급 여부 선택 시 즉시 예상 단가/일정 계산
+· 4단계 업무 프로세스: 1단계 의뢰접수 → 2단계 AI 고속초안 → 3단계 전문가 1:1 감수 → 4단계 최종납품
+· 고객사 후기 & 검증 배지: 실제 이용 스타트업 및 중견기업 대표 인터뷰 및 평점 4.95점
+· 원스톱 온라인 상담 폼: 담당자/연락처/의뢰내용/대용량 파일 첨부 및 카카오 알림톡 자동 발송 연동
 
-──────────────────────────────────────────────────────
-[3] 캠페인 집행 성과 및 전환 지표
-──────────────────────────────────────────────────────
-✔ 인스타그램 스폰서드 광고 CTR(클릭률): 평균 1.4% -> 3.9% (2.7배 상승)
-✔ 온사이트 팝업을 통한 신규 회원가입 전환율: 첫 방문자 중 18.2% 가입 완료
-✔ 가을 시즌오프 프로모션 7일간 전년 동기 대비 거래액(GMV): 142% 초과 달성
-`
+4. 성과 및 납품 결과
+· PC/모바일 100% 크로스 브라우징 및 반응형 호환성 달성
+· 페이지 로딩 속도 0.8초 (SPA 싱글 페이지 아키텍처 및 이미지 지연 로딩 최적화)
+· 온라인 견적 문의 전환율(CVR): 6.4% 달성 (업계 평균 대비 3.5배 달성)
+· 실시간 운영 도메인 https://aiassistant.ai.kr/ 정상 배포 및 SSL 256-bit 보안 가동 중`
       }
     ],
     detailedTasks: [
-      '서비스 소개 및 이벤트 안내를 위한 반응형 랜딩페이지 제작',
-      '네이버 쇼핑, 스마트스토어 상품 상세페이지 기획 및 디자인',
-      '인스타그램 피드 및 블로그 포스팅용 홍보 배너 제작',
-      '회사 소개서 및 제안서용 도식화 및 그래픽 정리'
+      'PC & 모바일 100% 반응형 기업 공식 브랜드 홈페이지 제작',
+      '스마트스토어 및 카페24/아임웹 쇼핑몰 구축 및 결제 모듈(PG) 연동',
+      '프로모션 및 서비스 런칭 전용 고전환 랜딩페이지 원스톱 제작',
+      '도메인 연결, SSL 보안인증서 적용, 네이버/구글 검색 포털 등록'
     ],
-    turnaroundTime: '48~72시간 이내',
-    deliverableSample: '디자인 소스 파일, 퍼블리싱 완료된 웹 URL 링크'
+    turnaroundTime: '3~5일 이내',
+    deliverableSample: '웹 퍼블리싱 소스코드, 호스팅 서버 배포, 관리자 계정 가이드'
+  },
+
+  // 6. 영상 제작(숏폼, 영상 편집)
+  {
+    id: 'video',
+    number: '06',
+    categoryCode: 'VIDEO PRODUCTION & SHORT-FORM',
+    name: '영상 제작',
+    description: '인스타그램 릴스, 유튜브 쇼츠, 틱톡 숏폼 바이럴 영상 기획·제작, 기업 홍보 영상 컷편집 및 자막·모션그래픽',
+    tags: ['숏폼영상', '인스타릴스', '유튜브쇼츠', '영상편집', '자막모션그래픽', '제품홍보영상'],
+    icon: 'Video',
+    colorClass: 'rose-600',
+    previewImage: videoProductionShortformImg,
+    previewImageAlt: 'AI 바이럴 숏폼 및 영상 제작 산출물',
+    portfolioExample: {
+      id: 'vid-1',
+      client: '글로벌 엔터 & 뷰티 프로덕션 (주)트렌드24',
+      title: '국제 베트남 뷰티 BJ 선발대회 시상식 바이럴 숏폼 영상',
+      videoUrl: 'https://youtube.com/shorts/mroWPCfADa8?si=hF0IAtEgLDl-tSgc',
+      videoRatio: '9:16',
+      videoPlatform: 'youtube',
+      duration: '의뢰 후 24~48시간 이내',
+      result: '유튜브 쇼츠 공식 업로드 및 뷰티 BJ 시상식 하이라이트 영상 완성',
+      summary: '국제 뷰티 BJ 선발대회 현장의 가장 극적인 시상식 순간을 선별하여, 모바일 9:16 세로형 포맷에 맞춘 감각적인 컷편집과 현장 사운드 믹싱으로 완성된 실제 유튜브 쇼츠 영상입니다.',
+      deliverable: '9:16 고해상도 FHD 유튜브 쇼츠 영상 및 썸네일 커버',
+      image: 'https://i.ytimg.com/vi/mroWPCfADa8/hqdefault.jpg',
+      imageAlt: '2019 제1회국제 베트남 뷰티비제이 선발대회 시상 쇼츠'
+    },
+    portfolioCases: [
+      {
+        id: 'vid-1',
+        client: '글로벌 엔터 & 뷰티 프로덕션 (주)트렌드24',
+        title: '국제 베트남 뷰티 BJ 선발대회 시상식 바이럴 숏폼 영상',
+        tabLabel: '1. 뷰티 BJ 선발대회 시상 (실제 쇼츠)',
+        videoUrl: 'https://youtube.com/shorts/mroWPCfADa8?si=hF0IAtEgLDl-tSgc',
+        videoRatio: '9:16',
+        videoPlatform: 'youtube',
+        duration: '의뢰 후 24~48시간 이내',
+        result: '유튜브 쇼츠 실시간 스트리밍 연동 및 현장감 극대화',
+        summary: '2019 제1회국제 베트남 뷰티 BJ 선발대회 시상식 현장의 영예로운 수상 순간을 숏폼으로 재구성하여, 무대 위 감동의 트로피 수여와 현장 환호성을 생생하게 담아낸 실전 바이럴 숏폼 영상입니다. 인터랙티브 스마트폰 플레이어로 실시간 시청하실 수 있습니다.',
+        tags: ['유튜브쇼츠', '바이럴숏폼', '시상식하이라이트', '뷰티BJ선발대회', '현장스케치'],
+        deliverable: 'FHD 9:16 세로형 유튜브 쇼츠 마스터본 및 썸네일 커버',
+        image: 'https://i.ytimg.com/vi/mroWPCfADa8/hqdefault.jpg',
+        imageAlt: '2019 제1회국제 베트남 뷰티비제이 선발대회 시상식 쇼츠 썸네일',
+        galleryImages: [
+          {
+            url: 'https://i.ytimg.com/vi/mroWPCfADa8/hqdefault.jpg',
+            title: '2019 제1회국제 베트남 뷰티비제이 선발대회 시상식 현장 썸네일',
+            pageLabel: '쇼츠 9:16 모바일 뷰'
+          },
+          {
+            url: videoEditingTimelineImg,
+            title: '프로페셔널 비디오 멀티트랙 편집 타임라인 & 음향 믹싱',
+            pageLabel: '편집 타임라인 풀뷰'
+          }
+        ],
+        originalDocumentMeta: {
+          recipient: '글로벌 엔터테인먼트 & 미디어 운영팀',
+          sender: '(주)트렌드24 영상 프로덕션 에디팅팀',
+          subject: '[유튜브 쇼츠 최종본] 국제 베트남 뷰티 BJ 선발대회 시상식 영상 납품',
+          docDate: '공식 유튜브 채널 (TREND24 양블리)',
+          docTypeBadge: '실제 유튜브 쇼츠 연동',
+          attachments: ['쇼츠_시상식_FHD.mp4', '자막_스크립트_SRT.srt', '유튜브_쇼츠_직링크.url']
+        },
+        originalText: `[2019 제1회국제 베트남 뷰티비제이 선발대회 시상식 숏폼 영상 구성안]
+
+■ 영상 정보 및 공식 채널
+- 콘텐츠명: 2019 제1회국제 베트남 뷰티비제이 선발대회 시상
+- 채널: TREND24 양블리 (공식 유튜브 채널)
+- 규격: 모바일 세로 9:16 비율 (FHD)
+- 실제 영상 링크: https://youtube.com/shorts/mroWPCfADa8
+
+■ 00:00~00:05 [오프닝 & 현장 열기]
+- 화면: 화려한 시상식 무대 조명 및 관객 환호성 인서트
+- 자막: 🏆 "2019 제1회국제 베트남 뷰티비제이 선발대회"
+
+■ 00:05~00:20 [수상자 발표 & 시상 순간]
+- 화면: 긴장감 넘치는 호명 순간과 수상자의 감동적인 무대 등단
+- 자막: 영예의 수상자 호명 및 트로피·상패 수여
+- 음향: 현장 팡파르 및 관객 환호 소리 믹싱
+
+■ 00:20~엔딩 [엔딩 & 브랜드 각인]
+- 화면: 수상자 단체 기념 촬영 및 축하 세레머니
+- 자막: TREND24 글로벌 미디어 & 뷰티 프로덕션 공식 로고`
+      },
+      {
+        id: 'vid-2',
+        client: '테크 스타트업 & AI 업무 플랫폼 (주)트렌드24 / AI비서',
+        title: 'AI 업무비서 60초 원클릭 실시간 견적 접수 & 자동 배정 튜토리얼',
+        tabLabel: '2. AI비서 실시간 견적 튜토리얼',
+        videoUrl: 'https://www.youtube.com/watch?v=oTahLEX3NXo',
+        videoRatio: '16:9',
+        videoPlatform: 'youtube',
+        duration: '의뢰 후 48~72시간 이내',
+        result: '복잡한 외주 견적 문의 절차 80% 단축 & 첫 방문 리드 전환율(CVR) 280% 향상',
+        summary: '복잡한 외주 개발·디자인·기획 견적 문의를 단 45초 만에 완료하는 AI 비서 실시간 견적 접수 시스템 튜토리얼입니다. 6대 서비스 선택부터 난이도·일정 체크, 실시간 예상 견적 카운팅 애니메이션, 카카오톡 즉시 알림톡 발송 모션그래픽과 AI 나레이션 더빙을 적용하여 고객 온보딩 및 전환율을 극대화했습니다.',
+        tags: ['AI업무비서', '제품튜토리얼', '스크린캐스트', '실시간견적', '모션그래픽', 'AI더빙', '온보딩영상'],
+        deliverable: '16:9 와이드 4K/FHD 마스터 영상 원본, 웹사이트 임베드 코드 및 자막 SRT',
+        image: aiassistantQuoteSystemSlide,
+        imageAlt: 'AI 업무비서 60초 실시간 견적 접수 시스템 튜토리얼 영상 산출물',
+        galleryImages: [
+          {
+            url: aiassistantQuoteSystemSlide,
+            title: '1p 튜토리얼 메인 씬: 실시간 견적 계산기 & 6대 업무 선택 스크린캐스트 콘티',
+            pageLabel: '1p 견적 시스템 콘티'
+          },
+          {
+            url: aiassistantDesktopSlide,
+            title: '2p 오프닝 모션 씬: AI 비서 공식 홈페이지 메인 히어로 & 원클릭 접수 안내',
+            pageLabel: '2p 메인 히어로 모션'
+          },
+          {
+            url: aiassistantMobileSlide,
+            title: '3p 모바일 연동 씬: 스마트폰 즉시 접수 & 카카오톡 알림톡 자동 발송 모션',
+            pageLabel: '3p 모바일 알림톡 가이드'
+          },
+          {
+            url: aiassistantSpecsSlide,
+            title: '4p 엔딩 씬: 6대 업무별 처리 규격 및 전담 매니저 배정 시스템 제원표',
+            pageLabel: '4p 업무 제원표 엔딩'
+          },
+          {
+            url: videoEditingTimelineImg,
+            title: '5p 편집 타임라인: 프리미어 프로 & 애프터이펙트 멀티트랙 모션 모션그래픽',
+            pageLabel: '5p 편집 타임라인 풀뷰'
+          }
+        ],
+        originalDocumentMeta: {
+          recipient: 'AI 비서 신규 방문 고객 및 B2B 엔터프라이즈 도입 총괄',
+          sender: '(주)트렌드24 영상 프로덕션 & 모션그래픽 스튜디오',
+          subject: '[제품 튜토리얼 최종본] AI 비서 60초 실시간 견적 접수 시스템 모션그래픽 납품',
+          docDate: '2026.10.03 마스터링 완료',
+          docTypeBadge: '공식 제품 튜토리얼 16:9 와이드',
+          attachments: ['AI비서_튜토리얼_4K_마스터.mp4', '자막_스크립트_SRT.srt', '모션그래픽_프로젝트_AEP.zip']
+        },
+        originalText: `[AI 업무비서 60초 원클릭 실시간 견적 접수 튜토리얼 기획 콘티 & 편집 타임라인]
+
+■ 영상 정보 및 기획 의도
+- 콘텐츠명: AI 비서 60초 실시간 견적 접수 & 6대 전문 업무 자동 배정 시스템 튜토리얼
+- 대상 플랫폼: 공식 홈페이지 메인 배너, 신규 방문자 온보딩 모달, 유튜브 프로모션
+- 화면 규격: 16:9 와이드 (FHD / 4K 마스터)
+- 제작 기법: UI 고화질 스크린캐스트 + 커서 마우스 스포트라이트 + 텍스트 키네틱 타이포 + AI 나레이션
+
+■ 00:00~00:10 [오프닝 & 핵심 문제 제기]
+- 화면: "견적 문의하고 며칠씩 기다리셨나요?" 고민하는 비즈니스맨 캐릭터 모션
+- 모션: 기존 번거로운 견적서 교환 과정을 스피디하게 크로스아웃(X) 처리
+- 자막: ⚡ "견적서 기다리지 마세요. 3초 만에 즉시 확인하는 AI 실시간 견적!"
+- 사운드: Whoosh 트랜지션 + 경쾌한 테크 앤 펑크 BGM 시작
+
+■ 00:10~00:25 [STEP 1: 6대 서비스 및 난이도 선택]
+- 화면: aiassistant.ai.kr 공식 홈페이지의 서비스 선택 버튼 클릭 (PPT, 계약서, 디자인, 웹사이트 등)
+- 모션: 클릭한 카드가 네온 오렌지 컬러로 활성화되며 마우스 커서 스포트라이트 애니메이션
+- 자막: "PPT, 계약서, 디자인, 웹사이트까지 원하는 업무를 클릭 한 번으로 선택"
+- 나레이션(AI): "필요한 업무 유형과 소요 일정을 선택하면 AI 알고리즘이 즉시 분석을 시작합니다."
+
+■ 00:25~00:40 [STEP 2: 실시간 맞춤 견적 카운팅 & 할인 적용]
+- 화면: 우측 견적 산출기에서 숫자가 빠르게 롤링되며 예상 금액 및 15% 신규 할인율 표기
+- 모션: 카운트업 숫자 롤링 애니메이션 + 반짝이는 뱃지 팝업
+- 자막: "투명한 정찰제 가격! 추가 옵션과 긴급도에 맞춘 실시간 자동 산출"
+- SFX: 숫자 카운팅 틱틱 사운드 + 챠링(Coin) 효과음
+
+■ 00:40~00:55 [STEP 3: 카카오톡 알림톡 즉시 접수 & 전문가 배정]
+- 화면: 모바일 스마트폰 화면 줌인, 카카오톡 알림톡으로 "접수가 완료되었습니다" 팝업
+- 모션: 1:1 전담 매니저 배정 프로세스 인포그래픽 도식화
+- 자막: "접수 즉시 카카오톡 알림 발송 & 10분 내 전담 매니저 1:1 배정 완료"
+- 나레이션: "접수와 동시에 전담 전문가가 매칭되어 영업일 48시간 이내 완벽한 결과물을 전달해 드립니다."
+
+■ 00:55~01:00 [엔딩 & 전환 유도 CTA]
+- 화면: AI 비서 공식 로고 + "지금 바로 무료 견적 계산해보기" CTA 버튼 펄스 효과
+- 자막: 🚀 "업무 시간은 절반으로, 비즈니스 성장은 2배로 — AI비서"
+- 사운드: 밝고 명쾌한 엔딩 징글`
+      },
+      {
+        id: 'vid-3',
+        client: '스타트업 브랜드 M사',
+        title: '브랜드 스토리 인터뷰 및 현장 스케치 시네마틱 컷편집',
+        tabLabel: '시네마틱 브랜드 필름',
+        videoUrl: 'https://www.youtube.com/watch?v=aqz-KE-bpKQ',
+        videoRatio: '16:9',
+        videoPlatform: 'youtube',
+        duration: '의뢰 후 3일 이내',
+        result: '채용 페이지 및 투자자 미팅 공식 브랜드 필름 채택',
+        summary: '창업자 인터뷰 녹취본과 사무실 업무 스케치 원본 영상에서 핵심 메시지를 선별하고, 영화 같은 색보정(컬러그레이딩)과 노이즈 제거, 서정적인 배경음악을 믹싱하여 신뢰감 있는 브랜드 필름으로 편집했습니다.',
+        tags: ['브랜드영상', '인터뷰편집', '시네마틱색보정', '음향믹싱', '홍보영상'],
+        deliverable: '시네마틱 4K 마스터 영상 원본 및 유튜브 최적화 파일',
+        image: videoEditingTimelineImg,
+        imageAlt: '브랜드 스토리 시네마틱 영상 편집 산출물'
+      }
+    ],
+    detailedTasks: [
+      '유튜브 쇼츠, 인스타그램 릴스, 틱톡 30~60초 숏폼 기획 및 대본 작성',
+      '고화질 영상 컷편집, 배속 조절, 다이나믹 화면 전환(트랜지션) 적용',
+      '눈에 띄는 키네틱 모션 자막 및 효과음(SFX), 상업용 BGM 정식 믹싱',
+      '기업 홍보 영상, 제품 튜토리얼 스크린캐스트, 인터뷰 영상 마스터링'
+    ],
+    turnaroundTime: '24~48시간 이내',
+    deliverableSample: '4K/FHD MP4 영상 완성본, 모바일 9:16 및 16:9 규격 제공, 자막 파일'
   }
 ];
 
@@ -1653,76 +1875,96 @@ export const TEAM_MEMBERS: TeamMember[] = [
     tag: '검수율 99.8%',
     badge: '인증 전문가',
     badgeBg: 'bg-brand-orange text-white',
-    scope: '담당: 대외 보고서, 정부지원사업, IR 문서, 사업 기획',
+    scope: '담당: PPT 제작, 사업계획서, IR 투자제안서, 계약서 검토 총괄',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAZ1Cjp_YMtIsrccJxKWynjcBpL8Us3EnTNCa6FW8CUepBmHL_FFKsRxa7VPJmzd3IwbYr-Gg4Va4Kg88s7LIXV5S-qlQA7-PqPXvWWBFs2SFTla-JolqCUJfIxdUGvAW2i-lh3loJDIrqMT-vMTCPoafHAYrdPDPTlaf3BAd83UqEgbXdbZwoYZyHTgGScZEjHXVX4DO2KxvXZUnwNtTqanUHhaVht0-PxI4nKlB5c4Q1eOh2rS2g',
     bio: '국내 유수 벤처캐피탈 및 액셀러레이터 출신. 200건 이상의 IR 피치덱과 40건 이상의 공공 R&D 사업계획서를 성공적으로 조율했습니다.'
   },
   {
     id: 'mijeong',
     name: '이미정 디렉터',
-    role: 'CONTENT DIRECTOR',
-    experience: '광고대행사 출신 콘텐츠/카피라이팅 총괄',
-    tag: '언론 홍보',
+    role: 'CONTENT & DESIGN DIRECTOR',
+    experience: '광고대행사 출신 콘텐츠/디자인 총괄',
+    tag: '디자인·마케팅',
     badge: '인증 전문가',
     badgeBg: 'bg-brand-navy text-white',
-    scope: '담당: 언론 보도자료, 브랜드 스토리, 광고 카피, SEO 아티클',
+    scope: '담당: 디자인 업무(상세페이지, 배너, 포스터), 마케팅(SNS자동화, 보도자료)',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB_trsxmthYuJQH9cEpLVQ1njBTlkoznZPOvUlsDKqsIis8CTQJ3RafT1odRqKNKbUbE6fufbXQJc51dXM4CY_tooVqt68RlRKxVBCkf_8xWf2I43glcr_ZEzXdEaph47IVH_nJ7Ewo1b8WdiXXubOKHsF7Si-bKGlwFG0SzGWOei-OPTJJUmqItldwrVR8OZJc4yxmGN6DG_p7x0VimeIbGA-vdOHnW8X_UCdPFK0ylSu-2vDqKu4',
-    bio: '제일기획 협력 에이전시 8년 경력. 대기업 브랜딩 캠페인부터 스타트업 퍼포먼스 광고 카피까지 매출을 일으키는 문장을 감수합니다.'
+    bio: '제일기획 협력 에이전시 8년 경력. 대기업 브랜딩 캠페인부터 스타트업 퍼포먼스 광고 카피, 이커머스 상세페이지까지 매출을 일으키는 시각 디자인을 감수합니다.'
   },
   {
     id: 'doyoon',
     name: '박도윤 연구원',
-    role: 'AI WORKFLOW ARCHITECT',
-    experience: '사내 AI 솔루션 및 업무 자동화 전담',
-    tag: 'Python / Prompt',
+    role: 'WEB & VIDEO ARCHITECT',
+    experience: '반응형 웹 사이트 구축 & 영상 모션그래픽 전담',
+    tag: 'Web / Short-form',
     badge: '인증 전문가',
     badgeBg: 'bg-emerald-600 text-white',
-    scope: '담당: 사내 챗봇 시스템 구축, 업무 자동화 워크플로우, 템플릿 연동',
+    scope: '담당: 사이트 제작(반응형 홈페이지, 쇼핑몰), 영상 제작(숏폼 바이럴, 컷편집)',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBVWYolfIb3iAbKhZgWpvV0JBPqPoOgFsqhFFLSZLlclhsb_iaIpymgHU3aaIb-b02edsGM39nbMd1nQLFkuqcwCgFuG7UOlYOgJbVZBAQG2c1Bx5_SjwEwgtum8kC6oM5gZeoV8tcK1XVEfCIqHIZNUs1WMM5awJ0mgUg8whXnPO1ZcIXGIejeTpbvJLc7otJ2-1LWT13tzq8hbiQQquUZFkflb0F8ce6Hz_GUlbuGQbd8prtu_eo',
-    bio: '카이스트 석사 졸업. 복잡한 업무 프로세스를 자동화하는 AI 워크플로우 구축을 전문으로 하며, 일상 업무 80%를 단축시키는 솔루션을 담당합니다.'
+    bio: '카이스트 출신 풀스택 엔지니어 & 영상 모션그래픽 디렉터. PC/모바일 반응형 웹 구축과 틱톡/릴스 숏폼 바이럴 영상을 완벽하게 책임집니다.'
   }
 ];
 
 export const PORTFOLIO_CASES: PortfolioItem[] = [
   {
-    id: 'saas',
-    clientType: 'B2B 기업',
-    duration: '소요: 24시간',
-    title: '경쟁사 기능 및 가격 비교 조사',
-    description: '동종 업계 주요 경쟁사의 요금제 체계와 핵심 기능을 수집하여 한눈에 비교할 수 있는 정리표 및 요약 보고서 납품.',
-    metricLabel: '조사 소요 시간',
-    metricValue: '24시간 내 납품',
-    category: '리서치'
-  },
-  {
-    id: 'ecommerce',
-    clientType: '이커머스 브랜드',
-    duration: '소요: 36시간',
-    title: '신규 제품 상세페이지 문구 및 기획',
-    description: '제품 특장점과 고객 주요 관심사를 반영하여 읽기 편한 상세페이지 구성 및 상품 소개 문구 작성.',
-    metricLabel: '제작 소요 시간',
-    metricValue: '36시간 내 완료',
-    category: '콘텐츠'
-  },
-  {
-    id: 'manufacturing',
-    clientType: '중소/중견기업',
-    duration: '소요: 24시간',
-    title: '용역 및 거래 계약서 검토 및 수정 의견',
-    description: '계약서 내 자동 연장, 대금 지급 기한, 배상 한도 등 주요 조항을 검토하고 실무 수정 의견서 납품.',
-    metricLabel: '검토 소요 시간',
-    metricValue: '24시간 내 납품',
-    category: '문서검토'
-  },
-  {
-    id: 'healthcare',
-    clientType: '신규 사업팀',
+    id: 'case-ppt',
+    clientType: '친환경 스타트업',
     duration: '소요: 48시간',
-    title: '신규 사업 관련 정부 규제 및 지침 조사',
-    description: '새로 추진하는 사업에 필요한 필수 정부 인허가 절차 및 관련 법률 가이드라인 핵심 요약 보고서 납품.',
-    metricLabel: '조사 소요 시간',
-    metricValue: '48시간 내 납품',
-    category: '리서치'
+    title: 'TIPS 사업계획서 & 시리즈 A IR 피치덱',
+    description: '복잡한 폐식용유 자원 순환 프로세스를 7개 챕터 인포그래픽 도식화 및 25장 IR 피치덱으로 완성하여 투자 유치 성공.',
+    metricLabel: '투자 심사 통과',
+    metricValue: 'TIPS 선정 완료',
+    category: 'PPT제작'
+  },
+  {
+    id: 'case-contract',
+    clientType: '플랫폼 개발사 (주)브릿지파트너스',
+    duration: '소요: 24시간',
+    title: '용역공급계약서 독소조항 분석 및 Redline 보고서',
+    description: '무기한 자동 연장, 불명확한 지급기한, 무제한 손해배상, 일방적 해지권 등 위험 독소조항 5건을 발견하고 실무 수정 대조 권고안(4장 완비) 납품.',
+    metricLabel: '분쟁 리스크 차단',
+    metricValue: '독소조항 5건 완벽 방어',
+    category: '계약서업무'
+  },
+  {
+    id: 'case-design',
+    clientType: '뷰티 브랜드 글로우빔',
+    duration: '소요: 3일',
+    title: 'LED 미니 디바이스 고전환 상품 상세페이지',
+    description: 'AI 7단계 구조 기반으로 후킹 카피, 임상 비주얼, 제원표를 모바일 최적화 디자인하여 스마트스토어 1위 달성.',
+    metricLabel: '구매 전환율(CVR)',
+    metricValue: '4.9% 달성 (3.8배↑)',
+    category: '디자인업무'
+  },
+  {
+    id: 'case-marketing',
+    clientType: '기술 기업 R사',
+    duration: '소요: 24시간',
+    title: 'AI 신제품 언론 보도자료 초안 & 인플루언서 섭외',
+    description: '국내 주요 IT 전문지 15곳에 송고된 표준 보도자료 초안 작성 및 8만 인플루언서 섭외 메일로 38% 회신율 기록.',
+    metricLabel: '언론 및 SNS 도달',
+    metricValue: '15개 매체 게재',
+    category: '마케팅업무'
+  },
+  {
+    id: 'case-web',
+    clientType: '글로벌 메디컬 플랫폼 (주)스템블리스',
+    duration: '소요: 4일',
+    title: '반응형 프리미엄 공식 웹사이트 구축 (stembliss.kr)',
+    description: 'PC·모바일 완벽 대응 반응형 웹 퍼블리싱, 20년 임상 스토리텔링, 12개 대학병원 네트워크 및 글로벌 온라인 의료 상담 파이프라인 완비.',
+    metricLabel: '반응형 호환 & 상담전환',
+    metricValue: '100% 호환 · 16.2% 전환',
+    category: '사이트제작'
+  },
+  {
+    id: 'case-video',
+    clientType: '글로벌 엔터 & 뷰티 프로덕션 (주)트렌드24',
+    duration: '소요: 24시간',
+    title: '베트남 뷰티 BJ 선발대회 시상식 바이럴 숏폼 제작',
+    description: '국제 뷰티 BJ 선발대회 시상식 하이라이트를 모바일 9:16 쇼츠 포맷으로 컷편집하여 공식 유튜브 쇼츠에 실시간 스트리밍 연동 완료.',
+    metricLabel: '실제 쇼츠 스트리밍',
+    metricValue: '유튜브 쇼츠 공식 연동',
+    category: '영상제작'
   }
 ];
 
@@ -1732,18 +1974,18 @@ export const REVIEWS_DATA: ReviewItem[] = [
     author: '정태영 대표',
     title: '스타트업 플래닛 대표이사',
     rating: 5,
-    content: '"문서, 경쟁사, 시장자료 등 손이 많이 가는 업무를 맡기니 사업 본질에만 집중할 수 있게 되었습니다. 퀄리티가 현업 팀장급 이상입니다."',
+    content: '"TIPS 사업계획서와 IR 피치덱을 맡겼는데, 심사역 미팅에서 슬라이드 구성이 아주 명쾌하다는 칭찬을 들었습니다. 현업 팀장급 이상의 퀄리티입니다."',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDJahO4wCBZSX6__hAwx0kIovnFG3qdjScFqH7SWP-43VJnSF1ZPlpSrp-Y3u92h6YnPgKP1RwoQMrP9mGyivgZoK26vi5ygCVO4U7UkeplQ5UOGTt7L205Hzf15fxwsaO4LpZHE4nB0WB-9IZgkkBwv_7_u9ilqBiZ8QN47VWMy9jz92JwIpBENpmJZqf5XDtF8N-3RAcMtluqBk-lNkhhE2i3wLgRhVZgwlApBeYXWq3o2CYy-LE',
-    tags: ['구독 6개월차', '스타트업', '보고서/IR']
+    tags: ['구독 6개월차', '스타트업', 'PPT제작/IR']
   },
   {
     id: 'review-2',
     author: '박서윤 총괄 팀장',
     title: '패션 D2C 브랜드 마케팅 리드',
     rating: 5,
-    content: '"단순한 AI 답변이 아니라 실제 담당자가 검수한 뒤 전달해주니까 수정할 부분이 거의 없어요. 인턴 2명 몫을 거뜬히 합니다."',
+    content: '"상세페이지 기획과 릴스 숏폼 영상까지 한 번에 해결되니 외주 관리 스트레스가 0이 되었습니다. 인턴 2명 몫을 거뜬히 해내고 있습니다."',
     image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDe4jXM1xVmg47vuLzY7wWGYUc1OfVjGrAsyLf54fjPRCZ5QaVJ8XQfDORCt5RqxQI4sqcyseVdaSLGpG0KmzKwBjp9di8KpXPwwUrz1E4Rdip5mlXTtxaU8uTAChsTcHh7xXtwHmVGvoo5NsVWVw7xe4BwhyHi-UDEom2pumNo5ZVswoxnGF4-mJicBI1kQZH3qRQGRaLiXWAdfz06msPm0vE3Dw8lKayq6T6N_QCatFea4bwA20k',
-    tags: ['구독 11개월차', 'D2C 커머스', '마케팅 대행']
+    tags: ['구독 11개월차', 'D2C 커머스', '디자인/영상']
   }
 ];
 
@@ -1755,9 +1997,9 @@ export const PRICING_PLANS: PricingPlan[] = [
     monthlyPrice: 300000,
     annualPricePerMonth: 255000,
     features: [
-      '월 15건 업무 요청 완료 보장',
-      '기본 비즈니스 문서/콘텐츠 업무 지원',
-      '영업일 기준 48시간 이내 피드백',
+      '월 15건 실무 업무 요청 완료 보장',
+      'PPT 제작, 계약서 검토, 배너 디자인 등',
+      '영업일 기준 48시간 이내 결과물 전달',
       '전문 매니저 1차 검수 포함',
       '기본 수정 2회 무료 제공'
     ],
@@ -1773,11 +2015,11 @@ export const PRICING_PLANS: PricingPlan[] = [
     isPopular: true,
     features: [
       '무제한 요청 (동시 2개 작업 동시 진행)',
+      '6대 전 업무 영역 (PPT, 계약서, 디자인, 마케팅, 웹, 영상)',
       '전담 전문 매니저 1:1 슬랙/카카오 연동',
       '긴급 건 24시간 우선 처리 혜택',
-      '사내 맞춤형 프롬프트 셋업 무상 제공',
       '무제한 수정 및 피드백 반영 보장',
-      '고난이도 리서치 & 심층 보고서 포함'
+      '상세페이지 롱스크롤 & 숏폼 영상 제작 포함'
     ],
     ctaText: '비즈니스 프로 시작하기',
     ctaAction: 'pro'
@@ -1785,16 +2027,16 @@ export const PRICING_PLANS: PricingPlan[] = [
   {
     id: 'enterprise',
     name: 'ENTERPRISE',
-    subtitle: '대규모 사내 자동화 & 보안 커스텀',
+    subtitle: '대규모 종합 외주 & 웹/영상 커스텀',
     monthlyPrice: null,
     annualPricePerMonth: null,
     priceDisplay: '맞춤 견적 문의',
     features: [
-      '보안 전용망 사내 LLM 인프라 구축',
-      '기업 전용 인하우스 AI 트레이닝',
+      '대규모 브랜드 홈페이지 & 쇼핑몰 구축',
+      '월간 숏폼 영상 시리즈 정기 제작 패키지',
       '전담 PM 배정 및 SLA 보장 계약',
-      '사내 사규/문서 RAG 시스템 완비',
-      '월간 성과 보고회 및 맞춤 컨설팅'
+      '정부지원사업/IR 전담 피치덱 올인원 패키지',
+      '사내 보안 NDA 체결 및 전용 소통 채널'
     ],
     ctaText: '도입 컨설팅 신청',
     ctaAction: 'enterprise'
@@ -1804,13 +2046,13 @@ export const PRICING_PLANS: PricingPlan[] = [
 export const FAQ_DATA: FAQItem[] = [
   {
     id: 'faq-1',
-    question: '사내 보안 문서나 민감한 정보가 AI 학습에 쓰이나요?',
-    answer: '절대 사용되지 않습니다. AI비서는 엔터프라이즈 전용 보안 API(Zero Data Retention 정책)를 적용하며, 계약 전 상호 비밀유지협약서(NDA)를 체결하여 고객사의 데이터 보안과 기밀을 100% 보장합니다.'
+    question: '사내 보안 문서나 민감한 계약서 정보가 안전하게 관리되나요?',
+    answer: '절대 안전하게 보장됩니다. 상호 비밀유지협약서(NDA)를 체결하며 엔터프라이즈 전용 보안 체계를 적용하여 고객사의 기밀 문서와 계약서, 재무 수치는 철저히 암호화되어 외부 유출이 불가능합니다.'
   },
   {
     id: 'faq-2',
-    question: 'AI 결과물이 마음에 들지 않으면 어떻게 되나요?',
-    answer: 'AI비서는 단순 프롬프트 결과물을 던져드리지 않습니다. 현업 5년 차 이상의 전문 검수 인력이 팩트체크와 윤문을 완료해 전달드리며, 불만족 시 무제한 재작업 또는 100% 환불 정책을 운영하고 있습니다.'
+    question: 'PPT, 상세페이지, 영상 결과물이 마음에 들지 않으면 어떻게 되나요?',
+    answer: '단순 초안을 전달하는 것이 아니라 현업 5년 차 이상의 전문 디렉터가 팩트체크와 퀄리티 검수를 완료해 전달합니다. 마음에 드실 때까지 책임지고 수정 반영해 드리며, 불만족 시 100% 환불 정책을 운영하고 있습니다.'
   },
   {
     id: 'faq-3',
@@ -1819,8 +2061,8 @@ export const FAQ_DATA: FAQItem[] = [
   },
   {
     id: 'faq-4',
-    question: '한 달만 써보고 연장 여부를 결정할 수 있나요?',
-    answer: '물론입니다. 장기 의무 약정 없이 1개월 단위로 구독할 수 있으며 언제든지 해지나 플랜 변경이 가능합니다. 첫 달 이용 후 92%의 고객사가 지속 구독을 이어가고 있습니다.'
+    question: '1회성으로 PPT나 계약서, 영상 1건만 의뢰할 수도 있나요?',
+    answer: '물론입니다. 정기 구독 외에도 필요한 업무 건수에 맞게 크레딧 패키지를 충전하여 1회성으로 바로 의뢰하실 수 있으며, 카카오톡 상담을 통해 단건 맞춤 견적도 가능합니다.'
   }
 ];
 
@@ -1833,10 +2075,10 @@ export const CREDIT_PACKAGES: CreditPackage[] = [
     price: 99000,
     originalPrice: 120000,
     discountRate: '17% OFF',
-    description: '단기 문서 검토 및 긴급한 실무 태스크 해결에 적합한 스타터 패키지',
+    description: '계약서 검토, 홍보 배너 제작 등 긴급한 실무 태스크 해결에 적합한 스타터 패키지',
     features: [
       '표준 실무 10건 차감 가능',
-      '계약서 검토, 보도자료, 리서치 요약 등',
+      '계약서 검토, 보도자료 초안, 카드뉴스 등',
       '전담 매니저 24시간 내 납품',
       '유효기간: 결제일로부터 1년'
     ]
@@ -1853,7 +2095,7 @@ export const CREDIT_PACKAGES: CreditPackage[] = [
     description: '스타트업 및 소규모 비즈니스에서 가장 선호하는 가성비 최고의 실무 크레딧',
     features: [
       '총 33 크레딧 제공 (+3 보너스 크레딧 증정)',
-      '사업계획서 세부 섹션, 심층 리서치 포함',
+      '사업계획서 세부 섹션, 상세페이지, 숏폼 영상 포함',
       '우선 순위 빠른 피드백 채널 배정',
       '수정 요청 100% 무상 반영',
       '유효기간: 결제일로부터 1년'
@@ -1867,14 +2109,13 @@ export const CREDIT_PACKAGES: CreditPackage[] = [
     price: 459000,
     originalPrice: 720000,
     discountRate: '36% OFF',
-    description: '정기적인 보고서 작성 및 마케팅 콘텐츠 대량 의뢰에 특화된 패키지',
+    description: '정기적인 디자인·영상 제작 및 IR 사업계획서 올인원 의뢰에 특화된 패키지',
     features: [
       '총 70 크레딧 제공 (+10 보너스 크레딧 증정)',
-      '전담 전담자 지정 및 사내 슬랙/카톡 채널 개설',
-      '심층 리서치, 다국어 번역 등 고난이도 업무 지원',
+      '전담 매니저 지정 및 사내 슬랙/카톡 채널 개설',
+      'IR 피치덱, 반응형 랜딩페이지, 숏폼 영상 풀 패키지',
       '세금계산서 100% 즉시 발행',
       '유효기간: 결제일로부터 1년'
     ]
   }
 ];
-

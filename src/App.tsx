@@ -25,8 +25,9 @@ import { ServiceItem, PaymentItemSelection, PaymentReceipt } from './types';
 export default function App() {
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
   const [selectedPortfolioService, setSelectedPortfolioService] = useState<ServiceItem | null>(null);
+  const [selectedPortfolioCaseId, setSelectedPortfolioCaseId] = useState<string | undefined>(undefined);
   const [selectedPlanId, setSelectedPlanId] = useState<string>('business_pro');
-  const [prefilledTaskType, setPrefilledTaskType] = useState<string>('document');
+  const [prefilledTaskType, setPrefilledTaskType] = useState<string>('ppt');
 
   // Payment & Dashboard state
   const [isPaymentOpen, setIsPaymentOpen] = useState<boolean>(false);
@@ -51,24 +52,37 @@ export default function App() {
     }
   }, []);
 
-  const handleSelectService = (service: ServiceItem) => {
-    setSelectedService(service);
+  const handleSelectService = (service: ServiceItem, initialCaseId?: string) => {
+    // Directly open the comprehensive portfolio gallery modal (user's preferred screen)
+    setSelectedPortfolioCaseId(initialCaseId);
+    setSelectedPortfolioService(service);
   };
 
-  const handleOpenPortfolioGallery = (service: ServiceItem) => {
-    // Close detail modal if open, open the 3~5 case studies gallery modal
-    setSelectedService(null);
+  const handleOpenPortfolioGallery = (service: ServiceItem, initialCaseId?: string) => {
+    setSelectedPortfolioCaseId(initialCaseId);
     setSelectedPortfolioService(service);
   };
 
   const handleApplyServiceFromModal = (serviceName: string) => {
-    if (serviceName.includes('문서')) setPrefilledTaskType('document');
-    else if (serviceName.includes('콘텐츠')) setPrefilledTaskType('content');
-    else if (serviceName.includes('리서치')) setPrefilledTaskType('research');
-    else if (serviceName.includes('마케팅')) setPrefilledTaskType('marketing');
-    else if (serviceName.includes('운영') || serviceName.includes('CS')) setPrefilledTaskType('cs');
-    else if (serviceName.includes('맞춤형')) setPrefilledTaskType('custom');
-    else setPrefilledTaskType('other');
+    if (serviceName.includes('PPT') || serviceName.includes('사업계획서') || serviceName.includes('투자제안서')) {
+      setPrefilledTaskType('ppt');
+    } else if (serviceName.includes('계약서') || serviceName.includes('용역') || serviceName.includes('납품')) {
+      setPrefilledTaskType('contract');
+    } else if (serviceName.includes('디자인') || serviceName.includes('상세페이지') || serviceName.includes('배너') || serviceName.includes('포스터')) {
+      setPrefilledTaskType('design');
+    } else if (serviceName.includes('마케팅') || serviceName.includes('보도자료') || serviceName.includes('SNS') || serviceName.includes('블로그')) {
+      setPrefilledTaskType('marketing');
+    } else if (serviceName.includes('사이트') || serviceName.includes('홈페이지') || serviceName.includes('쇼핑')) {
+      setPrefilledTaskType('website');
+    } else if (serviceName.includes('영상') || serviceName.includes('숏폼') || serviceName.includes('릴스')) {
+      setPrefilledTaskType('video');
+    } else if (serviceName.includes('문서')) {
+      setPrefilledTaskType('ppt');
+    } else if (serviceName.includes('콘텐츠')) {
+      setPrefilledTaskType('marketing');
+    } else {
+      setPrefilledTaskType('other');
+    }
 
     const el = document.getElementById('lead-form');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -160,8 +174,12 @@ export default function App() {
       {/* Footer */}
       <Footer onOpenDashboard={handleOpenDashboard} />
 
-      {/* Floating Action Button */}
-      <FloatingCTA />
+      {/* Floating Action Button & Interactive AI Chatbot */}
+      <FloatingCTA
+        onOpenConsultation={handleOpenConsultation}
+        onOpenDashboard={handleOpenDashboard}
+        onOpenPayment={handleOpenPayment}
+      />
 
       {/* Service Detail Modal */}
       <ServiceDetailModal
@@ -174,7 +192,11 @@ export default function App() {
       {/* Service 3~5 Multi-Portfolio Gallery Modal */}
       <ServicePortfolioModal
         service={selectedPortfolioService}
-        onClose={() => setSelectedPortfolioService(null)}
+        initialCaseId={selectedPortfolioCaseId}
+        onClose={() => {
+          setSelectedPortfolioService(null);
+          setSelectedPortfolioCaseId(undefined);
+        }}
         onApplyService={handleApplyServiceFromModal}
       />
 

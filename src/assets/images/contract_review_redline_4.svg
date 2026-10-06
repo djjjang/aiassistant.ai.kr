@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Article 11: 제 11 조 (비밀유지) -->
+  <g transform="translate(60, 65)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 11 조 (비밀유지)</text>
+    <text x="145" y="0" font-size="12" font-weight="700" fill="#2563EB">◆ 수정</text>
+
+    <!-- Clause 1 -->
+    <g transform="translate(0, 26)" font-size="13">
+      <text x="0" y="0" fill="#1E293B">① 갑과 을은 본 계약과 관련하여 알게 된 상대방의 영업상·기술상 비밀을 </text>
+      <!-- Strikethrough -->
+      <text x="430" y="0" fill="#DC2626">영구히</text>
+      <line x1="430" y1="-4" x2="470" y2="-4" stroke="#DC2626" stroke-width="1.2"/>
+      <!-- Insert -->
+      <text x="475" y="0" font-weight="600" fill="#2563EB">본 계약기간 및 계약 종료 후 3 년간</text>
+      <line x1="475" y1="4" x2="685" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+
+      <text x="0" y="20" fill="#1E293B">유지하여야 하며, 상대방의 사전 서면 동의 없이 제 3 자에게 공개하거나 본 용역 외의 목적으로 사용하여서는 아니 된다.</text>
+    </g>
+
+    <!-- Clause 2 -->
+    <g transform="translate(0, 72)" font-size="13">
+      <text x="0" y="0" font-weight="600" fill="#2563EB">② 다음 각 호의 정보는 비밀정보에서 제외한다.</text>
+      <line x1="0" y1="4" x2="278" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+
+      <g transform="translate(18, 22)">
+        <text x="0" y="0" font-weight="600" fill="#2563EB">1. 공개 당시 이미 공지되었거나, 수령 당사자의 귀책 없이 공지된 정보</text>
+        <line x1="0" y1="4" x2="408" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+
+        <text x="0" y="20" font-weight="600" fill="#2563EB">2. 수령 당사자가 비밀유지 의무 없이 제 3 자로부터 적법하게 취득한 정보</text>
+        <line x1="0" y1="24" x2="425" y2="24" stroke="#2563EB" stroke-width="1.2"/>
+
+        <text x="0" y="40" font-weight="600" fill="#2563EB">3. 법령 또는 법원·행정기관의 명령에 따라 공개가 요구되는 정보</text>
+        <line x1="0" y1="44" x2="378" y2="44" stroke="#2563EB" stroke-width="1.2"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Review Box 5 (검토의견 5) -->
+  <g transform="translate(60, 240)">
+    <rect width="730" height="82" rx="4" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1"/>
+    <rect x="0" y="0" width="5" height="82" fill="#16A34A"/>
+
+    <g transform="translate(20, 22)">
+      <text x="0" y="0" font-size="13" font-weight="800" fill="#166534">검토의견 5</text>
+      <!-- 하 Badge -->
+      <rect x="75" y="-13" width="48" height="18" rx="3" fill="#16A34A"/>
+      <text x="99" y="0" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">위험·하</text>
+      <text x="135" y="0" font-size="13" font-weight="800" fill="#166534">"영구히" 비밀유지 의무</text>
+
+      <g transform="translate(0, 20)" font-size="12" fill="#14532D">
+        <text x="0" y="0" font-weight="700">문제점</text>
+        <text x="45" y="0" font-weight="400">기간 제한과 예외 사유가 없어 의무 범위가 지나치게 넓고, 분쟁 시 무효·과도한 제한 다툼의 소지가 있음.</text>
+
+        <text x="0" y="24" font-weight="700">수정방향</text>
+        <text x="56" y="24" font-weight="400">존속기간을 계약 종료 후 3 년으로 정하고, 공지 정보·적법 취득 정보·법령상 공개 요구 정보를 예외로 명시.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Article 12: 제 12 조 (분쟁해결) -->
+  <g transform="translate(60, 345)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 12 조 (분쟁해결)</text>
+    <text x="0" y="26" font-size="13" font-weight="400" fill="#1E293B">① 본 계약과 관련하여 분쟁이 발생한 경우 갑과 을은 상호 협의하여 해결하도록 노력한다.</text>
+    <text x="0" y="48" font-size="13" font-weight="400" fill="#1E293B">② 협의로 해결되지 않는 분쟁은 갑의 본점 소재지를 관할하는 법원을 관할법원으로 한다.</text>
+  </g>
+
+  <!-- Article 13: 제 13 조 (기타) -->
+  <g transform="translate(60, 435)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 13 조 (기타)</text>
+    <text x="0" y="26" font-size="13" font-weight="400" fill="#1E293B">① 본 계약에서 정하지 않은 사항은 관계 법령 및 일반 상관례에 따른다.</text>
+    <text x="0" y="48" font-size="13" font-weight="400" fill="#1E293B">② 본 계약의 변경은 갑과 을의 서면 합의에 의하여만 효력이 있다.</text>
+  </g>
+
+  <!-- Sign-off Statement -->
+  <g transform="translate(60, 525)">
+    <text x="0" y="0" font-size="13" font-weight="400" fill="#1E293B">
+      본 계약의 성립을 증명하기 위하여 계약서 2 부를 작성하여 갑과 을이 서명 날인한 후 각 1 부씩 보관한다.
+    </text>
+
+    <!-- Date Centered -->
+    <text x="365" y="40" font-size="15" font-weight="600" fill="#0F172A" text-anchor="middle">
+      2026 년 ○○월 ○○일
+    </text>
+  </g>
+
+  <!-- Party Signature Table -->
+  <g transform="translate(60, 600)">
+    <rect width="730" height="150" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+    
+    <!-- Table Header Row -->
+    <rect x="0" y="0" width="730" height="30" fill="#F8FAFC"/>
+    <rect x="0" y="0" width="150" height="30" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="75" y="20" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">구분</text>
+    
+    <rect x="150" y="0" width="290" height="30" stroke="#CBD5E1" stroke-width="0.8" fill="none"/>
+    <text x="295" y="20" font-size="12" font-weight="800" fill="#0F172A" text-anchor="middle">갑</text>
+    
+    <rect x="440" y="0" width="290" height="30" stroke="#CBD5E1" stroke-width="0.8" fill="none"/>
+    <text x="585" y="20" font-size="12" font-weight="800" fill="#0F172A" text-anchor="middle">을</text>
+
+    <!-- Row 1: 상호 -->
+    <rect x="0" y="30" width="150" height="30" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="75" y="50" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">상호</text>
+    <rect x="150" y="30" width="290" height="30" stroke="#CBD5E1" stroke-width="0.8" fill="none"/>
+    <text x="170" y="50" font-size="12" font-weight="600" fill="#0F172A">주식회사 오로라테크</text>
+    <rect x="440" y="30" width="290" height="30" stroke="#CBD5E1" stroke-width="0.8" fill="none"/>
+    <text x="460" y="50" font-size="12" font-weight="600" fill="#0F172A">주식회사 브릿지파트너스</text>
+
+    <!-- Row 2: 주소 -->
+    <rect x="0" y="60" width="150" height="30" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="75" y="80" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">주소</text>
+    <rect x="150" y="60" width="290" height="30" stroke="#CBD5E1" stroke-width="0.8" fill="none"/>
+    <rect x="440" y="60" width="290" height="30" stroke="#CBD5E1" stroke-width="0.8" fill="none"/>
+
+    <!-- Row 3: 사업자등록번호 -->
+    <rect x="0" y="90" width="150" height="30" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="75" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">사업자등록번호</text>
+    <rect x="150" y="90" width="290" height="30" stroke="#CBD5E1" stroke-width="0.8" fill="none"/>
+    <rect x="440" y="90" width="290" height="30" stroke="#CBD5E1" stroke-width="0.8" fill="none"/>
+
+    <!-- Row 4: 대표이사 -->
+    <rect x="0" y="120" width="150" height="30" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="75" y="140" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">대표이사</text>
+    <rect x="150" y="120" width="290" height="30" stroke="#CBD5E1" stroke-width="0.8" fill="none"/>
+    <text x="400" y="140" font-size="12" font-weight="500" fill="#64748B" text-anchor="end">(인)</text>
+    <rect x="440" y="120" width="290" height="30" stroke="#CBD5E1" stroke-width="0.8" fill="none"/>
+    <text x="690" y="140" font-size="12" font-weight="500" fill="#64748B" text-anchor="end">(인)</text>
+  </g>
+
+  <!-- Attachment Label -->
+  <g transform="translate(60, 775)">
+    <text x="0" y="0" font-size="13" font-weight="700" fill="#0F172A">[별첨] 과업지시서 1 부</text>
+  </g>
+
+  <!-- Disclaimer Paragraph -->
+  <g transform="translate(60, 835)" font-size="11" font-weight="400" fill="#94A3B8">
+    <text x="0" y="0">※ 본 문서는 트렌드 24 의 계약서 작성·검토 역량을 소개하기 위한 포트폴리오 예시이며, 등장하는 회사명·금액·조건은 예시용입니다. 실제 계약</text>
+    <text x="0" y="18">체결 시에는 개별 사안에 맞는 법률 전문가 검토를 권장합니다.</text>
+  </g>
+
+  <!-- Page Footer -->
+  <g transform="translate(425, 1140)">
+    <text x="0" y="0" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">
+      트렌드 24 · T24 AI 계약서 검토 | <tspan font-weight="700" fill="#0F172A">4</tspan>
+    </text>
+  </g>
+</svg>

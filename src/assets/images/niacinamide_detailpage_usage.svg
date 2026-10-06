@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 850" width="600" height="850" style="background:#ffffff; font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="wave-green-sec" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="48" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+  <text x="30" y="30" fill="#64748B" font-size="11" font-weight="800">BT24 · 이커머스 상세페이지</text>
+  <text x="570" y="30" fill="#00796B" font-size="11" font-weight="700" text-anchor="end">Section 02 : 활용법 &amp; 저자극 원리</text>
+
+  <!-- Title: 활용법 -->
+  <g transform="translate(30, 72)">
+    <text x="270" y="0" fill="#64748B" font-size="13" font-weight="700" text-anchor="middle">
+      나이아신아마이드 100 활용법
+    </text>
+    <text x="270" y="28" fill="#0F172A" font-size="22" font-weight="900" text-anchor="middle">
+      어떻게 사용할까요?
+    </text>
+
+    <!-- 3 Usage Cards -->
+    <!-- Card 1 -->
+    <g transform="translate(0, 48)">
+      <rect width="540" height="96" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="12" y="10" width="76" height="76" rx="8" fill="#E0F2FE" />
+      <text x="50" y="52" fill="#0284C7" font-size="11" font-weight="800" text-anchor="middle">토너/에센스</text>
+      
+      <g transform="translate(104, 20)">
+        <text x="0" y="16" fill="#0F172A" font-size="15" font-weight="800">토너, 에센스</text>
+        <rect x="340" y="2" width="76" height="22" rx="11" fill="#00796B" />
+        <text x="378" y="17" fill="#FFFFFF" font-size="10.5" font-weight="700" text-anchor="middle">Point 01</text>
+        <text x="0" y="42" fill="#334155" font-size="12">토너와 에센스 등에 1회 뾰족한 토출구를 눌러</text>
+        <text x="0" y="60" fill="#00796B" font-size="12.5" font-weight="700">1펌프 정도 섞어서 사용</text>
+      </g>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(0, 154)">
+      <rect width="540" height="96" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="12" y="10" width="76" height="76" rx="8" fill="#FEF3C7" />
+      <text x="50" y="52" fill="#D97706" font-size="11" font-weight="800" text-anchor="middle">영양크림</text>
+      
+      <g transform="translate(104, 20)">
+        <text x="0" y="16" fill="#0F172A" font-size="15" font-weight="800">크림</text>
+        <rect x="340" y="2" width="76" height="22" rx="11" fill="#00796B" />
+        <text x="378" y="17" fill="#FFFFFF" font-size="10.5" font-weight="700" text-anchor="middle">Point 02</text>
+        <text x="0" y="42" fill="#334155" font-size="12">사용하시는 보습·영양 크림에도 토출구</text>
+        <text x="0" y="60" fill="#00796B" font-size="12.5" font-weight="700">1펌프 정도 섞어서 사용</text>
+      </g>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(0, 260)">
+      <rect width="540" height="96" rx="10" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1" />
+      <rect x="12" y="10" width="76" height="76" rx="8" fill="#E0F2FE" />
+      <text x="50" y="52" fill="#0284C7" font-size="11" font-weight="800" text-anchor="middle">미스트 분사</text>
+      
+      <g transform="translate(104, 20)">
+        <text x="0" y="16" fill="#0F172A" font-size="15" font-weight="800">미스트</text>
+        <rect x="340" y="2" width="76" height="22" rx="11" fill="#00796B" />
+        <text x="378" y="17" fill="#FFFFFF" font-size="10.5" font-weight="700" text-anchor="middle">Point 03</text>
+        <text x="0" y="42" fill="#334155" font-size="12">손바닥에 1펌프 정도 파우더를 떨어뜨린 뒤</text>
+        <text x="0" y="60" fill="#00796B" font-size="12.5" font-weight="700">미스트를 뿌려 얼굴에 바르고 덧뿌려줌</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- POINT 01 Section -->
+  <g transform="translate(30, 460)">
+    <text x="0" y="16" fill="#00796B" font-size="13" font-weight="800" letter-spacing="1">POINT 01</text>
+    <text x="0" y="44" fill="#0F172A" font-size="22" font-weight="900">자연 유래 성분으로 저자극</text>
+
+    <!-- Emerald Box -->
+    <g transform="translate(0, 60)">
+      <rect width="540" height="72" rx="8" fill="#004D40" />
+      <g transform="translate(20, 18)">
+        <text x="0" y="14" fill="#A7F3D0" font-size="12.5" font-weight="800">천연 유래 성분을 사용하여 자연 그대로의 순수함</text>
+        <text x="0" y="34" fill="#FFFFFF" font-size="11" font-weight="400">
+          안심하고 사용할 수 있는 천연 유래 미백 기능성 원료로 자극 없는 피부 개선을 선사합니다.
+        </text>
+      </g>
+    </g>
+
+    <!-- Detail Checking Card -->
+    <g transform="translate(0, 144)">
+      <rect width="540" height="180" rx="10" fill="url(#wave-green-sec)" />
+      <g transform="translate(20, 22)">
+        <text x="250" y="18" fill="#FFFFFF" font-size="18" font-weight="900" font-style="italic" text-anchor="middle">
+          Detail Checking
+        </text>
+        <text x="250" y="40" fill="#D1FAE5" font-size="11.5" font-weight="600" text-anchor="middle">
+          나이아신아마이드는 새로운 "미백 기능성 원료"로 수용성 비타민B3 입니다.
+        </text>
+
+        <!-- 2 Comparison Points -->
+        <g transform="translate(20, 64)">
+          <!-- Point A -->
+          <g transform="translate(0, 0)">
+            <circle cx="20" cy="20" r="16" fill="#FFFFFF" />
+            <path d="M15 20l4 4 7-7" fill="none" stroke="#00796B" stroke-width="2" stroke-linecap="round" />
+            <text x="46" y="16" fill="#FFFFFF" font-size="12.5" font-weight="800">수용성 비타민b3</text>
+            <text x="46" y="32" fill="#D1FAE5" font-size="11">기미, 미백, 피부개선까지 집중 케어</text>
+          </g>
+
+          <!-- Point B -->
+          <g transform="translate(260, 0)">
+            <circle cx="20" cy="20" r="16" fill="#FFFFFF" />
+            <path d="M15 20l4 4 7-7" fill="none" stroke="#00796B" stroke-width="2" stroke-linecap="round" />
+            <text x="46" y="16" fill="#FFFFFF" font-size="12.5" font-weight="800">나이아신아마이드</text>
+            <text x="46" y="32" fill="#D1FAE5" font-size="11">멜라닌색소가 이동하는 것을 감소 차단</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

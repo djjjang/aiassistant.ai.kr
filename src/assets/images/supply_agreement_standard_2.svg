@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="850" height="52" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <g transform="translate(60, 32)">
+    <rect x="0" y="-18" width="80" height="24" rx="4" fill="#0F172A"/>
+    <text x="40" y="-2" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">T24 LEGAL</text>
+    <text x="94" y="-1" font-size="12" font-weight="700" fill="#334155">B2B 물품 납품 및 자재 공급 기본계약서</text>
+    <text x="325" y="-1" font-size="11" font-weight="500" fill="#64748B">| 제2면 (대금·단가연동)</text>
+  </g>
+  <g transform="translate(790, 32)" text-anchor="end">
+    <text x="0" y="-1" font-size="11" font-weight="600" fill="#64748B">문서번호: T24-SP-2026-0921</text>
+  </g>
+
+  <!-- Article 7: 제 7 조 (소유권 및 위험부담의 이전) -->
+  <g transform="translate(60, 90)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 7 조 (소유권 및 위험부담의 이전)</text>
+    <text x="14" y="22" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 납품된 물품의 소유권과 멸실·훼손에 대한 일체의 위험부담은 제6조에 따른 검수에 최종 합격한 시점에 을에서 갑으로 이전한다.
+    </text>
+    <text x="14" y="42" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 검수 완료 전이라도 갑의 고의 또는 과실, 보관 부실로 인하여 발생한 물품의 멸실·훼손은 갑의 귀책으로 하며 을은 면책된다.
+    </text>
+  </g>
+
+  <!-- Article 8: 제 8 조 (대금 지급 조건 및 지연손해금) -->
+  <g transform="translate(60, 180)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 8 조 (대금 지급 조건 및 지연손해금)</text>
+    <text x="14" y="22" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 을은 제6조의 검수 합격 후 해당 물품에 대한 전자세금계산서를 정당하게 발행하여 갑에게 대금을 청구한다.
+    </text>
+    <text x="14" y="42" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 갑은 전자세금계산서 발행일로부터 30일 이내에 을이 사전에 지정한 결제 금융계좌로 현금(또는 당좌송금) 입금한다.
+    </text>
+    <text x="14" y="62" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ③ 갑이 지급기한을 도과한 경우, 지체된 일수에 대하여 상법 소정의 연 6%의 지연손해금을 가산하여 지급하여야 한다.
+    </text>
+    <text x="14" y="82" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ④ 갑은 객관적으로 확정되지 아니한 손해배상 청구권 등을 이유로 을의 정당한 물품대금 지급을 일방적으로 거절하거나
+    </text>
+    <text x="14" y="102" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      임의로 상계할 수 없다.
+    </text>
+  </g>
+
+  <!-- Article 9: 제 9 조 (품질보증 및 하자담보책임) -->
+  <g transform="translate(60, 325)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 9 조 (품질보증 및 하자담보책임)</text>
+    <text x="14" y="22" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 을은 공급 물품이 [별표 1]의 규격 및 갑과의 사전 승인 도면에 완전히 부합하며 제조상 결함이 없음을 보증한다.
+    </text>
+    <text x="14" y="42" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 본 물품의 하자담보기간은 검수 합격일로부터 12개월로 정한다.
+    </text>
+    <text x="14" y="62" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ③ 하자담보기간 내에 통상적 사용 중 결함이 발견된 때에는 을은 3영업일 이내에 교환, 무상 수리 또는 대금 감액을 이행한다.
+    </text>
+    <text x="14" y="82" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ④ 갑의 관리·보관 부주의, 사전 승인 없는 구조 개조, 천재지변 등으로 인하여 발생한 하자는 보증 대상에서 제외한다.
+    </text>
+  </g>
+
+  <!-- Article 10: 제 10 조 (지체상금 및 한도) -->
+  <g transform="translate(60, 455)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 10 조 (지체상금 및 한도)</text>
+    <text x="14" y="22" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 을이 정당한 사유 없이 지정 납기를 지연한 경우, 지연된 물품 가액에 지체일수 1일당 1/1,000을 곱한 지체상금을 배상한다.
+    </text>
+    <text x="14" y="42" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 지체상금의 누적 총액은 해당 개별 발주 금액의 10%를 한도로(Cap) 제한한다.
+    </text>
+    <text x="14" y="62" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ③ 불가항력 또는 갑의 사양 변경 지연 등 을의 귀책사유가 아닌 사정으로 지연된 기간은 지체일수 산정에서 즉시 제외한다.
+    </text>
+  </g>
+
+  <!-- Article 11: 제 11 조 (원자재 가격 연동 및 공급단가 조정) -->
+  <g transform="translate(60, 565)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 11 조 (원자재 가격 연동 및 공급단가 조정)</text>
+    <text x="14" y="22" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 계약 체결 이후 주요 원자재(알루미늄 잉곳, SUS 합금강 등) 가격 또는 대미 환율이 체결 당시 대비 10% 이상 변동한 경우,
+    </text>
+    <text x="14" y="42" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      을은 공인 물가지표 및 산출 근거를 첨부하여 갑에게 공급단가의 조정을 공식 요청할 수 있다.
+    </text>
+    <text x="14" y="62" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 갑은 을의 요청을 받은 날부터 14일 이내에 단가 협의를 개시하여야 하며, 정당한 사유 없이 협의를 거부할 수 없다.
+    </text>
+    <text x="14" y="82" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ③ 상호 서면 합의로 인상·조정된 단가는 합의일 이후 발행되는 개별 발주분부터 즉시 적용한다.
+    </text>
+  </g>
+
+  <!-- T24 Legal Commentary Box -->
+  <g transform="translate(60, 700)">
+    <rect width="730" height="370" rx="8" fill="#EFF6FF" stroke="#93C5FD" stroke-width="1.2"/>
+    <rect x="18" y="16" width="145" height="22" rx="4" fill="#1D4ED8"/>
+    <text x="90" y="31" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">T24 핵심 검토 가이드</text>
+    <text x="175" y="32" font-size="13" font-weight="800" fill="#1E3A8A">원자재 단가연동제(제11조) 및 지체상금 상한선(Cap, 제10조)의 가치</text>
+    
+    <line x1="18" y1="48" x2="712" y2="48" stroke="#BFDBFE" stroke-width="1"/>
+    
+    <!-- Feature 1: Raw Material Escalation -->
+    <g transform="translate(20, 68)">
+      <circle cx="6" cy="6" r="4" fill="#2563EB"/>
+      <text x="18" y="10" font-size="12.5" font-weight="800" fill="#1E40AF">1. 하도급법 및 납품대금 연동제 준수 (원자재 폭등 리스크 해소)</text>
+      <text x="18" y="30" font-size="11.5" font-weight="400" fill="#1E3A8A" letter-spacing="-0.2">
+        최근 글로벌 원자재 변동성과 환율 급등으로 인해 고정단가 계약 시 공급사가 심각한 적자 도산에 직면하는
+      </text>
+      <text x="18" y="48" font-size="11.5" font-weight="400" fill="#1E3A8A" letter-spacing="-0.2">
+        사례가 빈번합니다. 본 조항은 '10% 이상 변동 시 자동 협의 의무'를 부과하여 법정 납품단가 연동제 기준을 충족하고
+      </text>
+      <text x="18" y="66" font-size="11.5" font-weight="400" fill="#1E3A8A" letter-spacing="-0.2">
+        안정적인 원자재 수급 및 공급망 지속성을 보장합니다.
+      </text>
+    </g>
+
+    <!-- Feature 2: Late Delivery Penalty Cap -->
+    <g transform="translate(20, 160)">
+      <circle cx="6" cy="6" r="4" fill="#2563EB"/>
+      <text x="18" y="10" font-size="12.5" font-weight="800" fill="#1E40AF">2. 지체상금 상한선(10% Cap) 설정의 중요성</text>
+      <text x="18" y="30" font-size="11.5" font-weight="400" fill="#1E3A8A" letter-spacing="-0.2">
+        상한선이 없는 지체상금 조항은 수급 차질 시 지체일수가 누적되어 물품 대금 전체를 초과하는 과도한 위약벌이
+      </text>
+      <text x="18" y="48" font-size="11.5" font-weight="400" fill="#1E3A8A" letter-spacing="-0.2">
+        청구될 수 있습니다. 대법원 판례 기준에 맞춰 발주금액의 10% 한도(Cap)를 명시하여 비례 원칙을 확립했습니다.
+      </text>
+    </g>
+
+    <!-- Feature 3: Payment Term & Statutory Interest -->
+    <g transform="translate(20, 235)">
+      <circle cx="6" cy="6" r="4" fill="#2563EB"/>
+      <text x="18" y="10" font-size="12.5" font-weight="800" fill="#1E40AF">3. 대금지급 기한 30일 및 상사 지연손해금(연 6%) 확정</text>
+      <text x="18" y="30" font-size="11.5" font-weight="400" fill="#1E3A8A" letter-spacing="-0.2">
+        모호한 '익월 말일'이나 '검수 후 수시' 등의 독소 조항을 배제하고, 세금계산서 발행일 기준 30일 이내 현금 결제를
+      </text>
+      <text x="18" y="48" font-size="11.5" font-weight="400" fill="#1E3A8A" letter-spacing="-0.2">
+        의무화하여 공급사의 자금 유동성을 방어합니다.
+      </text>
+    </g>
+
+    <rect x="20" y="315" width="690" height="38" rx="4" fill="#DBEAFE"/>
+    <text x="32" y="338" font-size="11.5" font-weight="700" fill="#1D4ED8">
+      ✓ 실무 TIP: 단가 조정 시 공인 원자재 거래소(LME, 한국자원정보서비스 등) 공식 시세표를 객관적 산출 증빙으로 활용.
+    </text>
+  </g>
+
+  <!-- Page Footer -->
+  <line x1="60" y1="1120" x2="790" y2="1120" stroke="#CBD5E1" stroke-width="0.8"/>
+  <g transform="translate(60, 1145)">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">트렌드 24 (T24 AI) 실무 표준 계약서 서식집</text>
+  </g>
+  <g transform="translate(425, 1145)" text-anchor="middle">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#334155">- 2 / 5 -</text>
+  </g>
+  <g transform="translate(790, 1145)" text-anchor="end">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">(주)한국글로벌제조 ✕ (주)케이원인더스트리</text>
+  </g>
+</svg>

@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0B1A2C"/>
+  <rect x="35" y="35" width="1530" height="830" rx="14" fill="#0F243B" stroke="#1E446B" stroke-width="1.5"/>
+
+  <!-- Top Header Navigation -->
+  <g transform="translate(80, 75)">
+    <rect width="110" height="32" rx="6" fill="#1D4ED8"/>
+    <text x="55" y="21" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">2. 핵심기술</text>
+    <text x="130" y="22" font-size="22" font-weight="900" fill="#FFFFFF">개발 제품 핵심 아키텍처 및 원천 기술 혁신성</text>
+    <text x="1440" y="22" font-size="13" font-weight="600" fill="#94A3B8" text-anchor="end">기술명: 3D LiDAR SLAM + 듀얼 비전 AI 엣지 퓨전 엔진</text>
+  </g>
+
+  <!-- Technical Value Proposition Banner -->
+  <g transform="translate(80, 135)">
+    <rect width="1440" height="46" rx="8" fill="rgba(56, 189, 248, 0.12)" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="24" y="29" font-size="15" font-weight="800" fill="#38BDF8">핵심 혁신점 :</text>
+    <text x="125" y="29" font-size="15" font-weight="700" fill="#FFFFFF">
+      고가 센서 대신 상용 저가 3D 라이다와 온디바이스 신경망(NPU) 융합으로 외산 대비 2배 빠른 0.05초 반응 속도 구현
+    </text>
+  </g>
+
+  <!-- 4 Core Tech Pillars Grid -->
+  <g transform="translate(80, 205)">
+    <!-- Tech 1: 3D LiDAR SLAM & Fusion -->
+    <g transform="translate(0, 0)">
+      <rect width="345" height="320" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="20" y="20" width="120" height="26" rx="4" fill="#1D4ED8"/>
+      <text x="80" y="37" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">CORE TECH 01</text>
+      
+      <text x="20" y="80" font-size="19" font-weight="900" fill="#FFFFFF">3D 라이다-비전 융합</text>
+      <text x="20" y="105" font-size="15" font-weight="700" fill="#38BDF8">실시간 SLAM 맵핑 기술</text>
+
+      <line x1="20" y1="125" x2="325" y2="125" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="20" y="155" font-size="13" font-weight="700" fill="#FFFFFF">• 조도 변화 무관 안정성</text>
+      <text x="20" y="177" font-size="12" font-weight="400" fill="#94A3B8">- 어두운 야간이나 역광 환경에서도 99.9% 맵 매칭</text>
+
+      <text x="20" y="215" font-size="13" font-weight="700" fill="#FFFFFF">• 3D 공간 포인트 클라우드 압축</text>
+      <text x="20" y="237" font-size="12" font-weight="400" fill="#94A3B8">- 맵 데이터 용량 80% 경량화로 엣지 보드 실시간 연산</text>
+
+      <text x="20" y="275" font-size="13" font-weight="700" fill="#FFFFFF">• 무마커(Markerless) 주행</text>
+      <text x="20" y="297" font-size="12" font-weight="400" fill="#94A3B8">- 바닥 시공 없이 도면 입력 후 10분 내 자율주행 개시</text>
+    </g>
+
+    <!-- Tech 2: ±1mm Micro Docking -->
+    <g transform="translate(365, 0)">
+      <rect width="345" height="320" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="20" y="20" width="120" height="26" rx="4" fill="#F05A22"/>
+      <text x="80" y="37" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">CORE TECH 02</text>
+      
+      <text x="20" y="80" font-size="19" font-weight="900" fill="#FFFFFF">±1.0mm 초정밀</text>
+      <text x="20" y="105" font-size="15" font-weight="700" fill="#F05A22">설비 자동 도킹 특허</text>
+
+      <line x1="20" y1="125" x2="325" y2="125" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="20" y="155" font-size="13" font-weight="700" fill="#FFFFFF">• 2차원 카메라 + 레이저 복합</text>
+      <text x="20" y="177" font-size="12" font-weight="400" fill="#94A3B8">- 설비 투입구 기준 3축(X, Y, Theta) 실시간 보정</text>
+
+      <text x="20" y="215" font-size="13" font-weight="700" fill="#FFFFFF">• 반도체/2차전지 공정 적합</text>
+      <text x="20" y="237" font-size="12" font-weight="400" fill="#94A3B8">- 웨이퍼 카세트 및 배터리 셀 자동 이송 정밀도 달성</text>
+
+      <text x="20" y="275" font-size="13" font-weight="700" fill="#FFFFFF">• 도킹 실패율 제로화 (Zero-Fault)</text>
+      <text x="20" y="297" font-size="12" font-weight="400" fill="#94A3B8">- 미세 오차 시 0.2초 이내 자동 재정렬 시퀀스 구동</text>
+    </g>
+
+    <!-- Tech 3: Realtime Dynamic Obstacle Bypass -->
+    <g transform="translate(730, 0)">
+      <rect width="345" height="320" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="20" y="20" width="120" height="26" rx="4" fill="#10B981"/>
+      <text x="80" y="37" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">CORE TECH 03</text>
+      
+      <text x="20" y="80" font-size="19" font-weight="900" fill="#FFFFFF">0.05초 초저지연</text>
+      <text x="20" y="105" font-size="15" font-weight="700" fill="#10B981">동적 장애물 자율 회피</text>
+
+      <line x1="20" y1="125" x2="325" y2="125" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="20" y="155" font-size="13" font-weight="700" fill="#FFFFFF">• 작업자 및 지게차 궤적 예측</text>
+      <text x="20" y="177" font-size="12" font-weight="400" fill="#94A3B8">- 딥러닝 객체 추적으로 보행자 이동 방향 2초 전 예측</text>
+
+      <text x="20" y="215" font-size="13" font-weight="700" fill="#FFFFFF">• 실시간 로컬 패스 플래닝</text>
+      <text x="20" y="237" font-size="12" font-weight="400" fill="#94A3B8">- 멈춤 없는 부드러운 우회 주행으로 라인 흐름 보존</text>
+
+      <text x="20" y="275" font-size="13" font-weight="700" fill="#FFFFFF">• 3중 안전 시스템 (Safety LIDAR)</text>
+      <text x="20" y="297" font-size="12" font-weight="400" fill="#94A3B8">- 최후방 범퍼 센서 및 하드웨어 릴레이 비상정지 연동</text>
+    </g>
+
+    <!-- Tech 4: Cloud & On-Prem Fleet FMS -->
+    <g transform="translate(1095, 0)">
+      <rect width="345" height="320" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="20" y="20" width="120" height="26" rx="4" fill="#8B5CF6"/>
+      <text x="80" y="37" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">CORE TECH 04</text>
+      
+      <text x="20" y="80" font-size="19" font-weight="900" fill="#FFFFFF">100대 동시 통합 관제</text>
+      <text x="20" y="105" font-size="15" font-weight="700" fill="#C084FC">AI FMS 스마트 플랫폼</text>
+
+      <line x1="20" y1="125" x2="325" y2="125" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="20" y="155" font-size="13" font-weight="700" fill="#FFFFFF">• 교차로 충돌 회피 알고리즘</text>
+      <text x="20" y="177" font-size="12" font-weight="400" fill="#94A3B8">- 다중 로봇 교착(Deadlock) 제로 스케줄링 구현</text>
+
+      <text x="20" y="215" font-size="13" font-weight="700" fill="#FFFFFF">• 최적 배차 및 자동 배터리 관리</text>
+      <text x="20" y="237" font-size="12" font-weight="400" fill="#94A3B8">- 잔여 배터리 및 이송 긴급도 분석 기반 자율 무선 충전</text>
+
+      <text x="20" y="275" font-size="13" font-weight="700" fill="#FFFFFF">• 스마트팩토리 ERP/MES 연동</text>
+      <text x="20" y="297" font-size="12" font-weight="400" fill="#94A3B8">- RESTful API 및 표준 프로토콜(VDA 5050) 완벽 지원</text>
+    </g>
+  </g>
+
+  <!-- Process Diagram Strip -->
+  <g transform="translate(80, 550)">
+    <rect width="1440" height="175" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+    <text x="24" y="32" font-size="15" font-weight="800" fill="#38BDF8">실시간 자율주행 &amp; 관제 데이터 파이프라인 흐름도</text>
+
+    <!-- 4 Flow Blocks -->
+    <g transform="translate(24, 52)">
+      <!-- Step 1 -->
+      <rect width="320" height="95" rx="8" fill="#162E4A" stroke="#2D5A88" stroke-width="1"/>
+      <text x="20" y="30" font-size="13" font-weight="800" fill="#93C5FD">STEP 1. 멀티센서 데이터 수집</text>
+      <text x="20" y="55" font-size="12" font-weight="400" fill="#E2E8F0">3D LiDAR (16ch) + 비전 AI 카메라</text>
+      <text x="20" y="75" font-size="11" font-weight="400" fill="#94A3B8">초당 30프레임 동기화 센서 퓨전</text>
+
+      <!-- Arrow 1 -->
+      <path d="M335 48 L355 48 M348 40 L356 48 L348 56" stroke="#38BDF8" stroke-width="2.5" fill="none"/>
+
+      <!-- Step 2 -->
+      <g transform="translate(365, 0)">
+        <rect width="320" height="95" rx="8" fill="#162E4A" stroke="#2D5A88" stroke-width="1"/>
+        <text x="20" y="30" font-size="13" font-weight="800" fill="#38BDF8">STEP 2. 엣지 신경망 실시간 추론</text>
+        <text x="20" y="55" font-size="12" font-weight="400" fill="#E2E8F0">온디바이스 NPU 기반 장애물 판별</text>
+        <text x="20" y="75" font-size="11" font-weight="400" fill="#94A3B8">0.05초 내 회피 궤적 로컬 경로 생성</text>
+      </g>
+
+      <!-- Arrow 2 -->
+      <path d="M700 48 L720 48 M713 40 L721 48 L713 56" stroke="#38BDF8" stroke-width="2.5" fill="none"/>
+
+      <!-- Step 3 -->
+      <g transform="translate(730, 0)">
+        <rect width="320" height="95" rx="8" fill="#162E4A" stroke="#2D5A88" stroke-width="1"/>
+        <text x="20" y="30" font-size="13" font-weight="800" fill="#F05A22">STEP 3. 모터 드라이브 초정밀 제어</text>
+        <text x="20" y="55" font-size="12" font-weight="400" fill="#E2E8F0">BLDC 서보 모터 4륜 독립 제어</text>
+        <text x="20" y="75" font-size="11" font-weight="400" fill="#94A3B8">±1mm 정밀 위치 도킹 및 하역</text>
+      </g>
+
+      <!-- Arrow 3 -->
+      <path d="M1065 48 L1085 48 M1078 40 L1086 48 L1078 56" stroke="#38BDF8" stroke-width="2.5" fill="none"/>
+
+      <!-- Step 4 -->
+      <g transform="translate(1095, 0)">
+        <rect width="295" height="95" rx="8" fill="#162E4A" stroke="#2D5A88" stroke-width="1"/>
+        <text x="20" y="30" font-size="13" font-weight="800" fill="#10B981">STEP 4. 클라우드 FMS 관제</text>
+        <text x="20" y="55" font-size="12" font-weight="400" fill="#E2E8F0">100대 군집 트래픽 최적화</text>
+        <text x="20" y="75" font-size="11" font-weight="400" fill="#94A3B8">VDA 5050 표준 연동 &amp; 자동충전</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(80, 760)" font-size="13" fill="#94A3B8">
+    <text x="0" y="0">원천기술 보호 : <tspan fill="#FFFFFF" font-weight="600">핵심 융합 SLAM 알고리즘 및 도킹 기술 국내 특허 4건 출원 완료</tspan></text>
+    <text x="1440" y="0" text-anchor="end" fill="#38BDF8" font-weight="700">SLIDE 03 / 07</text>
+  </g>
+</svg>

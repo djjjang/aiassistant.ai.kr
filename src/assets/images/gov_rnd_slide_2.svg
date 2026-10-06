@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0B1A2C"/>
+  <rect x="35" y="35" width="1530" height="830" rx="14" fill="#0F243B" stroke="#1E446B" stroke-width="1.5"/>
+
+  <!-- Top Header Navigation -->
+  <g transform="translate(80, 75)">
+    <rect width="110" height="32" rx="6" fill="#1D4ED8"/>
+    <text x="55" y="21" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">1. 문제인식</text>
+    <text x="130" y="22" font-size="22" font-weight="900" fill="#FFFFFF">개발 필요성 및 기존 기술의 병목 한계</text>
+    <text x="1440" y="22" font-size="13" font-weight="600" fill="#94A3B8" text-anchor="end">과제명: AI 자율주행 협동로봇 및 스마트 관제 플랫폼</text>
+  </g>
+
+  <!-- Key Problem Statement -->
+  <g transform="translate(80, 140)">
+    <rect width="1440" height="54" rx="8" fill="rgba(239, 68, 68, 0.12)" stroke="#EF4444" stroke-width="1.2"/>
+    <text x="24" y="34" font-size="16" font-weight="800" fill="#FCA5A5">핵심 문제 :</text>
+    <text x="110" y="34" font-size="16" font-weight="700" fill="#FFFFFF">
+      국내 뿌리·제조 공정 청년 인력난 심화(공실률 34%) 속 외산 AMR 로봇 의존으로 기술·비용 종속이 심각합니다.
+    </text>
+  </g>
+
+  <!-- 3 Problem Comparison Cards -->
+  <g transform="translate(80, 225)">
+    <!-- Card 1: 노동력 부족 및 안전사고 -->
+    <g transform="translate(0, 0)">
+      <rect width="460" height="280" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="24" y="24" width="70" height="26" rx="4" fill="#EF4444"/>
+      <text x="59" y="42" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">현장 위기</text>
+      <text x="110" y="43" font-size="18" font-weight="800" fill="#FFFFFF">제조 현장 구인난 &amp; 안전사고</text>
+
+      <line x1="24" y1="68" x2="436" y2="68" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="24" y="105" font-size="14" font-weight="700" fill="#FCA5A5">• 고령화 및 위험물류 기피 심화</text>
+      <text x="36" y="130" font-size="13" font-weight="400" fill="#94A3B8">- 20~30대 제조 현장 취업 기피율 62% 달성</text>
+      <text x="36" y="152" font-size="13" font-weight="400" fill="#94A3B8">- 반복 이송 작업으로 인한 근골격계 산재 빈발</text>
+
+      <text x="24" y="195" font-size="14" font-weight="700" fill="#FCA5A5">• 야간·주말 생산라인 셧다운</text>
+      <text x="36" y="220" font-size="13" font-weight="400" fill="#94A3B8">- 인력 부족으로 공장 가동률 평균 68%로 저하</text>
+      <text x="36" y="242" font-size="13" font-weight="400" fill="#94A3B8">- 연간 납기 지연 손실액 업체당 평균 4.8억 원</text>
+    </g>
+
+    <!-- Card 2: 1세대 유도형 AGV의 한계 -->
+    <g transform="translate(490, 0)">
+      <rect width="460" height="280" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="24" y="24" width="70" height="26" rx="4" fill="#F59E0B"/>
+      <text x="59" y="42" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">기술 한계</text>
+      <text x="110" y="43" font-size="18" font-weight="800" fill="#FFFFFF">기존 1세대 AGV 도입의 병목</text>
+
+      <line x1="24" y1="68" x2="436" y2="68" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="24" y="105" font-size="14" font-weight="700" fill="#FCD34D">• 바닥 유도선(마그네틱/QR) 종속</text>
+      <text x="36" y="130" font-size="13" font-weight="400" fill="#94A3B8">- 생산 공정 변경 시 바닥 공사로 3주 가동 중단</text>
+      <text x="36" y="152" font-size="13" font-weight="400" fill="#94A3B8">- 바닥 마모 및 테이프 오염 시 잦은 이탈 오류</text>
+
+      <text x="24" y="195" font-size="14" font-weight="700" fill="#FCD34D">• 장애물 회피 불가 및 라인 정체</text>
+      <text x="36" y="220" font-size="13" font-weight="400" fill="#94A3B8">- 사람이나 적재물 감지 시 단순 정지만 수행</text>
+      <text x="36" y="242" font-size="13" font-weight="400" fill="#94A3B8">- 후속 AGV들이 연쇄 정지되어 공정 마비 초래</text>
+    </g>
+
+    <!-- Card 3: 외산 AMR 독점 및 비용 부담 -->
+    <g transform="translate(980, 0)">
+      <rect width="460" height="280" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="24" y="24" width="70" height="26" rx="4" fill="#3B82F6"/>
+      <text x="59" y="42" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">시장 독점</text>
+      <text x="110" y="43" font-size="18" font-weight="800" fill="#FFFFFF">외산 AMR 장비의 기술 종속</text>
+
+      <line x1="24" y1="68" x2="436" y2="68" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="24" y="105" font-size="14" font-weight="700" fill="#93C5FD">• 막대한 도입 비용 &amp; 라이선스</text>
+      <text x="36" y="130" font-size="13" font-weight="400" fill="#94A3B8">- 대당 1.2억~1.8억 원(외산 MiR, KUKA 등)</text>
+      <text x="36" y="152" font-size="13" font-weight="400" fill="#94A3B8">- 매년 소프트웨어 유지보수비 대당 1,500만 원</text>
+
+      <text x="24" y="195" font-size="14" font-weight="700" fill="#93C5FD">• 국내 생산 설비 연동 커스텀 난항</text>
+      <text x="36" y="220" font-size="13" font-weight="400" fill="#94A3B8">- 해외 본사 기술 지원 지연 (장애 시 2~4주 소요)</text>
+      <text x="36" y="242" font-size="13" font-weight="400" fill="#94A3B8">- 국내 중소 제조기업 ERP/MES 연동 불가</text>
+    </g>
+  </g>
+
+  <!-- Bottom Comparison Table -->
+  <g transform="translate(80, 535)">
+    <rect width="1440" height="195" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+    <text x="24" y="32" font-size="15" font-weight="800" fill="#38BDF8">개발 기술(당사) vs 기존 기술 비교 우위표</text>
+
+    <!-- Table Header -->
+    <rect x="24" y="48" width="1392" height="34" rx="6" fill="#162E4A"/>
+    <text x="120" y="70" font-size="13" font-weight="700" fill="#94A3B8" text-anchor="middle">비교 구분</text>
+    <text x="380" y="70" font-size="13" font-weight="700" fill="#94A3B8" text-anchor="middle">1세대 유도선 AGV</text>
+    <text x="740" y="70" font-size="13" font-weight="700" fill="#94A3B8" text-anchor="middle">외산 2세대 자율주행 AMR</text>
+    <text x="1140" y="70" font-size="13" font-weight="800" fill="#F05A22" text-anchor="middle">본 과제 개발 기술 (넥스트로보틱스)</text>
+
+    <!-- Row 1 -->
+    <text x="120" y="105" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">도킹 정밀도</text>
+    <text x="380" y="105" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">±10 ~ 20 mm (정밀 공정 불가)</text>
+    <text x="740" y="105" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">±5 mm (고가 비전센서 추가 필요)</text>
+    <text x="1140" y="105" font-size="14" font-weight="800" fill="#38BDF8" text-anchor="middle">±1.0 mm 이내 (3D 센서 융합 자체 알고리즘)</text>
+
+    <!-- Row 2 -->
+    <line x1="24" y1="120" x2="1416" y2="120" stroke="#1E446B" stroke-width="0.8"/>
+    <text x="120" y="145" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">장애물 대응</text>
+    <text x="380" y="145" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">단순 급정지 (라인 정체 초래)</text>
+    <text x="740" y="145" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">정적 우회 (동적 물체 감지 시 멈춤)</text>
+    <text x="1140" y="145" font-size="14" font-weight="800" fill="#10B981" text-anchor="middle">0.05초 초저지연 실시간 동적 자율 회피</text>
+
+    <!-- Row 3 -->
+    <line x1="24" y1="160" x2="1416" y2="160" stroke="#1E446B" stroke-width="0.8"/>
+    <text x="120" y="183" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">도입 단가</text>
+    <text x="380" y="183" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">대당 4,000만 원 + 공사비 3,000만</text>
+    <text x="740" y="183" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">대당 1.2억~1.8억 원 (외산 종속)</text>
+    <text x="1140" y="183" font-size="14" font-weight="800" fill="#FBBF24" text-anchor="middle">대당 5,500만 원 (국산화로 55% 이상 절감)</text>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(80, 760)" font-size="13" fill="#94A3B8">
+    <text x="0" y="0">개발 시급성 : <tspan fill="#FFFFFF" font-weight="600">스마트공장 보급 확산 및 국가 첨단 제조 경쟁력 확보를 위한 국산 AMR 필수</tspan></text>
+    <text x="1440" y="0" text-anchor="end" fill="#38BDF8" font-weight="700">SLIDE 02 / 07</text>
+  </g>
+</svg>

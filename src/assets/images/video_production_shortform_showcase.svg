@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1118"/>
+      <stop offset="50%" stop-color="#0f1b2b"/>
+      <stop offset="100%" stop-color="#18283b"/>
+    </linearGradient>
+    <linearGradient id="reelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="40%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f05a22"/>
+      <stop offset="100%" stop-color="#ff7e47"/>
+    </linearGradient>
+    <linearGradient id="videoAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+  <circle cx="1050" cy="150" r="300" fill="#f05a22" opacity="0.08" filter="blur(80px)"/>
+  <circle cx="150" cy="700" r="280" fill="#8b5cf6" opacity="0.08" filter="blur(80px)"/>
+
+  <!-- Top Navigation Bar / Studio Header -->
+  <rect x="50" y="40" width="1100" height="60" rx="16" fill="#132235" stroke="#25384f" stroke-width="1.5"/>
+  <circle cx="85" cy="70" r="16" fill="url(#videoAccent)"/>
+  <path d="M80 62 L94 70 L80 78 Z" fill="#ffffff"/>
+  <text x="115" y="76" font-family="'Pretendard', sans-serif" font-weight="800" font-size="20" fill="#ffffff">AI 숏폼 &amp; 영상 제작 스튜디오</text>
+  <rect x="420" y="55" width="95" height="28" rx="14" fill="#f05a22" fill-opacity="0.2"/>
+  <text x="435" y="74" font-family="'Pretendard', sans-serif" font-weight="700" font-size="12" fill="#ff7e47">바이럴 숏폼 제작</text>
+  
+  <rect x="525" y="55" width="110" height="28" rx="14" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="540" y="74" font-family="'Pretendard', sans-serif" font-weight="600" font-size="12" fill="#cbd5e1">릴스 · 쇼츠 · 틱톡</text>
+
+  <rect x="980" y="52" width="150" height="36" rx="10" fill="url(#accentOrange)"/>
+  <text x="1005" y="75" font-family="'Pretendard', sans-serif" font-weight="700" font-size="13" fill="#ffffff">납품 완료 (4K / 60fps)</text>
+
+  <!-- Left: Mobile 9:16 Viral Short-form Mockup -->
+  <g transform="translate(70, 130)" filter="url(#cardShadow)">
+    <!-- Phone Frame -->
+    <rect width="360" height="620" rx="42" fill="#090d16" stroke="#334155" stroke-width="3"/>
+    <!-- Screen Area -->
+    <rect x="12" y="12" width="336" height="596" rx="32" fill="url(#reelGrad)"/>
+    
+    <!-- Notch/Pill -->
+    <rect x="130" y="24" width="100" height="18" rx="9" fill="#000000"/>
+    <circle cx="150" cy="33" r="4" fill="#1e293b"/>
+
+    <!-- Video Frame Content Simulation -->
+    <!-- Gradient Lighting on Subject -->
+    <rect x="12" y="70" width="336" height="420" fill="none"/>
+    <!-- Mock Viral Product Demo Graphic -->
+    <circle cx="180" cy="250" r="90" fill="#f05a22" opacity="0.15"/>
+    <rect x="125" y="180" width="110" height="150" rx="20" fill="#ffffff" opacity="0.95" filter="url(#cardShadow)"/>
+    <!-- Product Label -->
+    <rect x="145" y="200" width="70" height="12" rx="4" fill="#0f2439"/>
+    <rect x="145" y="220" width="50" height="6" rx="3" fill="#94a3b8"/>
+    <circle cx="180" cy="275" r="28" fill="#f05a22"/>
+    <path d="M174 263 L192 275 L174 287 Z" fill="#ffffff"/>
+
+    <!-- Top Floating Hook Caption Badge -->
+    <rect x="36" y="80" width="288" height="46" rx="12" fill="#000000" fill-opacity="0.75" stroke="#f05a22" stroke-width="1.5"/>
+    <text x="52" y="102" font-family="'Pretendard', sans-serif" font-weight="800" font-size="14" fill="#fef08a">🔥 3초 만에 시선 강탈!</text>
+    <text x="52" y="118" font-family="'Pretendard', sans-serif" font-weight="600" font-size="12" fill="#ffffff">"이거 하나로 업무 시간 80% 줄였습니다"</text>
+
+    <!-- Right Interaction Rail (Heart, Comments, Share) -->
+    <g transform="translate(300, 310)">
+      <circle cx="18" cy="18" r="18" fill="#000000" fill-opacity="0.6"/>
+      <path d="M18 12 C13 7 8 12 18 24 C28 12 23 7 18 12 Z" fill="#ff4d4f"/>
+      <text x="18" y="44" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle">12.4만</text>
+
+      <circle cx="18" cy="72" r="18" fill="#000000" fill-opacity="0.6"/>
+      <circle cx="18" cy="72" r="8" fill="#ffffff" opacity="0.9"/>
+      <text x="18" y="98" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle">1,820</text>
+
+      <circle cx="18" cy="126" r="18" fill="#000000" fill-opacity="0.6"/>
+      <path d="M12 126 L24 126 M19 121 L24 126 L19 131" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+      <text x="18" y="152" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff" text-anchor="middle">공유</text>
+    </g>
+
+    <!-- Animated Kinetic Subtitles (자막 효과) -->
+    <rect x="32" y="430" width="260" height="52" rx="10" fill="#f05a22" fill-opacity="0.95"/>
+    <text x="162" y="456" font-family="'Pretendard', sans-serif" font-weight="900" font-size="17" fill="#ffffff" text-anchor="middle">월 30만원으로 전담 비서 채용</text>
+    <text x="162" y="474" font-family="'Pretendard', sans-serif" font-weight="700" font-size="12" fill="#fef08a" text-anchor="middle">▶ 1회 무료 체험 시연 바로가기</text>
+
+    <!-- Bottom Audio & Channel Info -->
+    <g transform="translate(30, 520)">
+      <circle cx="16" cy="16" r="16" fill="#f05a22"/>
+      <text x="16" y="21" font-family="'Pretendard', sans-serif" font-weight="800" font-size="12" fill="#ffffff" text-anchor="middle">AI</text>
+      <text x="40" y="15" font-family="'Pretendard', sans-serif" font-weight="800" font-size="13" fill="#ffffff">@trend24_official</text>
+      <text x="40" y="30" font-family="'Pretendard', sans-serif" font-weight="500" font-size="11" fill="#94a3b8">🎵 오리지널 트렌드 음원 · 릴스 챌린지</text>
+      <rect x="235" y="4" width="55" height="24" rx="12" fill="#ffffff"/>
+      <text x="262" y="20" font-family="'Pretendard', sans-serif" font-weight="800" font-size="11" fill="#0f2439" text-anchor="middle">팔로우</text>
+    </g>
+
+    <!-- Progress Bar -->
+    <rect x="12" y="600" width="336" height="4" fill="#334155"/>
+    <rect x="12" y="600" width="220" height="4" fill="#f05a22"/>
+  </g>
+
+  <!-- Right: Professional Video Editing Timeline & Inspector Dashboard -->
+  <g transform="translate(470, 130)">
+    <!-- Main Editing Console Window -->
+    <rect width="680" height="380" rx="18" fill="#111d2b" stroke="#25384f" stroke-width="1.5" filter="url(#cardShadow)"/>
+    
+    <!-- Window Bar -->
+    <rect width="680" height="42" rx="18" fill="#18283d"/>
+    <circle cx="25" cy="21" r="6" fill="#ef4444"/>
+    <circle cx="45" cy="21" r="6" fill="#f59e0b"/>
+    <circle cx="65" cy="21" r="6" fill="#10b981"/>
+    <text x="95" y="26" font-family="'Pretendard', sans-serif" font-weight="700" font-size="13" fill="#cbd5e1">타임라인 편집 시퀀스 : 숏폼_홍보영상_v2_최종본.mp4</text>
+    <text x="590" y="26" font-family="'Pretendard', sans-serif" font-weight="600" font-size="11" fill="#f05a22">00:00:28:14</text>
+
+    <!-- Timeline Tracks -->
+    <g transform="translate(20, 60)">
+      <!-- Track 1: Video A-Roll -->
+      <rect x="0" y="0" width="90" height="44" rx="6" fill="#1e3249"/>
+      <text x="12" y="26" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#94a3b8">V1 영상 메인</text>
+      <rect x="100" y="0" width="160" height="44" rx="6" fill="#3b82f6" fill-opacity="0.8"/>
+      <text x="110" y="26" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Clip 01: 후킹 인트로 (3초)</text>
+      <rect x="265" y="0" width="220" height="44" rx="6" fill="#2563eb" fill-opacity="0.9"/>
+      <text x="275" y="26" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Clip 02: 핵심 문제점 &amp; 대안 시연</text>
+      <rect x="490" y="0" width="145" height="44" rx="6" fill="#1d4ed8" fill-opacity="0.85"/>
+      <text x="500" y="26" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Clip 03: 엔딩 CTA</text>
+
+      <!-- Track 2: Motion Graphics & Text Overlay -->
+      <rect x="0" y="54" width="90" height="44" rx="6" fill="#1e3249"/>
+      <text x="12" y="80" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#f43f5e">V2 모션·자막</text>
+      <rect x="100" y="54" width="140" height="44" rx="6" fill="#e11d48" fill-opacity="0.8"/>
+      <text x="110" y="80" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">🔥 볼드 텍스트 팝업</text>
+      <rect x="245" y="54" width="230" height="44" rx="6" fill="#f43f5e" fill-opacity="0.85"/>
+      <text x="255" y="80" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">자동 생성 키네틱 타이포 자막</text>
+      <rect x="480" y="54" width="155" height="44" rx="6" fill="#be123c" fill-opacity="0.8"/>
+      <text x="490" y="80" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">프로모션 쿠폰 배너</text>
+
+      <!-- Track 3: B-Roll & Visual Effects -->
+      <rect x="0" y="108" width="90" height="44" rx="6" fill="#1e3249"/>
+      <text x="12" y="134" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#a855f7">V3 이펙트</text>
+      <rect x="120" y="108" width="110" height="44" rx="6" fill="#9333ea" fill-opacity="0.75"/>
+      <text x="130" y="134" font-family="'Pretendard', sans-serif" font-weight="600" font-size="11" fill="#ffffff">줌인 트랜지션</text>
+      <rect x="290" y="108" width="180" height="44" rx="6" fill="#7e22ce" fill-opacity="0.75"/>
+      <text x="300" y="134" font-family="'Pretendard', sans-serif" font-weight="600" font-size="11" fill="#ffffff">화면 분할 비포/애프터</text>
+
+      <!-- Track 4: Audio BG Music -->
+      <rect x="0" y="162" width="90" height="40" rx="6" fill="#1e3249"/>
+      <text x="12" y="186" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#10b981">A1 BGM</text>
+      <rect x="100" y="162" width="535" height="40" rx="6" fill="#059669" fill-opacity="0.7"/>
+      <!-- Waveform Simulation -->
+      <path d="M110 182 Q130 166 150 182 T190 182 T230 182 T270 182 T310 182 T350 182 T390 182 T430 182 T470 182 T510 182 T550 182 T590 182 T620 182" stroke="#6ee7b7" stroke-width="2.5" fill="none"/>
+      <text x="110" y="177" font-family="'Pretendard', sans-serif" font-weight="700" font-size="10" fill="#ecfdf5">Upbeat Tech Funk (BPM 124) - 상업용 라이선스 완비</text>
+
+      <!-- Track 5: Sound Effects (SFX) -->
+      <rect x="0" y="210" width="90" height="38" rx="6" fill="#1e3249"/>
+      <text x="12" y="233" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#f59e0b">A2 효과음</text>
+      <rect x="105" y="210" width="50" height="38" rx="6" fill="#d97706" fill-opacity="0.8"/>
+      <text x="112" y="233" font-family="'Pretendard', sans-serif" font-weight="700" font-size="9" fill="#ffffff">Whoosh</text>
+      <rect x="245" y="210" width="45" height="38" rx="6" fill="#d97706" fill-opacity="0.8"/>
+      <text x="254" y="233" font-family="'Pretendard', sans-serif" font-weight="700" font-size="9" fill="#ffffff">Pop</text>
+      <rect x="430" y="210" width="50" height="38" rx="6" fill="#d97706" fill-opacity="0.8"/>
+      <text x="440" y="233" font-family="'Pretendard', sans-serif" font-weight="700" font-size="9" fill="#ffffff">Ding!</text>
+
+      <!-- Playhead Red Line -->
+      <line x1="330" y1="-10" x2="330" y2="255" stroke="#ff4d4f" stroke-width="2.5"/>
+      <polygon points="323,-10 337,-10 330,0" fill="#ff4d4f"/>
+    </g>
+
+    <!-- Timeline Controller & Controls -->
+    <g transform="translate(20, 325)">
+      <rect width="640" height="42" rx="10" fill="#18283d"/>
+      <circle cx="320" cy="21" r="16" fill="#f05a22"/>
+      <path d="M315 14 L328 21 L315 28 Z" fill="#ffffff"/>
+      <circle cx="275" cy="21" r="13" fill="#25384f"/>
+      <path d="M280 16 L272 21 L280 26 M270 16 L270 26" stroke="#ffffff" stroke-width="2" fill="none"/>
+      <circle cx="365" cy="21" r="13" fill="#25384f"/>
+      <path d="M360 16 L368 21 L360 26 M370 16 L370 26" stroke="#ffffff" stroke-width="2" fill="none"/>
+      <text x="30" y="26" font-family="'Pretendard', sans-serif" font-weight="600" font-size="12" fill="#94a3b8">해상도: 1080x1920 (9:16) · 60fps ProRes</text>
+      <text x="500" y="26" font-family="'Pretendard', sans-serif" font-weight="700" font-size="12" fill="#38bdf8">렌더링 속도 4.2배속 가속</text>
+    </g>
+  </g>
+
+  <!-- Bottom: 3 Core Highlights Metrics Cards -->
+  <g transform="translate(470, 530)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="215" height="220" rx="16" fill="#132235" stroke="#25384f" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <circle cx="36" cy="36" r="18" fill="#f05a22" fill-opacity="0.2"/>
+    <text x="36" y="42" font-family="'Pretendard', sans-serif" font-weight="800" font-size="14" fill="#ff7e47" text-anchor="middle">01</text>
+    <text x="24" y="80" font-family="'Pretendard', sans-serif" font-weight="800" font-size="16" fill="#ffffff">숏폼 올인원 기획</text>
+    <text x="24" y="104" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8" width="165">
+      바이럴 후킹 대본(콘티),
+    </text>
+    <text x="24" y="124" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8">
+      AI 음성 TTS or 성우 녹음,
+    </text>
+    <text x="24" y="144" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8">
+      B-roll 클립 매칭 완비
+    </text>
+    <rect x="24" y="172" width="167" height="32" rx="8" fill="#1e3249"/>
+    <text x="107" y="193" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#38bdf8" text-anchor="middle">초안 전달 24시간 이내</text>
+
+    <!-- Card 2 -->
+    <rect x="232" y="0" width="215" height="220" rx="16" fill="#132235" stroke="#25384f" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <circle cx="268" cy="36" r="18" fill="#8b5cf6" fill-opacity="0.2"/>
+    <text x="268" y="42" font-family="'Pretendard', sans-serif" font-weight="800" font-size="14" fill="#a78bfa" text-anchor="middle">02</text>
+    <text x="256" y="80" font-family="'Pretendard', sans-serif" font-weight="800" font-size="16" fill="#ffffff">시선 강탈 자막 모션</text>
+    <text x="256" y="104" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8">
+      이탈률을 낮추는 다이나믹
+    </text>
+    <text x="256" y="124" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8">
+      키네틱 자막 애니메이션 &amp;
+    </text>
+    <text x="256" y="144" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8">
+      싱크 효과음 정밀 삽입
+    </text>
+    <rect x="256" y="172" width="167" height="32" rx="8" fill="#1e3249"/>
+    <text x="339" y="193" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ec4899" text-anchor="middle">도달률 평균 280% 상승</text>
+
+    <!-- Card 3 -->
+    <rect x="465" y="0" width="215" height="220" rx="16" fill="#132235" stroke="#25384f" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <circle cx="501" cy="36" r="18" fill="#10b981" fill-opacity="0.2"/>
+    <text x="501" y="42" font-family="'Pretendard', sans-serif" font-weight="800" font-size="14" fill="#34d399" text-anchor="middle">03</text>
+    <text x="489" y="80" font-family="'Pretendard', sans-serif" font-weight="800" font-size="16" fill="#ffffff">상업적 저작권 100%</text>
+    <text x="489" y="104" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8">
+      기업 유튜브, 인스타 광고에
+    </text>
+    <text x="489" y="124" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8">
+      바로 송출 가능한 정식
+    </text>
+    <text x="489" y="144" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8">
+      상업용 폰트 &amp; 음원 라이선스
+    </text>
+    <rect x="489" y="172" width="167" height="32" rx="8" fill="#1e3249"/>
+    <text x="572" y="193" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#10b981" text-anchor="middle">저작권 보증서 첨부</text>
+  </g>
+</svg>

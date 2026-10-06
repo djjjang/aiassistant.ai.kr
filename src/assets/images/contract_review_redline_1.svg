@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Clean Document Paper Background -->
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Document Header -->
+  <g transform="translate(60, 65)">
+    <!-- T24 Brand Subhead -->
+    <text x="0" y="0" font-size="14" font-weight="800" fill="#0D9488">T24 AI 계약서 검토</text>
+    <text x="135" y="0" font-size="14" font-weight="600" fill="#64748B">· Contract Review</text>
+
+    <!-- Main Title -->
+    <text x="0" y="38" font-size="26" font-weight="900" fill="#0F172A" letter-spacing="-0.5">용역공급계약서 검토 보고서 (Redline)</text>
+    <text x="0" y="65" font-size="13" font-weight="500" fill="#64748B">웹 플랫폼 개발 용역 | 갑: 주식회사 오로라테크 · 을: 주식회사 브릿지파트너스</text>
+
+    <!-- Header Divider Line -->
+    <line x1="0" y1="82" x2="730" y2="82" stroke="#0F172A" stroke-width="1.8"/>
+  </g>
+
+  <!-- Overview Metadata Box -->
+  <g transform="translate(60, 168)">
+    <rect width="730" height="150" rx="4" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+    
+    <!-- Row 1: 검토 대상 -->
+    <rect x="0" y="0" width="135" height="30" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="67" y="20" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">검토 대상</text>
+    <text x="150" y="20" font-size="12" font-weight="600" fill="#0F172A">용역공급계약서_오로라테크.pdf (총 13 개 조항)</text>
+    <line x1="0" y1="30" x2="730" y2="30" stroke="#CBD5E1" stroke-width="0.8"/>
+
+    <!-- Row 2: 검토 관점 -->
+    <rect x="0" y="30" width="135" height="30" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="67" y="50" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">검토 관점</text>
+    <text x="150" y="50" font-size="12" font-weight="600" fill="#1D4ED8">을(용역 수행사, 주식회사 브릿지파트너스)의 권리 보호</text>
+    <line x1="0" y1="60" x2="730" y2="60" stroke="#CBD5E1" stroke-width="0.8"/>
+
+    <!-- Row 3: 검토 일자 -->
+    <rect x="0" y="60" width="135" height="30" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="67" y="80" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">검토 일자</text>
+    <text x="150" y="80" font-size="12" font-weight="600" fill="#0F172A">2026. 09. 16.</text>
+    <line x1="0" y1="90" x2="730" y2="90" stroke="#CBD5E1" stroke-width="0.8"/>
+
+    <!-- Row 4: 검토 결과 -->
+    <rect x="0" y="90" width="135" height="30" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="67" y="110" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">검토 결과</text>
+    <text x="150" y="110" font-size="12" font-weight="600" fill="#0F172A">주요 조항 7 건 검토 · <tspan fill="#DC2626" font-weight="700">위험조항 5 건 발견 (상 2 건, 중 2 건, 하 1 건)</tspan> · 이상없음 2 건</text>
+    <line x1="0" y1="120" x2="730" y2="120" stroke="#CBD5E1" stroke-width="0.8"/>
+
+    <!-- Row 5: 검토 수행 -->
+    <rect x="0" y="120" width="135" height="30" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="67" y="140" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">검토 수행</text>
+    <text x="150" y="140" font-size="12" font-weight="600" fill="#0D9488">트렌드 24 (T24 AI 계약서 검토 + 전문가 검수)</text>
+  </g>
+
+  <!-- Risk Summary Section -->
+  <g transform="translate(60, 342)">
+    <text x="0" y="0" font-size="16" font-weight="800" fill="#0F172A">위험조항 요약</text>
+
+    <!-- Table Header -->
+    <g transform="translate(0, 14)">
+      <rect width="730" height="32" rx="3" fill="#0F2439"/>
+      <text x="25" y="21" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">No</text>
+      <text x="105" y="21" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">조항</text>
+      <text x="195" y="21" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">위험도</text>
+      <text x="330" y="21" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">쟁점</text>
+      <text x="565" y="21" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">수정 요지</text>
+    </g>
+
+    <!-- Table Rows -->
+    <!-- Row 1 -->
+    <g transform="translate(0, 46)">
+      <rect width="730" height="42" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="25" y="26" font-size="12" font-weight="600" fill="#0F172A" text-anchor="middle">1</text>
+      <text x="60" y="26" font-size="12" font-weight="700" fill="#0F172A">제 3 조 계약기간</text>
+      <!-- 중 Badge -->
+      <rect x="180" y="12" width="30" height="18" rx="3" fill="#FEF3C7"/>
+      <text x="195" y="25" font-size="11" font-weight="800" fill="#B45309" text-anchor="middle">중</text>
+      <text x="235" y="26" font-size="11" font-weight="500" fill="#334155">이의 없으면 1 년씩 무기한 자동 연장</text>
+      <text x="440" y="20" font-size="11" font-weight="500" fill="#1E40AF">서면 종료통지 기한 + 갑의 사전 안내</text>
+      <text x="440" y="34" font-size="11" font-weight="500" fill="#1E40AF">의무 + 조건 변경은 서면 합의</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 88)">
+      <rect width="730" height="42" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="25" y="26" font-size="12" font-weight="600" fill="#0F172A" text-anchor="middle">2</text>
+      <text x="60" y="26" font-size="12" font-weight="700" fill="#0F172A">제 5 조 대금지급</text>
+      <!-- 중 Badge -->
+      <rect x="180" y="12" width="30" height="18" rx="3" fill="#FEF3C7"/>
+      <text x="195" y="25" font-size="11" font-weight="800" fill="#B45309" text-anchor="middle">중</text>
+      <text x="235" y="20" font-size="11" font-weight="500" fill="#334155">"합리적인 기간 내" — 지급기한</text>
+      <text x="235" y="34" font-size="11" font-weight="500" fill="#334155">불명확</text>
+      <text x="440" y="20" font-size="11" font-weight="500" fill="#1E40AF">세금계산서 발행일부터 30 일 이내</text>
+      <text x="440" y="34" font-size="11" font-weight="500" fill="#1E40AF">현금 지급 + 지연손해금</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 130)">
+      <rect width="730" height="42" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="25" y="26" font-size="12" font-weight="600" fill="#0F172A" text-anchor="middle">3</text>
+      <text x="60" y="26" font-size="12" font-weight="700" fill="#0F172A">제 7 조 손해배상</text>
+      <!-- 상 Badge -->
+      <rect x="180" y="12" width="30" height="18" rx="3" fill="#FEE2E2"/>
+      <text x="195" y="25" font-size="11" font-weight="800" fill="#DC2626" text-anchor="middle">상</text>
+      <text x="235" y="26" font-size="11" font-weight="500" fill="#334155">을만 부담하는 무제한 배상책임</text>
+      <text x="440" y="20" font-size="11" font-weight="500" fill="#1E40AF">쌍방 책임 + 계약금액 한도 + 간접손해</text>
+      <text x="440" y="34" font-size="11" font-weight="500" fill="#1E40AF">제외 (고의·중과실 제외)</text>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(0, 172)">
+      <rect width="730" height="42" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="25" y="26" font-size="12" font-weight="600" fill="#0F172A" text-anchor="middle">4</text>
+      <text x="60" y="26" font-size="12" font-weight="700" fill="#0F172A">제 9 조 계약해지</text>
+      <!-- 상 Badge -->
+      <rect x="180" y="12" width="30" height="18" rx="3" fill="#FEE2E2"/>
+      <text x="195" y="25" font-size="11" font-weight="800" fill="#DC2626" text-anchor="middle">상</text>
+      <text x="235" y="20" font-size="11" font-weight="500" fill="#334155">갑의 주관적 판단만으로 즉시 해지,</text>
+      <text x="235" y="34" font-size="11" font-weight="500" fill="#334155">받은 대금 전액 반환</text>
+      <text x="440" y="20" font-size="11" font-weight="500" fill="#1E40AF">쌍방 해지권 + 14 일 시정기간 +</text>
+      <text x="440" y="34" font-size="11" font-weight="500" fill="#1E40AF">기성분 정산</text>
+    </g>
+
+    <!-- Row 5 -->
+    <g transform="translate(0, 214)">
+      <rect width="730" height="38" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="25" y="24" font-size="12" font-weight="600" fill="#0F172A" text-anchor="middle">5</text>
+      <text x="60" y="24" font-size="12" font-weight="700" fill="#0F172A">제 11 조 비밀유지</text>
+      <!-- 하 Badge -->
+      <rect x="180" y="10" width="30" height="18" rx="3" fill="#DCFCE7"/>
+      <text x="195" y="23" font-size="11" font-weight="800" fill="#15803D" text-anchor="middle">하</text>
+      <text x="235" y="24" font-size="11" font-weight="500" fill="#334155">"영구히" 의무 — 기간·예외 없음</text>
+      <text x="440" y="24" font-size="11" font-weight="500" fill="#1E40AF">종료 후 3 년 + 비밀정보 제외사유 명시</text>
+    </g>
+  </g>
+
+  <!-- Legend Bar -->
+  <g transform="translate(60, 620)">
+    <text x="0" y="0" font-size="12" font-weight="800" fill="#0F172A">표기 범례</text>
+    
+    <g transform="translate(65, -11)">
+      <text x="0" y="11" font-size="12" font-weight="600" fill="#DC2626">삭제된 문구</text>
+      <line x1="0" y1="7" x2="68" y2="7" stroke="#DC2626" stroke-width="1.5"/>
+      <text x="75" y="11" font-size="11" font-weight="400" fill="#64748B">(빨간 취소선)</text>
+
+      <text x="180" y="11" font-size="12" font-weight="600" fill="#2563EB">추가·수정된 문구</text>
+      <line x1="180" y1="15" x2="280" y2="15" stroke="#2563EB" stroke-width="1.5"/>
+      <text x="288" y="11" font-size="11" font-weight="400" fill="#64748B">(파란 밑줄)</text>
+
+      <text x="380" y="11" font-size="12" font-weight="700" fill="#2563EB">◆ 수정</text>
+      <text x="428" y="11" font-size="11" font-weight="400" fill="#64748B">수정된 조항</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="640" x2="790" y2="640" stroke="#CBD5E1" stroke-width="1"/>
+
+  <!-- Contract Main Body Section -->
+  <g transform="translate(60, 670)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">계약서 원문 및 수정 내역</text>
+
+    <!-- Centered Document Title -->
+    <g transform="translate(365, 35)">
+      <text x="0" y="0" font-size="20" font-weight="900" fill="#0F172A" text-anchor="middle">용역공급계약서</text>
+      <text x="0" y="24" font-size="13" font-weight="500" fill="#475569" text-anchor="middle">(웹 플랫폼 개발 용역)</text>
+    </g>
+
+    <!-- Preamble Paragraph -->
+    <g transform="translate(0, 85)" font-size="13" font-weight="400" fill="#1E293B">
+      <text x="0" y="0">주식회사 오로라테크(이하 "갑"이라 한다)와 주식회사 브릿지파트너스(이하 "을"이라 한다)는 웹 플랫폼 개발 용역(</text>
+      <text x="0" y="22">이하 "본 용역"이라 한다)에 관하여 다음과 같이 계약(이하 "본 계약"이라 한다)을 체결한다.</text>
+    </g>
+
+    <!-- Article 1: 제 1 조 (목적) -->
+    <g transform="translate(0, 140)">
+      <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 1 조 (목적)</text>
+      <text x="0" y="24" font-size="13" font-weight="400" fill="#1E293B">
+        본 계약은 갑이 을에게 위탁하는 웹 플랫폼 개발 용역의 수행에 필요한 갑과 을의 권리·의무 및 기타 제반 사항을 정함을
+      </text>
+      <text x="0" y="46" font-size="13" font-weight="400" fill="#1E293B">목적으로 한다.</text>
+    </g>
+
+    <!-- Article 2: 제 2 조 (계약금액) -->
+    <g transform="translate(0, 220)">
+      <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 2 조 (계약금액)</text>
+      <text x="0" y="24" font-size="13" font-weight="400" fill="#1E293B">
+        ① 본 용역의 계약금액은 금 팔천만 원정(<tspan font-weight="700">₩80,000,000</tspan>)으로 하며, 부가가치세는 별도로 한다.
+      </text>
+      <text x="0" y="48" font-size="13" font-weight="400" fill="#1E293B">
+        ② 계약금액에는 본 용역 수행에 소요되는 인건비, 경비, 장비 사용료 등 일체의 비용이 포함된 것으로 본다.
+      </text>
+    </g>
+  </g>
+
+  <!-- Page Footer -->
+  <g transform="translate(425, 1140)">
+    <text x="0" y="0" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">
+      트렌드 24 · T24 AI 계약서 검토 | <tspan font-weight="700" fill="#0F172A">1</tspan>
+    </text>
+  </g>
+</svg>

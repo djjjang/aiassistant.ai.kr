@@ -90,12 +90,22 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
           email: formData.email,
           taskType: formData.taskType,
           taskTypeName:
-            formData.taskType === 'document'
+            formData.taskType === 'ppt'
+              ? 'PPT 제작 (사업계획서·투자제안서)'
+              : formData.taskType === 'contract'
+              ? '계약서 업무 (용역·납품·제휴 검토)'
+              : formData.taskType === 'design'
+              ? '디자인 업무 (상세페이지·배너)'
+              : formData.taskType === 'marketing'
+              ? '마케팅 업무 (SNS자동화·보도자료)'
+              : formData.taskType === 'website'
+              ? '사이트 제작 (홈페이지·쇼핑몰)'
+              : formData.taskType === 'video'
+              ? '영상 제작 (숏폼 바이럴·영상편집)'
+              : formData.taskType === 'document'
               ? '문서·기획 검토'
               : formData.taskType === 'content'
               ? '콘텐츠·마케팅'
-              : formData.taskType === 'research'
-              ? '리서치·데이터'
               : '맞춤 실무 의뢰',
           title: formData.memo
             ? (formData.memo.length > 35 ? formData.memo.slice(0, 35) + '...' : formData.memo)
@@ -122,18 +132,24 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
 
   const getTaskSavingsEstimate = () => {
     switch (formData.taskType) {
+      case 'ppt':
+        return '월 평균 약 35시간 절감 예상 (사업계획서·IR)';
+      case 'contract':
+        return '월 평균 약 28시간 절감 예상 (법무 검토·조항대조)';
+      case 'design':
+        return '월 평균 약 40시간 절감 예상 (상세페이지·배너)';
+      case 'marketing':
+        return '월 평균 약 32시간 절감 예상 (SNS자동화·보도자료)';
+      case 'website':
+        return '월 평균 약 50시간 절감 예상 (홈페이지·쇼핑몰구축)';
+      case 'video':
+        return '월 평균 약 45시간 절감 예상 (숏폼·영상편집)';
       case 'document':
         return '월 평균 약 32시간 절감 예상';
       case 'content':
         return '월 평균 약 28시간 절감 예상';
-      case 'research':
-        return '월 평균 약 45시간 절감 예상';
-      case 'data':
-        return '월 평균 약 50시간 절감 예상';
-      case 'custom':
-        return '기업 전사 업무 효율 약 40% 증대';
       default:
-        return '월 평균 약 30시간+ 절감 예상';
+        return '월 평균 약 35시간+ 실무 시간 절감';
     }
   };
 
@@ -271,13 +287,13 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
               onChange={handleChange}
               className="w-full px-3.5 py-2.5 text-xs rounded-xl border border-gray-300 focus:ring-2 focus:ring-[#f05a22] focus:border-[#f05a22] transition outline-none bg-white font-medium"
             >
-              <option value="document">문서 검토 / 회의록 / 기획서 작성</option>
-              <option value="content">콘텐츠 제작 / 상세페이지 / 보도자료</option>
-              <option value="research">시장 조사 / 기업 및 규제 리서치</option>
-              <option value="marketing">마케팅 실행 보조 / 카피라이팅</option>
-              <option value="cs">기업 운영 및 CS 지원 / 응대 템플릿</option>
-              <option value="custom">사내 맞춤 AI 시스템 구축 상담</option>
-              <option value="other">기타 실무 대행 (상담 시 협의)</option>
+              <option value="ppt">1. PPT 제작 (사업계획서, 투자제안서, 피치덱)</option>
+              <option value="contract">2. 계약서 업무 (용역, 납품, 투자, 제휴 등 작성 및 검토)</option>
+              <option value="design">3. 디자인 업무 (포스터, 카드뉴스, 배너, 상세페이지 등)</option>
+              <option value="marketing">4. 마케팅 업무 (SNS 블로그/인스타 자동화, 보도자료 초안)</option>
+              <option value="website">5. 사이트 제작 (홈페이지, 쇼핑몰 제작)</option>
+              <option value="video">6. 영상 제작 (숏폼 바이럴, 릴스/쇼츠, 영상 편집)</option>
+              <option value="other">기타 맞춤 실무 의뢰 (상담 시 협의)</option>
             </select>
           </div>
 

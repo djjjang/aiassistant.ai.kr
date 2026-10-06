@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="editBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1726"/>
+      <stop offset="100%" stop-color="#162235"/>
+    </linearGradient>
+    <linearGradient id="previewGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#24334a"/>
+      <stop offset="100%" stop-color="#131c2b"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#editBg)"/>
+  
+  <!-- Header Bar -->
+  <rect x="40" y="30" width="1120" height="54" rx="12" fill="#18273d" stroke="#2b3e59" stroke-width="1.5"/>
+  <text x="65" y="64" font-family="'Pretendard', sans-serif" font-weight="800" font-size="18" fill="#ffffff">PREMIUM VIDEO EDITING &amp; MOTION DESIGN</text>
+  <rect x="520" y="42" width="120" height="30" rx="8" fill="#f05a22" fill-opacity="0.2"/>
+  <text x="532" y="62" font-family="'Pretendard', sans-serif" font-weight="700" font-size="12" fill="#f05a22">4K UHD 마스터링</text>
+  <rect x="655" y="42" width="130" height="30" rx="8" fill="#3b82f6" fill-opacity="0.2"/>
+  <text x="668" y="62" font-family="'Pretendard', sans-serif" font-weight="700" font-size="12" fill="#60a5fa">자막·사운드 완제품</text>
+  
+  <rect x="990" y="40" width="150" height="34" rx="8" fill="#f05a22"/>
+  <text x="1025" y="62" font-family="'Pretendard', sans-serif" font-weight="700" font-size="13" fill="#ffffff">최종 납품 승인 완료</text>
+
+  <!-- Left: 16:9 Video Monitor Screen -->
+  <g transform="translate(40, 105)" filter="url(#glow)">
+    <rect width="720" height="420" rx="16" fill="#090e17" stroke="#25384f" stroke-width="2"/>
+    <!-- Screen -->
+    <rect x="10" y="10" width="700" height="400" rx="10" fill="url(#previewGrad)"/>
+    
+    <!-- Video Scene Simulation -->
+    <circle cx="360" cy="180" r="85" fill="#f05a22" opacity="0.2"/>
+    <rect x="240" y="120" width="240" height="150" rx="12" fill="#1e2c3f" stroke="#3b82f6" stroke-width="1.5"/>
+    <path d="M335 170 L395 195 L335 220 Z" fill="#ffffff"/>
+    
+    <!-- Motion Title In Video -->
+    <rect x="180" y="290" width="360" height="45" rx="8" fill="#000000" fill-opacity="0.8" stroke="#f05a22" stroke-width="1"/>
+    <text x="360" y="320" font-family="'Pretendard', sans-serif" font-weight="800" font-size="18" fill="#ffffff" text-anchor="middle">스타트업 제품 스토리 브랜드 필름</text>
+
+    <!-- Timecode & Status -->
+    <rect x="25" y="25" width="140" height="28" rx="6" fill="#000000" fill-opacity="0.7"/>
+    <circle cx="40" cy="39" r="5" fill="#ef4444"/>
+    <text x="54" y="44" font-family="'Pretendard', sans-serif" font-weight="700" font-size="12" fill="#ffffff">REC 00:01:24:00</text>
+  </g>
+
+  <!-- Right: Inspector & Color Grading Panel -->
+  <g transform="translate(780, 105)" filter="url(#glow)">
+    <rect width="380" height="420" rx="16" fill="#142133" stroke="#25384f" stroke-width="1.5"/>
+    <rect width="380" height="40" rx="16" fill="#1c2d44"/>
+    <text x="20" y="25" font-family="'Pretendard', sans-serif" font-weight="700" font-size="13" fill="#cbd5e1">이펙트 &amp; 컬러그레이딩 인스펙터</text>
+    
+    <!-- Color Wheels Mock -->
+    <g transform="translate(25, 60)">
+      <circle cx="50" cy="50" r="45" fill="#192a3d" stroke="#374d6b" stroke-width="1.5"/>
+      <circle cx="58" cy="45" r="5" fill="#f05a22"/>
+      <text x="50" y="112" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#94a3b8" text-anchor="middle">Shadows (암부)</text>
+
+      <circle cx="165" cy="50" r="45" fill="#192a3d" stroke="#374d6b" stroke-width="1.5"/>
+      <circle cx="165" cy="50" r="5" fill="#3b82f6"/>
+      <text x="165" y="112" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#94a3b8" text-anchor="middle">Midtones (중간톤)</text>
+
+      <circle cx="280" cy="50" r="45" fill="#192a3d" stroke="#374d6b" stroke-width="1.5"/>
+      <circle cx="275" cy="42" r="5" fill="#10b981"/>
+      <text x="280" y="112" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#94a3b8" text-anchor="middle">Highlights (명부)</text>
+    </g>
+
+    <!-- Adjustment Sliders -->
+    <g transform="translate(25, 195)">
+      <text x="0" y="15" font-family="'Pretendard', sans-serif" font-weight="600" font-size="12" fill="#e2e8f0">시네마틱 대비 (Contrast)</text>
+      <rect x="0" y="25" width="330" height="6" rx="3" fill="#25384f"/>
+      <rect x="0" y="25" width="240" height="6" rx="3" fill="#f05a22"/>
+      <circle cx="240" cy="28" r="8" fill="#ffffff"/>
+
+      <text x="0" y="60" font-family="'Pretendard', sans-serif" font-weight="600" font-size="12" fill="#e2e8f0">채도 &amp; 피부톤 보정 (Saturation)</text>
+      <rect x="0" y="70" width="330" height="6" rx="3" fill="#25384f"/>
+      <rect x="0" y="70" width="190" height="6" rx="3" fill="#3b82f6"/>
+      <circle cx="190" cy="73" r="8" fill="#ffffff"/>
+
+      <text x="0" y="105" font-family="'Pretendard', sans-serif" font-weight="600" font-size="12" fill="#e2e8f0">오디오 노이즈 제거 (Noise Reduction)</text>
+      <rect x="0" y="115" width="330" height="6" rx="3" fill="#25384f"/>
+      <rect x="0" y="115" width="290" height="6" rx="3" fill="#10b981"/>
+      <circle cx="290" cy="118" r="8" fill="#ffffff"/>
+
+      <!-- Specs Box -->
+      <rect x="0" y="145" width="330" height="65" rx="8" fill="#1c2d44" stroke="#2d4260" stroke-width="1"/>
+      <text x="15" y="170" font-family="'Pretendard', sans-serif" font-weight="700" font-size="12" fill="#f05a22">✔ 컷편집 + 모션 타이포 + 음향 믹싱 패키지</text>
+      <text x="15" y="195" font-family="'Pretendard', sans-serif" font-weight="500" font-size="11" fill="#94a3b8">납품 포맷: MP4, MOV (무손실), 인스타/유튜브 프리셋 제공</text>
+    </g>
+  </g>
+
+  <!-- Bottom Timeline Section -->
+  <g transform="translate(40, 545)" filter="url(#glow)">
+    <rect width="1120" height="225" rx="16" fill="#111d2d" stroke="#25384f" stroke-width="1.5"/>
+    <rect width="1120" height="34" rx="16" fill="#18273b"/>
+    <text x="20" y="22" font-family="'Pretendard', sans-serif" font-weight="700" font-size="12" fill="#94a3b8">MULTITRACK TIMELINE (멀티트랙 편집 인터페이스)</text>
+
+    <!-- Track V1 -->
+    <rect x="15" y="45" width="1090" height="36" rx="6" fill="#1e324b"/>
+    <rect x="15" y="45" width="80" height="36" rx="6" fill="#294466"/>
+    <text x="25" y="68" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">VIDEO 1</text>
+    <rect x="105" y="49" width="320" height="28" rx="4" fill="#3b82f6"/>
+    <text x="115" y="68" font-family="'Pretendard', sans-serif" font-weight="600" font-size="11" fill="#ffffff">A-Roll: 제품 기능 언박싱 및 시연 장면</text>
+    <rect x="435" y="49" width="410" height="28" rx="4" fill="#2563eb"/>
+    <text x="445" y="68" font-family="'Pretendard', sans-serif" font-weight="600" font-size="11" fill="#ffffff">B-Roll: 고객 인터뷰 및 사용 후기 인서트</text>
+    <rect x="855" y="49" width="240" height="28" rx="4" fill="#1d4ed8"/>
+    <text x="865" y="68" font-family="'Pretendard', sans-serif" font-weight="600" font-size="11" fill="#ffffff">C-Roll: 브랜드 로고 엔딩</text>
+
+    <!-- Track V2 -->
+    <rect x="15" y="90" width="1090" height="36" rx="6" fill="#1e324b"/>
+    <rect x="15" y="90" width="80" height="36" rx="6" fill="#294466"/>
+    <text x="25" y="113" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">TITLES</text>
+    <rect x="140" y="94" width="220" height="28" rx="4" fill="#f05a22"/>
+    <text x="150" y="113" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">모션 자막 01 : 핵심 소구점</text>
+    <rect x="480" y="94" width="300" height="28" rx="4" fill="#f05a22"/>
+    <text x="490" y="113" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">모션 자막 02 : 가격 혜택 및 할인율</text>
+    <rect x="910" y="94" width="180" height="28" rx="4" fill="#f05a22"/>
+    <text x="920" y="113" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">엔딩 프로모션 코드</text>
+
+    <!-- Track A1 -->
+    <rect x="15" y="135" width="1090" height="36" rx="6" fill="#1e324b"/>
+    <rect x="15" y="135" width="80" height="36" rx="6" fill="#294466"/>
+    <text x="25" y="158" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">AUDIO 1</text>
+    <rect x="105" y="139" width="990" height="28" rx="4" fill="#059669"/>
+    <path d="M120 153 Q140 143 160 153 T200 153 T240 153 T280 153 T320 153 T360 153 T400 153 T440 153 T480 153 T520 153 T560 153 T600 153 T640 153 T680 153 T720 153 T760 153 T800 153 T840 153 T880 153 T920 153 T960 153 T1000 153 T1040 153 T1080 153" stroke="#6ee7b7" stroke-width="2" fill="none"/>
+
+    <!-- Track A2 SFX -->
+    <rect x="15" y="180" width="1090" height="36" rx="6" fill="#1e324b"/>
+    <rect x="15" y="180" width="80" height="36" rx="6" fill="#294466"/>
+    <text x="25" y="203" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">SFX</text>
+    <rect x="140" y="184" width="70" height="28" rx="4" fill="#d97706"/>
+    <text x="152" y="203" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Impact</text>
+    <rect x="340" y="184" width="60" height="28" rx="4" fill="#d97706"/>
+    <text x="352" y="203" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Swoosh</text>
+    <rect x="480" y="184" width="70" height="28" rx="4" fill="#d97706"/>
+    <text x="492" y="203" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Click</text>
+    <rect x="910" y="184" width="80" height="28" rx="4" fill="#d97706"/>
+    <text x="922" y="203" font-family="'Pretendard', sans-serif" font-weight="700" font-size="11" fill="#ffffff">Chime</text>
+  </g>
+</svg>

@@ -1,0 +1,235 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="qBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081119"/>
+      <stop offset="60%" stop-color="#111d2c"/>
+      <stop offset="100%" stop-color="#070c12"/>
+    </linearGradient>
+    <linearGradient id="qCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#142131"/>
+      <stop offset="100%" stop-color="#0d1622"/>
+    </linearGradient>
+    <linearGradient id="qOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f05a22"/>
+      <stop offset="100%" stop-color="#d94814"/>
+    </linearGradient>
+    <filter id="qDropShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#qBgGrad)"/>
+
+  <!-- Top Title Banner -->
+  <g transform="translate(60, 36)">
+    <rect width="190" height="24" rx="12" fill="#f05a22" fill-opacity="0.15" stroke="#f05a22" stroke-width="1"/>
+    <text x="14" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="800" fill="#f05a22">
+      ⚡ 원페이지 핵심 인터랙티브 기능
+    </text>
+
+    <text x="0" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="24" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+      실시간 맞춤 견적 시뮬레이터 &amp; 원클릭 리드 접수 파이프라인
+    </text>
+    <text x="670" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12" font-weight="600" fill="#38bdf8">
+      방문 고객이 직접 업무 조건을 조작하며 즉시 예상 견적을 확인하는 고전환 시스템
+    </text>
+  </g>
+
+  <!-- Left Column: Interactive Quotation Simulator Anatomy (Width: 520) -->
+  <g transform="translate(60, 105)" filter="url(#qDropShadow)">
+    <rect width="520" height="525" rx="14" fill="url(#qCardGrad)" stroke="#22364c" stroke-width="1.2"/>
+    
+    <path d="M 0,14 Q 0,0 14,0 L 506,0 Q 520,0 520,14 L 520,44 L 0,44 Z" fill="#172738"/>
+    <text x="24" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="800" fill="#ffffff">
+      🧮 AI비서 실시간 맞춤 견적 계산기 UI 구조
+    </text>
+    <rect x="420" y="11" width="84" height="22" rx="11" fill="url(#qOrangeGrad)"/>
+    <text x="462" y="25.5" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="800" fill="#ffffff" text-anchor="middle">즉시 산출 1초</text>
+
+    <!-- Step 1: Service Selection -->
+    <g transform="translate(24, 60)">
+      <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11.5" font-weight="800" fill="#f05a22">
+        STEP 1. 업무 카테고리 선택
+      </text>
+      <g transform="translate(0, 22)">
+        <rect width="72" height="32" rx="6" fill="#f05a22"/>
+        <text x="36" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="900" fill="#ffffff" text-anchor="middle">PPT제작</text>
+
+        <rect x="78" y="0" width="72" height="32" rx="6" fill="#0e1724" stroke="#25384d" stroke-width="1"/>
+        <text x="114" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="600" fill="#94a3b8" text-anchor="middle">계약서</text>
+
+        <rect x="156" y="0" width="72" height="32" rx="6" fill="#0e1724" stroke="#25384d" stroke-width="1"/>
+        <text x="192" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="600" fill="#94a3b8" text-anchor="middle">디자인</text>
+
+        <rect x="234" y="0" width="72" height="32" rx="6" fill="#0e1724" stroke="#25384d" stroke-width="1"/>
+        <text x="270" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="600" fill="#94a3b8" text-anchor="middle">마케팅</text>
+
+        <rect x="312" y="0" width="80" height="32" rx="6" fill="#132a1e" stroke="#10b981" stroke-width="1"/>
+        <text x="352" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="800" fill="#10b981" text-anchor="middle">사이트제작</text>
+
+        <rect x="398" y="0" width="72" height="32" rx="6" fill="#0e1724" stroke="#25384d" stroke-width="1"/>
+        <text x="434" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="600" fill="#94a3b8" text-anchor="middle">영상제작</text>
+      </g>
+    </g>
+
+    <!-- Step 2: Scale & Urgency Slider -->
+    <g transform="translate(24, 136)">
+      <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11.5" font-weight="800" fill="#f05a22">
+        STEP 2. 분량 및 작업 긴급도 설정
+      </text>
+      <g transform="translate(0, 24)">
+        <rect width="472" height="58" rx="8" fill="#0b141f" stroke="#1d3046" stroke-width="1"/>
+        
+        <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" fill="#cbd5e1">작업 분량 (페이지/슬라이드):</text>
+        <text x="210" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12" font-weight="900" fill="#ffffff">15 ~ 20 페이지 내외</text>
+
+        <!-- Slider Bar Visual -->
+        <rect x="16" y="38" width="440" height="6" rx="3" fill="#1a293b"/>
+        <rect x="16" y="38" width="260" height="6" rx="3" fill="#f05a22"/>
+        <circle cx="276" cy="41" r="8" fill="#ffffff" stroke="#f05a22" stroke-width="3"/>
+      </g>
+    </g>
+
+    <!-- Step 3: Fast Delivery Toggle -->
+    <g transform="translate(24, 238)">
+      <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11.5" font-weight="800" fill="#f05a22">
+        STEP 3. 납품 희망 일정 &amp; 패키지 옵션
+      </text>
+      <g transform="translate(0, 22)">
+        <rect width="228" height="52" rx="8" fill="#0f2619" stroke="#10b981" stroke-width="1"/>
+        <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11.5" font-weight="800" fill="#ffffff">일반 납품 (3~4일 이내)</text>
+        <text x="14" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="500" fill="#a7f3d0">표준 감수 및 검토 2회 포함</text>
+        <circle cx="206" cy="26" r="6" fill="#10b981"/>
+
+        <rect x="244" y="0" width="228" height="52" rx="8" fill="#26160c" stroke="#f05a22" stroke-width="1"/>
+        <text x="258" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11.5" font-weight="800" fill="#ffffff">⚡ 24시간 특급 납품</text>
+        <text x="258" y="39" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="500" fill="#fbcfe8">전담 전문가 우선 배정 처리</text>
+        <circle cx="450" cy="26" r="6" fill="#f05a22"/>
+      </g>
+    </g>
+
+    <!-- Realtime Estimated Output Box -->
+    <g transform="translate(24, 334)">
+      <rect width="472" height="105" rx="8" fill="#041421" stroke="#38bdf8" stroke-width="1.2"/>
+      <g transform="translate(18, 18)">
+        <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" fill="#38bdf8">
+          📊 실시간 견적 산출 결과 (원스톱 패키지)
+        </text>
+
+        <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="800" fill="#ffffff">
+          AI비서 공식 원페이지 구축 + 실시간 견적기 탑재
+        </text>
+
+        <text x="0" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="500" fill="#94a3b8">
+          반응형 웹 퍼블리싱 소스 + SSL 보안 호스팅 + 네이버/구글 검색 포털 SEO 등록 포함
+        </text>
+
+        <g transform="translate(320, 10)">
+          <text x="60" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="600" fill="#94a3b8" text-anchor="middle">예상 작업일</text>
+          <text x="60" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="18" font-weight="900" fill="#38bdf8" text-anchor="middle">3일 완제</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom Action Button -->
+    <g transform="translate(24, 455)">
+      <rect width="472" height="44" rx="8" fill="url(#qOrangeGrad)"/>
+      <text x="236" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13.5" font-weight="900" fill="#ffffff" text-anchor="middle">
+        이 견적으로 1초 상담 신청 및 파일 첨부하기 ↗
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Column: Conversion & Lead Pipeline (Width: 535) -->
+  <g transform="translate(605, 105)" filter="url(#qDropShadow)">
+    <rect width="535" height="525" rx="14" fill="url(#qCardGrad)" stroke="#22364c" stroke-width="1.2"/>
+
+    <path d="M 0,14 Q 0,0 14,0 L 521,0 Q 535,0 535,14 L 535,44 L 0,44 Z" fill="#172738"/>
+    <text x="24" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="800" fill="#ffffff">
+      🚀 원페이지 사이트 전환율(CRO) 극대화 설계
+    </text>
+    <rect x="425" y="11" width="94" height="22" rx="11" fill="#f05a22" fill-opacity="0.2" stroke="#f05a22" stroke-width="0.8"/>
+    <text x="472" y="25.5" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="800" fill="#f05a22" text-anchor="middle">CVR 6.4%</text>
+
+    <!-- Pipeline 1: 4-Step Working Process -->
+    <g transform="translate(24, 60)">
+      <rect width="487" height="98" rx="8" fill="#0b141f" stroke="#1d3148" stroke-width="1"/>
+      <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="800" fill="#38bdf8">
+        1. 4단계 투명한 업무 대행 프로세스 안내
+      </text>
+      
+      <g transform="translate(18, 36)">
+        <rect width="105" height="48" rx="6" fill="#102030"/>
+        <text x="52.5" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="600" fill="#94a3b8" text-anchor="middle">1단계</text>
+        <text x="52.5" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">실시간 의뢰접수</text>
+
+        <rect x="115" y="0" width="115" height="48" rx="6" fill="#102030"/>
+        <text x="172.5" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="600" fill="#94a3b8" text-anchor="middle">2단계</text>
+        <text x="172.5" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="900" fill="#38bdf8" text-anchor="middle">AI 고속 초안작성</text>
+
+        <rect x="240" y="0" width="115" height="48" rx="6" fill="#102030"/>
+        <text x="297.5" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="600" fill="#94a3b8" text-anchor="middle">3단계</text>
+        <text x="297.5" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="900" fill="#f05a22" text-anchor="middle">전문가 1:1 감수</text>
+
+        <rect x="365" y="0" width="105" height="48" rx="6" fill="#042013" stroke="#10b981" stroke-width="0.8"/>
+        <text x="417.5" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="700" fill="#a7f3d0" text-anchor="middle">4단계</text>
+        <text x="417.5" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="900" fill="#10b981" text-anchor="middle">최종 납품</text>
+      </g>
+    </g>
+
+    <!-- Pipeline 2: Instant Lead Capture Form -->
+    <g transform="translate(24, 172)">
+      <rect width="487" height="98" rx="8" fill="#0b141f" stroke="#1d3148" stroke-width="1"/>
+      <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="800" fill="#f05a22">
+        2. 원스톱 상담 신청 &amp; 카카오 알림톡 자동 발송
+      </text>
+      <text x="18" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">
+        · 신청 접수 즉시 담당 수석 PM 배정 및 카카오톡 알림 발송 (평균 응답 10분)
+      </text>
+      <text x="18" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">
+        · 대용량 파일 첨부(PPT, 계약서, 레퍼런스 이미지) 지원 &amp; 암호화 저장
+      </text>
+      <text x="18" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="500" fill="#cbd5e1">
+        · NDA(비밀유지계약서) 기본 체결로 기업 정보 유출 100% 원천 방지
+      </text>
+    </g>
+
+    <!-- Pipeline 3: SEO & Global Web Standards -->
+    <g transform="translate(24, 284)">
+      <rect width="487" height="98" rx="8" fill="#0b141f" stroke="#1d3148" stroke-width="1"/>
+      <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="800" fill="#fbbf24">
+        3. 검색엔진 최적화(SEO) 및 웹 표준 완벽 준수
+      </text>
+      <g transform="translate(18, 36)">
+        <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="700" fill="#94a3b8">표준 타이틀 태그:</text>
+        <text x="100" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="700" fill="#ffffff">AI비서 - 기업 실전 업무 대행 솔루션</text>
+
+        <text x="0" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="700" fill="#94a3b8">검색 메타 설명문:</text>
+        <text x="100" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="500" fill="#a7f3d0">"AI를 배우지 마세요, 업무를 맡기세요" 사업계획서, 계약서 검토, 디자인 외</text>
+
+        <text x="0" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="700" fill="#94a3b8">SNS 소셜 공유:</text>
+        <text x="100" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="500" fill="#38bdf8">OpenGraph &amp; Twitter 카드 규격 100% 매칭</text>
+      </g>
+    </g>
+
+    <!-- Bottom Results Metric -->
+    <g transform="translate(24, 396)">
+      <rect width="487" height="110" rx="8" fill="#1b120c" stroke="#f05a22" stroke-width="1.2"/>
+      <text x="24" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="900" fill="#f05a22">
+        🏆 AI비서 원페이지 구축 후 성과 검증 요약
+      </text>
+
+      <g transform="translate(24, 42)">
+        <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" fill="#ffffff">
+          · 온라인 견적 문의 전환율: <tspan fill="#f05a22" font-weight="900">6.4% 달성 (업계 평균 1.8% 대비 3.5배)</tspan>
+        </text>
+        <text x="0" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" fill="#ffffff">
+          · 평균 사이트 체류 시간: <tspan fill="#38bdf8" font-weight="900">3분 42초 (견적 계산기 조작 및 포트폴리오 열람)</tspan>
+        </text>
+        <text x="0" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" fill="#ffffff">
+          · 실시간 운영 공식 도메인: <tspan fill="#10b981" font-weight="900">https://aiassistant.ai.kr/ 정상 배포 완료</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>

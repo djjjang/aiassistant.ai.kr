@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0B1A2C"/>
+  <rect x="35" y="35" width="1530" height="830" rx="14" fill="#0F243B" stroke="#1E446B" stroke-width="1.5"/>
+
+  <!-- Top Header Navigation -->
+  <g transform="translate(80, 75)">
+    <rect width="110" height="32" rx="6" fill="#1D4ED8"/>
+    <text x="55" y="21" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">3. 정량목표</text>
+    <text x="130" y="22" font-size="22" font-weight="900" fill="#FFFFFF">연구개발 최종 목표 및 공인시험기관 정량적 성과 지표</text>
+    <text x="1440" y="22" font-size="13" font-weight="600" fill="#94A3B8" text-anchor="end">검증기관: 한국산업기술시험원(KTL) · 한국화학융합시험연구원(KTR)</text>
+  </g>
+
+  <!-- Notice Banner -->
+  <g transform="translate(80, 135)">
+    <rect width="1440" height="46" rx="8" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1.2"/>
+    <text x="24" y="29" font-size="15" font-weight="800" fill="#10B981">평가 기준 부합도 :</text>
+    <text x="160" y="29" font-size="15" font-weight="700" fill="#FFFFFF">
+      공인시험성적서(KTL) 100% 발급 및 세계 최고 수준(글로벌 벤치마크 MiR250 대비 20% 우위) 지표 설정
+    </text>
+  </g>
+
+  <!-- Main Quantitative Target Table -->
+  <g transform="translate(80, 205)">
+    <rect width="1440" height="350" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+
+    <!-- Table Header Bar -->
+    <rect x="20" y="20" width="1400" height="42" rx="6" fill="#162E4A"/>
+    <text x="60" y="47" font-size="13" font-weight="800" fill="#94A3B8" text-anchor="middle">번호</text>
+    <text x="230" y="47" font-size="13" font-weight="800" fill="#94A3B8">주요 성능 지표 (KPI)</text>
+    <text x="540" y="47" font-size="13" font-weight="800" fill="#94A3B8" text-anchor="middle">단위</text>
+    <text x="690" y="47" font-size="13" font-weight="800" fill="#94A3B8" text-anchor="middle">현재 기술 수준</text>
+    <text x="890" y="47" font-size="13" font-weight="800" fill="#94A3B8" text-anchor="middle">세계 최고 수준 (외산)</text>
+    <text x="1110" y="47" font-size="13" font-weight="900" fill="#F05A22" text-anchor="middle">최종 개발 목표치 (당사)</text>
+    <text x="1330" y="47" font-size="13" font-weight="800" fill="#94A3B8" text-anchor="middle">평가 및 측정 방법</text>
+
+    <!-- Row 1: 도킹 위치 정밀도 -->
+    <text x="60" y="95" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="middle">1</text>
+    <text x="140" y="95" font-size="14" font-weight="700" fill="#FFFFFF">설비 자동 도킹 위치 정밀도</text>
+    <text x="540" y="95" font-size="13" font-weight="600" fill="#38BDF8" text-anchor="middle">mm</text>
+    <text x="690" y="95" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">±10.0</text>
+    <text x="890" y="95" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">±3.0 (덴마크 M사)</text>
+    <text x="1110" y="95" font-size="15" font-weight="900" fill="#38BDF8" text-anchor="middle">±1.0 이내</text>
+    <text x="1330" y="95" font-size="13" font-weight="600" fill="#10B981" text-anchor="middle">KTL 공인시험 성적서</text>
+
+    <!-- Row 2: 장애물 감지 반응 시간 -->
+    <line x1="20" y1="120" x2="1420" y2="120" stroke="#1E446B" stroke-width="0.8"/>
+    <text x="60" y="150" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="middle">2</text>
+    <text x="140" y="150" font-size="14" font-weight="700" fill="#FFFFFF">동적 장애물 감지 및 반응 시간</text>
+    <text x="540" y="150" font-size="13" font-weight="600" fill="#38BDF8" text-anchor="middle">ms</text>
+    <text x="690" y="150" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">180 이하</text>
+    <text x="890" y="150" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">100 (독일 K사)</text>
+    <text x="1110" y="150" font-size="15" font-weight="900" fill="#38BDF8" text-anchor="middle">50 이하 (0.05초)</text>
+    <text x="1330" y="150" font-size="13" font-weight="600" fill="#10B981" text-anchor="middle">KTC 공인시험 성적서</text>
+
+    <!-- Row 3: 1회 충전 연속 가동 시간 -->
+    <line x1="20" y1="175" x2="1420" y2="175" stroke="#1E446B" stroke-width="0.8"/>
+    <text x="60" y="205" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="middle">3</text>
+    <text x="140" y="205" font-size="14" font-weight="700" fill="#FFFFFF">1회 완충 시 연속 주행 시간 (100kg)</text>
+    <text x="540" y="205" font-size="13" font-weight="600" fill="#38BDF8" text-anchor="middle">시간 (hr)</text>
+    <text x="690" y="205" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">8.0</text>
+    <text x="890" y="205" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">12.0</text>
+    <text x="1110" y="205" font-size="15" font-weight="900" fill="#38BDF8" text-anchor="middle">14.0 이상</text>
+    <text x="1330" y="205" font-size="13" font-weight="600" fill="#10B981" text-anchor="middle">공인시험기관 입회 실측</text>
+
+    <!-- Row 4: 최대 가반하중 주행 속도 -->
+    <line x1="20" y1="230" x2="1420" y2="230" stroke="#1E446B" stroke-width="0.8"/>
+    <text x="60" y="260" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="middle">4</text>
+    <text x="140" y="260" font-size="14" font-weight="700" fill="#FFFFFF">정격 하중 주행 속도 (가반하중 250kg)</text>
+    <text x="540" y="260" font-size="13" font-weight="600" fill="#38BDF8" text-anchor="middle">m/s</text>
+    <text x="690" y="260" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">1.0</text>
+    <text x="890" y="260" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">1.5 (미국 O사)</text>
+    <text x="1110" y="260" font-size="15" font-weight="900" fill="#38BDF8" text-anchor="middle">1.8 이상</text>
+    <text x="1330" y="260" font-size="13" font-weight="600" fill="#10B981" text-anchor="middle">KTL 공인시험 성적서</text>
+
+    <!-- Row 5: 군집 제어 최대 동시 운영 대수 -->
+    <line x1="20" y1="285" x2="1420" y2="285" stroke="#1E446B" stroke-width="0.8"/>
+    <text x="60" y="315" font-size="14" font-weight="700" fill="#94A3B8" text-anchor="middle">5</text>
+    <text x="140" y="315" font-size="14" font-weight="700" fill="#FFFFFF">단일 공장 군집 관제 최대 지원 대수</text>
+    <text x="540" y="315" font-size="13" font-weight="600" fill="#38BDF8" text-anchor="middle">대 (Units)</text>
+    <text x="690" y="315" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">20</text>
+    <text x="890" y="315" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="middle">50</text>
+    <text x="1110" y="315" font-size="15" font-weight="900" fill="#38BDF8" text-anchor="middle">100 대 동시 제어</text>
+    <text x="1330" y="315" font-size="13" font-weight="600" fill="#10B981" text-anchor="middle">소프트웨어 GS인증 1등급</text>
+  </g>
+
+  <!-- Non-Technical / Qualitative Output Cards -->
+  <g transform="translate(80, 580)">
+    <!-- Sub Target 1: Patents -->
+    <g transform="translate(0, 0)">
+      <rect width="345" height="145" rx="10" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <text x="20" y="32" font-size="13" font-weight="800" fill="#F05A22">지식재산권 (IP) 목표</text>
+      <text x="20" y="70" font-size="30" font-weight="900" fill="#FFFFFF">특허 4건</text>
+      <text x="20" y="98" font-size="12" font-weight="500" fill="#38BDF8">• 국내 원천특허 4건 출원 (2건 등록)</text>
+      <text x="20" y="120" font-size="12" font-weight="400" fill="#94A3B8">• 해외 PCT 국제특허 1건 출원 병행</text>
+    </g>
+
+    <!-- Sub Target 2: Software Certification -->
+    <g transform="translate(365, 0)">
+      <rect width="345" height="145" rx="10" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <text x="20" y="32" font-size="13" font-weight="800" fill="#10B981">인증 및 규격 목표</text>
+      <text x="20" y="70" font-size="30" font-weight="900" fill="#FFFFFF">GS 1등급</text>
+      <text x="20" y="98" font-size="12" font-weight="500" fill="#10B981">• TTA 소프트웨어 GS인증 1등급 획득</text>
+      <text x="20" y="120" font-size="12" font-weight="400" fill="#94A3B8">• ISO 3691-4 무인 운반차 안전 규격 충족</text>
+    </g>
+
+    <!-- Sub Target 3: Field Verification (PoC) -->
+    <g transform="translate(730, 0)">
+      <rect width="345" height="145" rx="10" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <text x="20" y="32" font-size="13" font-weight="800" fill="#38BDF8">실제 현장 실증 (PoC)</text>
+      <text x="20" y="70" font-size="30" font-weight="900" fill="#FFFFFF">3개 제조사</text>
+      <text x="20" y="98" font-size="12" font-weight="500" fill="#38BDF8">• 2차전지 배터리 팩 조립 라인 2곳</text>
+      <text x="20" y="120" font-size="12" font-weight="400" fill="#94A3B8">• 자동차 부품 프레스 공정 1곳 실증 완료</text>
+    </g>
+
+    <!-- Sub Target 4: Employment Creation -->
+    <g transform="translate(1095, 0)">
+      <rect width="345" height="145" rx="10" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <text x="20" y="32" font-size="13" font-weight="800" fill="#FBBF24">신규 청년 고용</text>
+      <text x="20" y="70" font-size="30" font-weight="900" fill="#FFFFFF">12명 채용</text>
+      <text x="20" y="98" font-size="12" font-weight="500" fill="#FBBF24">• 로봇 제어 / AI 딥러닝 연구원 8명</text>
+      <text x="20" y="120" font-size="12" font-weight="400" fill="#94A3B8">• 품질 인증 및 필드 엔지니어 4명</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(80, 760)" font-size="13" fill="#94A3B8">
+    <text x="0" y="0">성공 보장성 : <tspan fill="#FFFFFF" font-weight="600">사전 TRL 4단계 확보 완료로 본 과제를 통해 양산 직전 TRL 7단계 최종 도달</tspan></text>
+    <text x="1440" y="0" text-anchor="end" fill="#38BDF8" font-weight="700">SLIDE 04 / 07</text>
+  </g>
+</svg>

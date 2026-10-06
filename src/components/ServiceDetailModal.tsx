@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Clock, CheckCircle, FileText, ArrowRight, ShieldCheck, MessageCircle, Briefcase, Sparkles, Building2, TrendingUp, Layers, ExternalLink, ZoomIn } from 'lucide-react';
+import { X, Clock, CheckCircle, FileText, ArrowRight, ShieldCheck, MessageCircle, Briefcase, Sparkles, Building2, TrendingUp, Layers, ExternalLink, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ServiceItem } from '../types';
 import { ImageZoomModal } from './ImageZoomModal';
 
@@ -17,9 +17,36 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
   onOpenPortfolioGallery
 }) => {
   const [activeTab, setActiveTab] = useState<'specs' | 'portfolio'>('specs');
-  const [zoomImage, setZoomImage] = useState<{ url: string; alt: string; title: string; subtitle: string } | null>(null);
+  const [selectedCaseIdx, setSelectedCaseIdx] = useState<number>(0);
+  const [slideIdx, setSlideIdx] = useState<number>(0);
+  const [zoomImage, setZoomImage] = useState<{
+    url: string;
+    alt: string;
+    title: string;
+    subtitle: string;
+    gallery?: { url: string; title: string; pageLabel: string }[];
+    initialIndex?: number;
+    initialMode?: 'image' | 'text';
+    originalText?: string;
+    originalDocumentMeta?: {
+      recipient?: string;
+      sender?: string;
+      subject?: string;
+      docDate?: string;
+      docTypeBadge?: string;
+      attachments?: string[];
+    };
+  } | null>(null);
 
   if (!service) return null;
+
+  const cases = service.portfolioCases && service.portfolioCases.length > 0 ? service.portfolioCases : [];
+  const currentCase = cases[selectedCaseIdx] || service.portfolioCases?.[0] || service.portfolioExample;
+  const galleryImages = currentCase?.galleryImages;
+  const hasGallery = !!(galleryImages && galleryImages.length > 1);
+  const currentSlide = hasGallery ? galleryImages[slideIdx] : null;
+  const activeImageUrl = currentSlide ? currentSlide.url : (currentCase?.image || service.previewImage || '');
+  const activeImageTitle = currentSlide ? currentSlide.title : (currentCase?.title || service.previewImageAlt || `${service.name} 작업 예시`);
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
@@ -81,36 +108,109 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
         <div className="p-5 overflow-y-auto space-y-4 text-xs flex-1">
           {activeTab === 'specs' ? (
             <>
-              {/* Service Preview Image */}
-              {service.previewImage && (
-                <div
-                  onClick={() => {
-                    setZoomImage({
-                      url: service.previewImage!,
-                      alt: service.previewImageAlt || `${service.name} 작업 예시`,
-                      title: `${service.name} 전문 산출물 예시`,
-                      subtitle: `${service.categoryCode} • ${service.number} 표준 납품 규격`
-                    });
-                  }}
-                  className="relative rounded-xl overflow-hidden border border-[#eae6df] shadow-xs aspect-16/9 bg-gray-100 group cursor-zoom-in"
-                  title="클릭하여 고해상도 확대 검토하기"
-                >
-                  <img
-                    src={service.previewImage}
-                    alt={service.previewImageAlt || `${service.name} 작업 예시`}
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-2.5 right-2.5 bg-black/60 hover:bg-black/80 backdrop-blur-xs text-white px-2 py-0.5 rounded-md text-[10px] font-bold flex items-center gap-1 border border-white/20 shadow-xs">
-                    <ZoomIn className="w-3 h-3 text-[#f05a22]" />
-                    <span>확대 검토</span>
+              {/* Service Preview Image / Slide Viewer */}
+              {activeImageUrl && (
+                <div className="space-y-2">
+                  <div
+                    onClick={() => {
+                      setZoomImage({
+                        url: activeImageUrl,
+                        alt: activeImageTitle,
+                        title: activeImageTitle,
+                        subtitle: `${service.categoryCode} • ${currentSlide ? currentSlide.pageLabel : `${service.number} 표준 납품 규격`}`,
+                        gallery: galleryImages,
+                        initialIndex: slideIdx,
+                        initialMode: 'image',
+                        originalText: currentCase?.originalText,
+                        originalDocumentMeta: currentCase?.originalDocumentMeta
+                      });
+                    }}
+                    className={`relative rounded-xl overflow-hidden border border-[#eae6df] shadow-xs bg-slate-900 group cursor-zoom-in flex items-center justify-center ${service.id === 'contract' ? 'h-[360px] sm:h-[430px]' : 'aspect-16/9'}`}
+                    title="클릭하여 고해상도 확대 검토하기"
+                  >
+                    <img
+                      src={activeImageUrl}
+                      alt={activeImageTitle}
+                      className="w-full h-full object-contain group-hover:scale-102 transition-transform duration-300"
+                    />
+
+                    {/* Prev / Next Chevrons if multi-slide */}
+                    {hasGallery && (
+                      <>
+                        <button
+                          type="button"
+                          disabled={slideIdx === 0}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSlideIdx((prev) => Math.max(0, prev - 1));
+                          }}
+                          className="absolute left-2.5 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-black/75 hover:bg-[#f05a22] text-white flex items-center justify-center transition disabled:opacity-20 cursor-pointer"
+                          title="이전 슬라이드"
+                        >
+                          <ChevronLeft className="w-4 h-4" />
+                        </button>
+                        <button
+                          type="button"
+                          disabled={slideIdx === galleryImages.length - 1}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSlideIdx((prev) => Math.min(galleryImages.length - 1, prev + 1));
+                          }}
+                          className="absolute right-2.5 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-black/75 hover:bg-[#f05a22] text-white flex items-center justify-center transition disabled:opacity-20 cursor-pointer"
+                          title="다음 슬라이드"
+                        >
+                          <ChevronRight className="w-4 h-4" />
+                        </button>
+                      </>
+                    )}
+
+                    <div className="absolute top-2.5 right-2.5 bg-black/70 hover:bg-black/90 backdrop-blur-xs text-white px-2 py-0.5 rounded-md text-[10px] font-bold flex items-center gap-1 border border-white/20 shadow-xs">
+                      <ZoomIn className="w-3 h-3 text-[#f05a22]" />
+                      <span>확대 검토</span>
+                    </div>
+
+                    <div className="absolute top-2.5 left-2.5 pointer-events-none">
+                      {hasGallery ? (
+                        <span className="bg-[#f05a22] text-white px-2 py-0.5 rounded-md text-[10px] font-bold shadow-xs">
+                          {slideIdx + 1} / {galleryImages.length} ({currentSlide?.pageLabel})
+                        </span>
+                      ) : (
+                        <span className="bg-black/60 text-white px-2 py-0.5 rounded-md text-[10px] font-bold">
+                          대표 산출물
+                        </span>
+                      )}
+                    </div>
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3 pointer-events-none">
-                    <span className="text-[11px] font-bold text-white flex items-center gap-1.5">
-                      <Sparkles className="w-3.5 h-3.5 text-[#f05a22]" />
-                      {service.name} 전문 산출물 예시
-                    </span>
-                  </div>
+
+                  {/* Multi-slide quick jump bar */}
+                  {hasGallery && (
+                    <div className="flex items-center justify-between p-2 rounded-lg bg-orange-50 border border-orange-200 text-xs">
+                      <span className="text-[11px] font-bold text-gray-800 truncate">
+                        {currentSlide?.title}
+                      </span>
+                      <div className="flex items-center gap-1 shrink-0 ml-2">
+                        <button
+                          type="button"
+                          disabled={slideIdx === 0}
+                          onClick={() => setSlideIdx((prev) => Math.max(0, prev - 1))}
+                          className="px-2 py-0.5 rounded bg-white border border-gray-300 text-gray-700 hover:text-[#f05a22] text-[10px] font-bold disabled:opacity-30 cursor-pointer"
+                        >
+                          이전
+                        </button>
+                        <span className="text-[10px] font-mono font-bold text-[#0f2439] px-1">
+                          {slideIdx + 1}/{galleryImages.length}
+                        </span>
+                        <button
+                          type="button"
+                          disabled={slideIdx === galleryImages.length - 1}
+                          onClick={() => setSlideIdx((prev) => Math.min(galleryImages.length - 1, prev + 1))}
+                          className="px-2 py-0.5 rounded bg-[#0f2439] text-white hover:bg-[#1a3854] text-[10px] font-bold disabled:opacity-30 cursor-pointer"
+                        >
+                          다음
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 
@@ -193,42 +293,144 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                 </button>
               )}
 
-              {/* Case Study Image Banner */}
-              {service.previewImage && (
-                <div
-                  onClick={() => {
-                    setZoomImage({
-                      url: service.previewImage!,
-                      alt: service.portfolioExample?.title || `${service.name} 포트폴리오`,
-                      title: service.portfolioExample?.title || `${service.name} 대표 포트폴리오`,
-                      subtitle: `${service.portfolioExample?.client || '검증 고객사'} • ${service.portfolioExample?.result || '성과 지표'}`
-                    });
-                  }}
-                  className="relative rounded-xl overflow-hidden border border-[#eae6df] shadow-xs aspect-16/9 bg-gray-100 group cursor-zoom-in"
-                  title="클릭하여 고해상도 확대 검토하기"
-                >
-                  <img
-                    src={service.previewImage}
-                    alt={service.portfolioExample?.title || `${service.name} 포트폴리오`}
-                    referrerPolicy="no-referrer"
-                    className="w-full h-full object-cover group-hover:scale-103 transition duration-300"
-                  />
-                  <div className="absolute top-2.5 right-2.5 bg-black/60 hover:bg-black/80 backdrop-blur-xs text-white px-2 py-0.5 rounded-md text-[10px] font-bold flex items-center gap-1 border border-white/20 shadow-xs">
-                    <ZoomIn className="w-3 h-3 text-[#f05a22]" />
-                    <span>확대 검토</span>
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0f2439]/85 via-[#0f2439]/30 to-transparent flex flex-col justify-end p-3.5 text-white pointer-events-none">
-                    <span className="text-[10px] uppercase tracking-wider font-extrabold text-[#f05a22] mb-0.5">
-                      VERIFIED PORTFOLIO CASE
-                    </span>
-                    <h5 className="font-black text-sm line-clamp-1 leading-snug">
-                      {service.portfolioExample?.title}
-                    </h5>
-                  </div>
+              {/* Case Tabs if multiple cases exist */}
+              {cases.length > 1 && (
+                <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pb-1">
+                  {cases.map((c, idx) => {
+                    const isSelected = selectedCaseIdx === idx;
+                    return (
+                      <button
+                        key={c.id || idx}
+                        type="button"
+                        onClick={() => {
+                          setSelectedCaseIdx(idx);
+                          setSlideIdx(0);
+                        }}
+                        className={`text-xs px-2.5 py-1.5 rounded-lg font-bold transition shrink-0 flex items-center gap-1 cursor-pointer ${
+                          isSelected
+                            ? 'bg-[#0f2439] text-white shadow-xs'
+                            : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+                        }`}
+                      >
+                        <span className={`w-3.5 h-3.5 rounded-full text-[9px] flex items-center justify-center ${isSelected ? 'bg-[#f05a22] text-white' : 'bg-white text-gray-600'}`}>
+                          {idx + 1}
+                        </span>
+                        <span className="truncate max-w-[170px]">
+                          {c.tabLabel || c.title.split(' ')[0]}
+                        </span>
+                      </button>
+                    );
+                  })}
                 </div>
               )}
 
-              {service.portfolioExample && (
+              {/* Case Study Image Banner */}
+              {activeImageUrl && (
+                <div className="space-y-2">
+                  <div
+                    onClick={() => {
+                      setZoomImage({
+                        url: activeImageUrl,
+                        alt: activeImageTitle,
+                        title: currentCase?.title || service.portfolioExample?.title || activeImageTitle,
+                        subtitle: `${currentCase?.client || service.portfolioExample?.client || '검증 고객사'} • ${currentSlide ? currentSlide.pageLabel : (currentCase?.result || service.portfolioExample?.result || '성과 지표')}`,
+                        gallery: galleryImages,
+                        initialIndex: slideIdx,
+                        initialMode: 'image',
+                        originalText: currentCase?.originalText,
+                        originalDocumentMeta: currentCase?.originalDocumentMeta
+                      });
+                    }}
+                    className={`relative rounded-xl overflow-hidden border border-[#eae6df] shadow-xs bg-slate-900 group cursor-zoom-in flex items-center justify-center ${service.id === 'contract' ? 'h-[360px] sm:h-[430px]' : 'aspect-16/9'}`}
+                    title="클릭하여 고해상도 확대 검토하기"
+                  >
+                    <img
+                      src={activeImageUrl}
+                      alt={activeImageTitle}
+                      className="w-full h-full object-contain group-hover:scale-102 transition duration-300"
+                    />
+
+                    {/* Prev / Next Chevrons if multi-slide */}
+                    {hasGallery && (
+                      <>
+                        <button
+                          type="button"
+                          disabled={slideIdx === 0}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSlideIdx((prev) => Math.max(0, prev - 1));
+                          }}
+                          className="absolute left-2.5 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-black/75 hover:bg-[#f05a22] text-white flex items-center justify-center transition disabled:opacity-20 cursor-pointer"
+                          title="이전 슬라이드"
+                        >
+                          <ChevronLeft className="w-4 h-4" />
+                        </button>
+                        <button
+                          type="button"
+                          disabled={slideIdx === galleryImages.length - 1}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setSlideIdx((prev) => Math.min(galleryImages.length - 1, prev + 1));
+                          }}
+                          className="absolute right-2.5 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-black/75 hover:bg-[#f05a22] text-white flex items-center justify-center transition disabled:opacity-20 cursor-pointer"
+                          title="다음 슬라이드"
+                        >
+                          <ChevronRight className="w-4 h-4" />
+                        </button>
+                      </>
+                    )}
+
+                    <div className="absolute top-2.5 right-2.5 bg-black/70 hover:bg-black/90 backdrop-blur-xs text-white px-2 py-0.5 rounded-md text-[10px] font-bold flex items-center gap-1 border border-white/20 shadow-xs">
+                      <ZoomIn className="w-3 h-3 text-[#f05a22]" />
+                      <span>확대 검토</span>
+                    </div>
+
+                    <div className="absolute top-2.5 left-2.5 pointer-events-none">
+                      {hasGallery ? (
+                        <span className="bg-[#f05a22] text-white px-2 py-0.5 rounded-md text-[10px] font-bold shadow-xs">
+                          {slideIdx + 1} / {galleryImages.length} ({currentSlide?.pageLabel})
+                        </span>
+                      ) : (
+                        <span className="bg-[#0f2439] text-white px-2 py-0.5 rounded-md text-[10px] font-bold">
+                          대표 포트폴리오
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Multi-slide quick jump bar */}
+                  {hasGallery && (
+                    <div className="flex items-center justify-between p-2 rounded-lg bg-orange-50 border border-orange-200 text-xs">
+                      <span className="text-[11px] font-bold text-gray-800 truncate">
+                        {currentSlide?.title}
+                      </span>
+                      <div className="flex items-center gap-1 shrink-0 ml-2">
+                        <button
+                          type="button"
+                          disabled={slideIdx === 0}
+                          onClick={() => setSlideIdx((prev) => Math.max(0, prev - 1))}
+                          className="px-2 py-0.5 rounded bg-white border border-gray-300 text-gray-700 hover:text-[#f05a22] text-[10px] font-bold disabled:opacity-30 cursor-pointer"
+                        >
+                          이전
+                        </button>
+                        <span className="text-[10px] font-mono font-bold text-[#0f2439] px-1">
+                          {slideIdx + 1}/{galleryImages.length}
+                        </span>
+                        <button
+                          type="button"
+                          disabled={slideIdx === galleryImages.length - 1}
+                          onClick={() => setSlideIdx((prev) => Math.min(galleryImages.length - 1, prev + 1))}
+                          className="px-2 py-0.5 rounded bg-[#0f2439] text-white hover:bg-[#1a3854] text-[10px] font-bold disabled:opacity-30 cursor-pointer"
+                        >
+                          다음
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {(currentCase || service.portfolioExample) && (
                 <div className="space-y-3">
                   <div className="p-3.5 bg-[#fbf9f5] rounded-xl border border-[#eae6df] space-y-2">
                     <div className="flex items-center justify-between text-xs">
@@ -237,7 +439,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                         고객사 유형
                       </span>
                       <span className="font-bold text-[#0f2439]">
-                        {service.portfolioExample.client}
+                        {currentCase?.client || service.portfolioExample?.client}
                       </span>
                     </div>
 
@@ -247,7 +449,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                         작업 소요 시간
                       </span>
                       <span className="font-semibold text-gray-700">
-                        {service.portfolioExample.duration}
+                        {currentCase?.duration || service.portfolioExample?.duration}
                       </span>
                     </div>
 
@@ -257,7 +459,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                         주요 성과
                       </span>
                       <span className="font-bold text-emerald-700 text-right">
-                        {service.portfolioExample.result}
+                        {currentCase?.result || service.portfolioExample?.result}
                       </span>
                     </div>
                   </div>
@@ -268,7 +470,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
                       수행 내용 및 산출 요약
                     </h5>
                     <p className="text-gray-600 leading-relaxed text-xs">
-                      {service.portfolioExample.summary}
+                      {currentCase?.summary || service.portfolioExample?.summary}
                     </p>
                   </div>
 

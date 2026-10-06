@@ -1,0 +1,277 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" width="1200" height="820" style="background:#f8fafc; font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <filter id="studio-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.06" />
+    </filter>
+    <linearGradient id="emerald-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00796B" />
+      <stop offset="100%" stop-color="#004D40" />
+    </linearGradient>
+    <linearGradient id="mint-soft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2F1" />
+      <stop offset="100%" stop-color="#F1F8F6" />
+    </linearGradient>
+  </defs>
+
+  <!-- TOP HEADER -->
+  <rect x="0" y="0" width="1200" height="64" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+  <rect x="32" y="16" width="32" height="32" rx="8" fill="#00796B" />
+  <text x="48" y="37" fill="#ffffff" font-size="12" font-weight="900" text-anchor="middle" letter-spacing="-0.5">T24</text>
+  <text x="76" y="31" fill="#111827" font-size="15" font-weight="800">이커머스 상품 상세페이지 제작 스튜디오</text>
+  <text x="76" y="47" fill="#6b7280" font-size="11" font-weight="500">이커머스 상품 상세페이지 제작 프로젝트 (BT24 코스메틱) · 트렌드24 대행</text>
+
+  <!-- Status & Date -->
+  <g transform="translate(970, 20)">
+    <rect width="144" height="24" rx="12" fill="#e6fffa" stroke="#38b2ac" stroke-width="0.8" />
+    <circle cx="16" cy="12" r="4" fill="#00796B" />
+    <text x="28" y="16" fill="#00796B" font-size="11" font-weight="800">상세페이지 기획 완료</text>
+    <text x="156" y="16" fill="#6b7280" font-size="12" font-weight="500">2026.10.01</text>
+  </g>
+
+  <!-- MAIN BODY -->
+  <!-- LEFT COLUMN: PLANNING CONSOLE (width: 440) -->
+  <!-- Card 1: 기획 개요 -->
+  <g transform="translate(32, 84)" filter="url(#studio-shadow)">
+    <rect width="440" height="204" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+    <rect x="24" y="20" width="6" height="18" fill="#00796B" rx="1" />
+    <text x="36" y="34" fill="#00796B" font-size="14" font-weight="800">1. 상품 기획 개요 (BT24 코스메틱)</text>
+
+    <g transform="translate(24, 62)" font-size="12.5">
+      <!-- Row 1 -->
+      <text x="0" y="0" fill="#64748b" font-weight="600">브랜드 / 모델</text>
+      <text x="96" y="0" fill="#0f172a" font-weight="700">BT24 · 나이아신아마이드 100 앰플 파우더 (5g)</text>
+
+      <!-- Row 2 -->
+      <text x="0" y="30" fill="#64748b" font-weight="600">핵심 기능성</text>
+      <text x="96" y="30" fill="#00796B" font-weight="700">식약처 고시 미백 성분 · 피지 조절 · 피부톤 개선</text>
+
+      <!-- Row 3 -->
+      <text x="0" y="60" fill="#64748b" font-weight="600">타겟 고객군</text>
+      <text x="96" y="60" fill="#0f172a" font-weight="500">기미·잡티·다크서클 및 지성 트러블 고민 2040 남녀</text>
+
+      <!-- Row 4 -->
+      <text x="0" y="90" fill="#64748b" font-weight="600">판매 채널</text>
+      <text x="96" y="90" fill="#0f172a" font-weight="500">네이버 스마트스토어, 올리브영 온라인몰, 자사몰</text>
+
+      <!-- Row 5 -->
+      <text x="0" y="120" fill="#64748b" font-weight="600">디자인 컨셉</text>
+      <text x="96" y="120" fill="#0369a1" font-weight="700">청량한 에메랄드 딥그린(#00796B) &amp; 클린 화이트</text>
+    </g>
+  </g>
+
+  <!-- Card 2: AI 추천 6단계 상세페이지 구조 -->
+  <g transform="translate(32, 304)" filter="url(#studio-shadow)">
+    <rect width="440" height="486" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="1" />
+    <rect x="24" y="20" width="6" height="18" fill="#00796B" rx="1" />
+    <text x="36" y="34" fill="#00796B" font-size="14" font-weight="800">2. 고전환 6단계 상세페이지 설계 구조</text>
+
+    <g transform="translate(24, 60)" font-size="12">
+      <!-- Step 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="26" height="26" rx="6" fill="#E0F2F1" />
+        <text x="13" y="18" fill="#00796B" font-weight="900" text-anchor="middle">01</text>
+        <text x="36" y="12" fill="#0f172a" font-weight="700">도입부 후킹 (Hooking Visual)</text>
+        <text x="36" y="28" fill="#64748b" font-size="11">기능성 미백 대표성분 선언 + #자극없이 #기미_미백 태그</text>
+      </g>
+
+      <!-- Step 2 -->
+      <g transform="translate(0, 52)">
+        <rect width="26" height="26" rx="6" fill="#E0F2F1" />
+        <text x="13" y="18" fill="#00796B" font-weight="900" text-anchor="middle">02</text>
+        <text x="36" y="12" fill="#0f172a" font-weight="700">성분 원리 및 3대 효능 체크</text>
+        <text x="36" y="28" fill="#64748b" font-size="11">멜라닌 이동 감소 원리 규명 &amp; [미백·기미·피부개선] 확약</text>
+      </g>
+
+      <!-- Step 3 -->
+      <g transform="translate(0, 104)">
+        <rect width="26" height="26" rx="6" fill="#E0F2F1" />
+        <text x="13" y="18" fill="#00796B" font-weight="900" text-anchor="middle">03</text>
+        <text x="36" y="12" fill="#0f172a" font-weight="700">3대 믹스 활용법 (User Guide)</text>
+        <text x="36" y="28" fill="#64748b" font-size="11">①토너/에센스 1펌프 ②크림 1펌프 ③미스트 블렌딩 컷</text>
+      </g>
+
+      <!-- Step 4 -->
+      <g transform="translate(0, 156)">
+        <rect width="26" height="26" rx="6" fill="#E0F2F1" />
+        <text x="13" y="18" fill="#00796B" font-weight="900" text-anchor="middle">04</text>
+        <text x="36" y="12" fill="#0f172a" font-weight="700">POINT 01 저자극 &amp; 수용성 비타민B3</text>
+        <text x="36" y="28" fill="#64748b" font-size="11">수용성 비타민B3 분자 구조 일러스트 &amp; 순수 파우더 시각화</text>
+      </g>
+
+      <!-- Step 5 -->
+      <g transform="translate(0, 208)">
+        <rect width="26" height="26" rx="6" fill="#E0F2F1" />
+        <text x="13" y="18" fill="#00796B" font-weight="900" text-anchor="middle">05</text>
+        <text x="36" y="12" fill="#0f172a" font-weight="700">POINT 02 젊음 리턴 4대 특장점</text>
+        <text x="36" y="28" fill="#64748b" font-size="11">01안정성 / 02잡티지움 / 03간편믹스 / 04고퀄리티 비타민</text>
+      </g>
+
+      <!-- Step 6 -->
+      <g transform="translate(0, 260)">
+        <rect width="26" height="26" rx="6" fill="#E0F2F1" />
+        <text x="13" y="18" fill="#00796B" font-weight="900" text-anchor="middle">06</text>
+        <text x="36" y="12" fill="#0f172a" font-weight="700">제품 스펙표 &amp; 고객센터 CS 가이드</text>
+        <text x="36" y="28" fill="#64748b" font-size="11">피부타입·목적·보관법 5종 테이블 &amp; 4단계 안심 배송 안내</text>
+      </g>
+    </g>
+
+    <!-- Key Metrics Highlight -->
+    <g transform="translate(24, 396)">
+      <rect width="392" height="66" rx="10" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1" />
+      <g transform="translate(16, 16)">
+        <text x="0" y="12" fill="#166534" font-size="11.5" font-weight="800">✓ 예상 전환 성과 및 검증 지표</text>
+        <text x="0" y="32" fill="#15803d" font-size="11" font-weight="500">
+          모바일 이탈률 34% 감소 · 상세페이지 체류시간 2분 30초대 유지
+        </text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: MOBILE DETAIL PAGE REAL PREVIEW (width: 680) -->
+  <g transform="translate(496, 84)" filter="url(#studio-shadow)">
+    <!-- Device Frame -->
+    <rect width="672" height="706" rx="20" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+
+    <!-- Top Mini Toolbar -->
+    <rect width="672" height="42" rx="20" fill="#f8fafc" />
+    <line x1="0" y1="42" x2="672" y2="42" stroke="#e2e8f0" stroke-width="1" />
+    <circle cx="28" cy="21" r="5" fill="#f87171" />
+    <circle cx="44" cy="21" r="5" fill="#fbbf24" />
+    <circle cx="60" cy="21" r="5" fill="#34d399" />
+    <text x="336" y="26" fill="#64748b" font-size="11.5" font-weight="600" text-anchor="middle">
+      모바일 이커머스 상세페이지 실시간 뷰어 (스마트스토어 가로 860px 표준)
+    </text>
+
+    <!-- Scaled Preview Canvas -->
+    <g transform="translate(16, 52)">
+      <!-- Scrollable Container Area (width 640, height 640) -->
+      <rect width="640" height="640" rx="8" fill="#ffffff" stroke="#f1f5f9" stroke-width="1" />
+
+      <!-- SECTION: Hero Section of Niacinamide -->
+      <!-- Sub-bar -->
+      <rect x="0" y="0" width="640" height="28" fill="#fafafa" />
+      <text x="18" y="18" fill="#94a3b8" font-size="10.5" font-weight="700">BT24</text>
+      <text x="622" y="18" fill="#94a3b8" font-size="10.5" font-weight="600" text-anchor="end">New Item Launching</text>
+
+      <!-- Main Headline -->
+      <g transform="translate(320, 56)" text-anchor="middle">
+        <text x="0" y="0" fill="#334155" font-size="14.5" font-weight="700" letter-spacing="-0.3">기능성 미백의 대표성분</text>
+        <text x="0" y="32" fill="#00796B" font-size="28" font-weight="900" letter-spacing="-0.5">나이아신아마이드</text>
+      </g>
+
+      <!-- Product Bottle Illustration Banner -->
+      <g transform="translate(30, 110)">
+        <rect width="580" height="150" rx="12" fill="url(#mint-soft)" />
+        
+        <!-- Center Bottle Trio Graphic -->
+        <g transform="translate(290, 75)">
+          <!-- Middle bottle (tall) -->
+          <rect x="-30" y="-45" width="60" height="90" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+          <rect x="-24" y="-20" width="48" height="56" rx="2" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+          <text x="0" y="-4" fill="#00796B" font-size="9" font-weight="800" text-anchor="middle">BT24</text>
+          <text x="0" y="10" fill="#0f172a" font-size="8" font-weight="800" text-anchor="middle">Niacin 100</text>
+          <text x="0" y="22" fill="#64748b" font-size="6.5" text-anchor="middle">AMPOULE POWDER</text>
+          <text x="0" y="32" fill="#94a3b8" font-size="6" text-anchor="middle">5g / 0.176 oz.</text>
+          <!-- White dropper cap -->
+          <rect x="-14" y="-62" width="28" height="18" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" />
+          <rect x="-6" y="-72" width="12" height="11" rx="5" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1" />
+
+          <!-- Left mini bottle -->
+          <g transform="translate(-75, 10) scale(0.85)">
+            <rect x="-25" y="-40" width="50" height="75" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" />
+            <rect x="-20" y="-18" width="40" height="46" rx="2" fill="#f8fafc" />
+            <text x="0" y="-2" fill="#00796B" font-size="8" font-weight="800" text-anchor="middle">BT24</text>
+            <text x="0" y="10" fill="#0f172a" font-size="7.5" font-weight="800" text-anchor="middle">Niacin 100</text>
+            <rect x="-12" y="-54" width="24" height="15" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+          </g>
+
+          <!-- Right mini bottle -->
+          <g transform="translate(75, 10) scale(0.85)">
+            <rect x="-25" y="-40" width="50" height="75" rx="5" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.2" />
+            <rect x="-20" y="-18" width="40" height="46" rx="2" fill="#f8fafc" />
+            <text x="0" y="-2" fill="#00796B" font-size="8" font-weight="800" text-anchor="middle">BT24</text>
+            <text x="0" y="10" fill="#0f172a" font-size="7.5" font-weight="800" text-anchor="middle">Niacin 100</text>
+            <rect x="-12" y="-54" width="24" height="15" rx="3" fill="#ffffff" stroke="#cbd5e1" stroke-width="1" />
+          </g>
+        </g>
+      </g>
+
+      <!-- Intro Text Callout -->
+      <g transform="translate(30, 272)">
+        <rect width="580" height="66" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1" />
+        <g transform="translate(18, 16)">
+          <text x="0" y="18" fill="#00796B" font-size="17" font-weight="900" font-style="italic">NIACIN 100</text>
+          <text x="0" y="34" fill="#00796B" font-size="11" font-weight="700">ampoule Powder</text>
+          
+          <line x1="126" y1="2" x2="126" y2="36" stroke="#00796B" stroke-width="1.5" />
+          
+          <text x="142" y="14" fill="#334155" font-size="11" font-weight="500">
+            미백의 대표성분으로 피부를 깨끗하게 하는데 도움을 주고, 피지분비 조절로
+          </text>
+          <text x="142" y="32" fill="#334155" font-size="11" font-weight="500">
+            지성피부의 트러블 관리 및 거칠고 노화된 피부개선에도 도움을 줍니다.
+          </text>
+        </g>
+      </g>
+
+      <!-- 3 Key Hashtag Badges -->
+      <g transform="translate(30, 350)">
+        <rect width="186" height="38" rx="8" fill="#00796B" />
+        <text x="93" y="24" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">#자극 없이</text>
+
+        <rect x="196" y="0" width="188" height="38" rx="8" fill="#00796B" />
+        <text x="290" y="24" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">#기미_미백</text>
+
+        <rect x="394" y="0" width="186" height="38" rx="8" fill="#00796B" />
+        <text x="487" y="24" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">#피부 개선까지</text>
+      </g>
+
+      <!-- 3 How to Use Cards (활용법) -->
+      <g transform="translate(30, 400)">
+        <text x="0" y="16" fill="#0f172a" font-size="13" font-weight="800">
+          나이아신아마이드 100 활용법 (기존 화장품과 믹스)
+        </text>
+
+        <!-- Step 1 -->
+        <g transform="translate(0, 26)">
+          <rect width="186" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+          <rect x="10" y="10" width="56" height="20" rx="10" fill="#00796B" />
+          <text x="38" y="24" fill="#ffffff" font-size="9.5" font-weight="700" text-anchor="middle">Point 01</text>
+          <text x="74" y="24" fill="#0f172a" font-size="11.5" font-weight="800">토너, 에센스</text>
+          <text x="10" y="48" fill="#475569" font-size="10.5">토너·에센스에</text>
+          <text x="10" y="66" fill="#00796B" font-size="10.5" font-weight="700">1펌프 섞어서 사용</text>
+        </g>
+
+        <!-- Step 2 -->
+        <g transform="translate(196, 26)">
+          <rect width="188" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+          <rect x="10" y="10" width="56" height="20" rx="10" fill="#00796B" />
+          <text x="38" y="24" fill="#ffffff" font-size="9.5" font-weight="700" text-anchor="middle">Point 02</text>
+          <text x="74" y="24" fill="#0f172a" font-size="11.5" font-weight="800">수분·영양 크림</text>
+          <text x="10" y="48" fill="#475569" font-size="10.5">사용 중인 크림에</text>
+          <text x="10" y="66" fill="#00796B" font-size="10.5" font-weight="700">1펌프 섞어서 사용</text>
+        </g>
+
+        <!-- Step 3 -->
+        <g transform="translate(394, 26)">
+          <rect width="186" height="88" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+          <rect x="10" y="10" width="56" height="20" rx="10" fill="#00796B" />
+          <text x="38" y="24" fill="#ffffff" font-size="9.5" font-weight="700" text-anchor="middle">Point 03</text>
+          <text x="74" y="24" fill="#0f172a" font-size="11.5" font-weight="800">미스트 분사</text>
+          <text x="10" y="48" fill="#475569" font-size="10.5">손바닥 파우더 후</text>
+          <text x="10" y="66" fill="#00796B" font-size="10.5" font-weight="700">미스트 뿌려 흡수</text>
+        </g>
+      </g>
+
+      <!-- Bottom Mini Footer Bar inside phone -->
+      <g transform="translate(30, 530)">
+        <rect width="580" height="90" rx="10" fill="#004D40" />
+        <g transform="translate(20, 22)">
+          <text x="0" y="16" fill="#E0F2F1" font-size="11" font-weight="700">POINT 01 자연 유래 성분으로 저자극</text>
+          <text x="0" y="38" fill="#ffffff" font-size="14.5" font-weight="900">식약처 고시 수용성 비타민B3 멜라닌 차단</text>
+          <text x="0" y="56" fill="#A7F3D0" font-size="10.5">기미·다크서클·여드름 흔적 개선 · 열과 빛에 안정적인 고순도 원료</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

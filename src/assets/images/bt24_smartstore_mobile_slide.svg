@@ -1,0 +1,295 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="mBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07111a"/>
+      <stop offset="60%" stop-color="#0e1a26"/>
+      <stop offset="100%" stop-color="#080e15"/>
+    </linearGradient>
+    <linearGradient id="phoneFrameGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="npayPillGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#03c75a"/>
+      <stop offset="100%" stop-color="#00a344"/>
+    </linearGradient>
+    <filter id="mDropShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#mBgGrad)"/>
+
+  <!-- Left Side: Mobile Responsive Feature Highlights -->
+  <g transform="translate(60, 50)">
+    <!-- Header Badge -->
+    <rect width="180" height="26" rx="13" fill="#03c75a" fill-opacity="0.15" stroke="#03c75a" stroke-width="1"/>
+    <text x="16" y="17.5" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#03c75a">
+      📱 모바일 쇼핑몰 최적화
+    </text>
+
+    <!-- Main Title -->
+    <text x="0" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+      스마트스토어 모바일 뷰
+    </text>
+    <text x="0" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="28" font-weight="900" fill="#03c75a" letter-spacing="-0.5">
+      1초 NPay 간편결제 시스템
+    </text>
+
+    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="500" fill="#94a3b8">
+      모바일 유입 비중 83% 이커머스 환경에 맞춘 엄지손가락(Thumb-Zone) 특화 설계
+    </text>
+
+    <!-- 4 Key Points Cards -->
+    <!-- Card 1 -->
+    <g transform="translate(0, 160)">
+      <rect width="420" height="78" rx="10" fill="#101d2a" stroke="#1e3247" stroke-width="1"/>
+      <circle cx="36" cy="39" r="18" fill="#042817" stroke="#03c75a" stroke-width="1.5"/>
+      <text x="36" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#03c75a" text-anchor="middle">⚡</text>
+      <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13.5" font-weight="800" fill="#ffffff">
+        네이버페이 1초 원클릭 바로구매
+      </text>
+      <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="500" fill="#94a3b8">
+        복잡한 회원가입 없이 네이버 계정 연동으로 1초 결제 완료 &amp; 결제 이탈률 62% 감소
+      </text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(0, 252)">
+      <rect width="420" height="78" rx="10" fill="#101d2a" stroke="#1e3247" stroke-width="1"/>
+      <circle cx="36" cy="39" r="18" fill="#0a2538" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="36" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#38bdf8" text-anchor="middle">🎯</text>
+      <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13.5" font-weight="800" fill="#ffffff">
+        터치 스와이프 기획전 &amp; 큐레이션
+      </text>
+      <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="500" fill="#94a3b8">
+        모바일 맞춤형 가로 스와이프 롤링 배너, 실시간 랭킹 순위표, 베스트 리뷰 인포
+      </text>
+    </g>
+
+    <!-- Card 3 -->
+    <g transform="translate(0, 344)">
+      <rect width="420" height="78" rx="10" fill="#101d2a" stroke="#1e3247" stroke-width="1"/>
+      <circle cx="36" cy="39" r="18" fill="#2d1b06" stroke="#f59e0b" stroke-width="1.5"/>
+      <text x="36" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#f59e0b" text-anchor="middle">💬</text>
+      <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13.5" font-weight="800" fill="#ffffff">
+        네이버 톡톡 1:1 CS 상담 연동
+      </text>
+      <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="500" fill="#94a3b8">
+        스토어 플로팅 톡톡 문의 연동 및 첫 문의 고객 3,000원 쿠폰 자동 발송 봇 탑재
+      </text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(0, 436)">
+      <rect width="420" height="78" rx="10" fill="#101d2a" stroke="#1e3247" stroke-width="1"/>
+      <circle cx="36" cy="39" r="18" fill="#1f112e" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="36" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#a855f7" text-anchor="middle">🎁</text>
+      <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13.5" font-weight="800" fill="#ffffff">
+        스토어찜 &amp; 소식알림 재구매 루프
+      </text>
+      <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="500" fill="#94a3b8">
+        구독 고객 대상 타겟 마케팅 메시지 발송, 리뷰 작성 시 네이버포인트 최대 5천P
+      </text>
+    </g>
+
+    <!-- Mobile Conversion Metric Pill -->
+    <g transform="translate(0, 532)">
+      <rect width="420" height="42" rx="8" fill="#042012" stroke="#03c75a" stroke-width="1.2"/>
+      <text x="210" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="800" fill="#03c75a" text-anchor="middle">
+        모바일 구매 전환율(CVR): 4.38% (동일 카테고리 대비 +180% 달성)
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Side: Realistic iPhone Mockup (310 x 590) -->
+  <g transform="translate(560, 40)" filter="url(#mDropShadow)">
+    <!-- Phone Outer Shell -->
+    <rect width="310" height="590" rx="42" fill="url(#phoneFrameGrad)" stroke="#475569" stroke-width="3"/>
+    <!-- Phone Inner Screen -->
+    <rect x="9" y="9" width="292" height="572" rx="34" fill="#09111a"/>
+
+    <!-- Dynamic Island / Speaker Notch -->
+    <rect x="110" y="16" width="90" height="20" rx="10" fill="#000000"/>
+    <circle cx="178" cy="26" r="4.5" fill="#1e293b"/>
+
+    <!-- Status Bar (Time, Wifi, Battery) -->
+    <text x="32" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#ffffff">9:41</text>
+    <g transform="translate(250, 20)">
+      <rect width="18" height="9.5" rx="2.5" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+      <rect x="2" y="2" width="11" height="5.5" rx="1" fill="#03c75a"/>
+      <path d="M 19,3.5 L 19,6" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Mobile Screen Content (Y: 42 ~ 530) -->
+    <!-- Mobile Naver Top Header -->
+    <g transform="translate(9, 44)">
+      <rect width="292" height="42" fill="#0d1824"/>
+      <line x1="0" y1="42" x2="292" y2="42" stroke="#1d2d3e" stroke-width="0.8"/>
+      
+      <rect x="14" y="11" width="20" height="20" rx="4" fill="#03c75a"/>
+      <text x="24" y="25" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">N</text>
+      
+      <text x="42" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="900" fill="#ffffff">BT24 <tspan fill="#03c75a">STORE</tspan></text>
+
+      <!-- Search & Cart -->
+      <g transform="translate(210, 11)">
+        <circle cx="10" cy="10" r="6" fill="none" stroke="#94a3b8" stroke-width="1.6"/>
+        <line x1="14" y1="14" x2="19" y2="19" stroke="#94a3b8" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="42" y="0" width="24" height="20" rx="10" fill="#03c75a" fill-opacity="0.2" stroke="#03c75a" stroke-width="0.8"/>
+        <text x="54" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="800" fill="#03c75a" text-anchor="middle">3</text>
+      </g>
+    </g>
+
+    <!-- Mobile Store Tabs -->
+    <g transform="translate(9, 87)">
+      <rect width="292" height="32" fill="#0a121c"/>
+      <text x="16" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#03c75a">스토어홈</text>
+      <rect x="14" y="28" width="46" height="2" fill="#03c75a"/>
+      <text x="75" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="600" fill="#94a3b8">베스트</text>
+      <text x="125" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="600" fill="#94a3b8">게이밍</text>
+      <text x="175" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="600" fill="#94a3b8">스마트바</text>
+      <text x="235" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" fill="#f59e0b">기획전</text>
+    </g>
+
+    <!-- Mobile Rolling Banner -->
+    <g transform="translate(19, 126)">
+      <rect width="272" height="110" rx="8" fill="#042013" stroke="#164e32" stroke-width="1"/>
+      <rect x="10" y="10" width="70" height="18" rx="9" fill="#03c75a"/>
+      <text x="45" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="8.5" font-weight="900" fill="#ffffff" text-anchor="middle">단독 런칭 특가</text>
+
+      <text x="10" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#ffffff">
+        GAMESIR 8K 무선패드
+      </text>
+      <text x="10" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="500" fill="#a7f3d0">
+        천왕성 기계식 0.1ms 응답속도
+      </text>
+      
+      <text x="10" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="900" fill="#ef4444">32%</text>
+      <text x="36" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="900" fill="#ffffff">59,800원</text>
+
+      <!-- Mini Pad Graphic -->
+      <g transform="translate(190, 20)">
+        <rect x="0" y="10" width="65" height="42" rx="14" fill="#132337" stroke="#38bdf8" stroke-width="1.5"/>
+        <circle cx="20" cy="30" r="5" fill="#03c75a"/>
+        <circle cx="45" cy="30" r="5" fill="#38bdf8"/>
+      </g>
+
+      <!-- Pagination dots -->
+      <circle cx="126" cy="98" r="2.5" fill="#03c75a"/>
+      <circle cx="136" cy="98" r="2" fill="#334155"/>
+      <circle cx="146" cy="98" r="2" fill="#334155"/>
+    </g>
+
+    <!-- Mobile Store Zzim / Benefit Strip -->
+    <g transform="translate(19, 244)">
+      <rect width="272" height="34" rx="6" fill="#0f1f2e" stroke="#1f364d" stroke-width="0.8"/>
+      <text x="12" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="700" fill="#03c75a">★ 스토어 알림받기</text>
+      <text x="105" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="500" fill="#ffffff">3,000원 즉시 할인쿠폰</text>
+      <rect x="220" y="6" width="44" height="22" rx="4" fill="#03c75a"/>
+      <text x="242" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">받기</text>
+    </g>
+
+    <!-- 2 Column Mobile Product Cards -->
+    <!-- Product 1 -->
+    <g transform="translate(19, 286)">
+      <rect width="132" height="175" rx="8" fill="#111c29" stroke="#1e2e42" stroke-width="0.8"/>
+      <rect x="6" y="6" width="120" height="74" rx="5" fill="#081018"/>
+      <rect x="10" y="10" width="34" height="14" rx="3" fill="#ef4444"/>
+      <text x="27" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="7.5" font-weight="900" fill="#ffffff" text-anchor="middle">BEST 1</text>
+      
+      <!-- Graphic -->
+      <path d="M 45,45 C 45,35 85,35 85,45 C 85,55 75,60 65,60 C 55,60 45,55 45,45 Z" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+
+      <text x="8" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="800" fill="#ffffff">G7 Pro 8K 무선패드</text>
+      <text x="8" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="8" font-weight="500" fill="#94a3b8">천왕성 홀이펙트</text>
+      
+      <text x="8" y="128" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="900" fill="#ef4444">32%</text>
+      <text x="28" y="128" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="900" fill="#ffffff">59,800원</text>
+      
+      <text x="8" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="8" font-weight="700" fill="#f59e0b">★ 4.9</text>
+      <text x="32" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="7.5" font-weight="500" fill="#64748b">(1,280)</text>
+      <rect x="82" y="136" width="44" height="15" rx="3" fill="#03c75a" fill-opacity="0.15"/>
+      <text x="104" y="147" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="7.5" font-weight="800" fill="#03c75a" text-anchor="middle">오늘출발</text>
+    </g>
+
+    <!-- Product 2 -->
+    <g transform="translate(159, 286)">
+      <rect width="132" height="175" rx="8" fill="#111c29" stroke="#1e2e42" stroke-width="0.8"/>
+      <rect x="6" y="6" width="120" height="74" rx="5" fill="#081018"/>
+      <rect x="10" y="10" width="34" height="14" rx="3" fill="#3b82f6"/>
+      <text x="27" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="7.5" font-weight="900" fill="#ffffff" text-anchor="middle">BEST 2</text>
+
+      <rect x="56" y="28" width="18" height="30" rx="3" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+
+      <text x="8" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="800" fill="#ffffff">바매니저 스마트 푸어러</text>
+      <text x="8" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="8" font-weight="500" fill="#94a3b8">디지털 정량 디스펜서</text>
+
+      <text x="8" y="128" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="900" fill="#ef4444">27%</text>
+      <text x="28" y="128" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="900" fill="#ffffff">49,900원</text>
+
+      <text x="8" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="8" font-weight="700" fill="#f59e0b">★ 4.8</text>
+      <text x="32" y="145" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="7.5" font-weight="500" fill="#64748b">(842)</text>
+      <rect x="80" y="136" width="46" height="15" rx="3" fill="#03c75a" fill-opacity="0.15"/>
+      <text x="103" y="147" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="7.5" font-weight="800" fill="#03c75a" text-anchor="middle">톡톡 3천P</text>
+    </g>
+
+    <!-- Sticky Bottom Bar (Thumb-Zone) -->
+    <g transform="translate(9, 516)">
+      <rect width="292" height="60" fill="#0a1420"/>
+      <line x1="0" y1="0" x2="292" y2="0" stroke="#1c2d3f" stroke-width="1"/>
+
+      <!-- Heart / Zzim -->
+      <g transform="translate(14, 12)">
+        <rect width="36" height="36" rx="8" fill="#132233" stroke="#253c55" stroke-width="0.8"/>
+        <path d="M 23,26 C 23,26 15,20 15,16 C 15,14 17,12 19,12 C 21,12 22,13 23,15 C 24,13 25,12 27,12 C 29,12 31,14 31,16 C 31,20 23,26 23,26 Z" fill="#ef4444"/>
+      </g>
+
+      <!-- Cart Button -->
+      <g transform="translate(56, 12)">
+        <rect width="64" height="36" rx="8" fill="#1e3247"/>
+        <text x="32" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">장바구니</text>
+      </g>
+
+      <!-- NPay Buy Now Button (Major CTA) -->
+      <g transform="translate(126, 12)">
+        <rect width="152" height="36" rx="8" fill="url(#npayPillGrad)"/>
+        <g transform="translate(14, 10)">
+          <rect width="16" height="16" rx="3" fill="#ffffff"/>
+          <text x="8" y="12.5" font-family="Arial, sans-serif" font-size="10.5" font-weight="900" fill="#03c75a" text-anchor="middle">N</text>
+        </g>
+        <text x="96" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12" font-weight="900" fill="#ffffff" text-anchor="middle">
+          NPay 구매하기 ↗
+        </text>
+      </g>
+    </g>
+
+    <!-- Home Indicator -->
+    <rect x="105" y="568" width="100" height="4" rx="2" fill="#ffffff" fill-opacity="0.3"/>
+  </g>
+
+  <!-- Right Tablet Preview Window (Peek behind) -->
+  <g transform="translate(900, 110)" filter="url(#mDropShadow)">
+    <rect width="250" height="440" rx="24" fill="#0b1622" stroke="#25384c" stroke-width="2"/>
+    <rect x="8" y="8" width="234" height="424" rx="18" fill="#081018"/>
+    <!-- Tablet Header -->
+    <rect x="8" y="8" width="234" height="34" fill="#0f1b29"/>
+    <text x="24" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#03c75a">BT24 STORE (iPad View)</text>
+    
+    <!-- 2 Column Responsive Tablet Layout Preview -->
+    <g transform="translate(20, 56)">
+      <rect width="100" height="140" rx="8" fill="#132130"/>
+      <rect width="100" height="140" rx="8" x="110" fill="#132130"/>
+      <rect width="100" height="140" rx="8" y="152" fill="#132130"/>
+      <rect width="100" height="140" rx="8" x="110" y="152" fill="#132130"/>
+    </g>
+
+    <!-- Floating Badge -->
+    <g transform="translate(30, 370)">
+      <rect width="190" height="32" rx="16" fill="#03c75a" fill-opacity="0.2" stroke="#03c75a" stroke-width="1"/>
+      <text x="95" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="800" fill="#03c75a" text-anchor="middle">
+        모바일·태블릿 유동형 레이아웃
+      </text>
+    </g>
+  </g>
+</svg>

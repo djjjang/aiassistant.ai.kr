@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="850" height="52" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <g transform="translate(60, 32)">
+    <rect x="0" y="-18" width="80" height="24" rx="4" fill="#0F172A"/>
+    <text x="40" y="-2" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">T24 LEGAL</text>
+    <text x="94" y="-1" font-size="12" font-weight="700" fill="#334155">B2B 물품 납품 및 자재 공급 기본계약서</text>
+    <text x="325" y="-1" font-size="11" font-weight="500" fill="#64748B">| 제5면 ([별표 1] 공급물품 명세서)</text>
+  </g>
+  <g transform="translate(790, 32)" text-anchor="end">
+    <text x="0" y="-1" font-size="11" font-weight="600" fill="#64748B">문서번호: T24-SP-2026-0921-A1</text>
+  </g>
+
+  <!-- Title Section -->
+  <g transform="translate(60, 85)">
+    <rect x="0" y="-14" width="6" height="20" fill="#2563EB" rx="1"/>
+    <text x="14" y="2" font-size="16" font-weight="900" fill="#0F172A">[별표 1] 공급물품 명세서 및 납품·품질 조건</text>
+    <text x="420" y="2" font-size="12" font-weight="600" fill="#64748B">(본 기본계약서 제2조, 제6조 및 제9조 연동)</text>
+  </g>
+
+  <!-- Section 1: Itemized Parts Specification Table -->
+  <g transform="translate(60, 115)">
+    <text x="0" y="0" font-size="13" font-weight="800" fill="#1E293B">1. 공급 물품 품목 및 단가 명세표</text>
+    
+    <!-- Table Header -->
+    <g transform="translate(0, 10)">
+      <rect width="730" height="28" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+      <line x1="38" y1="0" x2="38" y2="28" stroke="#CBD5E1" stroke-width="0.8"/>
+      <line x1="225" y1="0" x2="225" y2="28" stroke="#CBD5E1" stroke-width="0.8"/>
+      <line x1="390" y1="0" x2="390" y2="28" stroke="#CBD5E1" stroke-width="0.8"/>
+      <line x1="435" y1="0" x2="435" y2="28" stroke="#CBD5E1" stroke-width="0.8"/>
+      <line x1="495" y1="0" x2="495" y2="28" stroke="#CBD5E1" stroke-width="0.8"/>
+      <line x1="595" y1="0" x2="595" y2="28" stroke="#CBD5E1" stroke-width="0.8"/>
+
+      <text x="19" y="18" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">No</text>
+      <text x="131" y="18" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">품 목 명</text>
+      <text x="307" y="18" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">규격 및 기술 사양</text>
+      <text x="412" y="18" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">단위</text>
+      <text x="465" y="18" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">수 량</text>
+      <text x="545" y="18" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">단 가(원)</text>
+      <text x="662" y="18" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">금 액(원)</text>
+    </g>
+
+    <!-- Row 1 -->
+    <g transform="translate(0, 38)">
+      <rect width="730" height="26" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="38" y1="0" x2="38" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="225" y1="0" x2="225" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="390" y1="0" x2="390" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="435" y1="0" x2="435" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="495" y1="0" x2="495" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="595" y1="0" x2="595" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="19" y="17" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">1</text>
+      <text x="46" y="17" font-size="11" font-weight="700" fill="#0F172A">정밀 알루미늄 가공 하우징</text>
+      <text x="233" y="17" font-size="10.5" font-weight="400" fill="#334155">AL6061-T6, 5축 CNC 정밀가공</text>
+      <text x="412" y="17" font-size="11" font-weight="500" fill="#475569" text-anchor="middle">EA</text>
+      <text x="487" y="17" font-size="11" font-weight="600" fill="#0F172A" text-anchor="end">2,500</text>
+      <text x="587" y="17" font-size="11" font-weight="500" fill="#334155" text-anchor="end">48,000</text>
+      <text x="720" y="17" font-size="11" font-weight="700" fill="#0F172A" text-anchor="end">120,000,000</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 64)">
+      <rect width="730" height="26" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="38" y1="0" x2="38" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="225" y1="0" x2="225" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="390" y1="0" x2="390" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="435" y1="0" x2="435" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="495" y1="0" x2="495" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="595" y1="0" x2="595" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="19" y="17" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">2</text>
+      <text x="46" y="17" font-size="11" font-weight="700" fill="#0F172A">광학 센서 마운트 브라켓</text>
+      <text x="233" y="17" font-size="10.5" font-weight="400" fill="#334155">SUS304 정밀 프레스, 전해연마</text>
+      <text x="412" y="17" font-size="11" font-weight="500" fill="#475569" text-anchor="middle">EA</text>
+      <text x="487" y="17" font-size="11" font-weight="600" fill="#0F172A" text-anchor="end">5,000</text>
+      <text x="587" y="17" font-size="11" font-weight="500" fill="#334155" text-anchor="end">12,500</text>
+      <text x="720" y="17" font-size="11" font-weight="700" fill="#0F172A" text-anchor="end">62,500,000</text>
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 90)">
+      <rect width="730" height="26" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="38" y1="0" x2="38" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="225" y1="0" x2="225" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="390" y1="0" x2="390" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="435" y1="0" x2="435" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="495" y1="0" x2="495" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="595" y1="0" x2="595" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="19" y="17" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">3</text>
+      <text x="46" y="17" font-size="11" font-weight="700" fill="#0F172A">고신뢰성 제어 메인보드</text>
+      <text x="233" y="17" font-size="10.5" font-weight="400" fill="#334155">PCB 4-Layer, SMT 실장 완비</text>
+      <text x="412" y="17" font-size="11" font-weight="500" fill="#475569" text-anchor="middle">SET</text>
+      <text x="487" y="17" font-size="11" font-weight="600" fill="#0F172A" text-anchor="end">1,200</text>
+      <text x="587" y="17" font-size="11" font-weight="500" fill="#334155" text-anchor="end">85,000</text>
+      <text x="720" y="17" font-size="11" font-weight="700" fill="#0F172A" text-anchor="end">102,000,000</text>
+    </g>
+
+    <!-- Row 4 -->
+    <g transform="translate(0, 116)">
+      <rect width="730" height="26" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="38" y1="0" x2="38" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="225" y1="0" x2="225" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="390" y1="0" x2="390" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="435" y1="0" x2="435" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="495" y1="0" x2="495" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="595" y1="0" x2="595" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="19" y="17" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">4</text>
+      <text x="46" y="17" font-size="11" font-weight="700" fill="#0F172A">산업용 하네스 케이블</text>
+      <text x="233" y="17" font-size="10.5" font-weight="400" fill="#334155">IP67 방수 커넥터, 실드 차폐형</text>
+      <text x="412" y="17" font-size="11" font-weight="500" fill="#475569" text-anchor="middle">EA</text>
+      <text x="487" y="17" font-size="11" font-weight="600" fill="#0F172A" text-anchor="end">2,500</text>
+      <text x="587" y="17" font-size="11" font-weight="500" fill="#334155" text-anchor="end">15,000</text>
+      <text x="720" y="17" font-size="11" font-weight="700" fill="#0F172A" text-anchor="end">37,500,000</text>
+    </g>
+
+    <!-- Row 5 -->
+    <g transform="translate(0, 142)">
+      <rect width="730" height="26" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="38" y1="0" x2="38" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="225" y1="0" x2="225" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="390" y1="0" x2="390" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="435" y1="0" x2="435" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="495" y1="0" x2="495" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="595" y1="0" x2="595" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="19" y="17" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">5</text>
+      <text x="46" y="17" font-size="11" font-weight="700" fill="#0F172A">산업용 전원 SMPS 모듈</text>
+      <text x="233" y="17" font-size="10.5" font-weight="400" fill="#334155">24V 15A 내장, 서지 보호회로</text>
+      <text x="412" y="17" font-size="11" font-weight="500" fill="#475569" text-anchor="middle">EA</text>
+      <text x="487" y="17" font-size="11" font-weight="600" fill="#0F172A" text-anchor="end">1,000</text>
+      <text x="587" y="17" font-size="11" font-weight="500" fill="#334155" text-anchor="end">52,000</text>
+      <text x="720" y="17" font-size="11" font-weight="700" fill="#0F172A" text-anchor="end">52,000,000</text>
+    </g>
+
+    <!-- Row 6 -->
+    <g transform="translate(0, 168)">
+      <rect width="730" height="26" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="38" y1="0" x2="38" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="225" y1="0" x2="225" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="390" y1="0" x2="390" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="435" y1="0" x2="435" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="495" y1="0" x2="495" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <line x1="595" y1="0" x2="595" y2="26" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="19" y="17" font-size="11" font-weight="500" fill="#64748B" text-anchor="middle">6</text>
+      <text x="46" y="17" font-size="11" font-weight="700" fill="#0F172A">고방열 서멀 패드 세트</text>
+      <text x="233" y="17" font-size="10.5" font-weight="400" fill="#334155">3.0W/mK, UL94 V-0 난연 규격</text>
+      <text x="412" y="17" font-size="11" font-weight="500" fill="#475569" text-anchor="middle">SET</text>
+      <text x="487" y="17" font-size="11" font-weight="600" fill="#0F172A" text-anchor="end">2,500</text>
+      <text x="587" y="17" font-size="11" font-weight="500" fill="#334155" text-anchor="end">6,400</text>
+      <text x="720" y="17" font-size="11" font-weight="700" fill="#0F172A" text-anchor="end">16,000,000</text>
+    </g>
+
+    <!-- Subtotals Row 1: 공급가액 합계 -->
+    <g transform="translate(0, 194)">
+      <rect width="730" height="26" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+      <text x="350" y="17" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">공급가액 합계 (Subtotal)</text>
+      <line x1="595" y1="0" x2="595" y2="26" stroke="#CBD5E1" stroke-width="0.8"/>
+      <text x="720" y="17" font-size="11.5" font-weight="800" fill="#0F172A" text-anchor="end">₩ 390,000,000</text>
+    </g>
+
+    <!-- Subtotals Row 2: 부가가치세 -->
+    <g transform="translate(0, 220)">
+      <rect width="730" height="26" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="0.8"/>
+      <text x="350" y="17" font-size="11.5" font-weight="800" fill="#334155" text-anchor="middle">부가가치세 (VAT 10%)</text>
+      <line x1="595" y1="0" x2="595" y2="26" stroke="#CBD5E1" stroke-width="0.8"/>
+      <text x="720" y="17" font-size="11.5" font-weight="800" fill="#0F172A" text-anchor="end">₩ 39,000,000</text>
+    </g>
+
+    <!-- Totals Row 3: 총 계약금액 -->
+    <g transform="translate(0, 246)">
+      <rect width="730" height="30" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.2"/>
+      <text x="350" y="20" font-size="12.5" font-weight="900" fill="#1D4ED8" text-anchor="middle">총 계약금액 합계 (Total Amount · VAT 포함)</text>
+      <line x1="595" y1="0" x2="595" y2="30" stroke="#3B82F6" stroke-width="1"/>
+      <text x="720" y="20" font-size="13" font-weight="900" fill="#1D4ED8" text-anchor="end">₩ 429,000,000</text>
+    </g>
+  </g>
+
+  <!-- Section 2: Detailed Delivery Conditions -->
+  <g transform="translate(60, 420)">
+    <text x="0" y="0" font-size="13" font-weight="800" fill="#1E293B">2. 상세 납품 조건 및 물류 운송 기준</text>
+    <rect y="10" width="730" height="120" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+    
+    <!-- Row 1: 납품장소 -->
+    <rect x="0" y="10" width="140" height="30" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="70" y="30" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">지정 납품장소</text>
+    <text x="155" y="30" font-size="12" font-weight="600" fill="#0F172A">충남 천안시 서북구 2공단3로 45 (주)한국글로벌제조 천안제2공장 물류센터 입고장</text>
+
+    <!-- Row 2: 운송 및 하역 -->
+    <line x1="0" y1="40" x2="730" y2="40" stroke="#E2E8F0" stroke-width="0.8"/>
+    <rect x="0" y="40" width="140" height="30" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="70" y="60" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">운송 및 하역비</text>
+    <text x="155" y="60" font-size="12" font-weight="500" fill="#334155">공급사(을) 전액 부담 (DDP 천안공장 하역 완료 인도 조건), 무진동 차량 배차</text>
+
+    <!-- Row 3: 포장 규격 -->
+    <line x1="0" y1="70" x2="730" y2="70" stroke="#E2E8F0" stroke-width="0.8"/>
+    <rect x="0" y="70" width="140" height="30" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="70" y="90" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">제품 포장 규격</text>
+    <text x="155" y="90" font-size="12" font-weight="500" fill="#334155">1급 대전방지(ESD) 방습 실링 포장 + 외박스 충격흡수 완충재 및 바코드 라벨 부착</text>
+
+    <!-- Row 4: 분할 납품 -->
+    <line x1="0" y1="100" x2="730" y2="100" stroke="#E2E8F0" stroke-width="0.8"/>
+    <rect x="0" y="100" width="140" height="30" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="70" y="120" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">납기 및 분할납품</text>
+    <text x="155" y="120" font-size="12" font-weight="500" fill="#334155">발주일로부터 30일 이내 납품 원칙 (월별 분할 발주 시 지정 회차별 납기 준수)</text>
+  </g>
+
+  <!-- Section 3: Quality Acceptance & Required Certificates -->
+  <g transform="translate(60, 580)">
+    <text x="0" y="0" font-size="13" font-weight="800" fill="#1E293B">3. 공인 품질 검수 기준 및 필수 동봉 증빙서류</text>
+    <rect y="10" width="730" height="150" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+
+    <!-- Row 1: 검수 판정 기준 -->
+    <rect x="0" y="10" width="140" height="38" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="70" y="34" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">검수 판정 기준</text>
+    <text x="155" y="27" font-size="11.5" font-weight="600" fill="#0F172A">갑의 수입검사 기준서(IQC Rev.4) 및 AQL 0.65(치명결함 0, 중결함 허용률 0.65%) 기준</text>
+    <text x="155" y="43" font-size="11" font-weight="400" fill="#64748B">3차원 정밀 측정 데이터 시트(치수 공차 ±0.015mm 이내 충족 여부 확인)</text>
+
+    <!-- Row 2: 필수 제출 서류 -->
+    <line x1="0" y1="48" x2="730" y2="48" stroke="#E2E8F0" stroke-width="0.8"/>
+    <rect x="0" y="48" width="140" height="38" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="70" y="72" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">필수 동봉 서류</text>
+    <text x="155" y="65" font-size="11.5" font-weight="500" fill="#334155">① 공인시험기관(KOLAS) 성적서 1부   ② EU RoHS / REACH 친환경 유해물질 불검출 증명서</text>
+    <text x="155" y="81" font-size="11.5" font-weight="500" fill="#334155">③ 을의 QC 출하검사 성적서(OQC Report) 2부   ④ 원산지 증명서(C/O) 및 거래명세서</text>
+
+    <!-- Row 3: 하자보증 & 긴급 대응 -->
+    <line x1="0" y1="86" x2="730" y2="86" stroke="#E2E8F0" stroke-width="0.8"/>
+    <rect x="0" y="86" width="140" height="38" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="70" y="110" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">하자보증·긴급대응</text>
+    <text x="155" y="103" font-size="11.5" font-weight="600" fill="#15803D">무상 하자보증기간 검수 합격일로부터 12개월 (보증이행각서 제출)</text>
+    <text x="155" y="119" font-size="11" font-weight="400" fill="#334155">불량 접수 시 24시간 이내 엔지니어 현장 출동 및 72시간 이내 1:1 완제품 맞교환 확약</text>
+
+    <!-- Row 4: 폐기 및 반송 -->
+    <line x1="0" y1="124" x2="730" y2="124" stroke="#E2E8F0" stroke-width="0.8"/>
+    <rect x="0" y="124" width="140" height="36" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="70" y="146" font-size="11.5" font-weight="700" fill="#475569" text-anchor="middle">불합격품 처리</text>
+    <text x="155" y="146" font-size="11.5" font-weight="500" fill="#DC2626">불합격 판정 후 7일 이내 을의 비용으로 전량 회수 조치 및 즉시 대체품 선적 착수</text>
+  </g>
+
+  <!-- Section 4: Dual Confirmation & Technical Approval Box -->
+  <g transform="translate(60, 770)">
+    <rect width="730" height="315" rx="8" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.2"/>
+    
+    <!-- Title Header -->
+    <rect x="0" y="0" width="730" height="36" rx="8" fill="#F1F5F9"/>
+    <line x1="0" y1="36" x2="730" y2="36" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="24" y="23" font-size="12.5" font-weight="800" fill="#1E293B">4. 양 당사자 기술 규격 확인 및 최종 서명날인 (공급물품 명세서 합의)</text>
+    <text x="540" y="23" font-size="11.5" font-weight="600" fill="#64748B">체결일: 2026. 09. 21.</text>
+
+    <!-- Content Statement -->
+    <g transform="translate(24, 60)">
+      <text x="0" y="0" font-size="12" font-weight="500" fill="#334155" letter-spacing="-0.2">
+        상기 기재된 품목별 규격, 단가, 총 계약금액(₩429,000,000) 및 납품·검수 조건은 양 당사자의 기술 미팅과 사전 도면 승인을
+      </text>
+      <text x="0" y="20" font-size="12" font-weight="500" fill="#334155" letter-spacing="-0.2">
+        거쳐 상호 완전히 합의되었음을 확인하며, 본 명세서는 본 물품 납품 및 자재 공급 기본계약서와 동일한 법적 효력을 가집니다.
+      </text>
+    </g>
+
+    <!-- Side-by-side Dual Signoff Blocks -->
+    <g transform="translate(24, 115)">
+      <!-- Buyer Box (갑) -->
+      <rect x="0" y="0" width="330" height="150" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+      <rect x="0" y="0" width="330" height="28" rx="6" fill="#EFF6FF"/>
+      <line x1="0" y1="28" x2="330" y2="28" stroke="#BFDBFE" stroke-width="0.8"/>
+      <text x="165" y="19" font-size="12" font-weight="800" fill="#1D4ED8" text-anchor="middle">【 구매처 (갑) 기술 및 조달 승인 】</text>
+      
+      <text x="16" y="52" font-size="11.5" font-weight="600" fill="#334155">발주사: 주식회사 한국글로벌제조</text>
+      <text x="16" y="74" font-size="11.5" font-weight="500" fill="#475569">검토자: 구매조달팀장 수석매니저 박 민 우 (인)</text>
+      <text x="16" y="96" font-size="11.5" font-weight="500" fill="#475569">승인자: 제조품질본부장 상무이사 정 성 훈 (인)</text>
+      
+      <!-- Signature Stamp Graphic -->
+      <g transform="translate(265, 82)">
+        <circle cx="0" cy="0" r="22" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.8"/>
+        <text x="0" y="-3" font-size="8.5" font-weight="900" fill="#DC2626" text-anchor="middle">한국제조</text>
+        <text x="0" y="9" font-size="8" font-weight="900" fill="#DC2626" text-anchor="middle">기술승인</text>
+      </g>
+      <text x="16" y="130" font-size="10.5" font-weight="600" fill="#2563EB">✓ 도면 승인 완료 (REV 4.2 반영 확인)</text>
+
+      <!-- Supplier Box (을) -->
+      <g transform="translate(352, 0)">
+        <rect x="0" y="0" width="330" height="150" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+        <rect x="0" y="0" width="330" height="28" rx="6" fill="#ECFDF5"/>
+        <line x1="0" y1="28" x2="330" y2="28" stroke="#A7F3D0" stroke-width="0.8"/>
+        <text x="165" y="19" font-size="12" font-weight="800" fill="#047857" text-anchor="middle">【 공급처 (을) 생산 및 품질 확약 】</text>
+        
+        <text x="16" y="52" font-size="11.5" font-weight="600" fill="#334155">공급사: 주식회사 케이원인더스트리</text>
+        <text x="16" y="74" font-size="11.5" font-weight="500" fill="#475569">책임자: 생산기술총괄 부서장 이 영 호 (인)</text>
+        <text x="16" y="96" font-size="11.5" font-weight="500" fill="#475569">확약자: 품질보증본부장 전무이사 강 태 준 (인)</text>
+        
+        <!-- Signature Stamp Graphic -->
+        <g transform="translate(265, 82)">
+          <circle cx="0" cy="0" r="22" fill="#FEE2E2" stroke="#DC2626" stroke-width="1.8"/>
+          <text x="0" y="-3" font-size="8.5" font-weight="900" fill="#DC2626" text-anchor="middle">케이원</text>
+          <text x="0" y="9" font-size="8" font-weight="900" fill="#DC2626" text-anchor="middle">품질확약</text>
+        </g>
+        <text x="16" y="130" font-size="10.5" font-weight="600" fill="#059669">✓ 공정능력지수 Cpk 1.33 이상 확보 보증</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Page Footer -->
+  <line x1="60" y1="1120" x2="790" y2="1120" stroke="#CBD5E1" stroke-width="0.8"/>
+  <g transform="translate(60, 1145)">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">트렌드 24 (T24 AI) 실무 표준 계약서 서식집</text>
+  </g>
+  <g transform="translate(425, 1145)" text-anchor="middle">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#334155">- 5 / 5 -</text>
+  </g>
+  <g transform="translate(790, 1145)" text-anchor="end">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">(주)한국글로벌제조 ✕ (주)케이원인더스트리</text>
+  </g>
+</svg>

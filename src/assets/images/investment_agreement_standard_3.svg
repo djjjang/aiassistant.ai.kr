@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="850" height="52" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <g transform="translate(60, 32)">
+    <rect x="0" y="-18" width="80" height="24" rx="4" fill="#0F172A"/>
+    <text x="40" y="-2" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">T24 LEGAL</text>
+    <text x="94" y="-1" font-size="12" font-weight="700" fill="#334155">사업 투자 계약서 (수익배분형)</text>
+    <text x="268" y="-1" font-size="11" font-weight="500" fill="#64748B">| 제3면</text>
+  </g>
+  <g transform="translate(790, 32)" text-anchor="end">
+    <text x="0" y="-1" font-size="11" font-weight="600" fill="#64748B">문서번호: T24-INV-2026-0925</text>
+  </g>
+
+  <!-- Article 11: 제 11 조 (계약의 해지) -->
+  <g transform="translate(60, 85)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 11 조 (계약의 해지)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 갑은 을에게 다음 각 호의 어느 하나에 해당하는 사유가 있는 경우 서면으로 본 계약을 해지할 수 있다.
+    </text>
+    <g transform="translate(30, 48)" font-size="12" font-weight="400" fill="#334155">
+      <text x="0" y="0">1. 투자금을 제 4 조를 위반하여 사용한 경우</text>
+      <text x="0" y="22">2. 배분금 지급 또는 정산서 제출을 2회 이상 지체하고, 14일 이상의 기간을 정한 서면 독촉을 받고도 이행하지 않은 경우</text>
+      <text x="0" y="44">3. 정산서, 장부 등을 허위로 작성하거나 제 9 조의 진술이 사실과 다른 경우</text>
+      <text x="0" y="66">4. 갑의 동의 없이 제 5 조 제 2 항의 사항을 결정한 경우</text>
+      <text x="0" y="88">5. 정당한 사유 없이 본 사업을 30일 이상 중단하거나 폐업한 경우</text>
+    </g>
+    <text x="14" y="162" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 갑과 을은 본 사업의 계속이 어렵다고 판단되는 경우 서면 합의로 본 계약을 해지할 수 있다.
+    </text>
+  </g>
+
+  <!-- Article 12: 제 12 조 (계약 종료 시 정산) -->
+  <g transform="translate(60, 280)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 12 조 (계약 종료 시 정산)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 본 계약이 기간 만료 또는 해지로 종료되는 경우 을은 종료일 기준으로 본 사업의 자산과 부채를 평가한 정산서를
+    </text>
+    <text x="14" y="44" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      작성하여 30일 이내에 갑에게 제출한다.
+    </text>
+    <text x="14" y="66" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 갑은 정산서에 따른 순자산(자산에서 부채를 뺀 금액) 중 갑의 투자금 잔액 비율에 해당하는 금액을 반환받는다. 정산
+    </text>
+    <text x="14" y="86" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      방식에 대하여 다툼이 있는 경우 양 당사자가 합의하여 선임한 회계사 또는 세무사의 평가에 따르며, 그 비용은 각자 절반씩 부담한다.
+    </text>
+    <text x="14" y="108" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ③ 을은 정산금액이 확정된 날부터 _____일 이내에 갑에게 정산금을 지급한다. 다만, 제 11 조 제 1 항 제 1 호 또는 제 3 호의
+    </text>
+    <text x="14" y="128" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      사유로 해지된 경우 을은 투자금 잔액 전액을 반환하여야 하며, 이와 별도로 갑의 손해를 배상한다.
+    </text>
+    <text x="14" y="150" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ④ 정산금 지급이 지연된 경우 을은 지연된 일수에 대하여 연 _____%(법정 상한 이내)의 지연손해금을 가산하여 지급한다.
+    </text>
+  </g>
+
+  <!-- Article 13: 제 13 조 (지위 양도 및 담보 제공 금지) -->
+  <g transform="translate(60, 465)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 13 조 (지위 양도 및 담보 제공 금지)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      갑과 을은 상대방의 사전 서면 동의 없이 본 계약상 지위나 권리·의무를 제 3 자에게 양도하거나 담보로 제공할 수 없다.
+    </text>
+    <text x="14" y="44" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      다만, 갑의 사망 시 갑의 지위는 상속인에게 승계된다.
+    </text>
+  </g>
+
+  <!-- Article 14: 제 14 조 (경업금지) -->
+  <g transform="translate(60, 545)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 14 조 (경업금지)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      을은 계약기간 중 갑의 사전 서면 동의 없이 본 사업과 경쟁 관계에 있는 같은 종류의 사업을 직접 또는 제 3 자를 통하여
+    </text>
+    <text x="14" y="44" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      운영하거나 그에 투자하지 않는다.
+    </text>
+  </g>
+
+  <!-- Article 15: 제 15 조 (비밀유지) -->
+  <g transform="translate(60, 625)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 15 조 (비밀유지)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      갑과 을은 본 계약의 내용과 본 계약으로 알게 된 상대방 및 본 사업의 정보를 계약기간 및 계약 종료 후 2년간 비밀로
+    </text>
+    <text x="14" y="44" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      유지하며, 법령에 따른 경우를 제외하고 상대방의 동의 없이 제 3 자에게 공개하지 않는다.
+    </text>
+  </g>
+
+  <!-- Article 16: 제 16 조 (손해배상) -->
+  <g transform="translate(60, 705)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 16 조 (손해배상)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      갑 또는 을이 본 계약을 위반하여 상대방에게 손해를 끼친 경우 그 손해를 배상하여야 한다.
+    </text>
+  </g>
+
+  <!-- Article 17: 제 17 조 (세금) -->
+  <g transform="translate(60, 765)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 17 조 (세금)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      본 계약에 따른 배분금 및 정산금에 대한 세금은 관계 세법에 따라 각자 부담하며, 을에게 원천징수 의무가 있는 경우
+    </text>
+    <text x="14" y="44" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      을은 원천징수한 후 나머지 금액을 갑에게 지급한다.
+    </text>
+  </g>
+
+  <!-- Article 18: 제 18 조 (분쟁해결) -->
+  <g transform="translate(60, 845)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 18 조 (분쟁해결)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 본 계약과 관련하여 분쟁이 발생한 경우 갑과 을은 상호 협의하여 원만히 해결하도록 노력한다.
+    </text>
+    <text x="14" y="46" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 협의로 해결되지 않는 분쟁은 ____________지방법원을 제 1 심 관할법원으로 한다.
+    </text>
+  </g>
+
+  <!-- Page Footer -->
+  <line x1="60" y1="1130" x2="790" y2="1130" stroke="#CBD5E1" stroke-width="0.8"/>
+  <g transform="translate(60, 1155)">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">트렌드 24 (T24 AI) 실무 표준 계약서 서식집</text>
+  </g>
+  <g transform="translate(425, 1155)" text-anchor="middle">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#334155">- 3 -</text>
+  </g>
+  <g transform="translate(790, 1155)" text-anchor="end">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">사업 투자 계약서 (수익배분형)</text>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Outer background -->
+  <rect width="1600" height="900" fill="#E2E0D8"/>
+
+  <!-- Top notebook striped lines -->
+  <g stroke="#7C7A74" stroke-width="1.2">
+    <line x1="60" y1="55" x2="1540" y2="55"/>
+    <line x1="60" y1="67" x2="1540" y2="67"/>
+    <line x1="60" y1="79" x2="1540" y2="79"/>
+    <line x1="60" y1="91" x2="1540" y2="91"/>
+    <line x1="60" y1="103" x2="1540" y2="103"/>
+  </g>
+
+  <!-- Main Slide Frame -->
+  <rect x="50" y="105" width="1500" height="740" fill="#FAF9F5" stroke="#4A4944" stroke-width="1.5"/>
+
+  <!-- Top Brand & Header Nav -->
+  <text x="120" y="170" font-size="20" font-weight="800" fill="#1A1A1A" letter-spacing="1">© TREND24</text>
+  
+  <g font-size="18" font-weight="500" fill="#2B2B2B" text-anchor="end">
+    <text x="940" y="170">Fashion</text>
+    <text x="1100" y="170">Material</text>
+    <text x="1250" y="170">Textile</text>
+    <text x="1440" y="170">Coordination</text>
+  </g>
+
+  <!-- Center Main Title -->
+  <text x="120" y="475" font-size="88" font-weight="900" fill="#1C1B1A" letter-spacing="-1">Trend24 사업 계획서</text>
+
+  <!-- Divider Line 1 -->
+  <line x1="120" y1="545" x2="1480" y2="545" stroke="#7E7C76" stroke-width="1.2"/>
+
+  <!-- Subtitle -->
+  <text x="120" y="625" font-size="28" font-weight="500" fill="#2E2D2B">트렌드 분석과 시장 정보로 기업의 의사결정을 지원하는 전문 회사</text>
+
+  <!-- Divider Line 2 -->
+  <line x1="120" y1="710" x2="1480" y2="710" stroke="#7E7C76" stroke-width="1.2"/>
+</svg>

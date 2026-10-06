@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+    </style>
+    <clipPath id="circleClip">
+      <circle cx="340" cy="380" r="180"/>
+    </clipPath>
+    <linearGradient id="teamGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#CBD5E1"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer background & striped lines -->
+  <rect width="1600" height="900" fill="#E2E0D8"/>
+  <g stroke="#7C7A74" stroke-width="1.2">
+    <line x1="60" y1="55" x2="1540" y2="55"/>
+    <line x1="60" y1="67" x2="1540" y2="67"/>
+    <line x1="60" y1="79" x2="1540" y2="79"/>
+    <line x1="60" y1="91" x2="1540" y2="91"/>
+    <line x1="60" y1="103" x2="1540" y2="103"/>
+  </g>
+
+  <!-- Main Slide Frame -->
+  <rect x="50" y="105" width="1500" height="740" fill="#FAF9F5" stroke="#4A4944" stroke-width="1.5"/>
+
+  <!-- Top Right Title -->
+  <text x="1480" y="195" font-size="52" font-weight="900" fill="#201E1C" text-anchor="end">경영진 및 조직</text>
+
+  <!-- Left Side: Circular Photo & Description -->
+  <!-- Beige Offset Halo Behind Circle -->
+  <circle cx="370" cy="400" r="180" fill="#EAE4D3"/>
+
+  <!-- Team Photo Circle -->
+  <g clip-path="url(#circleClip)">
+    <rect x="140" y="180" width="400" height="400" fill="url(#teamGrad)"/>
+    <!-- Modern office interior background -->
+    <line x1="220" y1="180" x2="220" y2="580" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="460" y1="180" x2="460" y2="580" stroke="#94A3B8" stroke-width="2"/>
+    <!-- 3 Executives Illustration -->
+    <!-- Center Senior Male Leader in Dark Suit -->
+    <circle cx="340" cy="330" r="38" fill="#1E293B"/>
+    <path d="M280 480 C280 400, 400 400, 400 480 Z" fill="#0F172A"/>
+    <polygon points="340,390 325,440 340,470 355,440" fill="#FFFFFF"/>
+    <!-- Left Male Co-founder -->
+    <circle cx="260" cy="380" r="32" fill="#334155"/>
+    <path d="M210 500 C210 440, 310 440, 310 500 Z" fill="#1E293B"/>
+    <!-- Right Female Co-founder -->
+    <circle cx="415" cy="390" r="30" fill="#475569"/>
+    <path d="M365 500 C365 440, 465 440, 465 500 Z" fill="#F8FAFC"/>
+  </g>
+
+  <!-- Decorative 8-pointed star on left -->
+  <g transform="translate(150, 280)" stroke="#9CA3AF" stroke-width="1.5" fill="none">
+    <line x1="0" y1="-28" x2="0" y2="28"/>
+    <line x1="-28" y1="0" x2="28" y2="0"/>
+    <line x1="-20" y1="-20" x2="20" y2="20"/>
+    <line x1="-20" y1="20" x2="20" y2="-20"/>
+  </g>
+
+  <g transform="translate(130, 640)">
+    <text x="0" y="0" font-size="28" font-weight="900" fill="#111827">전문가 중심의 경영진과 협력적 조직</text>
+    <text x="0" y="42" font-size="19" font-weight="500" fill="#374151">시장 분석, 데이터 과학, 사업 개발 분야의 경험을</text>
+    <text x="0" y="70" font-size="19" font-weight="500" fill="#374151">갖춘 전문가들이 조직을 이끕니다.</text>
+  </g>
+
+  <!-- Right Side: 4 Horizontal Spec Sections with Dividers -->
+  <g transform="translate(680, 275)">
+    <!-- Row 1 -->
+    <line x1="0" y1="0" x2="800" y2="0" stroke="#7E7C76" stroke-width="1.2"/>
+    <text x="0" y="42" font-size="24" font-style="italic" font-weight="800" fill="#1E293B">1</text>
+    <text x="50" y="42" font-size="26" font-weight="800" fill="#111827">경영진 구성</text>
+    <text x="50" y="80" font-size="18" font-weight="500" fill="#374151">시장 분석, 데이터 과학, 사업 개발 전문가가 함께합니다.</text>
+
+    <!-- Row 2 -->
+    <line x1="0" y1="130" x2="800" y2="130" stroke="#7E7C76" stroke-width="1.2"/>
+    <text x="0" y="172" font-size="24" font-style="italic" font-weight="800" fill="#1E293B">2</text>
+    <text x="50" y="172" font-size="26" font-weight="800" fill="#111827">조직 문화</text>
+    <text x="50" y="210" font-size="18" font-weight="500" fill="#374151">개방적 소통과 창의적 사고, 고객 중심의 업무 방식을 추구합니다.</text>
+
+    <!-- Row 3 -->
+    <line x1="0" y1="260" x2="800" y2="260" stroke="#7E7C76" stroke-width="1.2"/>
+    <text x="0" y="302" font-size="24" font-style="italic" font-weight="800" fill="#1E293B">3</text>
+    <text x="50" y="302" font-size="26" font-weight="800" fill="#111827">인재 전략</text>
+    <text x="50" y="340" font-size="18" font-weight="500" fill="#374151">지속적인 교육과 역량 개발로 팀의 전문성을 강화합니다.</text>
+
+    <!-- Row 4 -->
+    <line x1="0" y1="390" x2="800" y2="390" stroke="#7E7C76" stroke-width="1.2"/>
+    <text x="0" y="432" font-size="24" font-style="italic" font-weight="800" fill="#1E293B">4</text>
+    <text x="50" y="432" font-size="26" font-weight="800" fill="#111827">핵심 역량</text>
+    <text x="50" y="470" font-size="18" font-weight="500" fill="#374151">전문성과 협업을 바탕으로 고객 가치를 높입니다.</text>
+  </g>
+
+  <!-- Bottom Divider Line -->
+  <line x1="90" y1="795" x2="1510" y2="795" stroke="#7E7C76" stroke-width="1.2"/>
+</svg>

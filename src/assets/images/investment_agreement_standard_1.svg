@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="850" height="52" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <g transform="translate(60, 32)">
+    <rect x="0" y="-18" width="80" height="24" rx="4" fill="#0F172A"/>
+    <text x="40" y="-2" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">T24 LEGAL</text>
+    <text x="94" y="-1" font-size="12" font-weight="700" fill="#334155">사업 투자 계약서 (수익배분형)</text>
+    <text x="268" y="-1" font-size="11" font-weight="500" fill="#64748B">| 제1면</text>
+  </g>
+  <g transform="translate(790, 32)" text-anchor="end">
+    <text x="0" y="-1" font-size="11" font-weight="600" fill="#64748B">문서번호: T24-INV-2026-0925</text>
+  </g>
+
+  <!-- Title Section -->
+  <g transform="translate(425, 105)" text-anchor="middle">
+    <text x="0" y="0" font-size="25" font-weight="900" fill="#0F172A" letter-spacing="-0.5">사업 투자 계약서</text>
+    <text x="0" y="30" font-size="14" font-weight="700" fill="#2563EB">(수익배분형)</text>
+  </g>
+
+  <!-- Preamble Section -->
+  <g transform="translate(60, 175)">
+    <rect width="730" height="50" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="18" y="22" font-size="12.5" font-weight="500" fill="#1E293B" letter-spacing="-0.2">
+      투자자 ______________(이하 "갑"이라 한다)과 사업자 ______________(이하 "을"이라 한다)은 을이 운영하는
+    </text>
+    <text x="18" y="40" font-size="12.5" font-weight="500" fill="#1E293B" letter-spacing="-0.2">
+      사업에 대한 갑의 투자에 관하여 다음과 같이 계약(이하 "본 계약"이라 한다)을 체결한다.
+    </text>
+  </g>
+
+  <!-- Article 1: 제 1 조 (목적) -->
+  <g transform="translate(60, 252)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 1 조 (목적)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      본 계약은 갑이 을이 운영하는 사업에 자금을 투자하고, 을이 그 사업에서 발생한 수익을 갑에게 배분하는 것과 관련하여
+    </text>
+    <text x="14" y="44" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      갑과 을의 권리와 의무를 정함을 목적으로 한다.
+    </text>
+  </g>
+
+  <!-- Article 2: 제 2 조 (투자 대상 사업) -->
+  <g transform="translate(60, 338)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 2 조 (투자 대상 사업)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 갑이 투자하는 사업(이하 "본 사업"이라 한다)은 다음과 같다.
+    </text>
+    
+    <g transform="translate(30, 48)" font-size="12" font-weight="400" fill="#334155">
+      <text x="0" y="0">1. 사업명(상호): __________________________________________________</text>
+      <text x="0" y="22">2. 사업장 소재지: ________________________________________________</text>
+      <text x="0" y="44">3. 사업 내용: ____________________________________________________</text>
+      <text x="0" y="66">4. 사업자등록번호: ________________________________________________</text>
+    </g>
+
+    <text x="14" y="132" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 본 사업의 구체적인 내용과 투자금 사용계획은 [별지 1] 「사업 개요 및 투자금 사용계획」과 같다.
+    </text>
+  </g>
+
+  <!-- Article 3: 제 3 조 (투자금 및 납입) -->
+  <g transform="translate(60, 508)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 3 조 (투자금 및 납입)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 갑이 본 사업에 투자하는 금액(이하 "투자금"이라 한다)은 금 ____________원정(₩____________)으로 한다.
+    </text>
+    <text x="14" y="46" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 갑은 투자금을 20___년 ___월 ___일까지 다음 계좌로 송금하여 납입한다.
+    </text>
+    <g transform="translate(30, 68)" font-size="12" font-weight="400" fill="#334155">
+      <text x="0" y="0">은행: ___________   계좌번호: ________________________   예금주: ___________</text>
+    </g>
+    <text x="14" y="90" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ③ 투자금을 나누어 납입하는 경우 그 일정과 금액은 [별지 1]에서 정한다.
+    </text>
+    <text x="14" y="112" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ④ 을은 투자금을 받은 날부터 3일 이내에 갑에게 입금 확인서를 교부한다.
+    </text>
+  </g>
+
+  <!-- Article 4: 제 4 조 (투자금의 사용) -->
+  <g transform="translate(60, 660)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 4 조 (투자금의 사용)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 을은 투자금을 [별지 1]의 사용계획에 따라 본 사업의 목적으로만 사용하여야 하며, 을의 개인 용도나 다른 사업에
+    </text>
+    <text x="14" y="44" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      사용할 수 없다.
+    </text>
+    <text x="14" y="66" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 을은 투자금을 을의 개인 자금과 구분하여 별도의 사업용 계좌로 관리한다.
+    </text>
+    <text x="14" y="88" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ③ 사용계획을 변경하려는 경우 을은 사전에 갑의 서면(문자메시지·전자우편 포함) 동의를 받아야 한다.
+    </text>
+  </g>
+
+  <!-- Article 5: 제 5 조 (사업의 운영) -->
+  <g transform="translate(60, 788)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 5 조 (사업의 운영)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 본 사업의 운영과 일상적인 업무 집행은 을이 전적으로 책임지고 수행하며, 을은 선량한 관리자의 주의로 사업을 운영한다.
+    </text>
+    <text x="14" y="46" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 갑은 본 사업의 경영에 관여하지 않는다. 다만, 을은 다음 각 호의 사항을 결정하기 전에 갑의 사전 서면 동의를 받아야 한다.
+    </text>
+    <g transform="translate(30, 70)" font-size="12" font-weight="400" fill="#334155">
+      <text x="0" y="0">1. 본 사업의 전부 또는 중요한 일부의 양도, 폐업, 업종 변경</text>
+      <text x="0" y="22">2. 금 ________원 이상의 차입, 보증 또는 담보 제공</text>
+      <text x="0" y="44">3. 금 ________원 이상의 자산 취득·처분 또는 계약 체결</text>
+      <text x="0" y="66">4. 을 또는 을의 특수관계인과의 거래</text>
+    </g>
+  </g>
+
+  <!-- Page Footer -->
+  <line x1="60" y1="1130" x2="790" y2="1130" stroke="#CBD5E1" stroke-width="0.8"/>
+  <g transform="translate(60, 1155)">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">트렌드 24 (T24 AI) 실무 표준 계약서 서식집</text>
+  </g>
+  <g transform="translate(425, 1155)" text-anchor="middle">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#334155">- 1 -</text>
+  </g>
+  <g transform="translate(790, 1155)" text-anchor="end">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">사업 투자 계약서 (수익배분형)</text>
+  </g>
+</svg>

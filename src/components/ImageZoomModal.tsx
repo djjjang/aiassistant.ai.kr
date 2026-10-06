@@ -76,7 +76,7 @@ export const ImageZoomModal: React.FC<ImageZoomModalProps> = ({
     setCurrentIndex(initialIndex);
     setActiveMode(initialMode);
     setZoomLevel(1);
-    setIsLoading(true);
+    setIsLoading(false);
     setHasError(false);
     setCopied(false);
   }, [initialIndex, initialMode, isOpen]);
@@ -100,7 +100,7 @@ export const ImageZoomModal: React.FC<ImageZoomModalProps> = ({
 
   // Reset loading state when activeUrl changes
   useEffect(() => {
-    setIsLoading(true);
+    setIsLoading(false);
     setHasError(false);
   }, [activeUrl]);
 
@@ -451,18 +451,16 @@ export const ImageZoomModal: React.FC<ImageZoomModalProps> = ({
               <img
                 src={activeUrl}
                 alt={imageAlt || activeTitle}
-                referrerPolicy="no-referrer"
                 onLoad={() => {
                   setIsLoading(false);
                   setHasError(false);
                 }}
                 onError={() => {
+                  console.warn('Image failed to load in zoom modal:', activeUrl);
                   setIsLoading(false);
                   setHasError(true);
                 }}
-                className={`rounded-xl shadow-2xl object-contain border border-white/20 max-w-[92vw] max-h-[75vh] w-auto h-auto transition-opacity duration-300 ${
-                  isLoading ? 'opacity-0' : 'opacity-100'
-                }`}
+                className="rounded-xl shadow-2xl object-contain border border-white/20 max-w-[92vw] max-h-[78vh] w-auto h-auto"
               />
             </div>
           )}

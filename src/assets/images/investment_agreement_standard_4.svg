@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="850" height="52" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <g transform="translate(60, 32)">
+    <rect x="0" y="-18" width="80" height="24" rx="4" fill="#0F172A"/>
+    <text x="40" y="-2" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">T24 LEGAL</text>
+    <text x="94" y="-1" font-size="12" font-weight="700" fill="#334155">사업 투자 계약서 (수익배분형)</text>
+    <text x="268" y="-1" font-size="11" font-weight="500" fill="#64748B">| 제4면 (서명날인)</text>
+  </g>
+  <g transform="translate(790, 32)" text-anchor="end">
+    <text x="0" y="-1" font-size="11" font-weight="600" fill="#64748B">문서번호: T24-INV-2026-0925</text>
+  </g>
+
+  <!-- Article 19: 제 19 조 (기타) -->
+  <g transform="translate(60, 90)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 19 조 (기타)</text>
+    <text x="14" y="24" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 본 계약에서 정하지 않은 사항은 갑과 을이 서면으로 합의하여 정하며, 합의가 없는 경우 민법 등 관계 법령에 따른다.
+    </text>
+    <text x="14" y="46" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 본 계약의 변경은 갑과 을이 서면으로 합의한 경우에만 효력이 있다.
+    </text>
+    <text x="14" y="68" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ③ [별지 1], [별지 2]는 본 계약의 일부를 구성한다.
+    </text>
+  </g>
+
+  <!-- Execution Statement & Date -->
+  <g transform="translate(425, 210)" text-anchor="middle">
+    <text x="0" y="0" font-size="13" font-weight="500" fill="#1E293B">
+      본 계약의 성립을 증명하기 위하여 계약서 2부를 작성하여 갑과 을이 서명(또는 날인)한 후 각 1부씩 보관한다.
+    </text>
+    <text x="0" y="36" font-size="14" font-weight="700" fill="#0F172A" letter-spacing="1">
+      20___년 _____월 _____일
+    </text>
+  </g>
+
+  <!-- Formal Signature Table -->
+  <g transform="translate(60, 280)">
+    <!-- Outer Border -->
+    <rect width="730" height="230" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+
+    <!-- Header Row -->
+    <rect width="730" height="38" rx="6" fill="#F8FAFC"/>
+    <line x1="0" y1="38" x2="730" y2="38" stroke="#CBD5E1" stroke-width="1"/>
+    
+    <!-- Vertical Column Lines -->
+    <line x1="160" y1="0" x2="160" y2="230" stroke="#CBD5E1" stroke-width="1"/>
+    <line x1="445" y1="0" x2="445" y2="230" stroke="#CBD5E1" stroke-width="1"/>
+
+    <!-- Header Text -->
+    <text x="80" y="24" font-size="13" font-weight="800" fill="#475569" text-anchor="middle">구 분</text>
+    <text x="302" y="24" font-size="13.5" font-weight="800" fill="#1E40AF" text-anchor="middle">갑 (투자자)</text>
+    <text x="587" y="24" font-size="13.5" font-weight="800" fill="#047857" text-anchor="middle">을 (사업자)</text>
+
+    <!-- Row 1: 성명 / 상호 -->
+    <line x1="0" y1="76" x2="730" y2="76" stroke="#E2E8F0" stroke-width="0.8"/>
+    <text x="80" y="61" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">성명 / 상호</text>
+
+    <!-- Row 2: 생년월일 / 사업자번호 -->
+    <line x1="0" y1="114" x2="730" y2="114" stroke="#E2E8F0" stroke-width="0.8"/>
+    <text x="80" y="99" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">생년월일 / 사업자번호</text>
+
+    <!-- Row 3: 주소 -->
+    <line x1="0" y1="152" x2="730" y2="152" stroke="#E2E8F0" stroke-width="0.8"/>
+    <text x="80" y="137" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">주소</text>
+
+    <!-- Row 4: 연락처 -->
+    <line x1="0" y1="190" x2="730" y2="190" stroke="#E2E8F0" stroke-width="0.8"/>
+    <text x="80" y="175" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">연락처</text>
+
+    <!-- Row 5: 서명 -->
+    <text x="80" y="214" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">서명</text>
+    <text x="425" y="214" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="end">(서명 또는 인)</text>
+    <text x="710" y="214" font-size="12" font-weight="500" fill="#94A3B8" text-anchor="end">(서명 또는 인)</text>
+  </g>
+
+  <!-- Legal Commentary & Risk Prevention Guide Box -->
+  <g transform="translate(60, 545)">
+    <rect width="730" height="535" rx="8" fill="#F0FDF4" stroke="#86EFAC" stroke-width="1.2"/>
+    <rect x="18" y="16" width="145" height="22" rx="4" fill="#16A34A"/>
+    <text x="90" y="31" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">T24 핵심 검토 가이드</text>
+    <text x="175" y="32" font-size="13" font-weight="800" fill="#14532D">수익배분형 사업투자계약 체결 시 4대 법적 쟁점 및 리스크 방어</text>
+    
+    <line x1="18" y1="48" x2="712" y2="48" stroke="#BBF7D0" stroke-width="1"/>
+    
+    <!-- Item 1: 유사수신행위 방지 -->
+    <g transform="translate(20, 68)">
+      <circle cx="6" cy="6" r="4" fill="#16A34A"/>
+      <text x="18" y="10" font-size="12.5" font-weight="800" fill="#14532D">1. 유사수신행위의 규제에 관한 법률 위반 리스크 원천 차단 (제7조 제2항)</text>
+      <text x="18" y="30" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        원금 전액 또는 확정 고수익을 무조건 보장하는 형태의 비상장 투자는 「유사수신행위법」 위반으로 형사처벌 대상이 될 수 있습니다.
+      </text>
+      <text x="18" y="48" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        본 계약서는 "사업 성과에 따라 손익이 결정되며 원금이나 확정수익을 보장하지 않는다"는 투자성 명시 조항을 두어
+      </text>
+      <text x="18" y="66" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        적법한 실질적 사업 투자 계약임을 명확히 보장합니다.
+      </text>
+    </g>
+
+    <!-- Item 2: 공동사업자 채무 전가 방지 -->
+    <g transform="translate(20, 150)">
+      <circle cx="6" cy="6" r="4" fill="#16A34A"/>
+      <text x="18" y="10" font-size="12.5" font-weight="800" fill="#14532D">2. 투자자(갑)의 공동사업자 연대채무 전가 방지 (제5조 제3항)</text>
+      <text x="18" y="30" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        동업 또는 공동사업자로 오인될 경우 사업 운영 중 발생하는 제3자 채무, 임금 체불, 세금 체납에 대해 투자자 개인 재산까지
+      </text>
+      <text x="18" y="48" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        강제집행당할 위험이 있습니다. "공동사업자가 아니며 대외적 채무와 책임은 사업자(을)가 전액 부담한다"는 조항을 통해
+      </text>
+      <text x="18" y="66" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        투자자의 유한책임(투자금 한도)을 완벽하게 수호합니다.
+      </text>
+    </g>
+
+    <!-- Item 3: 회계 투명성 및 대표자 급여 한도 -->
+    <g transform="translate(20, 235)">
+      <circle cx="6" cy="6" r="4" fill="#16A34A"/>
+      <text x="18" y="10" font-size="12.5" font-weight="800" fill="#14532D">3. 순이익 산정의 투명성 및 대표자 임의 경비 방지 (제6조, 별지 2)</text>
+      <text x="18" y="30" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        수익배분형 투자의 가장 큰 분쟁은 "매출은 많은데 비용을 과다 계상하여 순이익이 0원이라고 주장하는 행위"입니다.
+      </text>
+      <text x="18" y="48" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        대표자 인건비 월 한도액을 사전에 명시하고, [별지 2] 표준 정산서 및 5년간 영수증·증빙 보관, 7일 전 통보 후 장부 열람권을
+      </text>
+      <text x="18" y="66" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        제도화하여 분쟁의 불씨를 원천 차단합니다.
+      </text>
+    </g>
+
+    <!-- Item 4: 투자금 유용 시 즉시 해지 및 손해배상 -->
+    <g transform="translate(20, 320)">
+      <circle cx="6" cy="6" r="4" fill="#16A34A"/>
+      <text x="18" y="10" font-size="12.5" font-weight="800" fill="#14532D">4. 목적 외 유용 시 즉시 계약 해지 및 투자금 전액 반환 (제11조, 제12조)</text>
+      <text x="18" y="30" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        투자금을 개인 용도나 다른 사업에 전용하거나 장부를 허위 작성한 경우, 유예기간 없이 즉시 계약을 해지하고
+      </text>
+      <text x="18" y="48" font-size="11.5" font-weight="400" fill="#14532D" letter-spacing="-0.2">
+        투자금 전액 반환 및 별도의 손해배상을 청구할 수 있도록 강제 규정을 확립했습니다.
+      </text>
+    </g>
+
+    <rect x="20" y="405" width="690" height="98" rx="6" fill="#DCFCE7" stroke="#BBF7D0" stroke-width="1"/>
+    <text x="32" y="430" font-size="12" font-weight="800" fill="#15803D">✓ 실무 체결 가이드 : [별지 1], [별지 2] 연동 작성 필수</text>
+    <text x="32" y="450" font-size="11.5" font-weight="500" fill="#14532D">
+      • [별지 1] 사업 개요 및 투자금 사용계획서를 작성하여 자금 집행 목적(인테리어, 장비, 마케팅 등)을 사전 확정하십시오.
+    </text>
+    <text x="32" y="470" font-size="11.5" font-weight="500" fill="#14532D">
+      • 매 정기 정산 시 [별지 2] 수익 배분 정산서를 통해 총매출과 인정 비용을 상호 서명 날인하여 영수 처리하십시오.
+    </text>
+    <text x="32" y="490" font-size="11.5" font-weight="700" fill="#15803D">
+      → 트렌드 24 법무팀은 본 4개 페이지 계약서와 별지 1·2 서식을 한 세트로 묶어 표준 납품합니다.
+    </text>
+  </g>
+
+  <!-- Page Footer -->
+  <line x1="60" y1="1130" x2="790" y2="1130" stroke="#CBD5E1" stroke-width="0.8"/>
+  <g transform="translate(60, 1155)">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">트렌드 24 (T24 AI) 실무 표준 계약서 서식집</text>
+  </g>
+  <g transform="translate(425, 1155)" text-anchor="middle">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#334155">- 4 -</text>
+  </g>
+  <g transform="translate(790, 1155)" text-anchor="end">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">사업 투자 계약서 (수익배분형)</text>
+  </g>
+</svg>

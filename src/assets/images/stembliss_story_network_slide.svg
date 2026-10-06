@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#0b192c; font-family:'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="sCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.08)" />
+      <stop offset="100%" stop-color="rgba(255,255,255,0.02)" />
+    </linearGradient>
+    <linearGradient id="quoteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e2a47" />
+      <stop offset="100%" stop-color="#081726" />
+    </linearGradient>
+  </defs>
+
+  <!-- Top Title -->
+  <g transform="translate(60, 45)">
+    <rect x="0" y="0" width="150" height="24" rx="12" fill="rgba(0,196,159,0.15)" stroke="#00c49f" stroke-width="1" />
+    <text x="16" y="16" fill="#00c49f" font-size="11" font-weight="800">STORY &amp; NETWORK</text>
+    
+    <text x="165" y="19" fill="#ffffff" font-size="24" font-weight="900">20년 임상 철학과 검증된 상급 전문의료기관 네트워크</text>
+    <text x="0" y="46" fill="#94a3b8" font-size="13">외국인 환자를 대상으로 한 불법 중개와 과잉 시술을 배제하고, 환자의 안전과 신뢰를 지키는 스템블리스의 가치를 담았습니다.</text>
+  </g>
+
+  <!-- Left: Our Story Card -->
+  <g transform="translate(60, 115)">
+    <rect x="0" y="0" width="480" height="510" rx="18" fill="url(#quoteGrad)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+
+    <g transform="translate(30, 30)">
+      <text x="0" y="16" fill="#00c49f" font-size="12" font-weight="800" letter-spacing="1">WHY WE STARTED</text>
+      <text x="0" y="44" fill="#ffffff" font-size="22" font-weight="900">Our Story</text>
+
+      <rect x="0" y="60" width="420" height="95" rx="10" fill="rgba(0,196,159,0.08)" stroke="#00c49f" stroke-width="1" />
+      <text x="16" y="85" fill="#38bdf8" font-size="12.5" font-weight="700">“검증되지 않은 시술, 불법적인 중개 —”</text>
+      <text x="16" y="108" fill="#f8fafc" font-size="13" font-weight="800">“환자의 안전보다 이익이 우선되는 구조에 동참하지 않습니다.”</text>
+      <text x="16" y="135" fill="#94a3b8" font-size="11.5">대신 환자를 중심으로 한 의료의 본질에 집중합니다.</text>
+
+      <!-- Paragraph Story -->
+      <g transform="translate(0, 175)" fill="#cbd5e1" font-size="13">
+        <text x="0" y="0">20년간 임상 현장에서 환자를 직접 만나며, 우리는</text>
+        <text x="0" y="22">의료가 전달되는 과정을 가장 가까이에서 경험해왔습니다.</text>
+        <text x="0" y="50">그 과정에서 왜곡된 외국인 환자 유치 시장의 한계를</text>
+        <text x="0" y="72">극복하고, 투명하고 안전한 글로벌 의료 접근성을 열기 위해</text>
+        <text x="0" y="94">스템블리스(STEMBLISS)를 시작했습니다.</text>
+      </g>
+
+      <!-- 3 Core Standards List -->
+      <g transform="translate(0, 300)">
+        <text x="0" y="16" fill="#ffffff" font-size="14" font-weight="800">The Standards We Hold</text>
+
+        <rect x="0" y="30" width="420" height="36" rx="8" fill="rgba(255,255,255,0.05)" />
+        <circle cx="16" cy="48" r="6" fill="#00c49f" />
+        <text x="32" y="52" fill="#ffffff" font-size="11.5" font-weight="700">1. 모든 과정은 대한민국 의료법을 엄격히 준수합니다.</text>
+
+        <rect x="0" y="74" width="420" height="36" rx="8" fill="rgba(255,255,255,0.05)" />
+        <circle cx="16" cy="92" r="6" fill="#00c49f" />
+        <text x="32" y="96" fill="#ffffff" font-size="11.5" font-weight="700">2. 환자의 안전을 모든 결정의 최우선으로 고려합니다.</text>
+
+        <rect x="0" y="118" width="420" height="36" rx="8" fill="rgba(255,255,255,0.05)" />
+        <circle cx="16" cy="136" r="6" fill="#00c49f" />
+        <text x="32" y="140" fill="#ffffff" font-size="11.5" font-weight="700">3. 불법 중개 및 비윤리적 수수료 구조를 철저히 배제합니다.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Verified Partner Institutions Grid -->
+  <g transform="translate(565, 115)">
+    <rect x="0" y="0" width="575" height="510" rx="18" fill="url(#sCardGrad)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+
+    <g transform="translate(30, 30)">
+      <text x="0" y="16" fill="#38bdf8" font-size="12" font-weight="800" letter-spacing="1">VERIFIED MEDICAL INSTITUTIONS</text>
+      <text x="0" y="44" fill="#ffffff" font-size="22" font-weight="900">공식 제휴 협약 병원 &amp; 전문기관</text>
+      <text x="0" y="70" fill="#94a3b8" font-size="12.5">철저한 의료진 검증과 시설 평가를 거친 12개 이상 핵심 협력 기관</text>
+
+      <!-- 8 Hospital Badges Grid -->
+      <g transform="translate(0, 90)">
+        <!-- Row 1 -->
+        <rect x="0" y="0" width="245" height="65" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" />
+        <text x="16" y="26" fill="#ffffff" font-size="13" font-weight="800">🏥 KMI 한국의학연구소</text>
+        <text x="16" y="46" fill="#00c49f" font-size="10.5" font-weight="600">종합 건강검진 &amp; 프리미엄 스크리닝</text>
+
+        <rect x="265" y="0" width="245" height="65" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" />
+        <text x="281" y="26" fill="#ffffff" font-size="13" font-weight="800">🏥 한양대학교병원</text>
+        <text x="281" y="46" fill="#38bdf8" font-size="10.5" font-weight="600">상급 종합병원 협약 &amp; 중증 진료</text>
+
+        <!-- Row 2 -->
+        <rect x="0" y="80" width="245" height="65" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" />
+        <text x="16" y="106" fill="#ffffff" font-size="13" font-weight="800">🏥 신촌 다인 치과병원</text>
+        <text x="16" y="126" fill="#f59e0b" font-size="10.5" font-weight="600">디지털 임플란트 &amp; 심미 치과 센터</text>
+
+        <rect x="265" y="80" width="245" height="65" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" />
+        <text x="281" y="106" fill="#ffffff" font-size="13" font-weight="800">🏥 고려대학교의료원</text>
+        <text x="281" y="126" fill="#00c49f" font-size="10.5" font-weight="600">첨단 바이오 메디컬 연구 협약</text>
+
+        <!-- Row 3 -->
+        <rect x="0" y="160" width="245" height="65" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" />
+        <text x="16" y="186" fill="#ffffff" font-size="13" font-weight="800">🏥 큐에이 성형외과</text>
+        <text x="16" y="206" fill="#a855f7" font-size="10.5" font-weight="600">안면윤곽 &amp; 안티에이징 전문</text>
+
+        <rect x="265" y="160" width="245" height="65" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" />
+        <text x="281" y="186" fill="#ffffff" font-size="13" font-weight="800">🏥 리앤장 의원</text>
+        <text x="281" y="206" fill="#ec4899" font-size="10.5" font-weight="600">피부 레이저 &amp; 리프팅 센터</text>
+
+        <!-- Row 4 -->
+        <rect x="0" y="240" width="245" height="65" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" />
+        <text x="16" y="266" fill="#ffffff" font-size="13" font-weight="800">🏥 바이오페이스</text>
+        <text x="16" y="286" fill="#00c49f" font-size="10.5" font-weight="600">자가 세포 테라피 &amp; 동안 시술</text>
+
+        <rect x="265" y="240" width="245" height="65" rx="10" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)" />
+        <text x="281" y="266" fill="#ffffff" font-size="13" font-weight="800">🏥 나누리병원 / 부민병원</text>
+        <text x="281" y="286" fill="#38bdf8" font-size="10.5" font-weight="600">척추·관절 보건복지부 지정 전문</text>
+      </g>
+
+      <!-- Bottom Tag -->
+      <g transform="translate(0, 420)">
+        <rect x="0" y="0" width="515" height="44" rx="10" fill="rgba(0,196,159,0.12)" stroke="#00c49f" stroke-width="1" />
+        <text x="18" y="27" fill="#ffffff" font-size="12" font-weight="700">✨ 실시간 온라인 상담 파이프라인 탑재: 해외 환자 문의 24시간 안전 접수</text>
+      </g>
+    </g>
+  </g>
+</svg>

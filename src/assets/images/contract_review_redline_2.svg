@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Article 3: 제 3 조 (계약기간) -->
+  <g transform="translate(60, 65)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 3 조 (계약기간)</text>
+    <text x="145" y="0" font-size="12" font-weight="700" fill="#2563EB">◆ 수정</text>
+
+    <text x="0" y="26" font-size="13" font-weight="400" fill="#1E293B">
+      ① 본 계약의 기간은 2026 년 ○○월 ○○일부터 2027 년 ○○월 ○○일까지로 한다.
+    </text>
+
+    <!-- Clause 2 with Strikethrough & Insert -->
+    <g transform="translate(0, 52)">
+      <text x="0" y="0" font-size="13" font-weight="400" fill="#1E293B">②</text>
+      <!-- Strikethrough Text -->
+      <text x="18" y="0" font-size="13" font-weight="400" fill="#DC2626">계약기간이 끝나기 전까지 갑 또는 을이 별도의 이의를 제기하지 않으면, 본 계약은 같은 조건으로 1 년씩 자동</text>
+      <line x1="18" y1="-4" x2="685" y2="-4" stroke="#DC2626" stroke-width="1.2"/>
+
+      <text x="18" y="20" font-size="13" font-weight="400" fill="#DC2626">연장된다.</text>
+      <line x1="18" y1="16" x2="72" y2="16" stroke="#DC2626" stroke-width="1.2"/>
+
+      <!-- Underlined Insert Text -->
+      <text x="76" y="20" font-size="13" font-weight="600" fill="#2563EB">갑은 계약기간 만료 60 일 전까지 을에게 연장 여부와 연장 조건을 서면으로 안내하여야 하며, 갑 또는 을이</text>
+      <line x1="76" y1="24" x2="690" y2="24" stroke="#2563EB" stroke-width="1.2"/>
+
+      <text x="18" y="40" font-size="13" font-weight="600" fill="#2563EB">만료 30 일 전까지 상대방에게 서면으로 종료 의사를 통지하지 않는 경우 본 계약은 1 년간 연장된다.</text>
+      <line x1="18" y1="44" x2="600" y2="44" stroke="#2563EB" stroke-width="1.2"/>
+    </g>
+
+    <!-- Clause 3 Underlined -->
+    <g transform="translate(0, 114)">
+      <text x="0" y="0" font-size="13" font-weight="600" fill="#2563EB">③ 연장 시 계약금액, 과업 범위 등 계약 조건의 변경은 갑과 을의 서면 합의로 정한다.</text>
+      <line x1="0" y1="4" x2="495" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- Review Box 1 (검토의견 1) -->
+  <g transform="translate(60, 205)">
+    <rect width="730" height="98" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1"/>
+    <!-- Left Orange Accent Line -->
+    <rect x="0" y="0" width="5" height="98" fill="#D97706"/>
+
+    <g transform="translate(20, 24)">
+      <text x="0" y="0" font-size="13" font-weight="800" fill="#92400E">검토의견 1</text>
+      <!-- 중 Badge -->
+      <rect x="75" y="-13" width="48" height="18" rx="3" fill="#D97706"/>
+      <text x="99" y="0" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">위험·중</text>
+      <text x="135" y="0" font-size="13" font-weight="800" fill="#92400E">자동 연장 — 사전 공지 조항 추가</text>
+
+      <g transform="translate(0, 22)" font-size="12" fill="#78350F">
+        <text x="0" y="0" font-weight="700">문제점</text>
+        <text x="45" y="0" font-weight="400">종료 통지 기한과 방식이 없어 별도 이의가 없으면 계약이 1 년씩 무기한 연장됨. 을은 단가 조정 기회 없이 기존 조건에</text>
+        <text x="45" y="18" font-weight="400">묶일 수 있음.</text>
+
+        <text x="0" y="40" font-weight="700">수정방향</text>
+        <text x="56" y="40" font-weight="400">갑의 만료 60 일 전 사전 안내 의무, 30 일 전 서면 종료통지 기한을 명시하고, 연장 시 조건 변경은 서면 합의로</text>
+        <text x="56" y="58" font-weight="400">정하도록 보완.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Article 4: 제 4 조 (용역의 범위 및 내용) -->
+  <g transform="translate(60, 335)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 4 조 (용역의 범위 및 내용)</text>
+
+    <text x="0" y="26" font-size="13" font-weight="400" fill="#1E293B">① 을이 수행할 용역의 범위는 다음 각 호와 같다.</text>
+    <text x="20" y="48" font-size="13" font-weight="400" fill="#1E293B">1. 웹 플랫폼 기획 및 화면 설계(UI/UX)</text>
+    <text x="20" y="70" font-size="13" font-weight="400" fill="#1E293B">2. 프론트엔드 및 백엔드 개발</text>
+    <text x="20" y="92" font-size="13" font-weight="400" fill="#1E293B">3. 관리자 페이지 개발</text>
+    <text x="20" y="114" font-size="13" font-weight="400" fill="#1E293B">4. 서버 구축 및 배포 지원</text>
+    <text x="20" y="136" font-size="13" font-weight="400" fill="#1E293B">5. 기타 갑과 을이 서면으로 합의한 업무</text>
+
+    <text x="0" y="166" font-size="13" font-weight="400" fill="#1E293B">② 세부 내용 및 일정은 별첨 「과업지시서」에 따른다.</text>
+  </g>
+
+  <!-- Article 5: 제 5 조 (대금지급) -->
+  <g transform="translate(60, 535)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 5 조 (대금지급)</text>
+    <text x="145" y="0" font-size="12" font-weight="700" fill="#2563EB">◆ 수정</text>
+
+    <text x="0" y="26" font-size="13" font-weight="400" fill="#1E293B">① 갑은 제 2 조의 계약금액을 다음과 같이 분할하여 지급한다.</text>
+    
+    <g transform="translate(20, 48)" font-size="13">
+      <text x="0" y="0" fill="#1E293B">1. 착수금: 계약금액의 30% (금 이천사백만 원정) — </text>
+      <text x="290" y="0" font-weight="600" fill="#2563EB">계약 체결 후</text>
+      <line x1="290" y1="4" x2="368" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+
+      <text x="0" y="22" fill="#1E293B">2. 중도금: 계약금액의 40% (금 삼천이백만 원정) — </text>
+      <text x="290" y="22" font-weight="600" fill="#2563EB">중간 산출물 검수 완료 후</text>
+      <line x1="290" y1="26" x2="435" y2="26" stroke="#2563EB" stroke-width="1.2"/>
+
+      <text x="0" y="44" fill="#1E293B">3. 잔금: 계약금액의 30% (금 이천사백만 원정) — </text>
+      <text x="276" y="44" font-weight="600" fill="#2563EB">최종 검수 완료 후</text>
+      <line x1="276" y1="48" x2="385" y2="48" stroke="#2563EB" stroke-width="1.2"/>
+    </g>
+
+    <!-- Clause 2 -->
+    <g transform="translate(0, 116)" font-size="13">
+      <text x="0" y="0" fill="#1E293B">② 갑은 각 단계 완료 후 을의 청구를 받은 경우 </text>
+      <!-- Strikethrough -->
+      <text x="276" y="0" fill="#DC2626">합리적인 기간 내에</text>
+      <line x1="276" y1="-4" x2="388" y2="-4" stroke="#DC2626" stroke-width="1.2"/>
+      <!-- Insert -->
+      <text x="395" y="0" font-weight="600" fill="#2563EB">을의 세금계산서 발행일부터 30 일 이내에</text>
+      <line x1="395" y1="4" x2="648" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+
+      <text x="0" y="22" font-weight="600" fill="#2563EB">현금으로</text>
+      <line x1="0" y1="26" x2="52" y2="26" stroke="#2563EB" stroke-width="1.2"/>
+      <text x="56" y="22" fill="#1E293B">대금을 지급한다.</text>
+    </g>
+
+    <!-- Clause 3 -->
+    <g transform="translate(0, 160)" font-size="13">
+      <text x="0" y="0" font-weight="600" fill="#2563EB">③ 갑이 제 2 항의 지급기한을 넘긴 경우, 지연된 일수에 대하여 연 6%의 지연손해금을 가산하여 지급한다.</text>
+      <line x1="0" y1="4" x2="618" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- Review Box 2 (검토의견 2) -->
+  <g transform="translate(60, 725)">
+    <rect width="730" height="98" rx="4" fill="#FFFBEB" stroke="#FDE68A" stroke-width="1"/>
+    <rect x="0" y="0" width="5" height="98" fill="#D97706"/>
+
+    <g transform="translate(20, 24)">
+      <text x="0" y="0" font-size="13" font-weight="800" fill="#92400E">검토의견 2</text>
+      <!-- 중 Badge -->
+      <rect x="75" y="-13" width="48" height="18" rx="3" fill="#D97706"/>
+      <text x="99" y="0" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">위험·중</text>
+      <text x="135" y="0" font-size="13" font-weight="800" fill="#92400E">대금 지급기한 불명확</text>
+
+      <g transform="translate(0, 22)" font-size="12" fill="#78350F">
+        <text x="0" y="0" font-weight="700">문제점</text>
+        <text x="45" y="0" font-weight="400">"합리적인 기간"은 해석이 갈리는 표현으로, 갑이 지급을 미뤄도 을이 이행지체를 주장하기 어려움. 단계별 지급 시점도</text>
+        <text x="45" y="18" font-weight="400">정해져 있지 않음.</text>
+
+        <text x="0" y="40" font-weight="700">수정방향</text>
+        <text x="56" y="40" font-weight="400">단계별 지급 조건(계약 체결·중간 검수·최종 검수)과 세금계산서 발행일부터 30 일 이내라는 확정 기한을 두고, 지연</text>
+        <text x="56" y="58" font-weight="400">시 지연손해금 조항을 추가.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Article 6: 제 6 조 (납품 및 검수) -->
+  <g transform="translate(60, 855)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 6 조 (납품 및 검수)</text>
+    <text x="0" y="26" font-size="13" font-weight="400" fill="#1E293B">① 을은 과업지시서에서 정한 일정에 따라 결과물을 갑에게 납품한다.</text>
+    <text x="0" y="48" font-size="13" font-weight="400" fill="#1E293B">② 갑은 납품받은 날부터 14 일 이내에 검수를 실시하고, 그 결과를 을에게 서면으로 통지한다.</text>
+    <text x="0" y="70" font-size="13" font-weight="400" fill="#1E293B">③ 검수 결과 결함이 있는 경우 을은 갑의 요청에 따라 지체 없이 보완하여 재납품한다.</text>
+  </g>
+
+  <!-- Page Footer -->
+  <g transform="translate(425, 1140)">
+    <text x="0" y="0" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">
+      트렌드 24 · T24 AI 계약서 검토 | <tspan font-weight="700" fill="#0F172A">2</tspan>
+    </text>
+  </g>
+</svg>

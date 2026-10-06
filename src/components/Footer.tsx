@@ -75,6 +75,18 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDashboard }) => {
           <div>
             <span className="text-[#0f2439] font-bold block mb-2">고객지원 &amp; 안내</span>
             <ul className="space-y-1.5">
+              <li>
+                <button
+                  onClick={() => {
+                    const btn = document.getElementById('open-ai-chatbot-btn');
+                    if (btn) btn.click();
+                  }}
+                  className="hover:text-[#f05a22] text-blue-900 font-bold transition text-left cursor-pointer flex items-center gap-1"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span>실시간 AI 상담 비서 (24h)</span>
+                </button>
+              </li>
               {onOpenDashboard && (
                 <li>
                   <button

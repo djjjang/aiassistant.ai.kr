@@ -1,0 +1,181 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Article 7: 제 7 조 (손해배상) -->
+  <g transform="translate(60, 65)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 7 조 (손해배상)</text>
+    <text x="145" y="0" font-size="12" font-weight="700" fill="#2563EB">◆ 수정</text>
+
+    <!-- Strikethrough Original -->
+    <g transform="translate(0, 26)">
+      <text x="0" y="0" font-size="13" font-weight="400" fill="#DC2626">을이 본 계약을 위반하거나 고의 또는 과실로 갑에게 손해를 끼친 경우, 을은 갑에게 생긴 모든 손해를 배상한다.</text>
+      <line x1="0" y1="-4" x2="628" y2="-4" stroke="#DC2626" stroke-width="1.2"/>
+    </g>
+
+    <!-- Underline Clause 1 -->
+    <g transform="translate(0, 52)">
+      <text x="0" y="0" font-size="13" font-weight="600" fill="#2563EB">① 갑 또는 을이 본 계약을 위반하거나 고의 또는 과실로 상대방에게 손해를 끼친 경우, 그 손해를 배상한다.</text>
+      <line x1="0" y1="4" x2="605" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+    </g>
+
+    <!-- Underline Clause 2 -->
+    <g transform="translate(0, 78)">
+      <text x="0" y="0" font-size="13" font-weight="600" fill="#2563EB">② 제 1 항에 따른 손해배상액은 본 계약금액을 한도로 하며, 간접손해·특별손해 및 일실이익은 배상 범위에서 제외한다.</text>
+      <line x1="0" y1="4" x2="695" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+    </g>
+
+    <!-- Underline Clause 3 -->
+    <g transform="translate(0, 104)">
+      <text x="0" y="0" font-size="13" font-weight="600" fill="#2563EB">③ 제 2 항은 손해가 배상의무자의 고의 또는 중대한 과실로 발생한 경우에는 적용하지 않는다.</text>
+      <line x1="0" y1="4" x2="528" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- Review Box 3 (검토의견 3) -->
+  <g transform="translate(60, 200)">
+    <rect width="730" height="100" rx="4" fill="#FFF1F2" stroke="#FECDD3" stroke-width="1"/>
+    <rect x="0" y="0" width="5" height="100" fill="#DC2626"/>
+
+    <g transform="translate(20, 24)">
+      <text x="0" y="0" font-size="13" font-weight="800" fill="#991B1B">검토의견 3</text>
+      <!-- 상 Badge -->
+      <rect x="75" y="-13" width="48" height="18" rx="3" fill="#DC2626"/>
+      <text x="99" y="0" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">위험·상</text>
+      <text x="135" y="0" font-size="13" font-weight="800" fill="#991B1B">무제한 손해배상 — 배상한도(Cap) 부재</text>
+
+      <g transform="translate(0, 22)" font-size="12" fill="#881337">
+        <text x="0" y="0" font-weight="700">문제점</text>
+        <text x="45" y="0" font-weight="400">을에게만 일방적으로 "모든 손해"의 배상책임을 지워, 계약금액(8,000 만 원)을 크게 넘는 간접손해·영업손실까지</text>
+        <text x="45" y="18" font-weight="400">청구될 수 있음.</text>
+
+        <text x="0" y="40" font-weight="700">수정방향</text>
+        <text x="56" y="40" font-weight="400">책임을 쌍방으로 바꾸고 배상 한도를 계약금액으로 제한하며 간접·특별손해는 제외. 단, 고의·중과실은 한도 적용에서</text>
+        <text x="56" y="58" font-weight="400">빼서 형평성 확보.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Article 8: 제 8 조 (지식재산권) -->
+  <g transform="translate(60, 325)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 8 조 (지식재산권)</text>
+    <text x="0" y="26" font-size="13" font-weight="400" fill="#1E293B">
+      ① 본 용역으로 생성된 결과물의 저작권 등 일체의 지식재산권은 잔금 지급이 완료된 때에 갑에게 귀속된다.
+    </text>
+    <text x="0" y="48" font-size="13" font-weight="400" fill="#1E293B">
+      ② 을이 본 계약 이전부터 보유한 기술, 라이브러리, 모듈 등의 권리는 을에게 유보되며, 갑은 결과물의 이용에 필요한
+    </text>
+    <text x="0" y="68" font-size="13" font-weight="400" fill="#1E293B">
+      범위에서 이를 무상으로 사용할 수 있다.
+    </text>
+  </g>
+
+  <!-- Article 9: 제 9 조 (계약해지) -->
+  <g transform="translate(60, 425)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 9 조 (계약해지)</text>
+    <text x="145" y="0" font-size="12" font-weight="700" fill="#2563EB">◆ 수정</text>
+
+    <!-- Clause 1 -->
+    <g transform="translate(0, 26)" font-size="13">
+      <text x="0" y="0" fill="#1E293B">① </text>
+      <text x="18" y="0" fill="#DC2626">갑은</text>
+      <line x1="18" y1="-4" x2="44" y2="-4" stroke="#DC2626" stroke-width="1.2"/>
+      <text x="48" y="0" font-weight="600" fill="#2563EB">갑 또는 을은 상대방이</text>
+      <line x1="48" y1="4" x2="165" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+      <text x="169" y="0" fill="#1E293B"> 다음 각 호의 어느 하나에 해당하는 경우 </text>
+      <text x="408" y="0" fill="#DC2626">을에게 별도로 최고하지 않고 즉시</text>
+      <line x1="408" y1="-4" x2="602" y2="-4" stroke="#DC2626" stroke-width="1.2"/>
+      <text x="608" y="0" font-weight="600" fill="#2563EB">서면으로</text>
+      <line x1="608" y1="4" x2="656" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+      <text x="660" y="0" fill="#1E293B"> 본</text>
+      <text x="18" y="20" fill="#1E293B">계약을 해지할 수 있다.</text>
+    </g>
+
+    <!-- Sub-clauses -->
+    <g transform="translate(20, 72)" font-size="13">
+      <!-- 1 -->
+      <text x="0" y="0" fill="#1E293B">1. </text>
+      <text x="18" y="0" fill="#DC2626">을이 본 계약상 의무를 위반한 경우</text>
+      <line x1="18" y1="-4" x2="208" y2="-4" stroke="#DC2626" stroke-width="1.2"/>
+      <text x="214" y="0" font-weight="600" fill="#2563EB">본 계약상 중요한 의무를 위반하고, 14 일 이상의 기간을 정한 서면 시정</text>
+      <line x1="214" y1="4" x2="648" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+      <text x="18" y="20" font-weight="600" fill="#2563EB">요구를 받고도 그 기간 내에 시정하지 않은 경우</text>
+      <line x1="18" y1="24" x2="278" y2="24" stroke="#2563EB" stroke-width="1.2"/>
+
+      <!-- 2 -->
+      <text x="0" y="44" fill="#1E293B">2. </text>
+      <text x="18" y="44" fill="#DC2626">을의 용역 수행이 계약 목적을 달성하기 어렵다고 갑이 판단한 경우</text>
+      <line x1="18" y1="40" x2="385" y2="40" stroke="#DC2626" stroke-width="1.2"/>
+      <text x="390" y="44" font-weight="600" fill="#2563EB">부도, 파산, 회생절차 개시 신청 등으로 계약</text>
+      <line x1="390" y1="48" x2="648" y2="48" stroke="#2563EB" stroke-width="1.2"/>
+      <text x="18" y="64" font-weight="600" fill="#2563EB">이행이 곤란하다고 객관적으로 인정되는 경우</text>
+      <line x1="18" y1="68" x2="260" y2="68" stroke="#2563EB" stroke-width="1.2"/>
+
+      <!-- 3 -->
+      <text x="0" y="88" fill="#DC2626">3. 그 밖에 갑이 계약을 유지하기 어렵다고 인정하는 경우</text>
+      <line x1="0" y1="84" x2="310" y2="84" stroke="#DC2626" stroke-width="1.2"/>
+    </g>
+
+    <!-- Clause 2 -->
+    <g transform="translate(0, 186)" font-size="13">
+      <text x="0" y="0" fill="#1E293B">② </text>
+      <text x="18" y="0" fill="#DC2626">제 1 항에 따라 계약이 해지되면 을은 이미 받은 대금을 갑에게 반환해야 한다.</text>
+      <line x1="18" y1="-4" x2="435" y2="-4" stroke="#DC2626" stroke-width="1.2"/>
+      <text x="440" y="0" font-weight="600" fill="#2563EB">계약이 해지된 경우 갑은 해지일까지</text>
+      <line x1="440" y1="4" x2="650" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+      <text x="0" y="20" font-weight="600" fill="#2563EB">을이 수행한 용역에 대하여 기성 비율에 따라 정산한 대금을 지급하고, 을은 이미 받은 대금 중 미수행 부분에 해당하는</text>
+      <line x1="0" y1="24" x2="695" y2="24" stroke="#2563EB" stroke-width="1.2"/>
+      <text x="0" y="40" font-weight="600" fill="#2563EB">금액을 반환한다.</text>
+      <line x1="0" y1="44" x2="105" y2="44" stroke="#2563EB" stroke-width="1.2"/>
+    </g>
+
+    <!-- Clause 3 -->
+    <g transform="translate(0, 250)" font-size="13">
+      <text x="0" y="0" font-weight="600" fill="#2563EB">③ 계약의 해지는 제 7 조에 따른 손해배상 청구에 영향을 미치지 아니한다.</text>
+      <line x1="0" y1="4" x2="438" y2="4" stroke="#2563EB" stroke-width="1.2"/>
+    </g>
+  </g>
+
+  <!-- Review Box 4 (검토의견 4) -->
+  <g transform="translate(60, 715)">
+    <rect width="730" height="100" rx="4" fill="#FFF1F2" stroke="#FECDD3" stroke-width="1"/>
+    <rect x="0" y="0" width="5" height="100" fill="#DC2626"/>
+
+    <g transform="translate(20, 24)">
+      <text x="0" y="0" font-size="13" font-weight="800" fill="#991B1B">검토의견 4</text>
+      <!-- 상 Badge -->
+      <rect x="75" y="-13" width="48" height="18" rx="3" fill="#DC2626"/>
+      <text x="99" y="0" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">위험·상</text>
+      <text x="135" y="0" font-size="13" font-weight="800" fill="#991B1B">일방적 즉시 해지권</text>
+
+      <g transform="translate(0, 22)" font-size="12" fill="#881337">
+        <text x="0" y="0" font-weight="700">문제점</text>
+        <text x="45" y="0" font-weight="400">해지권이 갑에게만 있고, "갑이 판단한 경우" 등 주관적 사유로 최고 없이 즉시 해지 가능. 해지 시 이미 수행한 용역</text>
+        <text x="45" y="18" font-weight="400">대가까지 전액 반환해야 해 을의 손실이 큼.</text>
+
+        <text x="0" y="40" font-weight="700">수정방향</text>
+        <text x="56" y="40" font-weight="400">해지권을 쌍방으로 하고 사유를 객관적 요건(중대한 위반 + 14 일 시정기간, 부도·파산 등)으로 한정. 해지 시</text>
+        <text x="56" y="58" font-weight="400">수행분은 기성 비율로 정산하도록 변경.</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Article 10: 제 10 조 (하자보수) -->
+  <g transform="translate(60, 845)">
+    <text x="0" y="0" font-size="15" font-weight="800" fill="#0F172A">제 10 조 (하자보수)</text>
+    <text x="0" y="26" font-size="13" font-weight="400" fill="#1E293B">① 을은 최종 검수일부터 6 개월간 결과물의 하자에 대하여 무상으로 보수한다.</text>
+    <text x="0" y="48" font-size="13" font-weight="400" fill="#1E293B">② 하자보수 요청을 받은 경우 을은 지체 없이 조치하고 그 결과를 갑에게 통지한다.</text>
+  </g>
+
+  <!-- Page Footer -->
+  <g transform="translate(425, 1140)">
+    <text x="0" y="0" font-size="12" font-weight="500" fill="#64748B" text-anchor="middle">
+      트렌드 24 · T24 AI 계약서 검토 | <tspan font-weight="700" fill="#0F172A">3</tspan>
+    </text>
+  </g>
+</svg>

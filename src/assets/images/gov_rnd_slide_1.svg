@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Deep Navy Corporate Background -->
+  <rect width="1600" height="900" fill="#0B1A2C"/>
+
+  <!-- Outer Frame with Tech Border -->
+  <rect x="35" y="35" width="1530" height="830" rx="14" fill="#0F243B" stroke="#1E446B" stroke-width="1.5"/>
+
+  <!-- Top Evaluation Header Bar -->
+  <g transform="translate(80, 75)">
+    <!-- Government Department Badge -->
+    <rect width="140" height="34" rx="6" fill="#1D4ED8"/>
+    <text x="70" y="22" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.8">중소벤처기업부</text>
+
+    <!-- Program Name Badge -->
+    <rect x="150" y="0" width="280" height="34" rx="6" fill="rgba(30, 68, 107, 0.6)" stroke="#2B5D8F" stroke-width="1.2"/>
+    <text x="290" y="22" font-size="13" font-weight="700" fill="#93C5FD" text-anchor="middle">2026 혁신기술개발사업 (R&amp;D)</text>
+
+    <!-- Evaluation Type Badge -->
+    <rect x="440" y="0" width="180" height="34" rx="6" fill="#F05A22"/>
+    <text x="530" y="22" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">대면평가 심사용 PPT</text>
+
+    <!-- Top Right Meta -->
+    <text x="1440" y="23" font-size="14" font-weight="600" fill="#94A3B8" text-anchor="end">분과: 스마트제조·지능형 로보틱스 | 발표시간 15분</text>
+  </g>
+
+  <!-- Middle Main Content: Project Title and Catchphrase -->
+  <g transform="translate(80, 200)">
+    <rect x="0" y="0" width="310" height="28" rx="4" fill="rgba(56, 189, 248, 0.15)"/>
+    <text x="12" y="19" font-size="14" font-weight="800" fill="#38BDF8" letter-spacing="1.5">국산 자율주행 AMR 원천기술 자립화 과제</text>
+
+    <text x="0" y="85" font-size="52" font-weight="900" fill="#FFFFFF" letter-spacing="-1.2">AI 비전 센서 융합 자율주행 협동 로봇 및</text>
+    <text x="0" y="150" font-size="52" font-weight="900" fill="#38BDF8" letter-spacing="-1.2">스마트 물류 통합 군집 관제 플랫폼 개발</text>
+
+    <text x="0" y="205" font-size="20" font-weight="500" fill="#94A3B8">
+      제조 공정 물류 완전 무인화를 위한 ±1mm 초정밀 도킹 및 100대 실시간 AI 트래픽 분산 제어 기술
+    </text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="80" y1="465" x2="1520" y2="465" stroke="#1E446B" stroke-width="1.5"/>
+
+  <!-- 4 Key R&D Metrics Cards -->
+  <g transform="translate(80, 500)">
+    <!-- Card 1: Total Budget -->
+    <g transform="translate(0, 0)">
+      <rect width="335" height="175" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="20" y="20" width="85" height="24" rx="4" fill="rgba(240, 90, 34, 0.2)"/>
+      <text x="62" y="36" font-size="11" font-weight="800" fill="#F05A22" text-anchor="middle">총 연구개발비</text>
+      <text x="20" y="90" font-size="38" font-weight="900" fill="#FFFFFF">7.15억 원</text>
+      <text x="20" y="125" font-size="13" font-weight="600" fill="#38BDF8">정부지원금 5.0억 + 민간 2.15억</text>
+      <text x="20" y="148" font-size="12" font-weight="400" fill="#64748B">매칭 비율 70% 준수 (24개월)</text>
+    </g>
+
+    <!-- Card 2: Technical Performance Target -->
+    <g transform="translate(365, 0)">
+      <rect width="335" height="175" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="20" y="20" width="95" height="24" rx="4" fill="rgba(56, 189, 248, 0.2)"/>
+      <text x="67" y="36" font-size="11" font-weight="800" fill="#38BDF8" text-anchor="middle">핵심 정량 목표</text>
+      <text x="20" y="90" font-size="38" font-weight="900" fill="#38BDF8">±1.0 mm</text>
+      <text x="20" y="125" font-size="13" font-weight="600" fill="#FFFFFF">초정밀 도킹 위치인식 정밀도</text>
+      <text x="20" y="148" font-size="12" font-weight="400" fill="#64748B">KTL 공인시험 성적서 발급 확약</text>
+    </g>
+
+    <!-- Card 3: Intellectual Property & Commercialization -->
+    <g transform="translate(730, 0)">
+      <rect width="335" height="175" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="20" y="20" width="90" height="24" rx="4" fill="rgba(16, 185, 129, 0.2)"/>
+      <text x="65" y="36" font-size="11" font-weight="800" fill="#10B981" text-anchor="middle">지식재산·인증</text>
+      <text x="20" y="90" font-size="38" font-weight="900" fill="#10B981">특허 4건</text>
+      <text x="20" y="125" font-size="13" font-weight="600" fill="#FFFFFF">원천특허 4건 출원 + GS 1등급</text>
+      <text x="20" y="148" font-size="12" font-weight="400" fill="#64748B">ISO 3691-4 안전 인증 획득</text>
+    </g>
+
+    <!-- Card 4: Employment & Economic Impact -->
+    <g transform="translate(1095, 0)">
+      <rect width="335" height="175" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="20" y="20" width="85" height="24" rx="4" fill="rgba(251, 191, 36, 0.2)"/>
+      <text x="62" y="36" font-size="11" font-weight="800" fill="#FBBF24" text-anchor="middle">신규 일자리</text>
+      <text x="20" y="90" font-size="38" font-weight="900" fill="#FBBF24">12명 채용</text>
+      <text x="20" y="125" font-size="13" font-weight="600" fill="#FFFFFF">청년 R&amp;D 엔지니어 정규직</text>
+      <text x="20" y="148" font-size="12" font-weight="400" fill="#64748B">3개년 누적 수입대체 380억 원</text>
+    </g>
+  </g>
+
+  <!-- Bottom Info Footer -->
+  <g transform="translate(80, 740)" font-size="14" fill="#94A3B8">
+    <text x="0" y="0">주관연구개발기관 : <tspan fill="#FFFFFF" font-weight="700">(주)넥스트로보틱스</tspan></text>
+    <text x="420" y="0">연구책임자 : <tspan fill="#FFFFFF" font-weight="700">대표이사 강태훈 (공학박사)</tspan></text>
+    <text x="820" y="0">연구기간 : <tspan fill="#FFFFFF" font-weight="600">2026. 10. 01 ~ 2028. 09. 30 (24개월)</tspan></text>
+    <text x="1440" y="0" text-anchor="end" fill="#38BDF8" font-weight="700">SLIDE 01 / 07</text>
+  </g>
+</svg>

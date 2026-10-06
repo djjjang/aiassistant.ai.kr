@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Outer background & striped lines -->
+  <rect width="1600" height="900" fill="#E2E0D8"/>
+  <g stroke="#7C7A74" stroke-width="1.2">
+    <line x1="60" y1="55" x2="1540" y2="55"/>
+    <line x1="60" y1="67" x2="1540" y2="67"/>
+    <line x1="60" y1="79" x2="1540" y2="79"/>
+    <line x1="60" y1="91" x2="1540" y2="91"/>
+    <line x1="60" y1="103" x2="1540" y2="103"/>
+  </g>
+
+  <!-- Main Slide Frame -->
+  <rect x="50" y="105" width="1500" height="740" fill="#FAF9F5" stroke="#4A4944" stroke-width="1.5"/>
+
+  <!-- Top Brand & Header Nav -->
+  <text x="120" y="170" font-size="20" font-weight="800" fill="#1A1A1A" letter-spacing="1">© TREND24</text>
+  
+  <g font-size="18" font-weight="500" fill="#2B2B2B" text-anchor="end">
+    <text x="940" y="170">Fashion</text>
+    <text x="1100" y="170">Material</text>
+    <text x="1250" y="170">Textile</text>
+    <text x="1440" y="170">Coordination</text>
+  </g>
+
+  <!-- Center Title -->
+  <text x="800" y="300" font-size="60" font-weight="900" fill="#201E1C" text-anchor="middle">기대 효과</text>
+
+  <!-- Divider Line 1 -->
+  <line x1="240" y1="365" x2="1360" y2="365" stroke="#7E7C76" stroke-width="1.2"/>
+
+  <!-- Core Proposition -->
+  <text x="800" y="430" font-size="28" font-weight="600" fill="#111827" text-anchor="middle">Trend24의 사업 추진은 고객, 직원, 사회에 긍정적인 영향을 미칩니다.</text>
+
+  <!-- 3 Bullets Centered -->
+  <g font-size="23" font-weight="500" fill="#374151" text-anchor="middle">
+    <text x="800" y="520">- 고객 가치: 정확한 시장 정보로 고객의 의사결정 품질을 향상합니다.</text>
+    <text x="800" y="575">- 경제 기여: 안정적인 고용 창출과 지속적인 사업 확장을 통해 경제에 기여합니다.</text>
+    <text x="800" y="630">- 산업 발전: 데이터 기반 의사결정 문화 확산으로 국내 산업의 경쟁력 강화에 도움이 됩니다.</text>
+  </g>
+
+  <!-- Divider Line 2 -->
+  <line x1="240" y1="710" x2="1360" y2="710" stroke="#7E7C76" stroke-width="1.2"/>
+</svg>

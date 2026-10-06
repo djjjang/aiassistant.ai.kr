@@ -10,6 +10,10 @@ export interface ServicePortfolioCase {
   deliverable: string;
   image: string;
   imageAlt: string;
+  liveUrl?: string;
+  videoUrl?: string;
+  videoRatio?: '9:16' | '16:9';
+  videoPlatform?: 'youtube' | 'mp4' | 'reels';
   originalText?: string;
   originalDocumentMeta?: {
     recipient?: string;

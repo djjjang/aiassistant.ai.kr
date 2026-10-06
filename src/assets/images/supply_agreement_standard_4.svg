@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="850" height="52" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <g transform="translate(60, 32)">
+    <rect x="0" y="-18" width="80" height="24" rx="4" fill="#0F172A"/>
+    <text x="40" y="-2" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">T24 LEGAL</text>
+    <text x="94" y="-1" font-size="12" font-weight="700" fill="#334155">B2B 물품 납품 및 자재 공급 기본계약서</text>
+    <text x="325" y="-1" font-size="11" font-weight="500" fill="#64748B">| 제4면 (계약해지·서명날인)</text>
+  </g>
+  <g transform="translate(790, 32)" text-anchor="end">
+    <text x="0" y="-1" font-size="11" font-weight="600" fill="#64748B">문서번호: T24-SP-2026-0921</text>
+  </g>
+
+  <!-- Article 16: 제 16 조 (계약해제 및 해지) -->
+  <g transform="translate(60, 85)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 16 조 (계약해제 및 해지)</text>
+    <text x="14" y="22" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 갑 또는 을은 상대방에게 다음 각 호의 어느 하나에 해당하는 사유가 발생한 때에는 서면 통지로써 본 계약을 해제·해지할 수 있다.
+    </text>
+    <g transform="translate(24, 44)" font-size="12" font-weight="400" fill="#475569">
+      <text x="0" y="0">1. 본 계약상 중요한 의무를 위반하고, 14일 이상의 유예기간을 정한 서면 시정 요구를 받고도 이를 시정하지 아니한 경우</text>
+      <text x="0" y="20">2. 어음·수표의 부도, 파산·회생절차 개시 신청, 압류 또는 주요 재산에 대한 강제집행으로 계약 이행이 객관적으로 불가능한 경우</text>
+      <text x="0" y="40">3. 영업정지, 인허가 취소 등 정상적인 조업 및 물품 납품이 영구히 불가능하게 된 경우</text>
+    </g>
+    <text x="14" y="106" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 계약이 해지된 경우, 갑은 해지일까지 검수에 정당하게 합격한 물품의 대금을 지체 없이 지급하며, 을은 미납품분에 대한
+    </text>
+    <text x="14" y="126" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      기지급 선급금이 있는 경우 이를 갑에게 즉시 반환한다.
+    </text>
+    <text x="14" y="146" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ③ 본 조에 따른 계약 해지는 제12조에 따른 손해배상의 청구에 영향을 미치지 아니한다.
+    </text>
+  </g>
+
+  <!-- Article 17: 제 17 조 (불가항력) -->
+  <g transform="translate(60, 260)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 17 조 (불가항력)</text>
+    <text x="14" y="22" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      천재지변, 전쟁, 폭동, 감염병 대유행, 법령의 개폐 등 당사자의 지배 범위를 벗어난 사유로 인하여 채무를 이행하지 못한 때에는
+    </text>
+    <text x="14" y="42" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      해당 당사자는 상대방에 대하여 손해배상 책임을 지지 않는다. 단, 당해 사유가 60일 이상 지속되는 경우 각 당사자는 서면으로
+    </text>
+    <text x="14" y="62" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      본 계약을 해지할 수 있다.
+    </text>
+  </g>
+
+  <!-- Article 18: 제 18 조 (분쟁의 해결 및 관할법원) -->
+  <g transform="translate(60, 350)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 18 조 (분쟁의 해결 및 관할법원)</text>
+    <text x="14" y="22" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 본 계약과 관련하여 발생하는 제반 분쟁은 갑과 을 상호 간의 신의성실 원칙에 입각한 협의를 통하여 원만히 해결한다.
+    </text>
+    <text x="14" y="42" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 협의가 이루어지지 아니하여 발생하는 일체의 소송은 서울중앙지방법원 또는 피고의 본점 소재지 관할법원을 제1심 관할로 한다.
+    </text>
+  </g>
+
+  <!-- Article 19: 제 19 조 (기타 및 특약의 효력) -->
+  <g transform="translate(60, 420)">
+    <rect x="0" y="-14" width="6" height="18" fill="#2563EB" rx="1"/>
+    <text x="14" y="0" font-size="14.5" font-weight="800" fill="#0F172A">제 19 조 (기타 및 특약의 효력)</text>
+    <text x="14" y="22" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ① 본 계약에 규정되지 아니한 사항은 상법, 민법, 하도급거래 공정화에 관한 법률 등 관계 법령 및 일반 상관례에 따른다.
+    </text>
+    <text x="14" y="42" font-size="12.5" font-weight="400" fill="#334155" letter-spacing="-0.2">
+      ② 본 계약 [별표 1] 「공급물품 명세서」는 본 계약의 불가분의 일부를 구성하며, 상충 시 본 계약이 최우선 적용된다.
+    </text>
+  </g>
+
+  <!-- Execution Notice & Date -->
+  <g transform="translate(425, 515)" text-anchor="middle">
+    <text x="0" y="0" font-size="13" font-weight="600" fill="#1E293B">
+      본 계약의 성립을 증명하기 위하여 계약서 2부를 작성하여 갑과 을이 기명날인한 후 각 1부씩 보관한다.
+    </text>
+    <text x="0" y="32" font-size="15" font-weight="800" fill="#0F172A" letter-spacing="1">
+      2026년 09월 21일
+    </text>
+  </g>
+
+  <!-- Formal Signatures & Corporate Seals Table -->
+  <g transform="translate(60, 575)">
+    <!-- Outer Table Frame -->
+    <rect width="730" height="395" rx="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+    
+    <!-- Table Header Row -->
+    <rect x="0" y="0" width="730" height="38" rx="8" fill="#F8FAFC"/>
+    <line x1="0" y1="38" x2="730" y2="38" stroke="#CBD5E1" stroke-width="1"/>
+    
+    <rect x="0" y="0" width="130" height="38" fill="#F1F5F9"/>
+    <line x1="130" y1="0" x2="130" y2="395" stroke="#CBD5E1" stroke-width="1"/>
+    <line x1="430" y1="0" x2="430" y2="395" stroke="#CBD5E1" stroke-width="1"/>
+
+    <text x="65" y="24" font-size="12.5" font-weight="800" fill="#475569" text-anchor="middle">구 분</text>
+    <text x="280" y="24" font-size="13.5" font-weight="900" fill="#1E40AF" text-anchor="middle">【 갑 】 발주처 / 구매자</text>
+    <text x="580" y="24" font-size="13.5" font-weight="900" fill="#047857" text-anchor="middle">【 을 】 공급처 / 제조사</text>
+
+    <!-- Row 1: 상호 (회사명) -->
+    <line x1="0" y1="84" x2="730" y2="84" stroke="#E2E8F0" stroke-width="0.8"/>
+    <text x="65" y="66" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">상호 (법인명)</text>
+    <text x="148" y="66" font-size="13" font-weight="800" fill="#0F172A">주식회사 한국글로벌제조</text>
+    <text x="448" y="66" font-size="13" font-weight="800" fill="#0F172A">주식회사 케이원인더스트리</text>
+
+    <!-- Row 2: 사업자등록번호 -->
+    <line x1="0" y1="130" x2="730" y2="130" stroke="#E2E8F0" stroke-width="0.8"/>
+    <text x="65" y="112" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">사업자등록번호</text>
+    <text x="148" y="112" font-size="12.5" font-weight="600" fill="#334155">120-86-94821</text>
+    <text x="448" y="112" font-size="12.5" font-weight="600" fill="#334155">214-88-51930</text>
+
+    <!-- Row 3: 법인등록번호 -->
+    <line x1="0" y1="176" x2="730" y2="176" stroke="#E2E8F0" stroke-width="0.8"/>
+    <text x="65" y="158" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">법인등록번호</text>
+    <text x="148" y="158" font-size="12.5" font-weight="500" fill="#334155">110111-2849182</text>
+    <text x="448" y="158" font-size="12.5" font-weight="500" fill="#334155">110111-3948194</text>
+
+    <!-- Row 4: 본점 소재지 -->
+    <line x1="0" y1="230" x2="730" y2="230" stroke="#E2E8F0" stroke-width="0.8"/>
+    <text x="65" y="208" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">본점 소재지</text>
+    <text x="148" y="200" font-size="12" font-weight="500" fill="#334155">서울특별시 강남구 테헤란로 425</text>
+    <text x="148" y="218" font-size="11.5" font-weight="400" fill="#64748B">(삼성동, 신영빌딩 14층)</text>
+    <text x="448" y="200" font-size="12" font-weight="500" fill="#334155">경기도 화성시 동탄첨단산업1로 58</text>
+    <text x="448" y="218" font-size="11.5" font-weight="400" fill="#64748B">(영천동, 동탄테크노밸리 5층)</text>
+
+    <!-- Row 5: 담당부서 및 연락처 -->
+    <line x1="0" y1="284" x2="730" y2="284" stroke="#E2E8F0" stroke-width="0.8"/>
+    <text x="65" y="262" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">담당부서·연락처</text>
+    <text x="148" y="262" font-size="12" font-weight="500" fill="#334155">구매조달본부 1팀 / 02-555-8290</text>
+    <text x="448" y="262" font-size="12" font-weight="500" fill="#334155">영업기술본부 CS팀 / 031-8077-4100</text>
+
+    <!-- Row 6: 대표이사 및 인감 직인 날인란 -->
+    <text x="65" y="342" font-size="12" font-weight="700" fill="#334155" text-anchor="middle">대표이사</text>
+    <text x="65" y="360" font-size="11" font-weight="500" fill="#94A3B8" text-anchor="middle">(기명날인)</text>
+
+    <!-- 갑 대표이사 및 인감 도장 Graphic -->
+    <g transform="translate(148, 320)">
+      <text x="0" y="24" font-size="14" font-weight="800" fill="#0F172A">대표이사  홍  길  동</text>
+      <!-- Seal Graphic for 갑 -->
+      <g transform="translate(185, 20)">
+        <circle cx="0" cy="0" r="28" fill="#FEE2E2" stroke="#DC2626" stroke-width="2.2"/>
+        <circle cx="0" cy="0" r="24.5" fill="none" stroke="#DC2626" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <text x="0" y="-8" font-size="9" font-weight="900" fill="#DC2626" text-anchor="middle">주식회사</text>
+        <text x="0" y="3" font-size="8.5" font-weight="900" fill="#DC2626" text-anchor="middle">한국글로벌제조</text>
+        <text x="0" y="14" font-size="8" font-weight="900" fill="#DC2626" text-anchor="middle">대표이사지인</text>
+      </g>
+    </g>
+
+    <!-- 을 대표이사 및 인감 도장 Graphic -->
+    <g transform="translate(448, 320)">
+      <text x="0" y="24" font-size="14" font-weight="800" fill="#0F172A">대표이사  김  수  현</text>
+      <!-- Seal Graphic for 을 -->
+      <g transform="translate(185, 20)">
+        <circle cx="0" cy="0" r="28" fill="#FEE2E2" stroke="#DC2626" stroke-width="2.2"/>
+        <circle cx="0" cy="0" r="24.5" fill="none" stroke="#DC2626" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <text x="0" y="-8" font-size="9" font-weight="900" fill="#DC2626" text-anchor="middle">주식회사</text>
+        <text x="0" y="3" font-size="8.5" font-weight="900" fill="#DC2626" text-anchor="middle">케이원인더스트리</text>
+        <text x="0" y="14" font-size="8" font-weight="900" fill="#DC2626" text-anchor="middle">대표이사지인</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Legal Certificate & Assurance Box -->
+  <g transform="translate(60, 990)">
+    <rect width="730" height="95" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+    <g transform="translate(16, 20)">
+      <text x="0" y="0" font-size="12" font-weight="800" fill="#334155">※ 법적 효력 및 공정거래 준수 확인문</text>
+      <text x="0" y="22" font-size="11.5" font-weight="400" fill="#64748B" letter-spacing="-0.2">
+        본 계약서는 공정거래위원회 표준 하도급 기본계약서 규정 및 2026 개정 납품대금 연동제(상생협력법 제21조)를 준수하여
+      </text>
+      <text x="0" y="40" font-size="11.5" font-weight="400" fill="#64748B" letter-spacing="-0.2">
+        작성되었습니다. 트렌드 24 기업법무팀의 변호사 및 계약 전문 행정사의 3단계 교차 검수를 거친 공식 납품 서식입니다.
+      </text>
+      <text x="0" y="58" font-size="11.5" font-weight="700" fill="#2563EB">
+        [첨부 서류] 1. [별표 1] 공급물품 명세서 및 납품·품질 조건 1부 (5p에 계속).
+      </text>
+    </g>
+  </g>
+
+  <!-- Page Footer -->
+  <line x1="60" y1="1120" x2="790" y2="1120" stroke="#CBD5E1" stroke-width="0.8"/>
+  <g transform="translate(60, 1145)">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">트렌드 24 (T24 AI) 실무 표준 계약서 서식집</text>
+  </g>
+  <g transform="translate(425, 1145)" text-anchor="middle">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#334155">- 4 / 5 -</text>
+  </g>
+  <g transform="translate(790, 1145)" text-anchor="end">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">(주)한국글로벌제조 ✕ (주)케이원인더스트리</text>
+  </g>
+</svg>

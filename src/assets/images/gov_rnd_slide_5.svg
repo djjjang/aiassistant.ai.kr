@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0B1A2C"/>
+  <rect x="35" y="35" width="1530" height="830" rx="14" fill="#0F243B" stroke="#1E446B" stroke-width="1.5"/>
+
+  <!-- Top Header Navigation -->
+  <g transform="translate(80, 75)">
+    <rect width="110" height="32" rx="6" fill="#1D4ED8"/>
+    <text x="55" y="21" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">4. 사업화전략</text>
+    <text x="130" y="22" font-size="22" font-weight="900" fill="#FFFFFF">3개년 사업화 로드맵 및 양산·매출 실현 계획</text>
+    <text x="1440" y="22" font-size="13" font-weight="600" fill="#94A3B8" text-anchor="end">타깃 시장: 국내외 2차전지·반도체·자동차 제조라인</text>
+  </g>
+
+  <!-- Market Target Banner -->
+  <g transform="translate(80, 135)">
+    <rect width="1440" height="46" rx="8" fill="rgba(56, 189, 248, 0.12)" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="24" y="29" font-size="15" font-weight="800" fill="#38BDF8">시장 진입 전략 :</text>
+    <text x="160" y="29" font-size="15" font-weight="700" fill="#FFFFFF">
+      사전 확보된 3개 대기업 PoC 네트워크를 레퍼런스로 1차년도 24억 원에서 3차년도 195억 원 매출 달성
+    </text>
+  </g>
+
+  <!-- 3-Phase Roadmap Cards -->
+  <g transform="translate(80, 205)">
+    <!-- Phase 1: 2026 -->
+    <g transform="translate(0, 0)">
+      <rect width="460" height="320" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="24" y="24" width="110" height="26" rx="4" fill="#1D4ED8"/>
+      <text x="79" y="42" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">1단계 · 2026</text>
+      
+      <text x="24" y="85" font-size="22" font-weight="900" fill="#FFFFFF">기술 검증 &amp; 초기 필드 실증</text>
+      <text x="24" y="112" font-size="14" font-weight="700" fill="#38BDF8">매출 목표: 24억 원 (AMR 20대 공급)</text>
+
+      <line x1="24" y1="130" x2="436" y2="130" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="24" y="160" font-size="13" font-weight="700" fill="#FFFFFF">• 3대 핵심 수요처 현장 PoC 실증</text>
+      <text x="36" y="182" font-size="12" font-weight="400" fill="#94A3B8">- 충북 오창 2차전지 배터리 모듈 라인 5대 시범 가동</text>
+      <text x="36" y="204" font-size="12" font-weight="400" fill="#94A3B8">- 울산 자동차 샤시 부품 조립 라인 3대 시범 운용</text>
+
+      <text x="24" y="240" font-size="13" font-weight="700" fill="#FFFFFF">• 양산 설계 및 원가 절감 체계화</text>
+      <text x="36" y="262" font-size="12" font-weight="400" fill="#94A3B8">- 모듈형 알루미늄 프레임 금형 개발로 조립 공수 40% 단축</text>
+      <text x="36" y="284" font-size="12" font-weight="400" fill="#94A3B8">- 핵심 전장 부품 국산 대체 12종 승인 완료</text>
+    </g>
+
+    <!-- Phase 2: 2027 -->
+    <g transform="translate(490, 0)">
+      <rect width="460" height="320" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="24" y="24" width="110" height="26" rx="4" fill="#F05A22"/>
+      <text x="79" y="42" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">2단계 · 2027</text>
+      
+      <text x="24" y="85" font-size="22" font-weight="900" fill="#FFFFFF">본격 양산 &amp; 국내 시장 확대</text>
+      <text x="24" y="112" font-size="14" font-weight="700" fill="#F05A22">매출 목표: 78억 원 (AMR 70대 공급)</text>
+
+      <line x1="24" y1="130" x2="436" y2="130" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="24" y="160" font-size="13" font-weight="700" fill="#FFFFFF">• 1차 티어 벤더사 표준 장비 등록</text>
+      <text x="36" y="182" font-size="12" font-weight="400" fill="#94A3B8">- 현대/기아차 1차 협력사 12개사 표준 공급망 지정</text>
+      <text x="36" y="204" font-size="12" font-weight="400" fill="#94A3B8">- FMS 소프트웨어 연간 라이선스 B2B SaaS 과금 개시</text>
+
+      <text x="24" y="240" font-size="13" font-weight="700" fill="#FFFFFF">• 생산능력(CAPA) 월 15대 라인 구축</text>
+      <text x="36" y="262" font-size="12" font-weight="400" fill="#94A3B8">- 경기 화성 제2조립공장 증설로 연 180대 양산 인프라</text>
+      <text x="36" y="284" font-size="12" font-weight="400" fill="#94A3B8">- 24시간 이내 전국 긴급 AS 출동 네트워크 구축</text>
+    </g>
+
+    <!-- Phase 3: 2028 -->
+    <g transform="translate(980, 0)">
+      <rect width="460" height="320" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+      <rect x="24" y="24" width="110" height="26" rx="4" fill="#10B981"/>
+      <text x="79" y="42" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">3단계 · 2028</text>
+      
+      <text x="24" y="85" font-size="22" font-weight="900" fill="#FFFFFF">글로벌 수출 &amp; 플랫폼 다변화</text>
+      <text x="24" y="112" font-size="14" font-weight="700" fill="#10B981">매출 목표: 195억 원 (해외 수출 45%)</text>
+
+      <line x1="24" y1="130" x2="436" y2="130" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="24" y="160" font-size="13" font-weight="700" fill="#FFFFFF">• 북미·동남아 글로벌 거점 수출</text>
+      <text x="36" y="182" font-size="12" font-weight="400" fill="#94A3B8">- 미국 조지아주/인디애나주 K-배터리 공장 동반 진출</text>
+      <text x="36" y="204" font-size="12" font-weight="400" fill="#94A3B8">- 베트남 하노이 글로벌 스마트 제조 거점 대리점 계약</text>
+
+      <text x="24" y="240" font-size="13" font-weight="700" fill="#FFFFFF">• 500kg~1톤 초고하중 라인업 확대</text>
+      <text x="36" y="262" font-size="12" font-weight="400" fill="#94A3B8">- 팔레트 이송용 헤비 듀티 AMR 신제품 라인업 출시</text>
+      <text x="36" y="284" font-size="12" font-weight="400" fill="#94A3B8">- 코스닥(KOSDAQ) 기술특례 상장 예비심사 청구</text>
+    </g>
+  </g>
+
+  <!-- Revenue Forecast Bar Chart Strip -->
+  <g transform="translate(80, 550)">
+    <rect width="1440" height="175" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+    <text x="24" y="32" font-size="15" font-weight="800" fill="#38BDF8">연도별 매출액 및 AMR 누적 보급 대수 추정</text>
+
+    <!-- Visual Chart Bars -->
+    <g transform="translate(40, 55)">
+      <!-- Year 2026 -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="35" font-size="14" font-weight="800" fill="#FFFFFF">2026년 (1차년도)</text>
+        <rect x="180" y="18" width="220" height="26" rx="4" fill="#1D4ED8"/>
+        <text x="415" y="36" font-size="14" font-weight="800" fill="#93C5FD">24억 원 (20대)</text>
+        <text x="560" y="36" font-size="12" font-weight="400" fill="#94A3B8">국내 PoC 및 초기 납품 안정화</text>
+      </g>
+
+      <!-- Year 2027 -->
+      <g transform="translate(0, 36)">
+        <text x="0" y="35" font-size="14" font-weight="800" fill="#FFFFFF">2027년 (2차년도)</text>
+        <rect x="180" y="18" width="540" height="26" rx="4" fill="#F05A22"/>
+        <text x="735" y="36" font-size="14" font-weight="800" fill="#FED7AA">78억 원 (70대)</text>
+        <text x="880" y="36" font-size="12" font-weight="400" fill="#94A3B8">대기업 1차 벤더 양산 납품 본격화</text>
+      </g>
+
+      <!-- Year 2028 -->
+      <g transform="translate(0, 72)">
+        <text x="0" y="35" font-size="14" font-weight="800" fill="#FFFFFF">2028년 (3차년도)</text>
+        <rect x="180" y="18" width="980" height="26" rx="4" fill="#10B981"/>
+        <text x="1175" y="36" font-size="15" font-weight="900" fill="#A7F3D0">195억 원 (180대)</text>
+        <text x="1350" y="36" font-size="12" font-weight="600" fill="#38BDF8">북미·동남아 수출</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(80, 760)" font-size="13" fill="#94A3B8">
+    <text x="0" y="0">사업화 성공 가능성 : <tspan fill="#FFFFFF" font-weight="600">사전 구매의향서(LOI) 5개사 총 35대(21억 원 규모) 확보로 조기 매출 실현 확정</tspan></text>
+    <text x="1440" y="0" text-anchor="end" fill="#38BDF8" font-weight="700">SLIDE 05 / 07</text>
+  </g>
+</svg>

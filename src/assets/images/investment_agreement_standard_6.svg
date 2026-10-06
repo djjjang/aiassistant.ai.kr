@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1200" width="850" height="1200">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Clean Document Canvas -->
+  <rect width="850" height="1200" fill="#FFFFFF"/>
+
+  <!-- Top Header Bar -->
+  <rect x="0" y="0" width="850" height="52" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <g transform="translate(60, 32)">
+    <rect x="0" y="-18" width="80" height="24" rx="4" fill="#0F172A"/>
+    <text x="40" y="-2" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">T24 LEGAL</text>
+    <text x="94" y="-1" font-size="12" font-weight="700" fill="#334155">사업 투자 계약서 (수익배분형)</text>
+    <text x="268" y="-1" font-size="11" font-weight="500" fill="#64748B">| 제6면 ([별지 2])</text>
+  </g>
+  <g transform="translate(790, 32)" text-anchor="end">
+    <text x="0" y="-1" font-size="11" font-weight="600" fill="#64748B">문서번호: T24-INV-2026-0925-A2</text>
+  </g>
+
+  <!-- Title Section -->
+  <g transform="translate(60, 92)">
+    <rect x="0" y="-15" width="6" height="22" fill="#2563EB" rx="1"/>
+    <text x="14" y="2" font-size="17" font-weight="900" fill="#0F172A">[별지 2] 수익 배분 정산서 (월간 정산 실무 서식)</text>
+    <text x="390" y="2" font-size="11.5" font-weight="600" fill="#64748B">(본 계약서 제6조, 제7조 및 제8조 연동)</text>
+  </g>
+
+  <!-- Header Info Table -->
+  <g transform="translate(60, 120)">
+    <rect width="730" height="54" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+    
+    <!-- Vertical Line -->
+    <line x1="140" y1="0" x2="140" y2="54" stroke="#CBD5E1" stroke-width="1"/>
+    <line x1="430" y1="0" x2="430" y2="54" stroke="#CBD5E1" stroke-width="1"/>
+    <line x1="550" y1="0" x2="550" y2="54" stroke="#CBD5E1" stroke-width="1"/>
+    <line x1="0" y1="27" x2="730" y2="27" stroke="#E2E8F0" stroke-width="0.8"/>
+
+    <!-- Row 1: 정산기간 / 회차 -->
+    <rect x="0" y="0" width="140" height="27" fill="#F8FAFC"/>
+    <text x="70" y="18" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">정산 대상 기간</text>
+    <text x="155" y="18" font-size="11.5" font-weight="600" fill="#0F172A">2026. 11. 01 ~ 2026. 11. 30 (제1회차)</text>
+
+    <rect x="430" y="0" width="120" height="27" fill="#F8FAFC"/>
+    <text x="490" y="18" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">정산 주기 / 방식</text>
+    <text x="565" y="18" font-size="11.5" font-weight="600" fill="#1D4ED8">월간 정산 / 우선회수형</text>
+
+    <!-- Row 2: 작성일자 / 작성자 -->
+    <rect x="0" y="27" width="140" height="27" fill="#F8FAFC"/>
+    <text x="70" y="45" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">정산서 작성일</text>
+    <text x="155" y="45" font-size="11.5" font-weight="500" fill="#334155">2026년 12월 05일 (익월 5일 교부)</text>
+
+    <rect x="430" y="27" width="120" height="27" fill="#F8FAFC"/>
+    <text x="490" y="45" font-size="11.5" font-weight="700" fill="#334155" text-anchor="middle">작성자 (을)</text>
+    <text x="565" y="45" font-size="11.5" font-weight="600" fill="#0F172A">(주)다온클럽 대표 이다온 (인)</text>
+  </g>
+
+  <!-- Detailed Profit Calculation Table (13 Items) -->
+  <g transform="translate(60, 186)">
+    <rect width="730" height="428" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+
+    <!-- Column Dividers -->
+    <line x1="240" y1="0" x2="240" y2="428" stroke="#CBD5E1" stroke-width="0.8"/>
+    <line x1="390" y1="0" x2="390" y2="428" stroke="#CBD5E1" stroke-width="0.8"/>
+
+    <!-- Header Row -->
+    <rect width="730" height="28" rx="4" fill="#F1F5F9"/>
+    <line x1="0" y1="28" x2="730" y2="28" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="120" y="19" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">구 분 (정산 항목)</text>
+    <text x="315" y="19" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">금 액 (원)</text>
+    <text x="560" y="19" font-size="11.5" font-weight="800" fill="#475569" text-anchor="middle">산출 근거 및 적격 증빙 내역</text>
+
+    <!-- Item 1: 총매출액 -->
+    <g transform="translate(0, 28)">
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="800" fill="#0F172A">① 총매출액</text>
+      <text x="375" y="20" font-size="11.5" font-weight="800" fill="#0F172A" text-anchor="end">52,000,000</text>
+      <text x="405" y="20" font-size="11" font-weight="400" fill="#334155">POS 카드매출 48,200,000원 + 배달앱 3,800,000원</text>
+    </g>
+
+    <!-- Item 2: 매출원가 -->
+    <g transform="translate(0, 58)">
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="500" fill="#334155">② 매출원가</text>
+      <text x="375" y="20" font-size="11.5" font-weight="600" fill="#475569" text-anchor="end">16,500,000</text>
+      <text x="405" y="20" font-size="11" font-weight="400" fill="#334155">원두·유제품·베이커리 식자재 매입세금계산서 14부</text>
+    </g>
+
+    <!-- Item 3: 인건비 -->
+    <g transform="translate(0, 88)">
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="500" fill="#334155">③ 인건비 (대표자 급여 포함)</text>
+      <text x="375" y="20" font-size="11.5" font-weight="600" fill="#475569" text-anchor="end">11,200,000</text>
+      <text x="405" y="20" font-size="11" font-weight="400" fill="#334155">정직원 2인·파트타임 3인(7.7백만) + 대표 급여(3.5백만 한도)</text>
+    </g>
+
+    <!-- Item 4: 임차료·관리비 -->
+    <g transform="translate(0, 118)">
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="500" fill="#334155">④ 임차료·관리비</text>
+      <text x="375" y="20" font-size="11.5" font-weight="600" fill="#475569" text-anchor="end">6,800,000</text>
+      <text x="405" y="20" font-size="11" font-weight="400" fill="#334155">강남점 월 임차료(5.5백만) + 상가 관리비(1.3백만) 영수</text>
+    </g>
+
+    <!-- Item 5: 공과금·기타 운영비 -->
+    <g transform="translate(0, 148)">
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="500" fill="#334155">⑤ 공과금·기타 운영비</text>
+      <text x="375" y="20" font-size="11.5" font-weight="600" fill="#475569" text-anchor="end">2,500,000</text>
+      <text x="405" y="20" font-size="11" font-weight="400" fill="#334155">전력·가스·통신료(1.7백만) + 세무 기장대리료(0.8백만)</text>
+    </g>
+
+    <!-- Item 6: 비용 합계 (② ~ ⑤) -->
+    <g transform="translate(0, 178)">
+      <rect width="730" height="30" fill="#F8FAFC"/>
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#CBD5E1" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="800" fill="#1E293B">⑥ 비용 합계 (② ~ ⑤)</text>
+      <text x="375" y="20" font-size="11.5" font-weight="800" fill="#1E293B" text-anchor="end">37,000,000</text>
+      <text x="405" y="20" font-size="11" font-weight="600" fill="#1E293B">세법상 적격 세금계산서 및 카드전표 전액 대조 필</text>
+    </g>
+
+    <!-- Item 7: 순이익 (① - ⑥) -->
+    <g transform="translate(0, 208)">
+      <rect width="730" height="30" fill="#EFF6FF"/>
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#BFDBFE" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="12" font-weight="900" fill="#1D4ED8">⑦ 순이익 (① - ⑥)</text>
+      <text x="375" y="20" font-size="12" font-weight="900" fill="#1D4ED8" text-anchor="end">15,000,000</text>
+      <text x="405" y="20" font-size="11" font-weight="700" fill="#1D4ED8">당월 사업 영업이익 (순이익률 28.8%)</text>
+    </g>
+
+    <!-- Item 8: 전기 이월 손실 차감 -->
+    <g transform="translate(0, 238)">
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="500" fill="#334155">⑧ 전기 이월 손실 차감</text>
+      <text x="375" y="20" font-size="11.5" font-weight="600" fill="#64748B" text-anchor="end">0</text>
+      <text x="405" y="20" font-size="11" font-weight="400" fill="#64748B">전기 누적 결손금 없음 (신규 출점 첫 정산)</text>
+    </g>
+
+    <!-- Item 9: 배분 대상 순이익 (⑦ - ⑧) -->
+    <g transform="translate(0, 268)">
+      <rect width="730" height="30" fill="#F8FAFC"/>
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#CBD5E1" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="800" fill="#0F172A">⑨ 배분 대상 순이익 (⑦ - ⑧)</text>
+      <text x="375" y="20" font-size="11.5" font-weight="800" fill="#0F172A" text-anchor="end">15,000,000</text>
+      <text x="405" y="20" font-size="11" font-weight="600" fill="#0F172A">회수 및 배분 적용 기준 순이익</text>
+    </g>
+
+    <!-- Item 10: 투자금 우선 상환액 (우선회수형) -->
+    <g transform="translate(0, 298)">
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="700" fill="#D97706">⑩ 투자금 우선 상환액 (우선회수형)</text>
+      <text x="375" y="20" font-size="11.5" font-weight="800" fill="#D97706" text-anchor="end">4,500,000</text>
+      <text x="405" y="20" font-size="11" font-weight="600" fill="#D97706">제7조 1항 2호: 순이익의 30%를 투자원금 우선 상환</text>
+    </g>
+
+    <!-- Item 11: 갑 배분금 (30%) -->
+    <g transform="translate(0, 328)">
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="800" fill="#1D4ED8">⑪ 갑 배분금 (30%)</text>
+      <text x="375" y="20" font-size="11.5" font-weight="900" fill="#1D4ED8" text-anchor="end">3,150,000</text>
+      <text x="405" y="20" font-size="11" font-weight="600" fill="#1D4ED8">잔여 순이익 10,500,000원의 30% 갑 송금 (원천세 전)</text>
+    </g>
+
+    <!-- Item 12: 을 배분금 (70%) -->
+    <g transform="translate(0, 358)">
+      <line x1="0" y1="30" x2="730" y2="30" stroke="#E2E8F0" stroke-width="0.8"/>
+      <text x="18" y="20" font-size="11.5" font-weight="800" fill="#047857">⑫ 을 배분금 (70%)</text>
+      <text x="375" y="20" font-size="11.5" font-weight="800" fill="#047857" text-anchor="end">7,350,000</text>
+      <text x="405" y="20" font-size="11" font-weight="600" fill="#047857">잔여 순이익 10,500,000원의 70% 사업자 을 귀속</text>
+    </g>
+
+    <!-- Item 13: 투자금 잔액 -->
+    <g transform="translate(0, 388)">
+      <rect width="730" height="40" rx="4" fill="#F1F5F9"/>
+      <text x="18" y="26" font-size="12" font-weight="900" fill="#0F172A">⑬ 투자금 잔액 (원금)</text>
+      <text x="375" y="26" font-size="12.5" font-weight="900" fill="#0F172A" text-anchor="end">115,500,000</text>
+      <text x="405" y="26" font-size="11.5" font-weight="700" fill="#0F172A">초기 투자금 120,000,000원 - 당기 상환 4,500,000원</text>
+    </g>
+  </g>
+
+  <!-- Attachment Notice Box -->
+  <g transform="translate(60, 624)">
+    <rect width="730" height="34" rx="4" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1"/>
+    <text x="16" y="21" font-size="11" font-weight="700" fill="#92400E">
+      ※ 필수 첨부 증빙: 국세청 전자세금계산서 합계표(18부), 카드단말기 매출집계표, 사업용 계좌 거래명세서 사본 각 1부
+    </text>
+  </g>
+
+  <!-- Buyer Verification & Signoff Block -->
+  <g transform="translate(60, 668)">
+    <rect width="730" height="74" rx="4" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1"/>
+    
+    <rect x="0" y="0" width="130" height="74" fill="#F8FAFC"/>
+    <line x1="130" y1="0" x2="130" y2="74" stroke="#CBD5E1" stroke-width="0.8"/>
+    <text x="65" y="42" font-size="12.5" font-weight="800" fill="#334155" text-anchor="middle">갑 확 인</text>
+    
+    <g transform="translate(150, 24)">
+      <text x="0" y="0" font-size="11.5" font-weight="500" fill="#1E293B">
+        본 정산서 및 첨부된 금융·세무 증빙을 대조 확인하고 상기 산출 내역 및 배분 금액에 동의함.
+      </text>
+      <text x="0" y="28" font-size="12" font-weight="700" fill="#0F172A">
+        확인일자: 2026년 12월 07일   |   투자자(갑): 김 성 진  [정산확인인 날인]
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Accounting Compliance Box -->
+  <g transform="translate(60, 754)">
+    <rect width="730" height="356" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+    <g transform="translate(20, 22)">
+      <text x="0" y="0" font-size="12.5" font-weight="800" fill="#0F172A">■ [별지 2] 수익 배분 정산 프로세스 및 회계 검증 가이드</text>
+      
+      <text x="0" y="28" font-size="11.5" font-weight="700" fill="#1D4ED8">1. 매출액 산정 원칙 (POS 단말기 및 국세청 전자세금계산서 기준)</text>
+      <text x="0" y="46" font-size="11" font-weight="400" fill="#475569" letter-spacing="-0.2">
+        총매출액은 신용카드 매출 집계표, 현금영수증 및 국세청 전송 전자세금계산서 합계표로 객관적으로 확정하며 누락을 금지합니다.
+      </text>
+
+      <text x="0" y="76" font-size="11.5" font-weight="700" fill="#1D4ED8">2. 공제 비용의 적격 증빙주의 (을의 개인적 지출 불산입)</text>
+      <text x="0" y="94" font-size="11" font-weight="400" fill="#475569" letter-spacing="-0.2">
+        매출원가, 인건비(4대보험 신고분), 임차료, 수도광열비 등 정규 세법상 적격 증빙이 구비된 항목에 한하여 비용으로 인정하며,
+      </text>
+      <text x="0" y="112" font-size="11" font-weight="400" fill="#475569" letter-spacing="-0.2">
+        대표자 개인적 용도의 지출이나 본 사업과 무관한 경비는 일체 비용 산입에서 제외합니다.
+      </text>
+
+      <text x="0" y="142" font-size="11.5" font-weight="700" fill="#1D4ED8">3. 전기 이월 결손금의 우선 보전</text>
+      <text x="0" y="160" font-size="11" font-weight="400" fill="#475569" letter-spacing="-0.2">
+        전기 또는 전월에 사업 적자(순손실)가 발생한 경우, 당기 순이익에서 전기의 결손금을 100% 보전한 후 잔여 이익에 대하여
+      </text>
+      <text x="0" y="178" font-size="11" font-weight="400" fill="#475569" letter-spacing="-0.2">
+        약정된 비율로 분배금을 지급합니다.
+      </text>
+
+      <text x="0" y="208" font-size="11.5" font-weight="700" fill="#1D4ED8">4. 세무 원천징수 및 소득 귀속 영수증 교부</text>
+      <text x="0" y="226" font-size="11" font-weight="400" fill="#475569" letter-spacing="-0.2">
+        투자자(갑)에게 배분금을 송금할 때에는 법률상 원천징수 규정에 따라 세액을 공제한 원천징수 영수증을 교부하고 순 지급액을
+      </text>
+      <text x="0" y="244" font-size="11" font-weight="400" fill="#475569" letter-spacing="-0.2">
+        지정 계좌로 지급합니다.
+      </text>
+    </g>
+  </g>
+
+  <!-- Page Footer -->
+  <line x1="60" y1="1130" x2="790" y2="1130" stroke="#CBD5E1" stroke-width="0.8"/>
+  <g transform="translate(60, 1155)">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">트렌드 24 (T24 AI) 실무 표준 계약서 서식집</text>
+  </g>
+  <g transform="translate(425, 1155)" text-anchor="middle">
+    <text x="0" y="0" font-size="12" font-weight="700" fill="#334155">- 6 -</text>
+  </g>
+  <g transform="translate(790, 1155)" text-anchor="end">
+    <text x="0" y="0" font-size="11" font-weight="500" fill="#94A3B8">사업 투자 계약서 (수익배분형)</text>
+  </g>
+</svg>

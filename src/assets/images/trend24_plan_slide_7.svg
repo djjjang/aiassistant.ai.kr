@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+    </style>
+    <linearGradient id="deskGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#CBD5E1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer background & striped lines -->
+  <rect width="1600" height="900" fill="#E2E0D8"/>
+  <g stroke="#7C7A74" stroke-width="1.2">
+    <line x1="60" y1="55" x2="1540" y2="55"/>
+    <line x1="60" y1="67" x2="1540" y2="67"/>
+    <line x1="60" y1="79" x2="1540" y2="79"/>
+    <line x1="60" y1="91" x2="1540" y2="91"/>
+    <line x1="60" y1="103" x2="1540" y2="103"/>
+  </g>
+
+  <!-- Main Slide Frame -->
+  <rect x="50" y="105" width="1500" height="740" fill="#FAF9F5" stroke="#4A4944" stroke-width="1.5"/>
+
+  <!-- Top Left Title -->
+  <text x="100" y="190" font-size="52" font-weight="900" fill="#201E1C">추진 일정 및 마일스톤</text>
+
+  <!-- 2x3 Grid with Thin Dividers -->
+  <!-- Row 1 Top Horizontal Divider -->
+  <line x1="100" y1="265" x2="1500" y2="265" stroke="#7E7C76" stroke-width="1.2"/>
+
+  <!-- Col 1 (Top Left): 1단계 1~3개월 -->
+  <g transform="translate(100, 310)">
+    <text x="0" y="0" font-size="24" font-style="italic" font-weight="800" fill="#1E293B">1</text>
+    <text x="40" y="0" font-size="28" font-weight="800" fill="#111827">1단계 · 1~3개월</text>
+    <text x="40" y="45" font-size="19" font-weight="500" fill="#374151">조직 구성을 완료하고 시스템을 구축합니다.</text>
+    <text x="40" y="75" font-size="19" font-weight="500" fill="#374151">초기 고객 발굴을 추진합니다.</text>
+  </g>
+
+  <!-- Col 2 (Top Center): 조직 및 시스템 구축 -->
+  <g transform="translate(580, 310)">
+    <text x="0" y="0" font-size="24" font-style="italic" font-weight="800" fill="#1E293B">2</text>
+    <text x="40" y="0" font-size="28" font-weight="800" fill="#111827">조직 및 시스템 구축</text>
+    <text x="40" y="45" font-size="19" font-weight="500" fill="#374151">첫 프로젝트를 수행합니다.</text>
+    <text x="40" y="75" font-size="19" font-weight="500" fill="#374151">서비스 품질을 검증하고 고객 피드백을 반영합니다.</text>
+  </g>
+
+  <!-- Col 3 (Top Right): 초기 고객 발굴 -->
+  <g transform="translate(1060, 310)">
+    <text x="0" y="0" font-size="24" font-style="italic" font-weight="800" fill="#1E293B">3</text>
+    <text x="40" y="0" font-size="28" font-weight="800" fill="#111827">초기 고객 발굴</text>
+    <text x="40" y="45" font-size="19" font-weight="500" fill="#374151">7~12개월 차에는 신규 고객 확보를</text>
+    <text x="40" y="75" font-size="19" font-weight="500" fill="#374151">추진합니다.</text>
+  </g>
+
+  <!-- Row 2 Middle Horizontal Divider -->
+  <line x1="100" y1="565" x2="1500" y2="565" stroke="#7E7C76" stroke-width="1.2"/>
+
+  <!-- Col 1 (Bottom Left): 2단계 4~6개월 -->
+  <g transform="translate(100, 615)">
+    <text x="0" y="0" font-size="24" font-style="italic" font-weight="800" fill="#1E293B">4</text>
+    <text x="40" y="0" font-size="28" font-weight="800" fill="#111827">2단계 · 4~6개월</text>
+    <text x="40" y="45" font-size="19" font-weight="500" fill="#374151">서비스 포트폴리오를 확대합니다.</text>
+    <text x="40" y="75" font-size="19" font-weight="500" fill="#374151">시장 평판 구축을 목표로 합니다.</text>
+  </g>
+
+  <!-- Col 2 (Bottom Center): Photo Card of Desk / Sticky Notes -->
+  <g transform="translate(580, 580)">
+    <rect width="420" height="200" fill="url(#deskGrad)"/>
+    <!-- Laptop edge -->
+    <rect x="20" y="20" width="100" height="160" rx="6" fill="#1E293B"/>
+    <!-- Grid of sticky notes -->
+    <rect x="140" y="30" width="40" height="40" fill="#FEF08A"/>
+    <rect x="190" y="30" width="40" height="40" fill="#FEF08A"/>
+    <rect x="240" y="30" width="40" height="40" fill="#FEF08A"/>
+    <rect x="140" y="80" width="40" height="40" fill="#FEF08A"/>
+    <rect x="190" y="80" width="40" height="40" fill="#FEF08A"/>
+    <rect x="240" y="80" width="40" height="40" fill="#FEF08A"/>
+    <rect x="140" y="130" width="40" height="40" fill="#FEF08A"/>
+    <rect x="190" y="130" width="40" height="40" fill="#FEF08A"/>
+    <rect x="240" y="130" width="40" height="40" fill="#FEF08A"/>
+    <!-- Pen cup with colored pens -->
+    <rect x="320" y="60" width="60" height="110" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-width="2"/>
+    <line x1="335" y1="20" x2="335" y2="60" stroke="#EF4444" stroke-width="5" stroke-linecap="round"/>
+    <line x1="350" y1="15" x2="350" y2="60" stroke="#3B82F6" stroke-width="5" stroke-linecap="round"/>
+    <line x1="365" y1="25" x2="365" y2="60" stroke="#10B981" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Col 3 (Bottom Right): 5 첫 프로젝트 및 품질 검증 -->
+  <g transform="translate(1060, 615)">
+    <text x="0" y="0" font-size="24" font-style="italic" font-weight="800" fill="#1E293B">5</text>
+    <text x="40" y="0" font-size="28" font-weight="800" fill="#111827">첫 프로젝트 및 품질 검증</text>
+    <text x="40" y="45" font-size="19" font-weight="500" fill="#374151">단계별 계획에 따라 사업을 체계적으로</text>
+    <text x="40" y="75" font-size="19" font-weight="500" fill="#374151">진행합니다.</text>
+  </g>
+
+  <!-- Row 3 Bottom Horizontal Divider -->
+  <line x1="100" y1="800" x2="1500" y2="800" stroke="#7E7C76" stroke-width="1.2"/>
+</svg>

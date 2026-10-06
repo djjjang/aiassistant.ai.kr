@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shopBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="mallShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="15" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#shopBg)"/>
+
+  <!-- Top Title / Browser Bar -->
+  <g transform="translate(60, 40)" filter="url(#mallShadow)">
+    <rect width="1080" height="720" rx="20" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    
+    <!-- Browser Controls -->
+    <rect width="1080" height="46" rx="20" fill="#0f172a"/>
+    <circle cx="25" cy="23" r="6" fill="#ef4444"/>
+    <circle cx="45" cy="23" r="6" fill="#f59e0b"/>
+    <circle cx="65" cy="23" r="6" fill="#10b981"/>
+    
+    <!-- URL Bar -->
+    <rect x="180" y="8" width="720" height="30" rx="8" fill="#1e293b"/>
+    <text x="360" y="28" font-family="'Pretendard', sans-serif" font-weight="600" font-size="12" fill="#94a3b8">https://brand-store.com/collection/autumn-living</text>
+
+    <!-- Mall GNB Header -->
+    <g transform="translate(40, 65)">
+      <text x="0" y="28" font-family="'Pretendard', sans-serif" font-weight="900" font-size="22" fill="#0f172a">LUMI ATELIER</text>
+      <text x="240" y="26" font-family="'Pretendard', sans-serif" font-weight="700" font-size="14" fill="#f05a22">BEST 50</text>
+      <text x="340" y="26" font-family="'Pretendard', sans-serif" font-weight="600" font-size="14" fill="#334155">신상품</text>
+      <text x="420" y="26" font-family="'Pretendard', sans-serif" font-weight="600" font-size="14" fill="#334155">리빙&amp;오브제</text>
+      <text x="530" y="26" font-family="'Pretendard', sans-serif" font-weight="600" font-size="14" fill="#334155">키친웨어</text>
+      <text x="630" y="26" font-family="'Pretendard', sans-serif" font-weight="600" font-size="14" fill="#334155">기획전</text>
+
+      <!-- Cart & Search Icons -->
+      <rect x="880" y="8" width="120" height="32" rx="16" fill="#0f172a"/>
+      <text x="940" y="29" font-family="'Pretendard', sans-serif" font-weight="700" font-size="12" fill="#ffffff" text-anchor="middle">장바구니 (3)</text>
+    </g>
+
+    <!-- Main Hero Carousel Banner -->
+    <g transform="translate(40, 125)">
+      <rect width="1000" height="230" rx="16" fill="#1e293b"/>
+      <circle cx="850" cy="115" r="90" fill="#f05a22" opacity="0.3"/>
+      
+      <!-- Copy -->
+      <rect x="50" y="35" width="90" height="24" rx="6" fill="#f05a22"/>
+      <text x="95" y="51" font-family="'Pretendard', sans-serif" font-weight="800" font-size="11" fill="#ffffff" text-anchor="middle">SEASON OFF</text>
+      
+      <text x="50" y="95" font-family="'Pretendard', sans-serif" font-weight="900" font-size="28" fill="#ffffff">공간의 온도를 바꾸는 감성 홈 리빙 셀렉션</text>
+      <text x="50" y="125" font-family="'Pretendard', sans-serif" font-weight="500" font-size="14" fill="#cbd5e1">신규 회원가입 즉시 15% 웰컴 쿠폰 &amp; 전 상품 무료배송 혜택</text>
+      
+      <rect x="50" y="150" width="140" height="42" rx="10" fill="#f05a22"/>
+      <text x="120" y="176" font-family="'Pretendard', sans-serif" font-weight="800" font-size="13" fill="#ffffff" text-anchor="middle">기획전 바로가기 →</text>
+    </g>
+
+    <!-- Product Grid (4 items) -->
+    <g transform="translate(40, 385)">
+      <text x="0" y="20" font-family="'Pretendard', sans-serif" font-weight="900" font-size="18" fill="#0f172a">실시간 인기 급상승 쇼핑 아이템</text>
+      
+      <!-- Product 1 -->
+      <g transform="translate(0, 40)">
+        <rect width="235" height="250" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="15" y="15" width="205" height="135" rx="8" fill="#e2e8f0"/>
+        <circle cx="117" cy="82" r="32" fill="#cbd5e1"/>
+        <text x="15" y="175" font-family="'Pretendard', sans-serif" font-weight="700" font-size="14" fill="#0f172a">오가닉 세라믹 머그 세트</text>
+        <text x="15" y="195" font-family="'Pretendard', sans-serif" font-weight="800" font-size="15" fill="#f05a22">28,000원 <tspan font-size="12" font-weight="500" fill="#94a3b8" text-decoration="line-through">35,000원</tspan></text>
+        <rect x="15" y="210" width="45" height="20" rx="4" fill="#fef2f2"/>
+        <text x="37" y="224" font-family="'Pretendard', sans-serif" font-weight="700" font-size="10" fill="#ef4444" text-anchor="middle">20%↓</text>
+      </g>
+
+      <!-- Product 2 -->
+      <g transform="translate(255, 40)">
+        <rect width="235" height="250" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="15" y="15" width="205" height="135" rx="8" fill="#e2e8f0"/>
+        <rect x="90" y="55" width="55" height="55" rx="10" fill="#cbd5e1"/>
+        <text x="15" y="175" font-family="'Pretendard', sans-serif" font-weight="700" font-size="14" fill="#0f172a">미니멀 LED 무드 스탠드</text>
+        <text x="15" y="195" font-family="'Pretendard', sans-serif" font-weight="800" font-size="15" fill="#f05a22">49,000원 <tspan font-size="12" font-weight="500" fill="#94a3b8" text-decoration="line-through">68,000원</tspan></text>
+        <rect x="15" y="210" width="45" height="20" rx="4" fill="#fef2f2"/>
+        <text x="37" y="224" font-family="'Pretendard', sans-serif" font-weight="700" font-size="10" fill="#ef4444" text-anchor="middle">28%↓</text>
+      </g>
+
+      <!-- Product 3 -->
+      <g transform="translate(510, 40)">
+        <rect width="235" height="250" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+        <rect x="15" y="15" width="205" height="135" rx="8" fill="#e2e8f0"/>
+        <polygon points="117,55 145,105 90,105" fill="#cbd5e1"/>
+        <text x="15" y="175" font-family="'Pretendard', sans-serif" font-weight="700" font-size="14" fill="#0f172a">천연 린넨 테이블 러너</text>
+        <text x="15" y="195" font-family="'Pretendard', sans-serif" font-weight="800" font-size="15" fill="#f05a22">19,500원 <tspan font-size="12" font-weight="500" fill="#94a3b8" text-decoration="line-through">25,000원</tspan></text>
+        <rect x="15" y="210" width="45" height="20" rx="4" fill="#fef2f2"/>
+        <text x="37" y="224" font-family="'Pretendard', sans-serif" font-weight="700" font-size="10" fill="#ef4444" text-anchor="middle">22%↓</text>
+      </g>
+
+      <!-- Product 4 (Checkout & PG Module Badge) -->
+      <g transform="translate(765, 40)">
+        <rect width="235" height="250" rx="12" fill="#0f172a" stroke="#1e293b"/>
+        <text x="25" y="40" font-family="'Pretendard', sans-serif" font-weight="800" font-size="16" fill="#ffffff">전자상거래 PG 연동</text>
+        <text x="25" y="65" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8">네이버페이 · 카카오페이</text>
+        <text x="25" y="85" font-family="'Pretendard', sans-serif" font-weight="500" font-size="12" fill="#94a3b8">토스페이 · 카드 결제 완비</text>
+        
+        <rect x="25" y="110" width="185" height="34" rx="8" fill="#fee500"/>
+        <text x="117" y="132" font-family="'Pretendard', sans-serif" font-weight="800" font-size="12" fill="#181600" text-anchor="middle">카카오페이 1초 구매</text>
+
+        <rect x="25" y="152" width="185" height="34" rx="8" fill="#03c75a"/>
+        <text x="117" y="174" font-family="'Pretendard', sans-serif" font-weight="800" font-size="12" fill="#ffffff" text-anchor="middle">N Pay 네이버페이</text>
+
+        <rect x="25" y="196" width="185" height="36" rx="8" fill="#f05a22"/>
+        <text x="117" y="219" font-family="'Pretendard', sans-serif" font-weight="800" font-size="12" fill="#ffffff" text-anchor="middle">모바일 반응형 100% 최적화</text>
+      </g>
+    </g>
+  </g>
+</svg>

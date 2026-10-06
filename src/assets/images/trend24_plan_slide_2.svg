@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+    </style>
+    <linearGradient id="officeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="100%" stop-color="#94A3B8"/>
+    </linearGradient>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer background & striped lines -->
+  <rect width="1600" height="900" fill="#E2E0D8"/>
+  <g stroke="#7C7A74" stroke-width="1.2">
+    <line x1="60" y1="55" x2="1540" y2="55"/>
+    <line x1="60" y1="67" x2="1540" y2="67"/>
+    <line x1="60" y1="79" x2="1540" y2="79"/>
+    <line x1="60" y1="91" x2="1540" y2="91"/>
+    <line x1="60" y1="103" x2="1540" y2="103"/>
+  </g>
+
+  <!-- Main Slide Frame -->
+  <rect x="50" y="105" width="1500" height="740" fill="#FAF9F5" stroke="#4A4944" stroke-width="1.5"/>
+
+  <!-- Top Right Title -->
+  <text x="1480" y="200" font-size="52" font-weight="900" fill="#201E1C" text-anchor="end">회사 소개</text>
+
+  <!-- Middle Left Photo Cards -->
+  <!-- Card 1: Team Meeting -->
+  <g transform="translate(120, 140)">
+    <rect width="320" height="310" fill="url(#officeGrad)"/>
+    <!-- Stylized meeting table with people -->
+    <rect x="70" y="110" width="180" height="150" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+    <circle cx="160" cy="80" r="16" fill="#334155"/>
+    <rect x="140" y="100" width="40" height="24" rx="4" fill="#1E293B"/>
+    <circle cx="50" cy="150" r="14" fill="#334155"/>
+    <circle cx="50" cy="210" r="14" fill="#334155"/>
+    <circle cx="270" cy="150" r="14" fill="#334155"/>
+    <circle cx="270" cy="210" r="14" fill="#334155"/>
+    <rect x="110" y="140" width="30" height="22" rx="2" fill="#94A3B8"/>
+    <rect x="180" y="140" width="30" height="22" rx="2" fill="#94A3B8"/>
+    <rect x="110" y="200" width="30" height="22" rx="2" fill="#94A3B8"/>
+    <rect x="180" y="200" width="30" height="22" rx="2" fill="#94A3B8"/>
+  </g>
+
+  <!-- Card 2: Digital Telemetry Screens -->
+  <g transform="translate(445, 140)">
+    <rect width="450" height="310" fill="url(#techGrad)"/>
+    <!-- Dashboard charts -->
+    <path d="M40 180 L90 140 L140 170 L200 90 L260 130 L320 70 L380 110" fill="none" stroke="#38BDF8" stroke-width="3"/>
+    <circle cx="200" cy="90" r="4" fill="#38BDF8"/>
+    <circle cx="320" cy="70" r="4" fill="#38BDF8"/>
+    <rect x="40" y="210" width="20" height="70" fill="#0284C7"/>
+    <rect x="70" y="190" width="20" height="90" fill="#0284C7"/>
+    <rect x="100" y="230" width="20" height="50" fill="#0284C7"/>
+    <rect x="130" y="180" width="20" height="100" fill="#0284C7"/>
+    <circle cx="310" cy="235" r="40" fill="none" stroke="#06B6D4" stroke-width="8" stroke-dasharray="180 80"/>
+    <text x="310" y="240" fill="#E0F2FE" font-size="14" font-weight="700" text-anchor="middle">78%</text>
+  </g>
+
+  <!-- Middle Right Star & Mission Statement -->
+  <g transform="translate(950, 310)">
+    <!-- 8-pointed star -->
+    <g stroke="#9CA3AF" stroke-width="1.5" fill="none">
+      <line x1="0" y1="-22" x2="0" y2="22"/>
+      <line x1="-22" y1="0" x2="22" y2="0"/>
+      <line x1="-15" y1="-15" x2="15" y2="15"/>
+      <line x1="-15" y1="15" x2="15" y2="-15"/>
+    </g>
+    <text x="40" y="-8" font-size="22" font-weight="600" fill="#374151">Trend24는 트렌드 분석과 시장 정보 제공을 통해</text>
+    <text x="40" y="24" font-size="22" font-weight="600" fill="#374151">기업의 의사결정을 지원합니다.</text>
+  </g>
+
+  <!-- Bottom Divider Line -->
+  <line x1="120" y1="495" x2="1480" y2="495" stroke="#7E7C76" stroke-width="1.2"/>
+
+  <!-- 3 Columns Bottom -->
+  <!-- Col 1 -->
+  <g transform="translate(120, 555)">
+    <text x="0" y="0" font-size="28" font-style="italic" font-weight="800" fill="#1E293B">01.</text>
+    <text x="0" y="70" font-size="34" font-weight="800" fill="#111827">회사명</text>
+    <text x="0" y="125" font-size="20" font-weight="500" fill="#374151">Trend24는 전문적인 트렌드 분석 기업입니다.</text>
+  </g>
+
+  <!-- Col 2 -->
+  <g transform="translate(560, 555)">
+    <text x="0" y="0" font-size="28" font-style="italic" font-weight="800" fill="#1E293B">02.</text>
+    <text x="0" y="70" font-size="34" font-weight="800" fill="#111827">사업 분야</text>
+    <text x="0" y="125" font-size="20" font-weight="500" fill="#374151">트렌드 분석, 시장 조사, 데이터 기반</text>
+    <text x="0" y="155" font-size="20" font-weight="500" fill="#374151">인사이트를 제공합니다.</text>
+  </g>
+
+  <!-- Col 3 -->
+  <g transform="translate(1000, 555)">
+    <text x="0" y="0" font-size="28" font-style="italic" font-weight="800" fill="#1E293B">03.</text>
+    <text x="0" y="70" font-size="34" font-weight="800" fill="#111827">핵심 가치</text>
+    <text x="0" y="125" font-size="20" font-weight="500" fill="#374151">정확한 데이터와 신속한 분석으로</text>
+    <text x="0" y="155" font-size="20" font-weight="500" fill="#374151">고객의 경영 성과 향상을 돕습니다.</text>
+  </g>
+</svg>

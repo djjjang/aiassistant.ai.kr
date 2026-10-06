@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Segoe UI", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="#0B1A2C"/>
+  <rect x="35" y="35" width="1530" height="830" rx="14" fill="#0F243B" stroke="#1E446B" stroke-width="1.5"/>
+
+  <!-- Top Header Navigation -->
+  <g transform="translate(80, 75)">
+    <rect width="110" height="32" rx="6" fill="#1D4ED8"/>
+    <text x="55" y="21" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">5. 예산 및 팀</text>
+    <text x="130" y="22" font-size="22" font-weight="900" fill="#FFFFFF">연구개발비 소요 명세 및 연구책임자·핵심 인력 역량</text>
+    <text x="1440" y="22" font-size="13" font-weight="600" fill="#94A3B8" text-anchor="end">총 사업비: 7억 1,500만 원 (정부 5.0억 + 민간 2.15억)</text>
+  </g>
+
+  <!-- Left: Budget Breakdown (50% Width) -->
+  <g transform="translate(80, 140)">
+    <rect width="705" height="580" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+    <text x="24" y="36" font-size="17" font-weight="800" fill="#38BDF8">비목별 연구개발비 집행 계획 (24개월 합계)</text>
+
+    <!-- Total Summary Badge -->
+    <rect x="24" y="55" width="657" height="65" rx="8" fill="#162E4A" stroke="#2D5A88" stroke-width="1"/>
+    <text x="45" y="85" font-size="13" font-weight="600" fill="#94A3B8">총 연구개발비</text>
+    <text x="45" y="108" font-size="22" font-weight="900" fill="#FFFFFF">715,000,000 원</text>
+    
+    <text x="270" y="85" font-size="13" font-weight="600" fill="#94A3B8">정부지원연구개발비</text>
+    <text x="270" y="108" font-size="22" font-weight="900" fill="#F05A22">500,000,000 원 (69.9%)</text>
+
+    <text x="510" y="85" font-size="13" font-weight="600" fill="#94A3B8">기관부담금 (민간)</text>
+    <text x="510" y="108" font-size="22" font-weight="900" fill="#10B981">215,000,000 원 (30.1%)</text>
+
+    <!-- Budget Table -->
+    <g transform="translate(24, 140)">
+      <rect width="657" height="34" rx="4" fill="#162E4A"/>
+      <text x="100" y="22" font-size="12" font-weight="700" fill="#94A3B8" text-anchor="middle">비목 구분</text>
+      <text x="270" y="22" font-size="12" font-weight="700" fill="#94A3B8" text-anchor="middle">금액 (원)</text>
+      <text x="410" y="22" font-size="12" font-weight="700" fill="#94A3B8" text-anchor="middle">비중 (%)</text>
+      <text x="540" y="22" font-size="12" font-weight="700" fill="#94A3B8" text-anchor="middle">주요 사용 용도</text>
+
+      <!-- Row 1: 인건비 -->
+      <text x="100" y="55" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">연구인건비</text>
+      <text x="270" y="55" font-size="14" font-weight="800" fill="#38BDF8" text-anchor="middle">321,750,000</text>
+      <text x="410" y="55" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">45.0%</text>
+      <text x="540" y="55" font-size="12" font-weight="400" fill="#94A3B8" text-anchor="middle">AI/SLAM 석박사 8인 인건비</text>
+
+      <line x1="0" y1="72" x2="657" y2="72" stroke="#1E446B" stroke-width="0.8"/>
+
+      <!-- Row 2: 연구시설 및 장비비 -->
+      <text x="100" y="105" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">연구장비·재료비</text>
+      <text x="270" y="105" font-size="14" font-weight="800" fill="#38BDF8" text-anchor="middle">214,500,000</text>
+      <text x="410" y="105" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">30.0%</text>
+      <text x="540" y="105" font-size="12" font-weight="400" fill="#94A3B8" text-anchor="middle">3D라이다 시제품 5대 제작</text>
+
+      <line x1="0" y1="122" x2="657" y2="122" stroke="#1E446B" stroke-width="0.8"/>
+
+      <!-- Row 3: 연구활동비 -->
+      <text x="100" y="155" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">연구활동비</text>
+      <text x="270" y="155" font-size="14" font-weight="800" fill="#38BDF8" text-anchor="middle">107,250,000</text>
+      <text x="410" y="155" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">15.0%</text>
+      <text x="540" y="155" font-size="12" font-weight="400" fill="#94A3B8" text-anchor="middle">KTL 공인시험 및 특허 출원</text>
+
+      <line x1="0" y1="172" x2="657" y2="172" stroke="#1E446B" stroke-width="0.8"/>
+
+      <!-- Row 4: 위탁연구개발비 -->
+      <text x="100" y="205" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">위탁연구개발비</text>
+      <text x="270" y="205" font-size="14" font-weight="800" fill="#38BDF8" text-anchor="middle">71,500,000</text>
+      <text x="410" y="205" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">10.0%</text>
+      <text x="540" y="205" font-size="12" font-weight="400" fill="#94A3B8" text-anchor="middle">대학 산학협력 경로최적화</text>
+    </g>
+
+    <!-- Bottom Compliance Check Note -->
+    <g transform="translate(24, 400)">
+      <rect width="657" height="150" rx="8" fill="#162E4A"/>
+      <text x="20" y="28" font-size="13" font-weight="800" fill="#10B981">규정 준수 및 회계 투명성</text>
+      <text x="20" y="55" font-size="12" font-weight="400" fill="#E2E8F0">• 국가연구개발사업 연구개발비 사용기준 완벽 준수</text>
+      <text x="20" y="78" font-size="12" font-weight="400" fill="#E2E8F0">• RCMS(실시간연구비관리시스템) 연동 전용 계좌 클린 집행</text>
+      <text x="20" y="101" font-size="12" font-weight="400" fill="#E2E8F0">• 회계법인 분기별 상시 감사 및 외부 위탁 정산 실시</text>
+      <text x="20" y="124" font-size="12" font-weight="400" fill="#94A3B8">• 정부지원금 부당 집행 이력 0건 / 신용평가 A등급 기업</text>
+    </g>
+  </g>
+
+  <!-- Right: Team & Leadership Capabilities (50% Width) -->
+  <g transform="translate(815, 140)">
+    <rect width="705" height="580" rx="12" fill="#0B1A2C" stroke="#254B73" stroke-width="1.2"/>
+    <text x="24" y="36" font-size="17" font-weight="800" fill="#38BDF8">연구개발 전담 조직 역량 &amp; 핵심 인력</text>
+
+    <!-- Principal Investigator Card -->
+    <g transform="translate(24, 55)">
+      <rect width="657" height="150" rx="8" fill="#162E4A" stroke="#2B5D8F" stroke-width="1"/>
+      <rect x="20" y="20" width="80" height="26" rx="4" fill="#F05A22"/>
+      <text x="60" y="37" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">연구책임자</text>
+      <text x="115" y="38" font-size="18" font-weight="900" fill="#FFFFFF">강태훈 대표이사 / 공학박사</text>
+      <text x="440" y="38" font-size="13" font-weight="600" fill="#93C5FD">참여율 80% (총괄 책임)</text>
+
+      <line x1="20" y1="58" x2="637" y2="58" stroke="#1E446B" stroke-width="1"/>
+
+      <text x="20" y="85" font-size="12" font-weight="600" fill="#FFFFFF">• 학력 : <tspan fill="#CBD5E1" font-weight="400">KAIST 기계공학 학사 · 서울대학교 로봇공학 박사</tspan></text>
+      <text x="20" y="108" font-size="12" font-weight="600" fill="#FFFFFF">• 경력 : <tspan fill="#CBD5E1" font-weight="400">현대자동차 자율주행선행개발팀 책임연구원 (7년 수행)</tspan></text>
+      <text x="20" y="131" font-size="12" font-weight="600" fill="#FFFFFF">• 실적 : <tspan fill="#CBD5E1" font-weight="400">국제 SCI 논문 14편, 로봇 자율주행 국내외 특허 18건 보유</tspan></text>
+    </g>
+
+    <!-- Core Team Grid -->
+    <g transform="translate(24, 225)">
+      <!-- Team 1: AI Perception Team -->
+      <g transform="translate(0, 0)">
+        <rect width="320" height="155" rx="8" fill="#162E4A"/>
+        <text x="18" y="28" font-size="13" font-weight="800" fill="#38BDF8">AI 비전·SLAM 연구팀 (4인)</text>
+        <text x="18" y="55" font-size="14" font-weight="700" fill="#FFFFFF">이성우 수석연구원 (Ph.D)</text>
+        <text x="18" y="78" font-size="12" font-weight="400" fill="#94A3B8">• 포항공대 컴퓨터비전 석박사</text>
+        <text x="18" y="98" font-size="12" font-weight="400" fill="#94A3B8">• 온디바이스 딥러닝 객체 검출 전문</text>
+        <text x="18" y="125" font-size="11" font-weight="700" fill="#10B981">전담: 3D 라이다 융합 SLAM</text>
+      </g>
+
+      <!-- Team 2: Robotics Hardware Team -->
+      <g transform="translate(337, 0)">
+        <rect width="320" height="155" rx="8" fill="#162E4A"/>
+        <text x="18" y="28" font-size="13" font-weight="800" fill="#F05A22">하드웨어·기구제어팀 (3인)</text>
+        <text x="18" y="55" font-size="14" font-weight="700" fill="#FFFFFF">박준혁 책임연구원 (M.S)</text>
+        <text x="18" y="78" font-size="12" font-weight="400" fill="#94A3B8">• 한양대 정밀기계공학 석사</text>
+        <text x="18" y="98" font-size="12" font-weight="400" fill="#94A3B8">• 산업용 로봇 구동부 양산 10년 경력</text>
+        <text x="18" y="125" font-size="11" font-weight="700" fill="#F05A22">전담: ±1mm 정밀 도킹 기구</text>
+      </g>
+    </g>
+
+    <!-- Lab & Infrastructure Equipment -->
+    <g transform="translate(24, 400)">
+      <rect width="657" height="150" rx="8" fill="#162E4A"/>
+      <text x="20" y="28" font-size="13" font-weight="800" fill="#FBBF24">연구 인프라 및 보유 장비</text>
+      <text x="20" y="55" font-size="12" font-weight="400" fill="#E2E8F0">• 기업부설연구소(R&amp;D 센터) 인가 완료 (경기 성남 판교 소재 120평)</text>
+      <text x="20" y="78" font-size="12" font-weight="400" fill="#E2E8F0">• 고성능 AI 트레이닝 서버 (NVIDIA H100 8-GPU 클러스터 구축 완료)</text>
+      <text x="20" y="101" font-size="12" font-weight="400" fill="#E2E8F0">• 스마트팩토리 모사 실내 자율주행 테스트베드(실제 150평 트랙) 완비</text>
+      <text x="20" y="124" font-size="12" font-weight="400" fill="#94A3B8">• 산업용 3D 프린터 및 레이저 가공 프로토타입 자체 제작 설비</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <g transform="translate(80, 760)" font-size="13" fill="#94A3B8">
+    <text x="0" y="0">수행 의지 : <tspan fill="#FFFFFF" font-weight="600">대표이사 및 핵심 연구원 전원 100% 과제 집중으로 24개월 내 사업화 100% 달성 확약</tspan></text>
+    <text x="1440" y="0" text-anchor="end" fill="#38BDF8" font-weight="700">SLIDE 06 / 07</text>
+  </g>
+</svg>

@@ -1,0 +1,255 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="amBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071018"/>
+      <stop offset="60%" stop-color="#0f1a26"/>
+      <stop offset="100%" stop-color="#050a0f"/>
+    </linearGradient>
+    <linearGradient id="amPhoneFrame" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="amOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f05a22"/>
+      <stop offset="100%" stop-color="#d94814"/>
+    </linearGradient>
+    <filter id="amDropShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#amBgGrad)"/>
+
+  <!-- Left Side: Mobile Responsive Highlights -->
+  <g transform="translate(60, 50)">
+    <rect width="190" height="26" rx="13" fill="#f05a22" fill-opacity="0.15" stroke="#f05a22" stroke-width="1"/>
+    <text x="16" y="17.5" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#f05a22">
+      📱 원페이지 모바일 최적화
+    </text>
+
+    <text x="0" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+      AI비서 원페이지 모바일 뷰
+    </text>
+    <text x="0" y="100" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="28" font-weight="900" fill="#f05a22" letter-spacing="-0.5">
+      1초 스크롤 &amp; 견적 시뮬레이터
+    </text>
+
+    <text x="0" y="132" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="500" fill="#94a3b8">
+      모바일 유입 기업 의뢰인(CEO·실무자)을 위한 한 손 조작 원스톱 견적 신청 UX
+    </text>
+
+    <!-- 4 Key Points Cards -->
+    <g transform="translate(0, 160)">
+      <rect width="420" height="78" rx="10" fill="#101d2a" stroke="#1e3247" stroke-width="1"/>
+      <circle cx="36" cy="39" r="18" fill="#2d160c" stroke="#f05a22" stroke-width="1.5"/>
+      <text x="36" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#f05a22" text-anchor="middle">⚡</text>
+      <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13.5" font-weight="800" fill="#ffffff">
+        초고속 SPA 0.8초 로딩 최적화
+      </text>
+      <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="500" fill="#94a3b8">
+        새로고침 없는 즉각적인 부드러운 스크롤 이동과 컴포넌트 지연 로딩 완비
+      </text>
+    </g>
+
+    <g transform="translate(0, 252)">
+      <rect width="420" height="78" rx="10" fill="#101d2a" stroke="#1e3247" stroke-width="1"/>
+      <circle cx="36" cy="39" r="18" fill="#0a2538" stroke="#38bdf8" stroke-width="1.5"/>
+      <text x="36" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#38bdf8" text-anchor="middle">📊</text>
+      <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13.5" font-weight="800" fill="#ffffff">
+        모바일 터치 견적 시뮬레이터
+      </text>
+      <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="500" fill="#94a3b8">
+        손가락 탭 몇 번으로 업무 유형별 예상 단가와 납품 일정이 즉시 계산되는 UI
+      </text>
+    </g>
+
+    <g transform="translate(0, 344)">
+      <rect width="420" height="78" rx="10" fill="#101d2a" stroke="#1e3247" stroke-width="1"/>
+      <circle cx="36" cy="39" r="18" fill="#1f112e" stroke="#a855f7" stroke-width="1.5"/>
+      <text x="36" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#a855f7" text-anchor="middle">🖼️</text>
+      <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13.5" font-weight="800" fill="#ffffff">
+        포트폴리오 슬라이드 &amp; 원문 열람 모달
+      </text>
+      <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="500" fill="#94a3b8">
+        모바일 제스처 스와이프로 1p~8p 고해상도 그래픽과 실제 텍스트 원문 전문 열람
+      </text>
+    </g>
+
+    <g transform="translate(0, 436)">
+      <rect width="420" height="78" rx="10" fill="#101d2a" stroke="#1e3247" stroke-width="1"/>
+      <circle cx="36" cy="39" r="18" fill="#042817" stroke="#10b981" stroke-width="1.5"/>
+      <text x="36" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#10b981" text-anchor="middle">💬</text>
+      <text x="68" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13.5" font-weight="800" fill="#ffffff">
+        모바일 문의 전환율(CVR) 6.4% 달성
+      </text>
+      <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="500" fill="#94a3b8">
+        전화상담/온라인 견적 문의 듀얼 플로팅 CTA로 유입 대비 상담 접수율 3.2배 향상
+      </text>
+    </g>
+
+    <g transform="translate(0, 532)">
+      <rect width="420" height="42" rx="8" fill="#1b120a" stroke="#f05a22" stroke-width="1.2"/>
+      <text x="210" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="800" fill="#f05a22" text-anchor="middle">
+        실시간 도메인 https://aiassistant.ai.kr/ 모바일 완벽 호환
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Side: iPhone Mockup (310 x 590) -->
+  <g transform="translate(560, 40)" filter="url(#amDropShadow)">
+    <rect width="310" height="590" rx="42" fill="url(#amPhoneFrame)" stroke="#475569" stroke-width="3"/>
+    <rect x="9" y="9" width="292" height="572" rx="34" fill="#09121a"/>
+
+    <!-- Dynamic Island -->
+    <rect x="110" y="16" width="90" height="20" rx="10" fill="#000000"/>
+    <circle cx="178" cy="26" r="4.5" fill="#1e293b"/>
+
+    <!-- Status Bar -->
+    <text x="32" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#ffffff">9:41</text>
+    <g transform="translate(250, 20)">
+      <rect width="18" height="9.5" rx="2.5" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+      <rect x="2" y="2" width="11" height="5.5" rx="1" fill="#f05a22"/>
+      <path d="M 19,3.5 L 19,6" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Mobile Header -->
+    <g transform="translate(9, 44)">
+      <rect width="292" height="44" fill="#0d1722"/>
+      <line x1="0" y1="44" x2="292" y2="44" stroke="#1d2b3c" stroke-width="0.8"/>
+      
+      <g transform="translate(14, 10)">
+        <rect width="24" height="22" rx="5" fill="url(#amOrangeGrad)"/>
+        <text x="12" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle">AI</text>
+        <text x="36" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#ffffff">AI비서</text>
+      </g>
+
+      <!-- Hamburger Menu & Quote CTA -->
+      <g transform="translate(210, 10)">
+        <rect width="68" height="24" rx="12" fill="url(#amOrangeGrad)"/>
+        <text x="34" y="15.5" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle">견적신청</text>
+      </g>
+    </g>
+
+    <!-- Mobile Hero Body -->
+    <g transform="translate(19, 100)">
+      <rect width="272" height="135" rx="8" fill="#131e2b" stroke="#25384d" stroke-width="1"/>
+      <rect x="10" y="10" width="120" height="18" rx="9" fill="#f05a22" fill-opacity="0.2"/>
+      <text x="70" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="8.5" font-weight="900" fill="#f05a22" text-anchor="middle">기업 실전 업무 대행</text>
+
+      <text x="10" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="15" font-weight="900" fill="#ffffff">
+        AI를 배우지 마세요,
+      </text>
+      <text x="10" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="15" font-weight="900" fill="#f05a22">
+        업무를 맡기세요.
+      </text>
+      <text x="10" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="500" fill="#94a3b8">
+        사업계획서·계약서·디자인 24시간 완제
+      </text>
+
+      <g transform="translate(10, 98)">
+        <rect width="120" height="26" rx="6" fill="url(#amOrangeGrad)"/>
+        <text x="60" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle">
+          맞춤 견적 산출 ↗
+        </text>
+
+        <rect x="126" y="0" width="120" height="26" rx="6" fill="#1e2c3c"/>
+        <text x="186" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="700" fill="#cbd5e1" text-anchor="middle">
+          포트폴리오 보기
+        </text>
+      </g>
+    </g>
+
+    <!-- Mobile 6 Services Quick Selector Strip -->
+    <g transform="translate(19, 245)">
+      <text x="2" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="900" fill="#ffffff">
+        6대 핵심 업무 바로가기
+      </text>
+      <g transform="translate(0, 24)">
+        <rect width="86" height="42" rx="6" fill="#132130" stroke="#f05a22" stroke-width="1"/>
+        <text x="43" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="900" fill="#f05a22" text-anchor="middle">PPT 제작</text>
+        <text x="43" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="8" font-weight="600" fill="#94a3b8" text-anchor="middle">15장 슬라이드</text>
+
+        <rect x="93" y="0" width="86" height="42" rx="6" fill="#132130"/>
+        <text x="136" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">계약서 검토</text>
+        <text x="136" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="8" font-weight="500" fill="#94a3b8" text-anchor="middle">독소조항 제거</text>
+
+        <rect x="186" y="0" width="86" height="42" rx="6" fill="#132130"/>
+        <text x="229" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">디자인 업무</text>
+        <text x="229" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="8" font-weight="500" fill="#94a3b8" text-anchor="middle">카드뉴스·배너</text>
+      </g>
+    </g>
+
+    <!-- Mobile Mini Quotation Card Simulation -->
+    <g transform="translate(19, 325)">
+      <rect width="272" height="175" rx="8" fill="#111c28" stroke="#1f3246" stroke-width="0.8"/>
+      <rect x="10" y="10" width="252" height="26" rx="5" fill="#182738"/>
+      <text x="20" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="800" fill="#ffffff">
+        ⚡ 실시간 맞춤 견적 시뮬레이터
+      </text>
+
+      <g transform="translate(14, 46)">
+        <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="600" fill="#94a3b8">선택 업무:</text>
+        <text x="60" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="800" fill="#f05a22">사이트 제작 (원페이지 기업 홈)</text>
+
+        <text x="0" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="600" fill="#94a3b8">납품 일정:</text>
+        <text x="60" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="700" fill="#38bdf8">의뢰 후 3일 이내 완제</text>
+
+        <text x="0" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="600" fill="#94a3b8">포함 항목:</text>
+        <text x="60" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9" font-weight="500" fill="#cbd5e1">PC/모바일 반응형 + 견적기 + SEO</text>
+
+        <line x1="0" y1="68" x2="244" y2="68" stroke="#1f3044" stroke-width="1"/>
+        <text x="0" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="700" fill="#94a3b8">예상 견적가:</text>
+        <text x="140" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="13" font-weight="900" fill="#ffffff">맞춤 산출 완료</text>
+      </g>
+
+      <rect x="14" y="142" width="244" height="24" rx="4" fill="url(#amOrangeGrad)"/>
+      <text x="136" y="157" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="9.5" font-weight="900" fill="#ffffff" text-anchor="middle">
+        이 조건으로 원클릭 상담 신청 ↗
+      </text>
+    </g>
+
+    <!-- Sticky Bottom Dual Bar -->
+    <g transform="translate(9, 516)">
+      <rect width="292" height="60" fill="#0c1520"/>
+      <line x1="0" y1="0" x2="292" y2="0" stroke="#1b2a3c" stroke-width="1"/>
+
+      <!-- Phone CTA -->
+      <g transform="translate(14, 12)">
+        <rect width="105" height="36" rx="8" fill="#162332" stroke="#253a50" stroke-width="0.8"/>
+        <text x="52.5" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#cbd5e1" text-anchor="middle">📞 전화상담</text>
+      </g>
+
+      <!-- Instant Quote CTA -->
+      <g transform="translate(126, 12)">
+        <rect width="152" height="36" rx="8" fill="url(#amOrangeGrad)"/>
+        <text x="76" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11.5" font-weight="900" fill="#ffffff" text-anchor="middle">
+          ⚡ 1초 견적 신청 ↗
+        </text>
+      </g>
+    </g>
+
+    <rect x="105" y="568" width="100" height="4" rx="2" fill="#ffffff" fill-opacity="0.3"/>
+  </g>
+
+  <!-- Right Tablet Preview Window -->
+  <g transform="translate(900, 110)" filter="url(#amDropShadow)">
+    <rect width="250" height="440" rx="24" fill="#0b1622" stroke="#25384c" stroke-width="2"/>
+    <rect x="8" y="8" width="234" height="424" rx="18" fill="#081018"/>
+    <rect x="8" y="8" width="234" height="34" fill="#0f1b29"/>
+    <text x="24" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#f05a22">AI비서 (Tablet View)</text>
+    
+    <g transform="translate(20, 56)">
+      <rect width="100" height="140" rx="8" fill="#132130"/>
+      <rect width="100" height="140" rx="8" x="110" fill="#132130"/>
+      <rect width="100" height="140" rx="8" y="152" fill="#132130"/>
+      <rect width="100" height="140" rx="8" x="110" y="152" fill="#132130"/>
+    </g>
+
+    <g transform="translate(30, 370)">
+      <rect width="190" height="32" rx="16" fill="#f05a22" fill-opacity="0.2" stroke="#f05a22" stroke-width="1"/>
+      <text x="95" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10.5" font-weight="800" fill="#f05a22" text-anchor="middle">
+        모바일 &amp; 태블릿 완벽 반응형
+      </text>
+    </g>
+  </g>
+</svg>

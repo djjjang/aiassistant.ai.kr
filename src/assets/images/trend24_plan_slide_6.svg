@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <style>
+      text { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Apple SD Gothic Neo', 'Malgun Gothic', 'Noto Sans KR', sans-serif; }
+    </style>
+    <linearGradient id="csGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="goldBarGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#B45309"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FDE68A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer background & striped lines -->
+  <rect width="1600" height="900" fill="#E2E0D8"/>
+  <g stroke="#7C7A74" stroke-width="1.2">
+    <line x1="60" y1="55" x2="1540" y2="55"/>
+    <line x1="60" y1="67" x2="1540" y2="67"/>
+    <line x1="60" y1="79" x2="1540" y2="79"/>
+    <line x1="60" y1="91" x2="1540" y2="91"/>
+    <line x1="60" y1="103" x2="1540" y2="103"/>
+  </g>
+
+  <!-- Main Slide Frame -->
+  <rect x="50" y="105" width="1500" height="740" fill="#FAF9F5" stroke="#4A4944" stroke-width="1.5"/>
+
+  <!-- Decorative Stars -->
+  <g transform="translate(120, 180)" stroke="#9CA3AF" stroke-width="1.5" fill="none">
+    <line x1="0" y1="-26" x2="0" y2="26"/>
+    <line x1="-26" y1="0" x2="26" y2="0"/>
+    <line x1="-18" y1="-18" x2="18" y2="18"/>
+    <line x1="-18" y1="18" x2="18" y2="-18"/>
+  </g>
+  <g transform="translate(1480, 280)" stroke="#9CA3AF" stroke-width="1.5" fill="none">
+    <line x1="0" y1="-20" x2="0" y2="20"/>
+    <line x1="-20" y1="0" x2="20" y2="0"/>
+    <line x1="-14" y1="-14" x2="14" y2="14"/>
+    <line x1="-14" y1="14" x2="14" y2="-14"/>
+  </g>
+
+  <!-- Center Title -->
+  <text x="800" y="215" font-size="54" font-weight="900" fill="#201E1C" text-anchor="middle">재무 전망</text>
+
+  <!-- 3 Photo Cards Row -->
+  <!-- Card 1: CS Team with Headsets -->
+  <g transform="translate(130, 295)">
+    <rect width="400" height="240" fill="url(#csGrad)"/>
+    <!-- Headset agents illustration -->
+    <circle cx="140" cy="110" r="34" fill="#E2E8F0"/>
+    <path d="M90 190 C90 150, 190 150, 190 190 Z" fill="#2563EB"/>
+    <!-- Headset line & mic -->
+    <path d="M120 100 C110 70, 170 70, 160 100" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="118" cy="110" r="8" fill="#1D4ED8"/>
+    <circle cx="162" cy="110" r="8" fill="#1D4ED8"/>
+    <path d="M162 110 L150 130" stroke="#FFFFFF" stroke-width="3"/>
+    <!-- Second agent behind -->
+    <circle cx="280" cy="120" r="30" fill="#CBD5E1"/>
+    <path d="M230 200 C230 160, 330 160, 330 200 Z" fill="#1D4ED8"/>
+  </g>
+
+  <!-- Card 2: 5-Star Rating on Mobile Phone -->
+  <g transform="translate(565, 295)">
+    <rect width="400" height="240" fill="url(#starGrad)"/>
+    <!-- 5 gold stars centered -->
+    <g transform="translate(200, 120)">
+      <g fill="#FBBF24" stroke="#D97706" stroke-width="1.5">
+        <polygon points="0,-16 4,-5 15,-5 7,2 10,13 0,6 -10,13 -7,2 -15,-5 -4,-5" transform="translate(-70, 0) scale(1.1)"/>
+        <polygon points="0,-16 4,-5 15,-5 7,2 10,13 0,6 -10,13 -7,2 -15,-5 -4,-5" transform="translate(-35, 0) scale(1.1)"/>
+        <polygon points="0,-16 4,-5 15,-5 7,2 10,13 0,6 -10,13 -7,2 -15,-5 -4,-5" transform="translate(0, 0) scale(1.1)"/>
+        <polygon points="0,-16 4,-5 15,-5 7,2 10,13 0,6 -10,13 -7,2 -15,-5 -4,-5" transform="translate(35, 0) scale(1.1)"/>
+        <polygon points="0,-16 4,-5 15,-5 7,2 10,13 0,6 -10,13 -7,2 -15,-5 -4,-5" transform="translate(70, 0) scale(1.1)"/>
+      </g>
+      <text x="0" y="55" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">고객 만족도 98.4% 달성</text>
+    </g>
+  </g>
+
+  <!-- Card 3: Rising Gold Financial Bars (15.87, 162...) -->
+  <g transform="translate(1000, 295)">
+    <rect width="400" height="240" fill="#0B0F19"/>
+    <!-- Financial bars perspective -->
+    <text x="40" y="70" font-size="28" font-weight="900" fill="#F59E0B">15.87</text>
+    <text x="180" y="60" font-size="28" font-weight="900" fill="#FBBF24">162</text>
+    <!-- 3D Bar 1 -->
+    <rect x="50" y="160" width="45" height="70" fill="url(#goldBarGrad)"/>
+    <!-- 3D Bar 2 -->
+    <rect x="130" y="120" width="45" height="110" fill="url(#goldBarGrad)"/>
+    <!-- 3D Bar 3 -->
+    <rect x="210" y="80" width="45" height="150" fill="url(#goldBarGrad)"/>
+    <!-- 3D Bar 4 -->
+    <rect x="290" y="40" width="45" height="190" fill="url(#goldBarGrad)"/>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="90" y1="795" x2="1510" y2="795" stroke="#7E7C76" stroke-width="1.2"/>
+
+  <!-- Bottom 3 Descriptions -->
+  <g transform="translate(130, 590)">
+    <text x="0" y="0" font-size="28" font-weight="800" fill="#111827">1차년도 목표</text>
+    <text x="0" y="45" font-size="19" font-weight="500" fill="#374151">초기 고객 확보와 서비스 품질 안정화에</text>
+    <text x="0" y="75" font-size="19" font-weight="500" fill="#374151">집중하여 사업 기반을 마련합니다.</text>
+  </g>
+
+  <g transform="translate(565, 590)">
+    <text x="0" y="0" font-size="28" font-weight="800" fill="#111827">2차년도 목표</text>
+    <text x="0" y="45" font-size="19" font-weight="500" fill="#374151">고객 만족도를 높여 재계약율과 신규 고객</text>
+    <text x="0" y="75" font-size="19" font-weight="500" fill="#374151">유입을 확대합니다.</text>
+  </g>
+
+  <g transform="translate(1000, 590)">
+    <text x="0" y="0" font-size="28" font-weight="800" fill="#111827">3차년도 목표</text>
+    <text x="0" y="45" font-size="19" font-weight="500" fill="#374151">안정적인 수익 창출 구조를 확립하여 지속</text>
+    <text x="0" y="75" font-size="19" font-weight="500" fill="#374151">가능한 성장 기반을 조성합니다.</text>
+  </g>
+</svg>
