@@ -13,11 +13,9 @@ import {
   MessageCircle,
   ExternalLink,
   Layers,
-  History,
-  RotateCcw,
   Play
 } from 'lucide-react';
-import { SERVICES_DATA, SERVICES_DATA_LEGACY } from '../data';
+import { SERVICES_DATA } from '../data';
 import { ServiceItem } from '../types';
 
 interface ServicesSectionProps {
@@ -32,7 +30,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
   onOpenConsultation
 }) => {
   const [selectedFilter, setSelectedFilter] = useState<'all' | 'ppt' | 'contract' | 'design' | 'marketing' | 'website' | 'video'>('all');
-  const [isLegacyView, setIsLegacyView] = useState<boolean>(false);
   const [pptPreviewIdx, setPptPreviewIdx] = useState<number>(0);
   const [contractPreviewIdx, setContractPreviewIdx] = useState<number>(0);
   const [designPreviewIdx, setDesignPreviewIdx] = useState<number>(0);
@@ -58,7 +55,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
     }
   };
 
-  const activeServicesList = isLegacyView ? SERVICES_DATA_LEGACY : SERVICES_DATA;
+  const activeServicesList = SERVICES_DATA;
 
   const filteredServices = activeServicesList.filter((s) => {
     if (selectedFilter === 'all') return true;
@@ -72,7 +69,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
       data-purpose="services-section"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Header Title with Version Status */}
+        {/* Header Title */}
         <div className="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
           <div>
             <div className="flex items-center gap-2 mb-1.5">
@@ -80,7 +77,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                 AI BUSINESS WORK POOL
               </span>
               <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-orange-100 text-[#f05a22]">
-                {isLegacyView ? '이전 7대 업무 버전' : '신규 6대 핵심 업무 영역'}
+                신규 6대 핵심 업무 영역
               </span>
             </div>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0f2439] leading-snug">
@@ -92,16 +89,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
             <p className="text-xs sm:text-sm text-gray-500 leading-relaxed max-w-lg md:text-right">
               각 영역별 <strong>실제 납품 포트폴리오와 산출물 예시</strong>를 바로 확인하실 수 있습니다.
             </p>
-            {/* Version Memory & Rollback Notice Button */}
-            <button
-              type="button"
-              onClick={() => setIsLegacyView(!isLegacyView)}
-              className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-gray-500 hover:text-gray-900 bg-gray-50 hover:bg-gray-100 px-2.5 py-1 rounded-md border border-gray-200 transition cursor-pointer"
-              title="언제든 이전 7개 업무 버전으로 전환 가능"
-            >
-              <RotateCcw className="w-3 h-3 text-[#f05a22]" />
-              <span>{isLegacyView ? '신규 6대 영역으로 복귀' : '이전 7대 업무 버전 확인/롤백'}</span>
-            </button>
           </div>
         </div>
 
@@ -453,6 +440,19 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                         >
                           3. 브랜드 필름
                         </button>
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (onOpenPortfolioCase) onOpenPortfolioCase(service, 'simulator');
+                            else onSelectService(service);
+                          }}
+                          className="text-[10px] font-bold px-2 py-0.5 rounded transition cursor-pointer bg-gradient-to-r from-rose-500 to-orange-500 text-white shadow-xs hover:brightness-110 flex items-center gap-1"
+                          title="대화형 영상 스타일 시뮬레이터 바로 열기"
+                        >
+                          <Sparkles className="w-2.5 h-2.5 text-rose-100" />
+                          <span>시뮬레이터</span>
+                        </button>
                       </div>
                     )}
 
@@ -532,26 +532,44 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                   </div>
 
                   {/* Card Actions Bottom */}
-                  <div className="pt-3 border-t border-gray-200/70 flex items-center justify-between gap-2">
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        if (onOpenPortfolioCase) onOpenPortfolioCase(service);
-                        else onSelectService(service);
-                      }}
-                      className="text-xs bg-[#0f2439] hover:bg-[#f05a22] text-white font-bold px-3 py-1.5 rounded-lg flex items-center gap-1.5 shadow-2xs transition-colors cursor-pointer"
-                    >
-                      <Briefcase className="w-3.5 h-3.5 text-[#f05a22] group-hover:text-white" />
-                      <span>포트폴리오 사례 보기</span>
-                    </button>
+                  <div className="pt-3 border-t border-gray-200/70 flex items-center justify-between gap-1.5 flex-wrap">
+                    <div className="flex items-center gap-1.5">
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          if (onOpenPortfolioCase) onOpenPortfolioCase(service);
+                          else onSelectService(service);
+                        }}
+                        className="text-xs bg-[#0f2439] hover:bg-[#f05a22] text-white font-bold px-3 py-1.5 rounded-lg flex items-center gap-1.5 shadow-2xs transition-colors cursor-pointer"
+                      >
+                        <Briefcase className="w-3.5 h-3.5 text-[#f05a22] group-hover:text-white" />
+                        <span>포트폴리오 사례 보기</span>
+                      </button>
+
+                      {service.id === 'video' && (
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            if (onOpenPortfolioCase) onOpenPortfolioCase(service, 'simulator');
+                            else onSelectService(service);
+                          }}
+                          className="text-xs bg-rose-600 hover:bg-rose-700 text-white font-bold px-2.5 py-1.5 rounded-lg flex items-center gap-1 shadow-2xs transition-colors cursor-pointer"
+                          title="대화형 영상 스타일 시뮬레이터 열기"
+                        >
+                          <Sparkles className="w-3 h-3 text-rose-200" />
+                          <span>스타일 시뮬레이터</span>
+                        </button>
+                      )}
+                    </div>
 
                     <a
                       href="http://pf.kakao.com/_xnSxeiT/chat"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="text-xs text-gray-600 hover:text-black font-semibold flex items-center gap-1 py-1 hover:underline"
+                      className="text-xs text-gray-600 hover:text-black font-semibold flex items-center gap-1 py-1 hover:underline ml-auto"
                     >
                       <MessageCircle className="w-3.5 h-3.5 text-[#f05a22]" />
                       <span>견적 문의</span>

@@ -80,9 +80,6 @@ import aiassistantMobileSlide from './assets/images/aiassistant_mobile_slide.svg
 import aiassistantQuoteSystemSlide from './assets/images/aiassistant_quote_system_slide.svg';
 import aiassistantSpecsSlide from './assets/images/aiassistant_specs_slide.svg';
 
-// 이전 7대 업무 영역 버전 백업 참조 (롤백 필요 시 src/data.legacy.backup.ts 활용 가능)
-export { SERVICES_DATA as SERVICES_DATA_LEGACY } from './data.legacy.backup';
-
 /**
  * 2026 개편: 사용자 요청에 따른 6대 핵심 비즈니스 업무 영역
  * 1. PPT제작 (사업계획서, 투자제안서)

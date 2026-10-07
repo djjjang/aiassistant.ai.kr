@@ -30,6 +30,7 @@ import {
 } from 'lucide-react';
 import { ServiceItem, ServicePortfolioCase } from '../types';
 import { ImageZoomModal } from './ImageZoomModal';
+import { VideoStyleSimulator } from './VideoStyleSimulator';
 import { parseVideoUrl } from '../utils/video';
 
 interface ServicePortfolioModalProps {
@@ -53,8 +54,15 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
       ? [{ ...service.portfolioExample, id: 'main', tags: ['대표 산출물'], deliverable: service.deliverableSample, image: service.previewImage || '', imageAlt: service.previewImageAlt || '' }]
       : [];
 
+  const isVideoService = service.id === 'video';
+  const [videoModalTab, setVideoModalTab] = useState<'portfolio' | 'simulator'>(
+    isVideoService && initialCaseId === 'simulator' ? 'simulator' : 'portfolio'
+  );
+
   const [selectedCaseId, setSelectedCaseId] = useState<string>(
-    initialCaseId && cases.some((c) => c.id === initialCaseId) ? initialCaseId : (cases[0]?.id || '')
+    initialCaseId && initialCaseId !== 'simulator' && cases.some((c) => c.id === initialCaseId)
+      ? initialCaseId
+      : (cases[0]?.id || '')
   );
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(0);
   const [viewMode, setViewMode] = useState<'gallery' | 'live' | 'video'>('gallery');
@@ -90,7 +98,12 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
 
   // Sync case when initialCaseId or service changes
   useEffect(() => {
-    if (initialCaseId && cases.some((c) => c.id === initialCaseId)) {
+    if (initialCaseId === 'simulator' && service.id === 'video') {
+      setVideoModalTab('simulator');
+    } else {
+      setVideoModalTab('portfolio');
+    }
+    if (initialCaseId && initialCaseId !== 'simulator' && cases.some((c) => c.id === initialCaseId)) {
       setSelectedCaseId(initialCaseId);
     } else if (cases[0]?.id) {
       setSelectedCaseId(cases[0].id);
@@ -157,7 +170,7 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className="bg-white rounded-2xl w-full max-w-3xl overflow-hidden shadow-2xl border border-[#eae6df] flex flex-col max-h-[92vh]">
+      <div className={`bg-white rounded-2xl w-full ${isVideoService && videoModalTab === 'simulator' ? 'max-w-4xl' : 'max-w-3xl'} overflow-hidden shadow-2xl border border-[#eae6df] flex flex-col max-h-[92vh] transition-all duration-200`}>
         {/* Header */}
         <div className="p-4 sm:p-5 bg-[#0f2439] text-white flex items-center justify-between border-b border-white/10">
           <div className="flex items-center gap-2.5">
@@ -170,11 +183,11 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
                   {service.categoryCode} • {service.number}
                 </span>
                 <span className="text-[9px] px-2 py-0.2 rounded-full bg-white/15 text-gray-200 font-semibold">
-                  실제 포트폴리오 갤러리
+                  {isVideoService && videoModalTab === 'simulator' ? '대화형 영상 스타일 시뮬레이터' : '실제 포트폴리오 갤러리'}
                 </span>
               </div>
               <h3 className="text-base sm:text-lg font-black text-white leading-tight">
-                {service.name} 납품 포트폴리오 & 작업 사례 ({cases.length}종)
+                {service.name} {isVideoService && videoModalTab === 'simulator' ? '맞춤 영상 스타일 시뮬레이터' : `납품 포트폴리오 & 작업 사례 (${cases.length}종)`}
               </h3>
             </div>
           </div>
@@ -187,17 +200,40 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
           </button>
         </div>
 
-        {/* Subheader / Tabs for 3~5 cases */}
+        {/* Subheader / Tabs for 3~5 cases & Simulator */}
         <div className="bg-[#fbf9f5] border-b border-[#eae6df] px-4 py-2.5 overflow-x-auto no-scrollbar flex items-center gap-2">
+          {isVideoService && (
+            <button
+              type="button"
+              onClick={() => setVideoModalTab('simulator')}
+              className={`text-xs px-3.5 py-1.5 rounded-lg font-bold transition-all shrink-0 flex items-center gap-1.5 cursor-pointer shadow-xs ${
+                videoModalTab === 'simulator'
+                  ? 'bg-rose-600 text-white ring-2 ring-rose-400/50'
+                  : 'bg-rose-50 text-rose-800 border border-rose-300 hover:bg-rose-100'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5 text-rose-300" />
+              <span>✨ 영상 스타일 시뮬레이터</span>
+              <span className={`text-[9px] px-1.5 py-0.2 rounded font-black ${
+                videoModalTab === 'simulator' ? 'bg-white/20 text-white' : 'bg-rose-200 text-rose-900'
+              }`}>
+                대화형
+              </span>
+            </button>
+          )}
+
           <span className="text-[11px] font-bold text-gray-400 shrink-0 uppercase tracking-wider mr-1 hidden sm:inline-block">
-            사례 선택:
+            {isVideoService ? '납품 사례:' : '사례 선택:'}
           </span>
           {cases.map((c, idx) => {
-            const isSelected = c.id === activeCase?.id;
+            const isSelected = videoModalTab === 'portfolio' && c.id === activeCase?.id;
             return (
               <button
                 key={c.id || idx}
-                onClick={() => setSelectedCaseId(c.id)}
+                onClick={() => {
+                  setSelectedCaseId(c.id);
+                  setVideoModalTab('portfolio');
+                }}
                 className={`text-xs px-3 py-1.5 rounded-lg font-bold transition-all shrink-0 flex items-center gap-1.5 cursor-pointer ${
                   isSelected
                     ? 'bg-[#0f2439] text-white shadow-xs'
@@ -217,7 +253,18 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
 
         {/* Content Body */}
         <div className="p-4 sm:p-6 overflow-y-auto space-y-4 text-xs flex-1 bg-white">
-          {activeCase && (
+          {isVideoService && videoModalTab === 'simulator' ? (
+            <VideoStyleSimulator
+              onApplyStyle={(customSummary) => {
+                onApplyService(customSummary);
+                onClose();
+              }}
+              onViewCase={(caseId) => {
+                setSelectedCaseId(caseId);
+                setVideoModalTab('portfolio');
+              }}
+            />
+          ) : activeCase && (
             <div className="space-y-4">
               {/* Slide Header Info Bar */}
               <div className="flex flex-wrap items-center justify-between gap-2 pb-0.5">
@@ -372,7 +419,17 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
                       )}
                     </div>
 
-                    <div className="flex items-center gap-2 ml-auto">
+                    <div className="flex items-center gap-2 ml-auto flex-wrap">
+                      <button
+                        type="button"
+                        onClick={() => setVideoModalTab('simulator')}
+                        className="px-2.5 py-1.5 rounded-lg text-xs font-bold transition flex items-center gap-1.5 cursor-pointer bg-gradient-to-r from-rose-600 to-orange-500 hover:from-rose-500 hover:to-orange-400 text-white shadow-xs"
+                        title="대화형 영상 스타일 시뮬레이터로 이동하여 맞춤 스타일 조합해보기"
+                      >
+                        <Sparkles className="w-3.5 h-3.5 text-rose-200" />
+                        <span>✨ 스타일 시뮬레이터</span>
+                      </button>
+
                       <button
                         type="button"
                         onClick={() => setIsVideoTesterOpen(!isVideoTesterOpen)}

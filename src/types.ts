@@ -182,5 +182,58 @@ export interface ClientTaskItem {
   deliverableUrl?: string;
   contactMethod?: 'phone' | 'email' | 'kakao' | 'slack';
   selectedPlan?: string;
+  kakaoNotificationSent?: boolean;
+  kakaoNotificationTime?: string;
+}
+
+export interface AuthUser {
+  id: string;
+  name: string;
+  email: string;
+  phone: string;
+  company: string;
+  loginProvider: 'kakao' | 'email' | 'guest';
+  credits: number;
+  planId?: string;
+  planName?: string;
+  avatar?: string;
+  loggedInAt: string;
+}
+
+export interface RetryHistoryItem {
+  attempt: number;
+  timestamp: string;
+  statusCode: number;
+  errorMessage: string;
+}
+
+export interface NotificationLogItem {
+  id: string;
+  timestamp: string;
+  recipient: string;
+  requesterName: string;
+  company: string;
+  taskType: string;
+  title: string;
+  status: 'success' | 'failed' | 'retrying';
+  statusCode: number;
+  responseMessage: string;
+  errorDetails?: string;
+  attemptCount: number;
+  maxAttempts: number;
+  retryHistory: RetryHistoryItem[];
+  channel: 'alimtalk' | 'webhook' | 'sms';
+}
+
+export interface UserProfile {
+  id: string;
+  email: string;
+  name: string;
+  company?: string;
+  phone?: string;
+  role: 'user' | 'admin';
+  credits: number;
+  plan?: string;
+  planExpiresAt?: string;
 }
 

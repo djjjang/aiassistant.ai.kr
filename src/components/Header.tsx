@@ -1,14 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, ArrowRight, MessageCircle, Sparkles, CheckCircle2, User } from 'lucide-react';
+import { Menu, X, ArrowRight, MessageCircle, Sparkles, CheckCircle2, User, LogOut } from 'lucide-react';
+import { AuthUser } from '../types';
 
 interface HeaderProps {
   onOpenConsultation?: () => void;
   onOpenPayment?: () => void;
   onOpenDashboard?: (tab?: 'tasks' | 'payments') => void;
+  onOpenMyPage?: () => void;
+  currentUser?: AuthUser | null;
+  onLogout?: () => void;
   userCredits?: number;
 }
 
-export const Header: React.FC<HeaderProps> = ({ onOpenConsultation, onOpenPayment, onOpenDashboard, userCredits = 0 }) => {
+export const Header: React.FC<HeaderProps> = ({
+  onOpenConsultation,
+  onOpenPayment,
+  onOpenDashboard,
+  onOpenMyPage,
+  currentUser = null,
+  onLogout,
+  userCredits = 0
+}) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -104,16 +116,46 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation, onOpenPaymen
           </nav>
 
           {/* Right Header Actions (Clean, High-Conversion, No Visual Clutter) */}
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            {onOpenDashboard && (
+          <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+            {/* MyPage / User Auth Action */}
+            {currentUser ? (
+              <div className="flex items-center gap-1.5">
+                <button
+                  type="button"
+                  onClick={onOpenMyPage}
+                  className="text-xs sm:text-sm font-semibold px-2.5 sm:px-3.5 py-1.5 rounded-full border border-slate-300 hover:border-slate-400 bg-white hover:bg-slate-50 text-slate-800 transition-all flex items-center gap-1.5 shadow-2xs cursor-pointer active:scale-95"
+                  title="마이페이지 (내 상담 내역 및 결제 관리)"
+                >
+                  <span className="w-5 h-5 rounded-full bg-[#f05a22] text-white font-black text-[10px] flex items-center justify-center">
+                    {currentUser.name.slice(0, 1)}
+                  </span>
+                  <span className="font-bold text-slate-800 max-w-[100px] truncate">
+                    {currentUser.name}
+                  </span>
+                  <span className="text-[10px] bg-orange-100 text-[#f05a22] font-black px-1.5 py-0.5 rounded-full">
+                    MY
+                  </span>
+                </button>
+                {onLogout && (
+                  <button
+                    type="button"
+                    onClick={onLogout}
+                    className="p-1.5 text-slate-400 hover:text-slate-700 hover:bg-black/5 rounded-full transition cursor-pointer"
+                    title="로그아웃"
+                  >
+                    <LogOut className="w-3.5 h-3.5" />
+                  </button>
+                )}
+              </div>
+            ) : (
               <button
                 type="button"
-                onClick={() => onOpenDashboard('payments')}
+                onClick={onOpenMyPage}
                 className="text-xs sm:text-sm font-semibold px-3 sm:px-3.5 py-1.5 rounded-full border border-slate-300 hover:border-slate-400 bg-white/90 hover:bg-white text-slate-800 transition-all flex items-center gap-1.5 shadow-2xs cursor-pointer active:scale-95"
-                title="마이페이지 (결제내역 & 크레딧 관리)"
+                title="로그인 / 마이페이지"
               >
                 <User className="w-3.5 h-3.5 text-[#f05a22]" />
-                <span>마이페이지</span>
+                <span>로그인 / 마이페이지</span>
                 {userCredits > 0 && (
                   <span className="bg-[#f05a22] text-white text-[10px] px-1.5 py-0.2 rounded-full font-black">
                     {userCredits}C
@@ -252,22 +294,37 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation, onOpenPaymen
 
             {/* Drawer Footer */}
             <div className="p-4 border-t border-[#eae6df] bg-[#f7f5f0] space-y-2">
-              {onOpenDashboard && (
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  if (onOpenMyPage) onOpenMyPage();
+                  else if (onOpenDashboard) onOpenDashboard('payments');
+                }}
+                className="w-full py-2.5 px-4 rounded-xl bg-white border border-slate-300 text-slate-800 text-xs font-bold shadow-2xs hover:bg-slate-50 transition flex items-center justify-between cursor-pointer"
+              >
+                <div className="flex items-center gap-2">
+                  <User className="w-4 h-4 text-[#f05a22]" />
+                  <span>{currentUser ? `${currentUser.name} 님 (마이페이지)` : '로그인 / 마이페이지'}</span>
+                </div>
+                {userCredits > 0 && (
+                  <span className="bg-[#f05a22] text-white text-[10px] px-1.5 py-0.2 rounded-full font-black">
+                    {userCredits}C 보유
+                  </span>
+                )}
+              </button>
+
+              {currentUser && onLogout && (
                 <button
                   type="button"
                   onClick={() => {
                     setMobileMenuOpen(false);
-                    onOpenDashboard('payments');
+                    onLogout();
                   }}
-                  className="w-full py-2.5 px-4 rounded-xl bg-white border border-slate-300 text-slate-800 text-xs font-bold shadow-2xs hover:bg-slate-50 transition flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full py-2 px-3 rounded-lg bg-gray-200/70 hover:bg-gray-300 text-gray-700 text-xs font-semibold transition flex items-center justify-center gap-1.5 cursor-pointer"
                 >
-                  <User className="w-4 h-4 text-[#f05a22]" />
-                  <span>마이페이지 (결제내역 & 크레딧)</span>
-                  {userCredits > 0 && (
-                    <span className="bg-[#f05a22] text-white text-[10px] px-1.5 py-0.2 rounded-full font-black">
-                      {userCredits}C 보유
-                    </span>
-                  )}
+                  <LogOut className="w-3.5 h-3.5" />
+                  <span>로그아웃</span>
                 </button>
               )}
               {onOpenConsultation && (

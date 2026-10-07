@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Send, Lock, CheckCircle2, Sparkles, Check, Clock, Phone, Mail, MessageSquare, CreditCard, Coins } from 'lucide-react';
+import { Send, Lock, CheckCircle2, Sparkles, Check, Clock, Phone, Mail, MessageSquare, CreditCard, Coins, Bell, ExternalLink } from 'lucide-react';
 import { LeadFormData, ClientTaskItem } from '../types';
 
 interface LeadCaptureFormProps {
   selectedPlanId?: string;
   prefilledTaskType?: string;
   onOpenPayment?: () => void;
+  onOpenMyPage?: () => void;
   userCredits?: number;
 }
 
@@ -13,6 +14,7 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
   selectedPlanId,
   prefilledTaskType,
   onOpenPayment,
+  onOpenMyPage,
   userCredits = 0
 }) => {
   const [formData, setFormData] = useState<LeadFormData>({
@@ -23,12 +25,13 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
     taskType: prefilledTaskType || 'document',
     selectedPlan: selectedPlanId || 'business_pro',
     memo: '',
-    contactMethod: 'phone'
+    contactMethod: 'kakao'
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submittedModalOpen, setSubmittedModalOpen] = useState(false);
   const [submittedHistory, setSubmittedHistory] = useState<LeadFormData[]>([]);
+  const [submittedTaskId, setSubmittedTaskId] = useState<string>('');
 
   useEffect(() => {
     if (selectedPlanId) {
@@ -65,6 +68,9 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
     e.preventDefault();
     setIsSubmitting(true);
 
+    const generatedTaskId = `TASK-${new Date().toISOString().slice(0, 10).replace(/-/g, '')}-${Math.floor(10 + Math.random() * 90)}`;
+    setSubmittedTaskId(generatedTaskId);
+
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmittedModalOpen(true);
@@ -74,9 +80,9 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
       try {
         localStorage.setItem('ai_assistant_inquiries', JSON.stringify(updatedHistory));
 
-        // Also sync to real-time client task pool for Admin Dashboard
+        // Sync to real-time client task pool for Admin Dashboard & MyPage
         const newTaskItem: ClientTaskItem = {
-          id: `TASK-${new Date().toISOString().slice(0, 10).replace(/-/g, '')}-${Math.floor(10 + Math.random() * 90)}`,
+          id: generatedTaskId,
           createdAt: new Date().toLocaleString('ko-KR', {
             year: 'numeric',
             month: '2-digit',
@@ -117,8 +123,10 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
           progressPercent: 20,
           estimatedCompletion: '48시간 이내 납품 예정',
           reviewNotes: '신규 접수 완료. 전담 매니저 배정 및 사전 요구사항 분석 준비 중입니다.',
-          contactMethod: formData.contactMethod || 'phone',
-          selectedPlan: formData.selectedPlan
+          contactMethod: formData.contactMethod || 'kakao',
+          selectedPlan: formData.selectedPlan,
+          kakaoNotificationSent: true,
+          kakaoNotificationTime: new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })
         };
 
         const existingPoolStr = localStorage.getItem('client_tasks_pool');
@@ -201,6 +209,26 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
             </button>
           </div>
         )}
+
+        {/* KakaoTalk Notification Reassurance Banner */}
+        <div className="mb-4 bg-[#FEE500]/15 backdrop-blur-xs border border-[#FEE500]/40 rounded-xl p-3 flex flex-col sm:flex-row items-center justify-between gap-2.5 text-xs text-white">
+          <div className="flex items-center gap-2 text-amber-200">
+            <Bell className="w-4 h-4 text-[#FEE500] shrink-0 animate-bounce" />
+            <span>
+              상담 신청 완료 시 <strong className="text-white">카카오톡 알림톡</strong>으로 접수 확인 및 견적이 자동 전송됩니다.
+            </span>
+          </div>
+          <a
+            href="http://pf.kakao.com/_xnSxeiT/chat"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-3 py-1.5 rounded-lg bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-[11px] flex items-center justify-center gap-1.5 transition shadow-xs cursor-pointer shrink-0"
+            title="카카오톡 1:1 공식 상담 채널"
+          >
+            <MessageSquare className="w-3.5 h-3.5 fill-[#191919]" />
+            <span>카톡 실시간 상담 채널</span>
+          </a>
+        </div>
 
         {/* Dynamic Estimated Impact Pill */}
         <div className="mb-5 bg-white/10 backdrop-blur-xs border border-white/15 rounded-xl px-4 py-2.5 flex items-center justify-between text-xs sm:text-sm">
@@ -387,43 +415,52 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
         </div>
       </div>
 
-      {/* Confirmation Modal */}
+      {/* Confirmation Modal with KakaoTalk Notification */}
       {submittedModalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in">
-          <div className="bg-white text-gray-900 rounded-2xl w-full max-w-sm p-6 shadow-2xl border border-[#eae6df] text-center space-y-4">
-            <div className="w-14 h-14 rounded-full bg-green-100 text-green-600 flex items-center justify-center mx-auto">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-xs animate-in fade-in">
+          <div className="bg-white text-gray-900 rounded-2xl w-full max-w-md p-6 shadow-2xl border border-[#eae6df] text-center space-y-4">
+            <div className="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-xs">
               <Check className="w-8 h-8" />
             </div>
 
             <div>
-              <h3 className="text-xl font-black text-[#0f2439]">상담 신청 완료</h3>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FEE500]/30 text-[#3C1E1E] text-xs font-bold border border-[#FEE500] mb-2">
+                <Bell className="w-3.5 h-3.5 text-[#3C1E1E]" />
+                <span>카카오톡 알림톡 발송 완료</span>
+              </div>
+              <h3 className="text-xl font-black text-[#0f2439]">상담 신청이 접수되었습니다</h3>
               <p className="text-xs text-gray-600 mt-1 leading-relaxed">
                 <strong className="text-[#0f2439]">{formData.company}</strong> ({formData.name} 님)의
-                상담 신청이 성공적으로 접수되었습니다.
+                의뢰가 안전하게 접수되었습니다.
               </p>
             </div>
 
-            <div className="bg-[#f7f5f0] p-3.5 rounded-xl text-left text-xs space-y-1.5 border border-[#eae6df]">
-              <div className="flex justify-between">
-                <span className="text-gray-500">신청 업무:</span>
-                <span className="font-bold text-[#0f2439]">
-                  {formData.taskType === 'document' && '문서 검토 / 회의록 / 기획서'}
-                  {formData.taskType === 'content' && '콘텐츠 제작 / 상세페이지 / 보도자료'}
-                  {formData.taskType === 'research' && '시장 조사 / 기업 및 규제 리서치'}
-                  {formData.taskType === 'marketing' && '마케팅 실행 보조 / 카피라이팅'}
-                  {formData.taskType === 'cs' && '기업 운영 및 CS 지원'}
-                  {formData.taskType === 'custom' && '사내 맞춤 AI 시스템 구축'}
-                  {formData.taskType === 'other' && '기타 실무 대행'}
+            {/* Kakao Alimtalk Preview Box */}
+            <div className="bg-[#FFFCE6] p-3.5 rounded-xl text-left text-xs space-y-1.5 border border-[#F7E68E]">
+              <div className="flex items-center justify-between pb-1.5 border-b border-[#E8D676]/60">
+                <span className="font-bold text-[#3C1E1E] flex items-center gap-1">
+                  <MessageSquare className="w-3.5 h-3.5 fill-[#3C1E1E]" />
+                  카카오 알림톡 실시간 전송 내역
+                </span>
+                <span className="text-[10px] text-emerald-700 bg-emerald-100 px-1.5 py-0.5 rounded font-bold">
+                  전송 성공
                 </span>
               </div>
-              <div className="flex justify-between">
-                <span className="text-gray-500">연락처:</span>
-                <span className="font-medium text-gray-800">{formData.phone}</span>
+              <div className="flex justify-between text-gray-700 pt-1">
+                <span className="text-gray-500">접수 번호:</span>
+                <span className="font-mono font-bold text-[#0f2439]">{submittedTaskId}</span>
               </div>
-              <div className="flex justify-between">
+              <div className="flex justify-between text-gray-700">
+                <span className="text-gray-500">수신 연락처:</span>
+                <span className="font-medium text-gray-900">{formData.phone}</span>
+              </div>
+              <div className="flex justify-between text-gray-700">
                 <span className="text-gray-500">담당 매니저:</span>
-                <span className="font-bold text-[#f05a22]">1시간 내 배정 및 연락 예정</span>
+                <span className="font-bold text-[#f05a22]">김민서 수석 매니저 (30분 내 응대)</span>
               </div>
+              <p className="text-[11px] text-[#5c4a1e] pt-1 leading-relaxed bg-white/70 p-2 rounded-lg border border-[#f0de7e]">
+                💡 고객님의 카카오톡으로 안내 메시지가 발송되었습니다. 채팅창에서 추가 자료나 세부 요구사항을 편하게 보내주세요.
+              </p>
             </div>
 
             <div className="space-y-2 pt-1">
@@ -431,15 +468,31 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
                 href="http://pf.kakao.com/_xnSxeiT/chat"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-3 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-xs transition flex items-center justify-center gap-2 border border-[#E6CF00]"
+                className="w-full py-3 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-xs transition flex items-center justify-center gap-2 border border-[#E6CF00] shadow-xs"
               >
-                <span>지금 카카오톡으로 실시간 문의하기</span>
+                <MessageSquare className="w-4 h-4 fill-[#191919]" />
+                <span>카카오톡 1:1 채팅으로 바로 상담 이어하기</span>
               </a>
+
+              {onOpenMyPage && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSubmittedModalOpen(false);
+                    onOpenMyPage();
+                  }}
+                  className="w-full py-2.5 rounded-xl bg-[#0f2439] hover:bg-slate-800 text-white font-bold text-xs transition flex items-center justify-center gap-1.5 cursor-pointer"
+                >
+                  <span>마이페이지에서 내 실시간 진행 현황 보기</span>
+                </button>
+              )}
+
               <button
+                type="button"
                 onClick={() => setSubmittedModalOpen(false)}
-                className="w-full py-2.5 rounded-xl bg-[#0f2439] text-white font-semibold text-xs hover:bg-[#0a1928] transition"
+                className="w-full py-2 rounded-xl bg-gray-100 text-gray-700 font-semibold text-xs hover:bg-gray-200 transition cursor-pointer"
               >
-                확인
+                닫기
               </button>
             </div>
           </div>

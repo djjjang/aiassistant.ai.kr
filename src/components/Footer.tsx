@@ -3,9 +3,15 @@ import { Lock } from 'lucide-react';
 
 interface FooterProps {
   onOpenDashboard?: (tab?: 'tasks' | 'payments') => void;
+  onOpenMyPage?: () => void;
+  onOpenAdminDashboard?: () => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onOpenDashboard }) => {
+export const Footer: React.FC<FooterProps> = ({
+  onOpenDashboard,
+  onOpenMyPage,
+  onOpenAdminDashboard
+}) => {
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -87,13 +93,16 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDashboard }) => {
                   <span>실시간 AI 상담 비서 (24h)</span>
                 </button>
               </li>
-              {onOpenDashboard && (
+              {(onOpenMyPage || onOpenDashboard) && (
                 <li>
                   <button
-                    onClick={() => onOpenDashboard('payments')}
+                    onClick={() => {
+                      if (onOpenMyPage) onOpenMyPage();
+                      else if (onOpenDashboard) onOpenDashboard('payments');
+                    }}
                     className="hover:text-[#f05a22] text-[#0f2439] font-semibold transition text-left cursor-pointer flex items-center gap-1"
                   >
-                    <span>마이페이지 (결제 &amp; 크레딧)</span>
+                    <span>마이페이지 (내 의뢰 &amp; 크레딧)</span>
                   </button>
                 </li>
               )}
@@ -150,16 +159,19 @@ export const Footer: React.FC<FooterProps> = ({ onOpenDashboard }) => {
             <p className="pt-0.5 text-gray-400">© 2025 주식회사 더마핑크 (Dermapink Co., Ltd.) All rights reserved.</p>
           </div>
 
-          {onOpenDashboard && (
+          {(onOpenAdminDashboard || onOpenDashboard) && (
             <div className="shrink-0">
               <button
                 type="button"
-                onClick={() => onOpenDashboard('tasks')}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white hover:bg-slate-50 border border-slate-300 hover:border-slate-400 text-slate-700 hover:text-slate-900 text-xs font-bold shadow-2xs transition cursor-pointer"
-                title="관리자 인증 후 의뢰 업무 실시간 진행 현황 확인"
+                onClick={() => {
+                  if (onOpenAdminDashboard) onOpenAdminDashboard();
+                  else if (onOpenDashboard) onOpenDashboard('tasks');
+                }}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold shadow-2xs transition cursor-pointer"
+                title="관리자 인증 후 실시간 상담 대시보드 관리"
               >
-                <Lock className="w-3.5 h-3.5 text-amber-600" />
-                <span>업무 진행 현황 (관리자 🔒)</span>
+                <Lock className="w-3.5 h-3.5 text-amber-400" />
+                <span>상담 대시보드 (관리자 🔒)</span>
               </button>
             </div>
           )}

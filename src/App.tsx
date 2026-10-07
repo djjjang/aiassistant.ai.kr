@@ -20,7 +20,9 @@ import { ServiceDetailModal } from './components/ServiceDetailModal';
 import { ServicePortfolioModal } from './components/ServicePortfolioModal';
 import { PaymentModal } from './components/PaymentModal';
 import { MyDashboardModal } from './components/MyDashboardModal';
-import { ServiceItem, PaymentItemSelection, PaymentReceipt } from './types';
+import { AdminDashboardModal } from './components/AdminDashboardModal';
+import { ServiceItem, PaymentItemSelection, PaymentReceipt, AuthUser } from './types';
+import { getCurrentUser, setCurrentUser, logoutUser } from './utils/auth';
 
 export default function App() {
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
@@ -29,16 +31,32 @@ export default function App() {
   const [selectedPlanId, setSelectedPlanId] = useState<string>('business_pro');
   const [prefilledTaskType, setPrefilledTaskType] = useState<string>('ppt');
 
-  // Payment & Dashboard state
+  // User Auth & Modals state
+  const [currentUser, setCurrentUserState] = useState<AuthUser | null>(() => getCurrentUser());
   const [isPaymentOpen, setIsPaymentOpen] = useState<boolean>(false);
-  const [isDashboardOpen, setIsDashboardOpen] = useState<boolean>(false);
-  const [dashboardInitialTab, setDashboardInitialTab] = useState<'tasks' | 'payments'>('tasks');
+  const [isMyPageOpen, setIsMyPageOpen] = useState<boolean>(false);
+  const [isAdminDashboardOpen, setIsAdminDashboardOpen] = useState<boolean>(false);
+  const [myPageInitialTab, setMyPageInitialTab] = useState<'tasks' | 'payments' | 'notifications'>('tasks');
   const [paymentSelection, setPaymentSelection] = useState<PaymentItemSelection | null>(null);
   const [userCredits, setUserCredits] = useState<number>(0);
 
-  const handleOpenDashboard = (tab: 'tasks' | 'payments' = 'tasks') => {
-    setDashboardInitialTab(tab);
-    setIsDashboardOpen(true);
+  const handleOpenMyPage = (tab: 'tasks' | 'payments' | 'notifications' = 'tasks') => {
+    setMyPageInitialTab(tab);
+    setIsMyPageOpen(true);
+  };
+
+  const handleOpenAdminDashboard = () => {
+    setIsAdminDashboardOpen(true);
+  };
+
+  const handleLogin = (user: AuthUser) => {
+    setCurrentUserState(user);
+    setCurrentUser(user);
+  };
+
+  const handleLogout = () => {
+    logoutUser();
+    setCurrentUserState(null);
   };
 
   useEffect(() => {
@@ -125,7 +143,10 @@ export default function App() {
       <Header
         onOpenConsultation={handleOpenConsultation}
         onOpenPayment={() => handleOpenPayment()}
-        onOpenDashboard={handleOpenDashboard}
+        onOpenDashboard={handleOpenMyPage}
+        onOpenMyPage={() => handleOpenMyPage('tasks')}
+        currentUser={currentUser}
+        onLogout={handleLogout}
         userCredits={userCredits}
       />
 
@@ -167,17 +188,22 @@ export default function App() {
           selectedPlanId={selectedPlanId}
           prefilledTaskType={prefilledTaskType}
           onOpenPayment={() => handleOpenPayment()}
+          onOpenMyPage={() => handleOpenMyPage('tasks')}
           userCredits={userCredits}
         />
       </main>
 
       {/* Footer */}
-      <Footer onOpenDashboard={handleOpenDashboard} />
+      <Footer
+        onOpenDashboard={handleOpenMyPage}
+        onOpenMyPage={() => handleOpenMyPage('tasks')}
+        onOpenAdminDashboard={handleOpenAdminDashboard}
+      />
 
       {/* Floating Action Button & Interactive AI Chatbot */}
       <FloatingCTA
         onOpenConsultation={handleOpenConsultation}
-        onOpenDashboard={handleOpenDashboard}
+        onOpenDashboard={handleOpenMyPage}
         onOpenPayment={handleOpenPayment}
       />
 
@@ -206,22 +232,36 @@ export default function App() {
         onClose={() => setIsPaymentOpen(false)}
         initialSelection={paymentSelection}
         onPaymentSuccess={handlePaymentSuccess}
-        onOpenDashboard={() => handleOpenDashboard('payments')}
+        onOpenDashboard={() => handleOpenMyPage('payments')}
       />
 
-      {/* MyPage / Payment History Dashboard Modal */}
+      {/* Customer MyPage Modal (Protected by User Login) */}
       <MyDashboardModal
-        isOpen={isDashboardOpen}
-        onClose={() => setIsDashboardOpen(false)}
+        isOpen={isMyPageOpen}
+        onClose={() => setIsMyPageOpen(false)}
         userCredits={userCredits}
         selectedPlanId={selectedPlanId}
-        initialTab={dashboardInitialTab}
+        initialTab={myPageInitialTab}
+        currentUser={currentUser}
+        onLogin={handleLogin}
+        onLogout={handleLogout}
+        onOpenAdminDashboard={handleOpenAdminDashboard}
         onOpenPayment={(selection) => {
-          setIsDashboardOpen(false);
+          setIsMyPageOpen(false);
           handleOpenPayment(selection);
         }}
         onOpenConsultation={() => {
-          setIsDashboardOpen(false);
+          setIsMyPageOpen(false);
+          handleOpenConsultation();
+        }}
+      />
+
+      {/* Admin Consultation Dashboard Modal (Admin Protected) */}
+      <AdminDashboardModal
+        isOpen={isAdminDashboardOpen}
+        onClose={() => setIsAdminDashboardOpen(false)}
+        onOpenConsultation={() => {
+          setIsAdminDashboardOpen(false);
           handleOpenConsultation();
         }}
       />

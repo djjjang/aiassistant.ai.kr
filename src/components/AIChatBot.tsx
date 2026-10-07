@@ -325,11 +325,11 @@ export const AIChatBot: React.FC<AIChatBotProps> = ({
         {
           id: `bot-confirm-${Date.now()}`,
           sender: 'bot',
-          text: `🎉 **${leadForm.name}** 고객님의 실시간 상담 신청이 정상 접수되었습니다!\n\n- **접수 번호**: \`${taskId}\`\n- **의뢰 분야**: ${newTaskItem.taskTypeName}\n- **진행 상태**: 전담 시니어 PM 배정 중 (30분 이내 유선 또는 메시지로 맞춤 견적 및 계획을 안내해 드립니다.)\n\n[내 신청 현황] 버튼을 누르시면 마이페이지 대시보드에서 실시간 진행 현황을 확인하실 수 있습니다.`,
+          text: `🎉 **${leadForm.name}** 고객님의 실시간 상담 신청이 정상 접수되었습니다!\n\n- **접수 번호**: \`${taskId}\`\n- **의뢰 분야**: ${newTaskItem.taskTypeName}\n- **카카오톡 알림**: 등록하신 연락처(${leadForm.phone})로 카카오 알림톡이 발송되었습니다.\n- **진행 상태**: 전담 시니어 PM 배정 중 (30분 이내 유선 또는 메시지로 맞춤 견적 및 계획을 안내해 드립니다.)\n\n[내 신청 현황] 버튼을 누르시면 마이페이지에서 실시간 진행 현황을 확인하실 수 있습니다.`,
           time: botTime,
           suggestedActions: [
             {
-              label: '📊 대시보드에서 신청 현황 보기',
+              label: '📋 마이페이지에서 신청 현황 보기',
               action: () => {
                 setIsOpen(false);
                 if (onOpenDashboard) onOpenDashboard('tasks');

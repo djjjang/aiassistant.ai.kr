@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Clock, CheckCircle, FileText, ArrowRight, ShieldCheck, MessageCircle, Briefcase, Sparkles, Building2, TrendingUp, Layers, ExternalLink, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ServiceItem } from '../types';
 import { ImageZoomModal } from './ImageZoomModal';
+import { VideoStyleSimulator } from './VideoStyleSimulator';
 
 interface ServiceDetailModalProps {
   service: ServiceItem | null;
@@ -16,9 +17,21 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
   onApplyService,
   onOpenPortfolioGallery
 }) => {
-  const [activeTab, setActiveTab] = useState<'specs' | 'portfolio'>('specs');
+  const isVideoService = service?.id === 'video';
+  const [activeTab, setActiveTab] = useState<'specs' | 'portfolio' | 'simulator'>(isVideoService ? 'simulator' : 'specs');
   const [selectedCaseIdx, setSelectedCaseIdx] = useState<number>(0);
   const [slideIdx, setSlideIdx] = useState<number>(0);
+
+  useEffect(() => {
+    if (service?.id === 'video') {
+      setActiveTab('simulator');
+    } else {
+      setActiveTab('specs');
+    }
+    setSelectedCaseIdx(0);
+    setSlideIdx(0);
+  }, [service]);
+
   const [zoomImage, setZoomImage] = useState<{
     url: string;
     alt: string;
@@ -50,7 +63,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200">
-      <div className="bg-white rounded-2xl w-full max-w-lg overflow-hidden shadow-2xl border border-[#eae6df] flex flex-col max-h-[90vh]">
+      <div className={`bg-white rounded-2xl w-full ${isVideoService && activeTab === 'simulator' ? 'max-w-4xl' : 'max-w-lg'} overflow-hidden shadow-2xl border border-[#eae6df] flex flex-col max-h-[92vh] transition-all duration-300`}>
         {/* Header */}
         <div className="p-5 bg-[#0f2439] text-white flex items-center justify-between">
           <div>
@@ -74,7 +87,24 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
         </div>
 
         {/* Tab Switcher */}
-        <div className="flex border-b border-[#eae6df] bg-[#f7f5f0] p-1.5 gap-1.5">
+        <div className="flex border-b border-[#eae6df] bg-[#f7f5f0] p-1.5 gap-1.5 flex-wrap">
+          {isVideoService && (
+            <button
+              type="button"
+              onClick={() => setActiveTab('simulator')}
+              className={`flex-1 py-2 px-3 rounded-lg text-xs font-bold transition flex items-center justify-center gap-1.5 cursor-pointer ${
+                activeTab === 'simulator'
+                  ? 'bg-rose-600 text-white shadow-xs'
+                  : 'text-rose-900 bg-rose-50 hover:bg-rose-100 border border-rose-200'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5 text-rose-300" />
+              <span>영상 스타일 시뮬레이터</span>
+              <span className="text-[9px] px-1.5 py-0.2 rounded bg-white/20 text-white font-black">
+                대화형
+              </span>
+            </button>
+          )}
           <button
             type="button"
             onClick={() => setActiveTab('specs')}
@@ -106,7 +136,20 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
 
         {/* Body Content */}
         <div className="p-5 overflow-y-auto space-y-4 text-xs flex-1">
-          {activeTab === 'specs' ? (
+          {activeTab === 'simulator' && isVideoService ? (
+            <VideoStyleSimulator
+              onApplyStyle={(customSummary) => {
+                onApplyService(`${service.name} (${customSummary})`);
+                onClose();
+              }}
+              onViewCase={(caseId) => {
+                if (onOpenPortfolioGallery) {
+                  onClose();
+                  onOpenPortfolioGallery(service);
+                }
+              }}
+            />
+          ) : activeTab === 'specs' ? (
             <>
               {/* Service Preview Image / Slide Viewer */}
               {activeImageUrl && (

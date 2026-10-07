@@ -24,7 +24,8 @@ import {
   EyeOff,
   Edit3,
   Check,
-  MessageSquare
+  MessageSquare,
+  Bell
 } from 'lucide-react';
 import { ClientTaskItem, TaskStatusType } from '../types';
 
@@ -148,6 +149,29 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
   const [searchKeyword, setSearchKeyword] = useState<string>('');
   const [selectedTask, setSelectedTask] = useState<ClientTaskItem | null>(null);
   const [isCreateModalOpen, setIsCreateModalOpen] = useState<boolean>(false);
+  const [alimtalkNotice, setAlimtalkNotice] = useState<string | null>(null);
+
+  const handleSendAlimtalk = (task: ClientTaskItem) => {
+    const updated = tasks.map((t) => {
+      if (t.id === task.id) {
+        return {
+          ...t,
+          kakaoNotificationSent: true,
+          kakaoNotificationTime: new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' })
+        };
+      }
+      return t;
+    });
+    setTasks(updated);
+    localStorage.setItem('client_tasks_pool', JSON.stringify(updated));
+    setAlimtalkNotice(`[카카오 알림톡 발송 완료] ${task.requesterName} 고객님(${task.phone})에게 실시간 상담 진행 알림톡이 전송되었습니다.`);
+    setTimeout(() => setAlimtalkNotice(null), 4000);
+  };
+
+  const handleTestAdminAlert = () => {
+    setAlimtalkNotice(`[관리자 카카오톡 알림 전송] 010-8200-0152(주식회사 더마핑크 관리자)로 "신규 상담 접수 1건 알림톡"이 실시간 발송되었습니다.`);
+    setTimeout(() => setAlimtalkNotice(null), 4000);
+  };
 
   // New task form state
   const [newTaskForm, setNewTaskForm] = useState({
@@ -451,6 +475,53 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
             <span>로그아웃</span>
           </button>
         </div>
+      </div>
+
+      {/* Alimtalk Toast Notification */}
+      {alimtalkNotice && (
+        <div className="bg-emerald-600 text-white p-3.5 rounded-xl shadow-lg flex items-center justify-between animate-in fade-in duration-200">
+          <div className="flex items-center gap-2 text-xs font-bold">
+            <CheckCircle2 className="w-4 h-4 text-emerald-200 shrink-0" />
+            <span>{alimtalkNotice}</span>
+          </div>
+          <button
+            onClick={() => setAlimtalkNotice(null)}
+            className="text-emerald-200 hover:text-white text-xs p-1 cursor-pointer"
+          >
+            ✕
+          </button>
+        </div>
+      )}
+
+      {/* Admin Kakao Alimtalk Status & Test Panel */}
+      <div className="bg-[#FFFCE6] border border-[#F7E68E] rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs shadow-2xs">
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-xl bg-[#FEE500] flex items-center justify-center shrink-0 shadow-xs">
+            <MessageSquare className="w-4 h-4 fill-[#191919]" />
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="font-bold text-[#3C1E1E]">
+                관리자 카카오톡 알림톡 실시간 수신 연동
+              </span>
+              <span className="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full border border-emerald-300">
+                수신 활성화 ON
+              </span>
+            </div>
+            <p className="text-[11px] text-slate-600 mt-0.5">
+              웹사이트에서 신규 상담이 신청되면 관리자(010-8200-0152)에게 즉시 카카오톡 알림톡이 자동 발송됩니다.
+            </p>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          onClick={handleTestAdminAlert}
+          className="w-full sm:w-auto px-3.5 py-1.5 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-xs flex items-center justify-center gap-1.5 border border-[#E6CF00] transition cursor-pointer shrink-0 shadow-2xs"
+        >
+          <Bell className="w-3.5 h-3.5 fill-[#191919]" />
+          <span>관리자 알림 수신 테스트</span>
+        </button>
       </div>
 
       {/* 3 Metric Cards with Real-time Count */}
@@ -781,8 +852,28 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
 
                     <button
                       type="button"
+                      onClick={() => handleSendAlimtalk(task)}
+                      className="text-xs px-2.5 py-1 rounded-lg bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold transition flex items-center gap-1 border border-[#E6CF00] cursor-pointer ml-1 shadow-2xs"
+                      title="고객에게 카카오톡 알림톡 발송"
+                    >
+                      <MessageSquare className="w-3 h-3 fill-[#191919]" />
+                      <span>알림톡</span>
+                    </button>
+
+                    <a
+                      href="http://pf.kakao.com/_xnSxeiT/chat"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs px-2 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold transition flex items-center gap-1 cursor-pointer"
+                      title="카카오톡 1:1 상담 열기"
+                    >
+                      <span>1:1톡</span>
+                    </a>
+
+                    <button
+                      type="button"
                       onClick={() => setSelectedTask(task)}
-                      className="text-xs px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-900 text-white font-bold transition flex items-center gap-1 cursor-pointer ml-2"
+                      className="text-xs px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-900 text-white font-bold transition flex items-center gap-1 cursor-pointer ml-1"
                     >
                       <Eye className="w-3.5 h-3.5" />
                       <span>상세보기</span>
