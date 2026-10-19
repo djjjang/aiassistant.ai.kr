@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Send, Lock, CheckCircle2, Sparkles, Check, Clock, Phone, Mail, MessageSquare, CreditCard, Coins, Bell, ExternalLink } from 'lucide-react';
 import { LeadFormData, ClientTaskItem } from '../types';
+import { sendAdminNotification } from '../services/notificationService';
+import { triggerAdminAlertReception } from '../utils/soundAndNotification';
 
 interface LeadCaptureFormProps {
   selectedPlanId?: string;
@@ -132,6 +134,25 @@ export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({
         const existingPoolStr = localStorage.getItem('client_tasks_pool');
         const pool = existingPoolStr ? JSON.parse(existingPoolStr) : [];
         localStorage.setItem('client_tasks_pool', JSON.stringify([newTaskItem, ...pool]));
+
+        // Dispatch real-time Admin Notification (010-8200-0152) and trigger reception
+        sendAdminNotification({
+          company: formData.company,
+          name: formData.name,
+          phone: formData.phone,
+          taskType: formData.taskType,
+          taskTypeName: newTaskItem.taskTypeName,
+          memo: formData.memo,
+          selectedPlan: formData.selectedPlan,
+          isTest: false
+        }).catch((err) => console.warn('Admin notification dispatch error:', err));
+
+        // Trigger local notification chime & desktop alert
+        triggerAdminAlertReception({
+          title: `🔔 [AI비서 관리자 알림] 신규 상담 신청 접수`,
+          body: `• 관리자(010-8200-0152) 수신\n• 의뢰인: ${formData.name} (${formData.company})\n• 연락처: ${formData.phone}\n• 분야: ${newTaskItem.taskTypeName}`,
+          onClickUrl: 'http://pf.kakao.com/_xnSxeiT/chat'
+        });
       } catch {
         // ignore
       }

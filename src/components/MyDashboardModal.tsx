@@ -32,6 +32,7 @@ import { PRICING_PLANS } from '../data';
 import { DERMAPINK_BANK_INFO } from './PaymentModal';
 import { CustomerTaskHistory } from './CustomerTaskHistory';
 import { SAMPLE_USERS, loginWithKakao, loginWithEmailOrPhone } from '../utils/auth';
+import { playNotificationSound, showDesktopNotification } from '../utils/soundAndNotification';
 
 interface MyDashboardModalProps {
   isOpen: boolean;
@@ -172,6 +173,11 @@ export const MyDashboardModal: React.FC<MyDashboardModalProps> = ({
   };
 
   const handleTriggerKakaoTest = () => {
+    playNotificationSound();
+    showDesktopNotification('💬 [카카오 알림톡 수신 테스트]', {
+      body: `고객님(${currentUser?.phone || '010-0000-0000'})의 카카오톡으로 실시간 상담 알림톡이 정상 발송되었습니다.`,
+      onClickUrl: 'http://pf.kakao.com/_xnSxeiT/chat'
+    });
     setKakaoTestSent(true);
   };
 

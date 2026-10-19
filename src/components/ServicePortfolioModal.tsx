@@ -26,12 +26,16 @@ import {
   Check,
   HelpCircle,
   Volume2,
-  Video
+  Video,
+  Maximize2,
+  Minimize2,
+  Hand
 } from 'lucide-react';
 import { ServiceItem, ServicePortfolioCase } from '../types';
 import { ImageZoomModal } from './ImageZoomModal';
 import { VideoStyleSimulator } from './VideoStyleSimulator';
 import { parseVideoUrl } from '../utils/video';
+import { InteractivePinchZoomImage } from './InteractivePinchZoomImage';
 
 interface ServicePortfolioModalProps {
   service: ServiceItem | null;
@@ -76,6 +80,42 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
   const [isVideoTesterOpen, setIsVideoTesterOpen] = useState<boolean>(false);
   const [isCopiedSnippet, setIsCopiedSnippet] = useState<boolean>(false);
   const [videoPlayTrigger, setVideoPlayTrigger] = useState<number>(0);
+
+  // Dedicated Full-Page View state (Default on mobile screens < 768px, toggleable on all devices)
+  const [isFullPage, setIsFullPage] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 768;
+    }
+    return false;
+  });
+
+  // Automatically adapt to mobile screen size
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsFullPage(true);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Mobile Back Button integration via browser history state
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    window.history.pushState({ modal: 'portfolio-viewer' }, '');
+
+    const handlePopState = () => {
+      onClose();
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [onClose]);
 
   const [zoomImage, setZoomImage] = useState<{
     url: string;
@@ -169,12 +209,22 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
   const isAIAssistantSite = activeCase?.liveUrl?.includes('aiassistant.ai.kr') ?? false;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 bg-black/70 backdrop-blur-sm animate-in fade-in duration-200">
-      <div className={`bg-white rounded-2xl w-full ${isVideoService && videoModalTab === 'simulator' ? 'max-w-4xl' : 'max-w-3xl'} overflow-hidden shadow-2xl border border-[#eae6df] flex flex-col max-h-[92vh] transition-all duration-200`}>
-        {/* Header */}
-        <div className="p-4 sm:p-5 bg-[#0f2439] text-white flex items-center justify-between border-b border-white/10">
-          <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-lg bg-[#f05a22] text-white flex items-center justify-center font-black text-xs shadow-xs">
+    <div className={`fixed inset-0 z-50 flex items-center justify-center ${isFullPage ? 'p-0' : 'p-0 sm:p-4'} bg-black/80 backdrop-blur-sm animate-in fade-in duration-200`}>
+      <div className={`bg-white w-full ${isFullPage ? 'h-full rounded-none max-w-none max-h-none' : 'rounded-none sm:rounded-2xl max-w-4xl max-h-full sm:max-h-[92vh]'} overflow-hidden shadow-2xl border-0 sm:border border-[#eae6df] flex flex-col transition-all duration-200`}>
+        {/* Header with Mobile Back & Full-Page Toggle */}
+        <div className="p-3.5 sm:p-5 bg-[#0f2439] text-white flex items-center justify-between border-b border-white/10 shrink-0">
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Mobile / Full-Page Back button */}
+            <button
+              onClick={onClose}
+              className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition cursor-pointer border border-white/10"
+              title="업무영역 목록으로 돌아가기"
+            >
+              <ChevronLeft className="w-4 h-4 text-[#f05a22]" />
+              <span>목록으로</span>
+            </button>
+
+            <div className="hidden xs:flex w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#f05a22] text-white items-center justify-center font-black text-xs shadow-xs">
               AI
             </div>
             <div>
@@ -182,22 +232,36 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
                 <span className="text-[10px] font-bold text-[#f05a22] tracking-wider uppercase">
                   {service.categoryCode} • {service.number}
                 </span>
-                <span className="text-[9px] px-2 py-0.2 rounded-full bg-white/15 text-gray-200 font-semibold">
+                <span className="text-[9px] px-2 py-0.2 rounded-full bg-white/15 text-gray-200 font-semibold hidden sm:inline-block">
                   {isVideoService && videoModalTab === 'simulator' ? '대화형 영상 스타일 시뮬레이터' : '실제 포트폴리오 갤러리'}
                 </span>
               </div>
-              <h3 className="text-base sm:text-lg font-black text-white leading-tight">
-                {service.name} {isVideoService && videoModalTab === 'simulator' ? '맞춤 영상 스타일 시뮬레이터' : `납품 포트폴리오 & 작업 사례 (${cases.length}종)`}
+              <h3 className="text-sm sm:text-base md:text-lg font-black text-white leading-tight truncate max-w-[180px] sm:max-w-md">
+                {service.name} {isVideoService && videoModalTab === 'simulator' ? '시뮬레이터' : `포트폴리오 (${cases.length}종)`}
               </h3>
             </div>
           </div>
-          <button
-            onClick={onClose}
-            className="p-1.5 text-gray-300 hover:text-white rounded-lg hover:bg-white/10 transition cursor-pointer"
-            aria-label="포트폴리오 창 닫기"
-          >
-            <X className="w-5 h-5" />
-          </button>
+
+          <div className="flex items-center gap-1.5 sm:gap-2">
+            {/* View Mode Toggle: Window vs Dedicated Full Page */}
+            <button
+              type="button"
+              onClick={() => setIsFullPage(!isFullPage)}
+              className="px-2.5 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-gray-200 hover:text-white text-xs font-semibold flex items-center gap-1.5 transition cursor-pointer border border-white/10"
+              title={isFullPage ? '창 모드로 축소' : '모바일 전체화면 전용 페이지로 확대'}
+            >
+              {isFullPage ? <Minimize2 className="w-3.5 h-3.5 text-orange-300" /> : <Maximize2 className="w-3.5 h-3.5 text-orange-300" />}
+              <span className="hidden sm:inline">{isFullPage ? '창 모드' : '새 페이지로 보기'}</span>
+            </button>
+
+            <button
+              onClick={onClose}
+              className="p-1.5 text-gray-300 hover:text-white rounded-lg hover:bg-white/10 transition cursor-pointer"
+              aria-label="포트폴리오 창 닫기"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         {/* Subheader / Tabs for 3~5 cases & Simulator */}
@@ -973,33 +1037,16 @@ videoPlatform: 'youtube',`;
                   </div>
                 </div>
               ) : (
-                /* Hero Showcase with Slide Navigation (한 장씩 넘겨보기) */
-                <div className={`relative rounded-2xl overflow-hidden border border-gray-200 shadow-md bg-[#18181b] group flex items-center justify-center ${isVerticalLong ? 'h-[460px] sm:h-[530px]' : 'aspect-16/9'}`}>
-                <div
-                  onClick={() => {
-                    if (currentImageUrl) {
-                      setZoomImage({
-                        url: currentImageUrl,
-                        alt: currentImageAlt || activeCase.title,
-                        title: currentImageTitle,
-                        subtitle: `${activeCase.client} • ${currentSlide ? currentSlide.pageLabel : (activeCase.deliverable || '실제 납품 산출물')}`,
-                        gallery: activeCase.galleryImages,
-                        initialIndex: activeSlideIndex,
-                        initialMode: 'image',
-                        originalText: activeCase.originalText,
-                        originalDocumentMeta: activeCase.originalDocumentMeta
-                      });
-                    }
-                  }}
-                  className="w-full h-full cursor-zoom-in flex items-center justify-center p-1 sm:p-2"
-                  title="클릭하여 고해상도 확대 검토하기"
-                >
-                  <img
+                <div className={`relative rounded-2xl overflow-hidden border border-gray-200 shadow-md bg-[#18181b] group flex flex-col items-center justify-center ${isVerticalLong ? 'h-[460px] sm:h-[530px]' : isFullPage ? 'h-[360px] xs:h-[420px] sm:h-[480px]' : 'h-[280px] xs:h-[340px] sm:h-[440px]'}`}>
+                  <InteractivePinchZoomImage
                     src={currentImageUrl || 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1000&q=80'}
                     alt={currentImageAlt || activeCase.title}
-                    className="w-full h-full object-contain group-hover:scale-[1.01] transition-transform duration-300"
+                    className="w-full h-full object-contain"
+                    containerClassName="w-full h-full flex items-center justify-center"
+                    maxScale={5}
+                    minScale={1}
+                    showControls={true}
                   />
-                </div>
 
                 {/* Left / Right Chevron Arrows for Slide Flip */}
                 {hasGallery && activeCase.galleryImages!.length > 1 && (
@@ -1102,46 +1149,53 @@ videoPlatform: 'youtube',`;
               </div>
             )}
 
-            {/* Slide Quick Navigation Bar (한 장씩 넘겨보기 컨트롤러) */}
-            {viewMode === 'gallery' && hasGallery && activeCase.galleryImages!.length > 1 && (
+            {/* Slide Quick Navigation Bar (한 장씩 넘겨보기 & 손가락 핀치 줌 가이드) */}
+            {viewMode === 'gallery' && (
               <div className="p-3 rounded-xl bg-gradient-to-r from-orange-50 via-amber-50 to-orange-50 border border-orange-200/80 shadow-2xs space-y-2">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <div className="flex items-center gap-2 min-w-0">
                       <span className="text-[10px] font-black px-2 py-0.5 rounded bg-[#f05a22] text-white shadow-2xs shrink-0">
-                        {currentSlide?.pageLabel}
+                        {currentSlide?.pageLabel || '산출물'}
                       </span>
                       <span className="text-xs font-bold text-gray-900 truncate">
-                        {currentSlide?.title}
+                        {currentSlide?.title || activeCase.title}
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-1.5 shrink-0">
-                      <button
-                        type="button"
-                        disabled={activeSlideIndex === 0}
-                        onClick={() => setActiveSlideIndex((prev) => Math.max(0, prev - 1))}
-                        className="px-2.5 py-1.5 rounded-lg bg-white border border-gray-300 text-gray-700 hover:text-[#f05a22] text-xs font-bold transition flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed shadow-2xs cursor-pointer hover:border-[#f05a22]"
-                        title="이전 슬라이드 (←)"
-                      >
-                        <ChevronLeft className="w-4 h-4" />
-                        <span>이전 장</span>
-                      </button>
-
-                      <div className="px-2.5 py-1 rounded-lg bg-white border border-gray-200 text-xs font-mono font-black text-[#0f2439]">
-                        {activeSlideIndex + 1} / {activeCase.galleryImages!.length}
-                      </div>
-
-                      <button
-                        type="button"
-                        disabled={activeSlideIndex === activeCase.galleryImages!.length - 1}
-                        onClick={() => setActiveSlideIndex((prev) => Math.min(activeCase.galleryImages!.length - 1, prev + 1))}
-                        className="px-2.5 py-1.5 rounded-lg bg-[#0f2439] hover:bg-[#1a3854] text-white text-xs font-bold transition flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed shadow-2xs cursor-pointer"
-                        title="다음 슬라이드 (→)"
-                      >
-                        <span>다음 장</span>
-                        <ChevronRight className="w-4 h-4" />
-                      </button>
+                    <div className="flex items-center gap-1.5 text-slate-700 bg-white/80 px-2.5 py-1 rounded-lg border border-orange-200/60 text-[11px] font-semibold">
+                      <Hand className="w-3.5 h-3.5 text-[#f05a22] shrink-0" />
+                      <span>손가락 두 개로 늘려서 자유롭게 확대 가능</span>
                     </div>
+
+                    {hasGallery && activeCase.galleryImages!.length > 1 && (
+                      <div className="flex items-center gap-1.5 shrink-0 ml-auto">
+                        <button
+                          type="button"
+                          disabled={activeSlideIndex === 0}
+                          onClick={() => setActiveSlideIndex((prev) => Math.max(0, prev - 1))}
+                          className="px-2.5 py-1.5 rounded-lg bg-white border border-gray-300 text-gray-700 hover:text-[#f05a22] text-xs font-bold transition flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed shadow-2xs cursor-pointer hover:border-[#f05a22]"
+                          title="이전 슬라이드 (←)"
+                        >
+                          <ChevronLeft className="w-4 h-4" />
+                          <span>이전 장</span>
+                        </button>
+
+                        <div className="px-2.5 py-1 rounded-lg bg-white border border-gray-200 text-xs font-mono font-black text-[#0f2439]">
+                          {activeSlideIndex + 1} / {activeCase.galleryImages!.length}
+                        </div>
+
+                        <button
+                          type="button"
+                          disabled={activeSlideIndex === activeCase.galleryImages!.length - 1}
+                          onClick={() => setActiveSlideIndex((prev) => Math.min(activeCase.galleryImages!.length - 1, prev + 1))}
+                          className="px-2.5 py-1.5 rounded-lg bg-[#0f2439] hover:bg-[#1a3854] text-white text-xs font-bold transition flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed shadow-2xs cursor-pointer"
+                          title="다음 슬라이드 (→)"
+                        >
+                          <span>다음 장</span>
+                          <ChevronRight className="w-4 h-4" />
+                        </button>
+                      </div>
+                    )}
                   </div>
 
                   {/* 1p ~ 8p Direct Jump Pill Buttons */}
@@ -1444,28 +1498,38 @@ videoPlatform: 'youtube',`;
         </div>
 
         {/* Footer Actions */}
-        <div className="p-4 border-t border-[#eae6df] bg-[#f7f5f0] flex flex-col sm:flex-row items-center justify-between gap-2.5">
+        <div className="p-3 sm:p-4 border-t border-[#eae6df] bg-[#f7f5f0] flex flex-col sm:flex-row items-center justify-between gap-2.5 shrink-0">
           <div className="text-[11px] text-gray-500 hidden sm:flex items-center gap-1.5">
             <CheckCircle2 className="w-3.5 h-3.5 text-green-600" />
-            <span>검수율 99.8% 전문가 100% 휴먼 리뷰 보장</span>
+            <span>검수율 99.8% 전문가 100% 휴먼 리뷰 보장 • 24시간 실시간 접수</span>
           </div>
 
           <div className="flex items-center gap-2 w-full sm:w-auto">
             <button
               onClick={onClose}
-              className="py-2.5 px-4 rounded-xl border border-gray-300 text-gray-600 font-bold hover:bg-gray-100 transition text-xs cursor-pointer"
+              className="py-2.5 px-3.5 rounded-xl border border-gray-300 text-gray-600 font-bold hover:bg-gray-100 transition text-xs cursor-pointer"
             >
               닫기
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                onApplyService(service.name);
+                onClose();
+              }}
+              className="py-2.5 px-4 rounded-xl bg-[#0f2439] hover:bg-[#1a3854] text-white font-bold transition text-xs cursor-pointer shadow-xs whitespace-nowrap"
+            >
+              온라인 상담 신청
             </button>
             <a
               href="http://pf.kakao.com/_xnSxeiT/chat"
               target="_blank"
               rel="noopener noreferrer"
               onClick={onClose}
-              className="flex-1 sm:flex-initial py-2.5 px-5 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-black transition shadow-md flex items-center justify-center gap-2 text-xs border border-[#E6CF00] cursor-pointer"
+              className="flex-1 sm:flex-initial py-2.5 px-4 sm:px-5 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-black transition shadow-md flex items-center justify-center gap-1.5 text-xs border border-[#E6CF00] cursor-pointer whitespace-nowrap"
             >
               <MessageCircle className="w-4 h-4 fill-[#191919]" />
-              <span>{service.name} 포트폴리오 견적 상담</span>
+              <span>카카오톡 즉시 상담</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
           </div>

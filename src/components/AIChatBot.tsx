@@ -19,6 +19,8 @@ import {
   Minimize2
 } from 'lucide-react';
 import { ClientTaskItem, LeadFormData } from '../types';
+import { sendAdminNotification } from '../services/notificationService';
+import { triggerAdminAlertReception } from '../utils/soundAndNotification';
 
 interface Message {
   id: string;
@@ -311,6 +313,25 @@ export const AIChatBot: React.FC<AIChatBotProps> = ({
           contactMethod: 'phone'
         };
         localStorage.setItem('ai_assistant_inquiries', JSON.stringify([inqData, ...inqList]));
+
+        // Dispatch real-time Admin Notification (010-8200-0152) and trigger reception
+        sendAdminNotification({
+          company: leadForm.company,
+          name: leadForm.name,
+          phone: leadForm.phone,
+          taskType: leadForm.taskType,
+          taskTypeName: newTaskItem.taskTypeName,
+          memo: leadForm.memo || 'AI 챗봇을 통한 실시간 상담 신청',
+          selectedPlan: 'business_pro',
+          isTest: false
+        }).catch((err) => console.warn('Admin notification dispatch error:', err));
+
+        // Trigger local notification chime & desktop alert
+        triggerAdminAlertReception({
+          title: `🔔 [AI비서 관리자 알림] AI 챗봇 실시간 상담 접수`,
+          body: `• 관리자(010-8200-0152) 수신\n• 의뢰인: ${leadForm.name} (${leadForm.company})\n• 연락처: ${leadForm.phone}\n• 분야: ${newTaskItem.taskTypeName}`,
+          onClickUrl: 'http://pf.kakao.com/_xnSxeiT/chat'
+        });
       } catch (err) {
         console.error(err);
       }

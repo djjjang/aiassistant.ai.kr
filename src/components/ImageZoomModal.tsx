@@ -20,6 +20,7 @@ import {
   Eye,
   Type
 } from 'lucide-react';
+import { InteractivePinchZoomImage } from './InteractivePinchZoomImage';
 
 export interface ZoomGalleryItem {
   url: string;
@@ -444,23 +445,17 @@ export const ImageZoomModal: React.FC<ImageZoomModalProps> = ({
             </div>
           ) : (
             <div
-              className="relative flex items-center justify-center transition-transform duration-200"
-              style={{ transform: `scale(${zoomLevel})`, transformOrigin: 'center center' }}
+              className="w-full h-full flex items-center justify-center p-1 sm:p-4"
               onClick={(e) => e.stopPropagation()}
             >
-              <img
+              <InteractivePinchZoomImage
                 src={activeUrl}
                 alt={imageAlt || activeTitle}
-                onLoad={() => {
-                  setIsLoading(false);
-                  setHasError(false);
-                }}
-                onError={() => {
-                  console.warn('Image failed to load in zoom modal:', activeUrl);
-                  setIsLoading(false);
-                  setHasError(true);
-                }}
-                className="rounded-xl shadow-2xl object-contain border border-white/20 max-w-[92vw] max-h-[78vh] w-auto h-auto"
+                containerClassName="w-full h-full max-w-[94vw] max-h-[80vh] flex items-center justify-center rounded-xl overflow-hidden shadow-2xl border border-white/20 bg-black/40"
+                className="rounded-lg object-contain max-w-full max-h-full"
+                maxScale={5}
+                minScale={1}
+                showControls={true}
               />
             </div>
           )}

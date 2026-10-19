@@ -120,3 +120,40 @@ export async function updateNotificationSettings(settings: {
     return false;
   }
 }
+
+export interface LatestAlertData {
+  id: string;
+  timestamp: string;
+  recipient: string;
+  company: string;
+  requesterName: string;
+  phone: string;
+  taskTypeName: string;
+  memo: string;
+  isTest?: boolean;
+  kakaoChannelUrl?: string;
+}
+
+export async function getLatestAdminAlert(): Promise<LatestAlertData | null> {
+  try {
+    const res = await fetch('/api/notifications/latest');
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.latestAlert || null;
+  } catch {
+    return null;
+  }
+}
+
+export async function ackAdminAlert(id?: string): Promise<boolean> {
+  try {
+    const res = await fetch('/api/notifications/ack', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ id })
+    });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
