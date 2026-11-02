@@ -18,11 +18,7 @@ import { Footer } from './components/Footer';
 import { FloatingCTA } from './components/FloatingCTA';
 import { ServiceDetailModal } from './components/ServiceDetailModal';
 import { ServicePortfolioModal } from './components/ServicePortfolioModal';
-import { PaymentModal } from './components/PaymentModal';
-import { MyDashboardModal } from './components/MyDashboardModal';
-import { AdminDashboardModal } from './components/AdminDashboardModal';
-import { ServiceItem, PaymentItemSelection, PaymentReceipt, AuthUser } from './types';
-import { getCurrentUser, setCurrentUser, logoutUser } from './utils/auth';
+import { ServiceItem } from './types';
 import { SERVICES_DATA } from './data';
 
 // 업무영역 레퍼런스는 /services/:id 별도 페이지 (예: /services/ppt?case=사례id)
@@ -45,36 +41,7 @@ export default function App() {
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
   const [selectedPortfolioService, setSelectedPortfolioService] = useState<ServiceItem | null>(null);
   const [selectedPortfolioCaseId, setSelectedPortfolioCaseId] = useState<string | undefined>(undefined);
-  const [selectedPlanId, setSelectedPlanId] = useState<string>('business_pro');
   const [prefilledTaskType, setPrefilledTaskType] = useState<string>(servicePageItem?.id || 'ppt');
-
-  // User Auth & Modals state
-  const [currentUser, setCurrentUserState] = useState<AuthUser | null>(() => getCurrentUser());
-  const [isPaymentOpen, setIsPaymentOpen] = useState<boolean>(false);
-  const [isMyPageOpen, setIsMyPageOpen] = useState<boolean>(false);
-  const [isAdminDashboardOpen, setIsAdminDashboardOpen] = useState<boolean>(false);
-  const [myPageInitialTab, setMyPageInitialTab] = useState<'tasks' | 'payments' | 'notifications'>('tasks');
-  const [paymentSelection, setPaymentSelection] = useState<PaymentItemSelection | null>(null);
-  const [userCredits, setUserCredits] = useState<number>(0);
-
-  const handleOpenMyPage = (tab: 'tasks' | 'payments' | 'notifications' = 'tasks') => {
-    setMyPageInitialTab(tab);
-    setIsMyPageOpen(true);
-  };
-
-  const handleOpenAdminDashboard = () => {
-    setIsAdminDashboardOpen(true);
-  };
-
-  const handleLogin = (user: AuthUser) => {
-    setCurrentUserState(user);
-    setCurrentUser(user);
-  };
-
-  const handleLogout = () => {
-    logoutUser();
-    setCurrentUserState(null);
-  };
 
   // 레퍼런스 페이지 제목 + 다른 페이지에서 /#섹션 으로 왔을 때 그 위치로 이동
   useEffect(() => {
@@ -93,17 +60,6 @@ export default function App() {
         }, ms)
       );
       return () => timers.forEach(clearTimeout);
-    }
-  }, []);
-
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem('user_credits');
-      if (stored) {
-        setUserCredits(parseInt(stored, 10));
-      }
-    } catch (err) {
-      console.error(err);
     }
   }, []);
 
@@ -140,8 +96,7 @@ export default function App() {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleSelectPlan = (planId: string) => {
-    setSelectedPlanId(planId);
+  const handleSelectPlan = (_planId: string) => {
     const el = document.getElementById('lead-form');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
@@ -151,38 +106,14 @@ export default function App() {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const handleOpenPayment = (selection?: PaymentItemSelection) => {
-    setPaymentSelection(selection || {
-      type: 'plan',
-      id: selectedPlanId,
-      name: '비즈니스 프로',
-      price: 590000,
-      billingCycle: 'monthly'
-    });
-    setIsPaymentOpen(true);
-  };
-
-  const handlePaymentSuccess = (receipt: PaymentReceipt) => {
-    if (receipt.creditsAdded) {
-      setUserCredits((prev) => prev + (receipt.creditsAdded || 0));
-    }
-    if (receipt.activatedPlanId) {
-      setSelectedPlanId(receipt.activatedPlanId);
-    }
-  };
+  // 실제 결제(토스페이먼츠)를 붙이기 전까지 결제 버튼은 상담 신청으로 보낸다.
+  // 예전에는 돈이 나가지 않는데도 「결제 완료」 화면이 떴음
+  const handleOpenPayment = () => handleOpenConsultation();
 
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-[#1a202c] relative flex flex-col font-sans overflow-x-clip">
       {/* Sticky / Fixed Header */}
-      <Header
-        onOpenConsultation={handleOpenConsultation}
-        onOpenPayment={() => handleOpenPayment()}
-        onOpenDashboard={handleOpenMyPage}
-        onOpenMyPage={() => handleOpenMyPage('tasks')}
-        currentUser={currentUser}
-        onLogout={handleLogout}
-        userCredits={userCredits}
-      />
+      <Header onOpenConsultation={handleOpenConsultation} />
 
       {/* Main Content Sections with top offset for fixed header */}
       <main className="flex-1 pt-14 sm:pt-16">
@@ -212,7 +143,7 @@ export default function App() {
         {/* 3. Expert Team Section (Human-In-The-Loop with Real Photos) */}
         <ExpertTeamSection />
 
-        {/* 4. How It Works (4-step, 48h turnaround) */}
+        {/* 4. How It Works */}
         <HowItWorks />
 
         {/* 5. Portfolio Showcase (Case Studies Slider) */}
@@ -232,29 +163,17 @@ export default function App() {
 
         {/* 9. Interactive Lead Capture Form */}
         <LeadCaptureForm
-          selectedPlanId={selectedPlanId}
           prefilledTaskType={prefilledTaskType}
-          onOpenPayment={() => handleOpenPayment()}
-          onOpenMyPage={() => handleOpenMyPage('tasks')}
-          userCredits={userCredits}
         />
         </>
         )}
       </main>
 
       {/* Footer */}
-      <Footer
-        onOpenDashboard={handleOpenMyPage}
-        onOpenMyPage={() => handleOpenMyPage('tasks')}
-        onOpenAdminDashboard={handleOpenAdminDashboard}
-      />
+      <Footer />
 
       {/* Floating Action Button & Interactive AI Chatbot */}
-      <FloatingCTA
-        onOpenConsultation={handleOpenConsultation}
-        onOpenDashboard={handleOpenMyPage}
-        onOpenPayment={handleOpenPayment}
-      />
+      <FloatingCTA onOpenConsultation={handleOpenConsultation} />
 
       {/* Service Detail Modal */}
       <ServiceDetailModal
@@ -275,45 +194,6 @@ export default function App() {
         onApplyService={handleApplyServiceFromModal}
       />
 
-      {/* Payment & Credit Recharge Modal */}
-      <PaymentModal
-        isOpen={isPaymentOpen}
-        onClose={() => setIsPaymentOpen(false)}
-        initialSelection={paymentSelection}
-        onPaymentSuccess={handlePaymentSuccess}
-        onOpenDashboard={() => handleOpenMyPage('payments')}
-      />
-
-      {/* Customer MyPage Modal (Protected by User Login) */}
-      <MyDashboardModal
-        isOpen={isMyPageOpen}
-        onClose={() => setIsMyPageOpen(false)}
-        userCredits={userCredits}
-        selectedPlanId={selectedPlanId}
-        initialTab={myPageInitialTab}
-        currentUser={currentUser}
-        onLogin={handleLogin}
-        onLogout={handleLogout}
-        onOpenAdminDashboard={handleOpenAdminDashboard}
-        onOpenPayment={(selection) => {
-          setIsMyPageOpen(false);
-          handleOpenPayment(selection);
-        }}
-        onOpenConsultation={() => {
-          setIsMyPageOpen(false);
-          handleOpenConsultation();
-        }}
-      />
-
-      {/* Admin Consultation Dashboard Modal (Admin Protected) */}
-      <AdminDashboardModal
-        isOpen={isAdminDashboardOpen}
-        onClose={() => setIsAdminDashboardOpen(false)}
-        onOpenConsultation={() => {
-          setIsAdminDashboardOpen(false);
-          handleOpenConsultation();
-        }}
-      />
     </div>
   );
 }

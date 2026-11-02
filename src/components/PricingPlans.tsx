@@ -202,14 +202,14 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
 
                     <div className="space-y-2">
                       <button
-                        onClick={() => handlePlanCheckout(plan.id, plan.name, price || 590000)}
+                        onClick={() => handlePlanCheckout(plan.id, plan.name, price || 0)}
                         className="w-full py-3.5 text-center text-xs font-black rounded-xl bg-[#f05a22] text-white hover:bg-[#d94e1c] shadow-highlight transition active:scale-[0.98] cursor-pointer flex items-center justify-center gap-1.5"
                       >
                         <CreditCard className="w-3.5 h-3.5" />
-                        <span>카드 / 간편결제로 시작하기</span>
+                        <span>이 요금제로 상담 신청</span>
                       </button>
                       <p className="text-[10px] text-center text-gray-400">
-                        카카오페이 / 네이버페이 / 카드 즉시 결제 가능
+                        결제 방법은 상담 후 안내드립니다
                       </p>
                     </div>
                   </div>
@@ -359,7 +359,7 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
                       }`}
                     >
                       <Coins className="w-3.5 h-3.5" />
-                      <span>{totalCredits} 크레딧 충전하기</span>
+                      <span>{totalCredits} 크레딧 상담 신청</span>
                     </button>
                   </div>
                 );

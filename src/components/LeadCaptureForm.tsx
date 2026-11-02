@@ -6,7 +6,7 @@ import { LeadFormData } from '../types';
 // 채널은 폼 내용을 자동으로 받을 수 없으므로, 신청 내용을 복사해 두고 채팅창을 열어 붙여넣게 한다.
 export const KAKAO_CHAT_URL = 'https://pf.kakao.com/_xnSxeiT/chat';
 
-const TASK_TYPE_NAMES: Record<string, string> = {
+export const TASK_TYPE_NAMES: Record<string, string> = {
   ppt: 'PPT 제작 (사업계획서·제안서)',
   contract: '계약서 초안·쟁점 정리',
   design: '디자인 (포스터·카드뉴스·배너·상세페이지)',
@@ -19,10 +19,6 @@ const TASK_TYPE_NAMES: Record<string, string> = {
 interface LeadCaptureFormProps {
   selectedPlanId?: string;
   prefilledTaskType?: string;
-  // 아래 두 값은 예전 결제·마이페이지 기능용. 지금은 쓰지 않음
-  onOpenPayment?: () => void;
-  onOpenMyPage?: () => void;
-  userCredits?: number;
 }
 
 export const LeadCaptureForm: React.FC<LeadCaptureFormProps> = ({ prefilledTaskType }) => {

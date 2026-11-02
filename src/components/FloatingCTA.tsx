@@ -4,14 +4,10 @@ import { AIChatBot } from './AIChatBot';
 
 interface FloatingCTAProps {
   onOpenConsultation?: (taskType?: string) => void;
-  onOpenDashboard?: (tab?: 'tasks' | 'payments') => void;
-  onOpenPayment?: () => void;
 }
 
 export const FloatingCTA: React.FC<FloatingCTAProps> = ({
-  onOpenConsultation,
-  onOpenDashboard,
-  onOpenPayment
+  onOpenConsultation
 }) => {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
@@ -47,8 +43,6 @@ export const FloatingCTA: React.FC<FloatingCTAProps> = ({
       {/* Interactive AI Chatbot Widget */}
       <AIChatBot
         onOpenConsultation={onOpenConsultation}
-        onOpenDashboard={onOpenDashboard}
-        onOpenPayment={onOpenPayment}
       />
 
       {/* KakaoTalk Consultation Floating Button */}

@@ -18,9 +18,13 @@ import {
   HelpCircle,
   Minimize2
 } from 'lucide-react';
-import { ClientTaskItem, LeadFormData } from '../types';
-import { sendAdminNotification } from '../services/notificationService';
-import { triggerAdminAlertReception } from '../utils/soundAndNotification';
+import { KAKAO_CHAT_URL, TASK_TYPE_NAMES as CHAT_TASK_TYPE_NAMES } from './LeadCaptureForm';
+
+// 답변 속 **굵게** 표시를 실제 굵은 글씨로 바꾼다
+const renderBold = (text: string) =>
+  text.split(/(\*\*[^*]+\*\*)/g).map((part, i) =>
+    part.startsWith('**') && part.endsWith('**') ? <strong key={i}>{part.slice(2, -2)}</strong> : part
+  );
 
 interface Message {
   id: string;
@@ -38,14 +42,10 @@ interface Message {
 
 interface AIChatBotProps {
   onOpenConsultation?: (taskType?: string) => void;
-  onOpenDashboard?: (tab?: 'tasks' | 'payments') => void;
-  onOpenPayment?: () => void;
 }
 
 export const AIChatBot: React.FC<AIChatBotProps> = ({
-  onOpenConsultation,
-  onOpenDashboard,
-  onOpenPayment
+  onOpenConsultation
 }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [inputValue, setInputValue] = useState<string>('');
@@ -61,7 +61,6 @@ export const AIChatBot: React.FC<AIChatBotProps> = ({
     taskType: 'ppt',
     memo: ''
   });
-  const [isSubmittingLead, setIsSubmittingLead] = useState<boolean>(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -289,121 +288,46 @@ AI비서는 PPT·계약서 초안·디자인·마케팅·사이트·영상 같�
       return;
     }
 
-    setIsSubmittingLead(true);
+    // 챗봇 신청도 아래 상담 폼과 같은 방식: 내용을 복사하고 카카오톡 채널을 연다.
+    // (예전에는 이 브라우저 안에만 저장되고 아무에게도 전달되지 않았음)
+    const message = [
+      '[AI비서 상담 신청]',
+      `회사/브랜드: ${leadForm.company || '(미입력)'}`,
+      `담당자: ${leadForm.name}`,
+      `연락처: ${leadForm.phone}`,
+      `맡기고 싶은 일: ${CHAT_TASK_TYPE_NAMES[leadForm.taskType] || leadForm.taskType}`,
+      leadForm.memo ? `요청 내용: ${leadForm.memo}` : ''
+    ]
+      .filter(Boolean)
+      .join('\n');
 
-    setTimeout(() => {
-      const taskId = `TASK-${new Date().toISOString().slice(0, 10).replace(/-/g, '')}-${Math.floor(100 + Math.random() * 900)}`;
+    navigator.clipboard?.writeText(message).catch(() => {});
+    window.open(KAKAO_CHAT_URL, '_blank', 'noopener,noreferrer');
 
-      const newTaskItem: ClientTaskItem = {
-        id: taskId,
-        createdAt: new Date().toLocaleString('ko-KR', {
-          year: 'numeric',
-          month: '2-digit',
-          day: '2-digit',
-          hour: '2-digit',
-          minute: '2-digit'
-        }),
-        company: leadForm.company || '(회사명 미입력)',
-        requesterName: leadForm.name,
-        phone: leadForm.phone,
-        email: '',
-        taskType: leadForm.taskType,
-        taskTypeName:
-          leadForm.taskType === 'ppt'
-            ? 'PPT 제작 (사업계획서·투자제안서)'
-            : leadForm.taskType === 'contract'
-            ? '계약서 업무 (용역·납품·제휴 검토)'
-            : leadForm.taskType === 'design'
-            ? '디자인 업무 (상세페이지·배너)'
-            : leadForm.taskType === 'marketing'
-            ? '마케팅 업무 (SNS자동화·보도자료)'
-            : leadForm.taskType === 'website'
-            ? '사이트 제작 (홈페이지·쇼핑몰)'
-            : leadForm.taskType === 'video'
-            ? '영상 제작 (숏폼 바이럴·영상편집)'
-            : '맞춤 실무 의뢰',
-        title: leadForm.memo ? leadForm.memo.slice(0, 30) : `${leadForm.company || leadForm.name} 실무 상담 접수`,
-        memo: leadForm.memo || 'AI 챗봇을 통한 실시간 간편 상담 접수 건',
-        status: 'received',
-        priority: 'normal',
-        assignedManager: '이수민 시니어 PM (신속 배정)',
-        progressPercent: 20,
-        estimatedCompletion: '일정은 상담 후 안내',
-        reviewNotes: 'AI 챗봇 간편 접수 완료. 30분 이내 유선/카카오톡으로 사전 진단 상담이 진행됩니다.',
-        contactMethod: 'phone',
-        selectedPlan: 'business_pro'
-      };
+    setShowInChatForm(false);
+    setLeadForm({ company: '', name: '', phone: '', taskType: 'ppt', memo: '' });
 
-      try {
-        const poolStr = localStorage.getItem('client_tasks_pool');
-        const pool = poolStr ? JSON.parse(poolStr) : [];
-        localStorage.setItem('client_tasks_pool', JSON.stringify([newTaskItem, ...pool]));
-
-        const inqStr = localStorage.getItem('ai_assistant_inquiries');
-        const inqList = inqStr ? JSON.parse(inqStr) : [];
-        const inqData: LeadFormData = {
-          company: leadForm.company,
-          name: leadForm.name,
-          phone: leadForm.phone,
-          email: '',
-          taskType: leadForm.taskType,
-          selectedPlan: 'business_pro',
-          memo: leadForm.memo,
-          contactMethod: 'phone'
-        };
-        localStorage.setItem('ai_assistant_inquiries', JSON.stringify([inqData, ...inqList]));
-
-        // Dispatch real-time Admin Notification (010-8200-0152) and trigger reception
-        sendAdminNotification({
-          company: leadForm.company,
-          name: leadForm.name,
-          phone: leadForm.phone,
-          taskType: leadForm.taskType,
-          taskTypeName: newTaskItem.taskTypeName,
-          memo: leadForm.memo || 'AI 챗봇을 통한 실시간 상담 신청',
-          selectedPlan: 'business_pro',
-          isTest: false
-        }).catch((err) => console.warn('Admin notification dispatch error:', err));
-
-        // Trigger local notification chime & desktop alert
-        triggerAdminAlertReception({
-          title: `🔔 [AI비서 관리자 알림] AI 챗봇 실시간 상담 접수`,
-          body: `• 관리자(010-8200-0152) 수신\n• 의뢰인: ${leadForm.name} (${leadForm.company})\n• 연락처: ${leadForm.phone}\n• 분야: ${newTaskItem.taskTypeName}`,
-          onClickUrl: 'https://pf.kakao.com/_xnSxeiT/chat'
-        });
-      } catch (err) {
-        console.error(err);
+    const botTime = new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' });
+    setMessages((prev) => [
+      ...prev,
+      {
+        id: `bot-confirm-${Date.now()}`,
+        sender: 'bot',
+        text: `신청 내용을 복사하고 카카오톡 상담창을 열었습니다.\n\n**채팅창에 붙여넣고 보내 주시면 접수됩니다.** 평일 당일 안에 답변드립니다.\n\n카카오톡 창이 열리지 않았다면 아래 버튼을 눌러 주세요.`,
+        time: botTime,
+        suggestedActions: [
+          {
+            label: '💬 카카오톡 상담창 열기',
+            action: () => window.open(KAKAO_CHAT_URL, '_blank', 'noopener,noreferrer'),
+            primary: true
+          },
+          {
+            label: '📁 포트폴리오 사례 구경하기',
+            action: () => handleScrollToPortfolio()
+          }
+        ]
       }
-
-      setIsSubmittingLead(false);
-      setShowInChatForm(false);
-      setLeadForm({ company: '', name: '', phone: '', taskType: 'ppt', memo: '' });
-
-      const botTime = new Date().toLocaleTimeString('ko-KR', { hour: '2-digit', minute: '2-digit' });
-      setMessages((prev) => [
-        ...prev,
-        {
-          id: `bot-confirm-${Date.now()}`,
-          sender: 'bot',
-          text: `🎉 **${leadForm.name}** 고객님의 실시간 상담 신청이 정상 접수되었습니다!\n\n- **접수 번호**: \`${taskId}\`\n- **의뢰 분야**: ${newTaskItem.taskTypeName}\n- **카카오톡 알림**: 등록하신 연락처(${leadForm.phone})로 카카오 알림톡이 발송되었습니다.\n- **진행 상태**: 전담 시니어 PM 배정 중 (30분 이내 유선 또는 메시지로 맞춤 견적 및 계획을 안내해 드립니다.)\n\n[내 신청 현황] 버튼을 누르시면 마이페이지에서 실시간 진행 현황을 확인하실 수 있습니다.`,
-          time: botTime,
-          suggestedActions: [
-            {
-              label: '📋 마이페이지에서 신청 현황 보기',
-              action: () => {
-                setIsOpen(false);
-                if (onOpenDashboard) onOpenDashboard('tasks');
-              },
-              primary: true
-            },
-            {
-              label: '📁 포트폴리오 사례 구경하기',
-              action: () => handleScrollToPortfolio()
-            }
-          ]
-        }
-      ]);
-    }, 700);
+    ]);
   };
 
   return (
@@ -464,11 +388,10 @@ AI비서는 PPT·계약서 초안·디자인·마케팅·사이트·영상 같�
               <div>
                 <div className="flex items-center gap-1.5">
                   <h3 className="text-sm font-bold tracking-tight text-white">AI 실시간 업무 상담 비서</h3>
-                  <span className="text-[10px] bg-blue-500/30 text-blue-200 px-1.5 py-0.5 rounded font-mono font-medium">Gemini 3.8</span>
                 </div>
                 <p className="text-[11px] text-blue-200/80 flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-                  실시간 응답 가능 · 48시간 내 완성 보장
+                  평일 당일 답변 · 간단한 작업 평균 영업일 2일
                 </p>
               </div>
             </div>
@@ -528,7 +451,7 @@ AI비서는 PPT·계약서 초안·디자인·마케팅·사이트·영상 같�
                         : 'bg-white text-slate-800 rounded-tl-xs border border-slate-200/90 whitespace-pre-wrap'
                     }`}
                   >
-                    {msg.text}
+                    {renderBold(msg.text)}
                   </div>
 
                   <span className="text-[10px] text-slate-400 mt-1 px-1">
@@ -569,7 +492,7 @@ AI비서는 PPT·계약서 초안·디자인·마케팅·사이트·영상 같�
                 <div className="flex items-center justify-between mb-3 pb-2 border-b border-slate-100">
                   <div className="flex items-center gap-1.5">
                     <Briefcase className="w-4 h-4 text-blue-600" />
-                    <h4 className="text-xs font-bold text-slate-900">채팅으로 즉시 1:1 상담 접수</h4>
+                    <h4 className="text-xs font-bold text-slate-900">카카오톡으로 상담 신청</h4>
                   </div>
                   <button
                     onClick={() => setShowInChatForm(false)}
@@ -623,13 +546,9 @@ AI비서는 PPT·계약서 초안·디자인·마케팅·사이트·영상 같�
                       onChange={(e) => setLeadForm({ ...leadForm, taskType: e.target.value })}
                       className="w-full text-xs px-2.5 py-1.5 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50"
                     >
-                      <option value="ppt">IR 피치덱 & 사업계획서 (PPT)</option>
-                      <option value="contract">계약서 & 법률문서 AI 검토</option>
-                      <option value="design">디자인 & 상세페이지/배너</option>
-                      <option value="marketing">마케팅 & 보도자료/SNS 콘텐츠</option>
-                      <option value="website">웹사이트 & 랜딩페이지 구축</option>
-                      <option value="video">숏폼 & 바이럴 영상 제작</option>
-                      <option value="other">기타 맞춤 실무 업무</option>
+                      {Object.entries(CHAT_TASK_TYPE_NAMES).map(([id, label]) => (
+                        <option key={id} value={id}>{label}</option>
+                      ))}
                     </select>
                   </div>
 
@@ -654,17 +573,10 @@ AI비서는 PPT·계약서 초안·디자인·마케팅·사이트·영상 같�
                     </button>
                     <button
                       type="submit"
-                      disabled={isSubmittingLead}
                       className="text-xs px-4 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg shadow-sm flex items-center gap-1 active:scale-95 transition cursor-pointer disabled:opacity-50"
                     >
-                      {isSubmittingLead ? (
-                        <>접수 중...</>
-                      ) : (
-                        <>
-                          <CheckCircle2 className="w-3.5 h-3.5" />
-                          무료 상담 접수
-                        </>
-                      )}
+                      <CheckCircle2 className="w-3.5 h-3.5" />
+                      복사하고 카카오톡 열기
                     </button>
                   </div>
                 </form>
@@ -755,7 +667,7 @@ AI비서는 PPT·계약서 초안·디자인·마케팅·사이트·영상 같�
             <div className="flex items-center justify-between mt-2 px-1 text-[10px] text-slate-400">
               <span className="flex items-center gap-1">
                 <ShieldCheck className="w-3 h-3 text-emerald-500" />
-                상담 내용은 100% 암호화 및 비공개 처리됩니다.
+                상담 내용은 외부에 공개하지 않습니다.
               </span>
               <span>Enter 키로 전송</span>
             </div>

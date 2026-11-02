@@ -1,17 +1,6 @@
 import React from 'react';
-import { Lock } from 'lucide-react';
 
-interface FooterProps {
-  onOpenDashboard?: (tab?: 'tasks' | 'payments') => void;
-  onOpenMyPage?: () => void;
-  onOpenAdminDashboard?: () => void;
-}
-
-export const Footer: React.FC<FooterProps> = ({
-  onOpenDashboard,
-  onOpenMyPage,
-  onOpenAdminDashboard
-}) => {
+export const Footer: React.FC = () => {
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
@@ -94,19 +83,6 @@ export const Footer: React.FC<FooterProps> = ({
                   <span>실시간 AI 상담 비서 (24h)</span>
                 </button>
               </li>
-              {(onOpenMyPage || onOpenDashboard) && (
-                <li>
-                  <button
-                    onClick={() => {
-                      if (onOpenMyPage) onOpenMyPage();
-                      else if (onOpenDashboard) onOpenDashboard('payments');
-                    }}
-                    className="hover:text-[#f05a22] text-[#0f2439] font-semibold transition text-left cursor-pointer flex items-center gap-1"
-                  >
-                    <span>마이페이지 (내 의뢰 &amp; 크레딧)</span>
-                  </button>
-                </li>
-              )}
               <li>
                 <button
                   onClick={() => scrollToSection('faq-section')}
@@ -148,7 +124,7 @@ export const Footer: React.FC<FooterProps> = ({
           </div>
         </div>
 
-        {/* Legal Disclaimer & Admin Console Access */}
+        {/* Legal Disclaimer */}
         <div className="pt-5 border-t border-gray-300/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-gray-500">
           <div className="space-y-1 leading-relaxed">
             <p>
@@ -160,22 +136,6 @@ export const Footer: React.FC<FooterProps> = ({
             <p className="pt-0.5 text-gray-400">© 2025 주식회사 더마핑크 (Dermapink Co., Ltd.) All rights reserved.</p>
           </div>
 
-          {(onOpenAdminDashboard || onOpenDashboard) && (
-            <div className="shrink-0">
-              <button
-                type="button"
-                onClick={() => {
-                  if (onOpenAdminDashboard) onOpenAdminDashboard();
-                  else if (onOpenDashboard) onOpenDashboard('tasks');
-                }}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold shadow-2xs transition cursor-pointer"
-                title="관리자 인증 후 실시간 상담 대시보드 관리"
-              >
-                <Lock className="w-3.5 h-3.5 text-amber-400" />
-                <span>상담 대시보드 (관리자 🔒)</span>
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </footer>
