@@ -54,7 +54,7 @@ export const FloatingCTA: React.FC<FloatingCTAProps> = ({
       {/* KakaoTalk Consultation Floating Button */}
       <a
         id="floating-kakao-cta"
-        href="http://pf.kakao.com/_xnSxeiT/chat"
+        href="https://pf.kakao.com/_xnSxeiT/chat"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="카카오톡 1:1 상담 바로가기"

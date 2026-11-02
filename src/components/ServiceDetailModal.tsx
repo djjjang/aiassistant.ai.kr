@@ -535,7 +535,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
         {/* Footer */}
         <div className="p-4 border-t border-[#eae6df] bg-[#f7f5f0] flex flex-col gap-2">
           <a
-            href="http://pf.kakao.com/_xnSxeiT/chat"
+            href="https://pf.kakao.com/_xnSxeiT/chat"
             target="_blank"
             rel="noopener noreferrer"
             onClick={onClose}

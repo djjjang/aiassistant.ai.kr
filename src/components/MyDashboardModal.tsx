@@ -176,7 +176,7 @@ export const MyDashboardModal: React.FC<MyDashboardModalProps> = ({
     playNotificationSound();
     showDesktopNotification('💬 [카카오 알림톡 수신 테스트]', {
       body: `고객님(${currentUser?.phone || '010-0000-0000'})의 카카오톡으로 실시간 상담 알림톡이 정상 발송되었습니다.`,
-      onClickUrl: 'http://pf.kakao.com/_xnSxeiT/chat'
+      onClickUrl: 'https://pf.kakao.com/_xnSxeiT/chat'
     });
     setKakaoTestSent(true);
   };
@@ -693,7 +693,7 @@ export const MyDashboardModal: React.FC<MyDashboardModalProps> = ({
 
                     <div className="flex items-center justify-end gap-2 pt-1">
                       <a
-                        href="http://pf.kakao.com/_xnSxeiT/chat"
+                        href="https://pf.kakao.com/_xnSxeiT/chat"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-4 py-2 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-xs flex items-center gap-1.5 transition"

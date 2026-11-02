@@ -225,7 +225,7 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
       // 4. Trigger desktop OS notification
       showDesktopNotification('🔔 [AI비서 관리자 알림 수신 성공]', {
         body: `관리자(010-8200-0152)로 테스트 알림이 정상 도착했습니다!\n카카오톡 채널 또는 대시보드에서 즉시 확인 가능합니다.`,
-        onClickUrl: 'http://pf.kakao.com/_xnSxeiT/chat'
+        onClickUrl: 'https://pf.kakao.com/_xnSxeiT/chat'
       });
 
       // 5. Open rich result modal
@@ -236,7 +236,7 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
         message: result.message || '관리자 알림톡 및 실시간 푸시 수신 성공 (200 OK)',
         logId: result.log?.id || `LOG-${Date.now()}`,
         timestamp: new Date().toLocaleTimeString('ko-KR'),
-        kakaoChannelUrl: 'http://pf.kakao.com/_xnSxeiT/chat'
+        kakaoChannelUrl: 'https://pf.kakao.com/_xnSxeiT/chat'
       });
       setTestResultModalOpen(true);
       setAlimtalkNotice(`[관리자 알림 수신 성공] 010-8200-0152로 알림톡 및 푸시 알림이 정상 수신되었습니다! (200 OK)`);
@@ -276,7 +276,7 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
             `🔔 [신규 상담 알림] ${latest.company} (${latest.requesterName})`,
             {
               body: `관리자(010-8200-0152) 수신\n분야: ${latest.taskTypeName}\n연락처: ${latest.phone}`,
-              onClickUrl: latest.kakaoChannelUrl || 'http://pf.kakao.com/_xnSxeiT/chat'
+              onClickUrl: latest.kakaoChannelUrl || 'https://pf.kakao.com/_xnSxeiT/chat'
             }
           );
         }
@@ -634,7 +634,7 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
           </div>
           <div className="flex items-center gap-2 w-full sm:w-auto shrink-0">
             <a
-              href="http://pf.kakao.com/_xnSxeiT/chat"
+              href="https://pf.kakao.com/_xnSxeiT/chat"
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 sm:flex-none px-3.5 py-2 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-xs flex items-center justify-center gap-1.5 transition"
@@ -702,7 +702,7 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
           </button>
 
           <a
-            href="http://pf.kakao.com/_xnSxeiT/chat"
+            href="https://pf.kakao.com/_xnSxeiT/chat"
             target="_blank"
             rel="noopener noreferrer"
             className="px-3 py-2 rounded-xl bg-[#3C1E1E] hover:bg-black text-[#FEE500] font-bold text-xs flex items-center gap-1.5 transition"
@@ -1051,7 +1051,7 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
                     </button>
 
                     <a
-                      href="http://pf.kakao.com/_xnSxeiT/chat"
+                      href="https://pf.kakao.com/_xnSxeiT/chat"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-xs px-2 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold transition flex items-center gap-1 cursor-pointer"
@@ -1398,7 +1398,7 @@ export const TaskProgressDashboard: React.FC<TaskProgressDashboardProps> = () =>
                   <span>알림음 다시 울리기</span>
                 </button>
                 <a
-                  href="http://pf.kakao.com/_xnSxeiT/chat"
+                  href="https://pf.kakao.com/_xnSxeiT/chat"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-3.5 py-2.5 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-black text-xs flex items-center justify-center gap-1.5 transition shadow-2xs"

@@ -166,7 +166,7 @@ export const Header: React.FC<HeaderProps> = ({
 
             <a
               id="header-cta-btn"
-              href="http://pf.kakao.com/_xnSxeiT/chat"
+              href="https://pf.kakao.com/_xnSxeiT/chat"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs sm:text-sm font-bold px-3 sm:px-3.5 py-1.5 rounded-full bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] shadow-xs active:scale-95 transition-all flex items-center gap-1.5 border border-[#E6CF00]"
@@ -341,7 +341,7 @@ export const Header: React.FC<HeaderProps> = ({
                 </button>
               )}
               <a
-                href="http://pf.kakao.com/_xnSxeiT/chat"
+                href="https://pf.kakao.com/_xnSxeiT/chat"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}

@@ -147,7 +147,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSelectService }) => 
               <div className="flex flex-col sm:flex-row gap-3">
                 <a
                   id="hero-primary-cta"
-                  href="http://pf.kakao.com/_xnSxeiT/chat"
+                  href="https://pf.kakao.com/_xnSxeiT/chat"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 flex items-center justify-center gap-2.5 py-3.5 px-5 rounded-xl bg-[#f05a22] text-white font-bold text-sm sm:text-base shadow-highlight hover:bg-[#d94e1c] active:scale-[0.98] transition-all cursor-pointer select-none"
@@ -282,7 +282,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSelectService }) => 
                   <span className="font-medium text-gray-200">현재 대기 없이 1:1 전담 매니저 배정 가능</span>
                 </div>
                 <a
-                  href="http://pf.kakao.com/_xnSxeiT/chat"
+                  href="https://pf.kakao.com/_xnSxeiT/chat"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs text-[#f05a22] font-bold hover:underline flex items-center cursor-pointer"

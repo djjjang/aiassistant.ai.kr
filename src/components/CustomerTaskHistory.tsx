@@ -356,7 +356,7 @@ export const CustomerTaskHistory: React.FC<CustomerTaskHistoryProps> = ({
                   </div>
 
                   <a
-                    href="http://pf.kakao.com/_xnSxeiT/chat"
+                    href="https://pf.kakao.com/_xnSxeiT/chat"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto px-3.5 py-2 rounded-xl bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] font-bold text-xs flex items-center justify-center gap-1.5 border border-[#E6CF00] transition shadow-2xs shrink-0 cursor-pointer"

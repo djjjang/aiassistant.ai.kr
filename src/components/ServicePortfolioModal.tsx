@@ -1522,7 +1522,7 @@ videoPlatform: 'youtube',`;
               온라인 상담 신청
             </button>
             <a
-              href="http://pf.kakao.com/_xnSxeiT/chat"
+              href="https://pf.kakao.com/_xnSxeiT/chat"
               target="_blank"
               rel="noopener noreferrer"
               onClick={onClose}

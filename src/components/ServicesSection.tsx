@@ -565,7 +565,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                     </div>
 
                     <a
-                      href="http://pf.kakao.com/_xnSxeiT/chat"
+                      href="https://pf.kakao.com/_xnSxeiT/chat"
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
@@ -599,7 +599,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
           <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
             <a
               id="services-kakao-cta"
-              href="http://pf.kakao.com/_xnSxeiT/chat"
+              href="https://pf.kakao.com/_xnSxeiT/chat"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center w-full sm:w-auto py-3.5 px-6 rounded-xl bg-[#f05a22] text-white font-bold text-sm shadow-md hover:bg-[#d94e1c] active:scale-[0.98] transition cursor-pointer gap-2 select-none"
