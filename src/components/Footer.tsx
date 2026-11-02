@@ -117,7 +117,7 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <a href="#lead-form" className="hover:text-[#f05a22] transition">
-                  보안 및 비밀유지(NDA) 보장
+                  요청 시 비밀유지계약(NDA)
                 </a>
               </li>
               <li>

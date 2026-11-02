@@ -266,8 +266,8 @@ export const VideoStyleSimulator: React.FC<VideoStyleSimulatorProps> = ({
 • 사운드 구성: ${activeAudio.title}
 • 자막 스타일: ${activeSubtitle.title}
 • 핵심 특징: ${activeStyle.features.join(', ')}
-• 권장 납기: 영업일 24~48시간 이내
-• 예상 제작 견적: ₩180,000 ~ ₩350,000 상당 (비즈니스 프로 플랜 시 전액 무료 포함)`;
+• 권장 납기: 평균 영업일 2일 (길이에 따라 다름)
+• 예상 제작 견적: ₩180,000 ~ ₩350,000 상당 (비즈니스 프로 구독 시 구독 안에서 요청 가능)`;
   }, [activeFormat, activeStyle, activeAudio, activeSubtitle]);
 
   const handleCopy = () => {
@@ -633,7 +633,7 @@ export const VideoStyleSimulator: React.FC<VideoStyleSimulatorProps> = ({
                 맞춤 제작 견적 & 일정 요약
               </span>
               <span className="text-[10px] font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
-                정찰제 보장
+                예상 견적
               </span>
             </div>
 
@@ -646,7 +646,7 @@ export const VideoStyleSimulator: React.FC<VideoStyleSimulatorProps> = ({
                 <span className="text-gray-500">평균 제작 납기:</span>
                 <span className="font-bold text-[#f05a22] flex items-center gap-1">
                   <Clock className="w-3 h-3" />
-                  영업일 24~48시간 이내
+                  평균 영업일 2일 (길이에 따라 다름)
                 </span>
               </div>
               <div className="flex items-center justify-between">
@@ -662,7 +662,7 @@ export const VideoStyleSimulator: React.FC<VideoStyleSimulatorProps> = ({
                 </span>
               </div>
               <div className="text-[10px] text-gray-500 bg-white p-2 rounded-lg border border-slate-200 leading-tight">
-                💡 <strong>비즈니스 프로 정기구독(월 42.5만~)</strong> 이용 시 본 영상 제작을 포함하여 전 업무가 <strong>무제한 무료</strong>로 진행됩니다.
+                💡 <strong>비즈니스 프로 정기구독(월 42.5만~)</strong> 이용 시 영상 제작도 구독 안에서 요청할 수 있습니다 (작업은 한 번에 2건씩 순서대로).
               </div>
             </div>
 

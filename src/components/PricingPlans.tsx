@@ -92,7 +92,7 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
             <span className="text-[#0064FF] font-extrabold">토스페이</span>
             <span className="text-slate-300">•</span>
             <span className="text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
-              세금계산서 100%
+              세금계산서 발행
             </span>
           </div>
 
@@ -382,7 +382,7 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
                 </div>
               </div>
               <span className="text-[11px] font-bold text-slate-600 shrink-0">
-                유효기간: 결제일로부터 1년 (미사용 전액 환불 보장)
+                유효기간: 결제일로부터 1년 (사용하지 않은 크레딧은 환불 가능)
               </span>
             </div>
           </div>
@@ -392,15 +392,15 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
         <div className="mt-8 pt-6 border-t border-gray-100 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center text-xs text-gray-500">
           <div className="flex items-center justify-center gap-2">
             <ShieldCheck className="w-4 h-4 text-emerald-600" />
-            <span>국내 모든 카드사 무이자 할부</span>
+            <span>카드 결제 · 세금계산서 발행</span>
           </div>
           <div className="flex items-center justify-center gap-2">
             <Sparkles className="w-4 h-4 text-[#f05a22]" />
-            <span>카카오·네이버페이 1초 간편결제</span>
+            <span>카카오·네이버·토스페이 간편결제</span>
           </div>
           <div className="flex items-center justify-center gap-2">
             <HelpCircle className="w-4 h-4 text-blue-600" />
-            <span>불만족 시 100% 무조건 전액 환불</span>
+            <span>작업 시작 전 전액 환불 · 연간 중도 해지 시 사용한 달은 월 요금으로 정산</span>
           </div>
         </div>
       </div>

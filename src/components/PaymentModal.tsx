@@ -590,7 +590,7 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                   >
                     <CreditCard className="w-4 h-4" />
                     <span className="text-xs font-bold">신용/체크카드</span>
-                    <span className="text-[9px] opacity-75">무이자 할부</span>
+                    <span className="text-[9px] opacity-75">일시불·할부</span>
                   </button>
 
                   {/* Bank Transfer */}
@@ -718,7 +718,7 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                         />
                       </div>
                       <div className="flex items-center text-[11px] text-blue-800 leading-tight bg-blue-100/60 p-2.5 rounded-lg">
-                        입금 확인 즉시 전담 실무 매니저가 배정되며, 100% 전자세금계산서 또는 지출증빙 영수증이 발급됩니다.
+                        입금이 확인되면 작업을 시작하며, 전자세금계산서 또는 지출증빙 영수증을 발급해 드립니다.
                       </div>
                     </div>
                   </div>
@@ -733,11 +733,11 @@ export const PaymentModal: React.FC<PaymentModalProps> = ({
                       onChange={(e) => setSelectedCardCompany(e.target.value)}
                       className="border border-slate-300 rounded-lg px-2.5 py-1 text-xs bg-white text-slate-800 font-medium"
                     >
-                      <option value="현대카드">현대카드 (무이자 최대 12개월)</option>
-                      <option value="국민카드">KB국민카드 (무이자 최대 10개월)</option>
-                      <option value="신한카드">신한카드 (무이자 최대 12개월)</option>
-                      <option value="삼성카드">삼성카드 (무이자 최대 10개월)</option>
-                      <option value="롯데카드">롯데카드 (무이자 최대 7개월)</option>
+                      <option value="현대카드">현대카드</option>
+                      <option value="국민카드">KB국민카드</option>
+                      <option value="신한카드">신한카드</option>
+                      <option value="삼성카드">삼성카드</option>
+                      <option value="롯데카드">롯데카드</option>
                       <option value="비씨카드">BC카드</option>
                       <option value="하나카드">하나카드</option>
                       <option value="NH농협카드">NH농협카드</option>

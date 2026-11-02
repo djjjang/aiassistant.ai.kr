@@ -303,7 +303,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
 
               <div className="p-3 rounded-xl bg-orange-50/80 border border-orange-200/60 flex items-center gap-2 text-[11px] text-orange-950">
                 <ShieldCheck className="w-4 h-4 text-[#f05a22] shrink-0" />
-                <span>AI 초안 작성 후 현업 5년차 이상 전담 매니저 100% 휴먼 리뷰 검수</span>
+                <span>AI가 만든 결과물을 사람이 직접 확인한 뒤 전달</span>
               </div>
             </>
           ) : (

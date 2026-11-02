@@ -25,15 +25,15 @@ export const HowItWorks: React.FC = () => {
       title: '전담 전문가의 검수 (Human Review)',
       description:
         'AI가 작성한 결과물의 팩트체크, 표현 윤문, 논리적 오류를 전담 매니저가 직접 다듬습니다.',
-      tag: '5년차 전문 검수'
+      tag: '사람이 직접 확인'
     },
     {
       num: '04',
       numBg: 'bg-green-600',
-      title: '완성본 전달 & 무제한 수정 보완',
+      title: '완성본 전달 & 수정 보완',
       description:
-        '영업일 기준 48시간 이내 결과물을 전달하며, 피드백에 맞춰 신속하게 추가 보완해 드립니다.',
-      tag: '48시간 완료'
+        '간단한 작업은 평균 영업일 2일 안에 전달하고, 큰 작업은 상담 때 일정을 안내해 드립니다. 건마다 수정 2회는 무료입니다.',
+      tag: '평균 영업일 2일'
     }
   ];
 
@@ -50,7 +50,7 @@ export const HowItWorks: React.FC = () => {
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-[#0f2439]">
             요청부터 전달까지,<br />
-            평균 48시간
+            평균 영업일 2일
           </h2>
           <p className="text-sm text-gray-500 mt-2">
             간소화된 4단계 프로세스로 사내 실무 병목을 즉각 해소합니다
@@ -86,8 +86,8 @@ export const HowItWorks: React.FC = () => {
         <div className="mt-6 p-4 rounded-xl bg-orange-50/70 border border-[#f05a22]/20 flex items-center gap-3">
           <ShieldCheck className="w-5 h-5 text-[#f05a22] shrink-0" />
           <p className="text-xs text-gray-700 leading-snug">
-            <strong className="text-[#0f2439]">100% 만족 보장제:</strong> 첫 결과물에 만족하지
-            못하실 경우 전액 환불 또는 무상 재작업을 약속드립니다.
+            <strong className="text-[#0f2439]">환불 기준:</strong> 작업 시작 전에는 전액 환불,
+            시작한 뒤에는 진행된 작업분을 빼고 환불해 드립니다. 큰 작업은 상담 때 일정을 먼저 정합니다.
           </p>
         </div>
       </div>

@@ -256,7 +256,7 @@ export const Header: React.FC<HeaderProps> = ({
                 onClick={() => scrollToSection('process-timeline')}
                 className="w-full text-left py-2.5 px-3 rounded-xl text-sm font-semibold text-gray-700 hover:bg-[#fff4ee] hover:text-[#f05a22] transition"
               >
-                진행 프로세스 (48h 완료)
+                진행 프로세스
               </button>
               <button
                 onClick={() => scrollToSection('portfolio-showcase')}
@@ -290,7 +290,7 @@ export const Header: React.FC<HeaderProps> = ({
                     <span>첫 달 도입 특가 프로모션</span>
                   </div>
                   <p className="text-[11px] text-gray-600 leading-relaxed">
-                    상담 신청 시 무료 시범 업무 1건 및 100% 만족 보장제를 함께 제공합니다.
+                    첫 상담과 견적은 무료입니다.
                   </p>
                 </div>
               </div>
@@ -358,11 +358,11 @@ export const Header: React.FC<HeaderProps> = ({
               <div className="flex items-center justify-center gap-4 text-[11px] text-gray-500 pt-1">
                 <span className="flex items-center gap-1">
                   <CheckCircle2 className="w-3 h-3 text-green-600" />
-                  비밀유지 NDA 보장
+                  요청 시 비밀유지계약(NDA)
                 </span>
                 <span className="flex items-center gap-1">
                   <CheckCircle2 className="w-3 h-3 text-green-600" />
-                  1시간 내 회신
+                  평일 당일 회신
                 </span>
               </div>
             </div>

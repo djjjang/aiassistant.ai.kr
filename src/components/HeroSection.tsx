@@ -169,7 +169,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSelectService }) => 
               <div className="flex items-center gap-2 text-xs text-gray-600 font-medium pt-1">
                 <ShieldCheck className="w-4 h-4 text-[#f05a22] shrink-0" />
                 <span>
-                  첫 달 시범 도입 특가: <strong className="text-gray-900 font-bold">월 300,000원</strong>부터 (불만족 시 100% 환불 보장)
+                  첫 달 시범 도입 특가: <strong className="text-gray-900 font-bold">월 300,000원</strong>부터 (작업 시작 전 전액 환불)
                 </span>
               </div>
             </div>
@@ -182,8 +182,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSelectService }) => 
               </div>
 
               <div className="bg-white/90 backdrop-blur-xs rounded-2xl p-4 border border-[#eae6df] shadow-2xs hover:border-[#0f2439]/30 transition-colors">
-                <div className="text-2xl sm:text-3xl font-black text-[#f05a22] tracking-tight">48h</div>
-                <div className="text-xs text-gray-500 font-medium mt-1">평균 첫 결과물 전달</div>
+                <div className="text-2xl sm:text-3xl font-black text-[#f05a22] tracking-tight">2일</div>
+                <div className="text-xs text-gray-500 font-medium mt-1">간단한 작업 평균 전달 (영업일)</div>
               </div>
 
               <div className="bg-white/90 backdrop-blur-xs rounded-2xl p-4 border border-[#eae6df] shadow-2xs hover:border-[#0f2439]/30 transition-colors">
