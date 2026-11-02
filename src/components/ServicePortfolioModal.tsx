@@ -42,15 +42,19 @@ interface ServicePortfolioModalProps {
   initialCaseId?: string;
   onClose: () => void;
   onApplyService: (serviceName: string) => void;
+  // 'page' = /services/:id 별도 페이지로 보여 줌 (팝업 아님)
+  variant?: 'modal' | 'page';
 }
 
 export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
   service,
   initialCaseId,
   onClose,
-  onApplyService
+  onApplyService,
+  variant = 'modal'
 }) => {
   if (!service) return null;
+  const isPage = variant === 'page';
 
   const cases: ServicePortfolioCase[] = service.portfolioCases && service.portfolioCases.length > 0
     ? service.portfolioCases
@@ -103,7 +107,7 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
 
   // Mobile Back Button integration via browser history state
   useEffect(() => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === 'undefined' || isPage) return;
 
     window.history.pushState({ modal: 'portfolio-viewer' }, '');
 
@@ -115,7 +119,7 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
     return () => {
       window.removeEventListener('popstate', handlePopState);
     };
-  }, [onClose]);
+  }, [onClose, isPage]);
 
   const [zoomImage, setZoomImage] = useState<{
     url: string;
@@ -209,20 +213,31 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
   const isAIAssistantSite = activeCase?.liveUrl?.includes('aiassistant.ai.kr') ?? false;
 
   return (
-    <div className={`fixed inset-0 z-50 flex items-center justify-center ${isFullPage ? 'p-0' : 'p-0 sm:p-4'} bg-black/80 backdrop-blur-sm animate-in fade-in duration-200`}>
-      <div className={`bg-white w-full ${isFullPage ? 'h-full rounded-none max-w-none max-h-none' : 'rounded-none sm:rounded-2xl max-w-4xl max-h-full sm:max-h-[92vh]'} overflow-hidden shadow-2xl border-0 sm:border border-[#eae6df] flex flex-col transition-all duration-200`}>
+    <div className={isPage ? 'bg-[#f7f5f0] px-0 sm:px-4 py-0 sm:py-8' : `fixed inset-0 z-50 flex items-center justify-center ${isFullPage ? 'p-0' : 'p-0 sm:p-4'} bg-black/80 backdrop-blur-sm animate-in fade-in duration-200`}>
+      <div className={`bg-white w-full ${isPage ? 'max-w-5xl mx-auto sm:rounded-2xl' : isFullPage ? 'h-full rounded-none max-w-none max-h-none' : 'rounded-none sm:rounded-2xl max-w-4xl max-h-full sm:max-h-[92vh]'} overflow-hidden shadow-2xl border-0 sm:border border-[#eae6df] flex flex-col transition-all duration-200`}>
         {/* Header with Mobile Back & Full-Page Toggle */}
         <div className="p-3.5 sm:p-5 bg-[#0f2439] text-white flex items-center justify-between border-b border-white/10 shrink-0">
           <div className="flex items-center gap-2 sm:gap-3">
             {/* Mobile / Full-Page Back button */}
-            <button
-              onClick={onClose}
-              className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition cursor-pointer border border-white/10"
-              title="업무영역 목록으로 돌아가기"
-            >
-              <ChevronLeft className="w-4 h-4 text-[#f05a22]" />
-              <span>목록으로</span>
-            </button>
+            {isPage ? (
+              <a
+                href="/#services-section"
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition cursor-pointer border border-white/10"
+                title="업무영역 목록으로 돌아가기"
+              >
+                <ChevronLeft className="w-4 h-4 text-[#f05a22]" />
+                <span>목록으로</span>
+              </a>
+            ) : (
+              <button
+                onClick={onClose}
+                className="flex items-center gap-1 px-2.5 py-1.5 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-bold transition cursor-pointer border border-white/10"
+                title="업무영역 목록으로 돌아가기"
+              >
+                <ChevronLeft className="w-4 h-4 text-[#f05a22]" />
+                <span>목록으로</span>
+              </button>
+            )}
 
             <div className="hidden xs:flex w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-[#f05a22] text-white items-center justify-center font-black text-xs shadow-xs">
               AI
@@ -236,12 +251,13 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
                   {isVideoService && videoModalTab === 'simulator' ? '대화형 영상 스타일 시뮬레이터' : '실제 포트폴리오 갤러리'}
                 </span>
               </div>
-              <h3 className="text-sm sm:text-base md:text-lg font-black text-white leading-tight truncate max-w-[180px] sm:max-w-md">
+              <h1 className="text-sm sm:text-base md:text-lg font-black text-white leading-tight truncate max-w-[180px] sm:max-w-md">
                 {service.name} {isVideoService && videoModalTab === 'simulator' ? '시뮬레이터' : `포트폴리오 (${cases.length}종)`}
-              </h3>
+              </h1>
             </div>
           </div>
 
+          {!isPage && (
           <div className="flex items-center gap-1.5 sm:gap-2">
             {/* View Mode Toggle: Window vs Dedicated Full Page */}
             <button
@@ -262,6 +278,7 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
               <X className="w-5 h-5" />
             </button>
           </div>
+          )}
         </div>
 
         {/* Subheader / Tabs for 3~5 cases & Simulator */}
@@ -316,7 +333,7 @@ export const ServicePortfolioModal: React.FC<ServicePortfolioModalProps> = ({
         </div>
 
         {/* Content Body */}
-        <div className="p-4 sm:p-6 overflow-y-auto space-y-4 text-xs flex-1 bg-white">
+        <div className={`p-4 sm:p-6 space-y-4 text-xs flex-1 bg-white ${isPage ? '' : 'overflow-y-auto'}`}>
           {isVideoService && videoModalTab === 'simulator' ? (
             <VideoStyleSimulator
               onApplyStyle={(customSummary) => {
@@ -1199,6 +1216,7 @@ videoPlatform: 'youtube',`;
                   </div>
 
                   {/* 1p ~ 8p Direct Jump Pill Buttons */}
+                  {hasGallery && (
                   <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar pt-1.5 border-t border-orange-200/60">
                     <span className="text-[10px] text-gray-500 font-bold shrink-0 mr-1 flex items-center gap-1">
                       <Sparkles className="w-3 h-3 text-[#f05a22]" />
@@ -1223,6 +1241,7 @@ videoPlatform: 'youtube',`;
                       );
                     })}
                   </div>
+                  )}
                 </div>
               )}
 
@@ -1501,16 +1520,18 @@ videoPlatform: 'youtube',`;
         <div className="p-3 sm:p-4 border-t border-[#eae6df] bg-[#f7f5f0] flex flex-col sm:flex-row items-center justify-between gap-2.5 shrink-0">
           <div className="text-[11px] text-gray-500 hidden sm:flex items-center gap-1.5">
             <CheckCircle2 className="w-3.5 h-3.5 text-green-600" />
-            <span>검수율 99.8% 전문가 100% 휴먼 리뷰 보장 • 24시간 실시간 접수</span>
+            <span>상담·견적은 무료입니다</span>
           </div>
 
           <div className="flex items-center gap-2 w-full sm:w-auto">
-            <button
-              onClick={onClose}
-              className="py-2.5 px-3.5 rounded-xl border border-gray-300 text-gray-600 font-bold hover:bg-gray-100 transition text-xs cursor-pointer"
-            >
-              닫기
-            </button>
+            {!isPage && (
+              <button
+                onClick={onClose}
+                className="py-2.5 px-3.5 rounded-xl border border-gray-300 text-gray-600 font-bold hover:bg-gray-100 transition text-xs cursor-pointer"
+              >
+                닫기
+              </button>
+            )}
             <button
               type="button"
               onClick={() => {

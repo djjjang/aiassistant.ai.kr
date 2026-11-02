@@ -15,6 +15,7 @@ export const Footer: React.FC<FooterProps> = ({
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth' });
+    else window.location.href = `/#${id}`;
   };
 
   return (

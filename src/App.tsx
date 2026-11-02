@@ -23,13 +23,30 @@ import { MyDashboardModal } from './components/MyDashboardModal';
 import { AdminDashboardModal } from './components/AdminDashboardModal';
 import { ServiceItem, PaymentItemSelection, PaymentReceipt, AuthUser } from './types';
 import { getCurrentUser, setCurrentUser, logoutUser } from './utils/auth';
+import { SERVICES_DATA } from './data';
+
+// 업무영역 레퍼런스는 /services/:id 별도 페이지 (예: /services/ppt?case=사례id)
+const servicePageMatch = typeof window !== 'undefined'
+  ? window.location.pathname.match(/^\/services\/([a-z]+)\/?$/)
+  : null;
+const servicePageItem = servicePageMatch
+  ? SERVICES_DATA.find((s) => s.id === servicePageMatch[1]) || null
+  : null;
+const servicePageCaseId = typeof window !== 'undefined'
+  ? new URLSearchParams(window.location.search).get('case') || undefined
+  : undefined;
+
+export const goToServicePage = (service: ServiceItem, caseId?: string) => {
+  const query = caseId ? `?case=${encodeURIComponent(caseId)}` : '';
+  window.location.href = `/services/${service.id}${query}`;
+};
 
 export default function App() {
   const [selectedService, setSelectedService] = useState<ServiceItem | null>(null);
   const [selectedPortfolioService, setSelectedPortfolioService] = useState<ServiceItem | null>(null);
   const [selectedPortfolioCaseId, setSelectedPortfolioCaseId] = useState<string | undefined>(undefined);
   const [selectedPlanId, setSelectedPlanId] = useState<string>('business_pro');
-  const [prefilledTaskType, setPrefilledTaskType] = useState<string>('ppt');
+  const [prefilledTaskType, setPrefilledTaskType] = useState<string>(servicePageItem?.id || 'ppt');
 
   // User Auth & Modals state
   const [currentUser, setCurrentUserState] = useState<AuthUser | null>(() => getCurrentUser());
@@ -59,6 +76,26 @@ export default function App() {
     setCurrentUserState(null);
   };
 
+  // 레퍼런스 페이지 제목 + 다른 페이지에서 /#섹션 으로 왔을 때 그 위치로 이동
+  useEffect(() => {
+    if (servicePageItem) {
+      document.title = `${servicePageItem.name} 레퍼런스 | AI비서`;
+      window.scrollTo(0, 0);
+      return;
+    }
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      // 위쪽 사진이 늦게 뜨면 위치가 밀리므로 몇 번 다시 맞춘다
+      const timers = [100, 600, 1500].map((ms) =>
+        setTimeout(() => {
+          const el = document.getElementById(hash);
+          if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.pageYOffset - 64, behavior: 'instant' });
+        }, ms)
+      );
+      return () => timers.forEach(clearTimeout);
+    }
+  }, []);
+
   useEffect(() => {
     try {
       const stored = localStorage.getItem('user_credits');
@@ -71,14 +108,11 @@ export default function App() {
   }, []);
 
   const handleSelectService = (service: ServiceItem, initialCaseId?: string) => {
-    // Directly open the comprehensive portfolio gallery modal (user's preferred screen)
-    setSelectedPortfolioCaseId(initialCaseId);
-    setSelectedPortfolioService(service);
+    goToServicePage(service, initialCaseId);
   };
 
   const handleOpenPortfolioGallery = (service: ServiceItem, initialCaseId?: string) => {
-    setSelectedPortfolioCaseId(initialCaseId);
-    setSelectedPortfolioService(service);
+    goToServicePage(service, initialCaseId);
   };
 
   const handleApplyServiceFromModal = (serviceName: string) => {
@@ -152,6 +186,19 @@ export default function App() {
 
       {/* Main Content Sections with top offset for fixed header */}
       <main className="flex-1 pt-14 sm:pt-16">
+        {servicePageItem ? (
+          <>
+            <ServicePortfolioModal
+              variant="page"
+              service={servicePageItem}
+              initialCaseId={servicePageCaseId}
+              onClose={() => {}}
+              onApplyService={handleApplyServiceFromModal}
+            />
+            <LeadCaptureForm prefilledTaskType={servicePageItem.id} />
+          </>
+        ) : (
+        <>
         {/* 1. Hero Section with Live Simulator */}
         <HeroSection onSelectService={(id) => setPrefilledTaskType(id)} />
 
@@ -191,6 +238,8 @@ export default function App() {
           onOpenMyPage={() => handleOpenMyPage('tasks')}
           userCredits={userCredits}
         />
+        </>
+        )}
       </main>
 
       {/* Footer */}

@@ -36,6 +36,10 @@ export const Header: React.FC<HeaderProps> = ({
   const scrollToSection = (id: string) => {
     setMobileMenuOpen(false);
     const element = document.getElementById(id);
+    if (!element) {
+      window.location.href = `/#${id}`;
+      return;
+    }
     if (element) {
       const headerOffset = 64;
       const elementPosition = element.getBoundingClientRect().top;
