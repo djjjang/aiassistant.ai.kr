@@ -18,8 +18,12 @@ import { Footer } from './components/Footer';
 import { FloatingCTA } from './components/FloatingCTA';
 import { ServiceDetailModal } from './components/ServiceDetailModal';
 import { ServicePortfolioModal } from './components/ServicePortfolioModal';
-import { ServiceItem } from './types';
+import { ServiceItem, PaymentItemSelection } from './types';
 import { SERVICES_DATA } from './data';
+import { CheckoutPage } from './pages/CheckoutPage';
+import { PaymentSuccessPage, PaymentFailPage } from './pages/PaymentResultPage';
+import { PolicyPage, PolicyKind } from './pages/PolicyPage';
+import { planItemId } from './payments/catalog';
 
 // 업무영역 레퍼런스는 /services/:id 별도 페이지 (예: /services/ppt?case=사례id)
 const servicePageMatch = typeof window !== 'undefined'
@@ -31,6 +35,17 @@ const servicePageItem = servicePageMatch
 const servicePageCaseId = typeof window !== 'undefined'
   ? new URLSearchParams(window.location.search).get('case') || undefined
   : undefined;
+
+// 결제·약관 페이지 (주소로 구분하는 한 페이지 앱)
+const currentPath = typeof window !== 'undefined' ? window.location.pathname.replace(/\/$/, '') : '';
+const policyKind = (['refund', 'terms', 'privacy'] as PolicyKind[]).find((k) => currentPath === `/${k}`);
+const isCheckout = currentPath === '/checkout';
+const isPaymentSuccess = currentPath === '/payment/success';
+const isPaymentFail = currentPath === '/payment/fail';
+const checkoutItemId = typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('item') : null;
+
+// 실제 결제는 환경변수로 켠다. 꺼져 있으면 결제 버튼은 상담 신청으로 감
+const PAYMENTS_ENABLED = import.meta.env.VITE_PAYMENTS_ENABLED === 'true';
 
 export const goToServicePage = (service: ServiceItem, caseId?: string) => {
   const query = caseId ? `?case=${encodeURIComponent(caseId)}` : '';
@@ -106,9 +121,12 @@ export default function App() {
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // 실제 결제(토스페이먼츠)를 붙이기 전까지 결제 버튼은 상담 신청으로 보낸다.
-  // 예전에는 돈이 나가지 않는데도 「결제 완료」 화면이 떴음
-  const handleOpenPayment = () => handleOpenConsultation();
+  // 결제가 켜져 있으면 결제 페이지로, 아니면 상담 신청으로
+  const handleOpenPayment = (selection?: PaymentItemSelection) => {
+    if (!PAYMENTS_ENABLED || !selection) return handleOpenConsultation();
+    const itemId = selection.type === 'plan' ? planItemId(selection.id, selection.billingCycle || 'monthly') : selection.id;
+    window.location.href = `/checkout?item=${itemId}`;
+  };
 
   return (
     <div className="min-h-screen bg-[#f7f5f0] text-[#1a202c] relative flex flex-col font-sans overflow-x-clip">
@@ -117,7 +135,15 @@ export default function App() {
 
       {/* Main Content Sections with top offset for fixed header */}
       <main className="flex-1 pt-14 sm:pt-16">
-        {servicePageItem ? (
+        {isCheckout ? (
+          <CheckoutPage itemId={checkoutItemId} />
+        ) : isPaymentSuccess ? (
+          <PaymentSuccessPage />
+        ) : isPaymentFail ? (
+          <PaymentFailPage />
+        ) : policyKind ? (
+          <PolicyPage kind={policyKind} />
+        ) : servicePageItem ? (
           <>
             <ServicePortfolioModal
               variant="page"

@@ -1,3 +1,10 @@
 {
-  "rewrites": [{ "source": "/services/:path*", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/services/:path*", "destination": "/index.html" },
+    { "source": "/checkout", "destination": "/index.html" },
+    { "source": "/payment/:path*", "destination": "/index.html" },
+    { "source": "/refund", "destination": "/index.html" },
+    { "source": "/terms", "destination": "/index.html" },
+    { "source": "/privacy", "destination": "/index.html" }
+  ]
 }

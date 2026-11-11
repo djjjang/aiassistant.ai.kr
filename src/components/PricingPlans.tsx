@@ -13,6 +13,9 @@ import {
 import { PRICING_PLANS, CREDIT_PACKAGES } from '../data';
 import { PaymentItemSelection } from '../types';
 
+// 실제 결제가 켜졌을 때만 결제 문구를 보여 준다 (꺼져 있으면 상담 신청)
+const PAYMENTS_ENABLED = import.meta.env.VITE_PAYMENTS_ENABLED === 'true';
+
 interface PricingPlansProps {
   onSelectPlan: (planId: string) => void;
   onOpenPayment?: (selection: PaymentItemSelection) => void;
@@ -206,10 +209,10 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
                         className="w-full py-3.5 text-center text-xs font-black rounded-xl bg-[#f05a22] text-white hover:bg-[#d94e1c] shadow-highlight transition active:scale-[0.98] cursor-pointer flex items-center justify-center gap-1.5"
                       >
                         <CreditCard className="w-3.5 h-3.5" />
-                        <span>이 요금제로 상담 신청</span>
+                        <span>{PAYMENTS_ENABLED ? '카드 / 간편결제로 시작하기' : '이 요금제로 상담 신청'}</span>
                       </button>
                       <p className="text-[10px] text-center text-gray-400">
-                        결제 방법은 상담 후 안내드립니다
+                        {PAYMENTS_ENABLED ? '토스페이먼츠 안전 결제 · 작업 시작 전 전액 환불' : '결제 방법은 상담 후 안내드립니다'}
                       </p>
                     </div>
                   </div>
@@ -256,7 +259,7 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
                         className="w-full py-3 text-center text-xs font-bold rounded-xl bg-white border border-[#0f2439] text-[#0f2439] hover:bg-[#0f2439] hover:text-white transition active:scale-[0.98] cursor-pointer flex items-center justify-center gap-1.5"
                       >
                         <CreditCard className="w-3.5 h-3.5" />
-                        <span>{plan.ctaText}</span>
+                        <span>{PAYMENTS_ENABLED ? `${plan.name} 결제하기` : plan.ctaText}</span>
                       </button>
                     ) : (
                       <button
@@ -359,7 +362,7 @@ export const PricingPlans: React.FC<PricingPlansProps> = ({
                       }`}
                     >
                       <Coins className="w-3.5 h-3.5" />
-                      <span>{totalCredits} 크레딧 상담 신청</span>
+                      <span>{totalCredits} 크레딧 {PAYMENTS_ENABLED ? '결제하기' : '상담 신청'}</span>
                     </button>
                   </div>
                 );

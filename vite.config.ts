@@ -2,7 +2,7 @@ import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import fs from 'fs';
 import path from 'path';
-import {defineConfig, Plugin} from 'vite';
+import {defineConfig, loadEnv, Plugin} from 'vite';
 
 // LINT.IfChange(aistudio_media_plugin)
 function aistudioMediaPlugin(): Plugin {
@@ -64,9 +64,36 @@ function aistudioMediaPlugin(): Plugin {
 }
 // LINT.ThenChange(//depot/google3/java/com/google/alkali/boq/makersuite/applet_dev_service/templates/initializers/react_theme/vite.config.ts:aistudio_media_plugin)
 
+// 미리보기(npm run dev)에서도 결제 승인 서버(/api/payments/confirm)가 돌게 한다.
+// 실제 사이트에서는 Vercel이 api/payments/confirm.ts 를 직접 실행함.
+function paymentsApiPlugin(): Plugin {
+  return {
+    name: 'payments-api-dev',
+    configureServer(server) {
+      const env = loadEnv(server.config.mode, server.config.envDir || server.config.root, '');
+      server.middlewares.use('/api/payments/confirm', (req, res) => {
+        let raw = '';
+        req.on('data', (chunk) => (raw += chunk));
+        req.on('end', async () => {
+          res.setHeader('Content-Type', 'application/json');
+          try {
+            const { confirmPayment } = await server.ssrLoadModule('/src/payments/confirm.ts');
+            const result = await confirmPayment(JSON.parse(raw || '{}'), env.TOSS_SECRET_KEY);
+            res.statusCode = result.status;
+            res.end(JSON.stringify(result.body));
+          } catch (err) {
+            res.statusCode = 500;
+            res.end(JSON.stringify({ code: 'SERVER_ERROR', message: String(err) }));
+          }
+        });
+      });
+    },
+  };
+}
+
 export default defineConfig(() => {
   return {
-    plugins: [react(), tailwindcss(), aistudioMediaPlugin()],
+    plugins: [react(), tailwindcss(), aistudioMediaPlugin(), paymentsApiPlugin()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),

@@ -1,4 +1,5 @@
 import React from 'react';
+import { BUSINESS } from '../config/business';
 
 export const Footer: React.FC = () => {
   const scrollToSection = (id: string) => {
@@ -127,15 +128,24 @@ export const Footer: React.FC = () => {
         {/* Legal Disclaimer */}
         <div className="pt-5 border-t border-gray-300/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-gray-500">
           <div className="space-y-1 leading-relaxed">
+            {/* 카드사 심사: 사업자등록증과 글자까지 같아야 함 → src/config/business.ts 에서만 고칠 것 */}
             <p>
-              <strong>주식회사 더마핑크</strong> | 대표자: 안진홍 | 상담문의: 070-8144-3848 | 입금계좌: 신한은행 140-015-969664 (예금주: 주식회사 더마핑크)
+              <strong>{BUSINESS.companyName}</strong> | 대표자: {BUSINESS.ceoName}
+              {BUSINESS.bizRegNo && <> | 사업자등록번호: {BUSINESS.bizRegNo}</>}
+              {BUSINESS.mailOrderNo && <> | 통신판매업 신고번호: {BUSINESS.mailOrderNo}</>}
             </p>
+            <p>사업장 소재지: {BUSINESS.address}</p>
             <p>
-              사업장 소재지: 경기도 용인시 기흥구 동백중앙로16번길 16-4, 1914호(중동, 에이스 동백 타워)
+              고객센터: {BUSINESS.phone}
+              {BUSINESS.email && <> | 이메일: {BUSINESS.email}</>} | {BUSINESS.hours} | 입금계좌: {BUSINESS.bank.name} {BUSINESS.bank.account} (예금주: {BUSINESS.bank.holder})
             </p>
-            <p className="pt-0.5 text-gray-400">© 2025 주식회사 더마핑크 (Dermapink Co., Ltd.) All rights reserved.</p>
+            <p className="flex flex-wrap gap-x-3 pt-1 font-bold text-gray-600">
+              <a href="/terms" className="hover:text-[#f05a22]">이용약관</a>
+              <a href="/privacy" className="hover:text-[#f05a22]">개인정보처리방침</a>
+              <a href="/refund" className="hover:text-[#f05a22]">환불 정책</a>
+            </p>
+            <p className="pt-0.5 text-gray-400">© 2026 {BUSINESS.companyName}. All rights reserved.</p>
           </div>
-
         </div>
       </div>
     </footer>
