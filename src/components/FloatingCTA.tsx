@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { KAKAO_CHAT_URL } from '../config/contact';
 import { MessageCircle, ArrowUp } from 'lucide-react';
 import { AIChatBot } from './AIChatBot';
 
@@ -48,7 +49,7 @@ export const FloatingCTA: React.FC<FloatingCTAProps> = ({
       {/* KakaoTalk Consultation Floating Button */}
       <a
         id="floating-kakao-cta"
-        href="https://pf.kakao.com/_xnSxeiT/chat"
+        href={KAKAO_CHAT_URL}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="카카오톡 1:1 상담 바로가기"
