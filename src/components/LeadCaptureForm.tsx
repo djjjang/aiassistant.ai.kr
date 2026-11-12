@@ -4,7 +4,8 @@ import { LeadFormData } from '../types';
 
 // 상담 신청은 카카오톡 채널(공동 관리)로 받는다.
 // 채널은 폼 내용을 자동으로 받을 수 없으므로, 신청 내용을 복사해 두고 채팅창을 열어 붙여넣게 한다.
-export const KAKAO_CHAT_URL = 'https://pf.kakao.com/_xnSxeiT/chat';
+import { KAKAO_CHAT_URL } from '../config/contact';
+export { KAKAO_CHAT_URL };
 
 export const TASK_TYPE_NAMES: Record<string, string> = {
   ppt: 'PPT 제작 (사업계획서·제안서)',

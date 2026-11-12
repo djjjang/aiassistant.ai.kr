@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { KAKAO_CHAT_URL } from '../config/contact';
 import { Menu, X, ArrowRight, MessageCircle, Sparkles, CheckCircle2 } from 'lucide-react';
 
 interface HeaderProps {
@@ -108,7 +109,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
           <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
             <a
               id="header-cta-btn"
-              href="https://pf.kakao.com/_xnSxeiT/chat"
+              href={KAKAO_CHAT_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs sm:text-sm font-bold px-3 sm:px-3.5 py-1.5 rounded-full bg-[#FEE500] hover:bg-[#FADA0A] text-[#191919] shadow-xs active:scale-95 transition-all flex items-center gap-1.5 border border-[#E6CF00]"
@@ -250,7 +251,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
                 </button>
               )}
               <a
-                href="https://pf.kakao.com/_xnSxeiT/chat"
+                href={KAKAO_CHAT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}

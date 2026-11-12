@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { KAKAO_CHAT_URL } from '../config/contact';
 import { X, Clock, CheckCircle, FileText, ArrowRight, ShieldCheck, MessageCircle, Briefcase, Sparkles, Building2, TrendingUp, Layers, ExternalLink, ZoomIn, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ServiceItem } from '../types';
 import { ImageZoomModal } from './ImageZoomModal';
@@ -535,7 +536,7 @@ export const ServiceDetailModal: React.FC<ServiceDetailModalProps> = ({
         {/* Footer */}
         <div className="p-4 border-t border-[#eae6df] bg-[#f7f5f0] flex flex-col gap-2">
           <a
-            href="https://pf.kakao.com/_xnSxeiT/chat"
+            href={KAKAO_CHAT_URL}
             target="_blank"
             rel="noopener noreferrer"
             onClick={onClose}

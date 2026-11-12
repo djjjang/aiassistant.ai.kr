@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { KAKAO_CHAT_URL } from '../config/contact';
 import {
   X,
   ExternalLink,
@@ -1543,7 +1544,7 @@ videoPlatform: 'youtube',`;
               온라인 상담 신청
             </button>
             <a
-              href="https://pf.kakao.com/_xnSxeiT/chat"
+              href={KAKAO_CHAT_URL}
               target="_blank"
               rel="noopener noreferrer"
               onClick={onClose}
