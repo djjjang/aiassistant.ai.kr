@@ -1878,18 +1878,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     bio: 'PPT 제작, 사업계획서, IR 투자제안서 작성과 계약서 검토를 총괄합니다.'
   },
   {
-    id: 'mijeong',
-    name: '이미정 디렉터',
-    role: 'CONTENT & DESIGN DIRECTOR',
-    experience: '광고대행사 출신 콘텐츠/디자인 총괄',
-    tag: '디자인·마케팅',
-    badge: '인증 전문가',
-    badgeBg: 'bg-brand-navy text-white',
-    scope: '담당: 디자인 업무(상세페이지, 배너, 포스터), 마케팅(SNS자동화, 보도자료)',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB_trsxmthYuJQH9cEpLVQ1njBTlkoznZPOvUlsDKqsIis8CTQJ3RafT1odRqKNKbUbE6fufbXQJc51dXM4CY_tooVqt68RlRKxVBCkf_8xWf2I43glcr_ZEzXdEaph47IVH_nJ7Ewo1b8WdiXXubOKHsF7Si-bKGlwFG0SzGWOei-OPTJJUmqItldwrVR8OZJc4yxmGN6DG_p7x0VimeIbGA-vdOHnW8X_UCdPFK0ylSu-2vDqKu4',
-    bio: '제일기획 협력 에이전시 8년 경력. 대기업 브랜딩 캠페인부터 스타트업 퍼포먼스 광고 카피, 이커머스 상세페이지까지 매출을 일으키는 시각 디자인을 감수합니다.'
-  },
-  {
     // 실제 인물 (2026-11-15 카이 확인). 사진: public/assets/team/
     id: 'ilkwon',
     name: '양일권 디렉터',

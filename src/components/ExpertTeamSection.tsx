@@ -21,14 +21,13 @@ export const ExpertTeamSection: React.FC = () => {
           검증된 전문가 팀
         </h2>
         <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed max-w-3xl">
-          AI가 초안을 완성하고, 분야별 현업 5년 차 이상의 전문 인력이{' '}
-          <strong className="text-[#0f2439]">정밀 검수(Human Review)</strong>를 거쳐
-          무결점의 고품질 결과물만을 납품합니다.
+          AI가 초안을 만들고, 분야별 담당자가{' '}
+          <strong className="text-[#0f2439]">직접 확인한 뒤</strong> 전달합니다.
         </p>
       </div>
 
       {/* Team Member Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-4xl">
         {TEAM_MEMBERS.map((member) => (
           <div
             key={member.id}
