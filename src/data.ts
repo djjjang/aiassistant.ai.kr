@@ -1865,16 +1865,17 @@ AI 솔루션 전문 기업 R사(대표 이민혁)가 인터넷 연결 없이 기
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    id: 'daeun',
-    name: '김다은 팀장',
-    role: 'LEAD SPECIALIST',
-    experience: 'AI 오퍼레이션 & 비즈니스 기획 7년차',
-    tag: '검수율 99.8%',
-    badge: '인증 전문가',
+    // 실제 인물 (2026-11-15 카이 확인). 경력·소개는 본인 확인 후 채울 것
+    id: 'yeonwoo',
+    name: '이연우 팀장',
+    role: 'DOCUMENT & IR LEAD',
+    experience: '사업계획서·IR 투자제안서·계약서 담당',
+    tag: '문서·IR',
+    badge: '참여 파트너',
     badgeBg: 'bg-brand-orange text-white',
     scope: '담당: PPT 제작, 사업계획서, IR 투자제안서, 계약서 검토 총괄',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAZ1Cjp_YMtIsrccJxKWynjcBpL8Us3EnTNCa6FW8CUepBmHL_FFKsRxa7VPJmzd3IwbYr-Gg4Va4Kg88s7LIXV5S-qlQA7-PqPXvWWBFs2SFTla-JolqCUJfIxdUGvAW2i-lh3loJDIrqMT-vMTCPoafHAYrdPDPTlaf3BAd83UqEgbXdbZwoYZyHTgGScZEjHXVX4DO2KxvXZUnwNtTqanUHhaVht0-PxI4nKlB5c4Q1eOh2rS2g',
-    bio: '국내 유수 벤처캐피탈 및 액셀러레이터 출신. 200건 이상의 IR 피치덱과 40건 이상의 공공 R&D 사업계획서를 성공적으로 조율했습니다.'
+    image: '/assets/team/lee-yeonwoo.jpg',
+    bio: 'PPT 제작, 사업계획서, IR 투자제안서 작성과 계약서 검토를 총괄합니다.'
   },
   {
     id: 'mijeong',
