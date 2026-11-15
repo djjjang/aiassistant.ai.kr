@@ -1889,16 +1889,17 @@ export const TEAM_MEMBERS: TeamMember[] = [
     bio: '제일기획 협력 에이전시 8년 경력. 대기업 브랜딩 캠페인부터 스타트업 퍼포먼스 광고 카피, 이커머스 상세페이지까지 매출을 일으키는 시각 디자인을 감수합니다.'
   },
   {
-    id: 'doyoon',
-    name: '박도윤 연구원',
-    role: 'WEB & VIDEO ARCHITECT',
-    experience: '반응형 웹 사이트 구축 & 영상 모션그래픽 전담',
-    tag: 'Web / Short-form',
-    badge: '인증 전문가',
+    // 실제 인물 (2026-11-15 카이 확인). 사진: public/assets/team/
+    id: 'ilkwon',
+    name: '양일권 디렉터',
+    role: 'WEB & MARKETING DIRECTOR',
+    experience: '웹 제작·SEO·콘텐츠 기획 10년 이상 (트렌드24 대표)',
+    tag: '웹·SEO·마케팅',
+    badge: '참여 파트너',
     badgeBg: 'bg-emerald-600 text-white',
-    scope: '담당: 사이트 제작(반응형 홈페이지, 쇼핑몰), 영상 제작(숏폼 바이럴, 컷편집)',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBVWYolfIb3iAbKhZgWpvV0JBPqPoOgFsqhFFLSZLlclhsb_iaIpymgHU3aaIb-b02edsGM39nbMd1nQLFkuqcwCgFuG7UOlYOgJbVZBAQG2c1Bx5_SjwEwgtum8kC6oM5gZeoV8tcK1XVEfCIqHIZNUs1WMM5awJ0mgUg8whXnPO1ZcIXGIejeTpbvJLc7otJ2-1LWT13tzq8hbiQQquUZFkflb0F8ce6Hz_GUlbuGQbd8prtu_eo',
-    bio: '카이스트 출신 풀스택 엔지니어 & 영상 모션그래픽 디렉터. PC/모바일 반응형 웹 구축과 틱톡/릴스 숏폼 바이럴 영상을 완벽하게 책임집니다.'
+    scope: '담당: 사이트 제작(홈페이지·랜딩), 검색 노출(SEO), 마케팅 콘텐츠 기획·디자인',
+    image: '/assets/team/yang-ilkwon.jpg',
+    bio: '트렌드24라는 이름으로 10년 넘게 병원·교육·뷰티 브랜드의 홈페이지 제작, 검색 노출(SEO), 콘텐츠 기획과 디자인을 직접 맡아 왔습니다. 소상공인 대상 마케팅 강의도 7년간 진행했습니다.'
   }
 ];
 
