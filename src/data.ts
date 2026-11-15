@@ -1865,40 +1865,30 @@ AI 솔루션 전문 기업 R사(대표 이민혁)가 인터넷 연결 없이 기
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    id: 'daeun',
-    name: '김다은 팀장',
-    role: 'LEAD SPECIALIST',
-    experience: 'AI 오퍼레이션 & 비즈니스 기획 7년차',
-    tag: '검수율 99.8%',
-    badge: '인증 전문가',
+    // 실제 인물 (2026-11-15 카이 확인). 경력·소개는 본인 확인 후 채울 것
+    id: 'yeonwoo',
+    name: '이연우 팀장',
+    role: 'DOCUMENT & IR LEAD',
+    experience: '사업계획서·IR 투자제안서·계약서 담당',
+    tag: '문서·IR',
+    badge: '참여 파트너',
     badgeBg: 'bg-brand-orange text-white',
     scope: '담당: PPT 제작, 사업계획서, IR 투자제안서, 계약서 검토 총괄',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAZ1Cjp_YMtIsrccJxKWynjcBpL8Us3EnTNCa6FW8CUepBmHL_FFKsRxa7VPJmzd3IwbYr-Gg4Va4Kg88s7LIXV5S-qlQA7-PqPXvWWBFs2SFTla-JolqCUJfIxdUGvAW2i-lh3loJDIrqMT-vMTCPoafHAYrdPDPTlaf3BAd83UqEgbXdbZwoYZyHTgGScZEjHXVX4DO2KxvXZUnwNtTqanUHhaVht0-PxI4nKlB5c4Q1eOh2rS2g',
-    bio: '국내 유수 벤처캐피탈 및 액셀러레이터 출신. 200건 이상의 IR 피치덱과 40건 이상의 공공 R&D 사업계획서를 성공적으로 조율했습니다.'
+    image: '/assets/team/lee-yeonwoo.jpg',
+    bio: 'PPT 제작, 사업계획서, IR 투자제안서 작성과 계약서 검토를 총괄합니다.'
   },
   {
-    id: 'mijeong',
-    name: '이미정 디렉터',
-    role: 'CONTENT & DESIGN DIRECTOR',
-    experience: '광고대행사 출신 콘텐츠/디자인 총괄',
-    tag: '디자인·마케팅',
-    badge: '인증 전문가',
-    badgeBg: 'bg-brand-navy text-white',
-    scope: '담당: 디자인 업무(상세페이지, 배너, 포스터), 마케팅(SNS자동화, 보도자료)',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuB_trsxmthYuJQH9cEpLVQ1njBTlkoznZPOvUlsDKqsIis8CTQJ3RafT1odRqKNKbUbE6fufbXQJc51dXM4CY_tooVqt68RlRKxVBCkf_8xWf2I43glcr_ZEzXdEaph47IVH_nJ7Ewo1b8WdiXXubOKHsF7Si-bKGlwFG0SzGWOei-OPTJJUmqItldwrVR8OZJc4yxmGN6DG_p7x0VimeIbGA-vdOHnW8X_UCdPFK0ylSu-2vDqKu4',
-    bio: '제일기획 협력 에이전시 8년 경력. 대기업 브랜딩 캠페인부터 스타트업 퍼포먼스 광고 카피, 이커머스 상세페이지까지 매출을 일으키는 시각 디자인을 감수합니다.'
-  },
-  {
-    id: 'doyoon',
-    name: '박도윤 연구원',
-    role: 'WEB & VIDEO ARCHITECT',
-    experience: '반응형 웹 사이트 구축 & 영상 모션그래픽 전담',
-    tag: 'Web / Short-form',
-    badge: '인증 전문가',
+    // 실제 인물 (2026-11-15 카이 확인). 사진: public/assets/team/
+    id: 'ilkwon',
+    name: '양일권 디렉터',
+    role: 'WEB & MARKETING DIRECTOR',
+    experience: '웹 제작·SEO·콘텐츠 기획 10년 이상 (트렌드24 대표)',
+    tag: '웹·SEO·마케팅',
+    badge: '참여 파트너',
     badgeBg: 'bg-emerald-600 text-white',
-    scope: '담당: 사이트 제작(반응형 홈페이지, 쇼핑몰), 영상 제작(숏폼 바이럴, 컷편집)',
-    image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBVWYolfIb3iAbKhZgWpvV0JBPqPoOgFsqhFFLSZLlclhsb_iaIpymgHU3aaIb-b02edsGM39nbMd1nQLFkuqcwCgFuG7UOlYOgJbVZBAQG2c1Bx5_SjwEwgtum8kC6oM5gZeoV8tcK1XVEfCIqHIZNUs1WMM5awJ0mgUg8whXnPO1ZcIXGIejeTpbvJLc7otJ2-1LWT13tzq8hbiQQquUZFkflb0F8ce6Hz_GUlbuGQbd8prtu_eo',
-    bio: '카이스트 출신 풀스택 엔지니어 & 영상 모션그래픽 디렉터. PC/모바일 반응형 웹 구축과 틱톡/릴스 숏폼 바이럴 영상을 완벽하게 책임집니다.'
+    scope: '담당: 사이트 제작(홈페이지·랜딩), 검색 노출(SEO), 마케팅 콘텐츠 기획·디자인',
+    image: '/assets/team/yang-ilkwon.jpg',
+    bio: '트렌드24라는 이름으로 10년 넘게 병원·교육·뷰티 브랜드의 홈페이지 제작, 검색 노출(SEO), 콘텐츠 기획과 디자인을 직접 맡아 왔습니다. 소상공인 대상 마케팅 강의도 7년간 진행했습니다.'
   }
 ];
 
