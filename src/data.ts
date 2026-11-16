@@ -1889,6 +1889,19 @@ export const TEAM_MEMBERS: TeamMember[] = [
     scope: '담당: 사이트 제작(홈페이지·랜딩), 검색 노출(SEO), 마케팅 콘텐츠 기획·디자인',
     image: '/assets/team/yang-ilkwon.jpg',
     bio: '트렌드24라는 이름으로 10년 넘게 병원·교육·뷰티 브랜드의 홈페이지 제작, 검색 노출(SEO), 콘텐츠 기획과 디자인을 직접 맡아 왔습니다. 소상공인 대상 마케팅 강의도 7년간 진행했습니다.'
+  },
+  {
+    // 실제 인물 (2026-11-16 카이 확인). 담당은 임시로 비어 있던 영상 업무 — 곧 본인 정보로 수정 예정
+    id: 'jungi',
+    name: '이중이 실장',
+    role: 'VIDEO PRODUCTION MANAGER',
+    experience: '숏폼·홍보 영상 제작 담당',
+    tag: '영상',
+    badge: '참여 파트너',
+    badgeBg: 'bg-rose-600 text-white',
+    scope: '담당: 숏폼(릴스·쇼츠) 기획·제작, 기업 홍보 영상 편집·자막',
+    image: '/assets/team/lee-jungi.jpg',
+    bio: '인스타그램 릴스·유튜브 쇼츠 같은 숏폼 영상 기획과 제작, 기업 홍보 영상 편집과 자막 작업을 맡고 있습니다.'
   }
 ];
 
